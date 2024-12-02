@@ -1,0 +1,3 @@
+[gd_scene format=2]
+
+[node name="fire_static" type="Node2D"]

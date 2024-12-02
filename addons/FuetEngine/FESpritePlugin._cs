@@ -1,0 +1,22 @@
+#if TOOLS
+using Godot;
+using System;
+
+[Tool]
+public partial class FESpritePlugin : EditorPlugin
+{
+	public override void _EnterTree()
+	{
+		// Initialization of the plugin goes here.
+        Script feSprite = ResourceLoader.Load("res://addons/FuetEngine/FESprite.cs") as Script;
+        var feSpriteTexture = GD.Load<Texture2D>("res://addons/FuetEngine/unity_game_object_icon.svg");
+		AddCustomType("FESprite", "Node2D", feSprite, feSpriteTexture);
+	}
+
+	public override void _ExitTree()
+	{
+		// Clean-up of the plugin goes here.
+        RemoveCustomType("GameObject");
+	}
+}
+#endif

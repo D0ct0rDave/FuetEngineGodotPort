@@ -1,0 +1,154 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+            "**/*.log": true,
+			"**/*.old*": true,
+			"**/*.bat*": true,
+			"**/.*": true,
+			"**/*.py": true,
+			"**/*.exe": true,
+			"**/*.rtf": true,
+			"**/*.txt": true,
+			// "**/*.md": true,
+			"**/*.sln": true,
+			// "**/*.csproj": true,
+			"**/*.godot": true,
+			"**/*.svg": true,
+			"**/*.jfif": true,
+			"**/*.png": true,
+			"**/*.ttf": true,
+			"**/*.tres": true,
+			"**/LICENSE": true,
+			"**/*.import": true
+		},
+		"symbolSearchPath": "C:\\utils\\Godot_v3.5.3\\GodotSharp\\Api\\Debug;C:\\utils\\Godot_v3.5.3\\GodotSharp\\Api\\Release;E:\\Projects\\Godot\\MyProject2\\.godot\\mono\\temp\\obj\\Debug",
+		"godotTools.editorPath.godot3": "C:\\utils\\Godot_v3.5.3\\Godot_v3.5.3-stable_mono_win64.exe",
+		"csharp.debug.symbolOptions.searchPaths": [
+			"C:/utils/Godot_v3.5.3/GodotSharp/Api/Debug",
+			"C:/utils/Godot_v3.5.3/GodotSharp/Api/Release",
+			"C:/utils/Godot_v3.6/GodotSharp/Api/Debug",
+			"C:/utils/Godot_v3.6/GodotSharp/Api/Release"
+		],
+		"razor.server.trace": "None",
+		"dotnet.server.trace": "None",
+		"debug.logLevel" : "Verbose"
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Play In Editor",
+				"type": "godot-mono",
+				"mode": "playInEditor",
+				"request": "launch"
+			},
+			{
+				// Uses "C# tools for Godot" extension and works!
+				// https://marketplace.visualstudio.com/items?itemName=neikeq.godot-csharp-vscode#debugger-launch-configurations
+				"name": "Launch",
+				"type": "godot-mono",
+				"request": "launch",
+				"mode": "executable",
+				"preLaunchTask": "build",
+				"executable": "${config:godot.csharp.executablePath}",
+				"executableArguments": [
+					"--path",
+					"${workspaceRoot}"
+				],
+			},
+			{
+				// Uses "C# tools for Godot" extension and works!
+				// https://marketplace.visualstudio.com/items?itemName=neikeq.godot-csharp-vscode#debugger-launch-configurations
+				"name": "Launch - display collisions",
+				"type": "godot-mono",
+				"request": "launch",
+				"mode": "executable",
+				"preLaunchTask": "build",
+				"executable": "${config:godot.csharp.executablePath}",
+				"executableArguments": [
+					"--path",
+					"${workspaceRoot}",
+					"--debug",
+					"--debug-collisions"
+				],
+			},
+			{
+				// Uses "C# tools for Godot" extension and works!
+				// https://marketplace.visualstudio.com/items?itemName=neikeq.godot-csharp-vscode#debugger-launch-configurations
+				"name": "--  Launch  --",
+				"type": "godot-mono",
+				"request": "launch",
+				"mode": "executable",
+				"preLaunchTask": "build",
+				"executable": "C:/utils/Godot_v3.6-stable_mono_win64/Godot_v3.6-stable_mono_win64.exe",
+				"executableArguments": [
+					"--path",
+					"${workspaceRoot}"
+				],
+			},
+			{
+				// Uses "C# tools for Godot" extension and works!
+				// https://marketplace.visualstudio.com/items?itemName=neikeq.godot-csharp-vscode#debugger-launch-configurations
+				"name": "--  Launch Debug Collision --",
+				"type": "godot-mono",
+				"request": "launch",
+				"mode": "executable",
+				"preLaunchTask": "build",
+				"executable": "C:/utils/Godot_v3.6-stable_mono_win64/Godot_v3.6-stable_mono_win64.exe",
+				"executableArguments": [
+					"--path",
+					"${workspaceRoot}",
+					"--debug",
+					"--debug-collisions"
+				],
+			},
+			{
+				"name": "Attach to Process",
+				"type": "godot-mono",				
+				"request": "attach",
+				"address": "localhost",
+				"port": 23685
+			}
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "build",
+				"command": "dotnet",
+				"type": "process",
+				"args": [
+					"build",
+					// Ask dotnet build to generate full paths for file names.
+					"/property:GenerateFullPaths=true",
+					// Do not generate summary otherwise it leads to duplicate errors in Problems panel
+					"/consoleloggerparameters:NoSummary"
+					// , "FuetEngineSpriteTest.csproj"
+				],
+				"problemMatcher": "$msCompile",
+				"group": "build",
+				"presentation": {
+					"echo": true,
+					"reveal": "silent",
+					"focus": false,
+					"panel": "shared",
+					"showReuseMessage": false,
+					"clear": false
+				},
+			},
+			{
+				"label": "Compile Current File",
+				"type": "shell",
+				"command": "$msCompile",
+				"args": ["${file}"],
+				"problemMatcher": ["$compiler-problem"]
+			}
+		]
+	}
+}

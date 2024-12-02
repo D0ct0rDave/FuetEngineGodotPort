@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/test.cs" type="Script" id=1]
+[ext_resource path="res://Assets/Sprites/AnimatedSprite.tscn" type="PackedScene" id=2]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+m_resource = "res://Assets/Sprites/fire_static.spr"
+
+[node name="AnimatedSprite" parent="." instance=ExtResource( 2 )]

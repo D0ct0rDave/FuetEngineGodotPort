@@ -1,0 +1,55 @@
+﻿using System.Collections;
+using UnityEngine;
+
+namespace FuetEngine
+{
+	public class CFESpriteInstUpdater
+	{
+		public static void SetCurrentActionTime(CFESpriteInstance _poSI,float _rActionTime)
+		{
+			if (_poSI.m_poSprite == null)
+				return;
+		
+			CFESpriteAction poAction = _poSI.m_poSprite.m_oActions [_poSI.m_uiSpriteAction];
+			float rNewTime = _rActionTime;
+			
+			// To prevent overflows
+			switch (poAction.eGetPlayMode())
+			{
+				case ESFSPlayMode.SFSPM_ONESHOT:
+				rNewTime = Mathf.Min(rNewTime, poAction.rGetMaxActionTime ());
+				break;
+				
+				case ESFSPlayMode.SFSPM_LOOP:
+				{
+					if (poAction.m_rRandStartTime > 0.0f) {
+						rNewTime = rNewTime % poAction.rGetMaxActionTime ();
+					
+						if (rNewTime < _rActionTime)
+						//loop detected
+							rNewTime = rNewTime + Random.value * poAction.m_rRandStartTime;
+					} else
+						rNewTime = rNewTime % poAction.rGetMaxActionTime();
+				}
+				break;
+				
+				case ESFSPlayMode.SFSPM_PINGPONGSTOP:
+				rNewTime = Mathf.Min(rNewTime, 2.0f * poAction.rGetMaxActionTime () + 0.01f);
+				break;
+				
+				case ESFSPlayMode.SFSPM_PINGPONG:
+				rNewTime = rNewTime %(2.0f*poAction.rGetMaxActionTime());
+				break;
+			}
+
+			_poSI.m_rActionTime = rNewTime;
+			_poSI.m_uiCurrentActionFrame = poAction.uiGetFrame (rNewTime,0);
+		}
+
+		// Update is called once per frame
+		public static void Update (CFESpriteInstance _poSI,float _rDeltaT) 
+		{
+			SetCurrentActionTime(_poSI,_poSI.m_rActionTime+_rDeltaT*_poSI.m_rSpeedMult);
+		}
+	}
+}

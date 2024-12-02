@@ -1,0 +1,225 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+// using UnityEditor;
+using UnityEngine;
+
+namespace FuetEngine
+{
+    // [ExecuteInEditMode]
+    [System.Serializable]
+    public class CFESpriteInstance : MonoBehaviour
+    {	
+        [SerializeField]
+        protected MeshRenderer m_mr;
+        
+        [SerializeField]
+        protected MeshFilter   m_mf;
+
+        /// The sprite to load
+        public string m_sSpriteFile;
+
+		/// To speedup things
+		[SerializeField]
+        protected bool m_bOneActionOneFrame = false;
+
+		/// Speed multiplier for this instance.
+		public float m_rSpeedMult = 1.0f;
+
+        /// Current status of the sprite, i.e. animation and other things.
+        /// Current sprite action being played.
+        [HideInInspector]
+        public int m_uiSpriteAction = 0;
+
+        [HideInInspector]
+        CFESpriteAction m_oCurAction = null;
+
+        [HideInInspector]
+        CFESpriteFrame m_oCurFrame = null;
+
+        [HideInInspector]
+		/// Moment in the sequence related to the current action.
+        public float m_rActionTime = 0.0f;
+
+        [HideInInspector]
+        /// Current frame in the action.
+        public int m_uiCurrentActionFrame = 0;
+
+        [HideInInspector]
+        /// Current frame in the action.
+        public Color m_oColor = Color.white;
+
+        [HideInInspector]
+        /// Current frame in the action.
+        public int m_iCreationOrder = 0;
+
+        /// NOT supposed to place the world position because, this should be handled
+        /// by another entity, probably the CGameEntity or the SpriteTile or something like this.
+        [HideInInspector]
+        public CFESprite m_poSprite = null;
+
+
+        public bool bInitialized()
+        {
+            return(m_poSprite != null);
+        }
+        
+        public int iGetRenderOrder()
+        {
+            if (m_mr == null) return(0);
+            return(m_mr.sortingOrder);
+        }
+   
+        /// <summary>
+        ///  Need to call this every time a new frame
+        /// </summary>
+        // PRE: Cur frame != null
+        void SetupScale(GameObject _oGameObject)
+        {   
+            m_oCurFrame.GenerateSpriteGeometry(Vector2.zero, _oGameObject.transform.localScale);
+        }
+
+        public Mesh GetMesh()
+        {
+            if (m_mf != null)
+                return (m_mf.sharedMesh);
+            else
+                return (null);
+        }
+
+        public void Reload()
+        {
+            #if UNITY_EDITOR 
+            // load the sprite
+            m_poSprite = CFESpriteLoader.poLoad(m_sSpriteFile, true);
+            Init(gameObject);
+            #endif        
+        }
+
+        public void Init(GameObject _oGameObject)
+        {
+            // This prevents the created components to be saved when the scene is saved.
+            // hideFlags = HideFlags.HideAndDontSave;
+            if (m_poSprite != null)
+            {
+                // retrieve the mesh filter
+                m_mf = _oGameObject.GetComponent<MeshFilter>() as MeshFilter;
+
+                if (m_mf == null)
+                    m_mf = _oGameObject.AddComponent<MeshFilter>() as MeshFilter;
+
+                // retrieve a mesh renderer
+                m_mr = _oGameObject.GetComponent<MeshRenderer>() as MeshRenderer;
+
+                if (m_mr == null)
+                    m_mr = _oGameObject.AddComponent<MeshRenderer>() as MeshRenderer;
+                
+                m_uiSpriteAction = 0;
+                m_oCurAction = m_poSprite.poGetAction(0);
+                if (m_oCurAction == null)
+                {
+                    // delete sprite
+                    m_poSprite = null;
+                    return;
+                }
+
+                m_uiCurrentActionFrame = 0;
+                m_oCurFrame = m_oCurAction.m_oSeq[0];
+                if (m_oCurFrame == null)
+                {
+                    // delete sprite
+                    m_poSprite = null;
+                    return;
+                }
+
+                m_mr.material = m_oCurFrame.m_hMaterial;
+                m_mf.mesh = m_oCurFrame.m_sprite;
+                m_mr.receiveShadows = false;
+                m_mr.useLightProbes = false;
+                m_mr.motionVectors  = false;
+                m_mr.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+                m_mr.reflectionProbeUsage = UnityEngine.Rendering.ReflectionProbeUsage.Off;
+                m_mr.lightProbeUsage = UnityEngine.Rendering.LightProbeUsage.Off;
+
+                SetupScale(_oGameObject);
+
+                // 
+                m_bOneActionOneFrame = (m_poSprite.m_oActions.Count == 1) && (m_oCurAction.m_oSeq.Count == 1);
+
+                // m_mr.color = m_oColor;
+                m_mr.sortingOrder = -1*m_iCreationOrder;
+            }
+        }
+        
+        // Use this for initialization
+		public void Start ()
+		{   
+            Init(gameObject);
+		}
+		
+		// Update is called once per frame
+		void Update ()
+		{
+			if (! m_bOneActionOneFrame)
+			{
+                if (m_poSprite == null)
+                    return;
+
+                CFESpriteInstUpdater.Update(this, Time.deltaTime);
+
+				m_oCurAction = m_poSprite.poGetAction(m_uiSpriteAction);
+                if (m_oCurAction == null)
+                    return;
+
+				m_oCurFrame = m_oCurAction.m_oSeq[m_uiCurrentActionFrame];
+                if (m_oCurFrame == null)
+                    return;
+
+                m_mr.material   = m_oCurFrame.m_hMaterial;
+                m_mf.mesh       = m_oCurFrame.m_sprite;
+
+                if (transform.localScale != Vector3.one)
+                    SetupScale(gameObject);
+
+                // Graphics.DrawTexture(rect, m_mr.sprite.texture, m_mr.sprite.rect, 0, 0, 0, 0);
+            }
+        }
+
+        public void SetAction(int _iAction)
+        {
+            if (_iAction == -1) return;
+            if (m_poSprite == null) return;
+
+            CFESpriteAction oAction = m_poSprite.poGetAction(_iAction);
+            if (oAction == null) return;
+                
+            m_uiSpriteAction = _iAction;
+            m_oCurAction     = oAction;
+
+            m_uiCurrentActionFrame = 0;
+            m_oCurFrame = m_oCurAction.m_oSeq[0];
+            if (m_oCurFrame != null)
+            {
+                if (m_mr != null)
+                {
+                    m_mr.material = m_oCurFrame.m_hMaterial;
+                    m_mf.mesh     = m_oCurFrame.m_sprite;
+                }
+            }
+            
+            CFESpriteInstUpdater.SetCurrentActionTime(this,0.0f);
+            
+            SetupScale(gameObject);
+
+            // 
+            m_bOneActionOneFrame = (m_poSprite.m_oActions.Count == 1) && (m_oCurAction.m_oSeq.Count == 1);
+        }
+        
+        public void SetAction(string _sAction)
+        {
+            if (m_poSprite == null) return;
+            SetAction(m_poSprite.iGetActionIdx(_sAction));
+        }
+    }
+}
