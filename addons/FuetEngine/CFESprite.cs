@@ -5,7 +5,7 @@ using CFEVect2 = Godot.Vector2;
 namespace FuetEngine
 {
     // ----------------------------------------------------------------------------
-    public class CFESpriteFrame
+    public class CFESpriteFrame : Godot.Resource
     {
         /// Should we use the same scale of X for the U tex coord?
         public bool m_bScaleXUEqually;
@@ -207,10 +207,10 @@ namespace FuetEngine
         SFSPM_NUM,
     };
 
-    public class CFESpriteAction : CFENamedObject
+    public class CFESpriteAction : Godot.Resource
     {
         /// Default constructor for the class
-        public CFESpriteAction(string _sName) : base(_sName) { }
+        public CFESpriteAction(string _sName) { SetName(_sName); }
 
         // ----------------------------------------------------------------------------------------------------
         /// Returns the sprite frame number corresponding to the given time, searching from SeekFrame.
@@ -334,13 +334,29 @@ namespace FuetEngine
         public List<CFESpriteFrame> m_oSeq = new List<CFESpriteFrame>();
 
 
-        // ----------------------------------------------------------------------------
+        // --------------------------------------------------------------------
+		/// Default constructor of this object. <summary>
+        // --------------------------------------------------------------------
+
+		/// Sets the name for this object.
+        public new void SetName(string _name)
+        {
+            ResourceName = _name;
+        }
+        
+    	/// Retrieves the name of this object.
+		public string sGetName()
+		{
+			return ResourceName;
+		}
+
+        // --------------------------------------------------------------------
         // Utility functions
-        // ----------------------------------------------------------------------------
+        // --------------------------------------------------------------------
         // PRE: 
         //	0 <= _rTime <= m_rActionTime
         //	0 <= _uiSeekFrame < uiMaxFrames
-        // ----------------------------------------------------------------------------
+        // --------------------------------------------------------------------
         protected int uiSafeGetFrame(CFESpriteAction _poAction, float _rTime, int _uiSeekFrame)
         {
             int uiStartFrame;
@@ -373,9 +389,9 @@ namespace FuetEngine
     };
 
     // ----------------------------------------------------------------------------
-    public class CFESprite : CFENamedObject
+    public class CFESprite : Godot.Resource
     {
-        public CFESprite() : base("") { }
+        public CFESprite() { SetName(""); }
 
         /// Retrieves an action by the given index.
         public CFESpriteAction poGetAction(int _uiActionIdx)
@@ -406,5 +422,19 @@ namespace FuetEngine
         /// CFESpriteSequence list that builds the different animation one sprite may contain
         /// Reference to the sprite material used by this sprite ...
         public List<CFESpriteAction> m_oActions = new List<CFESpriteAction>();
+
+        // --------------------------------------------------------------------
+	    /// Sets the name for this object.
+        public new void SetName(string _name)
+        {
+            ResourceName = _name;
+        }
+
+    	/// Retrieves the name of this object.
+		public string sGetName()
+		{
+			return ResourceName;
+		}
+        // --------------------------------------------------------------------
     };
 }

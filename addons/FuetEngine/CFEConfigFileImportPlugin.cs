@@ -45,22 +45,32 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 	}
 	public override string GetSaveExtension()
 	{
-		return "config.tscn";
+		return "tscn";
 	}
 
 	public override int Import(string _sourceFile, string _savePath, Godot.Collections.Dictionary _options, Godot.Collections.Array _r_platform_variants, Godot.Collections.Array _r_gen_files)
 	{
-		Node2D node = ConvertConfigToNode(_sourceFile);
+		// Node2D node = ConvertConfigToNode(_sourceFile);
+
+		string filenameWithoutExtension = _sourceFile.Substr(0,_sourceFile.Length - 4); 
+		CFESprite spriteResource = CFESpriteLoader.poLoad(filenameWithoutExtension, false);
+
+		// Node2D node = new Node2D();		
+		
+		CFESpriteInstance node = new CFESpriteInstance();
+		node.Init(spriteResource);
+		
+		//node.AddChild(node2);
+		// node2.Owner = node;
+
 		if (node != null)
 		{
-			GD.Print("ChildCount: " + node.GetChildCount().ToString());
-
 			var packedScene = new PackedScene();
 			Godot.Error error = packedScene.Pack(node);
 			if(error == Error.Ok)
 			{
 				GD.Print(_savePath);
-				Godot.Error saveError = ResourceSaver.Save(_savePath, packedScene);
+				Godot.Error saveError = ResourceSaver.Save(_savePath, packedScene, Godot.ResourceSaver.SaverFlags.BundleResources | Godot.ResourceSaver.SaverFlags.RelativePaths);
 				if (saveError != Error.Ok)
 				{
 					return 0;

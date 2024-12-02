@@ -10,9 +10,13 @@ config_version=4
 
 [application]
 
-config/name="FuetEngineSpriteTest"
+config/name="FuetEngineGodotPort"
 run/main_scene="res://Scenes/test.tscn"
 config/icon="res://icon.png"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/FuetEngine/plugin.cfg" )
 
 [gui]
 

@@ -32,6 +32,8 @@
 			"C:/utils/Godot_v3.5.3/GodotSharp/Api/Debug",
 			"C:/utils/Godot_v3.5.3/GodotSharp/Api/Release",
 			"C:/utils/Godot_v3.6/GodotSharp/Api/Debug",
+			"C:/utils/Godot_v3.6/GodotSharp/Api/Release",
+			"C:/utils/Godot_v3.6/GodotSharp/Api/Debug",
 			"C:/utils/Godot_v3.6/GodotSharp/Api/Release"
 		],
 		"razor.server.trace": "None",
@@ -129,7 +131,7 @@
 					"/property:GenerateFullPaths=true",
 					// Do not generate summary otherwise it leads to duplicate errors in Problems panel
 					"/consoleloggerparameters:NoSummary"
-					// , "FuetEngineSpriteTest.csproj"
+					// , "FuetEngineGodotPort.csproj"
 				],
 				"problemMatcher": "$msCompile",
 				"group": "build",

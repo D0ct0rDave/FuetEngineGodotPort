@@ -10,13 +10,12 @@ namespace FuetEngine
     public class CFESpriteLoader
     {
         // ----------------------------------------------------------------------------
-        /*
-        public static CFESprite poBuildBasicSprite(string _hMat,string _sSpriteName)
+        public static CFESprite poBuildBasicSprite(string _hMat, string _spriteName)
         {
             CFESprite poSprite = new CFESprite();
-            poSprite.SetName(_sSpriteName);
+            poSprite.SetName(_spriteName);
 
-            CFESpriteAction oAction = new CFESpriteAction("");
+            CFESpriteAction oAction = new CFESpriteAction("default");
             oAction.m_ePlayMode     = ESFSPlayMode.SFSPM_ONESHOT;
 	        oAction.m_rActionTime   = 0.0f;
 	        oAction.m_rRandStartTime = 0.0f;
@@ -39,13 +38,13 @@ namespace FuetEngine
 
 			int uiTX = 0; 
             int uiTY = 0; 
-            if ((_hMat == null) && (_hMat.mainTexture == null))
+            /*
+            if ((_hMat != null) && (_hMat.mainTexture != null))
             {
-                uiTX = _hMat.mainTexture.width;
-                uiTY = _hMat.mainTexture.height;
-                // CFEMaterialMgr::I()->bGetMaterialProperty(_hMat, CFEString("DiffuseMap.Width") ,(FEPointer)&uiTX);
-                // CFEMaterialMgr::I()->bGetMaterialProperty(_hMat, CFEString("DiffuseMap.Height"),(FEPointer)&uiTY);
+                CFEMaterialMgr::I()->bGetMaterialProperty(_hMat, CFEString("DiffuseMap.Width") ,(FEPointer)&uiTX);
+                CFEMaterialMgr::I()->bGetMaterialProperty(_hMat, CFEString("DiffuseMap.Height"),(FEPointer)&uiTY);
             }
+            */
 
             oFrame.m_oSize.x    = uiTX;
             oFrame.m_oSize.y    = uiTY;
@@ -57,7 +56,6 @@ namespace FuetEngine
 
             return( poSprite );
         }
-        */
 
         /// Loads an sprite from a given file
         public static CFESprite poLoad(string _sFilename,bool _bLoadMaterials)
@@ -77,14 +75,7 @@ namespace FuetEngine
 
                 /// Retrieves the filename portion of a full qualified filename.
                 string sMaterial = sWorkingDir + CFEStringUtils.sGetFilename(_sFilename);
-                /*
-                TODO: Material hMat = (_bLoadMaterials) ? CFEMaterialMgr.poLoad(sMaterial) : null;
-
-                if (hMat != null)
-                    return ( poBuildBasicSprite(hMat, sMaterial) );
-                else
-                */
-                    return (null);
+                return ( poBuildBasicSprite(sMaterial, sFilename) );
             }
 
             CFESprite poSprite = new CFESprite();
