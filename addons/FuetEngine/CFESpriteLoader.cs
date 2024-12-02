@@ -52,7 +52,12 @@ namespace FuetEngine
             // oFrame.GenerateSpriteGeometry(CFEVect2.zero,CFEVect2.one);
 
             oAction.m_oSeq.Add(oFrame);
+            oAction.AddChild(oFrame);
+            oFrame.Owner = oAction;
+
             poSprite.m_oActions.Add(oAction);
+            poSprite.AddChild(oAction);
+            oAction.Owner = poSprite;
 
             return( poSprite );
         }
@@ -179,7 +184,10 @@ namespace FuetEngine
 							// TODO: oFrame.GenerateSpriteGeometry(CFEVect2.zero,CFEVect2.one);
 
 							oAction.m_rActionTime += oFrame.m_rFrameTime;
-                            oAction.m_oSeq.Add( oFrame );							
+                            oAction.m_oSeq.Add( oFrame );
+
+                            oAction.AddChild(oFrame);
+                            oFrame.Owner = oAction;					
                         }
                     }
                 }
@@ -225,6 +233,9 @@ namespace FuetEngine
 
                         oAction.m_rActionTime += oFrame.m_rFrameTime;
                         oAction.m_oSeq.Add(oFrame);
+
+                        oAction.AddChild(oFrame);
+                        oFrame.Owner = oAction;
                     }
                 }
 
@@ -353,10 +364,16 @@ namespace FuetEngine
 
                         oAction.m_rActionTime += oFrame.m_rFrameTime;
                         oAction.m_oSeq.Add(oFrame);
+
+                        oAction.AddChild(oFrame);
+                        oFrame.Owner = oAction;
                     }
                 }
 
                 poSprite.m_oActions.Add(oAction);
+                
+                poSprite.AddChild(oAction);
+                oAction.Owner = poSprite;	
             }
 
             return (poSprite);

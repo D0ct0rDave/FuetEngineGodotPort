@@ -1,6 +1,11 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [sub_resource type="CSharpScript" id=1]
 
+[sub_resource type="CSharpScript" id=2]
+
 [node name="" type="Node2D"]
 script = SubResource( 1 )
+
+[node name="@@18" type="Node" parent="."]
+script = SubResource( 2 )

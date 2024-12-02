@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,13 +32,16 @@ namespace FuetEngine
         {
             return(m_poSprite != null);
         }
-        
+
         public void Init(CFESprite _sprite)
         {
             // This prevents the created components to be saved when the scene is saved.
             // hideFlags = HideFlags.HideAndDontSave;
             m_poSprite = _sprite;
             
+            AddChild(m_poSprite);
+            m_poSprite.Owner = this;
+
             if (m_poSprite != null)
             {
                 m_uiSpriteAction = 0;

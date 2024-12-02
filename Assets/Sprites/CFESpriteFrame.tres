@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/FuetEngine/CFESpriteFrame.cs" type="Script" id=1]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource( 1 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oSize = Vector2( 0, 0 )
+m_rDelay = 0.0
+m_rBlendTime = 0.0
+m_rFrameTime = 0.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0, 0 )
+m_hMaterial = null

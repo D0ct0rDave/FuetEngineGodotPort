@@ -59,7 +59,7 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 		
 		CFESpriteInstance node = new CFESpriteInstance();
 		node.Init(spriteResource);
-		
+
 		//node.AddChild(node2);
 		// node2.Owner = node;
 
@@ -70,7 +70,7 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 			if(error == Error.Ok)
 			{
 				GD.Print(_savePath);
-				Godot.Error saveError = ResourceSaver.Save(_savePath, packedScene, Godot.ResourceSaver.SaverFlags.BundleResources | Godot.ResourceSaver.SaverFlags.RelativePaths);
+				Godot.Error saveError = ResourceSaver.Save(_savePath, packedScene, /* Godot.ResourceSaver.SaverFlags.BundleResources | */ Godot.ResourceSaver.SaverFlags.RelativePaths);
 				if (saveError != Error.Ok)
 				{
 					return 0;
@@ -80,6 +80,7 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 
 		return 0;
 	}
+
 	private Node2D ConvertConfigToNode(string _sFilename)
 	{
 		string extension = _sFilename.Substring(_sFilename.Length-3);
