@@ -16,7 +16,7 @@ config/icon="res://icon.png"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/FuetEngine/plugin.cfg" )
+enabled=PoolStringArray(  )
 
 [gui]
 
@@ -24,7 +24,7 @@ common/drop_mouse_on_gui_input_disabled=true
 
 [mono]
 
-project/assembly_name="FuetEngineSpriteTest"
+project/assembly_name="FuetEngineGodotPort"
 
 [physics]
 

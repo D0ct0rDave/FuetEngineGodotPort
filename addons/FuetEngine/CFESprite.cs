@@ -5,9 +5,11 @@ using CFEVect2 = Godot.Vector2;
 
 namespace FuetEngine
 {
-    // ----------------------------------------------------------------------------
+    // ------------------------------------------------------------------------
     public class CFESprite : Node
     {
+        [Export]
+        public List<CFESpriteAction> m_oActions = new List<CFESpriteAction>();
         // --------------------------------------------------------------------
         // Make sure you provide a parameterless constructor.
         public CFESprite() { SetName(""); }
@@ -41,19 +43,19 @@ namespace FuetEngine
 		/// Sets the name for this object.
         public new void SetName(string _name)
         {
-            m_name = _name;
+            Name = _name;
         }
         
     	/// Retrieves the name of this object.
 		public string sGetName()
 		{
-			return m_name;
+			return Name;
 		}
 
-        private string m_name;
-        // --------------------------------------------------------------------
-        [Export]        
-        public List<CFESpriteAction> m_oActions = new List<CFESpriteAction>();
+        public static explicit operator CFESprite(Reference v)
+        {
+            throw new NotImplementedException();
+        }
         // --------------------------------------------------------------------
     };
 }

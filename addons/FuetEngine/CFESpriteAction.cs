@@ -21,12 +21,6 @@ namespace FuetEngine
     // ------------------------------------------------------------------------
     public class CFESpriteAction : Node
     {
-        // Make sure you provide a parameterless constructor.
-        public CFESpriteAction()
-        {
-        }
-        /// Default constructor for the class
-        public CFESpriteAction(string _sName) { SetName(_sName); }
         /// Total time of one loop of the animation.
         [Export]
         public float m_rActionTime = 0.0f;
@@ -43,6 +37,12 @@ namespace FuetEngine
         [Export]
         public List<CFESpriteFrame> m_oSeq = new List<CFESpriteFrame>();
         // --------------------------------------------------------------------
+        // Make sure you provide a parameterless constructor.
+        public CFESpriteAction()
+        {
+        }
+        /// Default constructor for the class
+        public CFESpriteAction(string _sName) { SetName(_sName); }
         /// Retrieves the action play mode.
         public ESFSPlayMode eGetPlayMode() { return (m_ePlayMode); }
         /// Retrieves the maximum time of the animation without looping or -1 if infinite (when looping)
@@ -53,16 +53,14 @@ namespace FuetEngine
 		/// Sets the name for this object.
         public new void SetName(string _name)
         {
-            m_name = _name;
+            Name = _name;
         }
         
     	/// Retrieves the name of this object.
 		public string sGetName()
 		{
-			return m_name;
+			return Name;
 		}
-
-        private string m_name;
         // --------------------------------------------------------------------
         /// Returns the sprite frame number corresponding to the given time, searching from SeekFrame.
         public int uiGetFrame(float _rTime, int _uiSeekFrame)

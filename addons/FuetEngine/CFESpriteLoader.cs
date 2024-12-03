@@ -4,24 +4,71 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using CFEVect2 = Godot.Vector2;
+using Godot;
+using Object = Godot.Object;
 
 namespace FuetEngine
-{
-    public class CFESpriteLoader
+{   
+    public static class CFESpriteLoader
     {
+        public static T SafelySetScript<T>(this Node node, Resource resource) where T : Node
+        {
+            var godotObjectId = node.GetInstanceId();
+            // Replaces old C# instance with a new one. Old C# instance is disposed.
+            // node.SetScript(resource);
+            node.SetScript(Godot.Object.WeakRef(resource));
+            // Get the new C# instance
+            return GD.InstanceFromId(godotObjectId) as T;
+        }
+
+        public static T SafelySetScript<T>(this Node node, string resource) where T : Node
+        {
+            return SafelySetScript<T>(node, ResourceLoader.Load(resource));
+        }
+        
+        public static T CreateObject<T>(string _script) where T : Node, new()
+        {
+            Script spriteScript = ResourceLoader.Load("res://addons/FuetEngine/CFESprite.cs") as Script;
+            Node node = new T();
+            return SafelySetScript<T>(node, spriteScript);
+        }
         // ----------------------------------------------------------------------------
         public static CFESprite poBuildBasicSprite(string _hMat, string _spriteName)
         {
-            CFESprite poSprite = new CFESprite();
-            poSprite.SetName(_spriteName);
+            /*
+            Script spriteScript = ResourceLoader.Load("res://addons/FuetEngine/CFESprite.cs") as Script;
+            Node spriteNode = new CFESprite(); // Node();
+            spriteNode.SetScript(Godot.Object.WeakRef(spriteScript));
+            */
 
-            CFESpriteAction oAction = new CFESpriteAction("default");
+            CFESprite poSprite = CreateObject<CFESprite>("res://addons/FuetEngine/CFESprite.cs");
+            poSprite.SetName(_spriteName);
+            Node spriteNode = poSprite;
+
+            /*
+            Script spriteActionScript = CreateObject<CFESpriteAction>("res://addons/FuetEngine/CFESpriteAction.cs") as Script;
+            Node spriteActionNode = new CFESpriteAction(); // Node();
+            spriteActionNode.SetScript(Godot.Object.WeakRef(spriteActionScript));
+            */
+            
+            CFESpriteAction oAction = CreateObject<CFESpriteAction>("res://addons/FuetEngine/CFESpriteAction.cs");
+            Node spriteActionNode = oAction; 
+            oAction.SetName("default");
             oAction.m_ePlayMode     = ESFSPlayMode.SFSPM_ONESHOT;
 	        oAction.m_rActionTime   = 0.0f;
 	        oAction.m_rRandStartTime = 0.0f;
             oAction.m_eBlendMode    = EFEBlendMode.BM_ALPHA;
+            
+            /*
+            Script spriteFrameScript = ResourceLoader.Load("res://addons/FuetEngine/CFESpriteFrame.cs") as Script;
+            Node spriteFrameNode = new CFESpriteFrame(); // Node();
+            spriteFrameNode.SetScript(Godot.Object.WeakRef(spriteFrameScript));
+            spriteFrameNode.Name = "SpriteFrame";
+            */
 
-            CFESpriteFrame oFrame   = new CFESpriteFrame();
+            CFESpriteFrame oFrame  = CreateObject<CFESpriteFrame>("res://addons/FuetEngine/CFESpriteFrame.cs");
+            Node spriteFrameNode = oFrame;
+            oFrame.Name = "SpriteFrame";
             oFrame.m_oPivot     = new CFEVect2(0.0f, 0.0f);
             oFrame.m_oUV.m_oIni = new CFEVect2(0.0f, 0.0f);
             oFrame.m_oUV.m_oEnd = new CFEVect2(1.0f, 1.0f);
@@ -52,14 +99,14 @@ namespace FuetEngine
             // oFrame.GenerateSpriteGeometry(CFEVect2.zero,CFEVect2.one);
 
             oAction.m_oSeq.Add(oFrame);
-            oAction.AddChild(oFrame);
-            oFrame.Owner = oAction;
+            spriteActionNode.AddChild(spriteFrameNode);
+            spriteFrameNode.Owner = spriteActionNode;
 
             poSprite.m_oActions.Add(oAction);
-            poSprite.AddChild(oAction);
-            oAction.Owner = poSprite;
+            poSprite.AddChild(spriteNode);
+            spriteNode.Owner = poSprite;
 
-            return( poSprite );
+            return spriteNode as CFESprite;
         }
 
         /// Loads an sprite from a given file
@@ -83,7 +130,17 @@ namespace FuetEngine
                 return ( poBuildBasicSprite(sMaterial, sFilename) );
             }
 
-            CFESprite poSprite = new CFESprite();
+            CFESprite poSprite = CreateObject<CFESprite>("res://addons/FuetEngine/CFESprite.cs");
+            Node spriteNode = poSprite;
+
+            /*
+            Script spriteScript = ResourceLoader.Load<Script>("res://addons/FuetEngine/CFESprite.cs");
+            Node spriteNode = new Node();
+            spriteNode.SetScript(Godot.Object.WeakRef(spriteScript));
+            return spriteNode as CFESprite;
+
+            CFESprite poSprite = spriteNode as CFESprite; // new CFESprite();
+            */
 
             // Retrieve sprite name
             poSprite.SetName(oConfig.sGetString("Sprite.Name", "nonamed"));
@@ -93,7 +150,18 @@ namespace FuetEngine
 
             for (int a = 0; a < uiNumActions; a++)
             {
-                CFESpriteAction oAction = new CFESpriteAction("");
+                /*
+                Script spriteActionScript = ResourceLoader.Load("res://addons/FuetEngine/CFESpriteAction.cs") as Script;
+                Node spriteActionNode = new CFESpriteFrame(); // Node();
+                spriteActionNode.SetScript(Godot.Object.WeakRef(spriteActionScript));
+
+                CFESpriteAction oAction = spriteActionNode as CFESpriteAction; // new CFESpriteAction("");
+                */
+                
+                CFESpriteAction oAction = CreateObject<CFESpriteAction>("res://addons/FuetEngine/CFESpriteAction.cs");
+                Node spriteActionNode = oAction; 
+                
+                oAction.SetName("default");
                 oAction.m_rActionTime = 0.0f;
 
                 string sAction = "Sprite.Action" + a;
@@ -164,7 +232,16 @@ namespace FuetEngine
                         for (uint i = 0; i < uiXFrames; i++)
                         {
                             // Create the frame sequence
-                            CFESpriteFrame oFrame = new CFESpriteFrame();
+                            /*
+                            Script spriteFrameScript = ResourceLoader.Load("res://addons/FuetEngine/CFESpriteFrame.cs") as Script;
+                            Node spriteFrameNode = new CFESpriteFrame(); // Node();
+                            spriteFrameNode.SetScript(Godot.Object.WeakRef(spriteFrameScript));
+
+                            CFESpriteFrame oFrame   = spriteFrameNode as CFESpriteFrame; // oFrame = new CFESpriteFrame();
+                            */
+                            CFESpriteFrame oFrame   = CreateObject<CFESpriteFrame>("res://addons/FuetEngine/CFESpriteFrame.cs");
+                            Node spriteFrameNode = oFrame;
+                            oFrame.Name = "Frame_" + j.ToString() + "_" + i.ToString();
 
                             oFrame.m_oPivot     = new CFEVect2(rPivotX, rPivotY);
                             oFrame.m_oUV.m_oIni = new CFEVect2((float)i * rXStep, (float)j * rYStep);
@@ -186,8 +263,8 @@ namespace FuetEngine
 							oAction.m_rActionTime += oFrame.m_rFrameTime;
                             oAction.m_oSeq.Add( oFrame );
 
-                            oAction.AddChild(oFrame);
-                            oFrame.Owner = oAction;					
+                            spriteActionNode.AddChild(spriteFrameNode);
+                            spriteFrameNode.Owner = spriteActionNode;					
                         }
                     }
                 }
@@ -215,8 +292,17 @@ namespace FuetEngine
                     for (uint i = 0; i < uiFrames; i++)
                     {
                         // Create the frame sequence
-                        CFESpriteFrame oFrame = new CFESpriteFrame();
-
+                        /*
+                        Script spriteFrameScript = ResourceLoader.Load("res://addons/FuetEngine/CFESpriteFrame.cs") as Script;
+                        Node spriteFrameNode = new CFESpriteFrame(); // Node();
+                        spriteFrameNode.SetScript(Godot.Object.WeakRef(spriteFrameScript));
+                        CFESpriteFrame oFrame   = spriteFrameNode as CFESpriteFrame; // new CFESpriteFrame();
+                        */
+                        
+                        CFESpriteFrame oFrame = CreateObject<CFESpriteFrame>("res://addons/FuetEngine/CFESpriteFrame.cs");
+                        Node spriteFrameNode = oFrame;
+                        oFrame.Name = "Frame_" + i.ToString();
+                        
                         string sFrameTex = sMaterial + i;
 
                         oFrame.m_oPivot     = new CFEVect2(rPivotX, rPivotY);
@@ -234,8 +320,8 @@ namespace FuetEngine
                         oAction.m_rActionTime += oFrame.m_rFrameTime;
                         oAction.m_oSeq.Add(oFrame);
 
-                        oAction.AddChild(oFrame);
-                        oFrame.Owner = oAction;
+                        spriteActionNode.AddChild(spriteFrameNode);
+                        spriteFrameNode.Owner = spriteActionNode;	
                     }
                 }
 
@@ -252,7 +338,17 @@ namespace FuetEngine
                     // Create the frame sequence
                     for (uint i = 0; i < uiFrames; i++)
                     {
-                        CFESpriteFrame oFrame = new CFESpriteFrame();
+                        /*
+                        Script spriteFrameScript = ResourceLoader.Load("res://addons/FuetEngine/CFESpriteFrame.cs") as Script;
+                        Node spriteFrameNode = new CFESpriteFrame(); // Node();
+                        spriteFrameNode.SetScript(Godot.Object.WeakRef(spriteFrameScript));
+                        spriteFrameNode.Name = "Frame_" + i.ToString();
+                        CFESpriteFrame oFrame   = spriteFrameNode as CFESpriteFrame; // new CFESpriteFrame();
+                        */
+                        
+                        CFESpriteFrame oFrame = CreateObject<CFESpriteFrame>("res://addons/FuetEngine/CFESpriteFrame.cs");
+                        Node spriteFrameNode = oFrame;
+                        oFrame.Name = "Frame_" + i.ToString();
 
                         sFCVar = sFVar + ".Frame" + i;
                         string sFrameVar;
@@ -365,18 +461,18 @@ namespace FuetEngine
                         oAction.m_rActionTime += oFrame.m_rFrameTime;
                         oAction.m_oSeq.Add(oFrame);
 
-                        oAction.AddChild(oFrame);
-                        oFrame.Owner = oAction;
+                        spriteActionNode.AddChild(spriteFrameNode);
+                        spriteFrameNode.Owner = spriteActionNode;
                     }
                 }
 
                 poSprite.m_oActions.Add(oAction);
                 
-                poSprite.AddChild(oAction);
-                oAction.Owner = poSprite;	
+                spriteNode.AddChild(spriteNode);
+                spriteActionNode.Owner = spriteNode;
             }
 
-            return (poSprite);
+            return spriteNode as CFESprite;
         }
 
         // ----------------------------------------------------------------------------
@@ -384,7 +480,7 @@ namespace FuetEngine
         // Utility functions
         // ----------------------------------------------------------------------------
         // ----------------------------------------------------------------------------
-        static protected ESFSPlayMode eGetPlayMode(string _sString)
+        private static ESFSPlayMode eGetPlayMode(string _sString)
         {
             if (_sString == "ONESHOT")
                 return(ESFSPlayMode.SFSPM_ONESHOT);
@@ -401,7 +497,7 @@ namespace FuetEngine
             return(ESFSPlayMode.SFSPM_NONE);
         }
         // ----------------------------------------------------------------------------
-        static protected EFEBlendMode eGetBlendMode(string _sString)
+        private static EFEBlendMode eGetBlendMode(string _sString)
         {
             if (_sString == "ALPHA")
                 return (EFEBlendMode.BM_ALPHA);
@@ -442,7 +538,7 @@ namespace FuetEngine
             return (EFEBlendMode.BM_NONE);
         }
         // ----------------------------------------------------------------------------
-        static protected uint uiGetWrapMode(string _sString)
+        private static uint uiGetWrapMode(string _sString)
         {
             if (_sString == "REPEAT")
                 return (1);
@@ -453,7 +549,7 @@ namespace FuetEngine
             return (0);
         }
         // ----------------------------------------------------------------------------
-        static protected uint uiGetFilter(string _sString)
+        private static uint uiGetFilter(string _sString)
         {
             if (_sString == "NEAREST")
                 return (0);
