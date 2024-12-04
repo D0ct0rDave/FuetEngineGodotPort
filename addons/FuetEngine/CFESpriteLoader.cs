@@ -11,67 +11,98 @@ namespace FuetEngine
 {   
     public static class CFESpriteLoader
     {
-        public static T SafelySetScript<T>(this Node node, Resource resource) where T : Node
+        // ------------------------------------------------------------------------
+        private static Rect2 GetRectFromSpriteFrame(CFESpriteFrame _spriteFrame, float _texWidth, float _texHeight)
         {
-            var godotObjectId = node.GetInstanceId();
-            // Replaces old C# instance with a new one. Old C# instance is disposed.
-            // node.SetScript(resource);
-            node.SetScript(Godot.Object.WeakRef(resource));
-            // Get the new C# instance
-            return GD.InstanceFromId(godotObjectId) as T;
-        }
+            Rect2 rect = new Rect2();
+            rect.Position = new Vector2(_spriteFrame.m_oUVIni.x*_texWidth, 
+                                        _spriteFrame.m_oUVIni.y*_texHeight);
 
-        public static T SafelySetScript<T>(this Node node, string resource) where T : Node
+            rect.Size = new Vector2((_spriteFrame.m_oUVEnd.x - _spriteFrame.m_oUVIni.x)*_texWidth,
+                                    (_spriteFrame.m_oUVEnd.y - _spriteFrame.m_oUVIni.y)*_texHeight);
+
+            return rect;
+        } 	
+        // ------------------------------------------------------------------------
+        private static void ProcessSpriteFrame(ref CFESpriteFrame _spriteFrame)
         {
-            return SafelySetScript<T>(node, ResourceLoader.Load(resource));
-        }
-        
-        public static T CreateObject<T>(string _script) where T : Node, new()
-        {
-            Script spriteScript = ResourceLoader.Load("res://addons/FuetEngine/CFESprite.cs") as Script;
-            Node node = new T();
-            return SafelySetScript<T>(node, spriteScript);
+            string textureFilename = _spriteFrame.m_sMaterial + ".png";
+            Texture texture = ResourceLoader.Load<Texture>(textureFilename);
+            if (texture == null)
+            {
+                return;
+            }
+            // texture.ResourceLocalToScene = true;
+            int textureWidth = texture.GetWidth();
+            int textureHeight = texture.GetHeight();
+            Rect2 region = GetRectFromSpriteFrame(_spriteFrame, textureWidth, textureHeight);
+
+            // set texture
+            if (
+                   (region.Size.x == textureWidth)
+                && (region.Size.y == textureHeight)
+                && (region.Position.x == 0.0f)
+                && (region.Position.y == 0.0f)
+                )
+            {
+                _spriteFrame.m_hMaterial = texture;
+            }
+            else
+            {
+                AtlasTexture atlasTexture = new AtlasTexture();
+                atlasTexture.Atlas = texture;
+                atlasTexture.ResourceLocalToScene = true;
+                atlasTexture.Region = region;
+                
+                _spriteFrame.m_hMaterial = atlasTexture;
+            }
+
+            // compute scale
+            _spriteFrame.m_oScale = new Vector2(_spriteFrame.m_oSize.x / region.Size.x, _spriteFrame.m_oSize.y / region.Size.y);
+            
+            // 1OverDims
+            float r1OverW = 0.0f;
+            float r1OverH = 0.0f;
+
+            if (_spriteFrame.m_bUWorldCoords)
+            {
+                int uiTX = textureWidth;
+                if (uiTX == 0) uiTX = 1;
+                r1OverW = 1.0f / (float)uiTX;
+            }
+
+            if (_spriteFrame.m_bVWorldCoords)
+            {
+                int uiTY = textureHeight;
+                if (uiTY == 0) uiTY = 1;
+                r1OverH = 1.0f / (float)uiTY;                
+            }                                
+            
+            _spriteFrame.m_o1OverDims = new CFEVect2(r1OverW, r1OverH);
         }
         // ----------------------------------------------------------------------------
         public static CFESprite poBuildBasicSprite(string _hMat, string _spriteName)
         {
-            /*
             Script spriteScript = ResourceLoader.Load("res://addons/FuetEngine/CFESprite.cs") as Script;
-            Node spriteNode = new CFESprite(); // Node();
-            spriteNode.SetScript(Godot.Object.WeakRef(spriteScript));
-            */
+            Script spriteActionScript = ResourceLoader.Load("res://addons/FuetEngine/CFESpriteAcrion.cs") as Script;
+            Script spriteFrameScript = ResourceLoader.Load("res://addons/FuetEngine/CFESpriteFrame.cs") as Script;
 
-            CFESprite poSprite = CreateObject<CFESprite>("res://addons/FuetEngine/CFESprite.cs");
-            poSprite.SetName(_spriteName);
-            Node spriteNode = poSprite;
+            CFESprite oSprite = Support.CreateObject(spriteScript) as CFESprite;
+            oSprite.Name = _spriteName;
 
-            /*
-            Script spriteActionScript = CreateObject<CFESpriteAction>("res://addons/FuetEngine/CFESpriteAction.cs") as Script;
-            Node spriteActionNode = new CFESpriteAction(); // Node();
-            spriteActionNode.SetScript(Godot.Object.WeakRef(spriteActionScript));
-            */
-            
-            CFESpriteAction oAction = CreateObject<CFESpriteAction>("res://addons/FuetEngine/CFESpriteAction.cs");
-            Node spriteActionNode = oAction; 
-            oAction.SetName("default");
+            CFESpriteAction oAction = Support.CreateObject(spriteActionScript) as CFESpriteAction;
+            oAction.Name = "default";            
             oAction.m_ePlayMode     = ESFSPlayMode.SFSPM_ONESHOT;
 	        oAction.m_rActionTime   = 0.0f;
 	        oAction.m_rRandStartTime = 0.0f;
             oAction.m_eBlendMode    = EFEBlendMode.BM_ALPHA;
             
-            /*
-            Script spriteFrameScript = ResourceLoader.Load("res://addons/FuetEngine/CFESpriteFrame.cs") as Script;
-            Node spriteFrameNode = new CFESpriteFrame(); // Node();
-            spriteFrameNode.SetScript(Godot.Object.WeakRef(spriteFrameScript));
-            spriteFrameNode.Name = "SpriteFrame";
-            */
 
-            CFESpriteFrame oFrame  = CreateObject<CFESpriteFrame>("res://addons/FuetEngine/CFESpriteFrame.cs");
-            Node spriteFrameNode = oFrame;
+            CFESpriteFrame oFrame = Support.CreateObject(spriteFrameScript) as CFESpriteFrame;
             oFrame.Name = "SpriteFrame";
             oFrame.m_oPivot     = new CFEVect2(0.0f, 0.0f);
-            oFrame.m_oUV.m_oIni = new CFEVect2(0.0f, 0.0f);
-            oFrame.m_oUV.m_oEnd = new CFEVect2(1.0f, 1.0f);
+            oFrame.m_oUVIni = new CFEVect2(0.0f, 0.0f);
+            oFrame.m_oUVEnd = new CFEVect2(1.0f, 1.0f);
             oFrame.m_rBlendTime = 0.0f;
             oFrame.m_rDelay     = 0.0f;
             oFrame.m_rStartTime = 0.0f;
@@ -82,31 +113,12 @@ namespace FuetEngine
 	        oFrame.m_bScaleYVEqually = false;
 	        oFrame.m_bUWorldCoords = false;
 	        oFrame.m_bVWorldCoords = false;
+            ProcessSpriteFrame(ref oFrame);
 
-			int uiTX = 0; 
-            int uiTY = 0; 
-            /*
-            if ((_hMat != null) && (_hMat.mainTexture != null))
-            {
-                CFEMaterialMgr::I()->bGetMaterialProperty(_hMat, CFEString("DiffuseMap.Width") ,(FEPointer)&uiTX);
-                CFEMaterialMgr::I()->bGetMaterialProperty(_hMat, CFEString("DiffuseMap.Height"),(FEPointer)&uiTY);
-            }
-            */
+            oAction.AddChild(oFrame);
+            oSprite.AddChild(oAction);
 
-            oFrame.m_oSize.x    = uiTX;
-            oFrame.m_oSize.y    = uiTY;
-            oFrame.m_hMaterial  = _hMat;
-            // oFrame.GenerateSpriteGeometry(CFEVect2.zero,CFEVect2.one);
-
-            oAction.m_oSeq.Add(oFrame);
-            spriteActionNode.AddChild(spriteFrameNode);
-            spriteFrameNode.Owner = spriteActionNode;
-
-            poSprite.m_oActions.Add(oAction);
-            poSprite.AddChild(spriteNode);
-            spriteNode.Owner = poSprite;
-
-            return spriteNode as CFESprite;
+            return oSprite;
         }
 
         /// Loads an sprite from a given file
@@ -129,38 +141,20 @@ namespace FuetEngine
                 string sMaterial = sWorkingDir + CFEStringUtils.sGetFilename(_sFilename);
                 return ( poBuildBasicSprite(sMaterial, sFilename) );
             }
+            
+            Script spriteScript = ResourceLoader.Load("res://addons/FuetEngine/CFESprite.cs") as Script;
+            Script spriteActionScript = ResourceLoader.Load("res://addons/FuetEngine/CFESpriteAction.cs") as Script;
+            Script spriteFrameScript = ResourceLoader.Load("res://addons/FuetEngine/CFESpriteFrame.cs") as Script;
 
-            CFESprite poSprite = CreateObject<CFESprite>("res://addons/FuetEngine/CFESprite.cs");
-            Node spriteNode = poSprite;
-
-            /*
-            Script spriteScript = ResourceLoader.Load<Script>("res://addons/FuetEngine/CFESprite.cs");
-            Node spriteNode = new Node();
-            spriteNode.SetScript(Godot.Object.WeakRef(spriteScript));
-            return spriteNode as CFESprite;
-
-            CFESprite poSprite = spriteNode as CFESprite; // new CFESprite();
-            */
-
-            // Retrieve sprite name
-            poSprite.SetName(oConfig.sGetString("Sprite.Name", "nonamed"));
+            CFESprite oSprite = Support.CreateObject(spriteScript) as CFESprite;
+            oSprite.Name = oConfig.sGetString("Sprite.Name", "nonamed");
 
             // Number of actions
             int uiNumActions = oConfig.iGetInteger("Sprite.NumActions", 0);
 
             for (int a = 0; a < uiNumActions; a++)
             {
-                /*
-                Script spriteActionScript = ResourceLoader.Load("res://addons/FuetEngine/CFESpriteAction.cs") as Script;
-                Node spriteActionNode = new CFESpriteFrame(); // Node();
-                spriteActionNode.SetScript(Godot.Object.WeakRef(spriteActionScript));
-
-                CFESpriteAction oAction = spriteActionNode as CFESpriteAction; // new CFESpriteAction("");
-                */
-                
-                CFESpriteAction oAction = CreateObject<CFESpriteAction>("res://addons/FuetEngine/CFESpriteAction.cs");
-                Node spriteActionNode = oAction; 
-                
+                CFESpriteAction oAction = Support.CreateObject(spriteActionScript) as CFESpriteAction;
                 oAction.SetName("default");
                 oAction.m_rActionTime = 0.0f;
 
@@ -232,21 +226,12 @@ namespace FuetEngine
                         for (uint i = 0; i < uiXFrames; i++)
                         {
                             // Create the frame sequence
-                            /*
-                            Script spriteFrameScript = ResourceLoader.Load("res://addons/FuetEngine/CFESpriteFrame.cs") as Script;
-                            Node spriteFrameNode = new CFESpriteFrame(); // Node();
-                            spriteFrameNode.SetScript(Godot.Object.WeakRef(spriteFrameScript));
-
-                            CFESpriteFrame oFrame   = spriteFrameNode as CFESpriteFrame; // oFrame = new CFESpriteFrame();
-                            */
-                            CFESpriteFrame oFrame   = CreateObject<CFESpriteFrame>("res://addons/FuetEngine/CFESpriteFrame.cs");
-                            Node spriteFrameNode = oFrame;
+                            CFESpriteFrame oFrame = Support.CreateObject(spriteFrameScript) as CFESpriteFrame;
                             oFrame.Name = "Frame_" + j.ToString() + "_" + i.ToString();
-
                             oFrame.m_oPivot     = new CFEVect2(rPivotX, rPivotY);
-                            oFrame.m_oUV.m_oIni = new CFEVect2((float)i * rXStep, (float)j * rYStep);
-                            oFrame.m_oUV.m_oEnd = new CFEVect2((float)(i + 1) * rXStep, (float)(j + 1) * rYStep);
-                            oFrame.m_hMaterial  = hMat;
+                            oFrame.m_oUVIni = new CFEVect2((float)i * rXStep, (float)j * rYStep);
+                            oFrame.m_oUVEnd = new CFEVect2((float)(i + 1) * rXStep, (float)(j + 1) * rYStep);
+                            oFrame.m_sMaterial  = hMat;
                             oFrame.m_o1OverDims = new CFEVect2(0, 0);
                             oFrame.m_oSize.x    = rFWidth;
                             oFrame.m_oSize.y    = rFHeight;
@@ -258,13 +243,10 @@ namespace FuetEngine
                             oFrame.m_bScaleYVEqually = false;
                             oFrame.m_bUWorldCoords = false;
                             oFrame.m_bVWorldCoords = false;
-							// TODO: oFrame.GenerateSpriteGeometry(CFEVect2.zero,CFEVect2.one);
+                            ProcessSpriteFrame(ref oFrame);
 
 							oAction.m_rActionTime += oFrame.m_rFrameTime;
-                            oAction.m_oSeq.Add( oFrame );
-
-                            spriteActionNode.AddChild(spriteFrameNode);
-                            spriteFrameNode.Owner = spriteActionNode;					
+                            oAction.AddChild(oFrame);
                         }
                     }
                 }
@@ -292,36 +274,24 @@ namespace FuetEngine
                     for (uint i = 0; i < uiFrames; i++)
                     {
                         // Create the frame sequence
-                        /*
-                        Script spriteFrameScript = ResourceLoader.Load("res://addons/FuetEngine/CFESpriteFrame.cs") as Script;
-                        Node spriteFrameNode = new CFESpriteFrame(); // Node();
-                        spriteFrameNode.SetScript(Godot.Object.WeakRef(spriteFrameScript));
-                        CFESpriteFrame oFrame   = spriteFrameNode as CFESpriteFrame; // new CFESpriteFrame();
-                        */
-                        
-                        CFESpriteFrame oFrame = CreateObject<CFESpriteFrame>("res://addons/FuetEngine/CFESpriteFrame.cs");
-                        Node spriteFrameNode = oFrame;
-                        oFrame.Name = "Frame_" + i.ToString();
-                        
                         string sFrameTex = sMaterial + i;
 
+                        CFESpriteFrame oFrame = Support.CreateObject(spriteFrameScript) as CFESpriteFrame;
+                        oFrame.Name = "Frame_" + i.ToString();
                         oFrame.m_oPivot     = new CFEVect2(rPivotX, rPivotY);
-                        oFrame.m_oUV.m_oIni = new CFEVect2(0, 0);
-                        oFrame.m_oUV.m_oEnd = new CFEVect2(1, 1);
-						oFrame.m_hMaterial  = sMaterial; // TODO: (_bLoadMaterials) ? CFEMaterialMgr.poLoad(sMaterial) : null;
+                        oFrame.m_oUVIni = new CFEVect2(0, 0);
+                        oFrame.m_oUVEnd = new CFEVect2(1, 1);
+						oFrame.m_sMaterial  = sMaterial;
                         oFrame.m_o1OverDims = new CFEVect2(0, 0);
                         oFrame.m_rStartTime = oAction.m_rActionTime;
                         oFrame.m_bScaleXUEqually = false;
                         oFrame.m_bScaleYVEqually = false;
                         oFrame.m_bUWorldCoords = false;
                         oFrame.m_bVWorldCoords = false;
-                        // TODO: oFrame.GenerateSpriteGeometry(CFEVect2.zero,CFEVect2.one);
+                        ProcessSpriteFrame(ref oFrame);
 
                         oAction.m_rActionTime += oFrame.m_rFrameTime;
-                        oAction.m_oSeq.Add(oFrame);
-
-                        spriteActionNode.AddChild(spriteFrameNode);
-                        spriteFrameNode.Owner = spriteActionNode;	
+                        oAction.AddChild(oFrame);
                     }
                 }
 
@@ -338,16 +308,7 @@ namespace FuetEngine
                     // Create the frame sequence
                     for (uint i = 0; i < uiFrames; i++)
                     {
-                        /*
-                        Script spriteFrameScript = ResourceLoader.Load("res://addons/FuetEngine/CFESpriteFrame.cs") as Script;
-                        Node spriteFrameNode = new CFESpriteFrame(); // Node();
-                        spriteFrameNode.SetScript(Godot.Object.WeakRef(spriteFrameScript));
-                        spriteFrameNode.Name = "Frame_" + i.ToString();
-                        CFESpriteFrame oFrame   = spriteFrameNode as CFESpriteFrame; // new CFESpriteFrame();
-                        */
-                        
-                        CFESpriteFrame oFrame = CreateObject<CFESpriteFrame>("res://addons/FuetEngine/CFESpriteFrame.cs");
-                        Node spriteFrameNode = oFrame;
+                        CFESpriteFrame oFrame = Support.CreateObject(spriteFrameScript) as CFESpriteFrame;
                         oFrame.Name = "Frame_" + i.ToString();
 
                         sFCVar = sFVar + ".Frame" + i;
@@ -356,7 +317,6 @@ namespace FuetEngine
                         // Material filename
                         sFrameVar = sFCVar + ".Material";
                         string sMaterial = sWorkingDir + oConfig.sGetString(sFrameVar, "");
-						// TODO: Material hMat = (_bLoadMaterials) ? CFEMaterialMgr.poLoad(sMaterial) : null;
                         string hMat = sMaterial;
 
                         // Wrap mode
@@ -420,33 +380,11 @@ namespace FuetEngine
                         sFrameVar = sFCVar + ".TexCoords.ScaleYVEqually";
                         bool bScaleYVEqually = oConfig.bGetBool(sFrameVar, false);
 
-                        // TODO: 
-                        float r1OverW = 0.0f;
-                        float r1OverH = 0.0f;
-
-                        /*
-                        if (bUWorldCoords && (hMat != null) && (hMat.mainTexture != null))
-                        {
-                            int uiTX = hMat.mainTexture.width;
-                            // CFEMaterialMgr::I()->bGetMaterialProperty(hMat, string("DiffuseMap.Width"), (FEPointer) & uiTX);
-                            if (uiTX == 0) uiTX = 1;
-                            r1OverW = 1.0f / (float)uiTX;
-                        }
-
-						if (bVWorldCoords && (hMat != null)&& (hMat.mainTexture != null))
-                        {
-                            int uiTY = hMat.mainTexture.height;
-                            // CFEMaterialMgr::I()->bGetMaterialProperty(hMat, string("DiffuseMap.Height"), (FEPointer) & uiTY);
-                            if (uiTY == 0) uiTY = 1;
-                            r1OverH = 1.0f / (float)uiTY;
-                        }
-                        */
-
-                        oFrame.m_hMaterial  = hMat;
-                        oFrame.m_o1OverDims = new CFEVect2(r1OverW, r1OverH);
+                        oFrame.m_sMaterial  = hMat;
+                        oFrame.m_o1OverDims = new CFEVect2(0, 0);
                         oFrame.m_oPivot     = new CFEVect2(rPivotX, rPivotY);
-                        oFrame.m_oUV.m_oIni = new CFEVect2(rIU, rIV);
-                        oFrame.m_oUV.m_oEnd = new CFEVect2(rFU, rFV);
+                        oFrame.m_oUVIni = new CFEVect2(rIU, rIV);
+                        oFrame.m_oUVEnd = new CFEVect2(rFU, rFV);
                         oFrame.m_oSize      = new CFEVect2(rFWidth, rFHeight);
                         oFrame.m_rDelay     = rDelayTime;
                         oFrame.m_rBlendTime = rBlendTime;
@@ -456,23 +394,17 @@ namespace FuetEngine
                         oFrame.m_bScaleYVEqually = bScaleYVEqually;
                         oFrame.m_bUWorldCoords = bUWorldCoords;
                         oFrame.m_bVWorldCoords = bVWorldCoords;
-						// oFrame.GenerateSprteGeometry(CFEVect2.zero,CFEVect2.one);
+						ProcessSpriteFrame(ref oFrame);
 
                         oAction.m_rActionTime += oFrame.m_rFrameTime;
-                        oAction.m_oSeq.Add(oFrame);
-
-                        spriteActionNode.AddChild(spriteFrameNode);
-                        spriteFrameNode.Owner = spriteActionNode;
+                        oAction.AddChild(oFrame);
                     }
                 }
 
-                poSprite.m_oActions.Add(oAction);
-                
-                spriteNode.AddChild(spriteNode);
-                spriteActionNode.Owner = spriteNode;
+                oSprite.AddChild(oAction);
             }
 
-            return spriteNode as CFESprite;
+            return oSprite;        
         }
 
         // ----------------------------------------------------------------------------

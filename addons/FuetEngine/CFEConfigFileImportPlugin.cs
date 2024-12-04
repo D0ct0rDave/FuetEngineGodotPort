@@ -1,4 +1,4 @@
-#if TOOLS
+	#if TOOLS
 using System;
 using Godot;
 using FuetEngine;
@@ -6,20 +6,22 @@ using FuetEngine;
 [Tool]
 public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 {
+	// ------------------------------------------------------------------------	
 	public override string GetImporterName()
 	{
 		return "CFEConfigFileImporter";
 	}
-
+	// ------------------------------------------------------------------------	
 	public override string GetVisibleName()
 	{
 		return "CFEConfigFile";
 	}
+	// ------------------------------------------------------------------------	
     public override string GetResourceType()
     {
         return "PackedScene";
     }
-    
+    // ------------------------------------------------------------------------	
 	public override Godot.Collections.Array GetImportOptions(int i)
     {
         var options = new Godot.Collections.Array();
@@ -30,7 +32,7 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 
         return options;
     }
-
+	// ------------------------------------------------------------------------	
     public override Godot.Collections.Array GetRecognizedExtensions()
     {
         // Extensiones de archivo que el importador puede manejar
@@ -39,29 +41,20 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 		array.Add( "spr");
 	    return array;
     }
+	// ------------------------------------------------------------------------	
 	public override int GetPresetCount()
 	{
 		return 0;
 	}
+	// ------------------------------------------------------------------------	
 	public override string GetSaveExtension()
 	{
 		return "tscn";
 	}
-
+	// ------------------------------------------------------------------------	
 	public override int Import(string _sourceFile, string _savePath, Godot.Collections.Dictionary _options, Godot.Collections.Array _r_platform_variants, Godot.Collections.Array _r_gen_files)
 	{
-		// Node2D node = ConvertConfigToNode(_sourceFile);
-
-		string filenameWithoutExtension = _sourceFile.Substr(0,_sourceFile.Length - 4); 
-		CFESprite spriteResource = CFESpriteLoader.poLoad(filenameWithoutExtension, false);
-
-		// Node2D node = new Node2D();		
-		
-		CFESpriteInstance node = new CFESpriteInstance();
-		node.Init(spriteResource);
-
-		//node.AddChild(node2);
-		// node2.Owner = node;
+		Node2D node = ConvertConfigToNode(_sourceFile);
 
 		if (node != null)
 		{
@@ -70,7 +63,7 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 			if(error == Error.Ok)
 			{
 				GD.Print(_savePath);
-				Godot.Error saveError = ResourceSaver.Save(_savePath, packedScene, /* Godot.ResourceSaver.SaverFlags.BundleResources | */ Godot.ResourceSaver.SaverFlags.RelativePaths);
+				Godot.Error saveError = ResourceSaver.Save(_savePath, packedScene/* , Godot.ResourceSaver.SaverFlags.BundleResources | Godot.ResourceSaver.SaverFlags.RelativePaths*/ );
 				if (saveError != Error.Ok)
 				{
 					return 0;
@@ -80,13 +73,37 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 
 		return 0;
 	}
-
+	// ------------------------------------------------------------------------	
 	private Node2D ConvertConfigToNode(string _sFilename)
 	{
 		string extension = _sFilename.Substring(_sFilename.Length-3);
+		string filenameWithoutExtension = _sFilename.Substr(0,_sFilename.Length - 4); 
+
 		if (extension == "spr")
 		{
-			return FESpriteImporter.Import(_sFilename);
+			CFESprite spriteResource = CFESpriteLoader.poLoad(filenameWithoutExtension, false);
+
+			CFESpriteInstance spriteInstance = Support.CreateObject<Node2D>("res://addons/FuetEngine/CFESpriteInstance.cs") as CFESpriteInstance;
+			spriteInstance.Name = "CFESpriteInstance";
+			spriteInstance.Init(spriteResource);
+
+			{
+				Sprite sprite = new Sprite();
+				sprite.Name = "MainFrame";
+				spriteInstance.AddChild(sprite);
+			}
+
+			{
+				Sprite sprite = new Sprite();
+				sprite.Name = "SecondaryFrame";
+				spriteInstance.AddChild(sprite);
+			}
+
+			Node childNode = spriteInstance as Node;
+			SetHierarchyOwner(ref childNode, childNode);
+			childNode.Owner = null;
+
+			return spriteInstance;
 		}
 		else if (extension == "hud")
 		{
@@ -95,5 +112,16 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 
 		return null;
 	}
+	// ------------------------------------------------------------------------	
+	private void SetHierarchyOwner(ref Node _root, Node _owner)
+	{
+		_root.Owner = _owner;
+		for (int i=0; i<_root.GetChildCount(); i++)
+		{
+			Node child = _root.GetChild(i);
+			SetHierarchyOwner(ref child, _owner);
+		}
+	}
+	// ------------------------------------------------------------------------	
 }
 #endif

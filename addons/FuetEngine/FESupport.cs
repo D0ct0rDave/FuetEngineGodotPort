@@ -1,9 +1,55 @@
 ﻿using System.IO;
 using CFEVect2 = Godot.Vector2;
+using Godot;
 
 namespace FuetEngine
 {
-    // ----------------------------------------------------------------------------
+	public static class Support
+	{
+		public static Node CreateObject(Script _script)
+		{
+			_script.SetupLocalToScene();
+
+			Node node = new Node();
+			var godotObjectId = node.GetInstanceId();
+			node.SetScript(_script);
+			return GD.InstanceFromId(godotObjectId) as Node;
+		}
+        public static Node CreateObject(string _scriptFilename)
+        {
+            return CreateObject(ResourceLoader.Load(_scriptFilename) as Script);
+        }
+
+        public static T CreateObject<T>(Script _script) where T : Node, new()
+        {
+			_script.SetupLocalToScene();
+
+			T node = new T();
+			var godotObjectId = node.GetInstanceId();
+			node.SetScript(_script);
+			return GD.InstanceFromId(godotObjectId) as T;
+        }
+
+		public static T CreateObject<T>(string _scriptFilename) where T : Node, new()
+        {
+            return CreateObject<T>(ResourceLoader.Load(_scriptFilename) as Script);
+        }
+
+		public static void SetObjectEnabled(Node _node, bool _enabled)
+		{
+			_node.SetPhysicsProcess(_enabled);
+			_node.SetPhysicsProcessInternal(_enabled);
+			_node.SetProcess(_enabled);
+			_node.SetProcessUnhandledInput(_enabled);
+			_node.SetProcessUnhandledKeyInput(_enabled);
+		}
+		public static void SetObjectEnabled(Node2D _node, bool _enabled)
+		{
+			_node.Visible = _enabled;
+			SetObjectEnabled(_node as Node, _enabled);
+		}
+	}
+	// ----------------------------------------------------------------------------
     /// Rendering Blending modes
     public enum EFEBlendMode
 	{
@@ -28,7 +74,6 @@ namespace FuetEngine
 		BM_DEFAULT = BM_ALPHA
 	};
 
-    [System.Serializable]
 	public class CFERect
 	{
         /// <summary>

@@ -8,33 +8,30 @@ namespace FuetEngine
     // ------------------------------------------------------------------------
     public class CFESprite : Node
     {
-        [Export]
-        public List<CFESpriteAction> m_oActions = new List<CFESpriteAction>();
-        // --------------------------------------------------------------------
         // Make sure you provide a parameterless constructor.
         public CFESprite() { SetName(""); }
 
         /// Retrieves an action by the given index.
-        public CFESpriteAction poGetAction(int _uiActionIdx)
+        public CFESpriteAction GetAction(int _uiActionIdx)
         {
-            if ((_uiActionIdx<0) || (_uiActionIdx >= m_oActions.Count)) return(null);
-            return (m_oActions[_uiActionIdx]);
+            if ((_uiActionIdx<0) || (_uiActionIdx >= GetChildCount())) return(null);
+            return GetChild(_uiActionIdx) as CFESpriteAction;
         }
 
         /// Retrieves an action by its name or NULL if the action is not found.
-        public CFESpriteAction poGetAction(string _sActionName)
+        public CFESpriteAction GetAction(string _sActionName)
         {
             int iIdx = iGetActionIdx(_sActionName);
             if (iIdx == -1) return (null);
 
-            return( poGetAction(iIdx) );
+            return(GetAction(iIdx));
         }
 
         /// Retrieves an action index by its name or -1 if the action is not found.
         public int iGetActionIdx(string _sActionName)
         {
-            for (int i = 0; i < m_oActions.Count; i++)
-                if (m_oActions[i].sGetName() == _sActionName)
+            for (int i = 0; i < GetChildCount(); i++)
+                if (GetChild(i).Name == _sActionName)
                     return (i);
 
             return (-1);

@@ -29,11 +29,16 @@ namespace FuetEngine
 
         /// Rectangle inside the sprite material defining this sprite frame.
         [Export]
-        public CFERect m_oUV = new CFERect();
+        public CFEVect2 m_oUVIni = new CFEVect2();
+        [Export]
+        public CFEVect2 m_oUVEnd = new CFEVect2();
 
         /// Size in pixels (of virtual screen dimensions) of the frame.
         [Export]
         public CFEVect2 m_oSize = new CFEVect2();
+
+        [Export]
+        public CFEVect2 m_oScale = new CFEVect2();  // computed from m_oSize and m_oUV
 
         /// Time this frame should be rendered without blending.
         [Export]
@@ -62,6 +67,8 @@ namespace FuetEngine
         /// The material used by this sprite frame.
         // public Material m_hMaterial = null;
         [Export]
-        public string m_hMaterial = null;
+        public Texture m_hMaterial = null;
+        [Export]
+        public string m_sMaterial = null;    // comes from material
     };
 }

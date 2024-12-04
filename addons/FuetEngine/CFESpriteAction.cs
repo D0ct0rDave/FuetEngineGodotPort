@@ -34,8 +34,6 @@ namespace FuetEngine
         [Export]
         public float m_rRandStartTime = 0.0f;
         /// Sequence of frames composing the sprite
-        [Export]
-        public List<CFESpriteFrame> m_oSeq = new List<CFESpriteFrame>();
         // --------------------------------------------------------------------
         // Make sure you provide a parameterless constructor.
         public CFESpriteAction()
@@ -65,7 +63,7 @@ namespace FuetEngine
         /// Returns the sprite frame number corresponding to the given time, searching from SeekFrame.
         public int uiGetFrame(float _rTime, int _uiSeekFrame)
         {
-            int uiMaxFrames = m_oSeq.Count;
+            int uiMaxFrames = GetChildCount();
             switch (m_ePlayMode)
             {
                 // .................................................
@@ -113,8 +111,7 @@ namespace FuetEngine
         /// Returns the following frame to the given one taking into account the playing mode.
         public int uiNextFrame(int _uiFrame)
         {
-            int uiMaxFrames = m_oSeq.Count;
-
+            int uiMaxFrames = GetChildCount();
             switch (m_ePlayMode)
             {
                 // .................................................
@@ -163,15 +160,21 @@ namespace FuetEngine
         //	0 <= _rTime <= m_rActionTime
         //	0 <= _uiSeekFrame < uiMaxFrames
         // --------------------------------------------------------------------
-        protected int uiSafeGetFrame(CFESpriteAction _poAction, float _rTime, int _uiSeekFrame)
+        protected int uiSafeGetFrame(CFESpriteAction _oAction, float _rTime, int _uiSeekFrame)
         {
             int uiStartFrame;
             int uiEndFrame;
 
-            int uiMaxFrames = _poAction.m_oSeq.Count;
+            int uiMaxFrames = _oAction.GetChildCount();
 
             // Seek frame is occurs after current time
-            if (_poAction.m_oSeq[_uiSeekFrame].m_rStartTime > _rTime)
+            CFESpriteFrame seekFrame = _oAction.GetFrame(_uiSeekFrame);
+            if (seekFrame == null)
+            {
+                return 0; 
+            }
+
+            if (seekFrame.m_rStartTime > _rTime)
             {
                 // Search from the begining
                 uiStartFrame = 0;
@@ -185,12 +188,24 @@ namespace FuetEngine
             }
 
             for (int i = uiStartFrame; i < uiEndFrame; i++)
-            {
-                if (_poAction.m_oSeq[i + 1].m_rStartTime > _rTime)
+            {                
+                CFESpriteFrame frame = _oAction.GetFrame(i + 1);
+                if (frame == null)
+                {
+                    return 0;
+                }
+                
+                if (frame.m_rStartTime > _rTime)
                     return(i);
             }
 
             return (uiMaxFrames - 1);
         }
+        // --------------------------------------------------------------------
+        public CFESpriteFrame GetFrame(int i)
+        {
+            return GetChild(i) as CFESpriteFrame;
+        }
+        // --------------------------------------------------------------------
     };
 }
