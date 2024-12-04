@@ -72,11 +72,11 @@ namespace FuetEngine
                 {
                     if (_rTime >= m_rActionTime)
                     {
-                        return (uiMaxFrames - 1);
+                        return uiMaxFrames - 1;
                     }
                     else
                     {
-                        return (uiSafeGetFrame(this, _rTime, _uiSeekFrame));
+                        return uiSafeGetFrame(_rTime, _uiSeekFrame);
                     }
                 }
                 // break;
@@ -88,7 +88,7 @@ namespace FuetEngine
                     uint uiLoops = (uint)(_rTime / m_rActionTime);
                     float rTime = _rTime - ((float)uiLoops * m_rActionTime);
 
-                    return (uiSafeGetFrame(this, rTime, _uiSeekFrame));
+                    return uiSafeGetFrame(rTime, _uiSeekFrame);
                 }
                 // break; // avoid statement unreachable warning
 
@@ -116,19 +116,12 @@ namespace FuetEngine
             {
                 // .................................................
                 case ESFSPlayMode.SFSPM_NONE:
-                {
-                    if (_uiFrame < (uiMaxFrames - 1))
-                        return (_uiFrame + 1);
-                    else
-                        return (uiMaxFrames - 1);
-                }
-
                 case ESFSPlayMode.SFSPM_ONESHOT:
                 {
                     if (_uiFrame < (uiMaxFrames - 1))
-                        return (_uiFrame + 1);
+                        return _uiFrame + 1;
                     else
-                        return (uiMaxFrames - 1);
+                        return uiMaxFrames - 1;
                 }
                 // break; // avoid statement unreachable warning
 
@@ -160,15 +153,15 @@ namespace FuetEngine
         //	0 <= _rTime <= m_rActionTime
         //	0 <= _uiSeekFrame < uiMaxFrames
         // --------------------------------------------------------------------
-        protected int uiSafeGetFrame(CFESpriteAction _oAction, float _rTime, int _uiSeekFrame)
+        protected int uiSafeGetFrame(float _rTime, int _uiSeekFrame)
         {
             int uiStartFrame;
             int uiEndFrame;
 
-            int uiMaxFrames = _oAction.GetChildCount();
+            int uiMaxFrames = GetChildCount();
 
             // Seek frame is occurs after current time
-            CFESpriteFrame seekFrame = _oAction.GetFrame(_uiSeekFrame);
+            CFESpriteFrame seekFrame = GetFrame(_uiSeekFrame);
             if (seekFrame == null)
             {
                 return 0; 
@@ -189,7 +182,7 @@ namespace FuetEngine
 
             for (int i = uiStartFrame; i < uiEndFrame; i++)
             {                
-                CFESpriteFrame frame = _oAction.GetFrame(i + 1);
+                CFESpriteFrame frame = GetFrame(i + 1);
                 if (frame == null)
                 {
                     return 0;
@@ -199,7 +192,7 @@ namespace FuetEngine
                     return(i);
             }
 
-            return (uiMaxFrames - 1);
+            return uiMaxFrames - 1;
         }
         // --------------------------------------------------------------------
         public CFESpriteFrame GetFrame(int i)

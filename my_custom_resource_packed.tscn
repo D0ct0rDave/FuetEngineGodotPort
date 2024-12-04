@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=2]
-
-[ext_resource path="res://addons/FuetEngine/CFESpriteInstance.cs" type="Script" id=1]
-
-[node name="Node2D" type="Node2D"]
-script = ExtResource( 1 )
-m_poSprite = Object(Node,"_import_path":NodePath(""),"pause_mode":0,"physics_interpolation_mode":0,"unique_name_in_owner":false,"process_priority":0,"script":null,"m_name":"","m_oActions":[  ])
-

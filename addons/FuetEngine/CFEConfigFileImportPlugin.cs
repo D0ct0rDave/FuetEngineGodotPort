@@ -55,9 +55,9 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 	public override int Import(string _sourceFile, string _savePath, Godot.Collections.Dictionary _options, Godot.Collections.Array _r_platform_variants, Godot.Collections.Array _r_gen_files)
 	{
 		Node2D node = ConvertConfigToNode(_sourceFile);
-
 		if (node != null)
 		{
+			GD.Print("3");
 			var packedScene = new PackedScene();
 			Godot.Error error = packedScene.Pack(node);
 			if(error == Error.Ok)
@@ -81,12 +81,28 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 
 		if (extension == "spr")
 		{
-			CFESprite spriteResource = CFESpriteLoader.poLoad(filenameWithoutExtension, false);
-
-			CFESpriteInstance spriteInstance = Support.CreateObject<Node2D>("res://addons/FuetEngine/CFESpriteInstance.cs") as CFESpriteInstance;
-			spriteInstance.Name = "CFESpriteInstance";
-			spriteInstance.Init(spriteResource);
-
+			CFESprite spriteResource = null; // CFESpriteLoader.poLoad(filenameWithoutExtension, false);
+		
+			if (spriteResource != null)
+			{
+				GD.Print("spriteResource Not null");
+			}
+			else
+			{
+				GD.Print("spriteResource is null");
+			}
+			
+			// Node2D spriteInstance = Support.CreateObject<Node2D>("res://addons/FuetEngine/CFESpriteInstance.cs") as Node2D;
+			CFESpriteInstance spriteInstance = Support.CreateObject<CFESpriteInstance>("res://addons/FuetEngine/CFESpriteInstance.cs") as CFESpriteInstance;
+			if (spriteInstance != null)
+			{
+				GD.Print("spriteInstance Not null");
+			}
+			else
+			{
+				GD.Print("spriteInstance is null");
+			}
+			
 			{
 				Sprite sprite = new Sprite();
 				sprite.Name = "MainFrame";
@@ -99,10 +115,14 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 				spriteInstance.AddChild(sprite);
 			}
 
+			spriteInstance.Name = "CFESpriteInstance";
+			spriteInstance.AddChild(spriteResource);
+			spriteInstance.Init();
+
 			Node childNode = spriteInstance as Node;
 			SetHierarchyOwner(ref childNode, childNode);
 			childNode.Owner = null;
-
+			
 			return spriteInstance;
 		}
 		else if (extension == "hud")
