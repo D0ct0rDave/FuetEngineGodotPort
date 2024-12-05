@@ -4,6 +4,7 @@ using Godot;
 
 namespace FuetEngine
 {
+	[Tool]
 	public static class Support
 	{
 		public static Node CreateObject(Script _script)
@@ -28,7 +29,7 @@ namespace FuetEngine
 			var godotObjectId = node.GetInstanceId();
 			node.SetScript(_script);
 			return GD.InstanceFromId(godotObjectId) as T;
-        }
+		}
 
 		public static T CreateObject<T>(string _scriptFilename) where T : Node, new()
         {

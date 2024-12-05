@@ -7,16 +7,11 @@ namespace FuetEngine
 	{
 		private static RandomNumberGenerator m_rng = null;
 		// --------------------------------------------------------------------
-		public static void SetCurrentActionTime(CFESpriteInstance _poSI,float _rActionTime)
+		public static void SetCurrentActionTime(CFESpriteInstance _poSI, float _rActionTime)
 		{
-			if (_poSI.m_sprite == null)
-			{
-				return;
-			}
-		
-			CFESpriteAction action = _poSI.m_sprite.GetAction(_poSI.m_uiSpriteAction);
+			CFESpriteAction action = _poSI.m_curAction;
 			float rNewTime = _rActionTime;
-			
+
 			// To prevent overflows
 			switch (action.eGetPlayMode())
 			{
@@ -31,7 +26,7 @@ namespace FuetEngine
 					if (action.m_rRandStartTime > 0.0f)
 					{
 						rNewTime = rNewTime % action.rGetMaxActionTime();
-					
+
 						//loop detected
 						if (rNewTime < _rActionTime)
 						{
@@ -65,11 +60,11 @@ namespace FuetEngine
 			}
 
 			_poSI.m_rActionTime = rNewTime;
-			_poSI.m_uiCurrentActionFrame = action.uiGetFrame(rNewTime,0);
+			_poSI.m_uiCurrentActionFrame = action.uiGetFrame(rNewTime, _poSI.m_uiCurrentActionFrame);
 		}
 		// --------------------------------------------------------------------
 		// Update is called once per frame
-		public static void Update (CFESpriteInstance _poSI,float _rDeltaT) 
+		public static void Update(CFESpriteInstance _poSI, float _rDeltaT) 
 		{
 			SetCurrentActionTime(_poSI,_poSI.m_rActionTime+_rDeltaT*_poSI.m_rSpeedMult);
 		}
