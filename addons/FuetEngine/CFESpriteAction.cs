@@ -18,6 +18,7 @@ namespace FuetEngine
 
         SFSPM_NUM,
     };
+    [Tool]
     // ------------------------------------------------------------------------
     public class CFESpriteAction : Node
     {

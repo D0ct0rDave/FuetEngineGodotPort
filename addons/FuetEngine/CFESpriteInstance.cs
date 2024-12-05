@@ -6,6 +6,7 @@ using Godot;
 
 namespace FuetEngine
 {
+    [Tool]
     public class CFESpriteInstance : Node2D
     {
         // ------------------------------------------------------------------------
@@ -95,6 +96,7 @@ namespace FuetEngine
             m_secondarySprite = GetChild(2) as Sprite;
 
             Init(GetChild(0) as CFESprite);
+
         }
         // ------------------------------------------------------------------------
 		// Update is called once per frame

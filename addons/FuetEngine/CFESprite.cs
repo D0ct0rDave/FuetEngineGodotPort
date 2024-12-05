@@ -5,11 +5,12 @@ using CFEVect2 = Godot.Vector2;
 
 namespace FuetEngine
 {
+    [Tool]
     // ------------------------------------------------------------------------
     public class CFESprite : Node
     {
         // Make sure you provide a parameterless constructor.
-        public CFESprite() { SetName(""); }
+        public CFESprite() {}
 
         /// Retrieves an action by the given index.
         public CFESpriteAction GetAction(int _uiActionIdx)

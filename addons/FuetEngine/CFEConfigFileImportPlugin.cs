@@ -55,23 +55,22 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 	public override int Import(string _sourceFile, string _savePath, Godot.Collections.Dictionary _options, Godot.Collections.Array _r_platform_variants, Godot.Collections.Array _r_gen_files)
 	{
 		Node2D node = ConvertConfigToNode(_sourceFile);
-
 		if (node != null)
 		{
 			var packedScene = new PackedScene();
 			Godot.Error error = packedScene.Pack(node);
+
 			if(error == Error.Ok)
 			{
-				GD.Print(_savePath);
-				Godot.Error saveError = ResourceSaver.Save(_savePath, packedScene/* , Godot.ResourceSaver.SaverFlags.BundleResources | Godot.ResourceSaver.SaverFlags.RelativePaths*/ );
+				Godot.Error saveError = ResourceSaver.Save(_savePath + "." + GetSaveExtension(), packedScene/* , Godot.ResourceSaver.SaverFlags.BundleResources | Godot.ResourceSaver.SaverFlags.RelativePaths*/ );
 				if (saveError != Error.Ok)
 				{
-					return 0;
+					return 1;
 				}
+				return 0;
 			}
 		}
-
-		return 0;
+		return 1;
 	}
 	// ------------------------------------------------------------------------	
 	private Node2D ConvertConfigToNode(string _sFilename)
@@ -82,7 +81,6 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 		if (extension == "spr")
 		{
 			CFESprite spriteResource = CFESpriteLoader.poLoad(filenameWithoutExtension, false);
-
 			CFESpriteInstance spriteInstance = Support.CreateObject<Node2D>("res://addons/FuetEngine/CFESpriteInstance.cs") as CFESpriteInstance;
 			spriteInstance.Name = "CFESpriteInstance";
 			spriteInstance.Init(spriteResource);
@@ -98,7 +96,7 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 				sprite.Name = "SecondaryFrame";
 				spriteInstance.AddChild(sprite);
 			}
-
+			
 			Node childNode = spriteInstance as Node;
 			SetHierarchyOwner(ref childNode, childNode);
 			childNode.Owner = null;
@@ -115,7 +113,11 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 	// ------------------------------------------------------------------------	
 	private void SetHierarchyOwner(ref Node _root, Node _owner)
 	{
-		_root.Owner = _owner;
+		if (_root != _owner)
+		{
+			_root.Owner = _owner;
+		}
+
 		for (int i=0; i<_root.GetChildCount(); i++)
 		{
 			Node child = _root.GetChild(i);

@@ -5,6 +5,7 @@ using CFEVect2 = Godot.Vector2;
 
 namespace FuetEngine
 {
+    [Tool]
     public class CFESpriteFrame : Node
     {
         // Make sure you provide a parameterless constructor.
