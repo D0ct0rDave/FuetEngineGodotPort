@@ -1,0 +1,68 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+
+namespace FuetEngine
+{
+    // [ExecuteInEditMode]
+    public class CFEHUDInstance : MonoBehaviour
+	{	
+        public void Reload()
+        {
+            if (gameObject.transform.childCount > 0)
+            {
+                Transform child = gameObject.transform.GetChild(0);
+                DestroyImmediate(child.gameObject);
+            }
+
+            m_poHUD = CFEHUDLoader.poLoad(m_sHUDFile, gameObject);
+        }
+ 
+        void Init()
+        {
+            // If there are children then we assume the scene is already loaded / saved on disk.
+            // if we want to reload the scene, delete the children.
+            if (gameObject.transform.childCount > 0) return;
+
+            // game object whould have no children
+            /*
+            {
+                Transform child = gameObject.transform.GetChild(0);
+                DestroyImmediate(child.gameObject);
+            }
+            */
+
+            m_poHUD = CFEHUDLoader.poLoad(m_sHUDFile, gameObject);
+        }
+
+		// Use this for initialization
+		void Start ()
+		{
+        }
+
+		// Update is called once per frame
+		void Update ()
+		{
+			// CFEHUDInstUpdater.Update(this, Time.deltaTime);
+		}
+
+        ///  This will draw the HUD at editor time.
+        /*
+         * void OnDrawGizmos()
+	    {
+            if (m_poHUD == null)
+                Init();
+        }
+        */
+
+        public AnimationCurve m_oCurve = new AnimationCurve();
+
+        /// The sprite to load
+        public string m_sHUDFile;
+
+        ///  The HUD object itself
+		protected CFEHUD m_poHUD = null;
+    }
+}

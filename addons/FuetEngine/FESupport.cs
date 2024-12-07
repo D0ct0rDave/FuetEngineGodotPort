@@ -1,9 +1,13 @@
 ﻿using System.IO;
 using CFEVect2 = Godot.Vector2;
 using Godot;
+using System;
 
 namespace FuetEngine
 {
+	using CFEString = System.String;
+	using FEReal = System.Single;
+
 	[Tool]
 	public static class Support
 	{
@@ -28,7 +32,15 @@ namespace FuetEngine
 			T node = new T();
 			var godotObjectId = node.GetInstanceId();
 			node.SetScript(_script);
-			return GD.InstanceFromId(godotObjectId) as T;
+			node = GD.InstanceFromId(godotObjectId) as T;
+
+			if (node == null)
+			{
+				GD.Print("Cannot convert back node to class " + typeof(T) + ".\n" + 
+				"If this class is instanced inside the editor don't forget to mark it as [Tool] !!!");
+			}
+
+			return node;
 		}
 
 		public static T CreateObject<T>(string _scriptFilename) where T : Node, new()

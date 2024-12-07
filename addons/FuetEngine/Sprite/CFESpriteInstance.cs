@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing.Drawing2D;
 using System.Linq;
@@ -7,7 +7,6 @@ using Godot;
 
 namespace FuetEngine
 {
-    [Tool]
     public class CFESpriteInstance : Node2D
     {
         // --------------------------------------------------------------------
@@ -41,6 +40,7 @@ namespace FuetEngine
 
             if (m_sprite != null)
             {
+                AddChild(m_sprite);
                 SetAction(0);
                 FuetEngine.Support.SetObjectEnabled(m_sprite, false);
             }
