@@ -1,0 +1,29 @@
+SFXList:
+{
+	NumSFXs = 4;
+	
+	SFX0:
+	{
+		Alias = "explo";
+		File  = "explo";
+	};
+
+	SFX1:
+	{
+		Alias = "doublejump";
+		File  = "doublejump";
+	};
+	SFX2:
+	{
+		Alias = "failjump";
+		File  = "failjump";
+	};
+	
+	SFX3:
+	{
+		Alias = "fall";
+		File  = "fall";
+	};
+};
+
+

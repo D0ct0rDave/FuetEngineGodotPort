@@ -1,0 +1,37 @@
+Sprite:
+{
+	Name = "Gate2";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../../atlas_4";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 668.0;
+						Height = 555.0;
+					};
+					TexCoords:
+					{
+						IU = 0.00048828;
+						IV = 0.36767578;
+						FU = 0.32666016;
+						FV = 0.63867188;
+					};
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "Monolit";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../atlas_3";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 190.0;
+						Height = 255.0;
+					};
+					TexCoords:
+					{
+						IU = 0.88867188;
+						IV = 0.00048828;
+						FU = 0.98144531;
+						FV = 0.12500000;
+					};
+				};
+			};
+		};
+	};
+};

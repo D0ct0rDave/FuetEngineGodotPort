@@ -1,0 +1,36 @@
+Sprite:
+{
+	Name = "Spider";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../../atlas_1";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 467.0;
+						Height = 387.0;
+					};
+					TexCoords:
+					{
+						IU = 0.73388672;
+						IV = 0.23291016;
+						FU = 0.96191406;
+						FV = 0.42187500;
+					};
+				};
+			};
+		};
+	};
+};

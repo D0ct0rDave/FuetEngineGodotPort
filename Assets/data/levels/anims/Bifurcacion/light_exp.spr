@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "light_exp";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../../atlas_3";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 128.0;
+					};
+					TexCoords:
+					{
+						IU = 0.32470703;
+						IV = 0.91748047;
+						FU = 0.38720703;
+						FV = 0.97998047;
+					};
+				};
+			};
+		};
+	};
+};

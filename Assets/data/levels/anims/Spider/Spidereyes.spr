@@ -1,0 +1,146 @@
+Sprite:
+{
+	Name = "Spidereyes";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 6;
+				Frame0:
+				{
+					Material = "../../atlas_0";
+					DelayTime = 1.0060;
+					Pivot:
+					{
+						x = 0.5521;
+						y = 0.4574;
+					};
+					Size:
+					{
+						Width = 3.5;
+						Height = 4.2;
+					};
+					TexCoords:
+					{
+						IU = 0.96439660;
+						IV = 0.07864189;
+						FU = 0.96609157;
+						FV = 0.08071260;
+					};
+				};
+				Frame1:
+				{
+					Material = "../../atlas_0";
+					DelayTime = 0.6040;
+					Pivot:
+					{
+						x = 0.5079;
+					};
+					Size:
+					{
+						Width = 63.0;
+						Height = 38.0;
+					};
+					TexCoords:
+					{
+						IU = 0.94921875;
+						IV = 0.07373047;
+						FU = 0.97998047;
+						FV = 0.09228516;
+					};
+				};
+				Frame2:
+				{
+					Material = "../../atlas_0";
+					DelayTime = 0.6040;
+					Pivot:
+					{
+						x = 0.5079;
+					};
+					Size:
+					{
+						Width = 63.0;
+						Height = 38.0;
+					};
+					TexCoords:
+					{
+						IU = 0.94921875;
+						IV = 0.09326172;
+						FU = 0.97998047;
+						FV = 0.11181641;
+					};
+				};
+				Frame3:
+				{
+					Material = "../../atlas_0";
+					DelayTime = 0.6040;
+					Pivot:
+					{
+						x = 0.5079;
+					};
+					Size:
+					{
+						Width = 63.0;
+						Height = 38.0;
+					};
+					TexCoords:
+					{
+						IU = 0.94921875;
+						IV = 0.07373047;
+						FU = 0.97998047;
+						FV = 0.09228516;
+					};
+				};
+				Frame4:
+				{
+					Material = "../../atlas_0";
+					DelayTime = 0.6040;
+					Pivot:
+					{
+						x = 0.5079;
+					};
+					Size:
+					{
+						Width = 63.0;
+						Height = 38.0;
+					};
+					TexCoords:
+					{
+						IU = 0.94921875;
+						IV = 0.09326172;
+						FU = 0.97998047;
+						FV = 0.11181641;
+					};
+				};
+				Frame5:
+				{
+					Material = "../../atlas_0";
+					DelayTime = 1.0060;
+					Pivot:
+					{
+						x = 0.5521;
+						y = 0.4574;
+					};
+					Size:
+					{
+						Width = 3.5;
+						Height = 4.2;
+					};
+					TexCoords:
+					{
+						IU = 0.96439660;
+						IV = 0.07864189;
+						FU = 0.96609157;
+						FV = 0.08071260;
+					};
+				};
+			};
+		};
+	};
+};

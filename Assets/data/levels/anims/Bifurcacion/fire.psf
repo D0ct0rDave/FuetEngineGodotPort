@@ -1,0 +1,81 @@
+ParticleSystem:
+{
+	Name = "fire";
+	Sprite = "flare1";
+	Freq = 5.0000;
+	EmisorRad:
+	{
+	};
+	EmisorPhase:
+	{
+	};
+	EmisorSpeed:
+	{
+	};
+	EmisorXOfs:
+	{
+	};
+	EmisorYOfs:
+	{
+	};
+	EmisorXSpeed:
+	{
+	};
+	EmisorYSpeed:
+	{
+		Min = 50.0000;
+		Max = 99.0000;
+	};
+	PartSize:
+	{
+		Min = 0.3000;
+		Max = 0.5000;
+	};
+	PartSizeSpeed:
+	{
+		Min = 0.0500;
+		Max = 0.1000;
+	};
+	PartAngle:
+	{
+	};
+	PartAngleSpeed:
+	{
+	};
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 7;
+		KeyFrame0:
+		{
+			a = 0.0000;
+		};
+		KeyFrame1:
+		{
+			Time = 0.3000;
+		};
+		KeyFrame2:
+		{
+			Time = 0.9000;
+		};
+		KeyFrame3:
+		{
+			a = 0.0000;
+			Time = 1.0000;
+		};
+		KeyFrame4:
+		{
+			a = 0.0000;
+			Time = 6.0000;
+		};
+		KeyFrame5:
+		{
+			Time = 16.0000;
+		};
+		KeyFrame6:
+		{
+			a = 0.0000;
+			Time = 17.0000;
+		};
+	};
+};

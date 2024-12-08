@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "nube";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../atlas_5";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 600.0;
+						Height = 242.0;
+					};
+					TexCoords:
+					{
+						IU = 0.26562500;
+						IV = 0.00048828;
+						FU = 0.55859375;
+						FV = 0.11865234;
+					};
+				};
+			};
+		};
+	};
+};

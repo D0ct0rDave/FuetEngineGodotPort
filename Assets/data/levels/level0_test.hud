@@ -1,0 +1,102 @@
+HUD:
+{
+	FileVersion = 2;
+	NumElements = 1;
+	Element0:
+	{
+		Name = "Gate.0";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "Gate.0";
+			Position:
+			{
+				x = -8280.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			DepthFact = 1.0000;
+			NumObjects = 2;
+			Object0:
+			{
+				Type = "Icon";
+				Sprite = "anims/Gate/stars";
+				Name = "stars.00";
+				Position:
+				{
+					y = 212.0000;
+				};
+				Depth = 1.3500;
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object1:
+			{
+				Type = "Group";
+				Name = "gate_back.00";
+				Position:
+				{
+					x = 4.0000;
+					y = 68.0000;
+				};
+				Depth = 1.3000;
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Rect";
+					Width = 191.0000;
+					Height = 141.0000;
+					PivotY = 0.0000;
+					Corner0:
+					{
+					};
+					Corner1:
+					{
+					};
+					Corner2:
+					{
+					};
+					Corner3:
+					{
+					};
+					Name = "rt_back.00";
+					Position:
+					{
+						x = 104.0000;
+						y = 8.0000;
+					};
+					Scale:
+					{
+					};
+					Angle = 3.9270;
+					Color:
+					{
+						r = 0.1569;
+						g = 0.1725;
+						b = 0.3255;
+					};
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "OnIdle";
+		};
+	};
+};

@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "CavetGreen2";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../atlas_5";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 264.0;
+						Height = 114.0;
+					};
+					TexCoords:
+					{
+						IU = 0.00048828;
+						IV = 0.90673828;
+						FU = 0.12939453;
+						FV = 0.96240234;
+					};
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,58 @@
+Sprite:
+{
+	Name = "Palmera";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 2;
+				Frame0:
+				{
+					Material = "../../atlas_4";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 177.0;
+						Height = 230.0;
+					};
+					TexCoords:
+					{
+						IU = 0.87744141;
+						IV = 0.36767578;
+						FU = 0.96386719;
+						FV = 0.47998047;
+					};
+				};
+				Frame1:
+				{
+					Material = "../../atlas_5";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 177.0;
+						Height = 230.0;
+					};
+					TexCoords:
+					{
+						IU = 0.00048828;
+						IV = 0.67675781;
+						FU = 0.08691406;
+						FV = 0.78906250;
+					};
+				};
+			};
+		};
+	};
+};

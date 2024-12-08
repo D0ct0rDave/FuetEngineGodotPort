@@ -3,10 +3,9 @@
 [ext_resource path="res://Scripts/test.cs" type="Script" id=1]
 [ext_resource path="res://Assets/Sprites/fire_static.spr" type="PackedScene" id=2]
 
-[node name="Node2D" type="Node2D"]
+[node name="Camera2D" type="Camera2D"]
+offset = Vector2( 240, 0 )
 script = ExtResource( 1 )
 
 [node name="CFESpriteInstance" parent="." instance=ExtResource( 2 )]
-
-[node name="CFESpriteInstance2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 50, 0 )
+position = Vector2( 300, 300 )

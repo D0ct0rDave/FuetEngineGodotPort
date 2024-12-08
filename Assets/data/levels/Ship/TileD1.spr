@@ -1,0 +1,38 @@
+Sprite:
+{
+	Name = "TileD1";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../atlas_3";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.1405;
+						y = 0.1776;
+					};
+					Size:
+					{
+						Width = 662.0;
+						Height = 107.0;
+					};
+					TexCoords:
+					{
+						IU = 0.00048828;
+						IV = 0.91748047;
+						FU = 0.32373047;
+						FV = 0.96972656;
+					};
+				};
+			};
+		};
+	};
+};

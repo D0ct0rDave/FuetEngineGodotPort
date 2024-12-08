@@ -1,0 +1,38 @@
+Sprite:
+{
+	Name = "TileE2";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../atlas_2";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.1499;
+						y = 0.2021;
+					};
+					Size:
+					{
+						Width = 367.0;
+						Height = 94.0;
+					};
+					TexCoords:
+					{
+						IU = 0.47851563;
+						IV = 0.34326172;
+						FU = 0.65771484;
+						FV = 0.38916016;
+					};
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "Cubo1F3";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../../../atlas_0";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 138.0;
+						Height = 20.0;
+					};
+					TexCoords:
+					{
+						IU = 0.39257813;
+						IV = 0.94677734;
+						FU = 0.45996094;
+						FV = 0.95654297;
+					};
+				};
+			};
+		};
+	};
+};

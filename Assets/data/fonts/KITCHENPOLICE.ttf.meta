@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: b43af26c872e9cf46a3377d792ee0e39
+timeCreated: 1485352462
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Kitchen police
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 61ad08ef2542b30458e829c58fab2c7e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

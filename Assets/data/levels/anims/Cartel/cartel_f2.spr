@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "cartel_f2";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../../atlas_3";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 814.0;
+						Height = 937.0;
+					};
+					TexCoords:
+					{
+						IU = 0.00048828;
+						IV = 0.00048828;
+						FU = 0.39794922;
+						FV = 0.45800781;
+					};
+				};
+			};
+		};
+	};
+};

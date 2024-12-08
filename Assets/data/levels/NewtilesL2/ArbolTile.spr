@@ -1,0 +1,35 @@
+Sprite:
+{
+	Name = "ArbolTile";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "ArbolTile";
+					TWrapMode = "REPEAT";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 0.0000;
+					};
+					Size:
+					{
+						Width = 96.0;
+						Height = 297.0;
+					};
+					TexCoords:
+					{
+						ScaleYVEqually = true;
+					};
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "Big2nd";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../atlas_4";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 402.0;
+						Height = 371.0;
+					};
+					TexCoords:
+					{
+						IU = 0.75488281;
+						IV = 0.17724609;
+						FU = 0.95117188;
+						FV = 0.35839844;
+					};
+				};
+			};
+		};
+	};
+};

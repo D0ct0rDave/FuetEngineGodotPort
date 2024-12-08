@@ -1,0 +1,37 @@
+Sprite:
+{
+	Name = "Enredmin";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "Enredmin";
+					SWrapMode = "REPEAT";
+					TWrapMode = "REPEAT";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 0.0000;
+					};
+					Size:
+					{
+						Width = 98.0;
+						Height = 200.0;
+					};
+					TexCoords:
+					{
+						ScaleXUEqually = true;
+						ScaleYVEqually = true;
+					};
+				};
+			};
+		};
+	};
+};

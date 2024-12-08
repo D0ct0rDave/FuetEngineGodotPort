@@ -1,0 +1,387 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000011942462058}
+  m_IsPrefabParent: 1
+--- !u!1 &1000011942462058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000010232934830}
+  - 114: {fileID: 114000013904248260}
+  m_Layer: 0
+  m_Name: GamePlayVars
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000010232934830
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011942462058}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114000013904248260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011942462058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98be6b032a01fd9419870604d24f5bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_oCharStats:
+  - m_rWidth: 210
+    m_rHeight: 150
+    m_rMovAccel: 2000
+    m_rMovDecel: 5000
+    m_rMaxVSpeed: 300
+    m_rSpringDecel: 1000
+    m_rMaxSpringSpeed: 400
+    m_rTopLimit: 250
+    m_rBottomLimit: 980
+    m_rGrazeRadius: 180
+    m_rMaxHSpeed: 682.6667
+    m_rSameWallImpulse: 1000
+    m_rOppWallImpulse: 2000
+    m_rWallFrictionFact: 2
+    m_rTurboAccelTime: 0.5
+    m_rTurboFactor: 1.5
+    m_rIceFrictionFact: 0.35
+    m_rIceMaxSpeedFact: 1.15
+    m_rLadderSpeed: 400
+    m_rFriction: 1000
+    m_rJumpSpeed: 1200
+  m_oChallengeData:
+  - m_uiType: 0
+    m_uiValue: 1
+    m_iButtonID: 0
+    m_uiLockElem: 11
+  - m_uiType: 0
+    m_uiValue: 2
+    m_iButtonID: 2
+    m_uiLockElem: 12
+  - m_uiType: 0
+    m_uiValue: 3
+    m_iButtonID: 5
+    m_uiLockElem: 13
+  - m_uiType: 0
+    m_uiValue: 4
+    m_iButtonID: 8
+    m_uiLockElem: 14
+  - m_uiType: 0
+    m_uiValue: 5
+    m_iButtonID: 10
+    m_uiLockElem: 15
+  - m_uiType: 1
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 16
+  - m_uiType: 1
+    m_uiValue: 1
+    m_iButtonID: -1
+    m_uiLockElem: 17
+  - m_uiType: 1
+    m_uiValue: 2
+    m_iButtonID: -1
+    m_uiLockElem: 18
+  - m_uiType: 1
+    m_uiValue: 3
+    m_iButtonID: -1
+    m_uiLockElem: 19
+  - m_uiType: -1
+    m_uiValue: -1
+    m_iButtonID: -1
+    m_uiLockElem: -1
+  - m_uiType: 1
+    m_uiValue: 5
+    m_iButtonID: -1
+    m_uiLockElem: 21
+  - m_uiType: 9
+    m_uiValue: 12345
+    m_iButtonID: 1
+    m_uiLockElem: 22
+  - m_uiType: 8
+    m_uiValue: 250
+    m_iButtonID: 4
+    m_uiLockElem: 23
+  - m_uiType: 7
+    m_uiValue: 250
+    m_iButtonID: 7
+    m_uiLockElem: 24
+  - m_uiType: 13
+    m_uiValue: 3
+    m_iButtonID: 16
+    m_uiLockElem: 25
+  - m_uiType: 11
+    m_uiValue: 5
+    m_iButtonID: 9
+    m_uiLockElem: 26
+  - m_uiType: 5
+    m_uiValue: 500000
+    m_iButtonID: 11
+    m_uiLockElem: 27
+  - m_uiType: 10
+    m_uiValue: 1500
+    m_iButtonID: 13
+    m_uiLockElem: 28
+  - m_uiType: 6
+    m_uiValue: 1000
+    m_iButtonID: 15
+    m_uiLockElem: 29
+  - m_uiType: 14
+    m_uiValue: 6
+    m_iButtonID: 17
+    m_uiLockElem: 30
+  - m_uiType: 12
+    m_uiValue: 6
+    m_iButtonID: 18
+    m_uiLockElem: 31
+  - m_uiType: 4
+    m_uiValue: 0
+    m_iButtonID: 14
+    m_uiLockElem: 32
+  - m_uiType: 15
+    m_uiValue: 0
+    m_iButtonID: 20
+    m_uiLockElem: 33
+  - m_uiType: 17
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 9
+  - m_uiType: 16
+    m_uiValue: 5
+    m_iButtonID: 12
+    m_uiLockElem: 1
+  - m_uiType: 16
+    m_uiValue: 3
+    m_iButtonID: 3
+    m_uiLockElem: 2
+  - m_uiType: 16
+    m_uiValue: 4
+    m_iButtonID: 6
+    m_uiLockElem: 3
+  - m_uiType: 18
+    m_uiValue: 6
+    m_iButtonID: -1
+    m_uiLockElem: 4
+  - m_uiType: 3
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 48
+  - m_uiType: 3
+    m_uiValue: 1
+    m_iButtonID: -1
+    m_uiLockElem: 49
+  - m_uiType: 3
+    m_uiValue: 2
+    m_iButtonID: -1
+    m_uiLockElem: 50
+  - m_uiType: 3
+    m_uiValue: 3
+    m_iButtonID: -1
+    m_uiLockElem: 51
+  - m_uiType: 3
+    m_uiValue: 4
+    m_iButtonID: -1
+    m_uiLockElem: 52
+  - m_uiType: 3
+    m_uiValue: 5
+    m_iButtonID: -1
+    m_uiLockElem: 53
+  - m_uiType: 3
+    m_uiValue: 6
+    m_iButtonID: 19
+    m_uiLockElem: 54
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  - m_uiType: 0
+    m_uiValue: 0
+    m_iButtonID: -1
+    m_uiLockElem: 0
+  m_oCameraPars:
+    m_rRightPos: -625
+    m_rLeftPos: -625
+    m_rTopLimit: 500
+    m_rBottomLimit: 200
+    m_rTopOffset: 300
+    m_rNormalOffset: 0
+    m_rBottomOffset: -300
+    m_iInitialOffset: 1
+    m_rSoftSmoothFact: 0.001
+    m_rNormalSmoothFact: 0.1
+    m_rStrongSmoothFact: 0.1
+    m_iInitialYSmoothFact: 0
+    m_iInitialXSmoothFact: 0
+    m_rChangingOffsetSmoothFact: 0.1
+    m_rRecoveryFact: 0.25
+    m_rInitialZoom: 1.25
+  m_oStartUpPars:
+    m_sStartWith: Menu
+    m_uiBonusNum: 2
+    m_iLevel: 0
+    m_iEnemy: -1
+    m_iPlayer: 0
+    m_uiLeague: 0
+    m_bDisableSound: 0
+    m_bDisableAI: 0
+    m_bPreloadProfile: 0
+  m_rBaseCameraSpeed: 600
+  m_rIniCameraSpeed: 300
+  m_rCameraAccel: 3.333
+  m_rMaxCameraSpeed: 1000
+  m_rInitialEnergy: 1
+  m_rEnergyPerCollision: 0.5
+  m_rEnergyDecreaseMult: 0
+  m_rEnergyPerHeart: 0.5
+  m_rEnergyPerCoin: 0
+  m_uiPointsPerCoin: 555
+  m_rPointsPerSecond: 750
+  m_rGrazeScoreMult: 50
+  m_uiMagicHourBonus: 8
+  m_rInvTime: 2
+  m_rCameraInitialZoom: 1.635
+  m_rGravity: -4500
+  m_rCamRecoveryFact: 1.5
+  m_iNumJumps: 2
+  m_rCamRightPos: 1000
+  m_rCamLeftPos: 0
+  m_rCamTopLimit: 500
+  m_rCamBottomLimit: 200
+  m_iInitialCredits: 3
+  m_rYoungModeSpeedFact: 0.625
+  m_iPointsPerImpossibleItem: 50000
+  m_iPointsPerLevel: 10000
+  m_iPointsPerCredit: 175000
+  m_iPointsPerJump: -7

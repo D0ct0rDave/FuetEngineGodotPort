@@ -1,0 +1,39 @@
+Sprite:
+{
+	Name = "flare1";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		BlendMode = "ALPHAADD";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../../atlas_3";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.4974;
+						y = 0.2713;
+					};
+					Size:
+					{
+						Width = 386.0;
+						Height = 494.0;
+					};
+					TexCoords:
+					{
+						IU = 0.80419922;
+						IV = 0.23779297;
+						FU = 0.99267578;
+						FV = 0.47900391;
+					};
+				};
+			};
+		};
+	};
+};

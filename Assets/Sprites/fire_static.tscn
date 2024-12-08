@@ -1,10 +1,10 @@
 [gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://assets/Sprites/fire.png" type="Texture" id=1]
-[ext_resource path="res://addons/FuetEngine/CFESprite.cs" type="Script" id=2]
-[ext_resource path="res://addons/FuetEngine/CFESpriteFrame.cs" type="Script" id=3]
-[ext_resource path="res://addons/FuetEngine/CFESpriteInstance.cs" type="Script" id=4]
-[ext_resource path="res://addons/FuetEngine/CFESpriteAction.cs" type="Script" id=5]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=2]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteFrame.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESprite.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteAction.cs" type="Script" id=5]
 
 [sub_resource type="AtlasTexture" id=1]
 resource_local_to_scene = true
@@ -97,18 +97,10 @@ atlas = ExtResource( 1 )
 region = Rect2( 120.013, 179.994, 59.9808, 60.0064 )
 
 [node name="CFESpriteInstance" type="Node2D"]
-script = ExtResource( 4 )
-
-[node name="MainFrame" type="Sprite" parent="."]
-scale = Vector2( 0.999893, 0.999893 )
-texture = SubResource( 1 )
-offset = Vector2( 0.00599921, -30 )
-
-[node name="SecondaryFrame" type="Sprite" parent="."]
-visible = false
+script = ExtResource( 2 )
 
 [node name="fire_static" type="Node" parent="."]
-script = ExtResource( 2 )
+script = ExtResource( 4 )
 
 [node name="fire0000" type="Node" parent="fire_static"]
 script = ExtResource( 5 )
@@ -386,3 +378,11 @@ m_rStartTime = 0.686
 m_oPivot = Vector2( 0.4999, 1 )
 m_hMaterial = SubResource( 15 )
 m_sMaterial = "res://assets/Sprites/fire"
+
+[node name="MainFrame" type="Sprite" parent="."]
+scale = Vector2( 0.999893, 0.999893 )
+texture = SubResource( 1 )
+offset = Vector2( 0.00599921, -30 )
+
+[node name="SecondaryFrame" type="Sprite" parent="."]
+visible = false

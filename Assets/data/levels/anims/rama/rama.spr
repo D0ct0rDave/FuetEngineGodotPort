@@ -1,0 +1,61 @@
+Sprite:
+{
+	Name = "rama";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 2;
+				Frame0:
+				{
+					Material = "../../atlas_1";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5004;
+					};
+					Size:
+					{
+						Width = 970.0;
+						Height = 1700.0;
+					};
+					TexCoords:
+					{
+						IU = 0.47509766;
+						IV = 0.00048828;
+						FU = 0.94873047;
+						FV = 0.83056641;
+					};
+				};
+				Frame1:
+				{
+					Material = "../../atlas_1";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5004;
+						y = 0.5002;
+					};
+					Size:
+					{
+						Width = 970.0;
+						Height = 1700.0;
+					};
+					TexCoords:
+					{
+						IU = 0.00048828;
+						IV = 0.00048828;
+						FU = 0.47412109;
+						FV = 0.83056641;
+					};
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,37 @@
+Sprite:
+{
+	Name = "Animagua_limit";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "Animaguaf3";
+					SWrapMode = "REPEAT";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.0000;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 36000.0;
+						Height = 195.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0;
+						FU = 50.0;
+					};
+				};
+			};
+		};
+	};
+};
