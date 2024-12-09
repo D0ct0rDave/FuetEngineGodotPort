@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/tile.spr-76f405feb2eb165396336e2a8b35ffa7.tscn"
+
+[deps]
+
+source_file="res://Assets/data/levels/tiles/tile.spr"
+dest_files=[ "res://.import/tile.spr-76f405feb2eb165396336e2a8b35ffa7.tscn" ]
+
+[params]
+

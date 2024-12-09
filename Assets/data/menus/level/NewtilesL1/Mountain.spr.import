@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/Mountain.spr-786811b4fad6cbf891a6faf13111b846.tscn"
+
+[deps]
+
+source_file="res://Assets/data/menus/level/NewtilesL1/Mountain.spr"
+dest_files=[ "res://.import/Mountain.spr-786811b4fad6cbf891a6faf13111b846.tscn" ]
+
+[params]
+

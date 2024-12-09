@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/ArbolTile.spr-77617cb5b636185dc1360562dd806b8d.tscn"
+
+[deps]
+
+source_file="res://Assets/data/levels/NewtilesL2/ArbolTile.spr"
+dest_files=[ "res://.import/ArbolTile.spr-77617cb5b636185dc1360562dd806b8d.tscn" ]
+
+[params]
+

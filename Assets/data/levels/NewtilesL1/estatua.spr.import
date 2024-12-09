@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/estatua.spr-e9bc83d663b0083e63c9c9548f550e7c.tscn"
+
+[deps]
+
+source_file="res://Assets/data/levels/NewtilesL1/estatua.spr"
+dest_files=[ "res://.import/estatua.spr-e9bc83d663b0083e63c9c9548f550e7c.tscn" ]
+
+[params]
+

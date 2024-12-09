@@ -6,11 +6,8 @@ namespace FuetEngine
     [Tool] 
 	public partial class CFEHUDObjectAction : Node
 	{
-		/// Default constructor for the class.
-		public CFEHUDObjectAction()
-		{
-		}
-
+		// Make sure you provide a parameterless constructor.
+		public CFEHUDObjectAction(){}
 		/*
 		/// Retrieves the configuration of the HUDObject at a given moment in time.
 		const CFEHUDObject& oGetValue(FEReal _rTime)

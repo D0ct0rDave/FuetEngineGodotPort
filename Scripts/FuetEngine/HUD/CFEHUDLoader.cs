@@ -31,7 +31,7 @@ namespace FuetEngine
             /// Initialize the HUDLoader internal variables
             Reset();
 
-            CFEHUD oHUD = Support.CreateObject<Node2D>(FuetEngine.Support.HUD_SCRIPT_FILE) as CFEHUD;
+            CFEHUD oHUD = Support.CreateObject<Node2D, CFEHUD>(FuetEngine.Support.HUD_SCRIPT_FILE);
 
             // FileVersion
             m_uiFileVersion = oConfig.iGetInteger("HUD.FileVersion",1);

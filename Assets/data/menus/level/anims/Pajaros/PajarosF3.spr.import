@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/PajarosF3.spr-52b34f236159042712733249e4af9eb5.tscn"
+
+[deps]
+
+source_file="res://Assets/data/menus/level/anims/Pajaros/PajarosF3.spr"
+dest_files=[ "res://.import/PajarosF3.spr-52b34f236159042712733249e4af9eb5.tscn" ]
+
+[params]
+

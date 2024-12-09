@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/light_exp.spr-99996ef3a636825918d404b666820407.tscn"
+
+[deps]
+
+source_file="res://Assets/data/gfx/light_exp.spr"
+dest_files=[ "res://.import/light_exp.spr-99996ef3a636825918d404b666820407.tscn" ]
+
+[params]
+

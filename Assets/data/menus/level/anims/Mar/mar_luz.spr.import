@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/mar_luz.spr-c59f9e743d921be4a9993b3ae86fdaaf.tscn"
+
+[deps]
+
+source_file="res://Assets/data/menus/level/anims/Mar/mar_luz.spr"
+dest_files=[ "res://.import/mar_luz.spr-c59f9e743d921be4a9993b3ae86fdaaf.tscn" ]
+
+[params]
+

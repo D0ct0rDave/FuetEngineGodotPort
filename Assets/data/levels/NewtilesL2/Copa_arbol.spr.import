@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/Copa_arbol.spr-8f973d571e17e519d79bcbccc40ab138.tscn"
+
+[deps]
+
+source_file="res://Assets/data/levels/NewtilesL2/Copa_arbol.spr"
+dest_files=[ "res://.import/Copa_arbol.spr-8f973d571e17e519d79bcbccc40ab138.tscn" ]
+
+[params]
+

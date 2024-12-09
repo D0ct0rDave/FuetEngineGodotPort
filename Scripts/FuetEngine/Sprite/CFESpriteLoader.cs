@@ -24,8 +24,10 @@ namespace FuetEngine
             Texture texture = ResourceLoader.Load<Texture>(textureFilename);
             if (texture == null)
             {
+                GD.Print("While creating sprite frame, cannot load texture " + textureFilename);
                 return;
             }
+
             // texture.ResourceLocalToScene = true;
             int textureWidth = texture.GetWidth();
             int textureHeight = texture.GetHeight();
@@ -81,17 +83,17 @@ namespace FuetEngine
             Script spriteActionScript = ResourceLoader.Load(FuetEngine.Support.SPRITE_ACTION_SCRIPT_FILE) as Script;
             Script spriteFrameScript = ResourceLoader.Load(FuetEngine.Support.SPRITE_FRAME_SCRIPT_FILE) as Script;
 
-            CFESprite oSprite = Support.CreateObject<CFESprite>(spriteScript) as CFESprite;
+            CFESprite oSprite = Support.CreateObject<CFESprite>(spriteScript);
             oSprite.Name = _spriteName;
 
-            CFESpriteAction oAction = Support.CreateObject<CFESpriteAction>(spriteActionScript) as CFESpriteAction;
+            CFESpriteAction oAction = Support.CreateObject<CFESpriteAction>(spriteActionScript);
             oAction.Name = "default";            
             oAction.m_ePlayMode     = ESFSPlayMode.SFSPM_ONESHOT;
 	        oAction.m_rActionTime   = 0.0f;
 	        oAction.m_rRandStartTime = 0.0f;
             oAction.m_eBlendMode    = EFEBlendMode.BM_ALPHA;
 
-            CFESpriteFrame oFrame = Support.CreateObject<CFESpriteFrame>(spriteFrameScript) as CFESpriteFrame;
+            CFESpriteFrame oFrame = Support.CreateObject<CFESpriteFrame>(spriteFrameScript);
             oFrame.Name = "SpriteFrame";
             oFrame.m_oPivot     = new CFEVect2(0.0f, 0.0f);
             oFrame.m_oUVIni = new CFEVect2(0.0f, 0.0f);
@@ -139,7 +141,7 @@ namespace FuetEngine
             Script spriteActionScript = ResourceLoader.Load(FuetEngine.Support.SPRITE_ACTION_SCRIPT_FILE) as Script;
             Script spriteFrameScript = ResourceLoader.Load(FuetEngine.Support.SPRITE_FRAME_SCRIPT_FILE) as Script;
 
-            CFESprite oSprite = Support.CreateObject<CFESprite>(spriteScript) as CFESprite;
+            CFESprite oSprite = Support.CreateObject<CFESprite>(spriteScript);
             oSprite.Name = oConfig.sGetString("Sprite.Name", "nonamed");
 
             // Number of actions
@@ -147,7 +149,7 @@ namespace FuetEngine
 
             for (int a = 0; a < uiNumActions; a++)
             {
-                CFESpriteAction oAction = Support.CreateObject<CFESpriteAction>(spriteActionScript) as CFESpriteAction;
+                CFESpriteAction oAction = Support.CreateObject<CFESpriteAction>(spriteActionScript);
                 oAction.SetName("default");
                 oAction.m_rActionTime = 0.0f;
 
@@ -219,7 +221,7 @@ namespace FuetEngine
                         for (uint i = 0; i < uiXFrames; i++)
                         {
                             // Create the frame sequence
-                            CFESpriteFrame oFrame = Support.CreateObject<CFESpriteFrame>(spriteFrameScript) as CFESpriteFrame;
+                            CFESpriteFrame oFrame = Support.CreateObject<CFESpriteFrame>(spriteFrameScript);
                             oFrame.Name = "Frame_" + j.ToString() + "_" + i.ToString();
                             oFrame.m_oPivot     = new CFEVect2(rPivotX, rPivotY);
                             oFrame.m_oUVIni = new CFEVect2((float)i * rXStep, (float)j * rYStep);
@@ -269,7 +271,7 @@ namespace FuetEngine
                         // Create the frame sequence
                         string sFrameTex = sMaterial + i;
 
-                        CFESpriteFrame oFrame = Support.CreateObject<CFESpriteFrame>(spriteFrameScript) as CFESpriteFrame;
+                        CFESpriteFrame oFrame = Support.CreateObject<CFESpriteFrame>(spriteFrameScript);
                         oFrame.Name = "Frame_" + i.ToString();
                         oFrame.m_oPivot     = new CFEVect2(rPivotX, rPivotY);
                         oFrame.m_oUVIni = new CFEVect2(0, 0);
@@ -301,7 +303,7 @@ namespace FuetEngine
                     // Create the frame sequence
                     for (uint i = 0; i < uiFrames; i++)
                     {
-                        CFESpriteFrame oFrame = Support.CreateObject<CFESpriteFrame>(spriteFrameScript) as CFESpriteFrame;
+                        CFESpriteFrame oFrame = Support.CreateObject<CFESpriteFrame>(spriteFrameScript);
                         oFrame.Name = "Frame_" + i.ToString();
 
                         sFCVar = sFVar + ".Frame" + i;

@@ -12,7 +12,8 @@ namespace FuetEngine
 	{
 		public FEReal m_rActionTime = 0.0f;
 		public FEReal m_rMaxActionTime = 0.0f;
-
+		// Make sure you provide a parameterless constructor.
+		public CFEHUDElementAction(){}
 		public CFEHUDElementAction(CFEString _sName)
 		{
 			Name = _sName;

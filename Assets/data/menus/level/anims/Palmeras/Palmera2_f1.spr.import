@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/Palmera2_f1.spr-90add36da1fbff530bd6ed2315af14c7.tscn"
+
+[deps]
+
+source_file="res://Assets/data/menus/level/anims/Palmeras/Palmera2_f1.spr"
+dest_files=[ "res://.import/Palmera2_f1.spr-90add36da1fbff530bd6ed2315af14c7.tscn" ]
+
+[params]
+

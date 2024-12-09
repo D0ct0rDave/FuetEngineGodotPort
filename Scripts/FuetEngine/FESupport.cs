@@ -1,5 +1,6 @@
-﻿using CFEVect2 = Godot.Vector2;
-using Godot;
+﻿using Godot;
+using System.Diagnostics;
+using CFEVect2 = Godot.Vector2;
 
 namespace FuetEngine
 {
@@ -15,44 +16,49 @@ namespace FuetEngine
 		public const string HUD_OBJECT_SCRIPT_FILE = "res://Scripts/FuetEngine/HUD/CFEHUDObject.cs";
 		public const string HUD_GROUP_SCRIPT_FILE = "res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs";
 		public const string HUD_ICON_SCRIPT_FILE = "res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs";
-		
-		public static Node CreateObject(Script _script)
-		{
-			_script.SetupLocalToScene();
-
-			Node node = new Node();
-			var godotObjectId = node.GetInstanceId();
-			node.SetScript(_script);
-			return GD.InstanceFromId(godotObjectId) as Node;
-		}
-		public static Node CreateObject(string _scriptFilename)
-		{
-			return CreateObject(ResourceLoader.Load(_scriptFilename) as Script);
-		}
-
-		public static T CreateObject<T>(Script _script) where T : Node, new()
+		//---------------------------------------------------------------------
+		private static B _CreateObject<T,B>(Script _script) where T : Node, new() where B : Node
 		{
 			_script.SetupLocalToScene();
 
 			T node = new T();
 			var godotObjectId = node.GetInstanceId();
 			node.SetScript(_script);
-			node = GD.InstanceFromId(godotObjectId) as T;
+			B finalNode = GD.InstanceFromId(godotObjectId) as B;
 
-			if (node == null)
+			if (finalNode == null)
 			{
-				GD.Print("Cannot convert back node to class " + typeof(T) + ".\n" + 
+				GD.Print("Cannot convert back node to class of type " + typeof(B) + ".\n" + 
 				"If this class is instanced inside the editor don't forget to mark it as [Tool] !!!");
+
+				Debugger.Break(); // Set breakpoint here
 			}
 
-			return node;
+			return finalNode;
 		}
-
+		//---------------------------------------------------------------------
+		public static T CreateObject<T>(Script _script) where T : Node, new()
+		{
+			return _CreateObject<T,T>(_script);
+		}
+		//---------------------------------------------------------------------
 		public static T CreateObject<T>(string _scriptFilename) where T : Node, new()
 		{
-			return CreateObject<T>(ResourceLoader.Load(_scriptFilename) as Script);
+			GD.Print("CreateObject("+_scriptFilename+")");			
+			return _CreateObject<T,T>(ResourceLoader.Load(_scriptFilename) as Script);
 		}
-
+		//---------------------------------------------------------------------
+		public static B CreateObject<B,T>(Script _script) where T : Node, new() where B : Node
+		{
+			return _CreateObject<T,B>(_script);
+		}
+		//---------------------------------------------------------------------
+		public static B CreateObject<T,B>(string _scriptFilename) where T : Node, new() where B : Node
+		{
+			GD.Print("CreateObject("+_scriptFilename+")");
+			return _CreateObject<T,B>(ResourceLoader.Load(_scriptFilename) as Script);
+		}
+		//---------------------------------------------------------------------
 		public static void SetObjectEnabled(Node _node, bool _enabled)
 		{
 			_node.SetPhysicsProcess(_enabled);

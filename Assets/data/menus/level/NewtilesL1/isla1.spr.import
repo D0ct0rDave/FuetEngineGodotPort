@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/isla1.spr-6baf41cda61a133266284e4efc2683b5.tscn"
+
+[deps]
+
+source_file="res://Assets/data/menus/level/NewtilesL1/isla1.spr"
+dest_files=[ "res://.import/isla1.spr-6baf41cda61a133266284e4efc2683b5.tscn" ]
+
+[params]
+

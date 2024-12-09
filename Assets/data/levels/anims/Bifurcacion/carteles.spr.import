@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/carteles.spr-15c82085e59ff61d709f813473eca8c8.tscn"
+
+[deps]
+
+source_file="res://Assets/data/levels/anims/Bifurcacion/carteles.spr"
+dest_files=[ "res://.import/carteles.spr-15c82085e59ff61d709f813473eca8c8.tscn" ]
+
+[params]
+

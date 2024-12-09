@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/TileBG4.spr-bf292959e6371e897f1e4ac6cc58e4fd.tscn"
+
+[deps]
+
+source_file="res://Assets/data/menus/level/NewtilesL1/TileBG4.spr"
+dest_files=[ "res://.import/TileBG4.spr-bf292959e6371e897f1e4ac6cc58e4fd.tscn" ]
+
+[params]
+

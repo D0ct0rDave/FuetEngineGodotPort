@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/stars.spr-65671a1551bd779fbc5262c8cb9af739.tscn"
+
+[deps]
+
+source_file="res://Assets/data/levels/anims/Gate/stars.spr"
+dest_files=[ "res://.import/stars.spr-65671a1551bd779fbc5262c8cb9af739.tscn" ]
+
+[params]
+

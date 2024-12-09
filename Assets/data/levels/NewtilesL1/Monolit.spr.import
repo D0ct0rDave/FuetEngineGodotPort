@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/Monolit.spr-8049c8bfa45ffad2853ef8e18c6f038a.tscn"
+
+[deps]
+
+source_file="res://Assets/data/levels/NewtilesL1/Monolit.spr"
+dest_files=[ "res://.import/Monolit.spr-8049c8bfa45ffad2853ef8e18c6f038a.tscn" ]
+
+[params]
+

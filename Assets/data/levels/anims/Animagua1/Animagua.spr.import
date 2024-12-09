@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/Animagua.spr-0535f46324207b126813207146e334fd.tscn"
+
+[deps]
+
+source_file="res://Assets/data/levels/anims/Animagua1/Animagua.spr"
+dest_files=[ "res://.import/Animagua.spr-0535f46324207b126813207146e334fd.tscn" ]
+
+[params]
+

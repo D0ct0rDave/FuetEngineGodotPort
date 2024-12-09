@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/Rayof3.spr-4abc8aa4f973377eb8897108208566a2.tscn"
+
+[deps]
+
+source_file="res://Assets/data/levels/anims/Gate/Rayof3.spr"
+dest_files=[ "res://.import/Rayof3.spr-4abc8aa4f973377eb8897108208566a2.tscn" ]
+
+[params]
+

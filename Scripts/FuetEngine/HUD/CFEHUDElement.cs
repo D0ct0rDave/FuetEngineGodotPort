@@ -10,6 +10,8 @@ namespace FuetEngine
 	[Tool]
 	public partial class CFEHUDElement : Node2D
 	{
+		// Make sure you provide a parameterless constructor.
+		public CFEHUDElement(){}		
 		/// Default constructor of this element
 		public CFEHUDElement(CFEString _sName)
 		{

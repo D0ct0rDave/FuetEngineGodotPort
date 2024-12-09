@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/mar_back.spr-5737a14e0bc595183d47843e2c11740e.tscn"
+
+[deps]
+
+source_file="res://Assets/data/menus/level/anims/Mar/mar_back.spr"
+dest_files=[ "res://.import/mar_back.spr-5737a14e0bc595183d47843e2c11740e.tscn" ]
+
+[params]
+

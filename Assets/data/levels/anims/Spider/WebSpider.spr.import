@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/WebSpider.spr-b38ec32bd03b6c8ef037ef7dea7997e9.tscn"
+
+[deps]
+
+source_file="res://Assets/data/levels/anims/Spider/WebSpider.spr"
+dest_files=[ "res://.import/WebSpider.spr-b38ec32bd03b6c8ef037ef7dea7997e9.tscn" ]
+
+[params]
+

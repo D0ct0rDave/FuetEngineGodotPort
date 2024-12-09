@@ -14,6 +14,8 @@ namespace FuetEngine
 		[Export]
 		public FEReal m_rDepthFactor = 0.1f;
 
+		// Make sure you provide a parameterless constructor.
+		public CFEHUDGroup(){}
 		/// Default constructor of the class.
 		public CFEHUDGroup(CFEString _sName) : 
 			base(_sName)

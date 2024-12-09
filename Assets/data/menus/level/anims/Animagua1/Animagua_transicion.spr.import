@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/Animagua_transicion.spr-50c3288fed5024d172fb7b88387f4a91.tscn"
+
+[deps]
+
+source_file="res://Assets/data/menus/level/anims/Animagua1/Animagua_transicion.spr"
+dest_files=[ "res://.import/Animagua_transicion.spr-50c3288fed5024d172fb7b88387f4a91.tscn" ]
+
+[params]
+

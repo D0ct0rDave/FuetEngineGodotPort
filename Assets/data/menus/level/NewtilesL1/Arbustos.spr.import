@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/Arbustos.spr-1d32aef03cb2a00a28e3dd994a9aff51.tscn"
+
+[deps]
+
+source_file="res://Assets/data/menus/level/NewtilesL1/Arbustos.spr"
+dest_files=[ "res://.import/Arbustos.spr-1d32aef03cb2a00a28e3dd994a9aff51.tscn" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/Big1st.spr-9c444408b1bdb3f710daee3592e24fe0.tscn"
+
+[deps]
+
+source_file="res://Assets/data/levels/NewtilesL1/Big1st.spr"
+dest_files=[ "res://.import/Big1st.spr-9c444408b1bdb3f710daee3592e24fe0.tscn" ]
+
+[params]
+

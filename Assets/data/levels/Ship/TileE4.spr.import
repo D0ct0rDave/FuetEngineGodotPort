@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/TileE4.spr-02f32870f769501122db5dcd4040010c.tscn"
+
+[deps]
+
+source_file="res://Assets/data/levels/Ship/TileE4.spr"
+dest_files=[ "res://.import/TileE4.spr-02f32870f769501122db5dcd4040010c.tscn" ]
+
+[params]
+

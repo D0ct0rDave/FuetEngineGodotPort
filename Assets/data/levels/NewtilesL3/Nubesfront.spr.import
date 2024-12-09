@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/Nubesfront.spr-5d34518dd98fce3f8bc439973786cd86.tscn"
+
+[deps]
+
+source_file="res://Assets/data/levels/NewtilesL3/Nubesfront.spr"
+dest_files=[ "res://.import/Nubesfront.spr-5d34518dd98fce3f8bc439973786cd86.tscn" ]
+
+[params]
+

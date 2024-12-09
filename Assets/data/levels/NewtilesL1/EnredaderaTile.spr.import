@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/EnredaderaTile.spr-2ef4ad973ed0937af3898b23e2690ee4.tscn"
+
+[deps]
+
+source_file="res://Assets/data/levels/NewtilesL1/EnredaderaTile.spr"
+dest_files=[ "res://.import/EnredaderaTile.spr-2ef4ad973ed0937af3898b23e2690ee4.tscn" ]
+
+[params]
+

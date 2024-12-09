@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/Spidereyes.spr-a8337b09280476e22d669c6c60b08b9d.tscn"
+
+[deps]
+
+source_file="res://Assets/data/levels/anims/Spider/Spidereyes.spr"
+dest_files=[ "res://.import/Spidereyes.spr-a8337b09280476e22d669c6c60b08b9d.tscn" ]
+
+[params]
+

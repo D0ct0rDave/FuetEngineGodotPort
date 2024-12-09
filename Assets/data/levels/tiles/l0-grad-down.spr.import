@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/l0-grad-down.spr-b60ac7a7002b58cdfdcf95f9b9574912.tscn"
+
+[deps]
+
+source_file="res://Assets/data/levels/tiles/l0-grad-down.spr"
+dest_files=[ "res://.import/l0-grad-down.spr-b60ac7a7002b58cdfdcf95f9b9574912.tscn" ]
+
+[params]
+

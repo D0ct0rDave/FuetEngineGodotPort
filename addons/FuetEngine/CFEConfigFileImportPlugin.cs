@@ -38,7 +38,7 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 		Godot.Collections.Array array = new Godot.Collections.Array();
 		array.Add( "cfg");
 		array.Add( "spr");
-		array.Add( "hud");
+		// array.Add( "hud");
 		return array;
 	}
 	// ------------------------------------------------------------------------	

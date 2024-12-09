@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/Cubo2F3.spr-3f9e72219ea5447650c3214cafd87e91.tscn"
+
+[deps]
+
+source_file="res://Assets/data/menus/level/anims/Mar/Cubo2/Cubo2F3.spr"
+dest_files=[ "res://.import/Cubo2F3.spr-3f9e72219ea5447650c3214cafd87e91.tscn" ]
+
+[params]
+

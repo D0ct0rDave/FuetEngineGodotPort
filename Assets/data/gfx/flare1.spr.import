@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/flare1.spr-ba4f85971da21043c19c4efa3cc250ac.tscn"
+
+[deps]
+
+source_file="res://Assets/data/gfx/flare1.spr"
+dest_files=[ "res://.import/flare1.spr-ba4f85971da21043c19c4efa3cc250ac.tscn" ]
+
+[params]
+

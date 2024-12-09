@@ -31,8 +31,10 @@ namespace FuetEngine
 		public FEReal		m_rCurDepth;
 		public CFEColor		m_oCurColor;
 		public int			m_iCurAction;
-		public bool			m_bCurVis;
+		public bool			m_bCurVis;		
 		// --------------------------------------------------------------------
+		// Make sure you provide a parameterless constructor.
+		public CFEHUDObject(){}
 		/// Default constructor of this element
 		public CFEHUDObject(CFEString _sName)
 		{
@@ -293,8 +295,7 @@ namespace FuetEngine
 		// --------------------------------------------------------------------
 		/// Retrieves the TAG string of this object
 		public CFEString sGetTAG()
-		{
-			return m_sTAG;
+		{return m_sTAG;
 		}
 		// --------------------------------------------------------------------
 		/// Perform processing over the object
@@ -303,31 +304,5 @@ namespace FuetEngine
 			_oVisitor.Visit(this);
 		}
 	}
-	
-
-	public class CFEHUDIcon : CFEHUDObject 
-	{
-		public CFEHUDIcon(string _sName) : base(_sName) {}
-	};
-
-	public class CFEHUDLabel : CFEHUDObject 
-	{
-		public CFEHUDLabel(string _sName) : base(_sName) {}
-	};
-
-	public class CFEHUDShape : CFEHUDObject
-	{
-		public CFEHUDShape(string _sName) : base(_sName) {}
-	};
-
-	public class CFEHUDPSys : CFEHUDObject 
-	{
-		public CFEHUDPSys(string _sName) : base(_sName) {}
-	};
-
-	public class CFEHUDRect : CFEHUDObject 
-	{
-		public CFEHUDRect(string _sName) : base(_sName) {}
-	};
 }
 //-----------------------------------------------------------------------------

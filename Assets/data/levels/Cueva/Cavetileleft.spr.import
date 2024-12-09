@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/Cavetileleft.spr-661ae6f1d6dca4f5115a982dfaac8ab2.tscn"
+
+[deps]
+
+source_file="res://Assets/data/levels/Cueva/Cavetileleft.spr"
+dest_files=[ "res://.import/Cavetileleft.spr-661ae6f1d6dca4f5115a982dfaac8ab2.tscn" ]
+
+[params]
+

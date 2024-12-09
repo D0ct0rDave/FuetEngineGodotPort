@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/failjump.spr-3879b5840504a82f07ab08647987e3f0.tscn"
+
+[deps]
+
+source_file="res://Assets/data/gfx/failjump.spr"
+dest_files=[ "res://.import/failjump.spr-3879b5840504a82f07ab08647987e3f0.tscn" ]
+
+[params]
+

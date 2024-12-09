@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/Copaback.spr-40f053eda4d23860326e72239f6d8263.tscn"
+
+[deps]
+
+source_file="res://Assets/data/menus/level/NewtilesL2/Copaback.spr"
+dest_files=[ "res://.import/Copaback.spr-40f053eda4d23860326e72239f6d8263.tscn" ]
+
+[params]
+

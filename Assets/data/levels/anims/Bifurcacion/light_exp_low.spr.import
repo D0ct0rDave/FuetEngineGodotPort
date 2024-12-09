@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/light_exp_low.spr-d882966b17ef39227564acdbf28e3d45.tscn"
+
+[deps]
+
+source_file="res://Assets/data/levels/anims/Bifurcacion/light_exp_low.spr"
+dest_files=[ "res://.import/light_exp_low.spr-d882966b17ef39227564acdbf28e3d45.tscn" ]
+
+[params]
+
