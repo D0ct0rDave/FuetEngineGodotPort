@@ -1,0 +1,1 @@
+Sprite:{ Name="Bodegon_Big_2"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "Bodegon_Big_2"; Size:{ Width = 379.0; Height = 474.0; }; }; }; }; }; 

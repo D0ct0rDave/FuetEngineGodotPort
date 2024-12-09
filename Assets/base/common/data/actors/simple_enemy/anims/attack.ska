@@ -1,0 +1,325 @@
+SkelAction:
+{
+	Name = "attack";
+	PlayMode = "oneshot";
+	NodeAction0:
+	{
+		NodeName = "PIVOT";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				Value = 0.2299;
+			};
+			KeyFrame1:
+			{
+				Value = 0.3757;
+				Time = 0.1555;
+			};
+			KeyFrame2:
+			{
+				Value = -0.4648;
+				Time = 0.2332;
+			};
+		};
+	};
+	NodeAction1:
+	{
+		NodeName = "hip";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				y = 2.0000;
+			};
+			KeyFrame1:
+			{
+				y = 2.0000;
+				Time = 0.1555;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = 0.1002;
+			};
+			KeyFrame1:
+			{
+				Value = 0.0296;
+				Time = 0.2332;
+			};
+		};
+	};
+	NodeAction2:
+	{
+		NodeName = "l_hip";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				y = -2.0000;
+			};
+			KeyFrame1:
+			{
+				y = -2.0000;
+				Time = 0.1555;
+			};
+		};
+	};
+	NodeAction3:
+	{
+		NodeName = "l_foot";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = -0.1321;
+			};
+			KeyFrame1:
+			{
+				Value = -0.1321;
+				Time = 0.2332;
+			};
+		};
+	};
+	NodeAction4:
+	{
+		NodeName = "r_hip";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				y = -2.0000;
+			};
+			KeyFrame1:
+			{
+				y = -2.0000;
+				Time = 0.1555;
+			};
+		};
+	};
+	NodeAction5:
+	{
+		NodeName = "neck";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				y = 2.0000;
+			};
+			KeyFrame1:
+			{
+				y = 2.0000;
+				Time = 0.1555;
+			};
+		};
+	};
+	NodeAction6:
+	{
+		NodeName = "pj_neck";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 0.2205;
+				Time = 0.2332;
+			};
+		};
+	};
+	NodeAction7:
+	{
+		NodeName = "l_shoulder";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				Value = -4.0032;
+			};
+			KeyFrame1:
+			{
+				Value = -3.9328;
+				Time = 0.1555;
+			};
+			KeyFrame2:
+			{
+				Value = -1.2646;
+				Time = 0.2332;
+			};
+		};
+	};
+	NodeAction8:
+	{
+		NodeName = "l_arm";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = -0.9516;
+			};
+			KeyFrame1:
+			{
+				Value = 0.9421;
+				Time = 0.2332;
+			};
+		};
+	};
+	NodeAction9:
+	{
+		NodeName = "r_shoulder";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				Value = 1.9755;
+			};
+			KeyFrame1:
+			{
+				Value = 2.1019;
+				Time = 0.1555;
+			};
+			KeyFrame2:
+			{
+				Value = 5.2498;
+				Time = 0.2332;
+			};
+		};
+	};
+	NodeAction10:
+	{
+		NodeName = "r_arm";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				Value = -1.0880;
+			};
+			KeyFrame1:
+			{
+				Value = -0.3679;
+				Time = 0.1555;
+			};
+			KeyFrame2:
+			{
+				Value = 0.0845;
+				Time = 0.2332;
+			};
+		};
+	};
+	NodeAction11:
+	{
+		NodeName = "r_hand";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				Value = -1.2080;
+			};
+			KeyFrame1:
+			{
+				Value = -1.9177;
+				Time = 0.1555;
+			};
+			KeyFrame2:
+			{
+				Value = -1.1036;
+				Time = 0.2332;
+			};
+		};
+	};
+	NodeAction12:
+	{
+		NodeName = "hip_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction13:
+	{
+		NodeName = "l_hip_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction14:
+	{
+		NodeName = "l_foot_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction15:
+	{
+		NodeName = "r_hip_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction16:
+	{
+		NodeName = "r_foot_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction17:
+	{
+		NodeName = "neck_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction18:
+	{
+		NodeName = "head_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction19:
+	{
+		NodeName = "l_shoulder_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction20:
+	{
+		NodeName = "l_arm_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction21:
+	{
+		NodeName = "l_hand_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction22:
+	{
+		NodeName = "r_shoulder_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction23:
+	{
+		NodeName = "r_arm_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction24:
+	{
+		NodeName = "r_hand_sprite_0";
+		NodeAction = 0;
+	};
+	NumNodeActions = 25;
+};

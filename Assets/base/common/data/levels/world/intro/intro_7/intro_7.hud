@@ -1,0 +1,146 @@
+HUD:
+{
+	FileVersion = 2;
+	NumElements = 1;
+	Element0:
+	{
+		Name = "objs";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "objs";
+			Position:
+			{
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 1;
+			Object0:
+			{
+				Type = "Group";
+				Name = "g_objs";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 2;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "intro_7";
+					Name = "ic_objs";
+					Action = 0;
+					Position:
+					{
+						x = 900.0000;
+						y = 540.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+				Object1:
+				{
+					Type = "Icon";
+					Sprite = "intro_7_mc";
+					Name = "ic_objs-1";
+					Action = 0;
+					Position:
+					{
+						x = 1144.0000;
+						y = 508.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "SpeakPhrase";
+			ObjAction0:
+			{
+				HUDObject = "ic_objs-1";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 3.0000;
+						a = 0.0000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+};

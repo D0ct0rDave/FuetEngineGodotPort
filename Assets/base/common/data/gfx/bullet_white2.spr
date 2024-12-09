@@ -1,0 +1,35 @@
+Sprite:
+{
+	Name = "bullet_white2";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		BlendMode = "LIGHTSABER";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "bullet_white2";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.6797;
+						y = 0.4883;
+					};
+					Size:
+					{
+						Width = 512.0;
+						Height = 256.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

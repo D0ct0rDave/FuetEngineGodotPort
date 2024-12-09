@@ -1,0 +1,76 @@
+ParticleSystem:
+{
+	Name = "sword_hit_sparks";
+	Sprite = "flare4";
+	Freq = 80.0000;
+	TTL = 0.5000;
+	EmisorRad:
+	{
+	};
+	EmisorPhase:
+	{
+		Min = -3.1416;
+		Max = 3.1416;
+	};
+	EmisorSpeed:
+	{
+		Min = 650.0000;
+		Max = 650.0000;
+	};
+	EmisorAccel = -300.0000;
+	EmisorXOfs:
+	{
+	};
+	EmisorYOfs:
+	{
+	};
+	EmisorXSpeed:
+	{
+	};
+	EmisorYSpeed:
+	{
+	};
+	EmisorYAccel = 400.0000;
+	PartSize:
+	{
+		Min = 0.3000;
+		Max = 0.9000;
+	};
+	PartSizeSpeed:
+	{
+	};
+	PartAngle:
+	{
+	};
+	PartAngleSpeed:
+	{
+	};
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 4;
+		KeyFrame0:
+		{
+			b = 0.0000;
+		};
+		KeyFrame1:
+		{
+			g = 0.8392;
+			b = 0.5020;
+			Time = 0.1000;
+		};
+		KeyFrame2:
+		{
+			g = 0.5020;
+			b = 0.0000;
+			Time = 0.4000;
+		};
+		KeyFrame3:
+		{
+			g = 0.5020;
+			b = 0.0000;
+			a = 0.0000;
+			Time = 0.5000;
+		};
+	};
+};

@@ -1,0 +1,511 @@
+SkelAction:
+{
+	Name = "run";
+	NodeAction0:
+	{
+		NodeName = "PIVOT";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 0.0692;
+				Time = 0.1245;
+			};
+			KeyFrame2:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction1:
+	{
+		NodeName = "head";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2490;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 0.0746;
+				Time = 0.1245;
+			};
+			KeyFrame2:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction2:
+	{
+		NodeName = "head_d";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction3:
+	{
+		NodeName = "c4";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction4:
+	{
+		NodeName = "pj_c4";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 0.3713;
+				Time = 0.1245;
+			};
+			KeyFrame2:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction5:
+	{
+		NodeName = "p4";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2490;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = -0.7856;
+				Time = 0.1245;
+			};
+			KeyFrame2:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction6:
+	{
+		NodeName = "pj_p4";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = -0.8684;
+				Time = 0.1245;
+			};
+			KeyFrame2:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction7:
+	{
+		NodeName = "p4d";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction8:
+	{
+		NodeName = "c3";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction9:
+	{
+		NodeName = "pj_c3";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = -0.6226;
+				Time = 0.1245;
+			};
+			KeyFrame2:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction10:
+	{
+		NodeName = "p3";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2490;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = -0.6152;
+				Time = 0.1245;
+			};
+			KeyFrame2:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction11:
+	{
+		NodeName = "pj_p3";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = -0.5250;
+				Time = 0.1245;
+			};
+			KeyFrame2:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction12:
+	{
+		NodeName = "p3d";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction13:
+	{
+		NodeName = "c2";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction14:
+	{
+		NodeName = "pj_c2";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = -0.4623;
+				Time = 0.1245;
+			};
+			KeyFrame2:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction15:
+	{
+		NodeName = "p2";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2490;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = -0.9502;
+				Time = 0.1245;
+			};
+			KeyFrame2:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction16:
+	{
+		NodeName = "pj_p2";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 0.0145;
+				Time = 0.1245;
+			};
+			KeyFrame2:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction17:
+	{
+		NodeName = "p2d";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction18:
+	{
+		NodeName = "p1";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2490;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 1.0983;
+				Time = 0.1245;
+			};
+			KeyFrame2:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction19:
+	{
+		NodeName = "pj_p1";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 0.0145;
+				Time = 0.1245;
+			};
+			KeyFrame2:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction20:
+	{
+		NodeName = "p1d";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2490;
+			};
+		};
+	};
+	NodeAction21:
+	{
+		NodeName = "head_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction22:
+	{
+		NodeName = "head_sprite_1";
+		NodeAction = 0;
+	};
+	NodeAction23:
+	{
+		NodeName = "c4_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction24:
+	{
+		NodeName = "p4_sprite_0";
+		NodeAction = 3;
+	};
+	NodeAction25:
+	{
+		NodeName = "c3_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction26:
+	{
+		NodeName = "p3_sprite_0";
+		NodeAction = 2;
+	};
+	NodeAction27:
+	{
+		NodeName = "c2_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction28:
+	{
+		NodeName = "p2_sprite_0";
+		NodeAction = 1;
+	};
+	NodeAction29:
+	{
+		NodeName = "p1_sprite_0";
+		NodeAction = 0;
+	};
+	NumNodeActions = 30;
+};

@@ -1,0 +1,72 @@
+Sprite:
+{
+	Name = "cuerpo";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 3;
+				Frame0:
+				{
+					Material = "cuerpo1";
+					BlendTime = 0.1940;
+					Pivot:
+					{
+						x = 0.3186;
+						y = 0.5789;
+					};
+					Size:
+					{
+						Width = 113.0;
+						Height = 190.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "cuerpo2";
+					BlendTime = 0.1940;
+					Pivot:
+					{
+						x = 0.3186;
+						y = 0.5789;
+					};
+					Size:
+					{
+						Width = 113.0;
+						Height = 190.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame2:
+				{
+					Material = "cuerpo3";
+					BlendTime = 0.1940;
+					Pivot:
+					{
+						x = 0.3186;
+						y = 0.5789;
+					};
+					Size:
+					{
+						Width = 113.0;
+						Height = 190.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

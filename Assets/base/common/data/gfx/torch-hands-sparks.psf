@@ -1,0 +1,73 @@
+ParticleSystem:
+{
+	Name = "torch-hands-sparks";
+	Sprite = "flare3";
+	Freq = 2.0000;
+	TTL = 2.0000;
+	EmisorRad:
+	{
+	};
+	EmisorPhase:
+	{
+		Min = 1.3090;
+		Max = 1.8326;
+	};
+	EmisorSpeed:
+	{
+		Min = 70.0000;
+		Max = 70.0000;
+	};
+	EmisorAccel = -5.0000;
+	EmisorXOfs:
+	{
+		Min = -25.0000;
+		Max = 25.0000;
+	};
+	EmisorYOfs:
+	{
+	};
+	EmisorXSpeed:
+	{
+		Min = 5.0000;
+		Max = 10.0000;
+	};
+	EmisorYSpeed:
+	{
+	};
+	EmisorXAccel = -5.0000;
+	PartSize:
+	{
+		Min = 0.0194;
+		Max = 0.0206;
+	};
+	PartSizeSpeed:
+	{
+	};
+	PartAngle:
+	{
+	};
+	PartAngleSpeed:
+	{
+	};
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 3;
+		KeyFrame0:
+		{
+			b = 0.7922;
+		};
+		KeyFrame1:
+		{
+			b = 0.0000;
+			a = 0.5020;
+			Time = 0.1000;
+		};
+		KeyFrame2:
+		{
+			g = 0.5020;
+			b = 0.0000;
+			Time = 1.0000;
+		};
+	};
+};

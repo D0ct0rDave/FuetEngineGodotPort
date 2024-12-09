@@ -1,0 +1,1 @@
+Sprite:{ Name="estrellita"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "estrellita"; Size:{ Width = 95.0; Height = 95.0; }; }; }; }; }; 

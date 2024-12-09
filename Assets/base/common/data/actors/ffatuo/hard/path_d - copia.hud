@@ -1,0 +1,256 @@
+HUD:
+{
+	FileVersion = 2;
+	NumElements = 2;
+	Element0:
+	{
+		Name = "path";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "path";
+			Position:
+			{
+			};
+			Depth = 0.2000;
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 1;
+			Object0:
+			{
+				Type = "Rect";
+				Width = 100.0000;
+				Height = 100.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_path";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "OnIdle";
+			ObjAction0:
+			{
+				HUDObject = "path";
+				XFunc:
+				{
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 5.0000;
+						LerpFunc = "sin";
+					};
+					KeyFrame2:
+					{
+						Time = 7.5000;
+						Value = -1100.0000;
+					};
+				};
+				YFunc:
+				{
+					NumKeyFrames = 7;
+					KeyFrame0:
+					{
+						Value = 200.0000;
+					};
+					KeyFrame1:
+					{
+						Time = 1.0000;
+						Value = -1300.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 2.0000;
+						Value = -1370.0000;
+					};
+					KeyFrame3:
+					{
+						Time = 3.0000;
+						Value = -1300.0000;
+					};
+					KeyFrame4:
+					{
+						Time = 4.0000;
+						Value = -1370.0000;
+					};
+					KeyFrame5:
+					{
+						Time = 5.0000;
+						Value = -1300.0000;
+					};
+					KeyFrame6:
+					{
+						Time = 7.5000;
+						Value = 200.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 4;
+					KeyFrame0:
+					{
+						EventName = "StartShooting";
+					};
+					KeyFrame1:
+					{
+						Time = 2.0000;
+						EventName = "StopShooting";
+					};
+					KeyFrame2:
+					{
+						Time = 5.0000;
+						EventName = "StartShooting";
+					};
+					KeyFrame3:
+					{
+						Time = 6.0000;
+						EventName = "StopShooting";
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+	Element1:
+	{
+		Name = "Background";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "Background";
+			Position:
+			{
+				x = -2666.0000;
+				y = -1600.0000;
+			};
+			Depth = 1.0000;
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 2;
+			Object0:
+			{
+				Type = "Icon";
+				Sprite = "../../danmaku/background";
+				Name = "ic_Background";
+				Action = 0;
+				Position:
+				{
+					x = 1333.0000;
+					y = 800.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object1:
+			{
+				Type = "Rect";
+				Width = 1280.0000;
+				Height = 960.0000;
+				PivotX = 0.0000;
+				PivotY = 0.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_Background";
+				Position:
+				{
+					x = 2666.0000;
+					y = 1600.0000;
+				};
+				Scale:
+				{
+					x = 2.0833;
+					y = 1.6667;
+				};
+				Color:
+				{
+					r = 0.4863;
+					g = 0.3294;
+					b = 0.9608;
+				};
+			};
+		};
+	};
+};

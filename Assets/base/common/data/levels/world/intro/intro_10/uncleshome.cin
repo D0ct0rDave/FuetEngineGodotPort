@@ -1,0 +1,19 @@
+Cinematic:
+{
+	NumPlanes = 3;
+
+	Plane0:
+	{
+		Script = "script_plane1";
+	};
+	
+	Plane1:
+	{
+		Script = "script_plane2";
+	};
+	
+	Plane2:
+	{
+		Script = "script_plane3";
+	};
+};

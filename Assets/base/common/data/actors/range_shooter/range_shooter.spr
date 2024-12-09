@@ -1,0 +1,33 @@
+Sprite:
+{
+	Name = "range_shooter";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "range_shooter";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 224.0;
+						Height = 285.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

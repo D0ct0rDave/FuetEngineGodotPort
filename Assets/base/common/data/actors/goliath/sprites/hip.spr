@@ -1,0 +1,30 @@
+Sprite:
+{
+	Name = "hip";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "hip";
+					BlendTime = 0.0000;
+					Pivot:
+					{
+						x = 0.36364;
+						y = 0.35185;
+					};
+					Size:
+					{
+						Width = 187.0;
+						Height = 108.0;
+					};
+				};
+			};
+		};
+	};
+};

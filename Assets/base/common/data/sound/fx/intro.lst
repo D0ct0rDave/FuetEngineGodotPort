@@ -1,0 +1,10 @@
+SoundList:
+{
+	NumSounds = 1;
+
+	S0:
+	{
+		Alias = "CCBell";
+		File  = "intro/ccbell";
+	};
+};

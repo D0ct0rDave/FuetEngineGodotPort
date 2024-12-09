@@ -1,0 +1,52 @@
+Sprite:
+{
+	Name = "light_exp_fluctuant";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		BlendMode = "LIGHTMARKER";
+		PlayMode = "LOOP";
+		RandomStartTime = 0.50;
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 2;
+				Frame0:
+				{
+					Material = "light_exp_low";
+					DelayTime = 0.0980;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 128.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "light_exp";
+					DelayTime = 0.0980;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 128.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,84 @@
+Sprite:
+{
+	Name = "rs_bullet";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 3;
+				Frame0:
+				{
+					Material = "rs_bullet";
+					BlendTime = 0.1940;
+					Pivot:
+					{
+						x = 0.6725;
+						y = 0.4871;
+					};
+					Size:
+					{
+						Width = 41.4;
+						Height = 22.7;
+					};
+					TexCoords:
+					{
+						IU = 0.0011;
+						IV = -0.0035;
+						FU = 0.3056;
+						FV = 1.0302;
+					};
+				};
+				Frame1:
+				{
+					Material = "rs_bullet";
+					BlendTime = 0.1940;
+					Pivot:
+					{
+						x = 0.7202;
+						y = 0.4687;
+					};
+					Size:
+					{
+						Width = 41.9;
+						Height = 23.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3443;
+						IV = 0.0073;
+						FU = 0.6524;
+						FV = 1.0520;
+					};
+				};
+				Frame2:
+				{
+					Material = "rs_bullet";
+					BlendTime = 0.1940;
+					Pivot:
+					{
+						x = 0.7293;
+						y = 0.4443;
+					};
+					Size:
+					{
+						Width = 40.9;
+						Height = 23.2;
+					};
+					TexCoords:
+					{
+						IU = 0.7069;
+						IV = -0.0144;
+						FU = 1.0079;
+						FV = 1.0411;
+					};
+				};
+			};
+		};
+	};
+};

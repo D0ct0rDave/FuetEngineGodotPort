@@ -1,0 +1,72 @@
+ParticleSystem:
+{
+	Name = "crystal_ball_sparks2";
+	Sprite = "crystal_ball_spark";
+	Freq = 40.0000;
+	TTL = 0.5000;
+	EmisorRad:
+	{
+		Min = 64.0000;
+		Max = 64.0000;
+	};
+	EmisorPhase:
+	{
+		Min = -3.1416;
+		Max = 3.1416;
+	};
+	EmisorSpeed:
+	{
+		Min = 50.0000;
+		Max = 50.0000;
+	};
+	EmisorAccel = -50.0000;
+	EmisorXOfs:
+	{
+	};
+	EmisorYOfs:
+	{
+	};
+	EmisorXSpeed:
+	{
+	};
+	EmisorYSpeed:
+	{
+	};
+	PartSize:
+	{
+		Min = 0.3500;
+		Max = 0.5250;
+	};
+	PartSizeSpeed:
+	{
+	};
+	PartAngle:
+	{
+	};
+	PartAngleSpeed:
+	{
+	};
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 3;
+		KeyFrame0:
+		{
+			r = 0.5020;
+			g = 0.0000;
+		};
+		KeyFrame1:
+		{
+			r = 0.5020;
+			g = 0.0000;
+			Time = 0.3000;
+		};
+		KeyFrame2:
+		{
+			r = 0.5020;
+			g = 0.0000;
+			a = 0.0000;
+			Time = 0.5000;
+		};
+	};
+};

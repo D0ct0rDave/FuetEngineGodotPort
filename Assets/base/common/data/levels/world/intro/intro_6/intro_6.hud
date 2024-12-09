@@ -1,0 +1,544 @@
+HUD:
+{
+	FileVersion = 2;
+	NumElements = 1;
+	Element0:
+	{
+		Name = "objs";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "objs";
+			Position:
+			{
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 1;
+			Object0:
+			{
+				Type = "Group";
+				Name = "g_objs";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 4;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "casete_ipod_Off";
+					Name = "ic_objs";
+					Action = 0;
+					Position:
+					{
+						x = 900.0000;
+						y = 540.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+				Object1:
+				{
+					Type = "Icon";
+					Sprite = "casete_ipod_play_on";
+					Name = "play";
+					Action = 0;
+					Position:
+					{
+						x = 1191.5000;
+						y = 415.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+				Object2:
+				{
+					Type = "Icon";
+					Sprite = "casete_ipod_stop_on";
+					Name = "stop";
+					Action = 0;
+					Position:
+					{
+						x = 656.0000;
+						y = 413.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+				Object3:
+				{
+					Type = "Icon";
+					Sprite = "casete_ipod_BRAZO";
+					Name = "brazo";
+					Action = 0;
+					Position:
+					{
+						x = 1152.0000;
+						y = 736.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+		};
+		NumElemActions = 2;
+		Action0:
+		{
+			Name = "OnEnterPage";
+			ObjAction0:
+			{
+				HUDObject = "stop";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+						Value = false;
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction1:
+			{
+				HUDObject = "brazo";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+						Value = false;
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 2;
+		};
+		Action1:
+		{
+			Name = "Stop";
+			ObjAction0:
+			{
+				HUDObject = "play";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 0.2000;
+						Value = false;
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction1:
+			{
+				HUDObject = "stop";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+						Value = false;
+					};
+					KeyFrame1:
+					{
+						Time = 0.2000;
+					};
+					KeyFrame2:
+					{
+						Time = 0.5000;
+						Value = false;
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction2:
+			{
+				HUDObject = "brazo";
+				XFunc:
+				{
+					NumKeyFrames = 4;
+					KeyFrame0:
+					{
+						Value = 636.0000;
+					};
+					KeyFrame1:
+					{
+						Time = 0.2000;
+					};
+					KeyFrame2:
+					{
+						Time = 0.5000;
+					};
+					KeyFrame3:
+					{
+						Time = 0.7000;
+						Value = 636.0000;
+					};
+				};
+				YFunc:
+				{
+					NumKeyFrames = 4;
+					KeyFrame0:
+					{
+						Value = 724.0000;
+					};
+					KeyFrame1:
+					{
+						Time = 0.2000;
+					};
+					KeyFrame2:
+					{
+						Time = 0.5000;
+					};
+					KeyFrame3:
+					{
+						Time = 0.7000;
+						Value = 724.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 0.7000;
+					};
+					KeyFrame2:
+					{
+						Time = 4.2000;
+						a = 0.0000;
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 0.2000;
+						EventName = "SendMessage";
+						EventValue = "GMSG_SEND_GFLOW_PLAY_ROOM_ANIM StopBackgroundSound";
+					};
+				};
+			};
+			ObjAction3:
+			{
+				HUDObject = "g_objs";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 0.2000;
+						EventName = "PlaySound";
+						EventValue = "game/intro/stop_button";
+					};
+				};
+			};
+			NumObjActions = 4;
+		};
+	};
+};

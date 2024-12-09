@@ -1,0 +1,69 @@
+ParticleSystem:
+{
+	Name = "ffatuo_trail";
+	Sprite = "../../../../../../../../NipponUW/data/rawdata/common/data/actors/ffatuo/ffatuo_part";
+	Freq = 15.0000;
+	TTL = 0.3000;
+	EmisorRad:
+	{
+	};
+	EmisorPhase:
+	{
+		Min = 1.5708;
+		Max = 1.5708;
+	};
+	EmisorSpeed:
+	{
+		Min = 1000.0000;
+		Max = 1000.0000;
+	};
+	EmisorAccel = 90.0000;
+	EmisorXOfs:
+	{
+	};
+	EmisorYOfs:
+	{
+	};
+	EmisorXSpeed:
+	{
+	};
+	EmisorYSpeed:
+	{
+	};
+	PartSize:
+	{
+		Min = 3.0000;
+		Max = 3.0000;
+	};
+	PartSizeSpeed:
+	{
+		Min = -5.0000;
+		Max = -15.0000;
+	};
+	PartAngle:
+	{
+		Min = -180.0000;
+		Max = 3.1416;
+	};
+	PartAngleSpeed:
+	{
+	};
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 3;
+		KeyFrame0:
+		{
+			a = 0.0000;
+		};
+		KeyFrame1:
+		{
+			Time = 0.1000;
+		};
+		KeyFrame2:
+		{
+			a = 0.0000;
+			Time = 0.2000;
+		};
+	};
+};

@@ -1,0 +1,33 @@
+Sprite:
+{
+	Name = "puerta";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "puerta";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 44.0;
+						Height = 185.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

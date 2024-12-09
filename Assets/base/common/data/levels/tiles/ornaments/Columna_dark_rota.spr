@@ -1,0 +1,33 @@
+Sprite:
+{
+	Name = "Columna_dark_rota";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "Columna_dark_rota";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 172.0;
+						Height = 537.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

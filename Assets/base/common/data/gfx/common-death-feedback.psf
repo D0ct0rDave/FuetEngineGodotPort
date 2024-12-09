@@ -1,0 +1,62 @@
+ParticleSystem:
+{
+	Name = "common-death-feedback";
+	Sprite = "circulito";
+	Freq = 1.5000;
+	TTL = 0.3000;
+	EmisorRad:
+	{
+	};
+	EmisorPhase:
+	{
+	};
+	EmisorSpeed:
+	{
+	};
+	EmisorXOfs:
+	{
+	};
+	EmisorYOfs:
+	{
+	};
+	EmisorXSpeed:
+	{
+	};
+	EmisorYSpeed:
+	{
+	};
+	PartSize:
+	{
+		Min = 2.5000;
+		Max = 2.5000;
+	};
+	PartSizeSpeed:
+	{
+		Min = -10.0000;
+		Max = -10.0000;
+	};
+	PartSizeAccel = -10.0000;
+	PartAngle:
+	{
+	};
+	PartAngleSpeed:
+	{
+	};
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 3;
+		KeyFrame0:
+		{
+		};
+		KeyFrame1:
+		{
+			Time = 0.1000;
+		};
+		KeyFrame2:
+		{
+			a = 0.0000;
+			Time = 0.2000;
+		};
+	};
+};

@@ -1,0 +1,83 @@
+Script : 
+{
+  Sequence = "A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12";
+  A0 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_NPCDialog";
+  };
+  A1 : 
+  {
+    Type = "PlayActorAnim";
+    Actor = "Police";
+    Anim = "speaking_civilian";
+  };
+  A2 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/fx/ui/chikichiki";
+    Vol = 0.5;
+    Pan = 0.5;
+    Loop = true;
+    Wait = false;
+  };
+  A3 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "lb_NPCDialog";
+  };
+  A4 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_NPCDialogCentered";
+    LetterByLetter = false;
+    LetterTime = 0.05000000075;
+  };
+  A5 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "lb_NPCDialogCentered";
+  };
+  A6 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_NPCDialogCentered";
+    Text = "POLICE_PRESENT3";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A7 : 
+  {
+    Type = "StopSound";
+    Sound = "data/sound/fx/ui/chikichiki";
+  };
+  A8 : 
+  {
+    Type = "PlayActorAnim";
+    Actor = "Police";
+    Anim = "idle_civilian";
+  };
+  A9 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "ic_NPCDialog";
+  };
+  A10 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "NPCDialogIdleMessage";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = true;
+  };
+  A11 : 
+  {
+    Type = "InfiniteStop";
+  };
+  A12 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_NPCDialog";
+  };
+};

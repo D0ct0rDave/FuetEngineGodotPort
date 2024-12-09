@@ -1,0 +1,646 @@
+Menu:
+{
+	BaseDir = "data/levels/world";
+
+	// Para acceder a una habitación en concreto, basta con que exista una linea del tipo:
+	// StartPage = "MI_HABITACION_A_LA_QUE_QUIERO_IR";
+	// Aqui abajo hay unas cuantas de las más relevantes.
+	// 
+	// NOTAS IMPORTANTES:	
+	//    - Las "double slashes", es decir esto: "//" son carácteres clave para comentar (desactivar) una línea entera.
+	// 	  - Para usar una de las habitaciones abajo predefinidas, bastaría con eliminar esos carácteres al inicio de la línea en cuestión. (la reactivaria)
+	//    - Sólo puede haber una línea "StartPage" activa en el fichero. Si hay 2, el juego no funciona.
+	//
+
+
+	StartPage = "intro/intro_1/intro_1";							// intro
+	// StartPage = "room_100-100"; 									// start
+	// StartPage = "room_100-099"; 									// ojo
+	// StartPage = "newspapermachine_room/newspapermachine_room";	// newspaper";
+	// StartPage = "shoproom_shop/shoproom_shop";					// shop";
+	// StartPage = "room_103-096"; 									// habitación de la tienda.
+	// StartPage = "shoproom_bank/shoproom_bank";					// bank";
+	// StartPage = "room_094-100"; 									// bank's room	
+	// StartPage = "room_089-100";									// cementerio
+	// StartPage = "room_101-093";									// uncle
+	// StartPage = "room_101-094";									// below uncle's room
+
+	// StartPage = "room_102-098"; 	// trilobites
+	// StartPage = "room_104-098"; 	// range shooters
+	// StartPage = "room_097-100"; 	// moscas
+	// StartPage = "room_101-099"; 	// babosas
+	// StartPage = "room_097-099"; 	// moais
+	// StartPage = "room_095-100"; 	// rollers
+	// StartPage = "room_096-101"; 	// maga
+	// StartPage = "room_092-100";	
+	
+	// StartPage = "room_090-100"; 	// puerta
+	// StartPage = "room_089-100"; 	// salida al cementerio
+	// StartPage = "levelroom_graveyard";
+	// StartPage = "endofdemo";
+	// StartPage = "endofdemo/endofdemo";
+
+	// StartPage = "intro/intro_10/uncleshome";	
+	// StartPage = "intro/intro_12/intro_12";
+	// StartPage = "room_090-100";
+	// StartPage = "room_091-100";
+	// StartPage = "room_100-096";
+	// StartPage = "room_100-095";
+
+	// StartPage = "../qlevel01/qlevel";
+
+	start_room:
+	{
+	};
+
+	newspapermachine_room:
+	{
+		newspapermachine_room:
+		{
+			SelectButton="BT_Back";
+			BT_Back:
+			{
+				OnPress = "GotoBack";
+			};
+		};
+	};
+	
+	uncle_room:
+	{
+		uncle_room:
+		{
+			SelectButton="BT_Back";
+			BT_Back:
+			{
+				OnPress = "GotoBack";
+			};
+		};
+	};
+	room_091_099:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = true;
+			Left = false;
+			Right = true;
+		};
+	};
+
+	room_092_099:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = false;
+			Left = true;
+			Right = true;
+		};
+	};
+
+	room_093_099:
+	{
+		Neighbours:
+		{
+			Top = true;
+			Bottom = true;
+			Left = true;
+			Right = false;
+		};
+	};
+	
+	room_089_100:
+	{
+		RoomType = 3; // world
+		Neighbours:
+		{
+			Top = false;
+			Bottom = false;
+			Left = false;
+			Right = true;
+		};
+	};
+
+	room_090_100:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = false;
+			Left = true;
+			Right = true;
+		};
+	};
+	
+	room_091_100:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = false;
+			Left = true;
+			Right = true;
+		};
+	};
+	
+	room_092_100:
+	{
+		RoomType = 4; // check point
+		Neighbours:
+		{
+			Top = true;
+			Bottom = false;
+			Left = true;
+			Right = false;
+		};
+	};
+
+	room_093_100:
+	{
+		Neighbours:
+		{
+			Top = true;
+			Bottom = false;
+			Left = false;
+			Right = true;
+		};
+	};
+	
+	room_094_100:
+	{
+		RoomType = 1; // bank
+		Neighbours:
+		{
+			Top = false;
+			Bottom = false;
+			Left = true;
+			Right = false;
+		};
+	};
+
+	room_093_097:
+	{
+		RoomType = 0; // healing
+		Neighbours:
+		{
+			Top = false;
+			Bottom = true;
+			Left = false;
+			Right = false;
+		};
+	};
+	
+	room_093_098:
+	{
+		Neighbours:
+		{
+			Top = true;
+			Bottom = true;
+			Left = false;
+			Right = true;
+		};
+	};
+	
+	room_094_098:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = false;
+			Left = true;
+			Right = true;
+		};
+	};
+	
+	room_095_098:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = false;
+			Left = true;
+			Right = true;
+		};
+	};
+
+	room_096_098:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = true;
+			Left = true;
+			Right = false;
+		};
+	};
+
+	room_096_099:
+	{
+		Neighbours:
+		{
+			Top = true;
+			Bottom = true;
+			Left = false;
+			Right = true;
+		};
+	};
+	
+	room_096_100:
+	{
+		Neighbours:
+		{
+			Top = true;
+			Bottom = false;
+			Left = false;
+			Right = false;
+		};
+	};
+
+	room_097_099:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = false;
+			Left = true;
+			Right = true;
+		};
+	};
+
+	room_097_100:
+	{
+		Neighbours:
+		{
+			Top = true;
+			Bottom = false;
+			Left = false;
+			Right = true;
+		};
+	};
+	
+	room_098_099:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = true;
+			Left = true;
+			Right = false;
+		};
+	};
+	
+	room_098_100:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = false;
+			Left = true;
+			Right = true;
+		};
+	};
+
+	room_099_100:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = false;
+			Left = true;
+			Right = true;
+		};
+	};
+	
+	room_100_100:
+	{
+		Neighbours:
+		{
+			Top = true;
+			Bottom = true;
+			Left = true;
+			Right = true;
+		};
+	};
+
+	room_101_100:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = false;
+			Left = true;
+			Right = false;
+		};
+	};
+
+	room_100_101:
+	{
+		Neighbours:
+		{
+			Top = true;
+			Bottom = false;
+			Left = false;
+			Right = false;
+		};
+	};
+
+	room_100_099:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = true;
+			Left = true;
+			Right = true;
+		};
+	};
+	
+	room_101_099:
+	{
+		Neighbours:
+		{
+			Top = true;
+			Bottom = false;
+			Left = true;
+			Right = false;
+		};
+	};
+	
+	room_101_098:
+	{
+		Neighbours:
+		{
+			Top = true;
+			Bottom = false;
+			Left = false;
+			Right = true;
+		};
+	};
+	
+	room_102_098:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = false;
+			Left = true;
+			Right = true;
+		};
+	};
+	room_103_098:
+	{
+		Neighbours:
+		{
+			Top = true;
+			Bottom = false;
+			Left = true;
+			Right = true;
+		};
+	};
+	
+	room_104_098:
+	{
+		RoomType = 4; // check point
+		Neighbours:
+		{
+			Top = false;
+			Bottom = false;
+			Left = true;
+			Right = true;
+		};
+	};
+	
+	room_105_098:
+	{
+		Neighbours:
+		{
+			Top = true;
+			Bottom = false;
+			Left = true;
+			Right = false;
+		};
+	};
+	
+	room_105_097:
+	{
+		Neighbours:
+		{
+			Top = true;
+			Bottom = true;
+			Left = false;
+			Right = false;
+		};
+	};
+	
+	room_105_096:
+	{
+		Neighbours:
+		{
+			Top = true;
+			Bottom = true;
+			Left = false;
+			Right = false;
+		};
+	};
+	
+	room_105_095:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = true;
+			Left = true;
+			Right = false;
+		};
+	};
+	
+	room_104_095:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = false;
+			Left = true;
+			Right = true;
+		};
+	};
+
+	room_103_095:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = true;
+			Left = true;
+			Right = true;
+		};
+	};
+
+	room_103_096:
+	{
+		RoomType = 2; // shop
+		Neighbours:
+		{
+			Top = false;
+			Bottom = true;
+			Left = true;
+			Right = false;
+		};
+	};	
+	
+	room_103_097:
+	{
+		Neighbours:
+		{
+			Top = true;
+			Bottom = true;
+			Left = false;
+			Right = false;
+		};
+	};
+	
+	room_102_096:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = false;
+			Left = true;
+			Right = true;
+		};
+	};
+	
+	room_102_095:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = false;
+			Left = true;
+			Right = true;
+		};
+	};
+	
+	room_101_095:
+	{
+		Neighbours:
+		{
+			Top = true;
+			Bottom = true;
+			Left = true;
+			Right = true;
+		};
+	};
+
+	room_100_095:
+	{
+		RoomType = 0; // healing
+		Neighbours:
+		{
+			Top = false;
+			Bottom = false;
+			Left = false;
+			Right = true;
+		};
+	};
+
+	room_101_094:
+	{
+		Neighbours:
+		{
+			Top = true;
+			Bottom = true;
+			Left = false;
+			Right = false;
+		};
+	};
+
+	room_101_093:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = true;
+			Left = false;
+			Right = false;
+		};
+	};
+
+	room_101_096:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = true;
+			Left = true;
+			Right = false;
+		};
+	};
+
+	room_101_097:
+	{
+		Neighbours:
+		{
+			Top = true;
+			Bottom = true;
+			Left = false;
+			Right = false;
+		};
+	};
+	
+	room_100_096:
+	{
+		RoomType = 4; // check point
+		Neighbours:
+		{
+			Top = false;
+			Bottom = false;
+			Left = true;
+			Right = true;
+		};
+	};
+	
+	room_099_096:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = true;
+			Left = false;
+			Right = true;
+		};
+	};
+	
+	room_099_097:
+	{
+		Neighbours:
+		{
+			Top = true;
+			Bottom = true;
+			Left = false;
+			Right = false;
+		};
+	};
+
+	room_099_098:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = true;
+			Left = false;
+			Right = false;
+		};
+	};
+
+	room_099_099:
+	{
+		Neighbours:
+		{
+			Top = false;
+			Bottom = false;
+			Left = false;
+			Right = true;
+		};
+	};	
+};

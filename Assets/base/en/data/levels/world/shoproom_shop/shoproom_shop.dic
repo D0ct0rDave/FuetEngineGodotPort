@@ -1,0 +1,32 @@
+Dictionary:
+{
+	SHOPKEEPER_PRESENT1 = "Welcome to my shop/nPlease tell me, How can I help you?";
+	SHOPKEEPER_PRESENT1_OPT1 = "I would like to take a look at your items.";
+	SHOPKEEPER_PRESENT1_OPT2 = "I wanna play the slot machine!";
+	SHOPKEEPER_PRESENT1_OPT3 = "Well, I was going to go...";
+	SHOPKEEPER_PRESENT2 = "Welcome to my shop/nPlease tell me, How can I help you?";
+	SHOPKEEPER_PRESENT2_OPT1 = "I would like to take a look at your items.";
+	SHOPKEEPER_PRESENT2_OPT2 = "Well, I was going to go...";
+	SHOPKEEPER_GOODBYE1 = "As you don't have money, I can't offer anything at this moment.";
+	SHOPKEEPER_GOODBYE1_OPT1 = "See ya!";
+	SHOPKEEPER_GOODBYE1B = "As you run out of money, I can't offer anything at this moment.";
+	SHOPKEEPER_GOODBYE1B_OPT1 = "See ya!";
+	SHOPKEEPER_GOODBYE2 = "Ok, please, come back whenever you want!";
+	SHOPKEEPER_GOODBYE2_OPT1 = "Au revoire!";
+	SHOPKEEPER_PLAYSLOT1 = "he he! Do you like games, don't you?";
+	SHOPKEEPER_PLAYSLOT2 = "Ok, how much do you want to bet?";
+	SHOPKEEPER_AFTERPLAYSLOT1 = "Oh! Great! So your prize is... Nothing!";
+	SHOPKEEPER_STARTPLAYSLOT = "Good Luck!";
+	SHOPKEEPER_AFTERPLAYSLOT2 = "One cannot win always! More luck the next time!";
+	SHOPKEEPER_AFTERPLAYSLOT3 = "Really good! You won!";
+	SHOPKEEPER_SHOPPINGPRESENT1 = "Good, really good! You'll see what beautiful items I have.";
+	SHOPKEEPER_SHOPPINGSTART1 = "So, what item are you interested in?";
+	SHOPKEEPER_SHOPPINGDESCCANNOTBUY1 = "You don't have enough money to buy this.";
+	SHOPKEEPER_PRESENT4 = "Do you want anything else?";
+	SHOPKEEPER_PRESENT4_OPT1 = "I want to continue looking your items.";
+	SHOPKEEPER_PRESENT4_OPT2 = "Well, I would like to play the slot machine! : D";
+	SHOPKEEPER_PRESENT4_OPT3 = "Nope! See ya later!";
+	SHOPKEEPER_PRESENT5 = "Do you want anything else?";
+	SHOPKEEPER_PRESENT5_OPT1 = "I want to continue looking your items.";
+	SHOPKEEPER_PRESENT5_OPT2 = "Nope! See ya later!";
+};

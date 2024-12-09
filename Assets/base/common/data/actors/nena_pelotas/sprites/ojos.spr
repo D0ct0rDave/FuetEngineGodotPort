@@ -1,0 +1,120 @@
+Sprite:
+{
+	Name = "ojos";
+	NumActions = 2;
+	Action0:
+	{
+		Name = "idle";
+		PlayMode = "LOOP";
+		RandomStartTime = 1.00;
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 4;
+				Frame0:
+				{
+					Material = "ojos1";
+					DelayTime = 1.3717;
+					BlendTime = 0.2233;
+					Pivot:
+					{
+						y = 0.5172;
+					};
+					Size:
+					{
+						Width = 28.0;
+						Height = 29.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "ojos2";
+					DelayTime = 0.0900;
+					BlendTime = 0.0100;
+					Pivot:
+					{
+						y = 0.5172;
+					};
+					Size:
+					{
+						Width = 28.0;
+						Height = 29.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame2:
+				{
+					Material = "ojos3";
+					DelayTime = 0.2670;
+					BlendTime = 0.0330;
+					Pivot:
+					{
+						y = 0.5172;
+					};
+					Size:
+					{
+						Width = 28.0;
+						Height = 29.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame3:
+				{
+					Material = "ojos2";
+					DelayTime = 0.0900;
+					BlendTime = 0.0100;
+					Pivot:
+					{
+						y = 0.5172;
+					};
+					Size:
+					{
+						Width = 28.0;
+						Height = 29.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "pain";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "ojos3";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 0.5172;
+					};
+					Size:
+					{
+						Width = 28.0;
+						Height = 29.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

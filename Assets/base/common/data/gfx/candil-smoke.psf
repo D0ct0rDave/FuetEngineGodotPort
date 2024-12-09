@@ -1,0 +1,82 @@
+ParticleSystem:
+{
+	Name = "candil-smoke";
+	Sprite = "smoke";
+	Freq = 4.0000;
+	EmisorRad:
+	{
+		Min = 30.0000;
+		Max = 30.0000;
+	};
+	EmisorPhase:
+	{
+		Min = 1.2915;
+		Max = 1.8500;
+	};
+	EmisorSpeed:
+	{
+		Min = 15.0000;
+		Max = 15.0000;
+	};
+	EmisorXOfs:
+	{
+	};
+	EmisorYOfs:
+	{
+	};
+	EmisorXSpeed:
+	{
+	};
+	EmisorYSpeed:
+	{
+	};
+	EmisorYAccel = -125.0000;
+	PartSize:
+	{
+		Min = 0.1875;
+		Max = 0.3125;
+	};
+	PartSizeSpeed:
+	{
+		Min = 0.5000;
+		Max = 0.5000;
+	};
+	PartAngle:
+	{
+		Min = -180.0000;
+		Max = 3.1416;
+	};
+	PartAngleSpeed:
+	{
+		Min = -3.4907;
+		Max = 3.4907;
+	};
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 3;
+		KeyFrame0:
+		{
+			r = 0.0000;
+			g = 0.0000;
+			b = 0.0000;
+			a = 0.0000;
+		};
+		KeyFrame1:
+		{
+			r = 0.0000;
+			g = 0.0000;
+			b = 0.0000;
+			a = 0.7529;
+			Time = 0.1000;
+		};
+		KeyFrame2:
+		{
+			r = 0.0000;
+			g = 0.0000;
+			b = 0.0000;
+			a = 0.0000;
+			Time = 1.0000;
+		};
+	};
+};

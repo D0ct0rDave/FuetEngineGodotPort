@@ -1,0 +1,124 @@
+Sprite:
+{
+	Name = "patas";
+	NumActions = 4;
+	Action0:
+	{
+		Name = "pata1";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "pata1";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.6818;
+						y = 0.2692;
+					};
+					Size:
+					{
+						Width = 22.0;
+						Height = 26.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "pata2";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "pata2";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.6800;
+						y = 0.2759;
+					};
+					Size:
+					{
+						Width = 25.0;
+						Height = 29.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action2:
+	{
+		Name = "pata3";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "pata3";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.6250;
+						y = 0.2500;
+					};
+					Size:
+					{
+						Width = 24.0;
+						Height = 28.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action3:
+	{
+		Name = "pata4";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "pata4";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.6538;
+						y = 0.2333;
+					};
+					Size:
+					{
+						Width = 26.0;
+						Height = 30.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

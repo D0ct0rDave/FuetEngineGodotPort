@@ -1,0 +1,76 @@
+ParticleSystem:
+{
+	Name = "jarron_oscuro_destruction_debris";
+	Sprite = "smoke";
+	Freq = 100.0000;
+	TTL = 2.0000;
+	EmisorRad:
+	{
+	};
+	EmisorPhase:
+	{
+		Min = -3.1416;
+		Max = 3.1416;
+	};
+	EmisorSpeed:
+	{
+		Min = 84.0000;
+		Max = 84.0000;
+	};
+	EmisorXOfs:
+	{
+		Min = -16.0000;
+		Max = 16.0000;
+	};
+	EmisorYOfs:
+	{
+		Min = 16.0000;
+		Max = 8.0000;
+	};
+	EmisorXSpeed:
+	{
+	};
+	EmisorYSpeed:
+	{
+	};
+	PartSize:
+	{
+		Min = 0.6000;
+		Max = 0.6000;
+	};
+	PartSizeSpeed:
+	{
+		Min = 0.6000;
+		Max = 0.6000;
+	};
+	PartAngle:
+	{
+		Min = -180.0000;
+		Max = 3.1416;
+	};
+	PartAngleSpeed:
+	{
+		Min = -1.7453;
+		Max = 1.7453;
+	};
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 2;
+		KeyFrame0:
+		{
+			r = 0.5608;
+			g = 0.5098;
+			b = 0.4392;
+			a = 0.5020;
+		};
+		KeyFrame1:
+		{
+			r = 0.6706;
+			g = 0.6078;
+			b = 0.5451;
+			a = 0.0000;
+			Time = 1.0000;
+		};
+	};
+};

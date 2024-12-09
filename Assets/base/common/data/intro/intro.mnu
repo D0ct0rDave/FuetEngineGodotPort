@@ -1,0 +1,13 @@
+Menu:
+{
+	StartPage = "intro_page1";
+	DefaultPage = "intro_page1";
+	BaseDir = "data/intro";
+	
+	intro_page1:
+	{
+		Filename = "intro_page1";
+		PrevPage = "";
+		NextPage = "GotoEnd";
+	};
+};

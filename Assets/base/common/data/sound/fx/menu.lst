@@ -1,0 +1,101 @@
+SoundList:
+{
+	NumSounds = 16;
+
+	S0:
+	{
+		Alias = "PrevPageSound";
+		File  = "ui/prevpage";
+	};
+	
+	S1:
+	{
+		Alias = "NextPageSound";
+		File  = "ui/nextpage";
+	};
+	
+	S2:
+	{
+		Alias = "TicSound";
+		File  = "ui/button_tic";
+	};
+	
+	S3:
+	{
+		Alias = "StartGame";
+		File  = "ui/startgame";
+	};
+	
+	S4:
+	{
+		Alias = "VolumeSound";
+		File  = "ui/button_vol";
+	};
+	
+	S5:
+	{
+		Alias = "RandomSound";
+		File  = "ui/button_random";
+	};	
+
+	S6:
+	{
+		Alias = "StartPage";
+		File  = "ui/startpage";
+	};
+
+	S7:
+	{
+		Alias = "ButtonGift";
+		File  = "ui/button_gift";
+	};
+	
+	S8:
+	{
+		Alias = "ButtonGeneric";
+		File  = "ui/button_generic";
+	};
+	
+	S9:
+	{
+		Alias = "ButtonTic";
+		File  = "ui/button_tic";
+	};
+	
+	S10:
+	{
+		Alias = "ButtonBeep";
+		File  = "ui/button_beep";
+	};
+	
+	
+	S11:
+	{
+		Alias = "NoMoney";
+		File  = "ui/button_beep";
+	};
+	
+	S12:
+	{
+		Alias = "DressBought";
+		File  = "ui/button_gift";
+	};
+	
+	S13:
+	{
+		Alias = "ButtonCheck";
+		File  = "ui/button_generic";
+	};
+	
+	S14:
+	{
+		Alias = "ButtonUnCheck";
+		File  = "ui/button_generic";
+	};
+	
+	S15:
+	{
+		Alias = "NewChallenge";
+		File  = "game/NewChallenge";
+	};
+};

@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "wall-eye-iris";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "wall-eye-iris";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5021;
+						y = 0.5021;
+					};
+					Size:
+					{
+						Width = 233.0;
+						Height = 233.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

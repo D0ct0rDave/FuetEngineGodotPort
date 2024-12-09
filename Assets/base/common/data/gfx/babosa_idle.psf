@@ -1,0 +1,76 @@
+ParticleSystem:
+{
+	Name = "babosa_rests2";
+	Sprite = "baba_roja2";
+	Freq = 2.5000;
+	TTL = 3.0000;
+	EmisorRad:
+	{
+	};
+	EmisorPhase:
+	{
+	};
+	EmisorSpeed:
+	{
+	};
+	EmisorXOfs:
+	{
+	};
+	EmisorYOfs:
+	{
+		Min = 2.0000;
+		Max = 2.0000;
+	};
+	EmisorXSpeed:
+	{
+	};
+	EmisorYSpeed:
+	{
+	};
+	PartSize:
+	{
+		Min = 1.2800;
+		Max = 1.2800;
+	};
+	PartSizeSpeed:
+	{
+	};
+	PartAngle:
+	{
+	};
+	PartAngleSpeed:
+	{
+	};
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 6;
+		KeyFrame0:
+		{
+			a = 0.0000;
+		};
+		KeyFrame1:
+		{
+			a = 0.1255;
+			Time = 0.5000;
+		};
+		KeyFrame2:
+		{
+			Time = 1.0000;
+		};
+		KeyFrame3:
+		{
+			Time = 2.0000;
+		};
+		KeyFrame4:
+		{
+			a = 0.0000;
+			Time = 3.0000;
+		};
+		KeyFrame5:
+		{
+			a = 0.0000;
+			Time = 5.0000;
+		};
+	};
+};

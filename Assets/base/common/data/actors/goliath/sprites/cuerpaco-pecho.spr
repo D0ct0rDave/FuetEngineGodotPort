@@ -1,0 +1,30 @@
+Sprite:
+{
+	Name = "cuerpaco-pecho";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "cuerpaco-pecho";
+					BlendTime = 0.0000;
+					Pivot:
+					{
+						x = 0.41810;
+						y = 0.31132;
+					};
+					Size:
+					{
+						Width = 232.0;
+						Height = 318.0;
+					};
+				};
+			};
+		};
+	};
+};

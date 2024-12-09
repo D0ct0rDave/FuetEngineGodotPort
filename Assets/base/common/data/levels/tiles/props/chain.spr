@@ -1,0 +1,35 @@
+Sprite:
+{
+	Name = "chain";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		PlayMode = "ONESHOT";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "chain";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.4878;
+						y = 0.0399;
+					};
+					Size:
+					{
+						Width = 41.0;
+						Height = 827.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

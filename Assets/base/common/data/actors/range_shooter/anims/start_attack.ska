@@ -1,0 +1,91 @@
+SkelAction:
+{
+	Name = "start_attack";
+	PlayMode = "oneshot";
+	NodeAction0:
+	{
+		NodeName = "head";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				y = 46.0000;
+			};
+			KeyFrame1:
+			{
+				y = 46.0000;
+				Time = 0.1715;
+			};
+			KeyFrame2:
+			{
+				Time = 0.3430;
+			};
+		};
+	};
+	NodeAction1:
+	{
+		NodeName = "tapa";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = 0.1907;
+			};
+			KeyFrame1:
+			{
+				Value = -0.2311;
+				Time = 0.1715;
+			};
+		};
+	};
+	NodeAction2:
+	{
+		NodeName = "base_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction3:
+	{
+		NodeName = "base_sprite_1";
+		NodeAction = 0;
+	};
+	NodeAction4:
+	{
+		NodeName = "base_sprite_2";
+		NodeAction = 0;
+	};
+	NodeAction5:
+	{
+		NodeName = "base_sprite_3";
+		NodeAction = 0;
+	};
+	NodeAction6:
+	{
+		NodeName = "head_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction7:
+	{
+		NodeName = "head_sprite_1";
+		NodeAction = 0;
+	};
+	NodeAction8:
+	{
+		NodeName = "wheel1_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction9:
+	{
+		NodeName = "wheel2_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction10:
+	{
+		NodeName = "tapa_sprite_0";
+		NodeAction = 0;
+	};
+	NumNodeActions = 11;
+};

@@ -1,0 +1,124 @@
+Script : 
+{
+  Sequence = "A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,A16,A17,A18";
+  A0 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "NPCDialogHideOptions";
+    AutoShow = false;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A1 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_NPCDialog";
+  };
+  A2 : 
+  {
+    Type = "PlayActorAnim";
+    Actor = "Police";
+    Anim = "speaking_civilian";
+  };
+  A3 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/fx/ui/chikichiki";
+    Vol = 0.5;
+    Pan = 0.5;
+    Loop = true;
+    Wait = false;
+  };
+  A4 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "lb_NPCDialog";
+  };
+  A5 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_NPCDialogCentered";
+    LetterByLetter = false;
+    LetterTime = 0.05000000075;
+  };
+  A6 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "lb_NPCDialogCentered";
+  };
+  A7 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_NPCDialogCentered";
+    Text = "POLICE_WITHOUT_REC_ITEMS_YES";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A8 : 
+  {
+    Type = "StopSound";
+    Sound = "data/sound/fx/ui/chikichiki";
+  };
+  A9 : 
+  {
+    Type = "PlayActorAnim";
+    Actor = "Police";
+    Anim = "idle_civilian";
+  };
+  A10 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "ic_NPCDialog";
+  };
+  A11 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "NPCDialogIdleMessage";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = true;
+  };
+  A12 : 
+  {
+    Type = "InfiniteStop";
+  };
+  A13 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_NPCDialog";
+  };
+  A14 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "NPCDialogClose";
+    AutoShow = false;
+    AutoHide = true;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A15 : 
+  {
+    Type = "PlayActorAnim";
+    Actor = "Police";
+    Anim = "openbarrier";
+  };
+  A16 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SCREEN_FADE_OUT";
+    Parameters = "2.0";
+  };
+  A17 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SOUND_FADE_OUT";
+    Parameters = "2.0";
+  };
+  A18 : 
+  {
+    Type = "Sleep";
+    Time = 2.0;
+  };
+};

@@ -1,0 +1,33 @@
+Sprite:
+{
+	Name = "Chimenea_delante";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "Chimenea_delante";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 308.0;
+						Height = 312.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

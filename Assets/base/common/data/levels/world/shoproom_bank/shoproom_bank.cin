@@ -1,0 +1,94 @@
+Cinematic:
+{
+	NumPlanes = 18;
+
+	Plane0:
+	{
+		Script = "shoproom_bank_PresentShop";
+	};
+
+	Plane1:
+	{
+		Script = "shoproom_bank_Present1";
+	};
+	
+	Plane2:
+	{
+		Script = "shoproom_bank_Present2";
+	};
+	
+	Plane3:
+	{
+		Script = "shoproom_bank_Present3";
+	};
+	
+	Plane4:
+	{
+		Script = "shoproom_bank_Goodbye1";
+	};
+
+	Plane5:
+	{
+		Script = "shoproom_bank_PlaySlot1";
+	};
+	
+	Plane6:
+	{
+		Script = "shoproom_bank_Goodbye2";
+	};
+	
+	Plane7:
+	{
+		Script = "shoproom_bank_ExpExchange1";
+	};
+
+	Plane8:
+	{
+		Script = "shoproom_bank_AfterExpExchange1";
+	};
+
+	Plane9:
+	{
+		Script = "shoproom_bank_AfterExpExchange2";
+	};
+	
+	Plane10:
+	{
+		Script = "shoproom_bank_Present4";
+	};
+	
+	Plane11:
+	{
+		Script = "shoproom_bank_Present5";
+	};
+	
+	Plane12:
+	{
+		Script = "shoproom_bank_Present6";
+	};
+
+	Plane13:
+	{
+		Script = "shoproom_bank_AfterPlaySlot1";
+	};
+	
+	Plane14:
+	{
+		Script = "shoproom_bank_AfterPlaySlot2";
+	};	
+	
+	Plane15:
+	{
+		Script = "shoproom_bank_AfterPlaySlot3";
+	};	
+	
+	Plane16:
+	{
+		Script = "shoproom_bank_StartPlaySlot";
+	};	
+	
+	Plane17:
+	{
+		Script = "shoproom_bank_Goodbye1b";
+	};	
+};

@@ -1,0 +1,1 @@
+Sprite:{ Name="icon_gameoptions"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "icon_gameoptions"; Size:{ Width = 137.0; Height = 137.0; }; }; }; }; }; 

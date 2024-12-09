@@ -1,0 +1,28 @@
+Dictionary:
+{
+	ITEM_SMARTPHONE = "My cell phone.";
+	ITEM_SMARTPHONE_DESCRIPTION = "Its light is really good to look for things below my bed, and it takes wonderful pictures. I get it when I go to the toilet to chat with my friends, and play some video games. Ah! I think it can also make phone calls.";
+	ITEM_JET_PACK = "Jet Pack";
+	ITEM_JET_PACK_DESCRIPTION = "With this gadget you'll be able to fly the terrain for some minutes.";
+	ITEM_CONCENTRATOR = "Concentrator";
+	ITEM_CONCENTRATOR_DESCRIPTION = "Focus the matter and energy in a really small place.";
+	ITEM_SPEED_REDUCER = "Speed reductor";
+	ITEM_SPEED_REDUCER_DESCRIPTION = "It lets you reduce the speed to make precisse maneuverings during JetPack flights.";
+	ITEM_UNCLE_GUN = "Gun";
+	ITEM_UNCLE_GUN_DESCRIPTION = "It's a customized gun. It has a really cool red brilliant LED!";
+	ITEM_ORBE_ATTRACTOR = "Orbe attractor";
+	ITEM_ORBE_ATTRACTOR_DESCRIPTION = "Attract orbes by proximity. Eases your life when you are fighting and there are spawned orbes all around!";
+	ITEM_NARANJA = "--";
+	ITEM_NARANJA_DESCRIPTION = "--";
+	ITEM_COPPER_FISH = "--";
+	ITEM_COPPER_DESCRIPTION = "--";
+	ITEM_PINEAPLE_DESCRIPTION = "--";
+	ITEM_RED = "--";
+	ITEM_RED_DESCRIPTION = "--";
+	ITEM_SILVER_FISH = "--";
+	ITEM_SILVER_DESCRIPTION = "--";
+	ITEM_MANGO = "--";
+	ITEM_MANGO_DESCRIPTION = "--";
+	ITEM_YELLOW_NAME = "--";
+	ITEM_YELLOW_DESCRIPTION = "--";
+};

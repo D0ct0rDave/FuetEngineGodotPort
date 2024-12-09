@@ -1,0 +1,577 @@
+HUD:
+{
+	FileVersion = 2;
+	NumElements = 2;
+	Element0:
+	{
+		Name = "path";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "path";
+			Position:
+			{
+				y = -900.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 1;
+			Object0:
+			{
+				Type = "Rect";
+				Width = 100.0000;
+				Height = 100.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_path";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+		};
+		NumElemActions = 2;
+		Action0:
+		{
+			Name = "Attack1";
+			ObjAction0:
+			{
+				HUDObject = "path";
+				XFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 21;
+					KeyFrame0:
+					{
+						Value = -500.0000;
+					};
+					KeyFrame1:
+					{
+						Time = 0.5000;
+						Value = -960.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 2.5000;
+						Value = -224.0000;
+					};
+					KeyFrame3:
+					{
+						Time = 3.5000;
+						Value = -224.0000;
+					};
+					KeyFrame4:
+					{
+						Time = 4.0000;
+						Value = -469.4371;
+					};
+					KeyFrame5:
+					{
+						Time = 6.0000;
+						Value = -960.0000;
+					};
+					KeyFrame6:
+					{
+						Time = 8.0000;
+						Value = -192.0000;
+					};
+					KeyFrame7:
+					{
+						Time = 9.0000;
+						Value = -500.0000;
+					};
+					KeyFrame8:
+					{
+						Time = 9.3000;
+						Value = -2000.0000;
+					};
+					KeyFrame9:
+					{
+						Time = 11.0000;
+						Value = -800.0000;
+					};
+					KeyFrame10:
+					{
+						Time = 12.0000;
+						Value = -800.0000;
+					};
+					KeyFrame11:
+					{
+						Time = 13.0000;
+						Value = -800.0000;
+					};
+					KeyFrame12:
+					{
+						Time = 14.0000;
+						Value = -800.0000;
+					};
+					KeyFrame13:
+					{
+						Time = 14.3000;
+						Value = -2000.0000;
+					};
+					KeyFrame14:
+					{
+						Time = 16.0000;
+						Value = -800.0000;
+					};
+					KeyFrame15:
+					{
+						Time = 17.0000;
+						Value = -800.0000;
+					};
+					KeyFrame16:
+					{
+						Time = 18.0000;
+						Value = -500.0000;
+					};
+					KeyFrame17:
+					{
+						Time = 19.0000;
+						Value = -500.0000;
+					};
+					KeyFrame18:
+					{
+						Time = 19.3000;
+						Value = -2000.0000;
+					};
+					KeyFrame19:
+					{
+						Time = 21.0000;
+						Value = -500.0000;
+					};
+					KeyFrame20:
+					{
+						Time = 22.0000;
+						Value = -500.0000;
+					};
+				};
+				YFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 21;
+					KeyFrame0:
+					{
+						LerpFunc = "exp";
+					};
+					KeyFrame1:
+					{
+						Time = 0.5000;
+						Value = -600.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 2.5000;
+						Value = 644.0000;
+					};
+					KeyFrame3:
+					{
+						Time = 3.5000;
+						Value = -600.0000;
+					};
+					KeyFrame4:
+					{
+						Time = 4.0000;
+						Value = -600.0000;
+					};
+					KeyFrame5:
+					{
+						Time = 6.0000;
+						Value = 600.0000;
+					};
+					KeyFrame6:
+					{
+						Time = 8.0000;
+						Value = 4.0000;
+					};
+					KeyFrame7:
+					{
+						Time = 9.0000;
+					};
+					KeyFrame8:
+					{
+						Time = 9.3000;
+					};
+					KeyFrame9:
+					{
+						Time = 11.0000;
+					};
+					KeyFrame10:
+					{
+						Time = 12.0000;
+					};
+					KeyFrame11:
+					{
+						Time = 13.0000;
+						Value = -600.0000;
+					};
+					KeyFrame12:
+					{
+						Time = 14.0000;
+						Value = -600.0000;
+					};
+					KeyFrame13:
+					{
+						Time = 14.3000;
+						Value = -600.0000;
+					};
+					KeyFrame14:
+					{
+						Time = 16.0000;
+						Value = -600.0000;
+					};
+					KeyFrame15:
+					{
+						Time = 17.0000;
+						Value = -600.0000;
+					};
+					KeyFrame16:
+					{
+						Time = 18.0000;
+						Value = 600.0000;
+					};
+					KeyFrame17:
+					{
+						Time = 19.0000;
+						Value = 600.0000;
+					};
+					KeyFrame18:
+					{
+						Time = 19.3000;
+						Value = 600.0000;
+					};
+					KeyFrame19:
+					{
+						Time = 21.0000;
+						Value = 600.0000;
+					};
+					KeyFrame20:
+					{
+						Time = 22.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 16;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 0.5000;
+						EventName = "StartShooting";
+						EventValue = "1";
+					};
+					KeyFrame2:
+					{
+						Time = 0.6000;
+						EventName = "StartShooting";
+						EventValue = "2";
+					};
+					KeyFrame3:
+					{
+						Time = 2.5000;
+						EventName = "StopShooting";
+						EventValue = "1";
+					};
+					KeyFrame4:
+					{
+						Time = 2.6000;
+						EventName = "StopShooting";
+						EventValue = "2";
+					};
+					KeyFrame5:
+					{
+						Time = 4.0000;
+						EventName = "StartShooting";
+						EventValue = "1";
+					};
+					KeyFrame6:
+					{
+						Time = 4.1000;
+						EventName = "StartShooting";
+						EventValue = "2";
+					};
+					KeyFrame7:
+					{
+						Time = 6.0000;
+						EventName = "StopShooting";
+						EventValue = "1";
+					};
+					KeyFrame8:
+					{
+						Time = 6.1000;
+						EventName = "StopShooting";
+						EventValue = "2";
+					};
+					KeyFrame9:
+					{
+						Time = 9.3000;
+						EventName = "StartShooting";
+					};
+					KeyFrame10:
+					{
+						Time = 11.0000;
+						EventName = "StopShooting";
+					};
+					KeyFrame11:
+					{
+						Time = 14.3000;
+						EventName = "StartShooting";
+					};
+					KeyFrame12:
+					{
+						Time = 16.0000;
+						EventName = "StopShooting";
+					};
+					KeyFrame13:
+					{
+						Time = 19.3000;
+						EventName = "StartShooting";
+					};
+					KeyFrame14:
+					{
+						Time = 21.0000;
+						EventName = "StopShooting";
+					};
+					KeyFrame15:
+					{
+						Time = 22.0000;
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+		Action1:
+		{
+			Name = "_OnIdle";
+			ObjAction0:
+			{
+				HUDObject = "path";
+				XFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 4;
+					KeyFrame0:
+					{
+						Value = 300.0000;
+						LerpFunc = "sin";
+					};
+					KeyFrame1:
+					{
+						Time = 2.0000;
+						Value = -500.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 298.0000;
+						Value = -500.0000;
+					};
+					KeyFrame3:
+					{
+						Time = 299.8000;
+						Value = 300.0000;
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+	Element1:
+	{
+		Name = "Background";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "Background";
+			Position:
+			{
+			};
+			Depth = 1.0000;
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 2;
+			Object0:
+			{
+				Type = "Rect";
+				Width = 1000.0000;
+				Height = 960.0000;
+				PivotX = 1.0000;
+				PivotY = 1.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_Background";
+				Position:
+				{
+				};
+				Scale:
+				{
+					x = 3.0000;
+					y = 1.8750;
+				};
+				Color:
+				{
+					r = 0.4863;
+					g = 0.3294;
+					b = 0.9608;
+				};
+			};
+			Object1:
+			{
+				Type = "Rect";
+				Width = 1000.0000;
+				Height = 960.0000;
+				PivotX = 1.0000;
+				PivotY = 1.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_Background-1";
+				Position:
+				{
+					y = 1792.0000;
+				};
+				Scale:
+				{
+					x = 3.0000;
+					y = 1.8750;
+				};
+				Color:
+				{
+					r = 0.5020;
+					g = 0.0000;
+					b = 0.2510;
+				};
+			};
+		};
+	};
+};

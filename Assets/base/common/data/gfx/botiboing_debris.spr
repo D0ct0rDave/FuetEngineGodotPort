@@ -1,0 +1,173 @@
+Sprite:
+{
+	Name = "botiboing_debris";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		RandomStartTime = 60.00;
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 7;
+				Frame0:
+				{
+					Material = "botiboing_debris";
+					DelayTime = 9.7000;
+					BlendTime = 0.3000;
+					Pivot:
+					{
+						x = 0.5556;
+						y = 0.4667;
+					};
+					Size:
+					{
+						Width = 9.0;
+						Height = 15.0;
+					};
+					TexCoords:
+					{
+						FU = 0.2903;
+						FV = 0.5172;
+					};
+				};
+				Frame1:
+				{
+					Material = "botiboing_debris";
+					DelayTime = 9.7000;
+					BlendTime = 0.3000;
+					Pivot:
+					{
+						x = -0.3077;
+					};
+					Size:
+					{
+						Width = 13.0;
+						Height = 14.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2903;
+						FU = 0.7097;
+						FV = 0.4828;
+					};
+				};
+				Frame2:
+				{
+					Material = "botiboing_debris";
+					DelayTime = 9.7000;
+					BlendTime = 0.3000;
+					Pivot:
+					{
+						x = -2.1250;
+						y = 0.5833;
+					};
+					Size:
+					{
+						Width = 8.0;
+						Height = 12.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7097;
+						FU = 0.9677;
+						FV = 0.4138;
+					};
+				};
+				Frame3:
+				{
+					Material = "botiboing_debris";
+					DelayTime = 9.7000;
+					BlendTime = 0.3000;
+					Pivot:
+					{
+						x = 0.7143;
+						y = -0.9091;
+					};
+					Size:
+					{
+						Width = 7.0;
+						Height = 11.0;
+					};
+					TexCoords:
+					{
+						IV = 0.5862;
+						FU = 0.2258;
+						FV = 0.9655;
+					};
+				};
+				Frame4:
+				{
+					Material = "botiboing_debris";
+					DelayTime = 9.7000;
+					BlendTime = 0.3000;
+					Pivot:
+					{
+						x = -0.2857;
+						y = -0.9091;
+					};
+					Size:
+					{
+						Width = 7.0;
+						Height = 11.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2258;
+						IV = 0.5862;
+						FU = 0.4516;
+						FV = 0.9655;
+					};
+				};
+				Frame5:
+				{
+					Material = "botiboing_debris";
+					DelayTime = 9.7000;
+					BlendTime = 0.3000;
+					Pivot:
+					{
+						x = -0.7692;
+						y = -2.5000;
+					};
+					Size:
+					{
+						Width = 13.0;
+						Height = 6.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4839;
+						IV = 0.7586;
+						FU = 0.9032;
+						FV = 0.9655;
+					};
+				};
+				Frame6:
+				{
+					Material = "botiboing_debris";
+					DelayTime = 9.7000;
+					BlendTime = 0.3000;
+					Pivot:
+					{
+						x = -2.2857;
+						y = -0.7500;
+					};
+					Size:
+					{
+						Width = 7.0;
+						Height = 8.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6774;
+						IV = 0.4483;
+						FU = 0.9032;
+						FV = 0.7241;
+					};
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,6 @@
+Dictionary:
+{
+	lb_Title = "Joueurs";
+	lb_Create = "Nouveau joueur";
+	lb_Delete = "Effacer";
+};

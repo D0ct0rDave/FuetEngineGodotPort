@@ -1,0 +1,19 @@
+ParticleSystem:
+{
+	Name = "lolipop";
+	Freq = 37.5000;
+	Sprite = "smoke";
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 2;
+		KeyFrame0:
+		{
+		};
+		KeyFrame1:
+		{
+			a = 0.0000;
+			Time = 1.0000;
+		};
+	};
+};

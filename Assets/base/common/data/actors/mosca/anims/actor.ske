@@ -1,0 +1,439 @@
+SkelNode:
+{
+	Type = "bone";
+	Name = "PIVOT";
+	Position:
+	{
+	};
+	BonePos:
+	{
+	};
+	Child0:
+	{
+		Type = "group";
+		Name = "g_PIVOT";
+		Position:
+		{
+		};
+	};
+	Child1:
+	{
+		Type = "bone";
+		Name = "torso";
+		Position:
+		{
+		};
+		BonePos:
+		{
+			y = -45.0000;
+		};
+		Child0:
+		{
+			Type = "group";
+			Name = "torso_group";
+			Position:
+			{
+			};
+			Child0:
+			{
+				Type = "sprite";
+				Name = "torso_sprite_0";
+				Position:
+				{
+				};
+				Depth = 0.0100;
+				Sprite = "../sprites/mosca";
+				SpriteAction = 5;
+			};
+			Child1:
+			{
+				Type = "sprite";
+				Name = "torso_sprite_1";
+				Position:
+				{
+				};
+				SpriteAction = 0;
+			};
+			NumChildren = 2;
+		};
+		Child1:
+		{
+			Type = "group";
+			Name = "pj_head";
+			Position:
+			{
+			};
+			Child0:
+			{
+				Type = "bone";
+				Name = "head";
+				Position:
+				{
+				};
+				BonePos:
+				{
+					x = 14.0000;
+					y = -80.0000;
+				};
+				Child0:
+				{
+					Type = "group";
+					Name = "head_group";
+					Position:
+					{
+					};
+					Child0:
+					{
+						Type = "sprite";
+						Name = "head_sprite_0";
+						Position:
+						{
+						};
+						Sprite = "../sprites/mosca";
+						SpriteAction = 0;
+					};
+					Child1:
+					{
+						Type = "sprite";
+						Name = "head_sprite_1";
+						Position:
+						{
+							x = 19.0000;
+							y = -88.0000;
+						};
+						Depth = -0.0100;
+						Sprite = "../sprites/mosca";
+						SpriteAction = 10;
+					};
+					Child2:
+					{
+						Type = "sprite";
+						Name = "head_sprite_2";
+						Position:
+						{
+							y = -4.0000;
+						};
+						Depth = -0.0100;
+						SpriteAction = 0;
+					};
+					Child3:
+					{
+						Type = "sprite";
+						Name = "head_sprite_3";
+						Position:
+						{
+							x = 57.0000;
+							y = 23.0000;
+						};
+						Depth = -0.0300;
+						SpriteAction = 0;
+					};
+					NumChildren = 4;
+				};
+				NumChildren = 1;
+			};
+			NumChildren = 1;
+		};
+		Child2:
+		{
+			Type = "group";
+			Name = "pj_r_wing";
+			Position:
+			{
+			};
+			Child0:
+			{
+				Type = "bone";
+				Name = "r_wing";
+				Position:
+				{
+				};
+				BonePos:
+				{
+					x = 12.0000;
+					y = -90.0000;
+				};
+				Child0:
+				{
+					Type = "group";
+					Name = "r_wing_group";
+					Position:
+					{
+					};
+					Depth = 0.0300;
+					Child0:
+					{
+						Type = "sprite";
+						Name = "r_wing_sprite_0";
+						Position:
+						{
+						};
+						Sprite = "../sprites/mosca";
+						SpriteAction = 1;
+					};
+					NumChildren = 1;
+				};
+				NumChildren = 1;
+			};
+			NumChildren = 1;
+		};
+		Child3:
+		{
+			Type = "group";
+			Name = "pj_l_wing";
+			Position:
+			{
+			};
+			Child0:
+			{
+				Type = "bone";
+				Name = "l_wing";
+				Position:
+				{
+				};
+				BonePos:
+				{
+					y = -83.0000;
+				};
+				Child0:
+				{
+					Type = "group";
+					Name = "l_wing_group";
+					Position:
+					{
+					};
+					Depth = 0.0300;
+					Child0:
+					{
+						Type = "sprite";
+						Name = "l_wing_sprite_0";
+						Position:
+						{
+						};
+						Sprite = "../sprites/mosca";
+						SpriteAction = 2;
+					};
+					NumChildren = 1;
+				};
+				NumChildren = 1;
+			};
+			NumChildren = 1;
+		};
+		Child4:
+		{
+			Type = "group";
+			Name = "pj_c_wing";
+			Position:
+			{
+			};
+			Child0:
+			{
+				Type = "bone";
+				Name = "c_wing";
+				Position:
+				{
+				};
+				BonePos:
+				{
+					y = -77.0000;
+				};
+				Child0:
+				{
+					Type = "group";
+					Name = "c_wing_group";
+					Position:
+					{
+					};
+					Depth = 0.0300;
+					Child0:
+					{
+						Type = "sprite";
+						Name = "c_wing_sprite_0";
+						Position:
+						{
+						};
+						Sprite = "../sprites/mosca";
+						SpriteAction = 4;
+					};
+					NumChildren = 1;
+				};
+				NumChildren = 1;
+			};
+			NumChildren = 1;
+		};
+		Child5:
+		{
+			Type = "group";
+			Name = "pj_r_foot";
+			Position:
+			{
+			};
+			Child0:
+			{
+				Type = "bone";
+				Name = "r_foot";
+				Position:
+				{
+				};
+				BonePos:
+				{
+					x = -51.0000;
+					y = 26.0000;
+				};
+				Child0:
+				{
+					Type = "group";
+					Name = "r_foot_group";
+					Position:
+					{
+					};
+					Depth = 0.0100;
+					Child0:
+					{
+						Type = "sprite";
+						Name = "r_foot_sprite_0";
+						Position:
+						{
+						};
+						Sprite = "../sprites/mosca";
+						SpriteAction = 9;
+					};
+					NumChildren = 1;
+				};
+				NumChildren = 1;
+			};
+			NumChildren = 1;
+		};
+		Child6:
+		{
+			Type = "group";
+			Name = "pj_l_foot";
+			Position:
+			{
+			};
+			Child0:
+			{
+				Type = "bone";
+				Name = "l_foot";
+				Position:
+				{
+				};
+				BonePos:
+				{
+					x = 47.0000;
+					y = 24.0000;
+				};
+				Child0:
+				{
+					Type = "group";
+					Name = "l_foot_group";
+					Position:
+					{
+					};
+					Depth = 0.0100;
+					Child0:
+					{
+						Type = "sprite";
+						Name = "l_foot_sprite_0";
+						Position:
+						{
+						};
+						Sprite = "../sprites/mosca";
+						SpriteAction = 8;
+					};
+					NumChildren = 1;
+				};
+				NumChildren = 1;
+			};
+			NumChildren = 1;
+		};
+		Child7:
+		{
+			Type = "group";
+			Name = "pj_l_shoulder";
+			Position:
+			{
+			};
+			Child0:
+			{
+				Type = "bone";
+				Name = "l_shoulder";
+				Position:
+				{
+				};
+				BonePos:
+				{
+					x = 73.0000;
+					y = -92.0000;
+				};
+				Child0:
+				{
+					Type = "group";
+					Name = "l_shoulder_group";
+					Position:
+					{
+					};
+					Depth = 0.0100;
+					Child0:
+					{
+						Type = "sprite";
+						Name = "l_shoulder_sprite_0";
+						Position:
+						{
+						};
+						Sprite = "../sprites/mosca";
+						SpriteAction = 6;
+					};
+					NumChildren = 1;
+				};
+				NumChildren = 1;
+			};
+			NumChildren = 1;
+		};
+		Child8:
+		{
+			Type = "group";
+			Name = "pj_r_shoulder";
+			Position:
+			{
+			};
+			Child0:
+			{
+				Type = "bone";
+				Name = "r_shoulder";
+				Position:
+				{
+				};
+				BonePos:
+				{
+					x = -79.0000;
+					y = -83.0000;
+				};
+				Child0:
+				{
+					Type = "group";
+					Name = "r_shoulder_group";
+					Position:
+					{
+					};
+					Depth = 0.0100;
+					Child0:
+					{
+						Type = "sprite";
+						Name = "r_shoulder_sprite_0";
+						Position:
+						{
+						};
+						Sprite = "../sprites/mosca";
+						SpriteAction = 7;
+					};
+					NumChildren = 1;
+				};
+				NumChildren = 1;
+			};
+			NumChildren = 1;
+		};
+		NumChildren = 9;
+	};
+	NumChildren = 2;
+};

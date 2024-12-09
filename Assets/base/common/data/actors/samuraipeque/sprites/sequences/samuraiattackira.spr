@@ -1,0 +1,90 @@
+Sprite:
+{
+	Name = "samuraiattackira";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 4;
+				Frame0:
+				{
+					Material = "samuraiattackira1";
+					BlendTime = 0.1930;
+					Pivot:
+					{
+						x = 0.5018;
+						y = 0.5012;
+					};
+					Size:
+					{
+						Width = 273.0;
+						Height = 405.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "samuraiattackira2";
+					BlendTime = 0.1930;
+					Pivot:
+					{
+						x = 0.5018;
+						y = 0.5012;
+					};
+					Size:
+					{
+						Width = 273.0;
+						Height = 405.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame2:
+				{
+					Material = "samuraiattackira3";
+					BlendTime = 0.1930;
+					Pivot:
+					{
+						x = 0.5018;
+						y = 0.5012;
+					};
+					Size:
+					{
+						Width = 273.0;
+						Height = 405.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame3:
+				{
+					Material = "samuraiattackira4";
+					BlendTime = 0.1930;
+					Pivot:
+					{
+						x = 0.5018;
+						y = 0.5012;
+					};
+					Size:
+					{
+						Width = 273.0;
+						Height = 405.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

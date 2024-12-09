@@ -1,0 +1,63 @@
+Sprite:
+{
+	Name = "muslo_detras";
+	NumActions = 2;
+	Action0:
+	{
+		Name = "muslo";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "muslo_delante";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.1753;
+						y = 0.2679;
+					};
+					Size:
+					{
+						Width = 97.0;
+						Height = 56.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "pierna-izq";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "back/pierna-izq";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = -0.1022;
+					};
+					Size:
+					{
+						Width = 42.0;
+						Height = 137.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

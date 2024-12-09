@@ -1,0 +1,213 @@
+Sprite:
+{
+	Name = "yamcha_mouth";
+	NumActions = 2;
+	Action0:
+	{
+		Name = "idle";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "boca";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5094;
+						y = 0.5106;
+					};
+					Size:
+					{
+						Width = 53.0;
+						Height = 47.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "speaking";
+		PlayMode = "LOOP";
+		RandomStartTime = 0.75;
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 8;
+				Frame0:
+				{
+					Material = "boca";
+					DelayTime = 0.1533;
+					BlendTime = 0.0407;
+					Pivot:
+					{
+						x = 0.5094;
+						y = 0.5106;
+					};
+					Size:
+					{
+						Width = 53.0;
+						Height = 47.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "boca";
+					DelayTime = 0.1552;
+					BlendTime = 0.0388;
+					Pivot:
+					{
+						x = 4.3333;
+						y = 2.7500;
+					};
+					Size:
+					{
+						Width = 3.0;
+						Height = 4.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2642;
+						IV = 0.2766;
+						FU = 0.3208;
+						FV = 0.3617;
+					};
+				};
+				Frame2:
+				{
+					Material = "boca";
+					DelayTime = 0.1533;
+					BlendTime = 0.0407;
+					Pivot:
+					{
+						x = 0.5049;
+					};
+					Size:
+					{
+						Width = 53.0;
+						Height = 47.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame3:
+				{
+					Material = "boca";
+					DelayTime = 0.1168;
+					BlendTime = 0.0292;
+					Pivot:
+					{
+						x = 4.0000;
+						y = 3.6000;
+					};
+					Size:
+					{
+						Width = 5.0;
+						Height = 5.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1321;
+						IV = 0.1277;
+						FU = 0.2264;
+						FV = 0.2340;
+					};
+				};
+				Frame4:
+				{
+					Material = "boca";
+					DelayTime = 0.1533;
+					BlendTime = 0.0407;
+					Pivot:
+					{
+						x = 0.5049;
+					};
+					Size:
+					{
+						Width = 53.0;
+						Height = 47.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame5:
+				{
+					Material = "boca";
+					DelayTime = 0.1533;
+					BlendTime = 0.0407;
+					Pivot:
+					{
+						x = 2.8333;
+						y = 2.8333;
+					};
+					Size:
+					{
+						Width = 6.0;
+						Height = 6.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1887;
+						IV = 0.1489;
+						FU = 0.3019;
+						FV = 0.2766;
+					};
+				};
+				Frame6:
+				{
+					Material = "boca";
+					DelayTime = 0.1533;
+					BlendTime = 0.0407;
+					Pivot:
+					{
+						x = 0.5049;
+					};
+					Size:
+					{
+						Width = 53.0;
+						Height = 47.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame7:
+				{
+					Material = "boca";
+					DelayTime = 0.2328;
+					BlendTime = 0.0582;
+					Pivot:
+					{
+						x = 5.7500;
+						y = 2.1667;
+					};
+					Size:
+					{
+						Width = 4.0;
+						Height = 6.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0755;
+						IV = 0.2340;
+						FU = 0.1509;
+						FV = 0.3617;
+					};
+				};
+			};
+		};
+	};
+};

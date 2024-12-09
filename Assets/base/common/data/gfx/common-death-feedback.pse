@@ -1,0 +1,69 @@
+ParticleSystemEditor:
+{
+	Editor:
+	{
+		BckColor:
+		{
+			a = 1.0000;
+		};
+		CrossHair:
+		{
+			x = 379.0000;
+			y = 335.0000;
+		};
+		CurFrame = 2;
+	};
+	Sprite = "circulito";
+	Freq = 15;
+	TTL = 3;
+	EmisorRadVal = 0;
+	EmisorRadRndN = 0;
+	EmisorRadRndP = 0;
+	EmisorPhaseVal = 0;
+	EmisorPhaseRndN = 0;
+	EmisorPhaseRndP = 0;
+	EmisorSpeedVal = 0;
+	EmisorSpeedRndN = 0;
+	EmisorSpeedRndP = 0;
+	EmisorAccelVal = 0;
+	EmisorOfsXRndN = 0;
+	EmisorOfsXRndP = 0;
+	EmisorOfsYRndN = 0;
+	EmisorOfsYRndP = 0;
+	EmisorSpeedXRndN = 0;
+	EmisorSpeedXRndP = 0;
+	EmisorSpeedYRndN = 0;
+	EmisorSpeedYRndP = 0;
+	EmisorAccelXVal = 0;
+	EmisorAccelYVal = 0;
+	ParticleSizeVal = 250;
+	ParticleSizeRndN = 0;
+	ParticleSizeRndP = 0;
+	ParticleSizeSpeedVal = -100;
+	ParticleSizeSpeedRndN = 0;
+	ParticleSizeSpeedRndP = 0;
+	ParticleSizeAccelVal = -100;
+	ParticleAngleVal = 0;
+	ParticleAngleRndN = 0;
+	ParticleAngleRndP = 0;
+	ParticleAngleSpeedRndN = 0;
+	ParticleAngleSpeedRndP = 0;
+	ParticleAngleAccelVal = 0;
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 3;
+		KeyFrame0:
+		{
+		};
+		KeyFrame1:
+		{
+			Time = 0.1000;
+		};
+		KeyFrame2:
+		{
+			a = 0.0000;
+			Time = 0.2000;
+		};
+	};
+};

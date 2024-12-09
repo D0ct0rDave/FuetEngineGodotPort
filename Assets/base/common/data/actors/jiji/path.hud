@@ -1,0 +1,171 @@
+HUD:
+{
+	FileVersion = 2;
+	NumElements = 1;
+	Element0:
+	{
+		Name = "Background";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "Background";
+			Position:
+			{
+				x = 2400.0000;
+				y = 64.3777;
+			};
+			Depth = 1.0000;
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 1;
+			Object0:
+			{
+				Type = "Rect";
+				Width = 100.0000;
+				Height = 100.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "Rect layer 0";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "OnIdle";
+			ObjAction0:
+			{
+				HUDObject = "Background";
+				XFunc:
+				{
+					NumKeyFrames = 4;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 1.0000;
+						Value = -400.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 7.5000;
+						Value = -400.0000;
+					};
+					KeyFrame3:
+					{
+						Time = 10.0000;
+						Value = -1992.2747;
+					};
+				};
+				YFunc:
+				{
+					NumKeyFrames = 4;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 1.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 7.5000;
+					};
+					KeyFrame3:
+					{
+						Time = 10.0000;
+						Value = -1220.7313;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 5;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 2.0000;
+						EventName = "StartShooting";
+					};
+					KeyFrame2:
+					{
+						Time = 3.0000;
+						EventName = "StopShooting";
+					};
+					KeyFrame3:
+					{
+						Time = 5.5000;
+						EventName = "StartShooting";
+					};
+					KeyFrame4:
+					{
+						Time = 6.5000;
+						EventName = "StopShooting";
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+};

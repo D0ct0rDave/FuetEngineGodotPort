@@ -1,0 +1,54 @@
+Sprite:
+{
+	Name = "lazo";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 2;
+				Frame0:
+				{
+					Material = "lazo1";
+					BlendTime = 0.1930;
+					Pivot:
+					{
+						x = 0.1668;
+						y = 0.3835;
+					};
+					Size:
+					{
+						Width = 131.0;
+						Height = 133.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "lazo2";
+					BlendTime = 0.1930;
+					Pivot:
+					{
+						x = 0.1603;
+						y = 0.3759;
+					};
+					Size:
+					{
+						Width = 131.0;
+						Height = 133.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

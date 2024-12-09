@@ -1,0 +1,67 @@
+Sprite:
+{
+	Name = "ball-rays";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		BlendMode = "LIGHTSABER";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 3;
+				Frame0:
+				{
+					Material = "ball-rays-0";
+					BlendTime = 0.0980;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 128.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "ball-rays-1";
+					BlendTime = 0.2430;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 128.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame2:
+				{
+					Material = "ball-rays-2";
+					BlendTime = 0.2430;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 128.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,1 @@
+Sprite:{ Name="tunica"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "tunica"; Size:{ Width = 83.0; Height = 117.0; }; }; }; }; }; 

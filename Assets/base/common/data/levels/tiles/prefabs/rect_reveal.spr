@@ -1,0 +1,35 @@
+Sprite:
+{
+	Name = "rect_reveal";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		BlendMode = "REVEAL";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "rect";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.0000;
+						y = 0.0000;
+					};
+					Size:
+					{
+						Width = 1800.0;
+						Height = 1080.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

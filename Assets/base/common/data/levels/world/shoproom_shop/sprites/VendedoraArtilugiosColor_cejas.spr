@@ -1,0 +1,64 @@
+Sprite:
+{
+	Name = "VendedoraArtilugiosColor_cejas";
+	NumActions = 2;
+	Action0:
+	{
+		Name = "normal";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "VendedoraArtilugiosColor_cejas";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5018;
+						y = 0.5094;
+					};
+					Size:
+					{
+						Width = 283.0;
+						Height = 53.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "tristes";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "VendedoraArtilugiosColor_cejas_tristes";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5018;
+						y = 0.5185;
+					};
+					Size:
+					{
+						Width = 283.0;
+						Height = 54.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

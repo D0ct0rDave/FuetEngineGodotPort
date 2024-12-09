@@ -1,0 +1,30 @@
+Sprite:
+{
+	Name = "toro-cuello";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "toro-cuello";
+					BlendTime = 0.0000;
+					Pivot:
+					{
+						x = 0.37975;
+						y = 0.65306;
+					};
+					Size:
+					{
+						Width = 79.0;
+						Height = 98.0;
+					};
+				};
+			};
+		};
+	};
+};

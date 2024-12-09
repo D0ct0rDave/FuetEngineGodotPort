@@ -1,0 +1,1 @@
+Sprite:{ Name="Marco"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "Marco"; Size:{ Width = 512.0; Height = 512.0; }; }; }; }; }; 

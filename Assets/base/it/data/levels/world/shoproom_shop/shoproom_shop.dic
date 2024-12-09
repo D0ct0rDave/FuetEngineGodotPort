@@ -1,0 +1,5 @@
+Dictionary:
+{
+	SHOPKEEPER_PRESENT1 = "Bienvenido al banco de la experiencia,/ndime, ¿en qué puedo ayudarte?";
+	SHOPKEEPER_PRESENT1_OPT1 = "";
+};

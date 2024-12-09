@@ -1,0 +1,69 @@
+ParticleSystemEditor:
+{
+	Editor:
+	{
+		BckColor:
+		{
+			a = 1.0000;
+		};
+		CrossHair:
+		{
+			x = 331.0000;
+			y = 240.0000;
+		};
+		CurFrame = 8;
+	};
+	Sprite = "botiboing_debris";
+	Freq = 50;
+	TTL = 10;
+	EmisorRadVal = 0;
+	EmisorRadRndN = 0;
+	EmisorRadRndP = 0;
+	EmisorPhaseVal = 0;
+	EmisorPhaseRndN = 0;
+	EmisorPhaseRndP = 0;
+	EmisorSpeedVal = 0;
+	EmisorSpeedRndN = 0;
+	EmisorSpeedRndP = 0;
+	EmisorAccelVal = 0;
+	EmisorOfsXRndN = 0;
+	EmisorOfsXRndP = 0;
+	EmisorOfsYRndN = 0;
+	EmisorOfsYRndP = 0;
+	EmisorSpeedXRndN = -5;
+	EmisorSpeedXRndP = 5;
+	EmisorSpeedYRndN = 16;
+	EmisorSpeedYRndP = 48;
+	EmisorAccelXVal = 0;
+	EmisorAccelYVal = 3;
+	ParticleSizeVal = 100;
+	ParticleSizeRndN = 0;
+	ParticleSizeRndP = 0;
+	ParticleSizeSpeedVal = 0;
+	ParticleSizeSpeedRndN = 0;
+	ParticleSizeSpeedRndP = 0;
+	ParticleSizeAccelVal = 0;
+	ParticleAngleVal = 0;
+	ParticleAngleRndN = -180;
+	ParticleAngleRndP = 180;
+	ParticleAngleSpeedRndN = 60;
+	ParticleAngleSpeedRndP = 60;
+	ParticleAngleAccelVal = 0;
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 3;
+		KeyFrame0:
+		{
+		};
+		KeyFrame1:
+		{
+			Time = 0.8000;
+		};
+		KeyFrame2:
+		{
+			a = 0.0000;
+			Time = 1.0000;
+		};
+	};
+};

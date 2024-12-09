@@ -1,0 +1,381 @@
+Script : 
+{
+  Sequence = "A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,A16,A17,A18,A19,A20,A21,A22,A23,A24,A25,A26,A27,A28,A29,A30,A31,A32,A33,A34,A35,A36,A37,A38,A39,A40,A41,A42,A43,A44,A45,A46,A47,A48,A49";
+  A0 : 
+  {
+    Type = "SetActorState";
+    Actor = "Camera";
+    State = 100;
+  };
+  A1 : 
+  {
+    Type = "SetActorState";
+    Actor = "pl_Player_Intro";
+    State = 100;
+  };
+  A2 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "ShowCinemascope";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A3 : 
+  {
+    Type = "MoveActor";
+    Actor = "Camera";
+    InitialPos : 
+    {
+      x = 0.0;
+      y = 480.0;
+    };
+    FinalPos : 
+    {
+      x = 1500.0;
+      y = 480.0;
+    };
+    Time = 2.0;
+  };
+  A4 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_MADialog";
+    LetterByLetter = false;
+    LetterTime = 0;
+  };
+  A5 : 
+  {
+    Type = "SetHUDElemPos";
+    Elem = "MADialog";
+    Pos : 
+    {
+      x = 200.0;
+      y = 650.0;
+    };
+  };
+  A6 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogOpen";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A7 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A8 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_MADialog";
+    LetterByLetter = false;
+    LetterTime = 0.05000000075;
+  };
+  A9 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "lb_MADialog";
+  };
+  A10 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/fx/ui/chikichiki";
+    Vol = 0.5;
+    Pan = 0.5;
+    Loop = true;
+    Wait = false;
+  };
+  A11 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_MADialog";
+    Text = "INTRO_PHRASE_13";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A12 : 
+  {
+    Type = "StopSound";
+    Sound = "data/sound/fx/ui/chikichiki";
+  };
+  A13 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A14 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogIdleMessage";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = true;
+  };
+  A15 : 
+  {
+    Type = "InfiniteStop";
+  };
+  A16 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A17 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogClose";
+    AutoShow = false;
+    AutoHide = true;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A18 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_PLAY_ROOM_ANIM";
+    Parameters = "GotoWC";
+  };
+  A19 : 
+  {
+    Type = "FadeSoundLine";
+    Line = 2;
+    Vol = 0.0;
+    Time = 1.0;
+    Wait = false;
+  };
+  A20 : 
+  {
+    Type = "MoveActorTo";
+    Actor = "pl_Player_Intro";
+    FinalPos : 
+    {
+      x = 2110.0;
+      y = 832.0;
+    };
+    Time = 1.0;
+  };
+  A21 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_PLAY_ROOM_ANIM";
+    Parameters = "StopGotoWC";
+  };
+  A22 : 
+  {
+    Type = "StopSound";
+    Sound = "data/sound/music/intro_3";
+  };
+  A23 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_PLAY_ROOM_ANIM";
+    Parameters = "PlayBGM";
+  };
+  A24 : 
+  {
+    Type = "MoveActor";
+    Actor = "Camera";
+    InitialPos : 
+    {
+      x = 1500.0;
+      y = 480.0;
+    };
+    FinalPos : 
+    {
+      x = 0.0;
+      y = 480.0;
+    };
+    Time = 2.0;
+  };
+  A25 : 
+  {
+    Type = "Sleep";
+    Time = 2.0;
+  };
+  A26 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_PLAY_ROOM_ANIM";
+    Parameters = "PlayWCMusic";
+  };
+  A27 : 
+  {
+    Type = "Sleep";
+    Time = 19.0;
+  };
+  A28 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_PLAY_ROOM_ANIM";
+    Parameters = "ShowMA";
+  };
+  A29 : 
+  {
+    Type = "MoveActorTo";
+    Actor = "pl_Player_Intro";
+    FinalPos : 
+    {
+      x = 2110.0;
+      y = 3000.0;
+    };
+    Time = 0.1000000015;
+  };
+  A30 : 
+  {
+    Type = "MoveActor";
+    Actor = "Camera";
+    InitialPos : 
+    {
+      x = 0.0;
+      y = 480.0;
+    };
+    FinalPos : 
+    {
+      x = 1500.0;
+      y = 480.0;
+    };
+    Time = 2.0;
+  };
+  A31 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_MADialog";
+    LetterByLetter = false;
+    LetterTime = 0;
+  };
+  A32 : 
+  {
+    Type = "SetHUDElemPos";
+    Elem = "MADialog";
+    Pos : 
+    {
+      x = 700.0;
+      y = 650.0;
+    };
+  };
+  A33 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogOpen";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A34 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A35 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_MADialog";
+    LetterByLetter = false;
+    LetterTime = 0.05000000075;
+  };
+  A36 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "lb_MADialog";
+  };
+  A37 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/fx/ui/chikichiki";
+    Vol = 0.5;
+    Pan = 0.5;
+    Loop = true;
+    Wait = false;
+  };
+  A38 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_MADialog";
+    Text = "INTRO_PHRASE_14";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A39 : 
+  {
+    Type = "StopSound";
+    Sound = "data/sound/fx/ui/chikichiki";
+  };
+  A40 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A41 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogIdleMessage";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = true;
+  };
+  A42 : 
+  {
+    Type = "InfiniteStop";
+  };
+  A43 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A44 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogClose";
+    AutoShow = false;
+    AutoHide = true;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A45 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SCREEN_FADE_OUT";
+    Parameters = "0.5";
+  };
+  A46 : 
+  {
+    Type = "Sleep";
+    Time = 0.5;
+  };
+  A47 : 
+  {
+    Type = "MoveActor";
+    Actor = "Camera";
+    InitialPos : 
+    {
+      x = 1500.0;
+      y = 480.0;
+    };
+    FinalPos : 
+    {
+      x = 0.0;
+      y = 480.0;
+    };
+    Time = 0.0;
+  };
+  A48 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_CHANGE_ROOM";
+    Parameters = "intro/intro_11/intro_11";
+  };
+  A49 : 
+  {
+    Type = "SetActorState";
+    Actor = "Camera";
+    State = 0;
+  };
+};

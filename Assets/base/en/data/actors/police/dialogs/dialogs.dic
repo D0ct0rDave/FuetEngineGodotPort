@@ -1,0 +1,16 @@
+Dictionary:
+{
+	POLICE_PRESENT1 = "Good morning, papers ple... err... show me your inventory.";
+	POLICE_PRESENT2 = "Good morning. Please, show me your inventory.";
+	POLICE_PRESENT3 = "Good morning. Inventory please.";
+	POLICE_EVERYTHING_OK = "Ok, everything is right. Come on, you can pass.";
+	POLICE_NOTHING_OK = "Sorry madam, you cannot go on. You need:";
+	POLICE_NOTHING_OK2 = "Everything clear?";
+	POLICE_NOTHING_OK_OPT1 = "Ok";
+	POLICE_ASK_REC_ITEMS1 = "Let's see, in order to continue, we recommend you first getting the following:";
+	POLICE_ASK_REC_ITEMS2 = "But, do you still want to continue under your own responsibilty?";
+	POLICE_ASK_REC_ITEMS_OPT1 = "Ok, let's go!";
+	POLICE_ASK_REC_ITEMS_OPT2 = "mmmm, I pass.";
+	POLICE_WITHOUT_REC_ITEMS_YES = "Ok, it's your decission. Remember, once you're out there,anything happening will be your business.";
+	POLICE_WITHOUT_REC_ITEMS_NO = "Ok madam,come on. Go, go go!";
+};

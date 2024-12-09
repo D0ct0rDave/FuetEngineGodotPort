@@ -1,0 +1,16 @@
+Dictionary:
+{
+	POLICE_PRESENT1 = "Hola buenos días, los pape... digo veamos su inventario.";
+	POLICE_PRESENT2 = "Hola buenos días, enséñeme su inventario.";
+	POLICE_PRESENT3 = "Hola buenos días, el inventario por favor.";
+	POLICE_EVERYTHING_OK = "De acuerdo, está todo en orden. Adelante, puede pasar.";
+	POLICE_NOTHING_OK = "Lo siento señora, no puede pasar. Necesita:";
+	POLICE_NOTHING_OK2 = "¿Está todo claro?";
+	POLICE_NOTHING_OK_OPT1 = "Pues vale.";
+	POLICE_ASK_REC_ITEMS1 = "A ver para continuar nosotros le recomendamos que primero consiga:";
+	POLICE_ASK_REC_ITEMS2 = "Sin embargo ¿Desea igualmente continuar bajo su propia responsabilidad?";
+	POLICE_ASK_REC_ITEMS_OPT1 = "Si venga!";
+	POLICE_ASK_REC_ITEMS_OPT2 = "mmm, paso.";
+	POLICE_WITHOUT_REC_ITEMS_YES = "De acuerdo, es cosa suya. Recuerde que lo que le pase ahí fuera será bajo su propia responsabilidad";
+	POLICE_WITHOUT_REC_ITEMS_NO = "De acuerdo señora. Despeje la zona, vamos circule, ¡circule!";
+};

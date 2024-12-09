@@ -1,0 +1,103 @@
+Sprite:
+{
+	Name = "shopkeeper";
+	NumActions = 2;
+	Action0:
+	{
+		Name = "captured";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 2;
+				Frame0:
+				{
+					Material = "shopkeeper_03";
+					DelayTime = 0.3020;
+					Pivot:
+					{
+						x = 0.4804;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 408.0;
+						Height = 450.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "shopkeeper_04";
+					DelayTime = 0.3020;
+					Pivot:
+					{
+						x = 0.4804;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 408.0;
+						Height = 450.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "free";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 2;
+				Frame0:
+				{
+					Material = "shopkeeper_02";
+					DelayTime = 0.3020;
+					Pivot:
+					{
+						x = 0.4804;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 408.0;
+						Height = 450.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "shopkeeper_01";
+					DelayTime = 0.3020;
+					Pivot:
+					{
+						x = 0.4804;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 408.0;
+						Height = 450.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

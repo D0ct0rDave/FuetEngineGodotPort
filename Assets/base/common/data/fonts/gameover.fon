@@ -1,0 +1,200 @@
+Font:
+{
+	Type = "OpenType";
+	OpenType:
+	{
+		BaseWidth = 491;
+		BaseHeight = 448;
+		DefCharWidth = 64;
+		DefCharHeight = 202;
+		SpaceCharWidth = 45;
+		// Y character
+		C0:
+		{
+			ID = 89;
+			S = 1;
+			T = 1;
+			W = 105;
+			H = 108;
+			YOfs = 48;
+			LClass = 2;
+			RClass = 1;
+		};
+		// O character
+		C1:
+		{
+			ID = 79;
+			S = 107;
+			T = 1;
+			W = 112;
+			H = 111;
+			YOfs = 46;
+			LClass = 0;
+			RClass = 0;
+		};
+		// U character
+		C2:
+		{
+			ID = 85;
+			S = 220;
+			T = 1;
+			W = 114;
+			H = 109;
+			YOfs = 48;
+			LClass = 1;
+			RClass = 1;
+		};
+		// D character
+		C3:
+		{
+			ID = 68;
+			S = 335;
+			T = 1;
+			W = 107;
+			H = 111;
+			YOfs = 46;
+			LClass = 0;
+			RClass = 0;
+		};
+		// I character
+		C4:
+		{
+			ID = 73;
+			S = 443;
+			T = 1;
+			W = 47;
+			H = 108;
+			YOfs = 48;
+			LClass = 0;
+			RClass = 0;
+		};
+		// E character
+		C5:
+		{
+			ID = 69;
+			S = 1;
+			T = 113;
+			W = 90;
+			H = 109;
+			YOfs = 48;
+			LClass = 0;
+			RClass = 0;
+		};
+		C6:
+		{
+			ID = 10;
+			S = 92;
+			T = 113;
+			YOfs = -256;
+			LClass = 0;
+			RClass = 0;
+		};
+		// H character
+		C7:
+		{
+			ID = 72;
+			S = 93;
+			T = 113;
+			W = 111;
+			H = 108;
+			YOfs = 48;
+			LClass = 0;
+			RClass = 0;
+		};
+		// A character
+		C8:
+		{
+			ID = 65;
+			S = 205;
+			T = 113;
+			W = 110;
+			H = 109;
+			YOfs = 48;
+			LClass = 0;
+			RClass = 0;
+		};
+		// S character
+		C9:
+		{
+			ID = 83;
+			S = 316;
+			T = 113;
+			W = 68;
+			H = 111;
+			YOfs = 46;
+			LClass = 0;
+			RClass = 0;
+		};
+		// M character
+		C10:
+		{
+			ID = 77;
+			S = 1;
+			T = 225;
+			W = 137;
+			H = 110;
+			YOfs = 47;
+			LClass = 0;
+			RClass = 0;
+		};
+		// R character
+		C11:
+		{
+			ID = 82;
+			S = 139;
+			T = 225;
+			W = 99;
+			H = 111;
+			YOfs = 46;
+			LClass = 0;
+			RClass = 0;
+		};
+		// T character
+		C12:
+		{
+			ID = 84;
+			S = 239;
+			T = 225;
+			W = 99;
+			H = 112;
+			YOfs = 45;
+			LClass = 0;
+			RClass = 0;
+		};
+		// G character
+		C13:
+		{
+			ID = 71;
+			S = 339;
+			T = 225;
+			W = 105;
+			H = 111;
+			YOfs = 46;
+			LClass = 1;
+			RClass = 0;
+		};
+		// V character
+		C14:
+		{
+			ID = 86;
+			S = 1;
+			T = 338;
+			W = 114;
+			H = 109;
+			YOfs = 48;
+			LClass = 0;
+			RClass = 1;
+		};
+		NumChars = 15;
+		KerningTable:
+		{
+			NumLClasses = 3;
+			NumRClasses = 2;
+			m1_0 = -1;
+			m2_0 = -5;
+			m0_1 = -1;
+			m1_1 = -2;
+			m2_1 = -6;
+		};
+	};
+};

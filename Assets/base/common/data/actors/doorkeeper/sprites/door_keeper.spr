@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "door_keeper";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "door_keeper";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.4792;
+						y = 0.9333;
+					};
+					Size:
+					{
+						Width = 240.0;
+						Height = 240.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

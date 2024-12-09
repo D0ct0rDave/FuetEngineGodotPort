@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "kbd-2";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "kbd-2";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.4608;
+						y = 0.5543;
+					};
+					Size:
+					{
+						Width = 306.0;
+						Height = 92.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

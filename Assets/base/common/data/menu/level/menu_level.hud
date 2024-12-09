@@ -1,0 +1,137 @@
+HUD:
+{
+	FileVersion = 2;
+	NumElements = 1;
+	Element0:
+	{
+		Name = "lower-screen";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "lower-screen";
+			Position:
+			{
+				x = 4.0000;
+				y = 4.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			DepthFact = 1.0000;
+			NumObjects = 1;
+			Object0:
+			{
+				Type = "Group";
+				Name = "BG-gradient";
+				Position:
+				{
+					x = 1856.0000;
+					y = 1088.0000;
+				};
+				Depth = 0.9990;
+				Scale:
+				{
+				};
+				Angle = 3.1416;
+				Color:
+				{
+				};
+				NumObjects = 2;
+				Object0:
+				{
+					Type = "Rect";
+					Width = 1280.0000;
+					Height = 480.0000;
+					PivotY = 0.0000;
+					Corner0:
+					{
+						r = 0.2863;
+						g = 0.2863;
+						b = 0.2863;
+					};
+					Corner1:
+					{
+						r = 0.2863;
+						g = 0.2863;
+						b = 0.2863;
+					};
+					Corner2:
+					{
+						r = 0.2902;
+						g = 0.2902;
+						b = 0.2902;
+					};
+					Corner3:
+					{
+						r = 0.2902;
+						g = 0.2902;
+						b = 0.2902;
+					};
+					Name = "rt_BG-gradient";
+					Position:
+					{
+						x = 956.0000;
+						y = -4.0000;
+					};
+					Scale:
+					{
+						x = 1.5000;
+						y = 1.1000;
+					};
+					Color:
+					{
+					};
+				};
+				Object1:
+				{
+					Type = "Rect";
+					Width = 1280.0000;
+					Height = 525.0000;
+					PivotY = 0.0000;
+					Corner0:
+					{
+						r = 0.2902;
+						g = 0.2902;
+						b = 0.2902;
+					};
+					Corner1:
+					{
+						r = 0.2902;
+						g = 0.2902;
+						b = 0.2902;
+					};
+					Corner2:
+					{
+						r = 0.0588;
+						g = 0.0588;
+						b = 0.0588;
+					};
+					Corner3:
+					{
+						r = 0.0588;
+						g = 0.0588;
+						b = 0.0588;
+					};
+					Name = "rt_BG-gradient-1";
+					Position:
+					{
+						x = 956.0000;
+						y = 524.0000;
+					};
+					Scale:
+					{
+						x = 1.5000;
+						y = 1.1000;
+					};
+					Color:
+					{
+					};
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,5695 @@
+HUD:
+{
+	FileVersion = 2;
+	NumElements = 9;
+	Element0:
+	{
+		Name = "TVFrame";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "TVFrame";
+			Position:
+			{
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+				r = 0.5020;
+				g = 0.0000;
+				b = 0.2510;
+				a = 0.8980;
+			};
+			NumObjects = 4;
+			Object0:
+			{
+				Type = "Rect";
+				Width = 1000.0000;
+				Height = 960.0000;
+				PivotX = 0.0000;
+				PivotY = 1.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_TVFrame";
+				Position:
+				{
+				};
+				Scale:
+				{
+					x = 3.0000;
+					y = 2.0000;
+				};
+				Color:
+				{
+				};
+			};
+			Object1:
+			{
+				Type = "Rect";
+				Width = 1000.0000;
+				Height = 960.0000;
+				PivotX = 1.0000;
+				PivotY = 0.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_TVFrame-1";
+				Position:
+				{
+					y = -1920.0000;
+				};
+				Scale:
+				{
+					x = 2.0000;
+					y = 5.0000;
+				};
+				Color:
+				{
+				};
+			};
+			Object2:
+			{
+				Type = "Rect";
+				Width = 1000.0000;
+				Height = 960.0000;
+				PivotX = 0.0000;
+				PivotY = 0.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_TVFrame-2";
+				Position:
+				{
+					y = 1800.0000;
+				};
+				Scale:
+				{
+					x = 3.0000;
+				};
+				Color:
+				{
+				};
+			};
+			Object3:
+			{
+				Type = "Rect";
+				Width = 1000.0000;
+				Height = 960.0000;
+				PivotX = 0.0000;
+				PivotY = 0.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_TVFrame-3";
+				Position:
+				{
+					x = 3000.0000;
+					y = -1920.0000;
+				};
+				Scale:
+				{
+					x = 5.0000;
+					y = 5.0000;
+				};
+				Color:
+				{
+				};
+			};
+		};
+	};
+	Element1:
+	{
+		Name = "Timeline";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "Timeline";
+			Position:
+			{
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			DepthFact = 0.0000;
+			NumObjects = 23;
+			Object0:
+			{
+				Type = "Group";
+				Name = "camera";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object1:
+			{
+				Type = "Group";
+				Name = "player";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				DepthFact = 0.0000;
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/player/chica";
+					Name = "ic_player";
+					Action = 0;
+					Position:
+					{
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object2:
+			{
+				Type = "Group";
+				Name = "grp_ffatuo_down1";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				DepthFact = 0.0000;
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/ffatuo/ffatuo";
+					Name = "ic_ffatuo_down1";
+					Position:
+					{
+						x = 3168.0000;
+						y = 1760.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object3:
+			{
+				Type = "Group";
+				Name = "grp_ffatuo_up1";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				DepthFact = 0.0000;
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/ffatuo/ffatuo";
+					Name = "ic_ffatuo_up1";
+					Position:
+					{
+						x = 3168.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object4:
+			{
+				Type = "Group";
+				Name = "grp_ffatuo_down2";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				DepthFact = 0.0000;
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/ffatuo/ffatuo";
+					Name = "ic_ffatuo_down2";
+					Position:
+					{
+						x = 3168.0000;
+						y = 1760.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object5:
+			{
+				Type = "Group";
+				Name = "grp_ffatuo_up2";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				DepthFact = 0.0000;
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/ffatuo/ffatuo";
+					Name = "ic_ffatuo_up2";
+					Position:
+					{
+						x = 3168.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object6:
+			{
+				Type = "Group";
+				Name = "grp_jiji1";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/jiji/sprites/jijiabuelopeque";
+					Name = "ic_jiji1";
+					Position:
+					{
+						x = 3648.0000;
+						y = 1024.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object7:
+			{
+				Type = "Group";
+				Name = "grp_zapa_peque1";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/zapa/zapa_peque";
+					Name = "ic_zapa_peque1";
+					Action = 0;
+					Position:
+					{
+						x = 3168.0000;
+						y = 1408.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object8:
+			{
+				Type = "Group";
+				Name = "grp_ffatuo_down3";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				DepthFact = 0.0000;
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/ffatuo/ffatuo";
+					Name = "ic_ffatuo_down3";
+					Position:
+					{
+						x = 3168.0000;
+						y = 1760.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object9:
+			{
+				Type = "Group";
+				Name = "grp_ffatuo_up3";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				DepthFact = 0.0000;
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/ffatuo/ffatuo";
+					Name = "ic_ffatuo_up3";
+					Position:
+					{
+						x = 3168.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object10:
+			{
+				Type = "Group";
+				Name = "grp_jiji2";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/jiji/sprites/jijiabuelopeque";
+					Name = "ic_jiji2";
+					Position:
+					{
+						x = 3648.0000;
+						y = 1024.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object11:
+			{
+				Type = "Group";
+				Name = "grp_zapa_peque2";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/zapa/zapa_peque";
+					Name = "ic_zapa_peque2";
+					Action = 0;
+					Position:
+					{
+						x = 3168.0000;
+						y = 1408.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object12:
+			{
+				Type = "Group";
+				Name = "grp_jiji3";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/jiji/sprites/jijiabuelopeque";
+					Name = "ic_jiji3";
+					Position:
+					{
+						x = 3648.0000;
+						y = 1024.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object13:
+			{
+				Type = "Group";
+				Name = "grp_zapa_peque3";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/zapa/zapa_peque";
+					Name = "ic_zapa_peque3";
+					Action = 0;
+					Position:
+					{
+						x = 3168.0000;
+						y = 1408.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object14:
+			{
+				Type = "Group";
+				Name = "ShopKeeper";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/shopkeeperbubble/shopkeeperbubble";
+					Name = "ic_ShopKeeper";
+					Action = 0;
+					Position:
+					{
+						x = 2560.0000;
+						y = 2080.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object15:
+			{
+				Type = "Group";
+				Name = "grp_ffatuo_up4";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				DepthFact = 0.0000;
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/ffatuo/ffatuo";
+					Name = "ic_ffatuo_up4";
+					Position:
+					{
+						x = 3168.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object16:
+			{
+				Type = "Group";
+				Name = "grp_ffatuo_down4";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				DepthFact = 0.0000;
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/ffatuo/ffatuo";
+					Name = "ic_ffatuo_down4";
+					Position:
+					{
+						x = 3168.0000;
+						y = 1760.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object17:
+			{
+				Type = "Group";
+				Name = "grp_ffatuo_up5";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				DepthFact = 0.0000;
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/ffatuo/ffatuo";
+					Name = "ic_ffatuo_up5";
+					Position:
+					{
+						x = 3168.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object18:
+			{
+				Type = "Group";
+				Name = "grp_ffatuo_down5";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				DepthFact = 0.0000;
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/ffatuo/ffatuo";
+					Name = "ic_ffatuo_down5";
+					Position:
+					{
+						x = 3168.0000;
+						y = 1760.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object19:
+			{
+				Type = "Group";
+				Name = "grp_kappa_1";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/kappa/kappa_peque";
+					Name = "ic_kappa_1";
+					Action = 0;
+					Position:
+					{
+						x = 3168.0000;
+						y = 1664.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object20:
+			{
+				Type = "Group";
+				Name = "grp_kappa_2";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/kappa/kappa_peque";
+					Name = "ic_kappa_2";
+					Action = 0;
+					Position:
+					{
+						x = 3168.0000;
+						y = 1664.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object21:
+			{
+				Type = "Group";
+				Name = "grp_jiji4";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/jiji/sprites/jijiabuelopeque";
+					Name = "ic_jiji4";
+					Position:
+					{
+						x = 3648.0000;
+						y = 1024.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object22:
+			{
+				Type = "Group";
+				Name = "grp_zapa_peque4";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "../../actors/zapa/zapa_peque";
+					Name = "ic_zapa_peque4";
+					Action = 0;
+					Position:
+					{
+						x = 3168.0000;
+						y = 1408.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+		};
+		NumElemActions = 5;
+		Action0:
+		{
+			Name = "OnLoadLevel";
+			ObjAction0:
+			{
+				HUDObject = "camera";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+						EventName = "SendMessage";
+						EventValue = "GMSG_CAMERA_FORCE_ZOOM 0.6";
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+		Action1:
+		{
+			Name = "OnIdle";
+			ObjAction0:
+			{
+				HUDObject = "Timeline";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+						a = 0.0000;
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 1.0000;
+						EventName = "SendMessage";
+						EventValue = "GMSG_SEND_GFLOW_START_INTRO_CINEMATIC";
+					};
+				};
+			};
+			ObjAction1:
+			{
+				HUDObject = "player";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+						Value = -512.0000;
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 2;
+		};
+		Action2:
+		{
+			Name = "TimeLine1";
+			ObjAction0:
+			{
+				HUDObject = "Timeline";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+						a = 0.0000;
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 84.0000;
+						EventName = "SendMessage";
+						EventValue = "GMSG_SEND_GFLOW_START_SUBBOSS_CINEMATIC";
+					};
+				};
+			};
+			ObjAction1:
+			{
+				HUDObject = "ic_ffatuo_down1";
+				XFunc:
+				{
+					NumKeyFrames = 6;
+					KeyFrame0:
+					{
+						LerpFunc = "const";
+					};
+					KeyFrame1:
+					{
+						Time = 3.0000;
+						Value = -1024.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame2:
+					{
+						Time = 3.8000;
+						Value = -832.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame3:
+					{
+						Time = 4.6000;
+						Value = -640.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame4:
+					{
+						Time = 5.4000;
+						Value = -448.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame5:
+					{
+						Time = 6.2000;
+						Value = -256.0000;
+						LerpFunc = "const";
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 7;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 3.0000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame2:
+					{
+						Time = 3.8000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame3:
+					{
+						Time = 4.6000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame4:
+					{
+						Time = 5.4000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame5:
+					{
+						Time = 6.2000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame6:
+					{
+						Time = 6.3000;
+					};
+				};
+			};
+			ObjAction2:
+			{
+				HUDObject = "ic_ffatuo_up1";
+				XFunc:
+				{
+					NumKeyFrames = 6;
+					KeyFrame0:
+					{
+						LerpFunc = "const";
+					};
+					KeyFrame1:
+					{
+						Time = 3.4000;
+						Value = -1024.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame2:
+					{
+						Time = 4.2000;
+						Value = -832.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame3:
+					{
+						Time = 5.0000;
+						Value = -640.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame4:
+					{
+						Time = 5.8000;
+						Value = -448.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame5:
+					{
+						Time = 6.6000;
+						Value = -256.0000;
+						LerpFunc = "const";
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 7;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 3.4000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame2:
+					{
+						Time = 4.2000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame3:
+					{
+						Time = 5.0000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame4:
+					{
+						Time = 5.8000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame5:
+					{
+						Time = 6.6000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame6:
+					{
+						Time = 6.7000;
+					};
+				};
+			};
+			ObjAction3:
+			{
+				HUDObject = "ic_ffatuo_down3";
+				XFunc:
+				{
+					NumKeyFrames = 6;
+					KeyFrame0:
+					{
+						LerpFunc = "const";
+					};
+					KeyFrame1:
+					{
+						Time = 22.0000;
+						Value = -1024.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame2:
+					{
+						Time = 22.8000;
+						Value = -832.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame3:
+					{
+						Time = 23.6000;
+						Value = -640.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame4:
+					{
+						Time = 24.4000;
+						Value = -448.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame5:
+					{
+						Time = 25.2000;
+						Value = -256.0000;
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 8;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 22.0000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame2:
+					{
+						Time = 22.8000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame3:
+					{
+						Time = 23.6000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame4:
+					{
+						Time = 24.4000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame5:
+					{
+						Time = 25.2000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame6:
+					{
+						Time = 26.0000;
+					};
+					KeyFrame7:
+					{
+						Time = 26.1000;
+					};
+				};
+			};
+			ObjAction4:
+			{
+				HUDObject = "ic_ffatuo_up3";
+				XFunc:
+				{
+					NumKeyFrames = 6;
+					KeyFrame0:
+					{
+						LerpFunc = "const";
+					};
+					KeyFrame1:
+					{
+						Time = 22.0000;
+						Value = -1024.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame2:
+					{
+						Time = 22.8000;
+						Value = -832.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame3:
+					{
+						Time = 23.6000;
+						Value = -640.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame4:
+					{
+						Time = 24.4000;
+						Value = -448.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame5:
+					{
+						Time = 25.2000;
+						Value = -256.0000;
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 7;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 22.0000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame2:
+					{
+						Time = 22.8000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame3:
+					{
+						Time = 23.6000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame4:
+					{
+						Time = 24.4000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame5:
+					{
+						Time = 25.2000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame6:
+					{
+						Time = 25.3000;
+					};
+				};
+			};
+			ObjAction5:
+			{
+				HUDObject = "ic_jiji1";
+				XFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						LerpFunc = "const";
+					};
+					KeyFrame1:
+					{
+						Time = 15.0000;
+						Value = -192.0000;
+						LerpFunc = "const";
+					};
+				};
+				YFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						LerpFunc = "const";
+					};
+					KeyFrame1:
+					{
+						Time = 15.0000;
+						LerpFunc = "const";
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+						Value = 0;
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 15.0000;
+						EventName = "Spawn";
+						EventValue = "shen_jiji";
+					};
+					KeyFrame2:
+					{
+						Time = 17.7000;
+					};
+				};
+			};
+			ObjAction6:
+			{
+				HUDObject = "ic_ffatuo_down2";
+				XFunc:
+				{
+					NumKeyFrames = 4;
+					KeyFrame0:
+					{
+						LerpFunc = "const";
+					};
+					KeyFrame1:
+					{
+						Time = 11.0000;
+						Value = -1024.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame2:
+					{
+						Time = 12.0000;
+						Value = -640.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame3:
+					{
+						Time = 13.0000;
+						Value = -256.0000;
+						LerpFunc = "const";
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 5;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 11.0000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame2:
+					{
+						Time = 12.0000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame3:
+					{
+						Time = 13.0000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame4:
+					{
+						Time = 13.1000;
+					};
+				};
+			};
+			ObjAction7:
+			{
+				HUDObject = "ic_ffatuo_up2";
+				XFunc:
+				{
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+						LerpFunc = "const";
+					};
+					KeyFrame1:
+					{
+						Time = 11.5000;
+						Value = -832.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame2:
+					{
+						Time = 12.5000;
+						Value = -448.0000;
+						LerpFunc = "const";
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 4;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 11.5000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame2:
+					{
+						Time = 12.5000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame3:
+					{
+						Time = 12.6000;
+					};
+				};
+			};
+			ObjAction8:
+			{
+				HUDObject = "ic_ShopKeeper";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 41.0000;
+						EventName = "Spawn";
+						EventValue = "shent_ShopKeeperBubble";
+					};
+					KeyFrame2:
+					{
+						Time = 41.1000;
+					};
+				};
+			};
+			ObjAction9:
+			{
+				HUDObject = "ic_jiji2";
+				XFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						LerpFunc = "const";
+					};
+					KeyFrame1:
+					{
+						Time = 27.0000;
+						Value = -416.0000;
+					};
+				};
+				YFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						LerpFunc = "const";
+					};
+					KeyFrame1:
+					{
+						Time = 27.0000;
+						Value = -576.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 27.0000;
+						EventName = "Spawn";
+						EventValue = "shen_jiji";
+					};
+				};
+			};
+			ObjAction10:
+			{
+				HUDObject = "ic_ffatuo_down4";
+				XFunc:
+				{
+					NumKeyFrames = 6;
+					KeyFrame0:
+					{
+						LerpFunc = "const";
+					};
+					KeyFrame1:
+					{
+						Time = 47.0000;
+						Value = -1024.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame2:
+					{
+						Time = 47.4000;
+						Value = -832.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame3:
+					{
+						Time = 47.8000;
+						Value = -640.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame4:
+					{
+						Time = 48.2000;
+						Value = -448.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame5:
+					{
+						Time = 48.6000;
+						Value = -256.0000;
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 7;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 47.0000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame2:
+					{
+						Time = 47.4000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame3:
+					{
+						Time = 47.8000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame4:
+					{
+						Time = 48.2000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame5:
+					{
+						Time = 48.6000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame6:
+					{
+						Time = 48.7000;
+					};
+				};
+			};
+			ObjAction11:
+			{
+				HUDObject = "grp_ffatuo_up4";
+				XFunc:
+				{
+					NumKeyFrames = 6;
+					KeyFrame0:
+					{
+						LerpFunc = "const";
+					};
+					KeyFrame1:
+					{
+						Time = 22.0000;
+						Value = -1024.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame2:
+					{
+						Time = 22.8000;
+						Value = -832.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame3:
+					{
+						Time = 23.6000;
+						Value = -640.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame4:
+					{
+						Time = 24.4000;
+						Value = -448.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame5:
+					{
+						Time = 25.2000;
+						Value = -256.0000;
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction12:
+			{
+				HUDObject = "ic_ffatuo_up4";
+				XFunc:
+				{
+					NumKeyFrames = 6;
+					KeyFrame0:
+					{
+						LerpFunc = "const";
+					};
+					KeyFrame1:
+					{
+						Time = 47.0000;
+						Value = -1024.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame2:
+					{
+						Time = 47.4000;
+						Value = -832.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame3:
+					{
+						Time = 47.8000;
+						Value = -640.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame4:
+					{
+						Time = 48.2000;
+						Value = -448.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame5:
+					{
+						Time = 48.6000;
+						Value = -256.0000;
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 7;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 47.0000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame2:
+					{
+						Time = 47.4000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame3:
+					{
+						Time = 47.8000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame4:
+					{
+						Time = 48.2000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame5:
+					{
+						Time = 48.6000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame6:
+					{
+						Time = 48.7000;
+					};
+				};
+			};
+			ObjAction13:
+			{
+				HUDObject = "ic_jiji3";
+				XFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						LerpFunc = "const";
+					};
+					KeyFrame1:
+					{
+						Time = 34.0000;
+						Value = -416.0000;
+					};
+				};
+				YFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						LerpFunc = "const";
+					};
+					KeyFrame1:
+					{
+						Time = 34.0000;
+						Value = 608.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 34.0000;
+						EventName = "Spawn";
+						EventValue = "shen_jiji";
+					};
+					KeyFrame2:
+					{
+						Time = 34.9000;
+					};
+				};
+			};
+			ObjAction14:
+			{
+				HUDObject = "ic_ffatuo_down5";
+				XFunc:
+				{
+					NumKeyFrames = 6;
+					KeyFrame0:
+					{
+						LerpFunc = "const";
+					};
+					KeyFrame1:
+					{
+						Time = 53.0000;
+						Value = -1024.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame2:
+					{
+						Time = 53.4000;
+						Value = -832.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame3:
+					{
+						Time = 53.8000;
+						Value = -640.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame4:
+					{
+						Time = 54.2000;
+						Value = -448.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame5:
+					{
+						Time = 54.6000;
+						Value = -256.0000;
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 7;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 53.0000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame2:
+					{
+						Time = 53.4000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame3:
+					{
+						Time = 53.8000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame4:
+					{
+						Time = 54.2000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame5:
+					{
+						Time = 54.6000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_d";
+					};
+					KeyFrame6:
+					{
+						Time = 54.7000;
+					};
+				};
+			};
+			ObjAction15:
+			{
+				HUDObject = "ic_ffatuo_up5";
+				XFunc:
+				{
+					NumKeyFrames = 6;
+					KeyFrame0:
+					{
+						LerpFunc = "const";
+					};
+					KeyFrame1:
+					{
+						Time = 53.0000;
+						Value = -1024.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame2:
+					{
+						Time = 53.4000;
+						Value = -832.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame3:
+					{
+						Time = 53.8000;
+						Value = -640.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame4:
+					{
+						Time = 54.2000;
+						Value = -448.0000;
+						LerpFunc = "const";
+					};
+					KeyFrame5:
+					{
+						Time = 54.6000;
+						Value = -256.0000;
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 7;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 53.0000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame2:
+					{
+						Time = 53.4000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame3:
+					{
+						Time = 53.8000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame4:
+					{
+						Time = 54.2000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame5:
+					{
+						Time = 54.6000;
+						EventName = "Spawn";
+						EventValue = "shen_ffatuo_u";
+					};
+					KeyFrame6:
+					{
+						Time = 54.7000;
+					};
+				};
+			};
+			ObjAction16:
+			{
+				HUDObject = "ic_zapa_peque1";
+				XFunc:
+				{
+					NumKeyFrames = 7;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 16.3000;
+					};
+					KeyFrame2:
+					{
+						Time = 17.6000;
+						Value = -32.0000;
+					};
+					KeyFrame3:
+					{
+						Time = 18.1000;
+						Value = -64.0000;
+					};
+					KeyFrame4:
+					{
+						Time = 18.6000;
+						Value = -32.0000;
+					};
+					KeyFrame5:
+					{
+						Time = 19.1000;
+					};
+					KeyFrame6:
+					{
+						Time = 20.0000;
+						Value = -32.0000;
+					};
+				};
+				YFunc:
+				{
+					NumKeyFrames = 10;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 16.3000;
+						Value = 160.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 16.8000;
+						Value = -1120.0000;
+					};
+					KeyFrame3:
+					{
+						Time = 17.3000;
+						Value = -640.0000;
+					};
+					KeyFrame4:
+					{
+						Time = 17.6000;
+						Value = -32.0000;
+					};
+					KeyFrame5:
+					{
+						Time = 18.1000;
+						Value = -672.0000;
+					};
+					KeyFrame6:
+					{
+						Time = 18.6000;
+						Value = -160.0000;
+					};
+					KeyFrame7:
+					{
+						Time = 19.1000;
+						Value = -1088.0000;
+					};
+					KeyFrame8:
+					{
+						Time = 19.6000;
+						Value = 32.0000;
+					};
+					KeyFrame9:
+					{
+						Time = 20.0000;
+						Value = -1024.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 11;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 16.3000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame2:
+					{
+						Time = 16.8000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame3:
+					{
+						Time = 17.3000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame4:
+					{
+						Time = 17.6000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame5:
+					{
+						Time = 18.1000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame6:
+					{
+						Time = 18.6000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame7:
+					{
+						Time = 19.1000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame8:
+					{
+						Time = 19.6000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame9:
+					{
+						Time = 20.0000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame10:
+					{
+						Time = 20.1000;
+					};
+				};
+			};
+			ObjAction17:
+			{
+				HUDObject = "ic_zapa_peque2";
+				XFunc:
+				{
+					NumKeyFrames = 10;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 28.3000;
+					};
+					KeyFrame2:
+					{
+						Time = 28.8000;
+					};
+					KeyFrame3:
+					{
+						Time = 29.3000;
+						Value = -32.0000;
+					};
+					KeyFrame4:
+					{
+						Time = 29.6000;
+					};
+					KeyFrame5:
+					{
+						Time = 30.1000;
+						Value = -32.0000;
+					};
+					KeyFrame6:
+					{
+						Time = 30.6000;
+					};
+					KeyFrame7:
+					{
+						Time = 31.1000;
+						Value = -32.0000;
+					};
+					KeyFrame8:
+					{
+						Time = 31.6000;
+					};
+					KeyFrame9:
+					{
+						Time = 32.0000;
+						Value = -32.0000;
+					};
+				};
+				YFunc:
+				{
+					NumKeyFrames = 10;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 28.3000;
+						Value = 160.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 28.8000;
+						Value = -1120.0000;
+					};
+					KeyFrame3:
+					{
+						Time = 29.3000;
+						Value = -640.0000;
+					};
+					KeyFrame4:
+					{
+						Time = 29.6000;
+						Value = -864.0000;
+					};
+					KeyFrame5:
+					{
+						Time = 30.1000;
+						Value = -128.0000;
+					};
+					KeyFrame6:
+					{
+						Time = 30.6000;
+						Value = -896.0000;
+					};
+					KeyFrame7:
+					{
+						Time = 31.1000;
+						Value = 64.0000;
+					};
+					KeyFrame8:
+					{
+						Time = 31.6000;
+						Value = -1024.0000;
+					};
+					KeyFrame9:
+					{
+						Time = 32.0000;
+						Value = 96.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 11;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 28.3000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame2:
+					{
+						Time = 28.8000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame3:
+					{
+						Time = 29.3000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame4:
+					{
+						Time = 29.6000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame5:
+					{
+						Time = 30.1000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame6:
+					{
+						Time = 30.6000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame7:
+					{
+						Time = 31.1000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame8:
+					{
+						Time = 31.6000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame9:
+					{
+						Time = 32.0000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame10:
+					{
+						Time = 32.1000;
+					};
+				};
+			};
+			ObjAction18:
+			{
+				HUDObject = "ic_zapa_peque3";
+				XFunc:
+				{
+					NumKeyFrames = 7;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 35.3000;
+					};
+					KeyFrame2:
+					{
+						Time = 36.6000;
+						Value = -32.0000;
+					};
+					KeyFrame3:
+					{
+						Time = 37.1000;
+						Value = -64.0000;
+					};
+					KeyFrame4:
+					{
+						Time = 37.6000;
+						Value = -32.0000;
+					};
+					KeyFrame5:
+					{
+						Time = 38.1000;
+					};
+					KeyFrame6:
+					{
+						Time = 39.0000;
+						Value = -32.0000;
+					};
+				};
+				YFunc:
+				{
+					NumKeyFrames = 10;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 35.3000;
+						Value = 160.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 35.8000;
+						Value = -1120.0000;
+					};
+					KeyFrame3:
+					{
+						Time = 36.3000;
+						Value = -640.0000;
+					};
+					KeyFrame4:
+					{
+						Time = 36.6000;
+						Value = -32.0000;
+					};
+					KeyFrame5:
+					{
+						Time = 37.1000;
+						Value = -672.0000;
+					};
+					KeyFrame6:
+					{
+						Time = 37.6000;
+						Value = -160.0000;
+					};
+					KeyFrame7:
+					{
+						Time = 38.1000;
+						Value = -1088.0000;
+					};
+					KeyFrame8:
+					{
+						Time = 38.6000;
+						Value = 32.0000;
+					};
+					KeyFrame9:
+					{
+						Time = 39.0000;
+						Value = -1024.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 11;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 35.3000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame2:
+					{
+						Time = 35.8000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame3:
+					{
+						Time = 36.3000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame4:
+					{
+						Time = 36.6000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame5:
+					{
+						Time = 37.1000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame6:
+					{
+						Time = 37.6000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame7:
+					{
+						Time = 38.1000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame8:
+					{
+						Time = 38.6000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame9:
+					{
+						Time = 39.0000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame10:
+					{
+						Time = 39.1000;
+					};
+				};
+			};
+			ObjAction19:
+			{
+				HUDObject = "ic_zapa_peque4";
+				XFunc:
+				{
+					NumKeyFrames = 7;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 73.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 74.3000;
+						Value = -32.0000;
+					};
+					KeyFrame3:
+					{
+						Time = 74.8000;
+						Value = -64.0000;
+					};
+					KeyFrame4:
+					{
+						Time = 75.3000;
+						Value = -32.0000;
+					};
+					KeyFrame5:
+					{
+						Time = 75.8000;
+					};
+					KeyFrame6:
+					{
+						Time = 76.7000;
+						Value = -32.0000;
+					};
+				};
+				YFunc:
+				{
+					NumKeyFrames = 10;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 73.0000;
+						Value = 160.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 73.5000;
+						Value = -1120.0000;
+					};
+					KeyFrame3:
+					{
+						Time = 74.0000;
+						Value = -640.0000;
+					};
+					KeyFrame4:
+					{
+						Time = 74.3000;
+						Value = -32.0000;
+					};
+					KeyFrame5:
+					{
+						Time = 74.8000;
+						Value = -672.0000;
+					};
+					KeyFrame6:
+					{
+						Time = 75.3000;
+						Value = -160.0000;
+					};
+					KeyFrame7:
+					{
+						Time = 75.8000;
+						Value = -1088.0000;
+					};
+					KeyFrame8:
+					{
+						Time = 76.3000;
+						Value = 32.0000;
+					};
+					KeyFrame9:
+					{
+						Time = 76.7000;
+						Value = -1024.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 11;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 73.0000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame2:
+					{
+						Time = 73.5000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame3:
+					{
+						Time = 74.0000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame4:
+					{
+						Time = 74.3000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame5:
+					{
+						Time = 74.8000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame6:
+					{
+						Time = 75.3000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame7:
+					{
+						Time = 75.8000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame8:
+					{
+						Time = 76.3000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame9:
+					{
+						Time = 76.7000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame10:
+					{
+						Time = 76.8000;
+					};
+				};
+			};
+			ObjAction20:
+			{
+				HUDObject = "ic_kappa_1";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 8;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 60.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame2:
+					{
+						Time = 61.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame3:
+					{
+						Time = 62.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame4:
+					{
+						Time = 63.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame5:
+					{
+						Time = 64.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame6:
+					{
+						Time = 65.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame7:
+					{
+						Time = 66.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+				};
+			};
+			ObjAction21:
+			{
+				HUDObject = "ic_jiji4";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 72.0000;
+						EventName = "Spawn";
+						EventValue = "shen_jiji";
+					};
+				};
+			};
+			ObjAction22:
+			{
+				HUDObject = "ic_kappa_2";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 14;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 70.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame2:
+					{
+						Time = 70.5000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame3:
+					{
+						Time = 71.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame4:
+					{
+						Time = 71.5000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame5:
+					{
+						Time = 72.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame6:
+					{
+						Time = 72.5000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame7:
+					{
+						Time = 73.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame8:
+					{
+						Time = 73.5000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame9:
+					{
+						Time = 74.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame10:
+					{
+						Time = 74.5000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame11:
+					{
+						Time = 75.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame12:
+					{
+						Time = 75.5000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame13:
+					{
+						Time = 76.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+				};
+			};
+			NumObjActions = 23;
+		};
+		Action3:
+		{
+			Name = "TimeLine1_";
+			ObjAction0:
+			{
+				HUDObject = "Timeline";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+						a = 0.0000;
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 5.0000;
+						EventName = "SendMessage";
+						EventValue = "_GMSG_SEND_GFLOW_START_SUBBOSS_CINEMATIC";
+					};
+				};
+			};
+			ObjAction1:
+			{
+				HUDObject = "ic_kappa_1";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 8;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 1.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame2:
+					{
+						Time = 2.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame3:
+					{
+						Time = 3.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame4:
+					{
+						Time = 4.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame5:
+					{
+						Time = 5.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame6:
+					{
+						Time = 6.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame7:
+					{
+						Time = 7.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+				};
+			};
+			ObjAction2:
+			{
+				HUDObject = "ic_kappa_2";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 14;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 12.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame2:
+					{
+						Time = 12.5000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame3:
+					{
+						Time = 13.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame4:
+					{
+						Time = 13.5000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame5:
+					{
+						Time = 14.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame6:
+					{
+						Time = 14.5000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame7:
+					{
+						Time = 15.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame8:
+					{
+						Time = 15.5000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame9:
+					{
+						Time = 16.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame10:
+					{
+						Time = 16.5000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame11:
+					{
+						Time = 17.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame12:
+					{
+						Time = 17.5000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+					KeyFrame13:
+					{
+						Time = 18.0000;
+						EventName = "Spawn";
+						EventValue = "shen_Kappa";
+					};
+				};
+			};
+			ObjAction3:
+			{
+				HUDObject = "ic_jiji4";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 14.0000;
+						EventName = "Spawn";
+						EventValue = "shen_jiji";
+					};
+				};
+			};
+			ObjAction4:
+			{
+				HUDObject = "ic_zapa_peque4";
+				XFunc:
+				{
+					NumKeyFrames = 7;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 15.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 16.3000;
+						Value = -32.0000;
+					};
+					KeyFrame3:
+					{
+						Time = 16.8000;
+						Value = -64.0000;
+					};
+					KeyFrame4:
+					{
+						Time = 17.3000;
+						Value = -32.0000;
+					};
+					KeyFrame5:
+					{
+						Time = 17.8000;
+					};
+					KeyFrame6:
+					{
+						Time = 18.7000;
+						Value = -32.0000;
+					};
+				};
+				YFunc:
+				{
+					NumKeyFrames = 10;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 15.0000;
+						Value = 160.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 15.5000;
+						Value = -1120.0000;
+					};
+					KeyFrame3:
+					{
+						Time = 16.0000;
+						Value = -640.0000;
+					};
+					KeyFrame4:
+					{
+						Time = 16.3000;
+						Value = -32.0000;
+					};
+					KeyFrame5:
+					{
+						Time = 16.8000;
+						Value = -672.0000;
+					};
+					KeyFrame6:
+					{
+						Time = 17.3000;
+						Value = -160.0000;
+					};
+					KeyFrame7:
+					{
+						Time = 17.8000;
+						Value = -1088.0000;
+					};
+					KeyFrame8:
+					{
+						Time = 18.3000;
+						Value = 32.0000;
+					};
+					KeyFrame9:
+					{
+						Time = 18.7000;
+						Value = -1024.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 11;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 15.0000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame2:
+					{
+						Time = 15.5000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame3:
+					{
+						Time = 16.0000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame4:
+					{
+						Time = 16.3000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame5:
+					{
+						Time = 16.8000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame6:
+					{
+						Time = 17.3000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame7:
+					{
+						Time = 17.8000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame8:
+					{
+						Time = 18.3000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame9:
+					{
+						Time = 18.7000;
+						EventName = "Spawn";
+						EventValue = "shen_zapa_peque";
+					};
+					KeyFrame10:
+					{
+						Time = 18.8000;
+					};
+				};
+			};
+			NumObjActions = 5;
+		};
+		Action4:
+		{
+			Name = "OnDieBoss";
+			ObjAction0:
+			{
+				HUDObject = "Timeline";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+						a = 0.0000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+						EventName = "SendMessage";
+						EventValue = "GMSG_SEND_GFLOW_START_OUTRO_CINEMATIC";
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+	Element2:
+	{
+		Name = "Template";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "Template";
+			Visible = false;
+			Position:
+			{
+				x = -160.0000;
+			};
+			Depth = 1.0000;
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 2;
+			Object0:
+			{
+				Type = "Rect";
+				Width = 1280.0000;
+				Height = 960.0000;
+				PivotX = 0.0000;
+				PivotY = 0.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+					r = 0.0000;
+					g = 0.0000;
+				};
+				Corner3:
+				{
+					r = 0.0000;
+					g = 0.0000;
+				};
+				Name = "rt_Template";
+				Position:
+				{
+				};
+				Scale:
+				{
+					x = 16.0000;
+				};
+				Color:
+				{
+					r = 0.5020;
+				};
+			};
+			Object1:
+			{
+				Type = "Icon";
+				Name = "ic_Template";
+				Action = 0;
+				Visible = false;
+				Position:
+				{
+					x = 1440.0000;
+					y = 480.0000;
+				};
+				Scale:
+				{
+					x = 2.0000;
+					y = 2.0000;
+				};
+				Color:
+				{
+				};
+			};
+		};
+	};
+	Element3:
+	{
+		Name = "Sky";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "Sky";
+			Visible = false;
+			Position:
+			{
+				x = 256.0000;
+				y = 896.0000;
+			};
+			Depth = 1.0000;
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 2;
+			Object0:
+			{
+				Type = "Rect";
+				Width = 1280.0000;
+				Height = 960.0000;
+				PivotX = 0.0000;
+				PivotY = 1.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_Sky-1";
+				Visible = false;
+				Position:
+				{
+					x = -640.0000;
+					y = 960.0000;
+				};
+				Scale:
+				{
+					x = 3.0000;
+					y = 2.0000;
+				};
+				Color:
+				{
+					r = 0.0000;
+				};
+			};
+			Object1:
+			{
+				Type = "Rect";
+				Width = 1280.0000;
+				Height = 960.0000;
+				PivotX = 0.0000;
+				PivotY = 1.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+					a = 0.0000;
+				};
+				Corner3:
+				{
+					a = 0.0000;
+				};
+				Name = "rt_Sky";
+				Visible = false;
+				Position:
+				{
+					x = -640.0000;
+					y = 960.0000;
+				};
+				Scale:
+				{
+					x = 3.0000;
+					y = 2.0000;
+				};
+				Color:
+				{
+					r = 0.0000;
+					g = 0.0000;
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "OnIdle";
+			ObjAction0:
+			{
+				HUDObject = "rt_Sky";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+						r = 0.0000;
+						g = 0.0000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction1:
+			{
+				HUDObject = "rt_Sky-1";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+						r = 0.5020;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 2;
+		};
+	};
+	Element4:
+	{
+		Name = "far_background";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "far_background";
+			Position:
+			{
+				x = 1760.0000;
+				y = 224.0000;
+			};
+			Depth = 0.9500;
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 2;
+			Object0:
+			{
+				Type = "Icon";
+				Sprite = "fondo_lejanotodo";
+				Name = "ic_background";
+				Action = 0;
+				Position:
+				{
+					x = 256.0000;
+					y = 640.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object1:
+			{
+				Type = "Icon";
+				Sprite = "fondo_lejanotodo";
+				Name = "ic_background-1";
+				Action = 0;
+				Position:
+				{
+					x = 4352.0000;
+					y = 640.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "OnIdle";
+			ObjAction0:
+			{
+				HUDObject = "far_background";
+				XFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 120.0000;
+						Value = -4096.0000;
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction1:
+			{
+				HUDObject = "ic_background";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+						Value = 32.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction2:
+			{
+				HUDObject = "ic_background-1";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+						Value = 32.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 3;
+		};
+	};
+	Element5:
+	{
+		Name = "sky_test";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "sky_test";
+			Position:
+			{
+				x = 3584.0000;
+				y = -352.0000;
+			};
+			Depth = 0.8500;
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 5;
+			Object0:
+			{
+				Type = "Icon";
+				Sprite = "nube_prueba1";
+				Name = "ic_test";
+				Action = 0;
+				Position:
+				{
+					x = -192.0000;
+					y = 640.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object1:
+			{
+				Type = "Icon";
+				Sprite = "nube_prueba2";
+				Name = "ic_test-1";
+				Action = 0;
+				Position:
+				{
+					x = 736.0000;
+					y = 672.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object2:
+			{
+				Type = "Icon";
+				Sprite = "nube_prueba2";
+				Name = "ic_test-2";
+				Action = 0;
+				Position:
+				{
+					x = 2304.0000;
+					y = 512.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object3:
+			{
+				Type = "Icon";
+				Sprite = "nube_prueba1";
+				Name = "ic_test-3";
+				Action = 0;
+				Position:
+				{
+					x = 4128.0000;
+					y = 832.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object4:
+			{
+				Type = "Icon";
+				Sprite = "nube_prueba2";
+				Name = "ic_test-4";
+				Action = 0;
+				Position:
+				{
+					x = 4736.0000;
+					y = 672.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "OnIdle";
+			ObjAction0:
+			{
+				HUDObject = "sky_test";
+				XFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 150.0000;
+						Value = -8650.0000;
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+	Element6:
+	{
+		Name = "semi_far_background";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "semi_far_background";
+			Position:
+			{
+				x = 756.0000;
+				y = 150.0000;
+			};
+			Depth = 0.7000;
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 3;
+			Object0:
+			{
+				Type = "Icon";
+				Sprite = "monticulo";
+				Name = "ic_far_background";
+				Action = 0;
+				Position:
+				{
+					x = 256.0000;
+					y = 864.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object1:
+			{
+				Type = "Icon";
+				Sprite = "monticulo";
+				Name = "ic_far_background-1";
+				Action = 0;
+				Position:
+				{
+					x = 2304.0000;
+					y = 864.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object2:
+			{
+				Type = "Icon";
+				Sprite = "monticulo";
+				Name = "ic_far_background-2";
+				Action = 0;
+				Position:
+				{
+					x = 4352.0000;
+					y = 864.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "OnIdle";
+			ObjAction0:
+			{
+				HUDObject = "semi_far_background";
+				XFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 26.0000;
+						Value = -2048.0000;
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+	Element7:
+	{
+		Name = "main_background";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "main_background";
+			Position:
+			{
+				x = 756.0000;
+				y = 448.0000;
+			};
+			Depth = 0.6000;
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 3;
+			Object0:
+			{
+				Type = "Icon";
+				Sprite = "backgrounds";
+				Name = "ic_main_background-0";
+				Action = 0;
+				Position:
+				{
+					x = 256.0000;
+					y = 848.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object1:
+			{
+				Type = "Icon";
+				Sprite = "backgrounds";
+				Name = "ic_main_background-1";
+				Action = 1;
+				Position:
+				{
+					x = 2304.0000;
+					y = 848.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object2:
+			{
+				Type = "Icon";
+				Sprite = "backgrounds";
+				Name = "ic_main_background-2";
+				Action = 2;
+				Position:
+				{
+					x = 4352.0000;
+					y = 848.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "OnIdle";
+			ObjAction0:
+			{
+				HUDObject = "main_background";
+				XFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 20.0000;
+						Value = -2048.0000;
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+						EventName = "NewSector";
+					};
+					KeyFrame1:
+					{
+						Time = 19.9000;
+						EventName = "xx";
+					};
+					KeyFrame2:
+					{
+						Time = 20.0000;
+						EventName = "yy";
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+	Element8:
+	{
+		Name = "foreground";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "foreground";
+			Position:
+			{
+				x = 756.0000;
+				y = 448.0000;
+			};
+			Depth = 0.1000;
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 4;
+			Object0:
+			{
+				Type = "Icon";
+				Sprite = "primerplano1";
+				Name = "ic_foreground";
+				Action = 0;
+				Position:
+				{
+					y = 864.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object1:
+			{
+				Type = "Icon";
+				Sprite = "primerplano2";
+				Name = "ic_foreground-1";
+				Action = 0;
+				Position:
+				{
+					x = 2048.0000;
+					y = 864.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object2:
+			{
+				Type = "Icon";
+				Sprite = "primerplano1";
+				Name = "ic_foreground-2";
+				Action = 0;
+				Position:
+				{
+					x = 4096.0000;
+					y = 864.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object3:
+			{
+				Type = "Icon";
+				Sprite = "primerplano2";
+				Name = "ic_foreground-3";
+				Action = 0;
+				Position:
+				{
+					x = 6144.0000;
+					y = 864.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "OnIdle";
+			ObjAction0:
+			{
+				HUDObject = "foreground";
+				XFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 8.0000;
+						Value = -4096.0000;
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+};

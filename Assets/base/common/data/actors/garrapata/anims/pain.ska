@@ -1,0 +1,915 @@
+SkelAction:
+{
+	Name = "pain";
+	PlayMode = "oneshot";
+	NodeAction0:
+	{
+		NodeName = "PIVOT";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 0.4154;
+				Time = 0.0639;
+			};
+			KeyFrame2:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction1:
+	{
+		NodeName = "hip";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction2:
+	{
+		NodeName = "torso";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction3:
+	{
+		NodeName = "waist";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction4:
+	{
+		NodeName = "neck";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 0.8432;
+				Time = 0.0639;
+			};
+			KeyFrame2:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction5:
+	{
+		NodeName = "pj_neck";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction6:
+	{
+		NodeName = "head";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.1225;
+			};
+		};
+	};
+	NodeAction7:
+	{
+		NodeName = "r_antena";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 4;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = -0.9372;
+				Time = 0.0639;
+			};
+			KeyFrame2:
+			{
+				Value = 1.0596;
+				Time = 0.1278;
+			};
+			KeyFrame3:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction8:
+	{
+		NodeName = "r_antena_d";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction9:
+	{
+		NodeName = "l_antena";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 4;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = -0.6906;
+				Time = 0.0639;
+			};
+			KeyFrame2:
+			{
+				Value = 0.9781;
+				Time = 0.1278;
+			};
+			KeyFrame3:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction10:
+	{
+		NodeName = "l_antena_d";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction11:
+	{
+		NodeName = "r_shoulder";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 0.1033;
+				Time = 0.0639;
+			};
+			KeyFrame2:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction12:
+	{
+		NodeName = "pj_r_shoulder";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction13:
+	{
+		NodeName = "r_elbow";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				Value = 0.0916;
+			};
+			KeyFrame1:
+			{
+				Value = -0.4984;
+				Time = 0.0639;
+			};
+			KeyFrame2:
+			{
+				Value = 0.0916;
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction14:
+	{
+		NodeName = "r_hand";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = -0.0989;
+			};
+			KeyFrame1:
+			{
+				Value = -0.0989;
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction15:
+	{
+		NodeName = "r_hand_d";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction16:
+	{
+		NodeName = "l_shoulder";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 0.2334;
+				Time = 0.0639;
+			};
+			KeyFrame2:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction17:
+	{
+		NodeName = "pj_l_shoulder";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction18:
+	{
+		NodeName = "l_elbow";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = -0.5685;
+				Time = 0.0639;
+			};
+			KeyFrame2:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction19:
+	{
+		NodeName = "l_hand";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = -0.1401;
+				Time = 0.0639;
+			};
+			KeyFrame2:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction20:
+	{
+		NodeName = "l_hand_d";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction21:
+	{
+		NodeName = "r_hip";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 0.1683;
+				Time = 0.0639;
+			};
+			KeyFrame2:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction22:
+	{
+		NodeName = "pj_r_hip";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction23:
+	{
+		NodeName = "r_knee";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 0.0866;
+				Time = 0.0639;
+			};
+			KeyFrame2:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction24:
+	{
+		NodeName = "r_foot";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = -0.6330;
+				Time = 0.0639;
+			};
+			KeyFrame2:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction25:
+	{
+		NodeName = "r_foot_d";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction26:
+	{
+		NodeName = "l_hip";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 0.1655;
+				Time = 0.0639;
+			};
+			KeyFrame2:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction27:
+	{
+		NodeName = "pj_l_hip";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction28:
+	{
+		NodeName = "l_knee";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				Value = -0.0165;
+			};
+			KeyFrame1:
+			{
+				Value = 0.1585;
+				Time = 0.0639;
+			};
+			KeyFrame2:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction29:
+	{
+		NodeName = "l_foot";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = -0.7017;
+				Time = 0.0639;
+			};
+			KeyFrame2:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction30:
+	{
+		NodeName = "l_foot_d";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.3834;
+			};
+		};
+	};
+	NodeAction31:
+	{
+		NodeName = "hip_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction32:
+	{
+		NodeName = "torso_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction33:
+	{
+		NodeName = "waist_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction34:
+	{
+		NodeName = "neck_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction35:
+	{
+		NodeName = "head_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction36:
+	{
+		NodeName = "r_antena_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction37:
+	{
+		NodeName = "l_antena_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction38:
+	{
+		NodeName = "r_shoulder_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction39:
+	{
+		NodeName = "r_elbow_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction40:
+	{
+		NodeName = "r_hand_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction41:
+	{
+		NodeName = "l_shoulder_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction42:
+	{
+		NodeName = "l_elbow_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction43:
+	{
+		NodeName = "l_hand_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction44:
+	{
+		NodeName = "r_hip_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction45:
+	{
+		NodeName = "r_knee_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction46:
+	{
+		NodeName = "r_foot_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction47:
+	{
+		NodeName = "l_hip_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction48:
+	{
+		NodeName = "l_knee_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction49:
+	{
+		NodeName = "l_foot_sprite_0";
+		NodeAction = 0;
+	};
+	NumNodeActions = 50;
+};

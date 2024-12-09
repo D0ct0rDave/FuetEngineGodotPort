@@ -1,0 +1,95 @@
+Sprite:
+{
+	Name = "weapon";
+	NumActions = 3;
+	Action0:
+	{
+		Name = "none";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "colt_lr";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 0.5002;
+					};
+					Size:
+					{
+						Width = 4.0;
+						Height = 4.0;
+					};
+					TexCoords:
+					{
+						FU = 0.0500;
+						FV = 0.0769;
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "colt";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "colt_lr";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.0000;
+						y = 0.4231;
+					};
+					Size:
+					{
+						Width = 80.0;
+						Height = 52.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action2:
+	{
+		Name = "katana";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "katana-lr";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = -0.0263;
+						y = 0.8184;
+					};
+					Size:
+					{
+						Width = 38.0;
+						Height = 380.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

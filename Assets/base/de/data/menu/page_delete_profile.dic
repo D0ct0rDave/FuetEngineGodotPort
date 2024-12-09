@@ -1,0 +1,9 @@
+Dictionary:
+{
+	lb_Title = "Spieler löschen";
+	DELETE_PROFILE_MESSAGE = "Dein Fortschritt und/ndeine Errungenschaften/nwerden gelöscht./nFortfahren?";
+	ONLINE_ERROR_MESSAGE = "Du musst online/nsein, um das Profil/nzu löschen.";
+	lb_MB_YES = "Ja";
+	lb_MB_NO = "Nein";
+	lb_MB_OK = "Ok";
+};

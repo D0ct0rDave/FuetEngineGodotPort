@@ -1,0 +1,8 @@
+Dictionary:
+{
+	lb_Title = "Options en ligne";
+	lb_MSG_BOX1 = "Vous connecter/nvous permet d'envoyer/nvotre nom et votre meilleur/nscore, et de voir celui/ndes autres joueurs.";
+	lb_MSG_BOX2 = "Voulez-vous vous/nconnecter pour cette/npartie ?";
+	lb_MB_YES = "Oui";
+	lb_MB_NO = "Non";
+};

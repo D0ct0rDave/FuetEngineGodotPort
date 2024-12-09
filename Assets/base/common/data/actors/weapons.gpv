@@ -1,0 +1,81 @@
+BulletDB:
+{
+	NumBullets = 15;
+	B0:
+	{
+		Actor = "pl_bluebullet";
+		PoolSize = 200;
+	};
+	B1:
+	{
+		Actor = "pl_SwordAttack";
+		PoolSize = 20;
+	};
+	B2:
+	{
+		Actor = "pl_SwordAttackInLadder";
+		PoolSize = 100;
+	};
+	B3:
+	{
+		Actor = "pl_SwordAttackCrouch";
+		PoolSize = 20;
+	};
+	B4:
+	{
+		Actor = "cen_ShadowSwordAttack";
+		PoolSize = 20;
+	};
+	B5:
+	{
+		Actor = "cen_ShadowSwordAttackCrouch";
+		PoolSize = 20;
+	};
+	B6:
+	{
+		Actor = "cen_NenaPelotasBullet";
+		PoolSize = 10;
+	};
+	B7:
+	{
+		Actor = "cen_MoaiBullet";
+		PoolSize = 100;
+	};
+	B8:
+	{
+		Actor = "cen_RangeShooterBullet";
+		PoolSize = 20;
+	};
+	
+	B9:
+	{
+		Actor = "shen_CaballoBullet";
+		PoolSize = 20;
+	};
+	
+	B10:
+	{
+		Actor = "shen_KappaBullet";
+		PoolSize = 20;
+	};
+	B11:
+	{
+		Actor = "qen_SoldierToroBullet";
+		PoolSize = 50;
+	};
+	B12:
+	{
+		Actor = "qen_SoldierLoboBullet";
+		PoolSize = 100;
+	};
+	B13:
+	{
+		Actor = "qen_GoliathBullet";
+		PoolSize = 200;
+	};
+	B14:
+	{
+		Actor = "qen_GoliathMeleeAttack";
+		PoolSize = 20;
+	};
+};

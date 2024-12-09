@@ -1,0 +1,2146 @@
+Sprite:
+{
+	Name = "babosa";
+	NumActions = 6;
+	Action0:
+	{
+		Name = "idle";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 10;
+				Frame0:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.5157;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 100.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0087;
+						IV = 0.4900;
+						FU = 0.1478;
+						FV = 0.7400;
+					};
+				};
+				Frame1:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.5156;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1652;
+						IV = 0.5000;
+						FU = 0.3043;
+						FV = 0.7400;
+					};
+				};
+				Frame2:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.5156;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3217;
+						IV = 0.5000;
+						FU = 0.4609;
+						FV = 0.7400;
+					};
+				};
+				Frame3:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 136.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4783;
+						IV = 0.5000;
+						FU = 0.6261;
+						FV = 0.7400;
+					};
+				};
+				Frame4:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 144.0;
+						Height = 88.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6435;
+						IV = 0.5200;
+						FU = 0.8000;
+						FV = 0.7400;
+					};
+				};
+				Frame5:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 144.0;
+						Height = 80.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8261;
+						IV = 0.5400;
+						FU = 0.9826;
+						FV = 0.7400;
+					};
+				};
+				Frame6:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 144.0;
+						Height = 88.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6435;
+						IV = 0.5200;
+						FU = 0.8000;
+						FV = 0.7400;
+					};
+				};
+				Frame7:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 136.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4783;
+						IV = 0.5000;
+						FU = 0.6261;
+						FV = 0.7400;
+					};
+				};
+				Frame8:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.5156;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3217;
+						IV = 0.5000;
+						FU = 0.4609;
+						FV = 0.7400;
+					};
+				};
+				Frame9:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.5156;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1652;
+						IV = 0.5000;
+						FU = 0.3043;
+						FV = 0.7400;
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "walk";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 10;
+				Frame0:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.5001;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 120.0;
+						Height = 100.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0130;
+						IV = 0.7500;
+						FU = 0.1435;
+					};
+				};
+				Frame1:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1652;
+						IV = 0.7600;
+						FU = 0.3043;
+					};
+				};
+				Frame2:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 136.0;
+						Height = 88.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3174;
+						IV = 0.7800;
+						FU = 0.4652;
+					};
+				};
+				Frame3:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.4857;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 140.0;
+						Height = 84.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4739;
+						IV = 0.7900;
+						FU = 0.6261;
+					};
+				};
+				Frame4:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.4595;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 148.0;
+						Height = 80.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6391;
+						IV = 0.8000;
+						FU = 0.8000;
+					};
+				};
+				Frame5:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.4500;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 160.0;
+						Height = 80.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8174;
+						IV = 0.8000;
+						FU = 0.9913;
+					};
+				};
+				Frame6:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.4595;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 148.0;
+						Height = 80.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6391;
+						IV = 0.8000;
+						FU = 0.8000;
+					};
+				};
+				Frame7:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.4857;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 140.0;
+						Height = 84.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4739;
+						IV = 0.7900;
+						FU = 0.6261;
+					};
+				};
+				Frame8:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 136.0;
+						Height = 88.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3174;
+						IV = 0.7800;
+						FU = 0.4652;
+					};
+				};
+				Frame9:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1652;
+						IV = 0.7600;
+						FU = 0.3043;
+					};
+				};
+			};
+		};
+	};
+	Action2:
+	{
+		Name = "jump";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 28;
+				Frame0:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5157;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 100.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0087;
+						IV = 0.4900;
+						FU = 0.1478;
+						FV = 0.7400;
+					};
+				};
+				Frame1:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5156;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1652;
+						IV = 0.5000;
+						FU = 0.3043;
+						FV = 0.7400;
+					};
+				};
+				Frame2:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5156;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3217;
+						IV = 0.5000;
+						FU = 0.4609;
+						FV = 0.7400;
+					};
+				};
+				Frame3:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 136.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4783;
+						IV = 0.5000;
+						FU = 0.6261;
+						FV = 0.7400;
+					};
+				};
+				Frame4:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 144.0;
+						Height = 88.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6435;
+						IV = 0.5200;
+						FU = 0.8000;
+						FV = 0.7400;
+					};
+				};
+				Frame5:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 144.0;
+						Height = 80.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8261;
+						IV = 0.5400;
+						FU = 0.9826;
+						FV = 0.7400;
+					};
+				};
+				Frame6:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 144.0;
+						Height = 88.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6435;
+						IV = 0.5200;
+						FU = 0.8000;
+						FV = 0.7400;
+					};
+				};
+				Frame7:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 136.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4783;
+						IV = 0.5000;
+						FU = 0.6261;
+						FV = 0.7400;
+					};
+				};
+				Frame8:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5156;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3217;
+						IV = 0.5000;
+						FU = 0.4609;
+						FV = 0.7400;
+					};
+				};
+				Frame9:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5156;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1652;
+						IV = 0.5000;
+						FU = 0.3043;
+						FV = 0.7400;
+					};
+				};
+				Frame10:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 104.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1652;
+						IV = 0.2200;
+						FU = 0.3043;
+						FV = 0.4800;
+					};
+				};
+				Frame11:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 112.0;
+						Height = 112.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3304;
+						IV = 0.2000;
+						FU = 0.4522;
+						FV = 0.4800;
+					};
+				};
+				Frame12:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5172;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 116.0;
+						Height = 116.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4870;
+						IV = 0.1900;
+						FU = 0.6130;
+						FV = 0.4800;
+					};
+				};
+				Frame13:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5182;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 108.0;
+						Height = 120.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6609;
+						IV = 0.1800;
+						FU = 0.7783;
+						FV = 0.4800;
+					};
+				};
+				Frame14:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 104.0;
+						Height = 124.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8478;
+						IV = 0.1700;
+						FU = 0.9609;
+						FV = 0.4800;
+					};
+				};
+				Frame15:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5185;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 108.0;
+						Height = 120.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6609;
+						IV = 0.1800;
+						FU = 0.7783;
+						FV = 0.4800;
+					};
+				};
+				Frame16:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5172;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 116.0;
+						Height = 116.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4870;
+						IV = 0.1900;
+						FU = 0.6130;
+						FV = 0.4800;
+					};
+				};
+				Frame17:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 112.0;
+						Height = 112.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3304;
+						IV = 0.2000;
+						FU = 0.4522;
+						FV = 0.4800;
+					};
+				};
+				Frame18:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 104.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1652;
+						IV = 0.2200;
+						FU = 0.3043;
+						FV = 0.4800;
+					};
+				};
+				Frame19:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5156;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1652;
+						IV = 0.5000;
+						FU = 0.3043;
+						FV = 0.7400;
+					};
+				};
+				Frame20:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5156;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3217;
+						IV = 0.5000;
+						FU = 0.4609;
+						FV = 0.7400;
+					};
+				};
+				Frame21:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 136.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4783;
+						IV = 0.5000;
+						FU = 0.6261;
+						FV = 0.7400;
+					};
+				};
+				Frame22:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 144.0;
+						Height = 88.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6435;
+						IV = 0.5200;
+						FU = 0.8000;
+						FV = 0.7400;
+					};
+				};
+				Frame23:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 144.0;
+						Height = 80.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8261;
+						IV = 0.5400;
+						FU = 0.9826;
+						FV = 0.7400;
+					};
+				};
+				Frame24:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 144.0;
+						Height = 88.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6435;
+						IV = 0.5200;
+						FU = 0.8000;
+						FV = 0.7400;
+					};
+				};
+				Frame25:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 136.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4783;
+						IV = 0.5000;
+						FU = 0.6261;
+						FV = 0.7400;
+					};
+				};
+				Frame26:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5156;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3217;
+						IV = 0.5000;
+						FU = 0.4609;
+						FV = 0.7400;
+					};
+				};
+				Frame27:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5156;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1652;
+						IV = 0.5000;
+						FU = 0.3043;
+						FV = 0.7400;
+					};
+				};
+			};
+		};
+	};
+	Action3:
+	{
+		Name = "idle_upside_down";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 10;
+				Frame0:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.5157;
+						y = 0.2000;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = -100.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0087;
+						IV = 0.4900;
+						FU = 0.1478;
+						FV = 0.7400;
+					};
+				};
+				Frame1:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.5159;
+						y = 0.1667;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = -96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1652;
+						IV = 0.5000;
+						FU = 0.3043;
+						FV = 0.7400;
+					};
+				};
+				Frame2:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.5156;
+						y = 0.1667;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = -96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3217;
+						IV = 0.5000;
+						FU = 0.4609;
+						FV = 0.7400;
+					};
+				};
+				Frame3:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.4998;
+						y = 0.1667;
+					};
+					Size:
+					{
+						Width = 136.0;
+						Height = -96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4783;
+						IV = 0.5000;
+						FU = 0.6261;
+						FV = 0.7400;
+					};
+				};
+				Frame4:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.4999;
+						y = 0.0909;
+					};
+					Size:
+					{
+						Width = 144.0;
+						Height = -88.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6435;
+						IV = 0.5200;
+						FU = 0.8000;
+						FV = 0.7400;
+					};
+				};
+				Frame5:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						y = 0.0000;
+					};
+					Size:
+					{
+						Width = 144.0;
+						Height = -80.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8261;
+						IV = 0.5400;
+						FU = 0.9826;
+						FV = 0.7400;
+					};
+				};
+				Frame6:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.4999;
+						y = 0.0909;
+					};
+					Size:
+					{
+						Width = 144.0;
+						Height = -88.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6435;
+						IV = 0.5200;
+						FU = 0.8000;
+						FV = 0.7400;
+					};
+				};
+				Frame7:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.4998;
+						y = 0.1667;
+					};
+					Size:
+					{
+						Width = 136.0;
+						Height = -96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4783;
+						IV = 0.5000;
+						FU = 0.6261;
+						FV = 0.7400;
+					};
+				};
+				Frame8:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.5156;
+						y = 0.1667;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = -96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3217;
+						IV = 0.5000;
+						FU = 0.4609;
+						FV = 0.7400;
+					};
+				};
+				Frame9:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.5159;
+						y = 0.1667;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = -96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1652;
+						IV = 0.5000;
+						FU = 0.3043;
+						FV = 0.7400;
+					};
+				};
+			};
+		};
+	};
+	Action4:
+	{
+		Name = "walk_upside_down";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 10;
+				Frame0:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.5001;
+						y = 0.2000;
+					};
+					Size:
+					{
+						Width = 120.0;
+						Height = -100.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0130;
+						IV = 0.7500;
+						FU = 0.1435;
+					};
+				};
+				Frame1:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.5002;
+						y = 0.1667;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = -96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1652;
+						IV = 0.7600;
+						FU = 0.3043;
+					};
+				};
+				Frame2:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						y = 0.0909;
+					};
+					Size:
+					{
+						Width = 136.0;
+						Height = -88.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3174;
+						IV = 0.7800;
+						FU = 0.4652;
+					};
+				};
+				Frame3:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.4857;
+						y = 0.0476;
+					};
+					Size:
+					{
+						Width = 140.0;
+						Height = -84.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4739;
+						IV = 0.7900;
+						FU = 0.6261;
+					};
+				};
+				Frame4:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.4596;
+						y = 0.0000;
+					};
+					Size:
+					{
+						Width = 148.0;
+						Height = -80.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6391;
+						IV = 0.8000;
+						FU = 0.8000;
+					};
+				};
+				Frame5:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.4500;
+						y = 0.0000;
+					};
+					Size:
+					{
+						Width = 160.0;
+						Height = -80.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8174;
+						IV = 0.8000;
+						FU = 0.9913;
+					};
+				};
+				Frame6:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.4596;
+						y = 0.0000;
+					};
+					Size:
+					{
+						Width = 148.0;
+						Height = -80.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6391;
+						IV = 0.8000;
+						FU = 0.8000;
+					};
+				};
+				Frame7:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.4857;
+						y = 0.0476;
+					};
+					Size:
+					{
+						Width = 140.0;
+						Height = -84.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4739;
+						IV = 0.7900;
+						FU = 0.6261;
+					};
+				};
+				Frame8:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						y = 0.0909;
+					};
+					Size:
+					{
+						Width = 136.0;
+						Height = -88.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3174;
+						IV = 0.7800;
+						FU = 0.4652;
+					};
+				};
+				Frame9:
+				{
+					Material = "babosa";
+					DelayTime = 0.1010;
+					Pivot:
+					{
+						x = 0.5002;
+						y = 0.1667;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = -96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1652;
+						IV = 0.7600;
+						FU = 0.3043;
+					};
+				};
+			};
+		};
+	};
+	Action5:
+	{
+		Name = "jump_upside_down";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 28;
+				Frame0:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5157;
+						y = 0.2000;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = -100.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0087;
+						IV = 0.4900;
+						FU = 0.1478;
+						FV = 0.7400;
+					};
+				};
+				Frame1:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5159;
+						y = 0.1667;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = -96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1652;
+						IV = 0.5000;
+						FU = 0.3043;
+						FV = 0.7400;
+					};
+				};
+				Frame2:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5156;
+						y = 0.1667;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = -96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3217;
+						IV = 0.5000;
+						FU = 0.4609;
+						FV = 0.7400;
+					};
+				};
+				Frame3:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.4998;
+						y = 0.1667;
+					};
+					Size:
+					{
+						Width = 136.0;
+						Height = -96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4783;
+						IV = 0.5000;
+						FU = 0.6261;
+						FV = 0.7400;
+					};
+				};
+				Frame4:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.4999;
+						y = 0.0909;
+					};
+					Size:
+					{
+						Width = 144.0;
+						Height = -88.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6435;
+						IV = 0.5200;
+						FU = 0.8000;
+						FV = 0.7400;
+					};
+				};
+				Frame5:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5000;
+						y = 0.0000;
+					};
+					Size:
+					{
+						Width = 144.0;
+						Height = -80.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8261;
+						IV = 0.5400;
+						FU = 0.9826;
+						FV = 0.7400;
+					};
+				};
+				Frame6:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.4999;
+						y = 0.0909;
+					};
+					Size:
+					{
+						Width = 144.0;
+						Height = -88.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6435;
+						IV = 0.5200;
+						FU = 0.8000;
+						FV = 0.7400;
+					};
+				};
+				Frame7:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.4998;
+						y = 0.1667;
+					};
+					Size:
+					{
+						Width = 136.0;
+						Height = -96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4783;
+						IV = 0.5000;
+						FU = 0.6261;
+						FV = 0.7400;
+					};
+				};
+				Frame8:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5156;
+						y = 0.1667;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = -96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3217;
+						IV = 0.5000;
+						FU = 0.4609;
+						FV = 0.7400;
+					};
+				};
+				Frame9:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5159;
+						y = 0.1667;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = -96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1652;
+						IV = 0.5000;
+						FU = 0.3043;
+						FV = 0.7400;
+					};
+				};
+				Frame10:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5002;
+						y = 0.2308;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = -104.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1652;
+						IV = 0.2200;
+						FU = 0.3043;
+						FV = 0.4800;
+					};
+				};
+				Frame11:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5000;
+						y = 0.2857;
+					};
+					Size:
+					{
+						Width = 112.0;
+						Height = -112.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3304;
+						IV = 0.2000;
+						FU = 0.4522;
+						FV = 0.4800;
+					};
+				};
+				Frame12:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5173;
+						y = 0.3103;
+					};
+					Size:
+					{
+						Width = 116.0;
+						Height = -116.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4870;
+						IV = 0.1900;
+						FU = 0.6130;
+						FV = 0.4800;
+					};
+				};
+				Frame13:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5182;
+						y = 0.3333;
+					};
+					Size:
+					{
+						Width = 108.0;
+						Height = -120.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6609;
+						IV = 0.1800;
+						FU = 0.7783;
+						FV = 0.4800;
+					};
+				};
+				Frame14:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5000;
+						y = 0.3548;
+					};
+					Size:
+					{
+						Width = 104.0;
+						Height = -124.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8478;
+						IV = 0.1700;
+						FU = 0.9609;
+						FV = 0.4800;
+					};
+				};
+				Frame15:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5182;
+						y = 0.3333;
+					};
+					Size:
+					{
+						Width = 108.0;
+						Height = -120.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6609;
+						IV = 0.1800;
+						FU = 0.7783;
+						FV = 0.4800;
+					};
+				};
+				Frame16:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5173;
+						y = 0.3103;
+					};
+					Size:
+					{
+						Width = 116.0;
+						Height = -116.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4870;
+						IV = 0.1900;
+						FU = 0.6130;
+						FV = 0.4800;
+					};
+				};
+				Frame17:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5000;
+						y = 0.2857;
+					};
+					Size:
+					{
+						Width = 112.0;
+						Height = -112.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3304;
+						IV = 0.2000;
+						FU = 0.4522;
+						FV = 0.4800;
+					};
+				};
+				Frame18:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5002;
+						y = 0.2308;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = -104.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1652;
+						IV = 0.2200;
+						FU = 0.3043;
+						FV = 0.4800;
+					};
+				};
+				Frame19:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5159;
+						y = 0.1667;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = -96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1652;
+						IV = 0.5000;
+						FU = 0.3043;
+						FV = 0.7400;
+					};
+				};
+				Frame20:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5156;
+						y = 0.1667;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = -96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3217;
+						IV = 0.5000;
+						FU = 0.4609;
+						FV = 0.7400;
+					};
+				};
+				Frame21:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.4998;
+						y = 0.1667;
+					};
+					Size:
+					{
+						Width = 136.0;
+						Height = -96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4783;
+						IV = 0.5000;
+						FU = 0.6261;
+						FV = 0.7400;
+					};
+				};
+				Frame22:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.4999;
+						y = 0.0909;
+					};
+					Size:
+					{
+						Width = 144.0;
+						Height = -88.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6435;
+						IV = 0.5200;
+						FU = 0.8000;
+						FV = 0.7400;
+					};
+				};
+				Frame23:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5000;
+						y = 0.0000;
+					};
+					Size:
+					{
+						Width = 144.0;
+						Height = -80.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8261;
+						IV = 0.5400;
+						FU = 0.9826;
+						FV = 0.7400;
+					};
+				};
+				Frame24:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.4999;
+						y = 0.0909;
+					};
+					Size:
+					{
+						Width = 144.0;
+						Height = -88.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6435;
+						IV = 0.5200;
+						FU = 0.8000;
+						FV = 0.7400;
+					};
+				};
+				Frame25:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.4998;
+						y = 0.1667;
+					};
+					Size:
+					{
+						Width = 136.0;
+						Height = -96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4783;
+						IV = 0.5000;
+						FU = 0.6261;
+						FV = 0.7400;
+					};
+				};
+				Frame26:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5156;
+						y = 0.1667;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = -96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3217;
+						IV = 0.5000;
+						FU = 0.4609;
+						FV = 0.7400;
+					};
+				};
+				Frame27:
+				{
+					Material = "babosa";
+					DelayTime = 0.0500;
+					Pivot:
+					{
+						x = 0.5159;
+						y = 0.1667;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = -96.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1652;
+						IV = 0.5000;
+						FU = 0.3043;
+						FV = 0.7400;
+					};
+				};
+			};
+		};
+	};
+};

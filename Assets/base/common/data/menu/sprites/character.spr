@@ -1,0 +1,200 @@
+Sprite:
+{
+	Name = "character";
+	NumActions = 7;
+	Action0:
+	{
+		Name = "Cubit";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../../players/cubit/portrait";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 256.0;
+						Height = 256.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "Sparky";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../../players/sparky/portrait";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 256.0;
+						Height = 256.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action2:
+	{
+		Name = "Chronos";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../../players/chronos/portrait";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 256.0;
+						Height = 256.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action3:
+	{
+		Name = "Cubit-Girl";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../../players/cubitgirl/portrait";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 256.0;
+						Height = 256.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action4:
+	{
+		Name = "Unepic";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../../players/unepic/portrait";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 256.0;
+						Height = 256.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action5:
+	{
+		Name = "Golden-Cubit";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../../players/goldencubit/portrait";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 256.0;
+						Height = 256.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action6:
+	{
+		Name = "locked";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "portrait-M-blocked";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 256.0;
+						Height = 256.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "torso";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "torso";
+					BlendTime = 0.1;
+					Pivot:
+					{
+						x = 0.4938;
+						y = 0.6293;
+					};
+					Size:
+					{
+						Width = 81.0;
+						Height = 116.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,30 @@
+Sprite:
+{
+	Name = "pant_verde-hip";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "pant_verde-hip";
+					BlendTime = 0.0000;
+					Pivot:
+					{
+						x = 0.36567;
+						y = 0.40244;
+					};
+					Size:
+					{
+						Width = 134.0;
+						Height = 82.0;
+					};
+				};
+			};
+		};
+	};
+};

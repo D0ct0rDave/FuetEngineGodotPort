@@ -1,0 +1,64 @@
+Script : 
+{
+  Sequence = "A0,A1,A2,A3,A4,A5,A6,A7,A8";
+  A0 : 
+  {
+    Type = "SetActorState";
+    Actor = "Player_MOG";
+    State = 100;
+  };
+  A1 : 
+  {
+    Type = "FadeActor";
+    Actor = "Player";
+    InitialColor : 
+    {
+      a = 1.0;
+    };
+    FinalColor : 
+    {
+      a = 0.0;
+    };
+    FadeTime = 2.0;
+  };
+  A2 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SCREEN_FADE_OUT";
+    Parameters = 2.0;
+  };
+  A3 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SOUND_FADE_OUT";
+    Parameters = 2.0;
+  };
+  A4 : 
+  {
+    Type = "Sleep";
+    Time = 2.0;
+  };
+  A5 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_CHANGE_ROOM";
+    Parameters = "shoproom_gadgets";
+  };
+  A6 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SCREEN_FADE_IN";
+    Parameters = 2.0;
+  };
+  A7 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SOUND_FADE_IN";
+    Parameters = 2.0;
+  };
+  A8 : 
+  {
+    Type = "Sleep";
+    Time = 2.0;
+  };
+};

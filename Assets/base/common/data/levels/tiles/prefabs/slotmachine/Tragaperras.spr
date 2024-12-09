@@ -1,0 +1,33 @@
+Sprite:
+{
+	Name = "Tragaperras";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "Tragaperras";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 0.9607;
+					};
+					Size:
+					{
+						Width = 618.0;
+						Height = 1068.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

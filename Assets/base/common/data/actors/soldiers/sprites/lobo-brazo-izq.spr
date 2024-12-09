@@ -1,0 +1,30 @@
+Sprite:
+{
+	Name = "lobo-brazo-izq";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "lobo-brazo-izq";
+					BlendTime = 0.0000;
+					Pivot:
+					{
+						x = 0.24561;
+						y = 0.28866;
+					};
+					Size:
+					{
+						Width = 114.0;
+						Height = 97.0;
+					};
+				};
+			};
+		};
+	};
+};

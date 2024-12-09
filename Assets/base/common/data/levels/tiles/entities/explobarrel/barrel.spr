@@ -1,0 +1,33 @@
+Sprite:
+{
+	Name = "barrel";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "barrel";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 0.9375;
+					};
+					Size:
+					{
+						Width = 114.0;
+						Height = 128.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

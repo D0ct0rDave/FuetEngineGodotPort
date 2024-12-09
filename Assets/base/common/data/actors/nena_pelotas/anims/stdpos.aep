@@ -1,0 +1,132 @@
+Pose:
+{
+	PIVOT:
+	{
+		Position:
+		{
+		};
+	};
+	hip:
+	{
+		Position:
+		{
+		};
+	};
+	lazo:
+	{
+		Position:
+		{
+		};
+	};
+	lazo_d:
+	{
+		Position:
+		{
+		};
+	};
+	torso:
+	{
+		Position:
+		{
+		};
+	};
+	waist:
+	{
+		Position:
+		{
+		};
+	};
+	neck:
+	{
+		Position:
+		{
+		};
+	};
+	head:
+	{
+		Position:
+		{
+		};
+	};
+	lazo_head:
+	{
+		Position:
+		{
+		};
+	};
+	lazo_head_d:
+	{
+		Position:
+		{
+		};
+	};
+	l_shoulder:
+	{
+		Position:
+		{
+		};
+	};
+	l_elbow:
+	{
+		Angle = 1.4154;
+		Position:
+		{
+		};
+	};
+	l_hand:
+	{
+		Angle = -0.0815;
+		Position:
+		{
+		};
+	};
+	pelota0:
+	{
+		Angle = -0.9488;
+		Position:
+		{
+			x = -9.9750;
+			y = 16.8889;
+		};
+	};
+	pelota1:
+	{
+		Angle = -0.9488;
+		Position:
+		{
+			x = 2.0893;
+			y = -9.4200;
+		};
+	};
+	pelota2:
+	{
+		Angle = -0.9488;
+		Position:
+		{
+			x = 19.7538;
+			y = 7.7257;
+		};
+	};
+	r_shoulder:
+	{
+		Position:
+		{
+		};
+	};
+	r_elbow:
+	{
+		Angle = 0.3325;
+		Position:
+		{
+			x = 0.9927;
+			y = 13.0195;
+		};
+	};
+	r_hand:
+	{
+		Angle = 1.1134;
+		Position:
+		{
+		};
+	};
+};

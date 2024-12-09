@@ -1,0 +1,164 @@
+Sprite:
+{
+	Name = "MA_Fake";
+	NumActions = 4;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "MA_Fake";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.4752;
+						y = 0.9976;
+					};
+					Size:
+					{
+						Width = 242.0;
+						Height = 423.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "surprised";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 2;
+				Frame0:
+				{
+					Material = "MA_Fake";
+					DelayTime = 0.2718;
+					BlendTime = 0.0812;
+					Pivot:
+					{
+						x = 0.4752;
+						y = 0.9976;
+					};
+					Size:
+					{
+						Width = 242.0;
+						Height = 423.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "MA_Fake_2";
+					DelayTime = 0.2718;
+					BlendTime = 0.0812;
+					Pivot:
+					{
+						x = 0.4752;
+						y = 0.9976;
+					};
+					Size:
+					{
+						Width = 242.0;
+						Height = 423.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action2:
+	{
+		Name = "lookat";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "MA_Fake_2";
+					DelayTime = 0.6540;
+					Pivot:
+					{
+						x = 0.4752;
+						y = 0.9976;
+					};
+					Size:
+					{
+						Width = 242.0;
+						Height = 423.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action3:
+	{
+		Name = "tira_cadena";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 2;
+				Frame0:
+				{
+					Material = "MA_Fake_3";
+					DelayTime = 0.1818;
+					BlendTime = 0.0202;
+					Pivot:
+					{
+						x = 0.4914;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 232.0;
+						Height = 423.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "MA_Fake";
+					DelayTime = 0.6540;
+					Pivot:
+					{
+						x = 0.4752;
+						y = 0.9976;
+					};
+					Size:
+					{
+						Width = 242.0;
+						Height = 423.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

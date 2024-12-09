@@ -1,0 +1,11 @@
+Dictionary:
+{
+	lb_Title = "Escribe tu nombre";
+	lb_Accept = "Aceptar";
+	ALREADY_EXISTS_MESSAGE = "Ya existe ese /njugador. Debes/nescribir otro nombre.";
+	INVALID_OFFENSIVE_MESSAGE = "Este nombre de jugador/nse enmascarará/nen línea./n(ofensivo)/n/n¿Sigues queriendo/nusarlo?";
+	INVALID_5DIGITS_MESSAGE = "Este nombre de jugador/nse enmascarará/nen línea./n(más de 5 dígitos)/n/n¿Sigues queriendo/nusarlo?";
+	lb_MB_YES = "Sí";
+	lb_MB_NO = "No";
+	lb_MB_OK = "Ok";
+};

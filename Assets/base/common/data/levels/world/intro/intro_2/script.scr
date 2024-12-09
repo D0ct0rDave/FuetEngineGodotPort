@@ -1,0 +1,88 @@
+Script : 
+{
+  Sequence = "A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12";
+  A0 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_PLAY_ROOM_ANIM";
+    Parameters = "travelling";
+  };
+  A1 : 
+  {
+    Type = "Sleep";
+    Time = 6.0;
+  };
+  A2 : 
+  {
+    Type = "FadeSoundLine";
+    Line = 2;
+    Vol = 0.05000000075;
+    Time = 1.0;
+    Wait = true;
+  };
+  A3 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/fx/game/intro/dingdong_1";
+    Vol = 1.0;
+    Pan = 0.5;
+    Loop = false;
+    Wait = true;
+  };
+  A4 : 
+  {
+    Type = "Sleep";
+    Time = 2.0;
+  };
+  A5 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "ShowSubtitles";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A6 : 
+  {
+    Type = "Sleep";
+    Time = 1.0;
+  };
+  A7 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_PLAY_ROOM_ANIM";
+    Parameters = "SpeakPhrase";
+  };
+  A8 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_subtitles";
+    Text = "INTRO_PHRASE_0";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A9 : 
+  {
+    Type = "Sleep";
+    Time = 2.0;
+  };
+  A10 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_subtitles";
+    LetterByLetter = false;
+    LetterTime = 0;
+  };
+  A11 : 
+  {
+    Type = "Sleep";
+    Time = 1.5;
+  };
+  A12 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_CHANGE_ROOM";
+    Parameters = "intro/intro_3/intro_3";
+  };
+};

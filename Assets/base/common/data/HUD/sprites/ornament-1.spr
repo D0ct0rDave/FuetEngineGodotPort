@@ -1,0 +1,61 @@
+Sprite:
+{
+	Name = "ornament-1";
+	NumActions = 2;
+	Action0:
+	{
+		Name = "Released";
+		PlayMode = "ONESHOT";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "ornament-1-A";
+					DelayTime = 0.3130;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 134.0;
+						Height = 176.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "Pressed";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "ornament-1-B";
+					DelayTime = 0.2740;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 129.0;
+						Height = 171.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

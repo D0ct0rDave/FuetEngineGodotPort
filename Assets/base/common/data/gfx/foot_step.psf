@@ -1,0 +1,71 @@
+ParticleSystem:
+{
+	Name = "foot_step";
+	Sprite = "smoke";
+	Freq = 37.5000;
+	EmisorRad:
+	{
+	};
+	EmisorPhase:
+	{
+	};
+	EmisorSpeed:
+	{
+	};
+	EmisorXOfs:
+	{
+		Min = -16.0000;
+		Max = 16.0000;
+	};
+	EmisorYOfs:
+	{
+		Min = 16.0000;
+		Max = 16.0000;
+	};
+	EmisorXSpeed:
+	{
+	};
+	EmisorYSpeed:
+	{
+	};
+	PartSize:
+	{
+		Min = 0.0900;
+		Max = 0.0900;
+	};
+	PartSizeSpeed:
+	{
+		Min = 0.2000;
+		Max = 0.2000;
+	};
+	PartAngle:
+	{
+		Min = -180.0000;
+		Max = 3.1416;
+	};
+	PartAngleSpeed:
+	{
+		Min = -0.8727;
+		Max = 0.8727;
+	};
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 2;
+		KeyFrame0:
+		{
+			r = 0.3608;
+			g = 0.2863;
+			b = 0.1882;
+			a = 0.3137;
+		};
+		KeyFrame1:
+		{
+			r = 0.5255;
+			g = 0.4196;
+			b = 0.2745;
+			a = 0.0000;
+			Time = 1.0000;
+		};
+	};
+};

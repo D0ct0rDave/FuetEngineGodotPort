@@ -1,0 +1,33 @@
+Sprite:
+{
+	Name = "NPCBocata_rect";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "NPCBocata_rect";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.0000;
+					};
+					Size:
+					{
+						Width = 64.0;
+						Height = 316.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

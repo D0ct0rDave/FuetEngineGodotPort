@@ -1,0 +1,6 @@
+Dictionary:
+{
+	lb_Start = "Commencer";
+	lb_Continue = "Continuer";
+	lb_Scores = "Scores";
+};

@@ -1,0 +1,256 @@
+HUD:
+{
+	FileVersion = 2;
+	NumElements = 2;
+	Element0:
+	{
+		Name = "path";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "path";
+			Position:
+			{
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 1;
+			Object0:
+			{
+				Type = "Rect";
+				Width = 100.0000;
+				Height = 100.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_path";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "OnIdle";
+			ObjAction0:
+			{
+				HUDObject = "path";
+				XFunc:
+				{
+					NumKeyFrames = 4;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 0.5000;
+					};
+					KeyFrame2:
+					{
+						Time = 4.5000;
+						LerpFunc = "sin";
+					};
+					KeyFrame3:
+					{
+						Time = 7.0000;
+						Value = -1100.0000;
+					};
+				};
+				YFunc:
+				{
+					NumKeyFrames = 7;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 0.5000;
+						Value = 1475.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 1.5000;
+						Value = 1400.0000;
+					};
+					KeyFrame3:
+					{
+						Time = 2.5000;
+						Value = 1475.0000;
+					};
+					KeyFrame4:
+					{
+						Time = 3.5000;
+						Value = 1400.0000;
+					};
+					KeyFrame5:
+					{
+						Time = 4.5000;
+						Value = 1475.0000;
+					};
+					KeyFrame6:
+					{
+						Time = 7.0000;
+						Value = -151.2700;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+	Element1:
+	{
+		Name = "Background";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "Background";
+			Visible = false;
+			Position:
+			{
+			};
+			Depth = 1.0000;
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 2;
+			Object0:
+			{
+				Type = "Rect";
+				Width = 1000.0000;
+				Height = 960.0000;
+				PivotX = 1.0000;
+				PivotY = 1.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_Background";
+				Position:
+				{
+				};
+				Scale:
+				{
+					x = 3.0000;
+					y = 1.8750;
+				};
+				Color:
+				{
+					r = 0.4863;
+					g = 0.3294;
+					b = 0.9608;
+				};
+			};
+			Object1:
+			{
+				Type = "Rect";
+				Width = 1000.0000;
+				Height = 960.0000;
+				PivotX = 1.0000;
+				PivotY = 1.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_Background-1";
+				Position:
+				{
+					y = 1792.0000;
+				};
+				Scale:
+				{
+					x = 3.0000;
+					y = 1.8750;
+				};
+				Color:
+				{
+					r = 0.5020;
+					g = 0.0000;
+					b = 0.2510;
+				};
+			};
+		};
+	};
+};

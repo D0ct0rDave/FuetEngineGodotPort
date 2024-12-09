@@ -1,0 +1,54 @@
+Sprite:
+{
+	Name = "pelo";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 2;
+				Frame0:
+				{
+					Material = "pelo";
+					BlendTime = 0.2410;
+					Pivot:
+					{
+						x = 0.6634;
+						y = 0.8966;
+					};
+					Size:
+					{
+						Width = 202.0;
+						Height = 174.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "pelo2";
+					BlendTime = 0.2410;
+					Pivot:
+					{
+						x = 0.6634;
+						y = 0.8966;
+					};
+					Size:
+					{
+						Width = 202.0;
+						Height = 174.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,65 @@
+ParticleSystemEditor:
+{
+	Editor:
+	{
+		BckColor:
+		{
+			a = 1.0000;
+		};
+		CrossHair:
+		{
+			x = 347.0000;
+			y = 428.0000;
+		};
+		CurFrame = 10;
+	};
+	Sprite = "smoke";
+	Freq = 375;
+	TTL = 10;
+	EmisorRadVal = 0;
+	EmisorRadRndN = 0;
+	EmisorRadRndP = 0;
+	EmisorPhaseVal = 90;
+	EmisorPhaseRndN = -32;
+	EmisorPhaseRndP = 32;
+	EmisorSpeedVal = 99;
+	EmisorSpeedRndN = 0;
+	EmisorSpeedRndP = 0;
+	EmisorAccelVal = 0;
+	EmisorOfsXRndN = 0;
+	EmisorOfsXRndP = 0;
+	EmisorOfsYRndN = 0;
+	EmisorOfsYRndP = 0;
+	EmisorSpeedXRndN = 0;
+	EmisorSpeedXRndP = 0;
+	EmisorSpeedYRndN = 0;
+	EmisorSpeedYRndP = 0;
+	EmisorAccelXVal = 0;
+	EmisorAccelYVal = -100;
+	ParticleSizeVal = 24;
+	ParticleSizeRndN = -57;
+	ParticleSizeRndP = 0;
+	ParticleSizeSpeedVal = 3;
+	ParticleSizeSpeedRndN = 0;
+	ParticleSizeSpeedRndP = 0;
+	ParticleSizeAccelVal = 0;
+	ParticleAngleVal = 0;
+	ParticleAngleRndN = -180;
+	ParticleAngleRndP = 180;
+	ParticleAngleSpeedRndN = -629;
+	ParticleAngleSpeedRndP = 514;
+	ParticleAngleAccelVal = 0;
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 2;
+		KeyFrame0:
+		{
+		};
+		KeyFrame1:
+		{
+			a = 0.0000;
+			Time = 1.0000;
+		};
+	};
+};

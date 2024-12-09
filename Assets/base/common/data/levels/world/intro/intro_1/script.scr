@@ -1,0 +1,73 @@
+Script : 
+{
+  Sequence = "A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10";
+  A0 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SCREEN_FADE_OUT";
+    Parameters = "0.0";
+  };
+  A1 : 
+  {
+    Type = "SetActorState";
+    Actor = "pl_Player_Intro";
+    State = 100;
+  };
+  A2 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_subtitles";
+    LetterByLetter = false;
+    LetterTime = 0;
+  };
+  A3 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_subtitles-1";
+    LetterByLetter = false;
+    LetterTime = 0;
+  };
+  A4 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "CinemascopeON";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = true;
+  };
+  A5 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SOUND_FADE_IN";
+    Parameters = "2.0";
+  };
+  A6 : 
+  {
+    Type = "Sleep";
+    Time = 1.0;
+  };
+  A7 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_PLAY_ROOM_ANIM";
+    Parameters = "travelling";
+  };
+  A8 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SCREEN_FADE_IN";
+    Parameters = "3.0";
+  };
+  A9 : 
+  {
+    Type = "Sleep";
+    Time = 7.0;
+  };
+  A10 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_CHANGE_ROOM";
+    Parameters = "intro/intro_2/intro_2";
+  };
+};

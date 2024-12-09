@@ -1,0 +1,30 @@
+Sprite:
+{
+	Name = "toro-antebrazo-der";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "toro-antebrazo-der";
+					BlendTime = 0.0000;
+					Pivot:
+					{
+						x = 0.77320;
+						y = 0.50769;
+					};
+					Size:
+					{
+						Width = 97.0;
+						Height = 65.0;
+					};
+				};
+			};
+		};
+	};
+};

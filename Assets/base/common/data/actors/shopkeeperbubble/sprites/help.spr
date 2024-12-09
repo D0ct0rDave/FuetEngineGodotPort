@@ -1,0 +1,444 @@
+Sprite:
+{
+	Name = "help";
+	NumActions = 6;
+	Action0:
+	{
+		Name = "help1";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 3;
+				Frame0:
+				{
+					Material = "help1";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5043;
+					};
+					Size:
+					{
+						Width = 115.0;
+						Height = 90.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "help1";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5556;
+						y = 0.5556;
+					};
+					Size:
+					{
+						Width = 9.0;
+						Height = 9.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0696;
+						IV = 0.0222;
+						FU = 0.1478;
+						FV = 0.1222;
+					};
+				};
+				Frame2:
+				{
+					Material = "help1";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5556;
+						y = 0.5556;
+					};
+					Size:
+					{
+						Width = 9.0;
+						Height = 9.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0696;
+						IV = 0.0222;
+						FU = 0.1478;
+						FV = 0.1222;
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "help2";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 3;
+				Frame0:
+				{
+					Material = "help2";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5455;
+					};
+					Size:
+					{
+						Width = 11.0;
+						Height = 12.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8806;
+						IV = 0.0189;
+						FU = 0.9627;
+						FV = 0.1321;
+					};
+				};
+				Frame1:
+				{
+					Material = "help2";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5075;
+					};
+					Size:
+					{
+						Width = 134.0;
+						Height = 106.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame2:
+				{
+					Material = "help2";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5455;
+					};
+					Size:
+					{
+						Width = 11.0;
+						Height = 12.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8806;
+						IV = 0.0189;
+						FU = 0.9627;
+						FV = 0.1321;
+					};
+				};
+			};
+		};
+	};
+	Action2:
+	{
+		Name = "help3";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 3;
+				Frame0:
+				{
+					Material = "help2";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5455;
+					};
+					Size:
+					{
+						Width = 11.0;
+						Height = 12.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8806;
+						IV = 0.0189;
+						FU = 0.9627;
+						FV = 0.1321;
+					};
+				};
+				Frame1:
+				{
+					Material = "help2";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5455;
+					};
+					Size:
+					{
+						Width = 11.0;
+						Height = 12.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8806;
+						IV = 0.0189;
+						FU = 0.9627;
+						FV = 0.1321;
+					};
+				};
+				Frame2:
+				{
+					Material = "help3";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5053;
+						y = 0.5067;
+					};
+					Size:
+					{
+						Width = 95.0;
+						Height = 75.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action3:
+	{
+		Name = "thanks1";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 3;
+				Frame0:
+				{
+					Material = "thanks1";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5043;
+						y = 0.5111;
+					};
+					Size:
+					{
+						Width = 115.0;
+						Height = 90.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "thanks1";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.4725;
+						y = 0.4556;
+					};
+					Size:
+					{
+						Width = 9.5;
+						Height = 9.5;
+					};
+					TexCoords:
+					{
+						IU = 0.0220;
+						IV = 0.0188;
+						FU = 0.1043;
+						FV = 0.1239;
+					};
+				};
+				Frame2:
+				{
+					Material = "thanks1";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.4725;
+						y = 0.4556;
+					};
+					Size:
+					{
+						Width = 9.5;
+						Height = 9.5;
+					};
+					TexCoords:
+					{
+						IU = 0.0220;
+						IV = 0.0188;
+						FU = 0.1043;
+						FV = 0.1239;
+					};
+				};
+			};
+		};
+	};
+	Action4:
+	{
+		Name = "thanks2";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 3;
+				Frame0:
+				{
+					Material = "thanks1";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 9.0;
+						Height = 12.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0348;
+						IV = 0.0556;
+						FU = 0.1130;
+						FV = 0.1889;
+					};
+				};
+				Frame1:
+				{
+					Material = "thanks2";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5075;
+					};
+					Size:
+					{
+						Width = 134.0;
+						Height = 106.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame2:
+				{
+					Material = "thanks1";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 9.0;
+						Height = 12.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0348;
+						IV = 0.0556;
+						FU = 0.1130;
+						FV = 0.1889;
+					};
+				};
+			};
+		};
+	};
+	Action5:
+	{
+		Name = "thanks3";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 3;
+				Frame0:
+				{
+					Material = "thanks3";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.4420;
+						y = 0.4926;
+					};
+					Size:
+					{
+						Width = 5.3;
+						Height = 6.2;
+					};
+					TexCoords:
+					{
+						IU = 0.9123;
+						IV = 0.0525;
+						FU = 0.9678;
+						FV = 0.1354;
+					};
+				};
+				Frame1:
+				{
+					Material = "thanks3";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.4420;
+						y = 0.4926;
+					};
+					Size:
+					{
+						Width = 5.3;
+						Height = 6.2;
+					};
+					TexCoords:
+					{
+						IU = 0.9123;
+						IV = 0.0525;
+						FU = 0.9678;
+						FV = 0.1354;
+					};
+				};
+				Frame2:
+				{
+					Material = "thanks3";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5053;
+						y = 0.5067;
+					};
+					Size:
+					{
+						Width = 95.0;
+						Height = 75.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

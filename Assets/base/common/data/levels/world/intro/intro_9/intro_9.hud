@@ -1,0 +1,365 @@
+HUD:
+{
+	FileVersion = 2;
+	NumElements = 3;
+	Element0:
+	{
+		Name = "objs";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "objs";
+			Position:
+			{
+				y = -50.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 2;
+			Object0:
+			{
+				Type = "Rect";
+				Width = 1280.0000;
+				Height = 960.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_objs";
+				Position:
+				{
+					x = 896.0000;
+					y = 544.0000;
+				};
+				Scale:
+				{
+					x = 1.5000;
+					y = 1.5000;
+				};
+				Color:
+				{
+					r = 0.0000;
+					g = 0.0000;
+					b = 0.0000;
+				};
+			};
+			Object1:
+			{
+				Type = "Group";
+				Name = "g_objs";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "carta";
+					Name = "ic_objs";
+					Action = 0;
+					Position:
+					{
+						x = 900.0000;
+						y = 540.0000;
+					};
+					Scale:
+					{
+						x = 0.8000;
+						y = 0.8000;
+					};
+					Color:
+					{
+					};
+				};
+			};
+		};
+	};
+	Element1:
+	{
+		Name = "Carta";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "Carta";
+			Visible = false;
+			Position:
+			{
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 1;
+			Object0:
+			{
+				Type = "Label";
+				Text = "label";
+				Font = "../../../../fonts/uncle_font";
+				HAlignment = "Left";
+				VAlignment = "Top";
+				Interlining = 8.0000;
+				AdjustmentWidth = 550.0000;
+				Name = "lb_Carta";
+				Position:
+				{
+					x = 640.0000;
+					y = 224.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+					r = 0.1882;
+					g = 0.2118;
+					b = 0.5137;
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "ShowLetterText";
+			ObjAction0:
+			{
+				HUDObject = "Carta";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						a = 0.0000;
+					};
+					KeyFrame1:
+					{
+						Time = 1.5000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+	Element2:
+	{
+		Name = "Foreground";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "Foreground";
+			Position:
+			{
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 1;
+			Object0:
+			{
+				Type = "Rect";
+				Width = 1280.0000;
+				Height = 960.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_Foreground";
+				Position:
+				{
+					x = 896.0000;
+					y = 544.0000;
+				};
+				Scale:
+				{
+					x = 1.5000;
+					y = 1.5000;
+				};
+				Color:
+				{
+					r = 0.0000;
+					g = 0.0000;
+					b = 0.0000;
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "OnEnterPage";
+			ObjAction0:
+			{
+				HUDObject = "Foreground";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 5.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 6.0000;
+						a = 0.0000;
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 5;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 1.0000;
+						EventName = "PlaySound";
+						EventValue = "game/intro/door_closing";
+					};
+					KeyFrame2:
+					{
+						Time = 3.0000;
+						EventName = "PlaySound";
+						EventValue = "game/intro/letter_rasgar";
+					};
+					KeyFrame3:
+					{
+						Time = 4.0000;
+						EventName = "PlaySound";
+						EventValue = "game/intro/letter_unwrap";
+					};
+					KeyFrame4:
+					{
+						Time = 5.0000;
+						EventName = "PlaySound";
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+};

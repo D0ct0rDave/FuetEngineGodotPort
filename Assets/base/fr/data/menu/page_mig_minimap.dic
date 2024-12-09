@@ -1,0 +1,8 @@
+Dictionary:
+{
+	lb_Accept = "Continuer";
+	lb_Quit = "Quitter";
+	lb_Settings = "Configuration";
+	lb_Minimap = "Continuer";
+	lb_Frame = "";
+};

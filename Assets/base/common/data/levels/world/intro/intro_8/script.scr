@@ -1,0 +1,116 @@
+Script : 
+{
+  Sequence = "A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,A16";
+  A0 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_subtitles";
+    LetterByLetter = false;
+    LetterTime = 0.0;
+  };
+  A1 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_subtitles-1";
+    LetterByLetter = false;
+    LetterTime = 0.0;
+  };
+  A2 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_PLAY_ROOM_ANIM";
+    Parameters = "SpeakPhrase";
+  };
+  A3 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_subtitles-1";
+    Text = "INTRO_PHRASE_5";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A4 : 
+  {
+    Type = "Sleep";
+    Time = 1.5;
+  };
+  A5 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_subtitles-1";
+    LetterByLetter = false;
+    LetterTime = 0.0;
+  };
+  A6 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_subtitles";
+    Text = "INTRO_PHRASE_6";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A7 : 
+  {
+    Type = "Sleep";
+    Time = 1.5;
+  };
+  A8 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_subtitles";
+    LetterByLetter = false;
+    LetterTime = 0.0;
+  };
+  A9 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_PLAY_ROOM_ANIM";
+    Parameters = "SpeakPhrase";
+  };
+  A10 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_subtitles-1";
+    Text = "INTRO_PHRASE_7";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A11 : 
+  {
+    Type = "Sleep";
+    Time = 1.5;
+  };
+  A12 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_subtitles-1";
+    LetterByLetter = false;
+    LetterTime = 0.0;
+  };
+  A13 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_subtitles";
+    Text = "INTRO_PHRASE_8";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A14 : 
+  {
+    Type = "Sleep";
+    Time = 1.5;
+  };
+  A15 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_subtitles";
+    LetterByLetter = false;
+    LetterTime = 0.0;
+  };
+  A16 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_CHANGE_ROOM";
+    Parameters = "intro/intro_9/intro_9";
+  };
+};

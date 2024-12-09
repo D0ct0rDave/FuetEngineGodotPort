@@ -1,0 +1,419 @@
+SkelAction:
+{
+	Name = "walk";
+	NodeAction0:
+	{
+		NodeName = "PIVOT";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				LerpFunc = "explog";
+			};
+			KeyFrame1:
+			{
+				Time = 0.2507;
+				LerpFunc = "explog";
+			};
+			KeyFrame2:
+			{
+				Time = 1.0028;
+				LerpFunc = "explog";
+			};
+		};
+	};
+	NodeAction1:
+	{
+		NodeName = "base";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 9;
+			KeyFrame0:
+			{
+				LerpFunc = "explog";
+			};
+			KeyFrame1:
+			{
+				y = 5.0000;
+				Time = 0.1253;
+				LerpFunc = "explog";
+			};
+			KeyFrame2:
+			{
+				Time = 0.2507;
+				LerpFunc = "explog";
+			};
+			KeyFrame3:
+			{
+				y = 5.0000;
+				Time = 0.3760;
+				LerpFunc = "explog";
+			};
+			KeyFrame4:
+			{
+				Time = 0.5014;
+			};
+			KeyFrame5:
+			{
+				y = 5.0000;
+				Time = 0.6267;
+				LerpFunc = "explog";
+			};
+			KeyFrame6:
+			{
+				Time = 0.7521;
+			};
+			KeyFrame7:
+			{
+				y = 5.0000;
+				Time = 0.8774;
+				LerpFunc = "explog";
+			};
+			KeyFrame8:
+			{
+				Time = 1.0028;
+				LerpFunc = "explog";
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2507;
+			};
+			KeyFrame2:
+			{
+				Time = 1.0028;
+			};
+		};
+	};
+	NodeAction2:
+	{
+		NodeName = "head";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2507;
+			};
+			KeyFrame2:
+			{
+				Time = 1.0028;
+			};
+		};
+	};
+	NodeAction3:
+	{
+		NodeName = "pj_head";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2507;
+			};
+			KeyFrame2:
+			{
+				Time = 1.0028;
+			};
+		};
+	};
+	NodeAction4:
+	{
+		NodeName = "wheel1";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 9;
+			KeyFrame0:
+			{
+				LerpFunc = "explog";
+			};
+			KeyFrame1:
+			{
+				y = -5.0000;
+				Time = 0.1253;
+				LerpFunc = "explog";
+			};
+			KeyFrame2:
+			{
+				Time = 0.2507;
+			};
+			KeyFrame3:
+			{
+				y = -5.0000;
+				Time = 0.3760;
+				LerpFunc = "explog";
+			};
+			KeyFrame4:
+			{
+				Time = 0.5014;
+			};
+			KeyFrame5:
+			{
+				y = -5.0000;
+				Time = 0.6267;
+				LerpFunc = "explog";
+			};
+			KeyFrame6:
+			{
+				Time = 0.7521;
+			};
+			KeyFrame7:
+			{
+				y = -5.0000;
+				Time = 0.8774;
+				LerpFunc = "explog";
+			};
+			KeyFrame8:
+			{
+				Time = 1.0028;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 6.2832;
+				Time = 1.0028;
+			};
+		};
+	};
+	NodeAction5:
+	{
+		NodeName = "pj_wheel1";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				LerpFunc = "explog";
+			};
+			KeyFrame1:
+			{
+				Time = 0.2507;
+			};
+			KeyFrame2:
+			{
+				Time = 1.0028;
+			};
+		};
+	};
+	NodeAction6:
+	{
+		NodeName = "wheel2";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 9;
+			KeyFrame0:
+			{
+				LerpFunc = "explog";
+			};
+			KeyFrame1:
+			{
+				y = -5.0000;
+				Time = 0.1253;
+				LerpFunc = "explog";
+			};
+			KeyFrame2:
+			{
+				Time = 0.2507;
+			};
+			KeyFrame3:
+			{
+				y = -5.0000;
+				Time = 0.3760;
+				LerpFunc = "explog";
+			};
+			KeyFrame4:
+			{
+				Time = 0.5014;
+			};
+			KeyFrame5:
+			{
+				y = -5.0000;
+				Time = 0.6267;
+				LerpFunc = "explog";
+			};
+			KeyFrame6:
+			{
+				Time = 0.7521;
+			};
+			KeyFrame7:
+			{
+				y = -5.0000;
+				Time = 0.8774;
+				LerpFunc = "explog";
+			};
+			KeyFrame8:
+			{
+				Time = 1.0028;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 6.2832;
+				Time = 1.0028;
+			};
+		};
+	};
+	NodeAction7:
+	{
+		NodeName = "pj_wheel2";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				LerpFunc = "explog";
+			};
+			KeyFrame1:
+			{
+				Time = 0.2507;
+			};
+			KeyFrame2:
+			{
+				Time = 1.0028;
+			};
+		};
+	};
+	NodeAction8:
+	{
+		NodeName = "tapa";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2507;
+			};
+			KeyFrame2:
+			{
+				Time = 1.0028;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 1;
+			KeyFrame0:
+			{
+				Value = 0.1846;
+			};
+		};
+	};
+	NodeAction9:
+	{
+		NodeName = "wheel1_d";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 1.0028;
+			};
+		};
+	};
+	NodeAction10:
+	{
+		NodeName = "wheel2_d";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 1.0028;
+			};
+		};
+	};
+	NodeAction11:
+	{
+		NodeName = "base_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction12:
+	{
+		NodeName = "base_sprite_1";
+		NodeAction = 0;
+	};
+	NodeAction13:
+	{
+		NodeName = "base_sprite_2";
+		Visible = false;
+	};
+	NodeAction14:
+	{
+		NodeName = "base_sprite_3";
+		Visible = false;
+	};
+	NodeAction15:
+	{
+		NodeName = "head_sprite_0";
+		Visible = false;
+	};
+	NodeAction16:
+	{
+		NodeName = "head_sprite_1";
+		Visible = false;
+	};
+	NodeAction17:
+	{
+		NodeName = "wheel1_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction18:
+	{
+		NodeName = "wheel2_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction19:
+	{
+		NodeName = "tapa_sprite_0";
+		NodeAction = 0;
+	};
+	NumNodeActions = 20;
+};

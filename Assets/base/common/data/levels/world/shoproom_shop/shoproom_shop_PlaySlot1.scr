@@ -1,0 +1,125 @@
+Script : 
+{
+  Sequence = "A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14";
+  A0 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "DlgOptionsInterfaceHide";
+    AutoShow = false;
+    AutoHide = true;
+    WaitAnim = true;
+    Skipable = true;
+  };
+  A1 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "ShopKeeperSpeak";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = false;
+  };
+  A2 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/fx/ui/chikichiki";
+    Vol = 0.5;
+    Pan = 0.5;
+    Loop = true;
+    Wait = false;
+  };
+  A3 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_keeper_dlg";
+    Text = "SHOPKEEPER_PLAYSLOT1";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A4 : 
+  {
+    Type = "StopSound";
+    Sound = "data/sound/fx/ui/chikichiki";
+  };
+  A5 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "ShopKeeperIdle";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = false;
+  };
+  A6 : 
+  {
+    Type = "Sleep";
+    Time = 1.0;
+  };
+  A7 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "ShopKeeperSpeak";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = false;
+  };
+  A8 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/fx/ui/chikichiki";
+    Vol = 0.5;
+    Pan = 0.5;
+    Loop = true;
+    Wait = false;
+  };
+  A9 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_keeper_dlg";
+    Text = "SHOPKEEPER_PLAYSLOT2";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A10 : 
+  {
+    Type = "StopSound";
+    Sound = "data/sound/fx/ui/chikichiki";
+  };
+  A11 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "ShopKeeperIdle";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = false;
+  };
+  A12 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/music/slot_machine";
+    Vol = 1.0;
+    Pan = 0.5;
+    Loop = true;
+    Wait = false;
+  };
+  A13 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "SlotMachineShow";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = true;
+  };
+  A14 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "SlotDlgShow";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = true;
+  };
+};

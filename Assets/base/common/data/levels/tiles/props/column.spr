@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "column";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "column";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5051;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 99.0;
+						Height = 160.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

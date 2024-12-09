@@ -1,0 +1,7 @@
+Dictionary:
+{
+	lb_Title = "Impostazioni";
+	lb_MusVol = "Musica";
+	lb_FXVol = "Effetti";
+	lb_Accept = "Accetta";
+};

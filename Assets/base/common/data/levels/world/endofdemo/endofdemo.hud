@@ -1,0 +1,641 @@
+HUD:
+{
+	FileVersion = 2;
+	NumElements = 3;
+	Element0:
+	{
+		Name = "Background";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "Background";
+			Position:
+			{
+			};
+			Depth = 0.5000;
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 1;
+			Object0:
+			{
+				Type = "Rect";
+				Width = 1280.0000;
+				Height = 960.0000;
+				PivotX = 0.0000;
+				PivotY = 0.0000;
+				Corner0:
+				{
+					r = 0.0000;
+					g = 0.1765;
+					b = 0.3490;
+				};
+				Corner1:
+				{
+					r = 0.0000;
+					g = 0.1765;
+					b = 0.3490;
+				};
+				Corner2:
+				{
+					r = 0.4039;
+					g = 0.5843;
+					b = 0.7804;
+				};
+				Corner3:
+				{
+					r = 0.4039;
+					g = 0.5843;
+					b = 0.7804;
+				};
+				Name = "rt_Background-1";
+				Position:
+				{
+					x = -384.0000;
+					y = -416.0000;
+				};
+				Scale:
+				{
+					x = 2.0000;
+					y = 2.0000;
+				};
+				Color:
+				{
+					r = 0.0000;
+					g = 0.0000;
+					b = 0.0000;
+				};
+			};
+		};
+	};
+	Element1:
+	{
+		Name = "periódico";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "periódico";
+			Position:
+			{
+			};
+			Scale:
+			{
+			};
+			Angle = -0.3491;
+			Color:
+			{
+			};
+			NumObjects = 1;
+			Object0:
+			{
+				Type = "Group";
+				Name = "periódico_g";
+				Position:
+				{
+					x = 32.0000;
+					y = 496.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 3;
+				Object0:
+				{
+					Type = "Rect";
+					Width = 1280.0000;
+					Height = 960.0000;
+					PivotX = 0.0000;
+					PivotY = 0.0000;
+					Corner0:
+					{
+					};
+					Corner1:
+					{
+					};
+					Corner2:
+					{
+					};
+					Corner3:
+					{
+					};
+					Name = "papel";
+					Visible = false;
+					Position:
+					{
+						y = 16.0000;
+					};
+					Scale:
+					{
+						y = 2.0000;
+					};
+					Color:
+					{
+					};
+				};
+				Object1:
+				{
+					Type = "Icon";
+					Sprite = "pics/Periodico";
+					Name = "ic_papel";
+					Action = 0;
+					Position:
+					{
+						x = 640.0000;
+						y = 320.0000;
+					};
+					Scale:
+					{
+					};
+					Angle = 0.1571;
+					Color:
+					{
+					};
+				};
+				Object2:
+				{
+					Type = "Group";
+					Name = "periodico_g2";
+					Position:
+					{
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+					NumObjects = 1;
+					Object0:
+					{
+						Type = "Label";
+						Text = "End of Demo";
+						Font = "../../../fonts/newspaper";
+						HAlignment = "Center";
+						VAlignment = "Bottom";
+						PointSize = 2.8000;
+						AdjustmentWidth = 875.0000;
+						Name = "Titular2";
+						Position:
+						{
+							x = 656.0000;
+							y = 528.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+							r = 0.0000;
+							g = 0.0000;
+							b = 0.0000;
+						};
+					};
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "OnEnterPage";
+			ObjAction0:
+			{
+				HUDObject = "periódico";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+						x = 5.0000;
+						y = 5.0000;
+					};
+					KeyFrame1:
+					{
+						Time = 0.5000;
+						x = 4.0000;
+						y = 4.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 0.8000;
+					};
+				};
+				ColorFunc:
+				{
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+						a = 0.0000;
+					};
+					KeyFrame1:
+					{
+						Time = 0.5000;
+						a = 0.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 0.8000;
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 0.8000;
+						EventName = "PlaySound";
+						EventValue = "orch_hit";
+					};
+				};
+			};
+			ObjAction1:
+			{
+				HUDObject = "periódico_g";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+						Value = 0.7854;
+					};
+					KeyFrame1:
+					{
+						Time = 0.5000;
+						Value = 0.7854;
+					};
+					KeyFrame2:
+					{
+						Time = 0.8000;
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 2;
+		};
+	};
+	Element2:
+	{
+		Name = "Foreground";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "Foreground";
+			Position:
+			{
+			};
+			Scale:
+			{
+				x = 2.0000;
+				y = 1.2000;
+			};
+			Color:
+			{
+			};
+			NumObjects = 1;
+			Object0:
+			{
+				Type = "Rect";
+				Width = 1280.0000;
+				Height = 960.0000;
+				PivotX = 0.0000;
+				PivotY = 0.0000;
+				Corner0:
+				{
+					r = 0.0000;
+					g = 0.1765;
+					b = 0.3490;
+				};
+				Corner1:
+				{
+					r = 0.0000;
+					g = 0.1765;
+					b = 0.3490;
+				};
+				Corner2:
+				{
+					r = 0.4039;
+					g = 0.5843;
+					b = 0.7804;
+				};
+				Corner3:
+				{
+					r = 0.4039;
+					g = 0.5843;
+					b = 0.7804;
+				};
+				Name = "rt_Foreground";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+					r = 0.0000;
+					g = 0.0000;
+					b = 0.0000;
+				};
+			};
+		};
+		NumElemActions = 2;
+		Action0:
+		{
+			Name = "OnEnterPage";
+			ObjAction0:
+			{
+				HUDObject = "Foreground";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 0.5000;
+						a = 0.0000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction1:
+			{
+				HUDObject = "rt_Foreground";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+						r = 0.0000;
+						g = 0.0000;
+						b = 0.0000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 2;
+		};
+		Action1:
+		{
+			Name = "OnExitPage";
+			ObjAction0:
+			{
+				HUDObject = "Foreground";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+						a = 0.0000;
+					};
+					KeyFrame1:
+					{
+						Time = 0.2000;
+						a = 0.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 0.7000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+};

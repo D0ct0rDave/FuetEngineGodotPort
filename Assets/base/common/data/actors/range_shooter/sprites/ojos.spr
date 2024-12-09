@@ -1,0 +1,83 @@
+Sprite:
+{
+	Name = "ojos";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "idle";
+		PlayMode = "LOOP";
+		RandomStartTime = 2.00;
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 4;
+				Frame0:
+				{
+					Material = "ojos1";
+					DelayTime = 3.0440;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 74.0;
+						Height = 38.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "ojos2";
+					DelayTime = 0.0980;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 74.0;
+						Height = 38.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame2:
+				{
+					Material = "ojos3";
+					DelayTime = 0.2910;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 74.0;
+						Height = 38.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame3:
+				{
+					Material = "ojos2";
+					DelayTime = 0.0980;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 74.0;
+						Height = 38.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

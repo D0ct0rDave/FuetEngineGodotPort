@@ -1,0 +1,30 @@
+Sprite:
+{
+	Name = "hand-izquierda";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "hand-izquierda";
+					BlendTime = 0.0000;
+					Pivot:
+					{
+						x = 0.77273;
+						y = 0.76000;
+					};
+					Size:
+					{
+						Width = 44.0;
+						Height = 25.0;
+					};
+				};
+			};
+		};
+	};
+};

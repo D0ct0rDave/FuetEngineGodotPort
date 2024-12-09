@@ -1,0 +1,227 @@
+SoundList:
+{
+	NumSounds = 36;
+
+	// --------------------------
+	// menu in game interface
+	// --------------------------
+	S0:
+	{
+		Alias = "PrevPageSound";
+		File  = "ui/prevpage";
+	};
+
+	S1:
+	{
+		Alias = "NextPageSound";
+		File  = "ui/nextpage";
+	};
+
+	S2:
+	{
+		Alias = "TicSound";
+		File  = "ui/button_tic";
+	};
+
+	S3:
+	{
+		Alias = "StartGame";
+		File  = "ui/startgame";
+	};
+	
+	S4:
+	{
+		Alias = "VolumeSound";
+		File  = "ui/button_vol";
+	};
+
+	S5:
+	{
+		Alias = "RandomSound";
+		File  = "ui/button_random";
+	};	
+
+	S6:
+	{
+		Alias = "StartPage";
+		File  = "ui/startpage";
+	};
+
+	S7:
+	{
+		Alias = "ButtonBeep";
+		File  = "ui/button_beep";
+	};
+
+	S8:
+	{
+		Alias = "chikichiki";
+		File  = "ui/chikichiki";
+	};
+
+	S9:
+	{
+		Alias = "OpenMIG";
+		File  = "game/mig";
+	};
+	
+	
+	// --------------------------
+	// Player feedbacks
+	// --------------------------
+	S10:
+	{
+		Alias = "fall";
+		File  = "game/fall";
+	};
+	
+	S11:
+	{
+		Alias = "jump";
+		File  = "game/player/jump";
+	};
+
+	S12:
+	{
+		Alias = "foot_step";
+		File  = "game/foot_step";
+	};
+	
+	S13:
+	{
+		Alias = "foot_step_crouch";
+		File  = "game/foot_step_crouch";
+	};
+
+	S14:
+	{
+		Alias = "sword_attack";
+		File  = "game/player/sword_attack";
+	};
+
+	S15:
+	{
+		Alias = "jump";
+		File  = "game/jump";
+	};
+
+	S16:
+	{
+		Alias = "pain";
+		File  = "game/player/pain";
+	};
+
+	S17:
+	{
+		Alias = "sword_attack";
+		File  = "game/sword_attack";
+	};
+
+	S18:
+	{
+		Alias = "crate-hit";
+		File  = "game/crate_hit";
+	};	
+
+	S19:
+	{
+		Alias = "ground_skid";
+		File  = "game/ground_skid";
+	};	
+
+	S20:
+	{
+		Alias = "land_ground";
+		File  = "game/land_ground";
+	};	
+
+	S21:
+	{
+		Alias = "foot_step_ladder";
+		File  = "game/foot_step_ladder";
+	};	
+		
+	S22:
+	{
+		Alias = "game01";
+		File  = "../music/game01";
+	};
+	
+	S23:
+	{
+		Alias = "game02";
+		File  = "../music/game02";
+	};
+	
+	S24:
+	{
+		Alias = "game03";
+		File  = "../music/game03";
+	};
+	
+	S25:
+	{
+		Alias = "game04";
+		File  = "../music/game04";
+	};
+	
+	S26:
+	{
+		Alias = "game05";
+		File  = "../music/game05";
+	};
+
+	S27:
+	{
+		Alias = "data/sound/fx/game/enemy_death_magic";
+		File  = "game/enemy_death_magic";
+	};
+
+	S28:
+	{
+		Alias = "data/sound/fx/game/ghost_hit";
+		File  = "game/ghost_hit";
+	};
+
+	S29:
+	{
+		Alias = "data/sound/fx/game/ghost_explosion";
+		File  = "game/ghost_explosion";
+	};
+
+	S30:
+	{
+		Alias = "data/sound/fx/game/ghost_explosion_sp";
+		File  = "game/ghost_explosion_sp";
+	};
+	
+	S31:
+	{
+		Alias = "coinsup";
+		File  = "game/orbe_caught";
+	};
+
+	S32:
+	{
+		Alias = "healthup";
+		File  = "game/orbe_caught";
+	};
+
+	S33:
+	{
+		Alias = "pointsup";
+		File  = "game/orbe_caught";
+	};
+
+	S34:
+	{
+		Alias = "data/sound/fx/game/gun_shot";
+		File  = "game/gun_shot";
+	};
+
+	S35:
+	{
+		Alias = "expfull";
+		File  = "game/expfull";
+	};
+};

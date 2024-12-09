@@ -1,0 +1,116 @@
+Sprite:
+{
+	Name = "mandibuka_debajo";
+	NumActions = 3;
+	Action0:
+	{
+		Name = "idle";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "mandibula_debajo";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 6.7826;
+						y = 2.9487;
+					};
+					Size:
+					{
+						Width = 14.0;
+						Height = 20.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0476;
+						IV = 0.1609;
+						FU = 0.1143;
+						FV = 0.2759;
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "attack";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "mandibula_debajo";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5667;
+						y = 0.2644;
+					};
+					Size:
+					{
+						Width = 210.0;
+						Height = 174.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action2:
+	{
+		Name = "dying";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 2;
+				Frame0:
+				{
+					Material = "mandibula_debajo";
+					BlendTime = 3.0660;
+					Pivot:
+					{
+						x = 0.5667;
+						y = 0.2644;
+					};
+					Size:
+					{
+						Width = 210.0;
+						Height = 174.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "mandibula_debajo_rock";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5667;
+						y = 0.2644;
+					};
+					Size:
+					{
+						Width = 210.0;
+						Height = 174.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

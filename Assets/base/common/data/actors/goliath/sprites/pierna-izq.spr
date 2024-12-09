@@ -1,0 +1,30 @@
+Sprite:
+{
+	Name = "pierna-izq";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "pierna-izq";
+					BlendTime = 0.0000;
+					Pivot:
+					{
+						x = 0.32787;
+						y = 0.22034;
+					};
+					Size:
+					{
+						Width = 122.0;
+						Height = 118.0;
+					};
+				};
+			};
+		};
+	};
+};

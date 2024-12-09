@@ -1,0 +1,567 @@
+SkelNode:
+{
+	Type = "bone";
+	Name = "PIVOT";
+	Position:
+	{
+	};
+	BonePos:
+	{
+	};
+	Child0:
+	{
+		Type = "group";
+		Name = "g_PIVOT";
+		Position:
+		{
+		};
+	};
+	Child1:
+	{
+		Type = "bone";
+		Name = "hip";
+		Position:
+		{
+		};
+		BonePos:
+		{
+			y = -34.0000;
+		};
+		Child0:
+		{
+			Type = "group";
+			Name = "hip_group";
+			Position:
+			{
+				x = 2.0000;
+				y = -3.0000;
+			};
+			Depth = 0.0200;
+			Child0:
+			{
+				Type = "sprite";
+				Name = "hip_sprite_0";
+				Position:
+				{
+				};
+				Sprite = "../sprites/torso";
+				SpriteAction = 0;
+			};
+			NumChildren = 1;
+		};
+		Child1:
+		{
+			Type = "group";
+			Name = "pj_l_hip";
+			Position:
+			{
+			};
+			Child0:
+			{
+				Type = "bone";
+				Name = "l_hip";
+				Position:
+				{
+				};
+				BonePos:
+				{
+					x = 5.0000;
+					y = 3.0000;
+				};
+				Child0:
+				{
+					Type = "group";
+					Name = "l_hip_group";
+					Position:
+					{
+					};
+					Depth = 0.0300;
+					Child0:
+					{
+						Type = "sprite";
+						Name = "l_hip_sprite_0";
+						Position:
+						{
+						};
+						Sprite = "../sprites/pierna_izq";
+						SpriteAction = 0;
+					};
+					NumChildren = 1;
+				};
+				Child1:
+				{
+					Type = "bone";
+					Name = "l_foot";
+					Position:
+					{
+					};
+					BonePos:
+					{
+						x = -4.0000;
+						y = 24.0000;
+					};
+					Child0:
+					{
+						Type = "group";
+						Name = "l_foot_group";
+						Position:
+						{
+						};
+						Depth = 0.0400;
+						Child0:
+						{
+							Type = "sprite";
+							Name = "l_foot_sprite_0";
+							Position:
+							{
+							};
+							Angle = 0.0349;
+							Sprite = "../sprites/pie_izq";
+							SpriteAction = 0;
+						};
+						NumChildren = 1;
+					};
+					Child1:
+					{
+						Type = "bone";
+						Name = "l_foot_d";
+						Position:
+						{
+						};
+						BonePos:
+						{
+							x = 7.0000;
+						};
+					};
+					NumChildren = 2;
+				};
+				NumChildren = 2;
+			};
+			NumChildren = 1;
+		};
+		Child2:
+		{
+			Type = "group";
+			Name = "pj_r_hip";
+			Position:
+			{
+			};
+			Child0:
+			{
+				Type = "bone";
+				Name = "r_hip";
+				Position:
+				{
+				};
+				BonePos:
+				{
+					x = -4.0000;
+					y = 4.0000;
+				};
+				Child0:
+				{
+					Type = "group";
+					Name = "r_hip_group";
+					Position:
+					{
+					};
+					Depth = 0.0100;
+					Child0:
+					{
+						Type = "sprite";
+						Name = "r_hip_sprite_0";
+						Position:
+						{
+						};
+						Sprite = "../sprites/pierna_der";
+						SpriteAction = 0;
+					};
+					NumChildren = 1;
+				};
+				Child1:
+				{
+					Type = "bone";
+					Name = "r_foot";
+					Position:
+					{
+					};
+					BonePos:
+					{
+						x = -4.0000;
+						y = 23.0000;
+					};
+					Child0:
+					{
+						Type = "group";
+						Name = "r_foot_group";
+						Position:
+						{
+						};
+						Depth = 0.0200;
+						Child0:
+						{
+							Type = "sprite";
+							Name = "r_foot_sprite_0";
+							Position:
+							{
+							};
+							Sprite = "../sprites/pie_der";
+							SpriteAction = 0;
+						};
+						NumChildren = 1;
+					};
+					Child1:
+					{
+						Type = "bone";
+						Name = "r_foot_d";
+						Position:
+						{
+						};
+						BonePos:
+						{
+							x = 7.0000;
+						};
+					};
+					NumChildren = 2;
+				};
+				NumChildren = 2;
+			};
+			NumChildren = 1;
+		};
+		Child3:
+		{
+			Type = "bone";
+			Name = "torso";
+			Position:
+			{
+			};
+			BonePos:
+			{
+				y = -32.0000;
+			};
+			Child0:
+			{
+				Type = "group";
+				Name = "torso_group";
+				Position:
+				{
+				};
+				Depth = 0.0300;
+			};
+			Child1:
+			{
+				Type = "group";
+				Name = "pj_neck";
+				Position:
+				{
+				};
+				Child0:
+				{
+					Type = "bone";
+					Name = "neck";
+					Position:
+					{
+					};
+					BonePos:
+					{
+						x = 2.0000;
+						y = -10.0000;
+					};
+					Child0:
+					{
+						Type = "group";
+						Name = "neck_sprite";
+						Position:
+						{
+						};
+						Depth = 0.0300;
+						Child0:
+						{
+							Type = "sprite";
+							Name = "neck_sprite_0";
+							Position:
+							{
+							};
+							Sprite = "../sprites/cuello";
+							SpriteAction = 0;
+						};
+						NumChildren = 1;
+					};
+					Child1:
+					{
+						Type = "bone";
+						Name = "head";
+						Position:
+						{
+						};
+						BonePos:
+						{
+							x = 2.0000;
+							y = -13.0000;
+						};
+						Child0:
+						{
+							Type = "group";
+							Name = "head_group";
+							Position:
+							{
+							};
+							Depth = 0.0200;
+							Child0:
+							{
+								Type = "sprite";
+								Name = "head_sprite_0";
+								Position:
+								{
+								};
+								Sprite = "../sprites/cabeza";
+								SpriteAction = 0;
+							};
+							NumChildren = 1;
+						};
+						NumChildren = 1;
+					};
+					NumChildren = 2;
+				};
+				NumChildren = 1;
+			};
+			Child2:
+			{
+				Type = "group";
+				Name = "pj_l_shoulder";
+				Position:
+				{
+				};
+				Child0:
+				{
+					Type = "bone";
+					Name = "l_shoulder";
+					Position:
+					{
+					};
+					BonePos:
+					{
+						x = 8.0000;
+					};
+					Child0:
+					{
+						Type = "group";
+						Name = "l_shoulder_group";
+						Position:
+						{
+						};
+						Depth = 0.0400;
+						Child0:
+						{
+							Type = "sprite";
+							Name = "l_shoulder_sprite_0";
+							Position:
+							{
+							};
+							Sprite = "../sprites/brazo_izq";
+							SpriteAction = 0;
+						};
+						NumChildren = 1;
+					};
+					Child1:
+					{
+						Type = "bone";
+						Name = "l_arm";
+						Position:
+						{
+						};
+						BonePos:
+						{
+							x = 1.0000;
+							y = 18.0000;
+						};
+						Child0:
+						{
+							Type = "group";
+							Name = "l_arm_group";
+							Position:
+							{
+								y = -3.0000;
+							};
+							Depth = 0.0500;
+							Child0:
+							{
+								Type = "sprite";
+								Name = "l_arm_sprite_0";
+								Position:
+								{
+								};
+								Sprite = "../sprites/antebrazo_izq";
+								SpriteAction = 0;
+							};
+							NumChildren = 1;
+						};
+						Child1:
+						{
+							Type = "bone";
+							Name = "l_hand";
+							Position:
+							{
+							};
+							BonePos:
+							{
+								y = 30.0000;
+							};
+							Child0:
+							{
+								Type = "group";
+								Name = "l_hand_group";
+								Position:
+								{
+								};
+								Depth = 0.0600;
+								Child0:
+								{
+									Type = "sprite";
+									Name = "l_hand_sprite_0";
+									Position:
+									{
+									};
+									SpriteAction = 0;
+								};
+								NumChildren = 1;
+							};
+							NumChildren = 1;
+						};
+						NumChildren = 2;
+					};
+					NumChildren = 2;
+				};
+				NumChildren = 1;
+			};
+			Child3:
+			{
+				Type = "group";
+				Name = "pj_r_shoulder";
+				Position:
+				{
+				};
+				Child0:
+				{
+					Type = "bone";
+					Name = "r_shoulder";
+					Position:
+					{
+					};
+					BonePos:
+					{
+						x = -5.0000;
+					};
+					Child0:
+					{
+						Type = "group";
+						Name = "r_shoulder_group";
+						Position:
+						{
+							y = 1.0000;
+						};
+						Depth = 0.0200;
+						Child0:
+						{
+							Type = "sprite";
+							Name = "r_shoulder_sprite_0";
+							Position:
+							{
+							};
+							Sprite = "../sprites/brazo_der";
+							SpriteAction = 0;
+						};
+						NumChildren = 1;
+					};
+					Child1:
+					{
+						Type = "bone";
+						Name = "r_arm";
+						Position:
+						{
+						};
+						BonePos:
+						{
+							x = -1.0000;
+							y = 18.0000;
+						};
+						Child0:
+						{
+							Type = "group";
+							Name = "r_arm_group";
+							Position:
+							{
+								y = -3.0000;
+							};
+							Child0:
+							{
+								Type = "sprite";
+								Name = "r_arm_sprite_0";
+								Position:
+								{
+								};
+								Sprite = "../sprites/antebrazo_der";
+								SpriteAction = 0;
+							};
+							NumChildren = 1;
+						};
+						Child1:
+						{
+							Type = "bone";
+							Name = "r_hand";
+							Position:
+							{
+							};
+							BonePos:
+							{
+								y = 19.0000;
+							};
+							Child0:
+							{
+								Type = "group";
+								Name = "r_hand_group";
+								Position:
+								{
+								};
+								Depth = 0.0100;
+								Angle = -0.5585;
+								Child0:
+								{
+									Type = "sprite";
+									Name = "r_hand_sprite_0";
+									Position:
+									{
+									};
+									Angle = -1.5010;
+									Sprite = "../sprites/maza";
+									SpriteAction = 0;
+								};
+								NumChildren = 1;
+							};
+							Child1:
+							{
+								Type = "bone";
+								Name = "r_hand_d";
+								Position:
+								{
+								};
+								BonePos:
+								{
+									x = -18.0000;
+									y = 9.0000;
+								};
+							};
+							NumChildren = 2;
+						};
+						NumChildren = 2;
+					};
+					NumChildren = 2;
+				};
+				NumChildren = 1;
+			};
+			NumChildren = 4;
+		};
+		NumChildren = 4;
+	};
+	NumChildren = 2;
+};

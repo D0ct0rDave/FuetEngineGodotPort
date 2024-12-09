@@ -1,0 +1,30 @@
+Sprite:
+{
+	Name = "camiseta-torso";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "camiseta-torso";
+					BlendTime = 0.0000;
+					Pivot:
+					{
+						x = 0.40411;
+						y = 0.78286;
+					};
+					Size:
+					{
+						Width = 146.0;
+						Height = 175.0;
+					};
+				};
+			};
+		};
+	};
+};

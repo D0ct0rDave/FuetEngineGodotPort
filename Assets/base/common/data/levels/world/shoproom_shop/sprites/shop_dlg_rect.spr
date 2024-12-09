@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "shop_dlg_rect";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "shop_dlg_rect";
+					SWrapMode = "REPEAT";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.0000;
+					};
+					Size:
+					{
+						Width = 64.0;
+						Height = 284.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

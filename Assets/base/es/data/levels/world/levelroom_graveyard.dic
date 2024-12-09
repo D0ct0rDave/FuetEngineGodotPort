@@ -1,0 +1,15 @@
+Dictionary:
+{
+	INTRO_PHRASE_1 = "¡Uala! ¡Cómo mola! ¡Este cacharro funciona sólo! ¡Y estoy sobrevolando el terreno!";
+	INTRO_PHRASE_2 = "Ahora que estoy fuera, voy a probar la pistola …";
+	SUBBOSS_PHRASE_1 = "Hola!";
+	SUBBOSS_PHRASE_2 = "¡Tú no deberías estar aquí!";
+	SUBBOSS_PHRASE_3 = "Alaaaaaaa...!";
+	SUBBOSS_PHRASE_4 = "¿Qué?";
+	SUBBOSS_PHRASE_5 = "¿Tú has salido en alguna película verdad?";
+	SUBBOSS_PHRASE_6 = "Grrrrr... niña, ¡no me toques las pelotas!";
+	SUBBOSS_PHRASE_7 = "Imposible... ya no las tienes...";
+	SUBBOSS_PHRASE_8 = "¡¡¡Arrrrrggg!!! ¡Te estás pasando un huevo! ¿Cómo deseas morir?";
+	SUBBOSS_PHRASE_9 = "En la cama... a los 80 años... pero tú ya no estarás para verlo... XD";
+	SUBBOSS_PHRASE_10 = "¡¡¡AAARRRGGGGHHH!!! ¡¡¡Multidestrucciooooóóón!!!!";
+};

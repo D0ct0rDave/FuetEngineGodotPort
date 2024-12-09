@@ -1,0 +1,66 @@
+ParticleSystem:
+{
+	Name = "bubble_bath";
+	Sprite = "bubble";
+	Freq = 40.0000;
+	EmisorRad:
+	{
+	};
+	EmisorPhase:
+	{
+	};
+	EmisorSpeed:
+	{
+	};
+	EmisorXOfs:
+	{
+		Min = -200.0000;
+		Max = 200.0000;
+	};
+	EmisorYOfs:
+	{
+		Max = -95.0000;
+	};
+	EmisorXSpeed:
+	{
+		Min = -5.0000;
+		Max = 5.0000;
+	};
+	EmisorYSpeed:
+	{
+	};
+	EmisorYAccel = -32.0000;
+	PartSize:
+	{
+		Min = 0.0625;
+		Max = 0.2500;
+	};
+	PartSizeSpeed:
+	{
+		Min = 0.1000;
+		Max = 0.2000;
+	};
+	PartAngle:
+	{
+	};
+	PartAngleSpeed:
+	{
+	};
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 3;
+		KeyFrame0:
+		{
+			a = 0.0000;
+		};
+		KeyFrame1:
+		{
+			Time = 0.1000;
+		};
+		KeyFrame2:
+		{
+			Time = 1.0000;
+		};
+	};
+};

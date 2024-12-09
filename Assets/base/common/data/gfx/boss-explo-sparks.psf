@@ -1,0 +1,76 @@
+ParticleSystem:
+{
+	Name = "boss-explo-sparks";
+	Sprite = "crystal_ball_spark";
+	Freq = 40.0000;
+	TTL = 0.5000;
+	EmisorRad:
+	{
+		Min = 10.0000;
+		Max = 10.0000;
+	};
+	EmisorPhase:
+	{
+		Min = -1.5708;
+		Max = 4.7124;
+	};
+	EmisorSpeed:
+	{
+		Min = 1000.0000;
+		Max = 1000.0000;
+	};
+	EmisorAccel = -750.0000;
+	EmisorXOfs:
+	{
+	};
+	EmisorYOfs:
+	{
+	};
+	EmisorXSpeed:
+	{
+	};
+	EmisorYSpeed:
+	{
+	};
+	PartSize:
+	{
+		Min = 1.0000;
+		Max = 1.0000;
+	};
+	PartSizeSpeed:
+	{
+		Min = -1.0000;
+		Max = -1.0000;
+	};
+	PartAngle:
+	{
+	};
+	PartAngleSpeed:
+	{
+	};
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 3;
+		KeyFrame0:
+		{
+			g = 0.0000;
+			b = 0.5020;
+		};
+		KeyFrame1:
+		{
+			g = 0.0000;
+			b = 0.5020;
+			a = 0.4510;
+			Time = 0.3000;
+		};
+		KeyFrame2:
+		{
+			r = 0.2510;
+			g = 0.0000;
+			b = 0.5020;
+			a = 0.0000;
+			Time = 0.5000;
+		};
+	};
+};

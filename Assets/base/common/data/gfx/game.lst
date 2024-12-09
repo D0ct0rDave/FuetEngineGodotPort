@@ -1,0 +1,75 @@
+SFXList:
+{
+	NumSFXs = 14;
+
+	SFX0:
+	{
+		Alias = "data/gfx/spell";
+		File  = "spell";
+	};
+	SFX1:
+	{
+		Alias = "data/gfx/explo";
+		File  = "explo";
+	};	
+	SFX2:
+	{
+		Alias = "TrailElem0";
+		File  = "soul";
+	};
+	SFX3:
+	{
+		Alias = "TrailElem1";
+		File  = "circulitos";
+	};	
+	SFX4:
+	{
+		Alias = "TrailElem2";
+		File  = "circulitos";
+	};	
+	SFX5:
+	{
+		Alias = "foot_step";
+		File  = "foot_step";
+	};
+	SFX6:
+	{
+		Alias = "skid";
+		File  = "ground_skid";
+	};
+	SFX7:
+	{
+		Alias = "cratebox-debris";
+		File  = "cratebox-debris";
+	};
+	SFX8:
+	{
+		Alias = "land_ground";
+		File  = "land_ground";
+	};
+	SFX9:
+	{
+		Alias = "sword_hit_sparks";
+		File  = "sword_hit_sparks";
+	};
+	SFX10:
+	{
+		Alias = "data/gfx/enemy_death";
+		File  = "data/gfx/enemy_death";
+	};	
+	SFX11:
+	{
+		Alias = "ghost-explo-fire";
+		File  = "data/gfx/ghost-explo-fire";
+	};
+	SFX12:
+	{
+		Alias = "ghost-explo-smoke";
+		File  = "data/gfx/ghost-explo-smoke";
+	};	
+	SFX13:
+	{
+		Alias = "ghost-explo-sparks";
+		File  = "data/gfx/ghost-explo-sparks";
+	};	
+};

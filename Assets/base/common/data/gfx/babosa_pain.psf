@@ -1,0 +1,63 @@
+ParticleSystem:
+{
+	Name = "babosa_debris";
+	Sprite = "baba_roja";
+	Freq = 25.0000;
+	TTL = 0.5000;
+	EmisorRad:
+	{
+	};
+	EmisorPhase:
+	{
+		Min = -1.5708;
+		Max = 4.7124;
+	};
+	EmisorSpeed:
+	{
+		Min = 225.0000;
+		Max = 375.0000;
+	};
+	EmisorXOfs:
+	{
+	};
+	EmisorYOfs:
+	{
+	};
+	EmisorXSpeed:
+	{
+	};
+	EmisorYSpeed:
+	{
+	};
+	EmisorYAccel = 600.0000;
+	PartSize:
+	{
+		Max = 0.1600;
+	};
+	PartSizeSpeed:
+	{
+	};
+	PartAngle:
+	{
+	};
+	PartAngleSpeed:
+	{
+	};
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 3;
+		KeyFrame0:
+		{
+		};
+		KeyFrame1:
+		{
+			Time = 0.4000;
+		};
+		KeyFrame2:
+		{
+			a = 0.0000;
+			Time = 0.5000;
+		};
+	};
+};

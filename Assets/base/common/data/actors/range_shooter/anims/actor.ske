@@ -1,0 +1,299 @@
+SkelNode:
+{
+	Type = "bone";
+	Name = "PIVOT";
+	Position:
+	{
+	};
+	BonePos:
+	{
+	};
+	Child0:
+	{
+		Type = "bone";
+		Name = "base";
+		Position:
+		{
+		};
+		BonePos:
+		{
+			y = -33.0000;
+		};
+		Child0:
+		{
+			Type = "group";
+			Name = "base_group";
+			Position:
+			{
+			};
+			Depth = 0.0100;
+			Child0:
+			{
+				Type = "sprite";
+				Name = "base_sprite_0";
+				Position:
+				{
+					x = 1.0000;
+				};
+				Depth = 0.0100;
+				Sprite = "../sprites/base";
+				SpriteAction = 0;
+			};
+			Child1:
+			{
+				Type = "sprite";
+				Name = "base_sprite_1";
+				Position:
+				{
+					x = 1.0000;
+					y = -167.0000;
+				};
+				Depth = 0.0200;
+				Sprite = "../sprites/base_rear";
+				SpriteAction = 0;
+			};
+			Child2:
+			{
+				Type = "sprite";
+				Name = "base_sprite_2";
+				Position:
+				{
+					x = 63.0000;
+					y = -175.0000;
+				};
+				Depth = 0.0100;
+				Sprite = "../sprites/mano_der";
+				SpriteAction = 0;
+			};
+			Child3:
+			{
+				Type = "sprite";
+				Name = "base_sprite_3";
+				Position:
+				{
+					x = 23.0000;
+					y = -148.0000;
+				};
+				Sprite = "../sprites/mano_izq";
+				SpriteAction = 0;
+			};
+			NumChildren = 4;
+		};
+		Child1:
+		{
+			Type = "group";
+			Name = "pj_head";
+			Position:
+			{
+			};
+			Child0:
+			{
+				Type = "bone";
+				Name = "head";
+				Position:
+				{
+				};
+				BonePos:
+				{
+					x = 10.0000;
+					y = -133.0000;
+				};
+				Child0:
+				{
+					Type = "group";
+					Name = "head_group";
+					Position:
+					{
+					};
+					Depth = 0.0100;
+					Child0:
+					{
+						Type = "sprite";
+						Name = "head_sprite_0";
+						Position:
+						{
+						};
+						Depth = 0.0200;
+						Sprite = "../sprites/head";
+						SpriteAction = 0;
+					};
+					Child1:
+					{
+						Type = "sprite";
+						Name = "head_sprite_1";
+						Position:
+						{
+							x = 17.0000;
+							y = -34.0000;
+						};
+						Depth = 0.0200;
+						Sprite = "../sprites/ojos";
+						SpriteAction = 0;
+					};
+					NumChildren = 2;
+				};
+				NumChildren = 1;
+			};
+			NumChildren = 1;
+		};
+		Child2:
+		{
+			Type = "group";
+			Name = "pj_wheel1";
+			Position:
+			{
+			};
+			Child0:
+			{
+				Type = "bone";
+				Name = "wheel1";
+				Position:
+				{
+				};
+				BonePos:
+				{
+					x = 60.0000;
+					y = 2.0000;
+				};
+				Child0:
+				{
+					Type = "group";
+					Name = "wheel1_group";
+					Position:
+					{
+					};
+					Depth = 0.0100;
+					Child0:
+					{
+						Type = "sprite";
+						Name = "wheel1_sprite_0";
+						Position:
+						{
+						};
+						Sprite = "../sprites/rueda";
+						SpriteAction = 0;
+					};
+					NumChildren = 1;
+				};
+				Child1:
+				{
+					Type = "bone";
+					Name = "wheel1_d";
+					Position:
+					{
+					};
+					BonePos:
+					{
+						x = 29.0000;
+					};
+				};
+				NumChildren = 2;
+			};
+			NumChildren = 1;
+		};
+		Child3:
+		{
+			Type = "group";
+			Name = "pj_wheel2";
+			Position:
+			{
+			};
+			Child0:
+			{
+				Type = "bone";
+				Name = "wheel2";
+				Position:
+				{
+				};
+				BonePos:
+				{
+					x = -60.0000;
+					y = 2.0000;
+				};
+				Child0:
+				{
+					Type = "group";
+					Name = "wheel2_group";
+					Position:
+					{
+					};
+					Depth = 0.0100;
+					Child0:
+					{
+						Type = "sprite";
+						Name = "wheel2_sprite_0";
+						Position:
+						{
+						};
+						Sprite = "../sprites/rueda";
+						SpriteAction = 0;
+					};
+					NumChildren = 1;
+				};
+				Child1:
+				{
+					Type = "bone";
+					Name = "wheel2_d";
+					Position:
+					{
+					};
+					BonePos:
+					{
+						x = 30.0000;
+					};
+				};
+				NumChildren = 2;
+			};
+			NumChildren = 1;
+		};
+		Child4:
+		{
+			Type = "bone";
+			Name = "tapa";
+			Position:
+			{
+			};
+			BonePos:
+			{
+				x = -93.0000;
+				y = -177.0000;
+			};
+			Child0:
+			{
+				Type = "group";
+				Name = "tapa_group";
+				Position:
+				{
+				};
+				Child0:
+				{
+					Type = "sprite";
+					Name = "tapa_sprite_0";
+					Position:
+					{
+					};
+					Angle = 0.3491;
+					Sprite = "../sprites/tapa";
+					SpriteAction = 0;
+				};
+				NumChildren = 1;
+			};
+			Child1:
+			{
+				Type = "bone";
+				Name = "tapa_d";
+				Position:
+				{
+				};
+				BonePos:
+				{
+					x = 170.8075;
+					y = -32.5459;
+				};
+			};
+			NumChildren = 2;
+		};
+		NumChildren = 5;
+	};
+	NumChildren = 1;
+};

@@ -1,0 +1,10 @@
+Dictionary:
+{
+	lb_Title = "Punkte";
+	RANKTYPE_LOCAL = "Lokale Highscores";
+	RANKTYPE_COUNTRY = "Länder-Highscores";
+	RANKTYPE_WORLD = "Welt-Highscores";
+	RANKTYPE_FRIENDS = "Freunde-Highscores";
+	RANKTYPE_WORLD_WEEKLY = "Wöchentliche Highscores";
+	lb_Accept = "Okay";
+};

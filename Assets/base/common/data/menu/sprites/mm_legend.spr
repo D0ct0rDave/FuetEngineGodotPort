@@ -1,0 +1,1 @@
+Sprite:{ Name="mm_legend"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "mm_legend"; Size:{ Width = 64.0; Height = 64.0; }; }; }; }; }; 

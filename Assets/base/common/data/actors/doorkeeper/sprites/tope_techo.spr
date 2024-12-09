@@ -1,0 +1,33 @@
+Sprite:
+{
+	Name = "tope_techo";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "tope_techo";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 0.5455;
+					};
+					Size:
+					{
+						Width = 48.0;
+						Height = 11.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

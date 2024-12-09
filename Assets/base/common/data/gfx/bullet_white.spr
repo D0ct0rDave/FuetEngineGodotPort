@@ -1,0 +1,35 @@
+Sprite:
+{
+	Name = "bullet_white";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		BlendMode = "ALPHAADD";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "bullet_white";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.6451;
+						y = 0.4966;
+					};
+					Size:
+					{
+						Width = 293.0;
+						Height = 147.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

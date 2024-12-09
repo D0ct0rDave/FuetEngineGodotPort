@@ -1,0 +1,75 @@
+ParticleSystemEditor:
+{
+	Editor:
+	{
+		Background = "../../gfx/background_shmup";
+		UseBackground = true;
+		BckColor:
+		{
+			r = 1.0000;
+			g = 1.0000;
+			b = 1.0000;
+			a = 1.0000;
+		};
+		CrossHair:
+		{
+			x = 448.0000;
+			y = 312.0000;
+		};
+		CurFrame = 2;
+	};
+	Sprite = "caballo_bullet_trail";
+	Freq = 150;
+	TTL = 3;
+	EmisorRadVal = 0;
+	EmisorRadRndN = 0;
+	EmisorRadRndP = 0;
+	EmisorPhaseVal = 90;
+	EmisorPhaseRndN = 0;
+	EmisorPhaseRndP = 0;
+	EmisorSpeedVal = 1000;
+	EmisorSpeedRndN = 0;
+	EmisorSpeedRndP = 0;
+	EmisorAccelVal = 90;
+	EmisorOfsXRndN = 0;
+	EmisorOfsXRndP = 0;
+	EmisorOfsYRndN = 0;
+	EmisorOfsYRndP = 0;
+	EmisorSpeedXRndN = 0;
+	EmisorSpeedXRndP = 0;
+	EmisorSpeedYRndN = 0;
+	EmisorSpeedYRndP = 0;
+	EmisorAccelXVal = 0;
+	EmisorAccelYVal = 0;
+	ParticleSizeVal = 300;
+	ParticleSizeRndN = 0;
+	ParticleSizeRndP = 0;
+	ParticleSizeSpeedVal = -100;
+	ParticleSizeSpeedRndN = -50;
+	ParticleSizeSpeedRndP = 50;
+	ParticleSizeAccelVal = 0;
+	ParticleAngleVal = 0;
+	ParticleAngleRndN = -180;
+	ParticleAngleRndP = 180;
+	ParticleAngleSpeedRndN = 0;
+	ParticleAngleSpeedRndP = 0;
+	ParticleAngleAccelVal = 0;
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 3;
+		KeyFrame0:
+		{
+			a = 0.0000;
+		};
+		KeyFrame1:
+		{
+			Time = 0.1000;
+		};
+		KeyFrame2:
+		{
+			a = 0.0000;
+			Time = 0.2000;
+		};
+	};
+};

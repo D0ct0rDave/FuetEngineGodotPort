@@ -1,0 +1,88 @@
+ParticleSystemEditor:
+{
+	Editor:
+	{
+		Background = "background";
+		BckColor:
+		{
+			r = 0.5000;
+			g = 0.5000;
+			b = 0.5000;
+			a = 1.0000;
+		};
+		CrossHair:
+		{
+			x = 270.0000;
+			y = 366.0000;
+		};
+		CurFrame = 30;
+	};
+	Sprite = "baba_roja2";
+	Freq = 25;
+	TTL = 30;
+	EmisorRadVal = 0;
+	EmisorRadRndN = 0;
+	EmisorRadRndP = 0;
+	EmisorPhaseVal = 0;
+	EmisorPhaseRndN = 0;
+	EmisorPhaseRndP = 0;
+	EmisorSpeedVal = 0;
+	EmisorSpeedRndN = 0;
+	EmisorSpeedRndP = 0;
+	EmisorAccelVal = 0;
+	EmisorOfsXRndN = 0;
+	EmisorOfsXRndP = 0;
+	EmisorOfsYRndN = 2;
+	EmisorOfsYRndP = 2;
+	EmisorSpeedXRndN = 0;
+	EmisorSpeedXRndP = 0;
+	EmisorSpeedYRndN = 0;
+	EmisorSpeedYRndP = 0;
+	EmisorAccelXVal = 0;
+	EmisorAccelYVal = 0;
+	ParticleSizeVal = 128;
+	ParticleSizeRndN = 0;
+	ParticleSizeRndP = 0;
+	ParticleSizeSpeedVal = 0;
+	ParticleSizeSpeedRndN = 0;
+	ParticleSizeSpeedRndP = 0;
+	ParticleSizeAccelVal = 0;
+	ParticleAngleVal = 0;
+	ParticleAngleRndN = 0;
+	ParticleAngleRndP = 0;
+	ParticleAngleSpeedRndN = 0;
+	ParticleAngleSpeedRndP = 0;
+	ParticleAngleAccelVal = 0;
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 6;
+		KeyFrame0:
+		{
+			a = 0.0000;
+		};
+		KeyFrame1:
+		{
+			a = 0.1255;
+			Time = 0.5000;
+		};
+		KeyFrame2:
+		{
+			Time = 1.0000;
+		};
+		KeyFrame3:
+		{
+			Time = 2.0000;
+		};
+		KeyFrame4:
+		{
+			a = 0.0000;
+			Time = 3.0000;
+		};
+		KeyFrame5:
+		{
+			a = 0.0000;
+			Time = 5.0000;
+		};
+	};
+};

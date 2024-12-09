@@ -1,0 +1,35 @@
+Sprite:
+{
+	Name = "pluma";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		BlendMode = "FOGADD";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "pluma";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.4706;
+						y = 0.8909;
+					};
+					Size:
+					{
+						Width = 34.0;
+						Height = 55.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

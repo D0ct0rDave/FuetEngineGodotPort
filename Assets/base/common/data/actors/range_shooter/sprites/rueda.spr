@@ -1,0 +1,1 @@
+Sprite:{ Name="rueda"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "rueda"; Size:{ Width = 68.0; Height = 67.0; }; }; }; }; }; 

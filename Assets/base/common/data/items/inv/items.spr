@@ -1,0 +1,384 @@
+Sprite:
+{
+	Name = "items";
+	NumActions = 10;
+	Action0:
+	{
+		Name = "none";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "pistola";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5152;
+						y = 0.5151;
+					};
+					Size:
+					{
+						Width = 33.0;
+						Height = 33.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6338;
+						IV = 0.5824;
+						FU = 0.8662;
+						FV = 0.9451;
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "ITEM_SMARTPHONE";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "smartphone";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 0.5030;
+					};
+					Size:
+					{
+						Width = 172.0;
+						Height = 165.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action2:
+	{
+		Name = "ITEM_JET_PACK";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "jet-pack";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 0.5031;
+					};
+					Size:
+					{
+						Width = 80.0;
+						Height = 163.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action3:
+	{
+		Name = "ITEM_CONCENTRATOR";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "medallon";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 0.5152;
+					};
+					Size:
+					{
+						Width = 132.0;
+						Height = 165.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action4:
+	{
+		Name = "ITEM_ORBE_ATTRACTOR";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "atractor";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 0.5031;
+					};
+					Size:
+					{
+						Width = 124.0;
+						Height = 161.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action5:
+	{
+		Name = "ITEM_SPEED_REDUCER";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "reductor";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5074;
+						y = 0.5030;
+					};
+					Size:
+					{
+						Width = 136.0;
+						Height = 165.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action6:
+	{
+		Name = "wc-paper";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "wcpaper";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5078;
+						y = 0.5041;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 121.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action7:
+	{
+		Name = "cc-star";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "cc-star";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 126.0;
+						Height = 120.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action8:
+	{
+		Name = "rolling";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 6;
+				Frame0:
+				{
+					Material = "orange";
+					BlendTime = 0.0980;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 128.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "cerezas";
+					BlendTime = 0.0980;
+					Pivot:
+					{
+						x = 0.5040;
+					};
+					Size:
+					{
+						Width = 125.0;
+						Height = 126.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame2:
+				{
+					Material = "wcpaper";
+					BlendTime = 0.0980;
+					Pivot:
+					{
+						x = 0.5078;
+						y = 0.5041;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 121.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame3:
+				{
+					Material = "cc-star";
+					BlendTime = 0.0980;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 126.0;
+						Height = 120.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame4:
+				{
+					Material = "fish";
+					BlendTime = 0.0980;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame5:
+				{
+					Material = "chilli";
+					BlendTime = 0.0980;
+					Pivot:
+					{
+						y = 0.5135;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 37.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action9:
+	{
+		Name = "ITEM_UNCLE_GUN";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "pistola";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 0.5165;
+					};
+					Size:
+					{
+						Width = 142.0;
+						Height = 91.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

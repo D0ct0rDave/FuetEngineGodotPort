@@ -1,0 +1,179 @@
+Sprite:
+{
+	Name = "cara_ojos";
+	NumActions = 3;
+	Action0:
+	{
+		Name = "idle";
+		PlayMode = "LOOP";
+		RandomStartTime = 4.00;
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 6;
+				Frame0:
+				{
+					Material = "ojo";
+					DelayTime = 4.5000;
+					Pivot:
+					{
+						y = 0.5088;
+					};
+					Size:
+					{
+						Width = 54.0;
+						Height = 57.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "ojo";
+					DelayTime = 0.1500;
+					Pivot:
+					{
+						y = 0.5088;
+					};
+					Size:
+					{
+						Width = 54.0;
+						Height = 57.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame2:
+				{
+					Material = "ojo2";
+					DelayTime = 0.1500;
+					Pivot:
+					{
+						y = 0.5088;
+					};
+					Size:
+					{
+						Width = 54.0;
+						Height = 57.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame3:
+				{
+					Material = "ojo3";
+					DelayTime = 0.3500;
+					Pivot:
+					{
+						y = 0.5088;
+					};
+					Size:
+					{
+						Width = 54.0;
+						Height = 57.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame4:
+				{
+					Material = "ojo2";
+					DelayTime = 0.1500;
+					Pivot:
+					{
+						y = 0.5088;
+					};
+					Size:
+					{
+						Width = 54.0;
+						Height = 57.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame5:
+				{
+					Material = "ojo";
+					DelayTime = 0.1500;
+					Pivot:
+					{
+						y = 0.5088;
+					};
+					Size:
+					{
+						Width = 54.0;
+						Height = 57.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "pain";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "ojo_pain";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 0.5088;
+					};
+					Size:
+					{
+						Width = 54.0;
+						Height = 57.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action2:
+	{
+		Name = "dead";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "ojo3";
+					DelayTime = 0.3500;
+					Pivot:
+					{
+						y = 0.5088;
+					};
+					Size:
+					{
+						Width = 54.0;
+						Height = 57.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

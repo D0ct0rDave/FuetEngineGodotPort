@@ -1,0 +1,33 @@
+Sprite:
+{
+	Name = "Chimenea_atras";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "Chimenea_atras";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 0.5026;
+					};
+					Size:
+					{
+						Width = 256.0;
+						Height = 193.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

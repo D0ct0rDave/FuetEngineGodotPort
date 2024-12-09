@@ -1,0 +1,63 @@
+Sprite:
+{
+	Name = "cabeza";
+	NumActions = 2;
+	Action0:
+	{
+		Name = "cabeza";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "cabeza";
+					BlendTime = 0.1000;
+					Pivot:
+					{
+						x = 0.1401;
+						y = 0.6610;
+					};
+					Size:
+					{
+						Width = 157.0;
+						Height = 177.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "cabeza-back";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					BlendTime = 0.1000;
+					Pivot:
+					{
+						x = 0.5321;
+						y = 0.8263;
+					};
+					Size:
+					{
+						Width = 218.0;
+						Height = 167.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

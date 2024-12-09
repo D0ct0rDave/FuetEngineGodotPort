@@ -1,0 +1,52 @@
+Cinematic:
+{
+	NumPlanes = 11;
+
+	Plane0:
+	{
+		Script = "present";
+	};
+	Plane1:
+	{
+		Script = "present1";
+	};
+	Plane2:
+	{
+		Script = "present2";
+	};
+	Plane3:
+	{
+		Script = "present3";
+	};
+	Plane4:
+	{
+		Script = "ask_rec_items1";
+	};
+	Plane5:
+	{
+		Script = "ask_rec_items2";
+	};
+	Plane6:
+	{
+		Script = "everything_ok";
+	};
+
+	Plane7:
+	{
+		Script = "nothing_ok";
+	};
+	
+	Plane8:
+	{
+		Script = "without_rec_items_yes";
+	};
+	
+	Plane9:
+	{
+		Script = "without_rec_items_no";
+	};
+	Plane10:
+	{
+		Script = "end_present";
+	};
+};

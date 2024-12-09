@@ -1,0 +1,11 @@
+Dictionary:
+{
+	lb_Title = "Voer uw naam in";
+	lb_Accept = "Accepteren";
+	ALREADY_EXISTS_MESSAGE = "Deze speler/nbestaat al. U zult een andere/nnaam moeten invoeren.";
+	INVALID_OFFENSIVE_MESSAGE = "Deze speler zal online verborgen zijn./n(offensive)/n/nWilt u deze toch/nnog steeds gebruiken?";
+	INVALID_5DIGITS_MESSAGE = "Deze speler zal online/nverborgen zijn./n(meer dan 5 digits)/n/nWilt u deze toch/nnog steeds gebruiken?";
+	lb_MB_YES = "Ja";
+	lb_MB_NO = "Nee";
+	lb_MB_OK = "Ok";
+};

@@ -1,0 +1,1632 @@
+Font:
+{
+	Type = "OpenType";
+	OpenType:
+	{
+		BaseWidth = 1023;
+		BaseHeight = 614;
+		DefCharWidth = 48;
+		DefCharHeight = 114;
+		SpaceCharWidth = 25;
+		// 0 character
+		C0:
+		{
+			ID = 48;
+			S = 1;
+			T = 1;
+			W = 52;
+			H = 72;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// 1 character
+		C1:
+		{
+			ID = 49;
+			S = 54;
+			T = 1;
+			W = 32;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// 2 character
+		C2:
+		{
+			ID = 50;
+			S = 87;
+			T = 1;
+			W = 50;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// 3 character
+		C3:
+		{
+			ID = 51;
+			S = 138;
+			T = 1;
+			W = 48;
+			H = 72;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// 4 character
+		C4:
+		{
+			ID = 52;
+			S = 187;
+			T = 1;
+			W = 56;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// 5 character
+		C5:
+		{
+			ID = 53;
+			S = 244;
+			T = 1;
+			W = 50;
+			H = 72;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// 6 character
+		C6:
+		{
+			ID = 54;
+			S = 295;
+			T = 1;
+			W = 53;
+			H = 72;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// 7 character
+		C7:
+		{
+			ID = 55;
+			S = 349;
+			T = 1;
+			W = 51;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// 8 character
+		C8:
+		{
+			ID = 56;
+			S = 401;
+			T = 1;
+			W = 54;
+			H = 72;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// 9 character
+		C9:
+		{
+			ID = 57;
+			S = 456;
+			T = 1;
+			W = 53;
+			H = 72;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// a character
+		C10:
+		{
+			ID = 97;
+			S = 510;
+			T = 1;
+			W = 45;
+			H = 54;
+			YOfs = 38;
+			LClass = 0;
+			RClass = 0;
+		};
+		// b character
+		C11:
+		{
+			ID = 98;
+			S = 556;
+			T = 1;
+			W = 50;
+			H = 72;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// c character
+		C12:
+		{
+			ID = 99;
+			S = 607;
+			T = 1;
+			W = 45;
+			H = 54;
+			YOfs = 38;
+			LClass = 0;
+			RClass = 0;
+		};
+		// d character
+		C13:
+		{
+			ID = 100;
+			S = 653;
+			T = 1;
+			W = 51;
+			H = 72;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// e character
+		C14:
+		{
+			ID = 101;
+			S = 705;
+			T = 1;
+			W = 51;
+			H = 54;
+			YOfs = 38;
+			LClass = 0;
+			RClass = 0;
+		};
+		// f character
+		C15:
+		{
+			ID = 102;
+			S = 757;
+			T = 1;
+			W = 39;
+			H = 72;
+			YOfs = 19;
+			LClass = 1;
+			RClass = 0;
+		};
+		// g character
+		C16:
+		{
+			ID = 103;
+			S = 797;
+			T = 1;
+			W = 51;
+			H = 71;
+			YOfs = 38;
+			LClass = 0;
+			RClass = 0;
+		};
+		// h character
+		C17:
+		{
+			ID = 104;
+			S = 849;
+			T = 1;
+			W = 47;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// i character
+		C18:
+		{
+			ID = 105;
+			S = 897;
+			T = 1;
+			W = 19;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// j character
+		C19:
+		{
+			ID = 106;
+			S = 917;
+			T = 1;
+			W = 28;
+			H = 87;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 2;
+		};
+		// k character
+		C20:
+		{
+			ID = 107;
+			S = 946;
+			T = 1;
+			W = 44;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// l character
+		C21:
+		{
+			ID = 108;
+			S = 991;
+			T = 1;
+			W = 17;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// m character
+		C22:
+		{
+			ID = 109;
+			S = 1;
+			T = 89;
+			W = 77;
+			H = 53;
+			YOfs = 38;
+			LClass = 0;
+			RClass = 0;
+		};
+		// n character
+		C23:
+		{
+			ID = 110;
+			S = 79;
+			T = 89;
+			W = 47;
+			H = 53;
+			YOfs = 38;
+			LClass = 0;
+			RClass = 0;
+		};
+		// o character
+		C24:
+		{
+			ID = 111;
+			S = 127;
+			T = 89;
+			W = 53;
+			H = 54;
+			YOfs = 38;
+			LClass = 0;
+			RClass = 0;
+		};
+		// p character
+		C25:
+		{
+			ID = 112;
+			S = 181;
+			T = 89;
+			W = 50;
+			H = 69;
+			YOfs = 38;
+			LClass = 0;
+			RClass = 0;
+		};
+		// q character
+		C26:
+		{
+			ID = 113;
+			S = 232;
+			T = 89;
+			W = 51;
+			H = 69;
+			YOfs = 38;
+			LClass = 0;
+			RClass = 0;
+		};
+		// r character
+		C27:
+		{
+			ID = 114;
+			S = 284;
+			T = 89;
+			W = 33;
+			H = 53;
+			YOfs = 38;
+			LClass = 0;
+			RClass = 0;
+		};
+		// s character
+		C28:
+		{
+			ID = 115;
+			S = 318;
+			T = 89;
+			W = 46;
+			H = 54;
+			YOfs = 38;
+			LClass = 0;
+			RClass = 0;
+		};
+		// t character
+		C29:
+		{
+			ID = 116;
+			S = 365;
+			T = 89;
+			W = 37;
+			H = 68;
+			YOfs = 24;
+			LClass = 0;
+			RClass = 0;
+		};
+		// u character
+		C30:
+		{
+			ID = 117;
+			S = 403;
+			T = 89;
+			W = 47;
+			H = 53;
+			YOfs = 39;
+			LClass = 0;
+			RClass = 0;
+		};
+		// v character
+		C31:
+		{
+			ID = 118;
+			S = 451;
+			T = 89;
+			W = 50;
+			H = 52;
+			YOfs = 39;
+			LClass = 0;
+			RClass = 0;
+		};
+		// w character
+		C32:
+		{
+			ID = 119;
+			S = 502;
+			T = 89;
+			W = 79;
+			H = 52;
+			YOfs = 39;
+			LClass = 0;
+			RClass = 0;
+		};
+		// x character
+		C33:
+		{
+			ID = 120;
+			S = 582;
+			T = 89;
+			W = 48;
+			H = 52;
+			YOfs = 39;
+			LClass = 0;
+			RClass = 0;
+		};
+		// y character
+		C34:
+		{
+			ID = 121;
+			S = 631;
+			T = 89;
+			W = 50;
+			H = 69;
+			YOfs = 39;
+			LClass = 0;
+			RClass = 0;
+		};
+		// z character
+		C35:
+		{
+			ID = 122;
+			S = 682;
+			T = 89;
+			W = 44;
+			H = 52;
+			YOfs = 39;
+			LClass = 0;
+			RClass = 0;
+		};
+		// A character
+		C36:
+		{
+			ID = 65;
+			S = 727;
+			T = 89;
+			W = 66;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// B character
+		C37:
+		{
+			ID = 66;
+			S = 794;
+			T = 89;
+			W = 55;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// C character
+		C38:
+		{
+			ID = 67;
+			S = 850;
+			T = 89;
+			W = 57;
+			H = 72;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// D character
+		C39:
+		{
+			ID = 68;
+			S = 908;
+			T = 89;
+			W = 62;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// E character
+		C40:
+		{
+			ID = 69;
+			S = 971;
+			T = 89;
+			W = 51;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// F character
+		C41:
+		{
+			ID = 70;
+			S = 1;
+			T = 162;
+			W = 47;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// G character
+		C42:
+		{
+			ID = 71;
+			S = 49;
+			T = 162;
+			W = 62;
+			H = 72;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// H character
+		C43:
+		{
+			ID = 72;
+			S = 112;
+			T = 162;
+			W = 58;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// I character
+		C44:
+		{
+			ID = 73;
+			S = 171;
+			T = 162;
+			W = 17;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// J character
+		C45:
+		{
+			ID = 74;
+			S = 189;
+			T = 162;
+			W = 46;
+			H = 72;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// K character
+		C46:
+		{
+			ID = 75;
+			S = 236;
+			T = 162;
+			W = 53;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// L character
+		C47:
+		{
+			ID = 76;
+			S = 290;
+			T = 162;
+			W = 49;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// M character
+		C48:
+		{
+			ID = 77;
+			S = 340;
+			T = 162;
+			W = 78;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// N character
+		C49:
+		{
+			ID = 78;
+			S = 419;
+			T = 162;
+			W = 60;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// O character
+		C50:
+		{
+			ID = 79;
+			S = 480;
+			T = 162;
+			W = 68;
+			H = 72;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// P character
+		C51:
+		{
+			ID = 80;
+			S = 549;
+			T = 162;
+			W = 54;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Q character
+		C52:
+		{
+			ID = 81;
+			S = 604;
+			T = 162;
+			W = 71;
+			H = 72;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// R character
+		C53:
+		{
+			ID = 82;
+			S = 676;
+			T = 162;
+			W = 55;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// S character
+		C54:
+		{
+			ID = 83;
+			S = 732;
+			T = 162;
+			W = 55;
+			H = 72;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// T character
+		C55:
+		{
+			ID = 84;
+			S = 788;
+			T = 162;
+			W = 58;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// U character
+		C56:
+		{
+			ID = 85;
+			S = 847;
+			T = 162;
+			W = 58;
+			H = 72;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// V character
+		C57:
+		{
+			ID = 86;
+			S = 906;
+			T = 162;
+			W = 63;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// W character
+		C58:
+		{
+			ID = 87;
+			S = 1;
+			T = 235;
+			W = 96;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// X character
+		C59:
+		{
+			ID = 88;
+			S = 98;
+			T = 235;
+			W = 60;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Y character
+		C60:
+		{
+			ID = 89;
+			S = 159;
+			T = 235;
+			W = 59;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Z character
+		C61:
+		{
+			ID = 90;
+			S = 219;
+			T = 235;
+			W = 54;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// . character
+		C62:
+		{
+			ID = 46;
+			S = 274;
+			T = 235;
+			W = 19;
+			H = 17;
+			YOfs = 74;
+			LClass = 0;
+			RClass = 0;
+		};
+		// : character
+		C63:
+		{
+			ID = 58;
+			S = 294;
+			T = 235;
+			W = 19;
+			H = 52;
+			YOfs = 39;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ; character
+		C64:
+		{
+			ID = 59;
+			S = 314;
+			T = 235;
+			W = 22;
+			H = 63;
+			YOfs = 38;
+			LClass = 0;
+			RClass = 0;
+		};
+		// , character
+		C65:
+		{
+			ID = 44;
+			S = 337;
+			T = 235;
+			W = 23;
+			H = 27;
+			YOfs = 74;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ¡ character
+		C66:
+		{
+			ID = 161;
+			S = 361;
+			T = 235;
+			W = 19;
+			H = 73;
+			YOfs = 34;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ¿ character
+		C67:
+		{
+			ID = 191;
+			S = 381;
+			T = 235;
+			W = 42;
+			H = 75;
+			YOfs = 34;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ? character
+		C68:
+		{
+			ID = 63;
+			S = 424;
+			T = 235;
+			W = 42;
+			H = 75;
+			YOfs = 16;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ! character
+		C69:
+		{
+			ID = 33;
+			S = 467;
+			T = 235;
+			W = 19;
+			H = 73;
+			YOfs = 18;
+			LClass = 0;
+			RClass = 0;
+		};
+		// - character
+		C70:
+		{
+			ID = 45;
+			S = 487;
+			T = 235;
+			W = 33;
+			H = 15;
+			YOfs = 56;
+			LClass = 0;
+			RClass = 0;
+		};
+		// _ character
+		C71:
+		{
+			ID = 95;
+			S = 521;
+			T = 235;
+			W = 55;
+			H = 14;
+			YOfs = 88;
+			LClass = 0;
+			RClass = 0;
+		};
+		// * character
+		C72:
+		{
+			ID = 42;
+			S = 577;
+			T = 235;
+			W = 45;
+			H = 39;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ' character
+		C73:
+		{
+			ID = 39;
+			S = 623;
+			T = 235;
+			W = 17;
+			H = 30;
+			YOfs = 18;
+			LClass = 0;
+			RClass = 0;
+		};
+		// + character
+		C74:
+		{
+			ID = 43;
+			S = 641;
+			T = 235;
+			W = 55;
+			H = 52;
+			YOfs = 39;
+			LClass = 0;
+			RClass = 0;
+		};
+		// / character
+		C75:
+		{
+			ID = 47;
+			S = 697;
+			T = 235;
+			W = 37;
+			H = 79;
+			YOfs = 20;
+			LClass = 1;
+			RClass = 3;
+		};
+		// $ character
+		C76:
+		{
+			ID = 36;
+			S = 735;
+			T = 235;
+			W = 55;
+			H = 88;
+			YOfs = 13;
+			LClass = 0;
+			RClass = 0;
+		};
+		// % character
+		C77:
+		{
+			ID = 37;
+			S = 791;
+			T = 235;
+			W = 80;
+			H = 74;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ( character
+		C78:
+		{
+			ID = 40;
+			S = 872;
+			T = 235;
+			W = 25;
+			H = 84;
+			YOfs = 17;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ) character
+		C79:
+		{
+			ID = 41;
+			S = 898;
+			T = 235;
+			W = 25;
+			H = 84;
+			YOfs = 17;
+			LClass = 0;
+			RClass = 0;
+		};
+		C80:
+		{
+			ID = 10;
+			S = 924;
+			T = 235;
+			YOfs = -256;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ñ character
+		C81:
+		{
+			ID = 241;
+			S = 925;
+			T = 235;
+			W = 47;
+			H = 69;
+			YOfs = 22;
+			LClass = 0;
+			RClass = 0;
+		};
+		// á character
+		C82:
+		{
+			ID = 225;
+			S = 973;
+			T = 235;
+			W = 45;
+			H = 76;
+			YOfs = 16;
+			LClass = 0;
+			RClass = 0;
+		};
+		// é character
+		C83:
+		{
+			ID = 233;
+			S = 1;
+			T = 324;
+			W = 51;
+			H = 76;
+			YOfs = 16;
+			LClass = 0;
+			RClass = 0;
+		};
+		// í character
+		C84:
+		{
+			ID = 237;
+			S = 53;
+			T = 324;
+			W = 28;
+			H = 75;
+			YOfs = 16;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ó character
+		C85:
+		{
+			ID = 243;
+			S = 82;
+			T = 324;
+			W = 53;
+			H = 76;
+			YOfs = 16;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ú character
+		C86:
+		{
+			ID = 250;
+			S = 136;
+			T = 324;
+			W = 47;
+			H = 76;
+			YOfs = 16;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ü character
+		C87:
+		{
+			ID = 252;
+			S = 184;
+			T = 324;
+			W = 47;
+			H = 71;
+			YOfs = 21;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Ñ character
+		C88:
+		{
+			ID = 209;
+			S = 232;
+			T = 324;
+			W = 60;
+			H = 88;
+			YOfs = 3;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Á character
+		C89:
+		{
+			ID = 193;
+			S = 293;
+			T = 324;
+			W = 66;
+			H = 94;
+			YOfs = -3;
+			LClass = 0;
+			RClass = 0;
+		};
+		// É character
+		C90:
+		{
+			ID = 201;
+			S = 360;
+			T = 324;
+			W = 51;
+			H = 94;
+			YOfs = -3;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Í character
+		C91:
+		{
+			ID = 205;
+			S = 412;
+			T = 324;
+			W = 28;
+			H = 94;
+			YOfs = -3;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Ó character
+		C92:
+		{
+			ID = 211;
+			S = 441;
+			T = 324;
+			W = 68;
+			H = 95;
+			YOfs = -3;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Ú character
+		C93:
+		{
+			ID = 218;
+			S = 510;
+			T = 324;
+			W = 58;
+			H = 95;
+			YOfs = -3;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Ü character
+		C94:
+		{
+			ID = 220;
+			S = 569;
+			T = 324;
+			W = 58;
+			H = 90;
+			YOfs = 2;
+			LClass = 0;
+			RClass = 0;
+		};
+		// à character
+		C95:
+		{
+			ID = 224;
+			S = 628;
+			T = 324;
+			W = 45;
+			H = 75;
+			YOfs = 17;
+			LClass = 0;
+			RClass = 0;
+		};
+		// è character
+		C96:
+		{
+			ID = 232;
+			S = 674;
+			T = 324;
+			W = 51;
+			H = 75;
+			YOfs = 17;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ì character
+		C97:
+		{
+			ID = 236;
+			S = 726;
+			T = 324;
+			W = 28;
+			H = 74;
+			YOfs = 17;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ò character
+		C98:
+		{
+			ID = 242;
+			S = 755;
+			T = 324;
+			W = 53;
+			H = 75;
+			YOfs = 17;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ù character
+		C99:
+		{
+			ID = 249;
+			S = 809;
+			T = 324;
+			W = 47;
+			H = 75;
+			YOfs = 17;
+			LClass = 0;
+			RClass = 0;
+		};
+		// À character
+		C100:
+		{
+			ID = 192;
+			S = 857;
+			T = 324;
+			W = 66;
+			H = 93;
+			YOfs = -2;
+			LClass = 0;
+			RClass = 0;
+		};
+		// È character
+		C101:
+		{
+			ID = 200;
+			S = 924;
+			T = 324;
+			W = 51;
+			H = 93;
+			YOfs = -2;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Ì character
+		C102:
+		{
+			ID = 204;
+			S = 976;
+			T = 324;
+			W = 28;
+			H = 93;
+			YOfs = -2;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Ò character
+		C103:
+		{
+			ID = 210;
+			S = 1;
+			T = 420;
+			W = 68;
+			H = 94;
+			YOfs = -2;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Ù character
+		C104:
+		{
+			ID = 217;
+			S = 70;
+			T = 420;
+			W = 58;
+			H = 94;
+			YOfs = -2;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Â character
+		C105:
+		{
+			ID = 194;
+			S = 129;
+			T = 420;
+			W = 66;
+			H = 95;
+			YOfs = -4;
+			LClass = 0;
+			RClass = 0;
+		};
+		// â character
+		C106:
+		{
+			ID = 226;
+			S = 196;
+			T = 420;
+			W = 45;
+			H = 77;
+			YOfs = 15;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Æ character
+		C107:
+		{
+			ID = 198;
+			S = 242;
+			T = 420;
+			W = 91;
+			H = 71;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// æ character
+		C108:
+		{
+			ID = 230;
+			S = 334;
+			T = 420;
+			W = 76;
+			H = 54;
+			YOfs = 38;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Ç character
+		C109:
+		{
+			ID = 199;
+			S = 411;
+			T = 420;
+			W = 57;
+			H = 88;
+			YOfs = 20;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ç character
+		C110:
+		{
+			ID = 231;
+			S = 469;
+			T = 420;
+			W = 45;
+			H = 70;
+			YOfs = 38;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Ê character
+		C111:
+		{
+			ID = 202;
+			S = 515;
+			T = 420;
+			W = 51;
+			H = 95;
+			YOfs = -4;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ê character
+		C112:
+		{
+			ID = 234;
+			S = 567;
+			T = 420;
+			W = 51;
+			H = 77;
+			YOfs = 15;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Ë character
+		C113:
+		{
+			ID = 203;
+			S = 619;
+			T = 420;
+			W = 51;
+			H = 89;
+			YOfs = 2;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ë character
+		C114:
+		{
+			ID = 235;
+			S = 671;
+			T = 420;
+			W = 51;
+			H = 71;
+			YOfs = 21;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Î character
+		C115:
+		{
+			ID = 206;
+			S = 723;
+			T = 420;
+			W = 35;
+			H = 95;
+			YOfs = -4;
+			LClass = 0;
+			RClass = 0;
+		};
+		// î character
+		C116:
+		{
+			ID = 238;
+			S = 759;
+			T = 420;
+			W = 35;
+			H = 76;
+			YOfs = 15;
+			LClass = 2;
+			RClass = 1;
+		};
+		// Ï character
+		C117:
+		{
+			ID = 207;
+			S = 795;
+			T = 420;
+			W = 36;
+			H = 89;
+			YOfs = 2;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ï character
+		C118:
+		{
+			ID = 239;
+			S = 832;
+			T = 420;
+			W = 36;
+			H = 70;
+			YOfs = 21;
+			LClass = 2;
+			RClass = 1;
+		};
+		// Ô character
+		C119:
+		{
+			ID = 212;
+			S = 869;
+			T = 420;
+			W = 68;
+			H = 96;
+			YOfs = -4;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ô character
+		C120:
+		{
+			ID = 244;
+			S = 938;
+			T = 420;
+			W = 53;
+			H = 77;
+			YOfs = 15;
+			LClass = 0;
+			RClass = 0;
+		};
+		C121:
+		{
+			ID = 0;
+			S = 1;
+			T = 517;
+			W = 86;
+			H = 73;
+			YOfs = 19;
+			LClass = 0;
+			RClass = 0;
+		};
+		C122:
+		{
+			ID = 0;
+			S = 88;
+			T = 517;
+			W = 82;
+			H = 54;
+			YOfs = 38;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Û character
+		C123:
+		{
+			ID = 219;
+			S = 171;
+			T = 517;
+			W = 58;
+			H = 96;
+			YOfs = -4;
+			LClass = 0;
+			RClass = 0;
+		};
+		// û character
+		C124:
+		{
+			ID = 251;
+			S = 230;
+			T = 517;
+			W = 47;
+			H = 77;
+			YOfs = 15;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Ä character
+		C125:
+		{
+			ID = 196;
+			S = 278;
+			T = 517;
+			W = 66;
+			H = 89;
+			YOfs = 2;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ä character
+		C126:
+		{
+			ID = 228;
+			S = 345;
+			T = 517;
+			W = 45;
+			H = 71;
+			YOfs = 21;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Ö character
+		C127:
+		{
+			ID = 214;
+			S = 391;
+			T = 517;
+			W = 68;
+			H = 90;
+			YOfs = 2;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ö character
+		C128:
+		{
+			ID = 246;
+			S = 460;
+			T = 517;
+			W = 53;
+			H = 71;
+			YOfs = 21;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ß character
+		C129:
+		{
+			ID = 223;
+			S = 514;
+			T = 517;
+			W = 55;
+			H = 73;
+			YOfs = 19;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Ã character
+		C130:
+		{
+			ID = 195;
+			S = 570;
+			T = 517;
+			W = 66;
+			H = 88;
+			YOfs = 3;
+			LClass = 0;
+			RClass = 0;
+		};
+		// ã character
+		C131:
+		{
+			ID = 227;
+			S = 637;
+			T = 517;
+			W = 45;
+			H = 70;
+			YOfs = 22;
+			LClass = 0;
+			RClass = 0;
+		};
+		// Õ character
+		C132:
+		{
+			ID = 213;
+			S = 683;
+			T = 517;
+			W = 68;
+			H = 89;
+			YOfs = 3;
+			LClass = 0;
+			RClass = 0;
+		};
+		// õ character
+		C133:
+		{
+			ID = 245;
+			S = 752;
+			T = 517;
+			W = 53;
+			H = 70;
+			YOfs = 22;
+			LClass = 0;
+			RClass = 0;
+		};
+		NumChars = 134;
+		KerningTable:
+		{
+			NumLClasses = 3;
+			NumRClasses = 4;
+			m1_0 = -1;
+			m2_0 = -3;
+			m0_1 = -3;
+			m1_1 = -4;
+			m2_1 = -6;
+			m0_2 = -2;
+			m1_2 = -3;
+			m2_2 = -5;
+			m0_3 = -1;
+			m1_3 = -2;
+			m2_3 = -4;
+		};
+	};
+};

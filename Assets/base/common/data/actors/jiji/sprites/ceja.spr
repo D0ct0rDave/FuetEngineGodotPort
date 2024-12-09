@@ -1,0 +1,1 @@
+Sprite:{ Name="ceja"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "ceja"; Size:{ Width = 91.0; Height = 47.0; }; }; }; }; }; 

@@ -1,0 +1,105 @@
+Sprite:
+{
+	Name = "explo";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		BlendMode = "ALPHAADD";
+		PlayMode = "LOOP";
+		RandomStartTime = 20.00;
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 4;
+				Frame0:
+				{
+					Material = "explo";
+					DelayTime = 5.0000;
+					Pivot:
+					{
+						y = 0.5536;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 112.0;
+					};
+					TexCoords:
+					{
+						FU = 0.5000;
+						FV = 0.4534;
+					};
+				};
+				Frame1:
+				{
+					Material = "explo";
+					DelayTime = 5.0000;
+					Pivot:
+					{
+						x = 0.4848;
+						y = 0.5003;
+					};
+					Size:
+					{
+						Width = 137.0;
+						Height = 123.6;
+					};
+					TexCoords:
+					{
+						IU = 0.5023;
+						IV = 0.0006;
+						FU = 1.0374;
+						FV = 0.5011;
+					};
+				};
+				Frame2:
+				{
+					Material = "explo";
+					DelayTime = 5.0000;
+					Pivot:
+					{
+						x = 0.5068;
+						y = 0.4969;
+					};
+					Size:
+					{
+						Width = 126.1;
+						Height = 123.6;
+					};
+					TexCoords:
+					{
+						IU = 0.0004;
+						IV = 0.4962;
+						FU = 0.4928;
+						FV = 0.9968;
+					};
+				};
+				Frame3:
+				{
+					Material = "explo";
+					DelayTime = 5.0000;
+					Pivot:
+					{
+						x = 0.5127;
+						y = 0.4790;
+					};
+					Size:
+					{
+						Width = 122.4;
+						Height = 123.6;
+					};
+					TexCoords:
+					{
+						IU = 0.5165;
+						IV = 0.5011;
+						FU = 0.9947;
+						FV = 1.0017;
+					};
+				};
+			};
+		};
+	};
+};

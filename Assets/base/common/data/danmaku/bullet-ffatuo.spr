@@ -1,0 +1,83 @@
+Sprite:
+{
+	Name = "bullet-ffatuo";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		BlendMode = "ALPHAADD";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 4;
+				Frame0:
+				{
+					Material = "bullet-ffatuo-1";
+					BlendTime = 0.2410;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 212.0;
+						Height = 212.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "bullet-ffatuo-2";
+					BlendTime = 0.2410;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 212.0;
+						Height = 212.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame2:
+				{
+					Material = "bullet-ffatuo-3";
+					BlendTime = 0.2410;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 212.0;
+						Height = 212.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame3:
+				{
+					Material = "bullet-ffatuo-4";
+					BlendTime = 0.2410;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 212.0;
+						Height = 212.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,450 @@
+SkelAction:
+{
+	Name = "flying";
+	NodeAction0:
+	{
+		NodeName = "PIVOT";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.7869;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				Value = 0.1652;
+			};
+			KeyFrame1:
+			{
+				Value = 0.2510;
+				Time = 0.3935;
+			};
+			KeyFrame2:
+			{
+				Value = 0.1652;
+				Time = 0.7869;
+			};
+		};
+	};
+	NodeAction1:
+	{
+		NodeName = "torso";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 5;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				x = 3.1045;
+				y = -13.6899;
+				Time = 0.1967;
+			};
+			KeyFrame2:
+			{
+				x = -3.9554;
+				y = -2.3297;
+				Time = 0.3935;
+			};
+			KeyFrame3:
+			{
+				x = 5.8978;
+				y = -17.9790;
+				Time = 0.5902;
+			};
+			KeyFrame4:
+			{
+				Time = 0.7869;
+			};
+		};
+	};
+	NodeAction2:
+	{
+		NodeName = "head";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				x = 49.5624;
+				y = 5.5396;
+			};
+			KeyFrame1:
+			{
+				x = 54.4904;
+				y = 13.2245;
+				Time = 0.3935;
+			};
+			KeyFrame2:
+			{
+				x = 49.5624;
+				y = 5.5396;
+				Time = 0.7869;
+			};
+		};
+	};
+	NodeAction3:
+	{
+		NodeName = "pj_head";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				Value = -0.2770;
+			};
+			KeyFrame1:
+			{
+				Value = -0.5169;
+				Time = 0.3935;
+			};
+			KeyFrame2:
+			{
+				Value = -0.2770;
+				Time = 0.7869;
+			};
+		};
+	};
+	NodeAction4:
+	{
+		NodeName = "r_wing";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.7869;
+			};
+		};
+	};
+	NodeAction5:
+	{
+		NodeName = "pj_r_wing";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = -0.0791;
+			};
+			KeyFrame1:
+			{
+				Value = -0.0791;
+				Time = 0.7869;
+			};
+		};
+	};
+	NodeAction6:
+	{
+		NodeName = "l_wing";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.7869;
+			};
+		};
+	};
+	NodeAction7:
+	{
+		NodeName = "pj_l_wing";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = 0.0625;
+			};
+			KeyFrame1:
+			{
+				Value = 0.0625;
+				Time = 0.7869;
+			};
+		};
+	};
+	NodeAction8:
+	{
+		NodeName = "c_wing";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.7869;
+			};
+		};
+	};
+	NodeAction9:
+	{
+		NodeName = "pj_c_wing";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.7869;
+			};
+		};
+	};
+	NodeAction10:
+	{
+		NodeName = "r_foot";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.7869;
+			};
+		};
+	};
+	NodeAction11:
+	{
+		NodeName = "pj_r_foot";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 5;
+			KeyFrame0:
+			{
+				Value = 0.5011;
+			};
+			KeyFrame1:
+			{
+				Value = -0.2771;
+				Time = 0.1967;
+			};
+			KeyFrame2:
+			{
+				Value = 0.3358;
+				Time = 0.3935;
+			};
+			KeyFrame3:
+			{
+				Value = -0.3459;
+				Time = 0.5902;
+			};
+			KeyFrame4:
+			{
+				Value = 0.5011;
+				Time = 0.7869;
+			};
+		};
+	};
+	NodeAction12:
+	{
+		NodeName = "l_foot";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.7869;
+			};
+		};
+	};
+	NodeAction13:
+	{
+		NodeName = "pj_l_foot";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 5;
+			KeyFrame0:
+			{
+				Value = -0.4296;
+			};
+			KeyFrame1:
+			{
+				Value = 0.4522;
+				Time = 0.1967;
+			};
+			KeyFrame2:
+			{
+				Value = -0.3474;
+				Time = 0.3935;
+			};
+			KeyFrame3:
+			{
+				Value = 0.5270;
+				Time = 0.5902;
+			};
+			KeyFrame4:
+			{
+				Value = -0.4296;
+				Time = 0.7869;
+			};
+		};
+	};
+	NodeAction14:
+	{
+		NodeName = "l_shoulder";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.7869;
+			};
+		};
+	};
+	NodeAction15:
+	{
+		NodeName = "pj_l_shoulder";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.7869;
+			};
+		};
+	};
+	NodeAction16:
+	{
+		NodeName = "r_shoulder";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.7869;
+			};
+		};
+	};
+	NodeAction17:
+	{
+		NodeName = "pj_r_shoulder";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.7869;
+			};
+		};
+	};
+	NodeAction18:
+	{
+		NodeName = "torso_sprite_0";
+		NodeAction = 5;
+	};
+	NodeAction19:
+	{
+		NodeName = "torso_sprite_1";
+		NodeAction = 0;
+	};
+	NodeAction20:
+	{
+		NodeName = "head_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction21:
+	{
+		NodeName = "head_sprite_1";
+		NodeAction = 10;
+	};
+	NodeAction22:
+	{
+		NodeName = "head_sprite_2";
+		NodeAction = 0;
+	};
+	NodeAction23:
+	{
+		NodeName = "head_sprite_3";
+		NodeAction = 0;
+	};
+	NodeAction24:
+	{
+		NodeName = "r_wing_sprite_0";
+		NodeAction = 1;
+	};
+	NodeAction25:
+	{
+		NodeName = "l_wing_sprite_0";
+		NodeAction = 2;
+	};
+	NodeAction26:
+	{
+		NodeName = "c_wing_sprite_0";
+		NodeAction = 4;
+	};
+	NodeAction27:
+	{
+		NodeName = "r_foot_sprite_0";
+		NodeAction = 9;
+	};
+	NodeAction28:
+	{
+		NodeName = "l_foot_sprite_0";
+		NodeAction = 8;
+	};
+	NodeAction29:
+	{
+		NodeName = "l_shoulder_sprite_0";
+		NodeAction = 6;
+	};
+	NodeAction30:
+	{
+		NodeName = "r_shoulder_sprite_0";
+		NodeAction = 7;
+	};
+	NumNodeActions = 31;
+};

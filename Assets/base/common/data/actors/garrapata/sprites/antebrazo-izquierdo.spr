@@ -1,0 +1,30 @@
+Sprite:
+{
+	Name = "antebrazo-izquierdo";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "antebrazo-izquierdo";
+					BlendTime = 0.0000;
+					Pivot:
+					{
+						x = 0.81481;
+						y = 0.09756;
+					};
+					Size:
+					{
+						Width = 54.0;
+						Height = 41.0;
+					};
+				};
+			};
+		};
+	};
+};

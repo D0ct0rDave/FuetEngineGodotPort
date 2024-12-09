@@ -1,0 +1,30 @@
+Sprite:
+{
+	Name = "antebrazo-der";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "antebrazo-der";
+					BlendTime = 0.0000;
+					Pivot:
+					{
+						x = 0.82192;
+						y = 0.48837;
+					};
+					Size:
+					{
+						Width = 146.0;
+						Height = 86.0;
+					};
+				};
+			};
+		};
+	};
+};

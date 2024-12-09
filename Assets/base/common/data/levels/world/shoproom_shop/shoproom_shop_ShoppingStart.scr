@@ -1,0 +1,44 @@
+Script : 
+{
+  Sequence = "A0,A1,A2,A3,A4";
+  A0 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "ShopKeeperSpeakItems";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = false;
+  };
+  A1 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/fx/ui/chikichiki";
+    Vol = 0.5;
+    Pan = 0.5;
+    Loop = true;
+    Wait = false;
+  };
+  A2 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_keeper_dlg";
+    Text = "SHOPKEEPER_SHOPPINGSTART1";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A3 : 
+  {
+    Type = "StopSound";
+    Sound = "data/sound/fx/ui/chikichiki";
+  };
+  A4 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "ShopKeeperIdleItems";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = false;
+  };
+};

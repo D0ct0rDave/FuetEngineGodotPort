@@ -1,0 +1,319 @@
+SkelAction:
+{
+	Name = "idle";
+	NodeAction0:
+	{
+		NodeName = "PIVOT";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				LerpFunc = "explog";
+			};
+			KeyFrame1:
+			{
+				Time = 0.4613;
+				LerpFunc = "explog";
+			};
+		};
+	};
+	NodeAction1:
+	{
+		NodeName = "base";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				LerpFunc = "explog";
+			};
+			KeyFrame1:
+			{
+				y = 5.0000;
+				Time = 0.2306;
+				LerpFunc = "explog";
+			};
+			KeyFrame2:
+			{
+				Time = 0.4613;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.4613;
+			};
+		};
+	};
+	NodeAction2:
+	{
+		NodeName = "head";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.4613;
+			};
+		};
+	};
+	NodeAction3:
+	{
+		NodeName = "pj_head";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.4613;
+			};
+		};
+	};
+	NodeAction4:
+	{
+		NodeName = "wheel1";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				LerpFunc = "explog";
+			};
+			KeyFrame1:
+			{
+				y = -5.0000;
+				Time = 0.2306;
+				LerpFunc = "explog";
+			};
+			KeyFrame2:
+			{
+				Time = 0.4613;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.4613;
+			};
+		};
+	};
+	NodeAction5:
+	{
+		NodeName = "pj_wheel1";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				LerpFunc = "explog";
+			};
+			KeyFrame1:
+			{
+				Time = 0.4613;
+			};
+		};
+	};
+	NodeAction6:
+	{
+		NodeName = "wheel2";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				LerpFunc = "explog";
+			};
+			KeyFrame1:
+			{
+				y = -5.0000;
+				Time = 0.2306;
+				LerpFunc = "explog";
+			};
+			KeyFrame2:
+			{
+				Time = 0.4613;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.4613;
+			};
+		};
+	};
+	NodeAction7:
+	{
+		NodeName = "pj_wheel2";
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				LerpFunc = "explog";
+			};
+			KeyFrame1:
+			{
+				Time = 0.4613;
+			};
+		};
+	};
+	NodeAction8:
+	{
+		NodeName = "tapa";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				LerpFunc = "explog";
+			};
+			KeyFrame1:
+			{
+				Time = 0.4613;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = 0.1905;
+			};
+			KeyFrame1:
+			{
+				Value = 0.1905;
+				Time = 0.4613;
+			};
+		};
+	};
+	NodeAction9:
+	{
+		NodeName = "tapa_d";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				LerpFunc = "explog";
+			};
+			KeyFrame1:
+			{
+				Time = 0.4613;
+			};
+		};
+	};
+	NodeAction10:
+	{
+		NodeName = "wheel1_d";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.4613;
+			};
+		};
+	};
+	NodeAction11:
+	{
+		NodeName = "wheel2_d";
+		PosFunc:
+		{
+			WrapMode = "Loop";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.4613;
+			};
+		};
+	};
+	NodeAction12:
+	{
+		NodeName = "base_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction13:
+	{
+		NodeName = "base_sprite_1";
+		NodeAction = 0;
+	};
+	NodeAction14:
+	{
+		NodeName = "base_sprite_2";
+		Visible = false;
+	};
+	NodeAction15:
+	{
+		NodeName = "base_sprite_3";
+		Visible = false;
+	};
+	NodeAction16:
+	{
+		NodeName = "head_sprite_0";
+		Visible = false;
+	};
+	NodeAction17:
+	{
+		NodeName = "head_sprite_1";
+		Visible = false;
+	};
+	NodeAction18:
+	{
+		NodeName = "wheel1_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction19:
+	{
+		NodeName = "wheel2_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction20:
+	{
+		NodeName = "tapa_sprite_0";
+		NodeAction = 0;
+	};
+	NumNodeActions = 21;
+};

@@ -1,0 +1,123 @@
+ParticleSystem:
+{
+	Name = "dollars";
+	Freq = 3.4000;
+	Sprite = "dollar";
+	XFunc:
+	{
+		RndOfs:
+		{
+			min = 0.0000;
+			max = 0.0000;
+		};
+		RndMult:
+		{
+		};
+		KFFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 1;
+			KeyFrame0:
+			{
+				Value = 144.0000;
+			};
+		};
+	};
+	YFunc:
+	{
+		RndOfs:
+		{
+			min = 0.0000;
+			max = 0.0000;
+		};
+		RndMult:
+		{
+		};
+		KFFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = -144.0000;
+			};
+			KeyFrame1:
+			{
+				Value = -320.0000;
+				Time = 1.0000;
+			};
+		};
+	};
+	ScaleFunc:
+	{
+		RndOfs:
+		{
+			min = 0.0000;
+			max = 0.0000;
+		};
+		RndMult:
+		{
+			min = 0.0000;
+			max = 0.0000;
+		};
+		KFFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				LerpFunc = "sin";
+			};
+			KeyFrame1:
+			{
+				Value = 1.0000;
+				Time = 1.0000;
+			};
+		};
+	};
+	AngleFunc:
+	{
+		RndOfs:
+		{
+			min = 0.0000;
+			max = 0.0000;
+		};
+		RndMult:
+		{
+			min = 0.0000;
+			max = 0.0000;
+		};
+		KFFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 1;
+			KeyFrame0:
+			{
+			};
+		};
+	};
+	ColorFunc:
+	{
+		RndMult:
+		{
+		};
+		KFFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				a = 0.0000;
+			};
+			KeyFrame1:
+			{
+				Time = 0.6000;
+			};
+			KeyFrame2:
+			{
+				a = 0.0000;
+				Time = 1.0000;
+			};
+		};
+	};
+};

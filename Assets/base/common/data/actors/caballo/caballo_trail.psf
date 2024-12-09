@@ -1,0 +1,88 @@
+ParticleSystem:
+{
+	Name = "caballo_trail";
+	Sprite = "caballo_part";
+	Freq = 12.2000;
+	TTL = 0.8000;
+	EmisorRad:
+	{
+	};
+	EmisorPhase:
+	{
+		Min = -0.0873;
+		Max = 0.0873;
+	};
+	EmisorSpeed:
+	{
+		Min = 435.0000;
+		Max = 435.0000;
+	};
+	EmisorAccel = 90.0000;
+	EmisorXOfs:
+	{
+	};
+	EmisorYOfs:
+	{
+	};
+	EmisorXSpeed:
+	{
+	};
+	EmisorYSpeed:
+	{
+	};
+	PartSize:
+	{
+		Min = 2.5000;
+		Max = 7.5000;
+	};
+	PartSizeSpeed:
+	{
+		Min = 1.9950;
+		Max = 2.2050;
+	};
+	PartSizeAccel = -6.0000;
+	PartAngle:
+	{
+		Min = -179.7382;
+		Max = 3.4034;
+	};
+	PartAngleSpeed:
+	{
+		Min = -3.9968;
+		Max = 4.9916;
+	};
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 5;
+		KeyFrame0:
+		{
+			a = 0.0000;
+		};
+		KeyFrame1:
+		{
+			r = 0.5020;
+			Time = 0.3000;
+		};
+		KeyFrame2:
+		{
+			r = 0.0000;
+			g = 0.5020;
+			Time = 0.5000;
+		};
+		KeyFrame3:
+		{
+			r = 0.0000;
+			g = 0.0000;
+			a = 0.0000;
+			Time = 0.8000;
+		};
+		KeyFrame4:
+		{
+			r = 0.0000;
+			g = 0.0000;
+			a = 0.0000;
+			Time = 1.0000;
+		};
+	};
+};

@@ -1,0 +1,76 @@
+ParticleSystem:
+{
+	Name = "candil-pared-fire";
+	Sprite = "jetpack_fire";
+	Freq = 4.0000;
+	EmisorRad:
+	{
+	};
+	EmisorPhase:
+	{
+		Min = 1.4835;
+		Max = 1.6581;
+	};
+	EmisorSpeed:
+	{
+	};
+	EmisorAccel = 50.0000;
+	EmisorXOfs:
+	{
+	};
+	EmisorYOfs:
+	{
+	};
+	EmisorXSpeed:
+	{
+	};
+	EmisorYSpeed:
+	{
+	};
+	PartSize:
+	{
+		Min = 0.0098;
+		Max = 0.0102;
+	};
+	PartSizeSpeed:
+	{
+		Min = 0.8550;
+		Max = 0.9180;
+	};
+	PartSizeAccel = -1.0000;
+	PartAngle:
+	{
+		Min = -179.7382;
+		Max = 3.4034;
+	};
+	PartAngleSpeed:
+	{
+	};
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 4;
+		KeyFrame0:
+		{
+			b = 0.0000;
+		};
+		KeyFrame1:
+		{
+			b = 0.5020;
+			Time = 0.1000;
+		};
+		KeyFrame2:
+		{
+			g = 0.5020;
+			b = 0.0000;
+			Time = 0.5000;
+		};
+		KeyFrame3:
+		{
+			g = 0.0000;
+			b = 0.0000;
+			a = 0.0000;
+			Time = 1.0000;
+		};
+	};
+};

@@ -1,0 +1,64 @@
+Sprite:
+{
+	Name = "VendedoraArtilugiosColor_brazo";
+	NumActions = 2;
+	Action0:
+	{
+		Name = "normal";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "VendedoraArtilugiosColor_brazo_base2";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.1530;
+						y = 0.9570;
+					};
+					Size:
+					{
+						Width = 281.0;
+						Height = 535.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "mostrando";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "VendedoraArtilugiosColor_brazo_mostrando";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.9145;
+						y = 0.8763;
+					};
+					Size:
+					{
+						Width = 608.0;
+						Height = 283.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

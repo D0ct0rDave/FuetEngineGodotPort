@@ -1,0 +1,113 @@
+HUD:
+{
+	FileVersion = 2;
+	NumElements = 2;
+	Element0:
+	{
+		Name = "ROOMPROPERTIES";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "ROOMPROPERTIES";
+			TAG = "ReverbFactor 0.0";
+			Position:
+			{
+				x = 732.7541;
+				y = 80.0138;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+		};
+	};
+	Element1:
+	{
+		Name = "LevelStart";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "LevelStart";
+			Position:
+			{
+			};
+			Depth = 1.0000;
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "OnEnterPage";
+			ObjAction0:
+			{
+				HUDObject = "LevelStart";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+						EventName = "SendMessage";
+						EventValue = "GMSG_SEND_GFLOW_NEW_LEVEL graveyard";
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+};

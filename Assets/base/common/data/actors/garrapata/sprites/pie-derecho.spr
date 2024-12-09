@@ -1,0 +1,30 @@
+Sprite:
+{
+	Name = "pie-derecho";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "pie-derecho";
+					BlendTime = 0.0000;
+					Pivot:
+					{
+						x = 0.32143;
+						y = 0.19355;
+					};
+					Size:
+					{
+						Width = 28.0;
+						Height = 31.0;
+					};
+				};
+			};
+		};
+	};
+};

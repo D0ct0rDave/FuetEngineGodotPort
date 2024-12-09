@@ -1,0 +1,33 @@
+Sprite:
+{
+	Name = "plants";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "plants";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 0.2802;
+					};
+					Size:
+					{
+						Width = 368.0;
+						Height = 364.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

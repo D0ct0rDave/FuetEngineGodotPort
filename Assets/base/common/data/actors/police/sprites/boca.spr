@@ -1,0 +1,492 @@
+Sprite:
+{
+	Name = "boca";
+	NumActions = 4;
+	Action0:
+	{
+		Name = "idle_civilian";
+		PlayMode = "LOOP";
+		RandomStartTime = 3.00;
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 5;
+				Frame0:
+				{
+					Material = "boca0";
+					DelayTime = 0.7952;
+					BlendTime = 0.0598;
+					Pivot:
+					{
+						y = 0.5385;
+					};
+					Size:
+					{
+						Width = 42.0;
+						Height = 13.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "boca1";
+					DelayTime = 0.7952;
+					BlendTime = 0.0598;
+					Pivot:
+					{
+						x = 0.5526;
+						y = 0.6250;
+					};
+					Size:
+					{
+						Width = 38.0;
+						Height = 8.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame2:
+				{
+					Material = "boca0";
+					DelayTime = 0.7952;
+					BlendTime = 0.0598;
+					Pivot:
+					{
+						y = 0.5385;
+					};
+					Size:
+					{
+						Width = 42.0;
+						Height = 13.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame3:
+				{
+					Material = "boca1";
+					DelayTime = 0.7952;
+					BlendTime = 0.0598;
+					Pivot:
+					{
+						x = 0.5556;
+						y = 0.6250;
+					};
+					Size:
+					{
+						Width = 38.0;
+						Height = 8.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame4:
+				{
+					Material = "boca0";
+					DelayTime = 0.7952;
+					BlendTime = 0.0598;
+					Pivot:
+					{
+						y = 0.5385;
+					};
+					Size:
+					{
+						Width = 42.0;
+						Height = 13.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "speak_civilian";
+		PlayMode = "LOOP";
+		RandomStartTime = 1.50;
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 7;
+				Frame0:
+				{
+					Material = "boca0";
+					DelayTime = 0.2020;
+					Pivot:
+					{
+						y = 0.5385;
+					};
+					Size:
+					{
+						Width = 42.0;
+						Height = 13.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "boca2";
+					DelayTime = 0.3020;
+					Pivot:
+					{
+						y = 0.5417;
+					};
+					Size:
+					{
+						Width = 42.0;
+						Height = 24.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame2:
+				{
+					Material = "boca0";
+					DelayTime = 0.2020;
+					Pivot:
+					{
+						y = 0.5385;
+					};
+					Size:
+					{
+						Width = 42.0;
+						Height = 13.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame3:
+				{
+					Material = "boca2";
+					DelayTime = 0.2020;
+					Pivot:
+					{
+						y = 0.5417;
+					};
+					Size:
+					{
+						Width = 42.0;
+						Height = 24.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame4:
+				{
+					Material = "boca0";
+					DelayTime = 0.2020;
+					Pivot:
+					{
+						y = 0.5385;
+					};
+					Size:
+					{
+						Width = 42.0;
+						Height = 13.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame5:
+				{
+					Material = "boca2";
+					DelayTime = 0.3020;
+					Pivot:
+					{
+						y = 0.5417;
+					};
+					Size:
+					{
+						Width = 42.0;
+						Height = 24.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame6:
+				{
+					Material = "boca0";
+					DelayTime = 0.4030;
+					Pivot:
+					{
+						y = 0.5385;
+					};
+					Size:
+					{
+						Width = 42.0;
+						Height = 13.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action2:
+	{
+		Name = "police1_idle_speak";
+		PlayMode = "LOOP";
+		RandomStartTime = 1.50;
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 7;
+				Frame0:
+				{
+					Material = "boca3";
+					DelayTime = 0.2020;
+					Pivot:
+					{
+						x = 1.1852;
+						y = 0.5714;
+					};
+					Size:
+					{
+						Width = 42.0;
+						Height = 13.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "boca4";
+					DelayTime = 0.3020;
+					Pivot:
+					{
+						x = 1.1944;
+						y = 0.5500;
+					};
+					Size:
+					{
+						Width = 36.0;
+						Height = 20.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame2:
+				{
+					Material = "boca3";
+					DelayTime = 0.2020;
+					Pivot:
+					{
+						x = 1.1852;
+						y = 0.5714;
+					};
+					Size:
+					{
+						Width = 42.0;
+						Height = 13.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame3:
+				{
+					Material = "boca4";
+					DelayTime = 0.2020;
+					Pivot:
+					{
+						x = 1.1944;
+						y = 0.5500;
+					};
+					Size:
+					{
+						Width = 36.0;
+						Height = 20.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame4:
+				{
+					Material = "boca3";
+					DelayTime = 0.2020;
+					Pivot:
+					{
+						x = 1.1852;
+						y = 0.5714;
+					};
+					Size:
+					{
+						Width = 42.0;
+						Height = 13.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame5:
+				{
+					Material = "boca4";
+					DelayTime = 0.3020;
+					Pivot:
+					{
+						x = 1.1944;
+						y = 0.5500;
+					};
+					Size:
+					{
+						Width = 36.0;
+						Height = 20.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame6:
+				{
+					Material = "boca3";
+					DelayTime = 0.4030;
+					Pivot:
+					{
+						x = 1.1852;
+						y = 0.5714;
+					};
+					Size:
+					{
+						Width = 42.0;
+						Height = 13.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action3:
+	{
+		Name = "police2_idle_laughing";
+		PlayMode = "LOOP";
+		RandomStartTime = 2.50;
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 5;
+				Frame0:
+				{
+					Material = "boca3";
+					DelayTime = 0.7952;
+					BlendTime = 0.0598;
+					Pivot:
+					{
+						x = 0.5185;
+						y = 0.5714;
+					};
+					Size:
+					{
+						Width = 42.0;
+						Height = 13.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "boca5";
+					DelayTime = 0.1460;
+					Pivot:
+					{
+						x = 0.5405;
+						y = 0.5238;
+					};
+					Size:
+					{
+						Width = 37.0;
+						Height = 21.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame2:
+				{
+					Material = "boca3";
+					DelayTime = 0.3638;
+					BlendTime = 0.0232;
+					Pivot:
+					{
+						x = 0.5185;
+						y = 0.5714;
+					};
+					Size:
+					{
+						Width = 42.0;
+						Height = 13.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame3:
+				{
+					Material = "boca5";
+					DelayTime = 1.2267;
+					BlendTime = 0.0783;
+					Pivot:
+					{
+						x = 0.5405;
+						y = 0.5238;
+					};
+					Size:
+					{
+						Width = 37.0;
+						Height = 21.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame4:
+				{
+					Material = "boca3";
+					DelayTime = 0.6364;
+					BlendTime = 0.0406;
+					Pivot:
+					{
+						x = 0.5185;
+						y = 0.5714;
+					};
+					Size:
+					{
+						Width = 42.0;
+						Height = 13.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

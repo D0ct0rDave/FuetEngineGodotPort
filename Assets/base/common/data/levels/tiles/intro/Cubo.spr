@@ -1,0 +1,33 @@
+Sprite:
+{
+	Name = "Cubo";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "Cubo";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 124.0;
+						Height = 123.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

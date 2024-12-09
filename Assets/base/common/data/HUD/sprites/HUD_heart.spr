@@ -1,0 +1,217 @@
+Sprite:
+{
+	Name = "HUD_heart";
+	NumActions = 5;
+	Action0:
+	{
+		Name = "normal";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 2;
+				Frame0:
+				{
+					Material = "HUD_heart2";
+					DelayTime = 1.5080;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 52.0;
+						Height = 42.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "HUD_heart1";
+					DelayTime = 0.3020;
+					Pivot:
+					{
+						y = 0.5111;
+					};
+					Size:
+					{
+						Width = 56.0;
+						Height = 45.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "50%";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 2;
+				Frame0:
+				{
+					Material = "HUD_heart2";
+					DelayTime = 0.6540;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 52.0;
+						Height = 42.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "HUD_heart1";
+					DelayTime = 0.3020;
+					Pivot:
+					{
+						y = 0.5111;
+					};
+					Size:
+					{
+						Width = 56.0;
+						Height = 45.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action2:
+	{
+		Name = "25%";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 2;
+				Frame0:
+				{
+					Material = "HUD_heart2";
+					DelayTime = 0.2020;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 52.0;
+						Height = 42.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "HUD_heart1";
+					DelayTime = 0.3020;
+					Pivot:
+					{
+						y = 0.5111;
+					};
+					Size:
+					{
+						Width = 56.0;
+						Height = 45.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action3:
+	{
+		Name = "12.5%";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 2;
+				Frame0:
+				{
+					Material = "HUD_heart2";
+					DelayTime = 0.1520;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 52.0;
+						Height = 42.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "HUD_heart1";
+					DelayTime = 0.1520;
+					Pivot:
+					{
+						y = 0.5111;
+					};
+					Size:
+					{
+						Width = 56.0;
+						Height = 45.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action4:
+	{
+		Name = "0%";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "HUD_heart_broken";
+					DelayTime = 0.6540;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 52.0;
+						Height = 42.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,63 @@
+Sprite:
+{
+	Name = "camisa";
+	NumActions = 2;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "camisa";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5907;
+						y = 0.7625;
+					};
+					Size:
+					{
+						Width = 193.0;
+						Height = 160.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "camisa";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5907;
+						y = 0.7643;
+					};
+					Size:
+					{
+						Width = -193.0;
+						Height = 157.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

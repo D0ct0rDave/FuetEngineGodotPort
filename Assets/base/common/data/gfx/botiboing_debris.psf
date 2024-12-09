@@ -1,0 +1,67 @@
+ParticleSystem:
+{
+	Name = "botiboing_debris";
+	Sprite = "botiboing_debris";
+	Freq = 5.0000;
+	EmisorRad:
+	{
+	};
+	EmisorPhase:
+	{
+	};
+	EmisorSpeed:
+	{
+	};
+	EmisorXOfs:
+	{
+	};
+	EmisorYOfs:
+	{
+	};
+	EmisorXSpeed:
+	{
+		Min = -5.0000;
+		Max = 5.0000;
+	};
+	EmisorYSpeed:
+	{
+		Min = 16.0000;
+		Max = 48.0000;
+	};
+	EmisorYAccel = 3.0000;
+	PartSize:
+	{
+		Min = 1.0000;
+		Max = 1.0000;
+	};
+	PartSizeSpeed:
+	{
+	};
+	PartAngle:
+	{
+		Min = -180.0000;
+		Max = 3.1416;
+	};
+	PartAngleSpeed:
+	{
+		Min = 1.0472;
+		Max = 1.0472;
+	};
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 3;
+		KeyFrame0:
+		{
+		};
+		KeyFrame1:
+		{
+			Time = 0.8000;
+		};
+		KeyFrame2:
+		{
+			a = 0.0000;
+			Time = 1.0000;
+		};
+	};
+};

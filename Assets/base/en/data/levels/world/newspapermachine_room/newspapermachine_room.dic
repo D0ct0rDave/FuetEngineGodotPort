@@ -1,0 +1,11 @@
+Dictionary:
+{
+	room_100-100_TITLE = "--";
+	room_100-100_CONTENTS = "--";
+	room_100-100_FAKE_TITLE = "--";
+	room_099-100_TITLE = "In case of doubt UP!";
+	room_099-100_CONTENTS = "Estas son las palabras textuales usadas por el Creador para explicar que ante una situación de duda, pulsar la tecla ARRIBA puede ser la clave. Curioso teniendo en cuenta que era lo que había que hacer para leer esto...";
+	room_096-100_TITLE = "¡En este palacio se paga hasta por respirar!";
+	room_096-100_CONTENTS = "El representante de las habitaciones del Palacio de la Confusión, manifiesta el descontento general por tener que pagar por el más mínimo asunto dentro del juego...";
+	room_096-100_FAKE_TITLE = "El gobierno vuelve a congelar los salarios ahora que se acerca el verano.";
+};

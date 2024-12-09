@@ -1,0 +1,64 @@
+Sprite:
+{
+	Name = "Papel";
+	NumActions = 2;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "PapelLleno";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5070;
+						y = 0.0000;
+					};
+					Size:
+					{
+						Width = 71.0;
+						Height = 80.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "PAPEL_VACIO";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "PapelTerminado";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5070;
+						y = 0.0000;
+					};
+					Size:
+					{
+						Width = 71.0;
+						Height = 81.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

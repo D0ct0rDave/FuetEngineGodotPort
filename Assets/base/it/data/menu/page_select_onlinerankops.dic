@@ -1,0 +1,8 @@
+Dictionary:
+{
+	lb_Title = "Opzioni online";
+	lb_MSG_BOX1 = "Connettendoti,/npotai inviare il tuo/nnome e punteggio record/ne visualizzare quelli/ndegli altri giocatori.";
+	lb_MSG_BOX2 = "Vuoi connetterti/ndurante questa/nsessione di gioco?";
+	lb_MB_YES = "Sì";
+	lb_MB_NO = "No";
+};

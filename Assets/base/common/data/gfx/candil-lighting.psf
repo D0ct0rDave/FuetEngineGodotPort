@@ -1,0 +1,62 @@
+ParticleSystem:
+{
+	Name = "candil-lighting";
+	Sprite = "light_exp";
+	EmisorRad:
+	{
+	};
+	EmisorPhase:
+	{
+		Max = 0.0873;
+	};
+	EmisorSpeed:
+	{
+	};
+	EmisorXOfs:
+	{
+	};
+	EmisorYOfs:
+	{
+	};
+	EmisorXSpeed:
+	{
+	};
+	EmisorYSpeed:
+	{
+	};
+	PartSize:
+	{
+		Min = 10.0000;
+		Max = 10.0000;
+	};
+	PartSizeSpeed:
+	{
+		Min = 0.1000;
+		Max = 0.1000;
+	};
+	PartAngle:
+	{
+	};
+	PartAngleSpeed:
+	{
+	};
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 3;
+		KeyFrame0:
+		{
+			b = 0.7922;
+			a = 0.7529;
+		};
+		KeyFrame1:
+		{
+			Time = 0.5000;
+		};
+		KeyFrame2:
+		{
+			a = 0.7529;
+			Time = 1.0000;
+		};
+	};
+};

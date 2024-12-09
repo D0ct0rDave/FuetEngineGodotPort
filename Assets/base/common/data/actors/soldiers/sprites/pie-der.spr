@@ -1,0 +1,30 @@
+Sprite:
+{
+	Name = "pie-der";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "pie-der";
+					BlendTime = 0.0000;
+					Pivot:
+					{
+						x = 0.69903;
+						y = 0.30769;
+					};
+					Size:
+					{
+						Width = 103.0;
+						Height = 52.0;
+					};
+				};
+			};
+		};
+	};
+};

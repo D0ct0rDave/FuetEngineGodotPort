@@ -1,0 +1,82 @@
+ParticleSystemEditor:
+{
+	Editor:
+	{
+		Background = "background_shmup";
+		UseBackground = true;
+		BckColor:
+		{
+			r = 1.0000;
+			g = 1.0000;
+			b = 1.0000;
+			a = 1.0000;
+		};
+		CrossHair:
+		{
+			x = 475.0000;
+			y = 380.0000;
+		};
+		CurFrame = 5;
+	};
+	Sprite = "crystal_ball_spark";
+	Freq = 400;
+	TTL = 5;
+	EmisorRadVal = 10;
+	EmisorRadRndN = 0;
+	EmisorRadRndP = 0;
+	EmisorPhaseVal = 90;
+	EmisorPhaseRndN = -180;
+	EmisorPhaseRndP = 180;
+	EmisorSpeedVal = 1000;
+	EmisorSpeedRndN = 0;
+	EmisorSpeedRndP = 0;
+	EmisorAccelVal = -750;
+	EmisorOfsXRndN = 0;
+	EmisorOfsXRndP = 0;
+	EmisorOfsYRndN = 0;
+	EmisorOfsYRndP = 0;
+	EmisorSpeedXRndN = 0;
+	EmisorSpeedXRndP = 0;
+	EmisorSpeedYRndN = 0;
+	EmisorSpeedYRndP = 0;
+	EmisorAccelXVal = 0;
+	EmisorAccelYVal = 0;
+	ParticleSizeVal = 100;
+	ParticleSizeRndN = 0;
+	ParticleSizeRndP = 0;
+	ParticleSizeSpeedVal = -10;
+	ParticleSizeSpeedRndN = 0;
+	ParticleSizeSpeedRndP = 0;
+	ParticleSizeAccelVal = 0;
+	ParticleAngleVal = 0;
+	ParticleAngleRndN = 0;
+	ParticleAngleRndP = 0;
+	ParticleAngleSpeedRndN = 0;
+	ParticleAngleSpeedRndP = 0;
+	ParticleAngleAccelVal = 0;
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 3;
+		KeyFrame0:
+		{
+			g = 0.0000;
+			b = 0.5020;
+		};
+		KeyFrame1:
+		{
+			g = 0.0000;
+			b = 0.5020;
+			a = 0.4510;
+			Time = 0.3000;
+		};
+		KeyFrame2:
+		{
+			r = 0.2510;
+			g = 0.0000;
+			b = 0.5020;
+			a = 0.0000;
+			Time = 0.5000;
+		};
+	};
+};

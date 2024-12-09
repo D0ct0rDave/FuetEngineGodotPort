@@ -1,0 +1,158 @@
+ParticleSystem:
+{
+	Name = "explo";
+	Freq = 90.0000;
+	Sprite = "smoke-fire";
+	XFunc:
+	{
+		RndOfs:
+		{
+			min = 0.0000;
+			max = 0.0000;
+		};
+		RndMult:
+		{
+			min = -0.2000;
+			max = 0.2000;
+		};
+		KFFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = 240.0000;
+			};
+			KeyFrame1:
+			{
+				Value = 1079.0000;
+				Time = 1.0000;
+			};
+		};
+	};
+	YFunc:
+	{
+		RndOfs:
+		{
+			min = 0.0000;
+			max = 0.0000;
+		};
+		RndMult:
+		{
+			min = -0.2000;
+			max = 0.2000;
+		};
+		KFFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = 240.0000;
+			};
+			KeyFrame1:
+			{
+				Value = 1079.0000;
+				Time = 1.0000;
+			};
+		};
+	};
+	ScaleFunc:
+	{
+		RndOfs:
+		{
+			min = 0.0000;
+			max = 0.0000;
+		};
+		RndMult:
+		{
+			min = 0.5000;
+		};
+		KFFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				Value = 0.7000;
+			};
+			KeyFrame1:
+			{
+				Value = 2.0000;
+				Time = 0.8000;
+			};
+			KeyFrame2:
+			{
+				Value = 1.0000;
+				Time = 1.0000;
+			};
+		};
+	};
+	AngleFunc:
+	{
+		RndOfs:
+		{
+			min = 0.0000;
+			max = 0.0000;
+		};
+		RndMult:
+		{
+			min = -0.8000;
+			max = 0.8000;
+		};
+		KFFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = 3.1416;
+			};
+			KeyFrame1:
+			{
+				Value = -3.1590;
+				Time = 1.0000;
+			};
+		};
+	};
+	ColorFunc:
+	{
+		RndMult:
+		{
+			min = 0.0100;
+		};
+		KFFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 5;
+			KeyFrame0:
+			{
+				a = 0.0000;
+			};
+			KeyFrame1:
+			{
+				b = 0.0000;
+				Time = 0.1000;
+			};
+			KeyFrame2:
+			{
+				g = 0.0000;
+				b = 0.0000;
+				Time = 0.5000;
+			};
+			KeyFrame3:
+			{
+				g = 0.0000;
+				b = 0.4000;
+				a = 0.4118;
+				Time = 0.7000;
+			};
+			KeyFrame4:
+			{
+				g = 0.0000;
+				a = 0.0000;
+				Time = 1.0000;
+			};
+		};
+	};
+};

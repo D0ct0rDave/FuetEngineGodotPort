@@ -1,0 +1,974 @@
+Script : 
+{
+  Sequence = "A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,A16,A17,A18,A19,A20,A21,A22,A23,A24,A25,A26,A27,A28,A29,A30,A31,A32,A33,A34,A35,A36,A37,A38,A39,A40,A41,A42,A43,A44,A45,A46,A47,A48,A49,A50,A51,A52,A53,A54,A55,A56,A57,A58,A59,A60,A61,A62,A63,A64,A65,A66,A67,A68,A69,A70,A71,A72,A73,A74,A75,A76,A77,A78,A79,A80,A81,A82,A83,A84,A85,A86,A87,A88,A89,A90,A91,A92,A93,A94,A95,A96,A97,A98,A99,A100,A101,A102,A103,A104,A105,A106,A107,A108,A109,A110,A111,A112,A113,A114,A115,A116,A117,A118,A119,A120,A121,A122,A123,A124,A125,A126,A127,A128,A129,A130,A131,A132,A133,A134,A135,A136,A137,A138,A139";
+  A0 : 
+  {
+    Type = "SetActorState";
+    Actor = "pl_Player_Flyer";
+    State = 100;
+  };
+  A1 : 
+  {
+    Type = "SpawnActor";
+    Actor = "shen_caballo";
+    Pos : 
+    {
+      x = 3000.0;
+      y = 1800.0;
+    };
+  };
+  A2 : 
+  {
+    Type = "MoveActorTo";
+    Actor = "shen_caballo";
+    FinalPos : 
+    {
+      x = 4500.0;
+      y = 800.0;
+    };
+    Time = 0.0;
+  };
+  A3 : 
+  {
+    Type = "SetActorState";
+    Actor = "shen_caballo";
+    State = 100;
+  };
+  A4 : 
+  {
+    Type = "FadeSoundLine";
+    Line = 2;
+    Vol = 0.400000006;
+    Time = 1.0;
+    Wait = false;
+  };
+  A5 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "ShowCinemascope";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = false;
+  };
+  A6 : 
+  {
+    Type = "MoveActorTo";
+    Actor = "shen_caballo";
+    FinalPos : 
+    {
+      x = 2500.0;
+      y = 800.0;
+    };
+    Time = 1.5;
+  };
+  A7 : 
+  {
+    Type = "MoveActorTo";
+    Actor = "pl_Player_Flyer";
+    FinalPos : 
+    {
+      x = 400.0;
+      y = 900.0;
+    };
+    Time = 1.5;
+  };
+  A8 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "HideHUD";
+    AutoShow = true;
+    AutoHide = true;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A9 : 
+  {
+    Type = "SetHUDElemPos";
+    Elem = "MADialog";
+    Pos : 
+    {
+      x = 325.0;
+      y = 500.0;
+    };
+  };
+  A10 : 
+  {
+    Type = "SetHUDElemPos";
+    Elem = "BossDialog";
+    Pos : 
+    {
+      x = 1200.0;
+      y = 400.0;
+    };
+  };
+  A11 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_MADialog";
+    LetterByLetter = false;
+    LetterTime = 0.05000000075;
+  };
+  A12 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A13 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogOpen";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A14 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "lb_MADialog";
+  };
+  A15 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/fx/ui/chikichiki";
+    Vol = 0.5;
+    Pan = 0.5;
+    Loop = true;
+    Wait = false;
+  };
+  A16 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_MADialog";
+    Text = "SUBBOSS_PHRASE_1";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A17 : 
+  {
+    Type = "StopSound";
+    Sound = "data/sound/fx/ui/chikichiki";
+  };
+  A18 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A19 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogIdleMessage";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = true;
+  };
+  A20 : 
+  {
+    Type = "InfiniteStop";
+  };
+  A21 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A22 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogClose";
+    AutoShow = true;
+    AutoHide = true;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A23 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_BossDialogContinue";
+  };
+  A24 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_BossDialog";
+    LetterByLetter = false;
+    LetterTime = 0.05000000075;
+  };
+  A25 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "BossDialogOpen";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = true;
+  };
+  A26 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "lb_BossDialog";
+  };
+  A27 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/fx/ui/chikichiki";
+    Vol = 0.5;
+    Pan = 0.5;
+    Loop = true;
+    Wait = false;
+  };
+  A28 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_BossDialog";
+    Text = "SUBBOSS_PHRASE_2";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A29 : 
+  {
+    Type = "StopSound";
+    Sound = "data/sound/fx/ui/chikichiki";
+  };
+  A30 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "ic_BossDialogContinue";
+  };
+  A31 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "BossDialogIdleMessage";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = true;
+  };
+  A32 : 
+  {
+    Type = "InfiniteStop";
+  };
+  A33 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_BossDialogContinue";
+  };
+  A34 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "BossDialogClose";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = true;
+  };
+  A35 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_MADialog";
+    LetterByLetter = false;
+    LetterTime = 0.05000000075;
+  };
+  A36 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A37 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogOpen";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A38 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "lb_MADialog";
+  };
+  A39 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/fx/ui/chikichiki";
+    Vol = 0.5;
+    Pan = 0.5;
+    Loop = true;
+    Wait = false;
+  };
+  A40 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_MADialog";
+    Text = "SUBBOSS_PHRASE_3";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A41 : 
+  {
+    Type = "StopSound";
+    Sound = "data/sound/fx/ui/chikichiki";
+  };
+  A42 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A43 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogIdleMessage";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = true;
+  };
+  A44 : 
+  {
+    Type = "InfiniteStop";
+  };
+  A45 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A46 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogClose";
+    AutoShow = true;
+    AutoHide = true;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A47 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_BossDialogContinue";
+  };
+  A48 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_BossDialog";
+    LetterByLetter = false;
+    LetterTime = 0.05000000075;
+  };
+  A49 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "BossDialogOpen";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = true;
+  };
+  A50 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "lb_BossDialog";
+  };
+  A51 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/fx/ui/chikichiki";
+    Vol = 0.5;
+    Pan = 0.5;
+    Loop = true;
+    Wait = false;
+  };
+  A52 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_BossDialog";
+    Text = "SUBBOSS_PHRASE_4";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A53 : 
+  {
+    Type = "StopSound";
+    Sound = "data/sound/fx/ui/chikichiki";
+  };
+  A54 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "ic_BossDialogContinue";
+  };
+  A55 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "BossDialogIdleMessage";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = true;
+  };
+  A56 : 
+  {
+    Type = "InfiniteStop";
+  };
+  A57 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_BossDialogContinue";
+  };
+  A58 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "BossDialogClose";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = true;
+  };
+  A59 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_MADialog";
+    LetterByLetter = false;
+    LetterTime = 0.05000000075;
+  };
+  A60 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A61 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogOpen";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A62 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "lb_MADialog";
+  };
+  A63 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/fx/ui/chikichiki";
+    Vol = 0.5;
+    Pan = 0.5;
+    Loop = true;
+    Wait = false;
+  };
+  A64 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_MADialog";
+    Text = "SUBBOSS_PHRASE_5";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A65 : 
+  {
+    Type = "StopSound";
+    Sound = "data/sound/fx/ui/chikichiki";
+  };
+  A66 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A67 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogIdleMessage";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = true;
+  };
+  A68 : 
+  {
+    Type = "InfiniteStop";
+  };
+  A69 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A70 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogClose";
+    AutoShow = true;
+    AutoHide = true;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A71 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_BossDialogContinue";
+  };
+  A72 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_BossDialog";
+    LetterByLetter = false;
+    LetterTime = 0.05000000075;
+  };
+  A73 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "BossDialogOpen";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = true;
+  };
+  A74 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "lb_BossDialog";
+  };
+  A75 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/fx/ui/chikichiki";
+    Vol = 0.5;
+    Pan = 0.5;
+    Loop = true;
+    Wait = false;
+  };
+  A76 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_BossDialog";
+    Text = "SUBBOSS_PHRASE_6";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A77 : 
+  {
+    Type = "StopSound";
+    Sound = "data/sound/fx/ui/chikichiki";
+  };
+  A78 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "ic_BossDialogContinue";
+  };
+  A79 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "BossDialogIdleMessage";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = true;
+  };
+  A80 : 
+  {
+    Type = "InfiniteStop";
+  };
+  A81 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_BossDialogContinue";
+  };
+  A82 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "BossDialogClose";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = true;
+  };
+  A83 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_MADialog";
+    LetterByLetter = false;
+    LetterTime = 0.05000000075;
+  };
+  A84 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A85 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogOpen";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A86 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "lb_MADialog";
+  };
+  A87 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/fx/ui/chikichiki";
+    Vol = 0.5;
+    Pan = 0.5;
+    Loop = true;
+    Wait = false;
+  };
+  A88 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_MADialog";
+    Text = "SUBBOSS_PHRASE_7";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A89 : 
+  {
+    Type = "StopSound";
+    Sound = "data/sound/fx/ui/chikichiki";
+  };
+  A90 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A91 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogIdleMessage";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = true;
+  };
+  A92 : 
+  {
+    Type = "InfiniteStop";
+  };
+  A93 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A94 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogClose";
+    AutoShow = true;
+    AutoHide = true;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A95 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_BossDialogContinue";
+  };
+  A96 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_BossDialog";
+    LetterByLetter = false;
+    LetterTime = 0.05000000075;
+  };
+  A97 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "BossDialogOpen";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = true;
+  };
+  A98 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "lb_BossDialog";
+  };
+  A99 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/fx/ui/chikichiki";
+    Vol = 0.5;
+    Pan = 0.5;
+    Loop = true;
+    Wait = false;
+  };
+  A100 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_BossDialog";
+    Text = "SUBBOSS_PHRASE_8";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A101 : 
+  {
+    Type = "StopSound";
+    Sound = "data/sound/fx/ui/chikichiki";
+  };
+  A102 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "ic_BossDialogContinue";
+  };
+  A103 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "BossDialogIdleMessage";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = true;
+  };
+  A104 : 
+  {
+    Type = "InfiniteStop";
+  };
+  A105 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_BossDialogContinue";
+  };
+  A106 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "BossDialogClose";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = true;
+  };
+  A107 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_MADialog";
+    LetterByLetter = false;
+    LetterTime = 0.05000000075;
+  };
+  A108 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A109 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogOpen";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A110 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "lb_MADialog";
+  };
+  A111 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/fx/ui/chikichiki";
+    Vol = 0.5;
+    Pan = 0.5;
+    Loop = true;
+    Wait = false;
+  };
+  A112 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_MADialog";
+    Text = "SUBBOSS_PHRASE_9";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A113 : 
+  {
+    Type = "StopSound";
+    Sound = "data/sound/fx/ui/chikichiki";
+  };
+  A114 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A115 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogIdleMessage";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = true;
+  };
+  A116 : 
+  {
+    Type = "InfiniteStop";
+  };
+  A117 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_MADialogContinue";
+  };
+  A118 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "MADialogClose";
+    AutoShow = true;
+    AutoHide = true;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A119 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_BossDialogContinue";
+  };
+  A120 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_BossDialog";
+    LetterByLetter = false;
+    LetterTime = 0.05000000075;
+  };
+  A121 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "BossDialogOpen";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = true;
+  };
+  A122 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "lb_BossDialog";
+  };
+  A123 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/fx/ui/chikichiki";
+    Vol = 0.5;
+    Pan = 0.5;
+    Loop = true;
+    Wait = false;
+  };
+  A124 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_BossDialog";
+    Text = "SUBBOSS_PHRASE_10";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A125 : 
+  {
+    Type = "StopSound";
+    Sound = "data/sound/fx/ui/chikichiki";
+  };
+  A126 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "ic_BossDialogContinue";
+  };
+  A127 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "BossDialogIdleMessage";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = true;
+  };
+  A128 : 
+  {
+    Type = "InfiniteStop";
+  };
+  A129 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_BossDialogContinue";
+  };
+  A130 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "BossDialogClose";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = true;
+  };
+  A131 : 
+  {
+    Type = "FadeSoundLine";
+    Line = 2;
+    Vol = 0.0;
+    Time = 0.5;
+    Wait = false;
+  };
+  A132 : 
+  {
+    Type = "StopSound";
+    Sound = "data/sound/music/shmup_graveyard";
+  };
+  A133 : 
+  {
+    Type = "FadeSoundLine";
+    Line = 2;
+    Vol = 1.0;
+    Time = 0.0;
+    Wait = false;
+  };
+  A134 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/music/shmup_boss_graveyard";
+    Vol = 1.0;
+    Pan = 0.5;
+    Loop = true;
+    Wait = false;
+  };
+  A135 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "HideCinemascope";
+    AutoShow = true;
+    AutoHide = true;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A136 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "ShowHUD";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A137 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "ShowBossHUD";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = false;
+  };
+  A138 : 
+  {
+    Type = "SetActorState";
+    Actor = "pl_Player_Flyer";
+    State = 20;
+  };
+  A139 : 
+  {
+    Type = "SetActorState";
+    Actor = "shen_caballo";
+    State = 1;
+  };
+};

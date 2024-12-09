@@ -1,0 +1,26 @@
+Script : 
+{
+  Sequence = "A0,A1,A2,A3";
+  A0 : 
+  {
+    Type = "Sleep";
+    Time = 1.5;
+  };
+  A1 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_PLAY_ROOM_ANIM";
+    Parameters = "Stop";
+  };
+  A2 : 
+  {
+    Type = "Sleep";
+    Time = 2.0;
+  };
+  A3 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_CHANGE_ROOM";
+    Parameters = "intro/intro_7/intro_7";
+  };
+};

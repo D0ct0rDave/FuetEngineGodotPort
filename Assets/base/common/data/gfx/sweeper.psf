@@ -1,0 +1,144 @@
+ParticleSystem:
+{
+	Name = "sweeper";
+	Freq = 12.5000;
+	MinTTL = 0.7000;
+	MaxTTL = 0.7000;
+	Sprite = "estrellita";
+	XFunc:
+	{
+		RndOfs:
+		{
+			min = -1.0000;
+		};
+		RndMult:
+		{
+			min = 0.1900;
+			max = 0.1900;
+		};
+		KFFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = -1079.0000;
+				Time = 0.7000;
+			};
+		};
+	};
+	YFunc:
+	{
+		RndOfs:
+		{
+			min = 0.0000;
+			max = 0.0000;
+		};
+		RndMult:
+		{
+			min = -0.2200;
+			max = 0.2900;
+		};
+		KFFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = 86.0000;
+				LerpFunc = "sin";
+			};
+			KeyFrame1:
+			{
+				Value = 309.0000;
+				Time = 0.7000;
+			};
+		};
+	};
+	ScaleFunc:
+	{
+		RndOfs:
+		{
+			min = 0.0000;
+			max = 0.0000;
+		};
+		RndMult:
+		{
+			min = 0.5000;
+		};
+		KFFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = 0.1000;
+			};
+			KeyFrame1:
+			{
+				Value = 0.7000;
+				Time = 0.7000;
+			};
+		};
+	};
+	AngleFunc:
+	{
+		RndOfs:
+		{
+			min = 0.0000;
+			max = 0.0000;
+		};
+		RndMult:
+		{
+			min = -1.0000;
+		};
+		KFFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = 3.1416;
+			};
+			KeyFrame1:
+			{
+				Value = 4.0666;
+				Time = 0.7000;
+			};
+		};
+	};
+	ColorFunc:
+	{
+		RndMult:
+		{
+			min = 0.0100;
+		};
+		KFFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 4;
+			KeyFrame0:
+			{
+				b = 0.0000;
+				a = 0.0000;
+			};
+			KeyFrame1:
+			{
+				b = 0.0000;
+				Time = 0.1000;
+			};
+			KeyFrame2:
+			{
+				Time = 0.5000;
+			};
+			KeyFrame3:
+			{
+				a = 0.0000;
+				Time = 0.7000;
+			};
+		};
+	};
+};

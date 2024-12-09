@@ -1,0 +1,5 @@
+Dictionary:
+{
+	GAMEOVER_MSG_LINE = "YOU/nDIED";
+	NEW_CHALLENTE_ACHIEVED_MSG = "Uitdaging %d volbracht!";
+};

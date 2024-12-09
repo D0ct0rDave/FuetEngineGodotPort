@@ -1,0 +1,224 @@
+HUD:
+{
+	FileVersion = 2;
+	NumElements = 1;
+	Element0:
+	{
+		Name = "objs";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "objs";
+			Position:
+			{
+				x = -512.0000;
+				y = 1056.0000;
+			};
+			Scale:
+			{
+				x = 1.5000;
+				y = 1.5000;
+			};
+			Color:
+			{
+			};
+			NumObjects = 3;
+			Object0:
+			{
+				Type = "Icon";
+				Sprite = "../../../tiles/intro/ParedWC";
+				Name = "ic_pared";
+				Action = 1;
+				Position:
+				{
+					x = 1456.0000;
+					y = 448.0000;
+				};
+				Scale:
+				{
+					x = 10.0000;
+					y = 10.0000;
+				};
+				Color:
+				{
+					r = 0.3333;
+					g = 0.3333;
+					b = 0.3333;
+				};
+			};
+			Object1:
+			{
+				Type = "Icon";
+				Sprite = "nota";
+				Name = "ic_objs";
+				Action = 0;
+				Position:
+				{
+					x = 900.0000;
+					y = 448.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object2:
+			{
+				Type = "Label";
+				Text = "LA CISTERNA ESTÁ ESTROPEADA, USAR EL CUBO DE AGUA EN TODO CASO.../n/nPOR FAVOR, ¡BAJO NINGÚN CONCEPTO TIRAR DE LA CADENA!";
+				Font = "../../../../fonts/marker";
+				HAlignment = "Left";
+				VAlignment = "Top";
+				Interlining = 10.0000;
+				PointSize = 0.9000;
+				AdjustmentWidth = 625.0000;
+				Name = "lb_Message";
+				Position:
+				{
+					x = 608.0000;
+					y = 96.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+					g = 0.3176;
+					b = 0.3176;
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "Scroll";
+			ObjAction0:
+			{
+				HUDObject = "objs";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 9.0000;
+						Value = -1636.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction1:
+			{
+				HUDObject = "ic_objs";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+						Value = -4.0000;
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 2;
+		};
+	};
+};

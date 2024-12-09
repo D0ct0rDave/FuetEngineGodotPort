@@ -1,0 +1,68 @@
+Sprite:
+{
+	Name = "dedos";
+	NumActions = 2;
+	Action0:
+	{
+		Name = "idle";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "dedos";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.6889;
+						y = 0.8143;
+					};
+					Size:
+					{
+						Width = 45.0;
+						Height = 70.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "attack";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "dedos";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5119;
+						y = 0.5327;
+					};
+					Size:
+					{
+						Width = 7.0;
+						Height = 8.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6091;
+						IV = 0.3108;
+						FU = 0.7649;
+						FV = 0.4246;
+					};
+				};
+			};
+		};
+	};
+};

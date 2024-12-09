@@ -1,0 +1,1 @@
+Sprite:{ Name="Tragaperras_tirador_bola"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "Tragaperras_tirador_bola"; Size:{ Width = 103.0; Height = 103.0; }; }; }; }; }; 

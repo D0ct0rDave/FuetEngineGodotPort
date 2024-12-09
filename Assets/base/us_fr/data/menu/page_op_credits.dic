@@ -1,0 +1,16 @@
+Dictionary:
+{
+	lb_Production = "Une coproduction de/nCoderChild-NeneFranz";
+	lb_Code = "Code";
+	lb_Code-1 = "NeneFranz/nDavid Márquez de la Cruz";
+	lb_Art = "Art";
+	lb_Art-1 = "NeneFranz/nSandra García Serrano";
+	lb_Design = "Game Design";
+	lb_Design-1 = "NeneFranz";
+	lb_Music = "Musique et Son";
+	lb_Music-1 = "John Hassink";
+	lb_Published = "Publié par";
+	lb_Published-1 = "CoderChild";
+	lb_Thanks = "Remerciements spéciaux";
+	lb_Thanks-1 = "Anabel,/nCristina, Héctor et Álex,/n Matthieu Touloucanon,/n ESPAL3DS, Javier Aranda,/n Francisco Téllez,/nRetroworks et WDW2014 team";
+};

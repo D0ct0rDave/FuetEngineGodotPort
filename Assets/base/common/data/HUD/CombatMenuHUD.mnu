@@ -1,0 +1,10 @@
+Menu:
+{
+	StartPage = "CombatMenuHUD";
+	DefaultPage = "CombatMenuHUD";
+	BaseDir = "data/HUD";
+	CombatMenuHUD:
+	{
+		SelectButton = "BT_PASSTXT";
+	};
+};

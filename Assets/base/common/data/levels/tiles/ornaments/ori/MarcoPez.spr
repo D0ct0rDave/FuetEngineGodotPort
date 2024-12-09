@@ -1,0 +1,1 @@
+Sprite:{ Name="MarcoPez"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "MarcoPez"; Size:{ Width = 480.0; Height = 325.0; }; }; }; }; }; 

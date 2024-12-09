@@ -1,0 +1,63 @@
+Sprite:
+{
+	Name = "cinturon";
+	NumActions = 2;
+	Action0:
+	{
+		Name = "cinturon";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "pantalon";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5594;
+						y = 0.9622;
+					};
+					Size:
+					{
+						Width = 202.0;
+						Height = 185.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "cinturon-rev";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "pantalon";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5572;
+						y = 0.9626;
+					};
+					Size:
+					{
+						Width = -201.0;
+						Height = 187.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,13 @@
+Script : 
+{
+  Sequence = "A0";
+  A0 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "ExpDlgHide";
+    AutoShow = false;
+    AutoHide = true;
+    WaitAnim = true;
+    Skipable = false;
+  };
+};

@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "exp";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "exp";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5021;
+						y = 0.5021;
+					};
+					Size:
+					{
+						Width = 237.0;
+						Height = 237.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,33 @@
+Sprite:
+{
+	Name = "head";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "head";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 148.0;
+						Height = 94.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

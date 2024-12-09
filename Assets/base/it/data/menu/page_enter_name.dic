@@ -1,0 +1,11 @@
+Dictionary:
+{
+	lb_Title = "Immetti il tuo nome";
+	lb_Accept = "Accetta";
+	ALREADY_EXISTS_MESSAGE = "Giocatore già/nesistente. Inserisci/nun altro nome.";
+	INVALID_OFFENSIVE_MESSAGE = "Questo nome giocatore risulterà/noccultato online/n(offensivo)./n/nVuoi utilizzarlo/ncomunque?";
+	INVALID_5DIGITS_MESSAGE = "Questo nome giocatore risulterà/noccultato online/n(oltre 5 caratteri)./n/nVuoi utilizzarlo/ncomunque?";
+	lb_MB_YES = "Sì";
+	lb_MB_NO = "No";
+	lb_MB_OK = "Ok";
+};

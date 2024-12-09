@@ -1,0 +1,1 @@
+Sprite:{ Name="Chimenea_atras"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "Chimenea_atras"; Size:{ Width = 511.0; Height = 385.0; }; }; }; }; }; 

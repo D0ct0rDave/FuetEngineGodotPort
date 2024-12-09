@@ -1,0 +1,8 @@
+Dictionary:
+{
+	lb_Accept = "Doorgaan";
+	lb_Quit = "Spel verlaten";
+	lb_Settings = "Instellingen";
+	lb_Minimap = "Doorgaan";
+	lb_Frame = "";
+};

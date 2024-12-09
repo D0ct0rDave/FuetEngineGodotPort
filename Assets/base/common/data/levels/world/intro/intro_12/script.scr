@@ -1,0 +1,94 @@
+Script : 
+{
+  Sequence = "A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13";
+  A0 : 
+  {
+    Type = "SetActorState";
+    Actor = "pl_Player_Intro";
+    State = 100;
+  };
+  A1 : 
+  {
+    Type = "SetActorState";
+    Actor = "Camera";
+    State = 100;
+  };
+  A2 : 
+  {
+    Type = "MoveActorTo";
+    Actor = "Camera";
+    FinalPos : 
+    {
+      x = 0.0;
+      y = 900.0;
+    };
+    Time = 0.0;
+  };
+  A3 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_CAMERA_FORCE_ZOOM";
+    Parameters = "2.0";
+  };
+  A4 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SCREEN_FADE_IN";
+    Parameters = "0.5";
+  };
+  A5 : 
+  {
+    Type = "Sleep";
+    Time = 0.5;
+  };
+  A6 : 
+  {
+    Type = "Sleep";
+    Time = 0.5;
+  };
+  A7 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_PLAY_ROOM_ANIM";
+    Parameters = "MALookAtCubo";
+  };
+  A8 : 
+  {
+    Type = "Sleep";
+    Time = 0.5;
+  };
+  A9 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SCREEN_FADE_OUT";
+    Parameters = "0.5";
+  };
+  A10 : 
+  {
+    Type = "Sleep";
+    Time = 0.5;
+  };
+  A11 : 
+  {
+    Type = "MoveActorTo";
+    Actor = "Camera";
+    FinalPos : 
+    {
+      x = 0.0;
+      y = 480.0;
+    };
+    Time = 0.0;
+  };
+  A12 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_CAMERA_FORCE_ZOOM";
+    Parameters = "1.0";
+  };
+  A13 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_CHANGE_ROOM";
+    Parameters = "intro/intro_13/intro_13";
+  };
+};

@@ -1,0 +1,30 @@
+Sprite:
+{
+	Name = "antena-derecha";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "antena-derecha";
+					BlendTime = 0.0000;
+					Pivot:
+					{
+						x = 0.83871;
+						y = 0.80645;
+					};
+					Size:
+					{
+						Width = 31.0;
+						Height = 31.0;
+					};
+				};
+			};
+		};
+	};
+};

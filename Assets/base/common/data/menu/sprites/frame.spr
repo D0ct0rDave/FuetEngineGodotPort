@@ -1,0 +1,65 @@
+Sprite:
+{
+	Name = "frame";
+	NumActions = 2;
+	Action0:
+	{
+		Name = "Released";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "frame-A";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5070;
+						y = 0.5246;
+					};
+					Size:
+					{
+						Width = 142.0;
+						Height = 122.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "frameb";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "frame-b";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5091;
+					};
+					Size:
+					{
+						Width = 220.0;
+						Height = 104.0;
+					};
+					TexCoords:
+					{
+						FU = 0.8594;
+						FV = 0.8525;
+					};
+				};
+			};
+		};
+	};
+};

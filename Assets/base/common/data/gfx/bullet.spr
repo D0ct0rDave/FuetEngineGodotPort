@@ -1,0 +1,58 @@
+Sprite:
+{
+	Name = "bullet";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		BlendMode = "ALPHAADD";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 2;
+				Frame0:
+				{
+					Material = "bullet";
+					BlendTime = 0.2890;
+					Pivot:
+					{
+						x = 0.4000;
+						y = 0.5455;
+					};
+					Size:
+					{
+						Width = 10.0;
+						Height = 11.0;
+					};
+					TexCoords:
+					{
+						IU = 0.9078;
+						IV = 0.1224;
+						FU = 0.9420;
+						FV = 0.1973;
+					};
+				};
+				Frame1:
+				{
+					Material = "bullet";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.6451;
+						y = 0.4898;
+					};
+					Size:
+					{
+						Width = 293.0;
+						Height = 147.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

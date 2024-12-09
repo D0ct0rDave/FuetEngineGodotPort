@@ -1,0 +1,40 @@
+Sprite:
+{
+	Name = "brick_big_brown_dark";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "brick_big_brown_dark";
+					SWrapMode = "REPEAT";
+					TWrapMode = "REPEAT";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.0000;
+						y = 0.0000;
+					};
+					Size:
+					{
+						Width = 64.0;
+						Height = 64.0;
+					};
+					TexCoords:
+					{
+						FU = 0.0039;
+						FV = 0.0039;
+						UWorldCoords = true;
+						VWorldCoords = true;
+					};
+				};
+			};
+		};
+	};
+};

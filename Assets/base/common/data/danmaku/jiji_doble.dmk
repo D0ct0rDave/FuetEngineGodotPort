@@ -1,0 +1,246 @@
+DanmakuSys:
+{
+	NumComponents = 1;
+	Component0:
+	{
+		NumLayers = 2;
+		Layer0:
+		{
+			SpawningTime = 1.1000;
+			Freq = 3.0000;
+			ASpeed:
+			{
+				WrapMode = "FinalValue";
+				NumKeyFrames = 1;
+				KeyFrame0:
+				{
+				};
+			};
+			Scale:
+			{
+				WrapMode = "FinalValue";
+				NumKeyFrames = 2;
+				KeyFrame0:
+				{
+					Value = 0.1000;
+				};
+				KeyFrame1:
+				{
+					Value = 2.0000;
+					Time = 10.0000;
+				};
+			};
+			XPos:
+			{
+				WrapMode = "FinalValue";
+				NumKeyFrames = 1;
+				KeyFrame0:
+				{
+				};
+			};
+			YPos:
+			{
+				WrapMode = "FinalValue";
+				NumKeyFrames = 1;
+				KeyFrame0:
+				{
+				};
+			};
+			BulletDef:
+			{
+				Sprite = "icon";
+				BurstSize = 3;
+				TTL = 12.0000;
+				Radius = 200.0000;
+				BPhase:
+				{
+				};
+				AlphaRange:
+				{
+					WrapMode = "FinalValue";
+					NumKeyFrames = 1;
+					KeyFrame0:
+					{
+						Value = 0.6981;
+					};
+				};
+				ASpeed:
+				{
+					WrapMode = "FinalValue";
+					NumKeyFrames = 1;
+					KeyFrame0:
+					{
+						Value = -13.5787;
+					};
+				};
+				DSpeed:
+				{
+					WrapMode = "FinalValue";
+					NumKeyFrames = 1;
+					KeyFrame0:
+					{
+						Value = 5.0000;
+					};
+				};
+				XSpeed:
+				{
+					WrapMode = "FinalValue";
+					NumKeyFrames = 1;
+					KeyFrame0:
+					{
+					};
+				};
+				YSpeed:
+				{
+					WrapMode = "FinalValue";
+					NumKeyFrames = 1;
+					KeyFrame0:
+					{
+					};
+				};
+				BAngle:
+				{
+					WrapMode = "FinalValue";
+					NumKeyFrames = 1;
+					KeyFrame0:
+					{
+					};
+				};
+				BScale:
+				{
+					WrapMode = "FinalValue";
+					NumKeyFrames = 1;
+					KeyFrame0:
+					{
+						Value = 0.5000;
+					};
+				};
+				BColor:
+				{
+					WrapMode = "FinalValue";
+					NumKeyFrames = 1;
+					KeyFrame0:
+					{
+					};
+				};
+			};
+		};
+		Layer1:
+		{
+			SpawningTime = 1.1000;
+			Freq = 3.0000;
+			ASpeed:
+			{
+				WrapMode = "FinalValue";
+				NumKeyFrames = 1;
+				KeyFrame0:
+				{
+				};
+			};
+			Scale:
+			{
+				WrapMode = "FinalValue";
+				NumKeyFrames = 1;
+				KeyFrame0:
+				{
+					Value = 0.1000;
+				};
+			};
+			XPos:
+			{
+				WrapMode = "FinalValue";
+				NumKeyFrames = 1;
+				KeyFrame0:
+				{
+				};
+			};
+			YPos:
+			{
+				WrapMode = "FinalValue";
+				NumKeyFrames = 1;
+				KeyFrame0:
+				{
+				};
+			};
+			BulletDef:
+			{
+				Sprite = "icon";
+				BurstSize = 3;
+				TTL = 12.0000;
+				Radius = 200.0000;
+				BPhase:
+				{
+					RndMin = 3.1416;
+					RndMax = 3.1416;
+				};
+				AlphaRange:
+				{
+					WrapMode = "FinalValue";
+					NumKeyFrames = 1;
+					KeyFrame0:
+					{
+						Value = 0.6981;
+					};
+				};
+				ASpeed:
+				{
+					WrapMode = "FinalValue";
+					NumKeyFrames = 1;
+					KeyFrame0:
+					{
+					};
+				};
+				DSpeed:
+				{
+					WrapMode = "FinalValue";
+					NumKeyFrames = 1;
+					KeyFrame0:
+					{
+						Value = 5.0000;
+					};
+				};
+				XSpeed:
+				{
+					WrapMode = "FinalValue";
+					NumKeyFrames = 1;
+					KeyFrame0:
+					{
+					};
+				};
+				YSpeed:
+				{
+					WrapMode = "FinalValue";
+					NumKeyFrames = 1;
+					KeyFrame0:
+					{
+					};
+				};
+				BAngle:
+				{
+					WrapMode = "FinalValue";
+					NumKeyFrames = 1;
+					KeyFrame0:
+					{
+					};
+				};
+				BScale:
+				{
+					WrapMode = "FinalValue";
+					NumKeyFrames = 1;
+					KeyFrame0:
+					{
+						Value = 0.5000;
+					};
+				};
+				BColor:
+				{
+					WrapMode = "FinalValue";
+					NumKeyFrames = 1;
+					KeyFrame0:
+					{
+					};
+				};
+			};
+		};
+	};
+};

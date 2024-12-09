@@ -1,0 +1,571 @@
+SkelAction:
+{
+	Name = "jump_up";
+	PlayMode = "oneshot";
+	NodeAction0:
+	{
+		NodeName = "hip";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 1;
+			KeyFrame0:
+			{
+				x = 0.3585;
+				y = 0.0013;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 0.1547;
+				Time = 0.2287;
+			};
+		};
+	};
+	NodeAction1:
+	{
+		NodeName = "l_foot_d";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 1;
+			KeyFrame0:
+			{
+				x = 0.4967;
+				y = 0.1880;
+			};
+		};
+	};
+	NodeAction2:
+	{
+		NodeName = "l_foot";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 1;
+			KeyFrame0:
+			{
+				x = 0.1418;
+				y = -0.6515;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = -0.4897;
+			};
+			KeyFrame1:
+			{
+				Value = 0.2313;
+				Time = 0.2287;
+			};
+		};
+	};
+	NodeAction3:
+	{
+		NodeName = "l_knee";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 1;
+			KeyFrame0:
+			{
+				x = -0.0243;
+				y = -0.0719;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = -2.7964;
+			};
+			KeyFrame1:
+			{
+				Value = -0.6376;
+				Time = 0.2287;
+			};
+		};
+	};
+	NodeAction4:
+	{
+		NodeName = "l_hip";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = 1.3596;
+			};
+			KeyFrame1:
+			{
+				Value = -0.2491;
+				Time = 0.2287;
+			};
+		};
+	};
+	NodeAction5:
+	{
+		NodeName = "r_foot";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = -0.7386;
+			};
+			KeyFrame1:
+			{
+				Value = 0.6908;
+				Time = 0.2287;
+			};
+		};
+	};
+	NodeAction6:
+	{
+		NodeName = "r_knee";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = -2.4346;
+			};
+			KeyFrame1:
+			{
+				Value = -1.9689;
+				Time = 0.2287;
+			};
+		};
+	};
+	NodeAction7:
+	{
+		NodeName = "r_hip";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = 1.3010;
+			};
+			KeyFrame1:
+			{
+				Value = 1.3552;
+				Time = 0.2287;
+			};
+		};
+	};
+	NodeAction8:
+	{
+		NodeName = "torso";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 1;
+			KeyFrame0:
+			{
+				Value = -0.3765;
+				LerpFunc = "explog";
+			};
+		};
+	};
+	NodeAction9:
+	{
+		NodeName = "neck";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 1;
+			KeyFrame0:
+			{
+				Value = -0.3246;
+				LerpFunc = "explog";
+			};
+		};
+	};
+	NodeAction10:
+	{
+		NodeName = "pj_neck";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 1;
+			KeyFrame0:
+			{
+				Value = 0.1897;
+			};
+		};
+	};
+	NodeAction11:
+	{
+		NodeName = "head";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 1;
+			KeyFrame0:
+			{
+				Value = -0.1874;
+			};
+		};
+	};
+	NodeAction12:
+	{
+		NodeName = "coleta";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = 0.0144;
+				LerpFunc = "explog";
+			};
+			KeyFrame1:
+			{
+				Value = 0.0095;
+				Time = 0.0229;
+				LerpFunc = "explog";
+			};
+		};
+	};
+	NodeAction13:
+	{
+		NodeName = "patilla";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 1;
+			KeyFrame0:
+			{
+				Value = 0.0005;
+				LerpFunc = "explog";
+			};
+		};
+	};
+	NodeAction14:
+	{
+		NodeName = "l_shoulder";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				Value = 1.3689;
+			};
+			KeyFrame1:
+			{
+				Value = 1.7985;
+				Time = 0.2287;
+			};
+			KeyFrame2:
+			{
+				Value = 2.4430;
+				Time = 0.3430;
+			};
+		};
+	};
+	NodeAction15:
+	{
+		NodeName = "pj_l_shoulder";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 1;
+			KeyFrame0:
+			{
+				Value = -0.0651;
+			};
+		};
+	};
+	NodeAction16:
+	{
+		NodeName = "l_hand";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 1;
+			KeyFrame0:
+			{
+				Value = -0.2879;
+			};
+		};
+	};
+	NodeAction17:
+	{
+		NodeName = "r_shoulder";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 3;
+			KeyFrame0:
+			{
+				Value = 0.5243;
+			};
+			KeyFrame1:
+			{
+				Value = 0.0303;
+				Time = 0.2287;
+			};
+			KeyFrame2:
+			{
+				Value = -1.1493;
+				Time = 0.3430;
+			};
+		};
+	};
+	NodeAction18:
+	{
+		NodeName = "pj_r_shoulder";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 1;
+			KeyFrame0:
+			{
+				Value = -0.2473;
+			};
+		};
+	};
+	NodeAction19:
+	{
+		NodeName = "r_hand";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+				Value = 0.1463;
+			};
+			KeyFrame1:
+			{
+				Value = 0.1547;
+				Time = 0.3430;
+			};
+		};
+	};
+	NodeAction20:
+	{
+		NodeName = "l_foot_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction21:
+	{
+		NodeName = "l_foot_sprite_1";
+		NodeAction = 0;
+	};
+	NodeAction22:
+	{
+		NodeName = "l_foot_sprite_2";
+		NodeAction = 0;
+	};
+	NodeAction23:
+	{
+		NodeName = "l_foot_sprite_3";
+		NodeAction = 0;
+	};
+	NodeAction24:
+	{
+		NodeName = "l_knee_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction25:
+	{
+		NodeName = "l_knee_sprite_1";
+		NodeAction = 0;
+	};
+	NodeAction26:
+	{
+		NodeName = "l_knee_sprite_2";
+		NodeAction = 0;
+	};
+	NodeAction27:
+	{
+		NodeName = "l_knee_sprite_3";
+		NodeAction = 0;
+	};
+	NodeAction28:
+	{
+		NodeName = "l_hip_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction29:
+	{
+		NodeName = "l_hip_sprite_1";
+		NodeAction = 0;
+	};
+	NodeAction30:
+	{
+		NodeName = "l_hip_sprite_2";
+		NodeAction = 0;
+	};
+	NodeAction31:
+	{
+		NodeName = "r_foot_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction32:
+	{
+		NodeName = "r_foot_sprite_1";
+		NodeAction = 0;
+	};
+	NodeAction33:
+	{
+		NodeName = "r_foot_sprite_2";
+		NodeAction = 0;
+	};
+	NodeAction34:
+	{
+		NodeName = "r_foot_sprite_3";
+		NodeAction = 0;
+	};
+	NodeAction35:
+	{
+		NodeName = "r_knee_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction36:
+	{
+		NodeName = "r_knee_sprite_1";
+		NodeAction = 0;
+	};
+	NodeAction37:
+	{
+		NodeName = "r_knee_sprite_2";
+		NodeAction = 0;
+	};
+	NodeAction38:
+	{
+		NodeName = "r_knee_sprite_3";
+		NodeAction = 0;
+	};
+	NodeAction39:
+	{
+		NodeName = "r_hip_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction40:
+	{
+		NodeName = "r_hip_sprite_1";
+		NodeAction = 0;
+	};
+	NodeAction41:
+	{
+		NodeName = "r_hip_sprite_2";
+		NodeAction = 0;
+	};
+	NodeAction42:
+	{
+		NodeName = "waist_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction43:
+	{
+		NodeName = "waist_sprite_1";
+		Visible = false;
+	};
+	NodeAction44:
+	{
+		NodeName = "waist_sprite_2";
+		NodeAction = 0;
+	};
+	NodeAction45:
+	{
+		NodeName = "neck_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction46:
+	{
+		NodeName = "neck_sprite_1";
+		NodeAction = 0;
+	};
+	NodeAction47:
+	{
+		NodeName = "head_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction48:
+	{
+		NodeName = "head_sprite_1";
+		NodeAction = 0;
+	};
+	NodeAction49:
+	{
+		NodeName = "head_sprite_2";
+		NodeAction = 0;
+	};
+	NodeAction50:
+	{
+		NodeName = "head_sprite_3";
+		Visible = false;
+	};
+	NodeAction51:
+	{
+		NodeName = "coleta_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction52:
+	{
+		NodeName = "patilla_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction53:
+	{
+		NodeName = "l_shoulder_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction54:
+	{
+		NodeName = "l_shoulder_sprite_1";
+		NodeAction = 0;
+	};
+	NodeAction55:
+	{
+		NodeName = "l_hand_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction56:
+	{
+		NodeName = "l_hand_sprite_1";
+		NodeAction = 0;
+	};
+	NodeAction57:
+	{
+		NodeName = "r_shoulder_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction58:
+	{
+		NodeName = "r_shoulder_sprite_1";
+		NodeAction = 0;
+	};
+	NodeAction59:
+	{
+		NodeName = "r_hand_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction60:
+	{
+		NodeName = "r_hand_sprite_1";
+		NodeAction = 1;
+	};
+	NumNodeActions = 61;
+};

@@ -1,0 +1,71 @@
+Script : 
+{
+  Sequence = "A0,A1,A2,A3,A4,A5,A6,A7,A8,A9";
+  A0 : 
+  {
+    Type = "SetActorState";
+    Actor = "pl_Player_MOG";
+    State = 100;
+  };
+  A1 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_keeper_dlg";
+    LetterByLetter = false;
+    LetterTime = 0.009999999776;
+  };
+  A2 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SCREEN_FADE_IN";
+    Parameters = "1.0";
+  };
+  A3 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SOUND_FADE_IN";
+    Parameters = "1.0";
+  };
+  A4 : 
+  {
+    Type = "Sleep";
+    Time = 1.0;
+  };
+  A5 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "ShopPresent";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A6 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "ShopKeeperPresent";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A7 : 
+  {
+    Type = "Sleep";
+    Time = 1.0;
+  };
+  A8 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "DialogBoxShow";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A9 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "lb_keeper_dlg";
+  };
+};

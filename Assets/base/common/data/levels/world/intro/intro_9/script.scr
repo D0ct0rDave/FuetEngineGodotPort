@@ -1,0 +1,79 @@
+Script : 
+{
+  Sequence = "A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11";
+  A0 : 
+  {
+    Type = "SetActorState";
+    Actor = "pl_Player_MOG";
+    State = 100;
+  };
+  A1 : 
+  {
+    Type = "SetActorState";
+    Actor = "pl_Player_Intro";
+    State = 100;
+  };
+  A2 : 
+  {
+    Type = "Sleep";
+    Time = 6.0;
+  };
+  A3 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_PLAY_ROOM_ANIM";
+    Parameters = "ShowLetterText";
+  };
+  A4 : 
+  {
+    Type = "Sleep";
+    Time = 2.0;
+  };
+  A5 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "ShowContinue";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = true;
+  };
+  A6 : 
+  {
+    Type = "InfiniteStop";
+  };
+  A7 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "HideContinue";
+    AutoShow = true;
+    AutoHide = true;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A8 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SCREEN_FADE_OUT";
+    Parameters = "3.0";
+  };
+  A9 : 
+  {
+    Type = "FadeSoundLine";
+    Line = 2;
+    Vol = 0.0;
+    Time = 3.0;
+    Wait = false;
+  };
+  A10 : 
+  {
+    Type = "Sleep";
+    Time = 3.0;
+  };
+  A11 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_CHANGE_ROOM";
+    Parameters = "intro/intro_10/uncleshome";
+  };
+};

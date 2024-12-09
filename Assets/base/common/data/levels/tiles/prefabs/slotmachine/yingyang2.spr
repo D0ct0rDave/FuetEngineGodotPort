@@ -1,0 +1,1 @@
+Sprite:{ Name="yingyang2"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "yingyang2"; Size:{ Width = 88.0; Height = 88.0; }; }; }; }; }; 

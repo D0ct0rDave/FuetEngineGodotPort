@@ -1,0 +1,6 @@
+Dictionary:
+{
+	lb_Start = "Start";
+	lb_Continue = "Fortsetzen";
+	lb_Scores = "Spielergebnisse";
+};

@@ -1,0 +1,167 @@
+Pose:
+{
+	PIVOT:
+	{
+		Position:
+		{
+		};
+	};
+	hip:
+	{
+		Angle = 0.0053;
+		Position:
+		{
+		};
+	};
+	l_foot_d:
+	{
+		Angle = -0.2866;
+		Position:
+		{
+		};
+	};
+	l_foot:
+	{
+		Angle = -2.7964;
+		Position:
+		{
+		};
+	};
+	l_knee:
+	{
+		Angle = 1.4545;
+		Position:
+		{
+		};
+	};
+	l_hip:
+	{
+		Position:
+		{
+		};
+	};
+	r_foot_d:
+	{
+		Angle = -0.5135;
+		Position:
+		{
+		};
+	};
+	r_foot:
+	{
+		Angle = -0.3188;
+		Position:
+		{
+		};
+	};
+	r_knee:
+	{
+		Angle = -0.4459;
+		Position:
+		{
+		};
+	};
+	r_hip:
+	{
+		Position:
+		{
+		};
+	};
+	torso:
+	{
+		Position:
+		{
+		};
+	};
+	waist:
+	{
+		Angle = -0.2249;
+		Position:
+		{
+		};
+	};
+	neck:
+	{
+		Angle = 0.5419;
+		Position:
+		{
+		};
+	};
+	head:
+	{
+		Angle = 0.0926;
+		Position:
+		{
+		};
+	};
+	coleta:
+	{
+		Angle = -0.6471;
+		Position:
+		{
+		};
+	};
+	coleta_d:
+	{
+		Angle = 0.0199;
+		Position:
+		{
+		};
+	};
+	patilla:
+	{
+		Angle = -0.6471;
+		Position:
+		{
+		};
+	};
+	patilla_d:
+	{
+		Angle = 0.0005;
+		Position:
+		{
+		};
+	};
+	l_shoulder:
+	{
+		Angle = 1.7698;
+		Position:
+		{
+		};
+	};
+	l_hand:
+	{
+		Angle = 1.3689;
+		Position:
+		{
+		};
+	};
+	l_hand_d:
+	{
+		Angle = -0.6472;
+		Position:
+		{
+		};
+	};
+	r_shoulder:
+	{
+		Angle = -0.5121;
+		Position:
+		{
+		};
+	};
+	r_hand:
+	{
+		Angle = -2.4756;
+		Position:
+		{
+		};
+	};
+	r_hand_d:
+	{
+		Angle = 1.5750;
+		Position:
+		{
+		};
+	};
+};

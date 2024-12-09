@@ -1,0 +1,43 @@
+Script : 
+{
+  Sequence = "A0,A1,A2,A3,A4,A5,A6";
+  A0 : 
+  {
+    Type = "SetActorState";
+    Actor = "pl_Player_Intro";
+    State = 100;
+  };
+  A1 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SCREEN_FADE_IN";
+    Parameters = "0.5";
+  };
+  A2 : 
+  {
+    Type = "Sleep";
+    Time = 0.5;
+  };
+  A3 : 
+  {
+    Type = "Sleep";
+    Time = 3.0;
+  };
+  A4 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SCREEN_FADE_OUT";
+    Parameters = "0.5";
+  };
+  A5 : 
+  {
+    Type = "Sleep";
+    Time = 0.5;
+  };
+  A6 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_CHANGE_ROOM";
+    Parameters = "intro/intro_14/intro_14";
+  };
+};

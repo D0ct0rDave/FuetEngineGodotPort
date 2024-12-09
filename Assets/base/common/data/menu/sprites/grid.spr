@@ -1,0 +1,39 @@
+Sprite:
+{
+	Name = "grid";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "grid";
+					SWrapMode = "REPEAT";
+					TWrapMode = "REPEAT";
+					Filter = "NEAREST";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.0000;
+						y = 0.0000;
+					};
+					Size:
+					{
+						Width = 64.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						UWorldCoords = true;
+						VWorldCoords = true;
+					};
+				};
+			};
+		};
+	};
+};

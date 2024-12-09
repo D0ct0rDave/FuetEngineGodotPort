@@ -1,0 +1,63 @@
+Sprite:
+{
+	Name = "cabeza";
+	NumActions = 2;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "cabeza";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5025;
+						y = 0.8654;
+					};
+					Size:
+					{
+						Width = 203.0;
+						Height = 208.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "cabeza";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.4433;
+						y = 0.8654;
+					};
+					Size:
+					{
+						Width = -203.0;
+						Height = 208.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

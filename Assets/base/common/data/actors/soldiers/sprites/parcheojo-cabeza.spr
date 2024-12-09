@@ -1,0 +1,30 @@
+Sprite:
+{
+	Name = "parcheojo-cabeza";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "parcheojo-cabeza";
+					BlendTime = 0.0000;
+					Pivot:
+					{
+						x = 0.70000;
+						y = 0.71795;
+					};
+					Size:
+					{
+						Width = 50.0;
+						Height = 39.0;
+					};
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,106 @@
+Sprite:
+{
+	Name = "candil";
+	NumActions = 3;
+	Action0:
+	{
+		Name = "candil_parte_frontal";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "candil";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5135;
+						y = 0.1185;
+					};
+					Size:
+					{
+						Width = 185.0;
+						Height = 270.0;
+					};
+					TexCoords:
+					{
+						IU = -0.0074;
+						IV = 0.0074;
+						FU = 0.6753;
+						FV = 1.0037;
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "soporte-pared";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "candil";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.4899;
+						y = 0.4633;
+					};
+					Size:
+					{
+						Width = 98.0;
+						Height = 82.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6605;
+						IV = 0.0074;
+						FU = 1.0221;
+						FV = 0.3100;
+					};
+				};
+			};
+		};
+	};
+	Action2:
+	{
+		Name = "candil_solo_cuenco";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "candil_pared";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.4933;
+						y = 0.5452;
+					};
+					Size:
+					{
+						Width = 183.5;
+						Height = 113.5;
+					};
+					TexCoords:
+					{
+						IU = 0.0055;
+						IV = 0.5762;
+						FU = 0.6825;
+						FV = 0.9948;
+					};
+				};
+			};
+		};
+	};
+};

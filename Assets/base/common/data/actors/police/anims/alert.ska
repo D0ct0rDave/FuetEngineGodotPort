@@ -1,0 +1,65 @@
+SkelAction:
+{
+	Name = "alert";
+	NodeAction0:
+	{
+		NodeName = "barrera_base_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction1:
+	{
+		NodeName = "barrera_palo_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction2:
+	{
+		NodeName = "hip1_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction3:
+	{
+		NodeName = "waist1_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction4:
+	{
+		NodeName = "head1_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction5:
+	{
+		NodeName = "head1_sprite_2";
+		NodeAction = 0;
+	};
+	NodeAction6:
+	{
+		NodeName = "porra1_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction7:
+	{
+		NodeName = "hip2_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction8:
+	{
+		NodeName = "waist2_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction9:
+	{
+		NodeName = "head2_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction10:
+	{
+		NodeName = "head2_sprite_2";
+		NodeAction = 0;
+	};
+	NodeAction11:
+	{
+		NodeName = "porra2_sprite_0";
+		NodeAction = 0;
+	};
+	NumNodeActions = 12;
+};

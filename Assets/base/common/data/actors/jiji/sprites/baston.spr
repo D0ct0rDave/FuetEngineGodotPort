@@ -1,0 +1,32 @@
+Sprite:
+{
+	Name = "baston";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "baston";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 132.0;
+						Height = 130.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

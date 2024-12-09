@@ -1,0 +1,83 @@
+ParticleSystem:
+{
+	Name = "spell";
+	Sprite = "spell";
+	Freq = 7.2000;
+	TTL = 0.3000;
+	EmisorRad:
+	{
+	};
+	EmisorPhase:
+	{
+	};
+	EmisorSpeed:
+	{
+	};
+	EmisorAccel = -3.0000;
+	EmisorXOfs:
+	{
+	};
+	EmisorYOfs:
+	{
+	};
+	EmisorXSpeed:
+	{
+	};
+	EmisorYSpeed:
+	{
+	};
+	PartSize:
+	{
+		Min = 0.3800;
+		Max = 0.4200;
+	};
+	PartSizeSpeed:
+	{
+		Min = 4.7500;
+		Max = 5.2500;
+	};
+	PartSizeAccel = -4.0000;
+	PartAngle:
+	{
+		Min = -179.7382;
+		Max = 3.4034;
+	};
+	PartAngleSpeed:
+	{
+		Min = -3.9968;
+		Max = 4.9916;
+	};
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 5;
+		KeyFrame0:
+		{
+		};
+		KeyFrame1:
+		{
+			a = 0.3333;
+			Time = 0.2000;
+		};
+		KeyFrame2:
+		{
+			r = 0.0000;
+			g = 0.0000;
+			a = 0.0000;
+			Time = 0.3000;
+		};
+		KeyFrame3:
+		{
+			g = 0.5020;
+			b = 0.0000;
+			Time = 0.5000;
+		};
+		KeyFrame4:
+		{
+			g = 0.0000;
+			b = 0.0000;
+			a = 0.0000;
+			Time = 1.0000;
+		};
+	};
+};

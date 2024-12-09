@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "cabeza_coleta_der";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "cabeza_coleta_der";
+					BlendTime = 0.1;
+					Pivot:
+					{
+						x = 0.2115;
+						y = 0.3818;
+					};
+					Size:
+					{
+						Width = 52.0;
+						Height = 55.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

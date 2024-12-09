@@ -1,0 +1,1 @@
+Sprite:{ Name="sapoman_boca2"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "sapoman_boca2"; Size:{ Width = 656.0; Height = 437.0; }; }; }; }; }; 

@@ -1,0 +1,289 @@
+Sprite:
+{
+	Name = "slot-figures";
+	NumActions = 7;
+	Action0:
+	{
+		Name = "orange";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "orange";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 128.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "cerezas";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "cerezas";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5040;
+					};
+					Size:
+					{
+						Width = 125.0;
+						Height = 126.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action2:
+	{
+		Name = "wc-paper";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "wcpaper";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5078;
+						y = 0.5041;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 121.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action3:
+	{
+		Name = "cc-star";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "cc-star";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 126.0;
+						Height = 120.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action4:
+	{
+		Name = "fish";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "fish";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action5:
+	{
+		Name = "chilli";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "chilli";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 0.5135;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 37.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action6:
+	{
+		Name = "rolling";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 6;
+				Frame0:
+				{
+					Material = "orange";
+					BlendTime = 0.0980;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 128.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame1:
+				{
+					Material = "cerezas";
+					BlendTime = 0.0980;
+					Pivot:
+					{
+						x = 0.5040;
+					};
+					Size:
+					{
+						Width = 125.0;
+						Height = 126.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame2:
+				{
+					Material = "wcpaper";
+					BlendTime = 0.0980;
+					Pivot:
+					{
+						x = 0.5078;
+						y = 0.5041;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 121.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame3:
+				{
+					Material = "cc-star";
+					BlendTime = 0.0980;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 126.0;
+						Height = 120.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame4:
+				{
+					Material = "fish";
+					BlendTime = 0.0980;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 96.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+				Frame5:
+				{
+					Material = "chilli";
+					BlendTime = 0.0980;
+					Pivot:
+					{
+						y = 0.5135;
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 37.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

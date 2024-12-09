@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "cabeza";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "cabeza";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5122;
+						y = 0.8454;
+					};
+					Size:
+					{
+						Width = 82.0;
+						Height = 97.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

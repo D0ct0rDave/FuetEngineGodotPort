@@ -1,0 +1,53 @@
+Script : 
+{
+  Sequence = "A0,A1,A2,A3,A4,A5,A6";
+  A0 : 
+  {
+    Type = "SetActorState";
+    Actor = "pl_Player_Flyer";
+    State = 100;
+  };
+  A1 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "HideBossHUD";
+    AutoShow = true;
+    AutoHide = true;
+    WaitAnim = true;
+    Skipable = false;
+  };
+  A2 : 
+  {
+    Type = "Sleep";
+    Time = 2.0;
+  };
+  A3 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SCREEN_FADE_OUT";
+    Parameters = "2.0";
+  };
+  A4 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SOUND_FADE_OUT";
+    Parameters = "2.0";
+  };
+  A5 : 
+  {
+    Type = "MoveActorTo";
+    Actor = "pl_Player_Flyer";
+    FinalPos : 
+    {
+      x = 5000.0;
+      y = 500.0;
+    };
+    Time = 2.0;
+  };
+  A6 : 
+  {
+    Type = "SendMessage";
+    Message = "GMSG_SEND_GFLOW_CHANGE_ROOM";
+    Parameters = "endofdemo/endofdemo";
+  };
+};

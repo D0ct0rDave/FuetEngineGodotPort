@@ -1,0 +1,106 @@
+Sprite:
+{
+	Name = "balloon";
+	NumActions = 3;
+	Action0:
+	{
+		Name = "idle";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "balloon";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5000;
+						y = 0.5455;
+					};
+					Size:
+					{
+						Width = 10.0;
+						Height = 11.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1988;
+						IV = 0.0394;
+						FU = 0.2590;
+						FV = 0.0936;
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "info";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "balloon";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.4945;
+						y = 0.9767;
+					};
+					Size:
+					{
+						Width = 91.0;
+						Height = 86.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0060;
+						IV = 0.1527;
+						FU = 0.5542;
+						FV = 0.5764;
+					};
+				};
+			};
+		};
+	};
+	Action2:
+	{
+		Name = "forbidden";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "balloon";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.4855;
+						y = 0.9644;
+					};
+					Size:
+					{
+						Width = 91.3;
+						Height = 87.5;
+					};
+					TexCoords:
+					{
+						IU = 0.0041;
+						IV = 0.5846;
+						FU = 0.5541;
+						FV = 1.0154;
+					};
+				};
+			};
+		};
+	};
+};

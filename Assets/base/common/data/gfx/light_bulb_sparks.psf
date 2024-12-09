@@ -1,0 +1,68 @@
+ParticleSystem:
+{
+	Name = "light_bulb_sparks";
+	Sprite = "flare3";
+	Freq = 10.0000;
+	TTL = 0.5000;
+	EmisorRad:
+	{
+	};
+	EmisorPhase:
+	{
+		Min = -1.5708;
+		Max = 4.7124;
+	};
+	EmisorSpeed:
+	{
+		Min = 70.0000;
+		Max = 70.0000;
+	};
+	EmisorAccel = -114.0000;
+	EmisorXOfs:
+	{
+	};
+	EmisorYOfs:
+	{
+	};
+	EmisorXSpeed:
+	{
+	};
+	EmisorYSpeed:
+	{
+	};
+	PartSize:
+	{
+		Min = 0.0388;
+		Max = 0.0412;
+	};
+	PartSizeSpeed:
+	{
+	};
+	PartAngle:
+	{
+	};
+	PartAngleSpeed:
+	{
+	};
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 3;
+		KeyFrame0:
+		{
+			b = 0.7922;
+		};
+		KeyFrame1:
+		{
+			Time = 0.3000;
+		};
+		KeyFrame2:
+		{
+			r = 0.7686;
+			g = 0.7686;
+			b = 0.8902;
+			a = 0.0000;
+			Time = 0.5000;
+		};
+	};
+};

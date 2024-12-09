@@ -1,0 +1,7 @@
+Dictionary:
+{
+	lb_Title = "Optionen";
+	lb_BGM = "Musik";
+	lb_Settings = "Einstellungen";
+	lb_Credits = "Credits";
+};

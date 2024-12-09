@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "mano-der";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "mano-der";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.8889;
+						y = 0.4691;
+					};
+					Size:
+					{
+						Width = 27.0;
+						Height = 81.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

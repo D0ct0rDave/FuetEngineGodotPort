@@ -1,0 +1,619 @@
+SkelAction:
+{
+	Name = "dead";
+	PlayMode = "oneshot";
+	NodeAction0:
+	{
+		NodeName = "PIVOT";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 0.1202;
+				Time = 0.2801;
+			};
+		};
+	};
+	NodeAction1:
+	{
+		NodeName = "head";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				x = -44.5996;
+				y = -92.1559;
+				Time = 0.2801;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = -0.6603;
+				Time = 0.2801;
+			};
+		};
+	};
+	NodeAction2:
+	{
+		NodeName = "head_d";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2801;
+			};
+		};
+	};
+	NodeAction3:
+	{
+		NodeName = "c4";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				x = 25.2124;
+				y = 75.1556;
+				Time = 0.2801;
+			};
+		};
+	};
+	NodeAction4:
+	{
+		NodeName = "pj_c4";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 0.6160;
+				Time = 0.2801;
+			};
+		};
+	};
+	NodeAction5:
+	{
+		NodeName = "p4";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2801;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 10;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 0.2904;
+				Time = 0.2801;
+			};
+			KeyFrame2:
+			{
+				Value = -0.5618;
+				Time = 0.4202;
+			};
+			KeyFrame3:
+			{
+				Value = 0.5264;
+				Time = 0.5602;
+			};
+			KeyFrame4:
+			{
+				Value = -1.0522;
+				Time = 0.7003;
+			};
+			KeyFrame5:
+			{
+				Value = 0.2833;
+				Time = 0.8403;
+			};
+			KeyFrame6:
+			{
+				Value = -0.3914;
+				Time = 0.9524;
+			};
+			KeyFrame7:
+			{
+				Value = -0.5618;
+				Time = 0.9804;
+			};
+			KeyFrame8:
+			{
+				Value = 0.5264;
+				Time = 1.1204;
+			};
+			KeyFrame9:
+			{
+				Value = -1.0522;
+				Time = 1.2605;
+			};
+		};
+	};
+	NodeAction6:
+	{
+		NodeName = "pj_p4";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = -0.1497;
+				Time = 0.2801;
+			};
+		};
+	};
+	NodeAction7:
+	{
+		NodeName = "p4d";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2801;
+			};
+		};
+	};
+	NodeAction8:
+	{
+		NodeName = "c3";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2801;
+			};
+		};
+	};
+	NodeAction9:
+	{
+		NodeName = "pj_c3";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = -0.5164;
+				Time = 0.2801;
+			};
+		};
+	};
+	NodeAction10:
+	{
+		NodeName = "p3";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2801;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 10;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = -0.0135;
+				Time = 0.2801;
+			};
+			KeyFrame2:
+			{
+				Value = 1.0002;
+				Time = 0.4202;
+			};
+			KeyFrame3:
+			{
+				Value = -0.6578;
+				Time = 0.5602;
+			};
+			KeyFrame4:
+			{
+				Value = 0.6870;
+				Time = 0.7003;
+			};
+			KeyFrame5:
+			{
+				Value = -0.6850;
+				Time = 0.8403;
+			};
+			KeyFrame6:
+			{
+				Value = 0.7975;
+				Time = 0.9524;
+			};
+			KeyFrame7:
+			{
+				Value = 1.0002;
+				Time = 0.9804;
+			};
+			KeyFrame8:
+			{
+				Value = -0.6578;
+				Time = 1.1204;
+			};
+			KeyFrame9:
+			{
+				Value = 0.6870;
+				Time = 1.2605;
+			};
+		};
+	};
+	NodeAction11:
+	{
+		NodeName = "pj_p3";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2801;
+			};
+		};
+	};
+	NodeAction12:
+	{
+		NodeName = "p3d";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2801;
+			};
+		};
+	};
+	NodeAction13:
+	{
+		NodeName = "c2";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2801;
+			};
+		};
+	};
+	NodeAction14:
+	{
+		NodeName = "pj_c2";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Value = 0.3797;
+				Time = 0.2801;
+			};
+		};
+	};
+	NodeAction15:
+	{
+		NodeName = "p2";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2801;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 10;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2801;
+			};
+			KeyFrame2:
+			{
+				Value = -0.7856;
+				Time = 0.4202;
+			};
+			KeyFrame3:
+			{
+				Value = 0.4294;
+				Time = 0.5602;
+			};
+			KeyFrame4:
+			{
+				Value = -0.8887;
+				Time = 0.7003;
+			};
+			KeyFrame5:
+			{
+				Value = 0.4480;
+				Time = 0.8403;
+			};
+			KeyFrame6:
+			{
+				Value = -0.6285;
+				Time = 0.9524;
+			};
+			KeyFrame7:
+			{
+				Value = -0.7856;
+				Time = 0.9804;
+			};
+			KeyFrame8:
+			{
+				Value = 0.4294;
+				Time = 1.1204;
+			};
+			KeyFrame9:
+			{
+				Value = -0.8887;
+				Time = 1.2605;
+			};
+		};
+	};
+	NodeAction16:
+	{
+		NodeName = "pj_p2";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2801;
+			};
+		};
+	};
+	NodeAction17:
+	{
+		NodeName = "p2d";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2801;
+			};
+		};
+	};
+	NodeAction18:
+	{
+		NodeName = "p1";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2801;
+			};
+		};
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 10;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2801;
+			};
+			KeyFrame2:
+			{
+				Value = 0.3159;
+				Time = 0.4202;
+			};
+			KeyFrame3:
+			{
+				Value = -0.8462;
+				Time = 0.5602;
+			};
+			KeyFrame4:
+			{
+				Value = 0.3153;
+				Time = 0.7003;
+			};
+			KeyFrame5:
+			{
+				Value = -0.7655;
+				Time = 0.8403;
+			};
+			KeyFrame6:
+			{
+				Value = 0.2527;
+				Time = 0.9524;
+			};
+			KeyFrame7:
+			{
+				Value = 0.3159;
+				Time = 0.9804;
+			};
+			KeyFrame8:
+			{
+				Value = -0.8462;
+				Time = 1.1204;
+			};
+			KeyFrame9:
+			{
+				Value = 0.3153;
+				Time = 1.2605;
+			};
+		};
+	};
+	NodeAction19:
+	{
+		NodeName = "pj_p1";
+		AngleFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2801;
+			};
+		};
+	};
+	NodeAction20:
+	{
+		NodeName = "p1d";
+		PosFunc:
+		{
+			WrapMode = "FinalValue";
+			NumKeyFrames = 2;
+			KeyFrame0:
+			{
+			};
+			KeyFrame1:
+			{
+				Time = 0.2801;
+			};
+		};
+	};
+	NodeAction21:
+	{
+		NodeName = "head_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction22:
+	{
+		NodeName = "head_sprite_1";
+		NodeAction = 0;
+	};
+	NodeAction23:
+	{
+		NodeName = "c4_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction24:
+	{
+		NodeName = "p4_sprite_0";
+		NodeAction = 3;
+	};
+	NodeAction25:
+	{
+		NodeName = "c3_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction26:
+	{
+		NodeName = "p3_sprite_0";
+		NodeAction = 2;
+	};
+	NodeAction27:
+	{
+		NodeName = "c2_sprite_0";
+		NodeAction = 0;
+	};
+	NodeAction28:
+	{
+		NodeName = "p2_sprite_0";
+		NodeAction = 1;
+	};
+	NodeAction29:
+	{
+		NodeName = "p1_sprite_0";
+		NodeAction = 0;
+	};
+	NumNodeActions = 30;
+};

@@ -1,0 +1,114 @@
+Script : 
+{
+  Sequence = "A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,A16";
+  A0 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "ic_NPCDialog";
+  };
+  A1 : 
+  {
+    Type = "PlayActorAnim";
+    Actor = "Police";
+    Anim = "speaking_civilian";
+  };
+  A2 : 
+  {
+    Type = "PlaySound";
+    Sound = "data/sound/fx/ui/chikichiki";
+    Vol = 0.5;
+    Pan = 0.5;
+    Loop = true;
+    Wait = false;
+  };
+  A3 : 
+  {
+    Type = "HideHUDElem";
+    Elem = "lb_NPCDialogCentered";
+  };
+  A4 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_NPCDialog";
+    LetterByLetter = false;
+    LetterTime = 0.05000000075;
+  };
+  A5 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "lb_NPCDialog";
+  };
+  A6 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_NPCDialog";
+    Text = "POLICE_ASK_REC_ITEMS2";
+    LetterByLetter = true;
+    LetterTime = 0.05000000075;
+  };
+  A7 : 
+  {
+    Type = "StopSound";
+    Sound = "data/sound/fx/ui/chikichiki";
+  };
+  A8 : 
+  {
+    Type = "PlayActorAnim";
+    Actor = "Police";
+    Anim = "idle_civilian";
+  };
+  A9 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_NPCDialogOpt2";
+    LetterByLetter = false;
+    LetterTime = 0.009999999776;
+  };
+  A10 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_NPCDialogOpt1";
+    LetterByLetter = false;
+    LetterTime = 0.009999999776;
+  };
+  A11 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "g_NPCDialogOpt1";
+  };
+  A12 : 
+  {
+    Type = "ShowHUDElem";
+    Elem = "g_NPCDialogOpt2";
+  };
+  A13 : 
+  {
+    Type = "PlayHUDAnim";
+    Anim = "NPCDialogShowOptions";
+    AutoShow = true;
+    AutoHide = false;
+    WaitAnim = false;
+    Skipable = true;
+  };
+  A14 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_NPCDialogOpt2";
+    Text = "POLICE_ASK_REC_ITEMS_OPT2";
+    LetterByLetter = false;
+    LetterTime = 0.009999999776;
+  };
+  A15 : 
+  {
+    Type = "SetDialogText";
+    Label = "lb_NPCDialogOpt1";
+    Text = "POLICE_ASK_REC_ITEMS_OPT1";
+    LetterByLetter = false;
+    LetterTime = 0.009999999776;
+  };
+  A16 : 
+  {
+    Type = "Sleep";
+    Time = 0.5;
+  };
+};

@@ -1,0 +1,33 @@
+Sprite:
+{
+	Name = "propulsores";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "propulsores";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5088;
+					};
+					Size:
+					{
+						Width = 57.0;
+						Height = 24.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};
