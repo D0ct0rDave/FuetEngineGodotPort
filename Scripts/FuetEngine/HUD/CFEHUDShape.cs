@@ -11,8 +11,10 @@ namespace FuetEngine
 	public class CFEHUDShape : CFEHUDObject
 	{
 		// Make sure you provide a parameterless constructor.
-		public CFEHUDShape(){}
-		public CFEHUDShape(string _sName) : base(_sName) {}
+		public CFEHUDShape()
+		{
+			Name = "CFEHUDShape";
+		}
 	};
 }
 //-----------------------------------------------------------------------------

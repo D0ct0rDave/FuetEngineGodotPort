@@ -11,8 +11,10 @@ namespace FuetEngine
 	public class CFEHUDLabel : CFEHUDObject 
 	{
 		// Make sure you provide a parameterless constructor.
-		public CFEHUDLabel(){}
-		public CFEHUDLabel(string _sName) : base(_sName) {}
+		public CFEHUDLabel()
+		{
+			Name = "CFEHUDLabel";
+		}
 	};
 }
 //-----------------------------------------------------------------------------

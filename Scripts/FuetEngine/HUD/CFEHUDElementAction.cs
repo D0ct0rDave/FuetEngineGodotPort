@@ -13,12 +13,10 @@ namespace FuetEngine
 		public FEReal m_rActionTime = 0.0f;
 		public FEReal m_rMaxActionTime = 0.0f;
 		// Make sure you provide a parameterless constructor.
-		public CFEHUDElementAction(){}
-		public CFEHUDElementAction(CFEString _sName)
+		public CFEHUDElementAction()
 		{
-			Name = _sName;
+			Name = "CFEHUDElementAction";
 		}
-			
 		/// Adds a new action into the HUD Element.
 		public int iAddAction(CFEHUDObjectAction _oAction)
 		{

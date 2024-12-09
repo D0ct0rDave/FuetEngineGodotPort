@@ -11,11 +11,9 @@ namespace FuetEngine
 	public partial class CFEHUDElement : Node2D
 	{
 		// Make sure you provide a parameterless constructor.
-		public CFEHUDElement(){}		
-		/// Default constructor of this element
-		public CFEHUDElement(CFEString _sName)
+		public CFEHUDElement()
 		{
-			Name = _sName;
+			Name = "CFEHUDElement";
 
 			m_oLayers = new Node2D();
 			m_oLayers.Name = "Layers";
@@ -24,7 +22,7 @@ namespace FuetEngine
 			m_oActions = new Node();
 			m_oActions.Name = "Action";
 			AddChild(m_oActions);
-		}
+		}		
 
 		/// Inserts an action at the given position
 		public void InsertAction(uint _uiIdx, CFEHUDElementAction _oAction)

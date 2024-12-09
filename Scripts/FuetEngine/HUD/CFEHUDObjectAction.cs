@@ -7,7 +7,10 @@ namespace FuetEngine
 	public partial class CFEHUDObjectAction : Node
 	{
 		// Make sure you provide a parameterless constructor.
-		public CFEHUDObjectAction(){}
+		public CFEHUDObjectAction()
+		{
+			Name = "CFEHUDObjectAction";
+		}
 		/*
 		/// Retrieves the configuration of the HUDObject at a given moment in time.
 		const CFEHUDObject& oGetValue(FEReal _rTime)

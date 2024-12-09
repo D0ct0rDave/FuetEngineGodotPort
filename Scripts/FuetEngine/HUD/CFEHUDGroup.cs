@@ -15,17 +15,9 @@ namespace FuetEngine
 		public FEReal m_rDepthFactor = 0.1f;
 
 		// Make sure you provide a parameterless constructor.
-		public CFEHUDGroup(){}
-		/// Default constructor of the class.
-		public CFEHUDGroup(CFEString _sName) : 
-			base(_sName)
+		public CFEHUDGroup()
 		{
-		}
-
-		/// Default constructor of the class.
-		public CFEHUDGroup(CFEString _sName, int _uiReserveSize) : 
-			base(_sName)
-		{
+			Name = "CFEHUDGroup";	
 		}
 
 		/// Adds a new object to the group.

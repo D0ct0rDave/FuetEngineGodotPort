@@ -34,11 +34,9 @@ namespace FuetEngine
 		public bool			m_bCurVis;		
 		// --------------------------------------------------------------------
 		// Make sure you provide a parameterless constructor.
-		public CFEHUDObject(){}
-		/// Default constructor of this element
-		public CFEHUDObject(CFEString _sName)
+		public CFEHUDObject()
 		{
-			Name = _sName;
+			Name = "CFEHUDObject";
 			m_rIniDepth = 0.0f;
 			m_oIniColor	= new CFEColor(1.0f,1.0f,1.0f,1.0f);
 			m_iIniAction= -1;

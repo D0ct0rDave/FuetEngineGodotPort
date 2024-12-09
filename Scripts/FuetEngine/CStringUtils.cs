@@ -9,9 +9,27 @@ namespace FuetEngine
 		// ----------------------------------------------------------------------------
 		static public string sGetPath(string _sFilename)
 		{
-			Uri uri = new Uri(_sFilename);
-			string baseUrl = uri.Scheme + "://" + uri.Host + uri.AbsolutePath.Replace(Path.GetFileName(uri.LocalPath), string.Empty);
-			return baseUrl;
+			List<string> pathElements = ParsePathElements(_sFilename);
+			// remove possible filename
+			if (pathElements.Count > 1)
+			{
+				pathElements.RemoveAt(pathElements.Count-1);
+				CompactPathElements(ref pathElements);
+				string canonicalString = BuildPathFromPathElements(pathElements);
+				return canonicalString;
+			}
+			else if (pathElements.Count == 1)
+			{
+				return pathElements[0];
+			}
+			else
+			{
+				return "";
+			}
+
+			// Uri uri = new Uri(_sFilename);
+			// string baseUrl = uri.Scheme + "://" + uri.Host + uri.AbsolutePath.Replace(Path.GetFileName(uri.LocalPath), string.Empty);
+			// return baseUrl;
 		}
 		// ----------------------------------------------------------------------------
 		static public string sGetFilename(string _sFilename)
@@ -19,27 +37,31 @@ namespace FuetEngine
 			return Path.GetFileNameWithoutExtension(_sFilename);
 		}
 		// ----------------------------------------------------------------------------
-		public static string sGetCanonicalPath(string _sPath)
+		static public List<string> ParsePathElements(string _sPath)
 		{
-			if (_sPath == "") return (_sPath);
+			List<string> sElements = new List<string>();
+			if (_sPath == "") return (sElements);
+
+			string sProcessedPath = _sPath.Replace("\\", "/");
+
+			// encode possible uri scheme token
+			string schemeToken = "|#@$|";
+
+			//adding an extra "/" helps identifying the scheme as an element
+			sProcessedPath = sProcessedPath.Replace("//", schemeToken + "/"); 
 
 			// ----------------------------------------------
 			// Are there really any relative directories?
 			// ----------------------------------------------
-			int iPos = _sPath.LastIndexOf("./");
-			if (iPos <= 0) return (_sPath);
-
-			// ----------------------------------------------
 			int iIdx = 0;
-			char[] szPath = _sPath.ToCharArray();
-			List<string> m_sDirs = new List<string>();
+			char[] szPath = sProcessedPath.ToCharArray();
 			string sDir = "";
 
-			while (iIdx != _sPath.Length)
+			while (iIdx != sProcessedPath.Length)
 			{
 				if (szPath[iIdx] == '/')
 				{
-					m_sDirs.Add(sDir);
+					sElements.Add(sDir);
 					sDir = "";
 				}
 				else
@@ -49,16 +71,32 @@ namespace FuetEngine
 
 				iIdx++;
 			}
-
-			int i;
-			for (i = 0; i < m_sDirs.Count;)
+			if (sDir != "")
 			{
-				if (m_sDirs[i] == "..")
+				// Last element
+				sElements.Add(sDir);
+			}
+
+			// decode possible uri scheme token
+			if (sElements.Count>0)
+			{
+				sElements[0] = sElements[0].Replace(schemeToken, "//");
+			}
+			
+			return (sElements);
+		}
+		// ----------------------------------------------------------------------------
+		static public void CompactPathElements(ref List<string> _pathElements)
+		{
+			int i;
+			for (i = 0; i < _pathElements.Count;)
+			{
+				if (_pathElements[i] == "..")
 				{
-					if ((i > 0) && (m_sDirs[i - 1] != ".."))
+					if ((i > 0) && (_pathElements[i - 1] != ".."))
 					{
-						m_sDirs.RemoveAt(i);
-						m_sDirs.RemoveAt(i - 1);
+						_pathElements.RemoveAt(i);
+						_pathElements.RemoveAt(i - 1);
 						i--;
 					}
 					else
@@ -67,24 +105,53 @@ namespace FuetEngine
 						i++;
 					}
 				}
-				else if (m_sDirs[i] == ".")
+				else if (_pathElements[i] == ".")
 				{
-					m_sDirs.RemoveAt(i);
+					_pathElements.RemoveAt(i);
 				}
 				else
 				{
 					i++;
 				}
 			}
-
+		}
+		// ----------------------------------------------------------------------------
+		public static string BuildPathFromPathElements(List<string> _pathElements)
+		{
 			string sRes = "";
-			for (i = 0; i < m_sDirs.Count; i++)
-			{
-				sRes += m_sDirs[i] + '/';
+			for (int i = 0; i < _pathElements.Count; i++)
+			{				
+				sRes += _pathElements[i];
+				if ( !_pathElements[i].Contains("//") && (i != (_pathElements.Count-1)) )
+				{
+					sRes += '/';
+				}
 			}
+			return sRes;
+		}
+		// ----------------------------------------------------------------------------
+		public static string sGetCanonicalPath(string _sPath)
+		{
+			if (_sPath == "") return _sPath;
 
-			sRes += sDir;
-			return (sRes);
+			string sProcessedPath = _sPath.Replace("\\", "/");
+			
+			// ----------------------------------------------
+			// Are there really any relative directories?
+			// ----------------------------------------------
+			int iPos = sProcessedPath.LastIndexOf("./");
+			if (iPos <= 0)
+			{
+				return sProcessedPath;			
+			}
+			else
+			{
+				List<string> pathElements = ParsePathElements(sProcessedPath);
+				CompactPathElements(ref pathElements);
+				string sRes = BuildPathFromPathElements(pathElements);
+
+				return sRes;
+			}
 		}
 	}
 };

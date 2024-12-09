@@ -6,7 +6,10 @@ namespace FuetEngine
 	public class CFEHUD : Node2D
 	{
 		// Make sure you provide a parameterless constructor.
-		public CFEHUD(){}
+		public CFEHUD()
+		{
+			Name = "CFEHUD";
+		}
 
 		/// Adds a new element into the HUD.
 		public int iAddElement(CFEHUDElement _oElement)

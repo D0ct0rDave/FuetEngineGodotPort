@@ -19,9 +19,9 @@ namespace FuetEngine
 		// ------------------------------------
 		/// To speedup things
 		private bool m_actionHasOneFrame = false;
-		private CFESprite m_sprite = null;
 		private Sprite m_mainSprite = null;
 		private Sprite m_secondarySprite = null;
+		private CFESprite m_sprite = null;
 		// --------------------------------------------------------------------
 		CFESpriteInstance()
 		{

@@ -86,7 +86,7 @@ namespace FuetEngine
 			// Element name
 			CFEString sElemName = _oConfigFile.sGetString(_sPrefix + ".Name","nonamed-element");
 
-			CFEHUDElement oElem = Support.CreateObject<Node2D>(FuetEngine.Support.HUD_ELEMENT_SCRIPT_FILE) as CFEHUDElement;
+			CFEHUDElement oElem = Support.CreateObject<CFEHUDElement>(FuetEngine.Support.HUD_ELEMENT_SCRIPT_FILE);
 			oElem.Name = sElemName;
 
 			// Number of layers
@@ -175,7 +175,7 @@ namespace FuetEngine
 
             if (sElemType == "Label")
 			{
-				CFEHUDLabel oLabel = new CFEHUDLabel(sElemName);
+				CFEHUDLabel oLabel = Support.CreateObject<CFEHUDLabel>(FuetEngine.Support.HUD_LABEL_SCRIPT_FILE);
 				LoadCommonObjectProperties(_sPrefix,_oConfigFile, oLabel);
 				
 				string sText = _oConfigFile.sGetString(_sPrefix + ".Text","Label");
@@ -211,7 +211,7 @@ namespace FuetEngine
 			
 			else if (sElemType == "Icon")
 			{
-				CFEHUDIcon oIcon = Support.CreateObject<Node2D>(FuetEngine.Support.HUD_ICON_SCRIPT_FILE) as CFEHUDIcon;
+				CFEHUDIcon oIcon = Support.CreateObject<CFEHUDIcon>(FuetEngine.Support.HUD_ICON_SCRIPT_FILE);
 				LoadCommonObjectProperties(_sPrefix, _oConfigFile, oIcon);
 
 				string sSprite = _oConfigFile.sGetString(_sPrefix + ".Sprite","");
@@ -220,7 +220,7 @@ namespace FuetEngine
 					string sSpriteFile = m_sWorkingDir + "/" + sSprite;
                     
 					CFESprite spriteResource = CFESpriteMgr.Instance.Load(sSpriteFile);
-					CFESpriteInstance spriteInstance = Support.CreateObject<Node2D>(FuetEngine.Support.SPRITE_INSTANCE_SCRIPT_FILE) as CFESpriteInstance;
+					CFESpriteInstance spriteInstance = Support.CreateObject<Node2D,CFESpriteInstance>(FuetEngine.Support.SPRITE_INSTANCE_SCRIPT_FILE);
 
 					spriteInstance.Name = "CFESpriteInstance";
 					spriteInstance.AddChild(spriteResource);
@@ -228,6 +228,8 @@ namespace FuetEngine
 
 					spriteInstance.SetAction(oIcon.iGetIniAction());
                     // spriteInstance.m_oColor            = oRenderColor(m_oModColor, poIcon);
+					
+					oIcon.SetIcon(spriteInstance);
                 }
 
 				return oIcon;
@@ -235,7 +237,7 @@ namespace FuetEngine
 			
 			else if (sElemType == "Rect")
 			{
-                CFEHUDRect oRect = new CFEHUDRect(sElemName);
+				CFEHUDRect oRect = Support.CreateObject<CFEHUDRect>(FuetEngine.Support.HUD_RECT_SCRIPT_FILE);
 				LoadCommonObjectProperties(_sPrefix, _oConfigFile, oRect);
 				
 				// Load width / height / pivot
@@ -284,7 +286,7 @@ namespace FuetEngine
 			
 			else if (sElemType == "Shape")
 			{
-				CFEHUDShape oShape = new CFEHUDShape(sElemName);
+				CFEHUDShape oShape = Support.CreateObject<CFEHUDShape>(FuetEngine.Support.HUD_SHAPE_SCRIPT_FILE);
 				LoadCommonObjectProperties(_sPrefix, _oConfigFile, oShape);
 				
 				string sMesh = _oConfigFile.sGetString(_sPrefix + ".Mesh","");
@@ -310,9 +312,9 @@ namespace FuetEngine
 			
 			else if (sElemType == "PSys")
 			{
-				CFEHUDPSys oPSys = new CFEHUDPSys(sElemName);
+				CFEHUDPSys oPSys = Support.CreateObject<CFEHUDPSys>(FuetEngine.Support.HUD_PSYS_SCRIPT_FILE);
 				LoadCommonObjectProperties(_sPrefix, _oConfigFile, oPSys);
-				
+			
 				string sPSys = _oConfigFile.sGetString(_sPrefix + ".PSys","");
 				if (sPSys != "")
 				{
@@ -339,7 +341,7 @@ namespace FuetEngine
                     
                 int uiNumObjects = _oConfigFile.iGetInteger(_sPrefix + ".NumObjects",0);
 				
-				CFEHUDGroup oGroup = Support.CreateObject<Node2D>(FuetEngine.Support.HUD_GROUP_SCRIPT_FILE) as CFEHUDGroup;
+				CFEHUDGroup oGroup = Support.CreateObject<CFEHUDGroup>(FuetEngine.Support.HUD_GROUP_SCRIPT_FILE);
 
 			    LoadCommonObjectProperties(_sPrefix, _oConfigFile, oGroup);
                 float rDepthFact = _oConfigFile.rGetReal(_sPrefix + ".DepthFact",0.1f);

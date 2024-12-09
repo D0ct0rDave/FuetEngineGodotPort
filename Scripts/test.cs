@@ -13,7 +13,8 @@ public class test : Node2D
     public override void _Ready()
     {
         CFEConfigFileImportPlugin plugin = new  CFEConfigFileImportPlugin();
-        plugin.Import("res://Assets/data/Intro/intro_page1.hud", "res://Assets/data/Intro/intro_page1", null, null, null);
+
+        plugin.Import("res://Assets/Sprites/fire_static.spr", "res://Assets/Sprites/fire_static", null, null, null);
         // plugin.Import("res://Assets/data/Intro/intro_page1.hud", "res://Assets/data/Intro/intro_page1", null, null, null);
     }
 

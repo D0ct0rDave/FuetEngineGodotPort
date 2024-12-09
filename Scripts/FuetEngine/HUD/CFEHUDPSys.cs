@@ -11,8 +11,10 @@ namespace FuetEngine
 		public class CFEHUDPSys : CFEHUDObject 
 	{
 		// Make sure you provide a parameterless constructor.
-		public CFEHUDPSys(){}
-		public CFEHUDPSys(string _sName) : base(_sName) {}
+		public CFEHUDPSys()
+		{
+			Name = "CFEHUDPSys";
+		}
 	};
 }
 //-----------------------------------------------------------------------------

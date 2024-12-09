@@ -133,7 +133,7 @@ namespace FuetEngine
                 // a material and then build a basic sprite with it.
 
                 /// Retrieves the filename portion of a full qualified filename.
-                string sMaterial = sWorkingDir + CFEStringUtils.sGetFilename(_sFilename);
+                string sMaterial = sWorkingDir + "/" + CFEStringUtils.sGetFilename(_sFilename);
                 return oBuildBasicSprite(sMaterial, sFilename);
             }
 
@@ -189,7 +189,7 @@ namespace FuetEngine
                     int uiYFrames = oConfig.iGetInteger(sFRVar, 1);
 
                     sFRVar = sFVar + ".Material";
-                    string sMaterial = sWorkingDir + oConfig.sGetString(sFRVar, "");
+                    string sMaterial = sWorkingDir + "/" + oConfig.sGetString(sFRVar, "");
 					// TODO: Material hMat = (_bLoadMaterials) ? CFEMaterialMgr.poLoad(sMaterial) : null;
                     string hMat = sMaterial;
                         
@@ -257,7 +257,7 @@ namespace FuetEngine
 
                     // Material filename root
                     sFRVar = sFVar + ".Material";
-                    string sMaterial = sWorkingDir + oConfig.sGetString(sFRVar, "");
+                    string sMaterial = sWorkingDir + "/" + oConfig.sGetString(sFRVar, "");
 
                     // Pivot
                     sFRVar = sFVar + ".Pivot.x";
@@ -311,7 +311,7 @@ namespace FuetEngine
 
                         // Material filename
                         sFrameVar = sFCVar + ".Material";
-                        string sMaterial = sWorkingDir + oConfig.sGetString(sFrameVar, "");
+                        string sMaterial = sWorkingDir + "/" + oConfig.sGetString(sFrameVar, "");
                         string hMat = sMaterial;
 
                         // Wrap mode
