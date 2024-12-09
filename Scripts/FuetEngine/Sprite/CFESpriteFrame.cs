@@ -4,7 +4,7 @@ using CFEVect2 = Godot.Vector2;
 namespace FuetEngine
 {
     [Tool]
-    public class CFESpriteFrame : Node
+    public class CFESpriteFrame : Resource
     {
         // Make sure you provide a parameterless constructor.
         public CFESpriteFrame()
@@ -59,15 +59,15 @@ namespace FuetEngine
         // pivots go from 0,0 to 1,1 relative to the frame
         [Export]
         public CFEVect2 m_oPivot = new CFEVect2();
-
         /// Inverse of the material dimensions
+
+        [Export]
         public CFEVect2 m_o1OverDims = new CFEVect2();
 
         /// The material used by this sprite frame.
         // public Material m_hMaterial = null;
         [Export]
         public Texture m_hMaterial = null;
-        [Export]
         public string m_sMaterial = null;    // comes from material
     };
 }

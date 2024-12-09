@@ -1,4 +1,5 @@
-﻿using Godot;
+﻿using System.Collections.Generic;
+using Godot;
 
 namespace FuetEngine
 {
@@ -17,7 +18,7 @@ namespace FuetEngine
 	};
 	[Tool]
 	// ------------------------------------------------------------------------
-	public class CFESpriteAction : Node
+	public class CFESpriteAction : Resource
 	{
 		/// Total time of one loop of the animation.
 		[Export]
@@ -31,14 +32,16 @@ namespace FuetEngine
 		/// Random start time: range of random time to start the action.
 		[Export]
 		public float m_rRandStartTime = 0.0f;
-		/// Sequence of frames composing the sprite
+		[Export]
+		public string Name { get; set; }
+		[Export]
+        /// Sequence of frames composing the sprite
+        public List<CFESpriteFrame> m_oSeq = new List<CFESpriteFrame>();
 		// --------------------------------------------------------------------
 		// Make sure you provide a parameterless constructor.
 		public CFESpriteAction()
 		{
 		}
-		/// Default constructor for the class
-		public CFESpriteAction(string _sName) { SetName(_sName); }
 		/// Retrieves the action play mode.
 		public ESFSPlayMode eGetPlayMode() { return (m_ePlayMode); }
 		/// Retrieves the maximum time of the animation without looping or -1 if infinite (when looping)
@@ -61,7 +64,7 @@ namespace FuetEngine
 		/// Returns the sprite frame number corresponding to the given time, searching from SeekFrame.
 		public int uiGetFrame(float _rTime, int _uiSeekFrame)
 		{
-			int uiMaxFrames = GetChildCount();
+			int uiMaxFrames = m_oSeq.Count;
 			switch (m_ePlayMode)
 			{
 				// .................................................
@@ -109,7 +112,7 @@ namespace FuetEngine
 		/// Returns the following frame to the given one taking into account the playing mode.
 		public int uiNextFrame(int _uiFrame)
 		{
-			int uiMaxFrames = GetChildCount();
+			int uiMaxFrames = m_oSeq.Count;
 			switch (m_ePlayMode)
 			{
 				// .................................................
@@ -156,7 +159,7 @@ namespace FuetEngine
 			int uiStartFrame;
 			int uiEndFrame;
 
-			int uiMaxFrames = GetChildCount();
+			int uiMaxFrames = m_oSeq.Count;
 
 			// Seek frame is occurs after current time
 			CFESpriteFrame seekFrame = GetFrame(_uiSeekFrame);
@@ -193,9 +196,20 @@ namespace FuetEngine
 			return uiMaxFrames - 1;
 		}
 		// --------------------------------------------------------------------
+		public int iAddFrame(CFESpriteFrame _frame)
+		{
+			m_oSeq.Add(_frame);
+			return m_oSeq.Count-1;
+		}
+		// --------------------------------------------------------------------
 		public CFESpriteFrame GetFrame(int i)
 		{
-			return GetChild(i) as CFESpriteFrame;
+			return m_oSeq[i];
+		}
+		// --------------------------------------------------------------------
+		public int GetNumberOfFrames()
+		{
+			return m_oSeq.Count;
 		}
 		// --------------------------------------------------------------------
 	};

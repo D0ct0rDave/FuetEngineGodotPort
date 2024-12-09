@@ -21,6 +21,7 @@ namespace FuetEngine
 		private bool m_actionHasOneFrame = false;
 		private Sprite m_mainSprite = null;
 		private Sprite m_secondarySprite = null;
+		[Export]
 		private CFESprite m_sprite = null;
 		// --------------------------------------------------------------------
 		CFESpriteInstance()
@@ -30,6 +31,12 @@ namespace FuetEngine
 		public bool bInitialized()
 		{
 			return m_sprite != null;
+		}
+		// --------------------------------------------------------------------
+		public void Init(CFESprite _sprite)
+		{
+			m_sprite = _sprite;
+			Init();
 		}
 		// --------------------------------------------------------------------
 		public void Init()
@@ -48,14 +55,12 @@ namespace FuetEngine
 				AddChild(secondarySprite);
 			}
 
-			m_mainSprite = GetChild(1) as Sprite;
-			m_secondarySprite = GetChild(2) as Sprite;
-			m_sprite = GetChild(0) as CFESprite;
+			m_mainSprite = GetChild(0) as Sprite;
+			m_secondarySprite = GetChild(1) as Sprite;
 			
 			if (m_sprite != null)
 			{
 				SetAction(0);
-				FuetEngine.Support.SetObjectEnabled(m_sprite, false);
 			}
 			
 			// No blending between frames for now.
@@ -77,7 +82,7 @@ namespace FuetEngine
 			m_uiCurrentActionFrame = 0;
 
 			CFESpriteInstUpdater.SetCurrentActionTime(this, 0.0f);
-			m_actionHasOneFrame = (m_curAction.GetChildCount() == 1);
+			m_actionHasOneFrame = (m_curAction.GetNumberOfFrames() == 1);
 			
 			SetFrameToSprite(m_curAction.GetFrame(0), ref m_mainSprite);
 

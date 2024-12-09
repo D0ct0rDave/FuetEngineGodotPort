@@ -81,11 +81,11 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 		if (extension == "spr")
 		{
 			CFESprite spriteResource = CFESpriteMgr.Instance.Load(filenameWithoutExtension);
+
 			CFESpriteInstance spriteInstance = Support.CreateObject<Node2D>(FuetEngine.Support.SPRITE_INSTANCE_SCRIPT_FILE) as CFESpriteInstance;
 
 			spriteInstance.Name = "CFESpriteInstance";
-			spriteInstance.AddChild(spriteResource);
-			spriteInstance.Init();
+			spriteInstance.Init(spriteResource);
 
 			Node childNode = spriteInstance as Node;
 			SetHierarchyOwner(ref childNode, childNode);

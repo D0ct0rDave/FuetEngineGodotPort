@@ -22,7 +22,7 @@ namespace FuetEngine
 		public const string HUD_RECT_SCRIPT_FILE = "res://Scripts/FuetEngine/HUD/CFEHUDRect.cs";
 		
 		//---------------------------------------------------------------------
-		private static B _CreateObject<T,B>(Script _script) where T : Node, new() where B : Node
+		private static B _CreateObject<T,B>(Script _script) where T : Godot.Object, new() where B : Godot.Object
 		{
 			_script.SetupLocalToScene();
 
@@ -42,25 +42,25 @@ namespace FuetEngine
 			return finalNode;
 		}
 		//---------------------------------------------------------------------
-		public static T CreateObject<T>(Script _script) where T : Node, new()
+		public static T CreateObject<T>(Script _script) where T : Godot.Object, new()
 		{
 			return _CreateObject<T,T>(_script);
 		}
 		//---------------------------------------------------------------------
 		public static T CreateObject<T>(string _scriptFilename) where T : Node, new()
 		{
-			GD.Print("CreateObject("+_scriptFilename+")");			
+			// GD.Print("CreateObject("+_scriptFilename+")");			
 			return _CreateObject<T,T>(ResourceLoader.Load(_scriptFilename) as Script);
 		}
 		//---------------------------------------------------------------------
-		public static B CreateObject<B,T>(Script _script) where T : Node, new() where B : Node
+		public static B CreateObject<B,T>(Script _script) where T : Godot.Object, new() where B : Godot.Object
 		{
 			return _CreateObject<T,B>(_script);
 		}
 		//---------------------------------------------------------------------
-		public static B CreateObject<T,B>(string _scriptFilename) where T : Node, new() where B : Node
+		public static B CreateObject<T,B>(string _scriptFilename) where T : Godot.Object, new() where B : Godot.Object
 		{
-			GD.Print("CreateObject("+_scriptFilename+")");
+			// GD.Print("CreateObject("+_scriptFilename+")");
 			return _CreateObject<T,B>(ResourceLoader.Load(_scriptFilename) as Script);
 		}
 		//---------------------------------------------------------------------

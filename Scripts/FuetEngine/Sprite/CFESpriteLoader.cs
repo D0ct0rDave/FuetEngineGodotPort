@@ -94,7 +94,7 @@ namespace FuetEngine
             oAction.m_eBlendMode    = EFEBlendMode.BM_ALPHA;
 
             CFESpriteFrame oFrame = Support.CreateObject<CFESpriteFrame>(spriteFrameScript);
-            oFrame.Name = "SpriteFrame";
+            // oFrame.Name = "SpriteFrame";
             oFrame.m_oPivot     = new CFEVect2(0.0f, 0.0f);
             oFrame.m_oUVIni = new CFEVect2(0.0f, 0.0f);
             oFrame.m_oUVEnd = new CFEVect2(1.0f, 1.0f);
@@ -110,8 +110,8 @@ namespace FuetEngine
 	        oFrame.m_bVWorldCoords = false;
             ProcessSpriteFrame(ref oFrame);
 
-            oAction.AddChild(oFrame);
-            oSprite.AddChild(oAction);
+            oAction.iAddFrame(oFrame);
+            oSprite.iAddAction(oAction);
 
             return oSprite;
         }
@@ -148,7 +148,7 @@ namespace FuetEngine
             int uiNumActions = oConfig.iGetInteger("Sprite.NumActions", 0);
 
             for (int a = 0; a < uiNumActions; a++)
-            {
+            {			
                 CFESpriteAction oAction = Support.CreateObject<CFESpriteAction>(spriteActionScript);
                 oAction.SetName("default");
                 oAction.m_rActionTime = 0.0f;
@@ -222,7 +222,7 @@ namespace FuetEngine
                         {
                             // Create the frame sequence
                             CFESpriteFrame oFrame = Support.CreateObject<CFESpriteFrame>(spriteFrameScript);
-                            oFrame.Name = "Frame_" + j.ToString() + "_" + i.ToString();
+                            // oFrame.Name = "Frame_"  + j.ToString() + "_" + i.ToString();
                             oFrame.m_oPivot     = new CFEVect2(rPivotX, rPivotY);
                             oFrame.m_oUVIni = new CFEVect2((float)i * rXStep, (float)j * rYStep);
                             oFrame.m_oUVEnd = new CFEVect2((float)(i + 1) * rXStep, (float)(j + 1) * rYStep);
@@ -241,7 +241,7 @@ namespace FuetEngine
                             ProcessSpriteFrame(ref oFrame);
 
 							oAction.m_rActionTime += oFrame.m_rFrameTime;
-                            oAction.AddChild(oFrame);
+                            oAction.iAddFrame(oFrame);
                         }
                     }
                 }
@@ -272,7 +272,7 @@ namespace FuetEngine
                         string sFrameTex = sMaterial + i;
 
                         CFESpriteFrame oFrame = Support.CreateObject<CFESpriteFrame>(spriteFrameScript);
-                        oFrame.Name = "Frame_" + i.ToString();
+                        // oFrame.Name = "Frame_" + i.ToString();
                         oFrame.m_oPivot     = new CFEVect2(rPivotX, rPivotY);
                         oFrame.m_oUVIni = new CFEVect2(0, 0);
                         oFrame.m_oUVEnd = new CFEVect2(1, 1);
@@ -286,7 +286,7 @@ namespace FuetEngine
                         ProcessSpriteFrame(ref oFrame);
 
                         oAction.m_rActionTime += oFrame.m_rFrameTime;
-                        oAction.AddChild(oFrame);
+                        oAction.iAddFrame(oFrame);
                     }
                 }
 
@@ -304,7 +304,7 @@ namespace FuetEngine
                     for (uint i = 0; i < uiFrames; i++)
                     {
                         CFESpriteFrame oFrame = Support.CreateObject<CFESpriteFrame>(spriteFrameScript);
-                        oFrame.Name = "Frame_" + i.ToString();
+                        // oFrame.Name = "Frame_" + i.ToString();
 
                         sFCVar = sFVar + ".Frame" + i;
                         string sFrameVar;
@@ -392,11 +392,11 @@ namespace FuetEngine
 						ProcessSpriteFrame(ref oFrame);
 
                         oAction.m_rActionTime += oFrame.m_rFrameTime;
-                        oAction.AddChild(oFrame);
+                        oAction.iAddFrame(oFrame);
                     }
                 }
 
-                oSprite.AddChild(oAction);
+                oSprite.iAddAction(oAction);
             }
             return oSprite;
         }
