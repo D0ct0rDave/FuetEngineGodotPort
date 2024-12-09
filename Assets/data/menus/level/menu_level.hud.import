@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/menu_level.hud-0fe7c23441a5cc565b875d6a008c4011.tscn"
+
+[deps]
+
+source_file="res://Assets/data/menus/level/menu_level.hud"
+dest_files=[ "res://.import/menu_level.hud-0fe7c23441a5cc565b875d6a008c4011.tscn" ]
+
+[params]
+

@@ -1,0 +1,234 @@
+[gd_resource type="Resource" load_steps=28 format=2]
+
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteFrame.cs" type="Script" id=1]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESprite.cs" type="Script" id=2]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteAction.cs" type="Script" id=3]
+[ext_resource path="res://Assets/data/HUD/sprites/item4.png" type="Texture" id=4]
+[ext_resource path="res://Assets/data/HUD/sprites/item5.png" type="Texture" id=5]
+[ext_resource path="res://Assets/data/HUD/sprites/item3.png" type="Texture" id=6]
+[ext_resource path="res://Assets/data/HUD/sprites/item2.png" type="Texture" id=7]
+[ext_resource path="res://Assets/data/HUD/sprites/item-d.png" type="Texture" id=8]
+[ext_resource path="res://Assets/data/HUD/sprites/item1.png" type="Texture" id=9]
+[ext_resource path="res://Assets/data/HUD/sprites/item6.png" type="Texture" id=10]
+[ext_resource path="res://Assets/data/HUD/sprites/item0.png" type="Texture" id=11]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 1 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 105, 105 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 11 )
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 3 )
+Name = "disabled"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 1 ) ]
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 1 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 105, 105 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 9 )
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 3 )
+Name = "item0"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 3 ) ]
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 1 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 105, 105 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 7 )
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 3 )
+Name = "item1"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 5 ) ]
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 1 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 105, 105 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 6 )
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 3 )
+Name = "item2"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 7 ) ]
+
+[sub_resource type="Resource" id=9]
+script = ExtResource( 1 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 105, 105 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 4 )
+
+[sub_resource type="Resource" id=10]
+script = ExtResource( 3 )
+Name = "item3"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 9 ) ]
+
+[sub_resource type="Resource" id=11]
+script = ExtResource( 1 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 105, 105 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 5 )
+
+[sub_resource type="Resource" id=12]
+script = ExtResource( 3 )
+Name = "item4"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 11 ) ]
+
+[sub_resource type="Resource" id=13]
+script = ExtResource( 1 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 105, 105 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 10 )
+
+[sub_resource type="Resource" id=14]
+script = ExtResource( 3 )
+Name = "item5"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 13 ) ]
+
+[sub_resource type="Resource" id=15]
+script = ExtResource( 1 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 105, 105 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 8 )
+
+[sub_resource type="Resource" id=16]
+script = ExtResource( 3 )
+Name = "item-d"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 15 ) ]
+
+[resource]
+script = ExtResource( 2 )
+Name = "items"
+m_oActions = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ), SubResource( 8 ), SubResource( 10 ), SubResource( 12 ), SubResource( 14 ), SubResource( 16 ) ]

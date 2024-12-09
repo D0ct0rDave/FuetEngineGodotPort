@@ -38,7 +38,7 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 		Godot.Collections.Array array = new Godot.Collections.Array();
 		array.Add( "cfg");
 		array.Add( "spr");
-		// array.Add( "hud");
+		array.Add( "hud");
 		return array;
 	}
 	// ------------------------------------------------------------------------	
@@ -81,7 +81,6 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 		if (extension == "spr")
 		{
 			CFESprite spriteResource = CFESpriteMgr.Instance.Load(filenameWithoutExtension);
-
 			CFESpriteInstance spriteInstance = Support.CreateObject<Node2D>(FuetEngine.Support.SPRITE_INSTANCE_SCRIPT_FILE) as CFESpriteInstance;
 
 			spriteInstance.Name = "CFESpriteInstance";

@@ -11,27 +11,33 @@ namespace FuetEngine
 		protected override CFESprite LoadResource(string filename)
 		{
 			CFESprite spriteResource;
+			string canonicalFilename = CFEStringUtils.sGetCanonicalPath(filename);
+			string godotResourceFilename = canonicalFilename + ".tres";
 
-			if (ResourceLoader.Exists(filename + ".tres"))
+			if (ResourceLoader.Exists(godotResourceFilename))
 			{
-				Resource resource = ResourceLoader.Load(filename + ".tres");
+				Resource resource = ResourceLoader.Load(godotResourceFilename);
 				spriteResource = resource as CFESprite;
 			}
 			else
 			{
-				spriteResource = CFESpriteLoader.oLoad(filename, false);
+				spriteResource = CFESpriteLoader.oLoad(canonicalFilename, false);
 				if (spriteResource != null)
 				{
-					Godot.Error saveError = ResourceSaver.Save(filename + ".tres", spriteResource);
+					Godot.Error saveError = ResourceSaver.Save(godotResourceFilename, spriteResource);
 				}
 				else
 				{
-					GD.Print("Null Sprite: " + filename);
+					GD.Print("Null Sprite: " + canonicalFilename);
 				}
 			}
+			
+			if (spriteResource != null)
+			{
+				spriteResource.ResourceLocalToScene = false;
+				spriteResource.ResourcePath = godotResourceFilename;
+			}
 
-			spriteResource.ResourceLocalToScene = false;
-			spriteResource.ResourcePath = filename + "." + "tres";
 			return spriteResource;
 		}
 

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEConfigFileImporter"
+type="PackedScene"
+path="res://.import/HUD-MP.hud-cd07dee146aea62c946d63d9bdb75637.tscn"
+
+[deps]
+
+source_file="res://Assets/data/HUD/HUD-MP.hud"
+dest_files=[ "res://.import/HUD-MP.hud-cd07dee146aea62c946d63d9bdb75637.tscn" ]
+
+[params]
+

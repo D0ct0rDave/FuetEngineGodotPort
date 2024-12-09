@@ -1,0 +1,38 @@
+[gd_resource type="Resource" load_steps=7 format=2]
+
+[ext_resource path="res://Assets/data/menus/level/NewtilesL1/EnredaderaTile.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteFrame.cs" type="Script" id=2]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESprite.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteAction.cs" type="Script" id=4]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = true
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 356, 822 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.4157, 1 )
+m_o1OverDims = Vector2( 0, 0.00121655 )
+m_hMaterial = ExtResource( 1 )
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 4 )
+Name = "nonamed"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 1 ) ]
+
+[resource]
+script = ExtResource( 3 )
+Name = "EnredaderaTile"
+m_oActions = [ SubResource( 2 ) ]

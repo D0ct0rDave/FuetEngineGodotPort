@@ -1,18 +1,18 @@
 [gd_resource type="Resource" load_steps=36 format=2]
 
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESprite.cs" type="Script" id=1]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteFrame.cs" type="Script" id=2]
-[ext_resource path="res://Assets/Sprites/fire.png" type="Texture" id=3]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteAction.cs" type="Script" id=4]
+[ext_resource path="res://Assets/Sprites/fire.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteAction.cs" type="Script" id=2]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteFrame.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESprite.cs" type="Script" id=4]
 
 [sub_resource type="AtlasTexture" id=1]
 resource_local_to_scene = true
 flags = 4
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 60.0064, 60.0064 )
 
 [sub_resource type="Resource" id=2]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -32,11 +32,11 @@ m_hMaterial = SubResource( 1 )
 [sub_resource type="AtlasTexture" id=3]
 resource_local_to_scene = true
 flags = 4
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 60.0064, 0, 60.0064, 60.0064 )
 
 [sub_resource type="Resource" id=4]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -56,11 +56,11 @@ m_hMaterial = SubResource( 3 )
 [sub_resource type="AtlasTexture" id=5]
 resource_local_to_scene = true
 flags = 4
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 120.013, 0, 59.9808, 60.0064 )
 
 [sub_resource type="Resource" id=6]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -80,11 +80,11 @@ m_hMaterial = SubResource( 5 )
 [sub_resource type="AtlasTexture" id=7]
 resource_local_to_scene = true
 flags = 4
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 179.994, 0, 60.0064, 60.0064 )
 
 [sub_resource type="Resource" id=8]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -104,11 +104,11 @@ m_hMaterial = SubResource( 7 )
 [sub_resource type="AtlasTexture" id=9]
 resource_local_to_scene = true
 flags = 4
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 0, 60.0064, 60.0064, 60.0064 )
 
 [sub_resource type="Resource" id=10]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -128,11 +128,11 @@ m_hMaterial = SubResource( 9 )
 [sub_resource type="AtlasTexture" id=11]
 resource_local_to_scene = true
 flags = 4
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 60.0064, 60.0064, 60.0064, 60.0064 )
 
 [sub_resource type="Resource" id=12]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -152,11 +152,11 @@ m_hMaterial = SubResource( 11 )
 [sub_resource type="AtlasTexture" id=13]
 resource_local_to_scene = true
 flags = 4
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 120.013, 60.0064, 59.9808, 60.0064 )
 
 [sub_resource type="Resource" id=14]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -176,11 +176,11 @@ m_hMaterial = SubResource( 13 )
 [sub_resource type="AtlasTexture" id=15]
 resource_local_to_scene = true
 flags = 4
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 179.994, 60.0064, 60.0064, 60.0064 )
 
 [sub_resource type="Resource" id=16]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -200,11 +200,11 @@ m_hMaterial = SubResource( 15 )
 [sub_resource type="AtlasTexture" id=17]
 resource_local_to_scene = true
 flags = 4
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 0, 120.013, 60.0064, 59.9808 )
 
 [sub_resource type="Resource" id=18]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -224,11 +224,11 @@ m_hMaterial = SubResource( 17 )
 [sub_resource type="AtlasTexture" id=19]
 resource_local_to_scene = true
 flags = 4
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 60.0064, 120.013, 60.0064, 59.9808 )
 
 [sub_resource type="Resource" id=20]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -248,11 +248,11 @@ m_hMaterial = SubResource( 19 )
 [sub_resource type="AtlasTexture" id=21]
 resource_local_to_scene = true
 flags = 4
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 120.013, 120.013, 59.9808, 59.9808 )
 
 [sub_resource type="Resource" id=22]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -272,11 +272,11 @@ m_hMaterial = SubResource( 21 )
 [sub_resource type="AtlasTexture" id=23]
 resource_local_to_scene = true
 flags = 4
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 179.994, 120.013, 60.0064, 59.9808 )
 
 [sub_resource type="Resource" id=24]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -296,11 +296,11 @@ m_hMaterial = SubResource( 23 )
 [sub_resource type="AtlasTexture" id=25]
 resource_local_to_scene = true
 flags = 4
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 0, 179.994, 60.0064, 60.0064 )
 
 [sub_resource type="Resource" id=26]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -320,11 +320,11 @@ m_hMaterial = SubResource( 25 )
 [sub_resource type="AtlasTexture" id=27]
 resource_local_to_scene = true
 flags = 4
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 60.0064, 179.994, 60.0064, 60.0064 )
 
 [sub_resource type="Resource" id=28]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -344,11 +344,11 @@ m_hMaterial = SubResource( 27 )
 [sub_resource type="AtlasTexture" id=29]
 resource_local_to_scene = true
 flags = 4
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 120.013, 179.994, 59.9808, 60.0064 )
 
 [sub_resource type="Resource" id=30]
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -366,7 +366,7 @@ m_o1OverDims = Vector2( 0, 0 )
 m_hMaterial = SubResource( 29 )
 
 [sub_resource type="Resource" id=31]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 Name = "fire0000"
 m_rActionTime = 0.735
 m_eBlendMode = 3
@@ -375,6 +375,6 @@ m_rRandStartTime = 0.0
 m_oSeq = [ SubResource( 2 ), SubResource( 4 ), SubResource( 6 ), SubResource( 8 ), SubResource( 10 ), SubResource( 12 ), SubResource( 14 ), SubResource( 16 ), SubResource( 18 ), SubResource( 20 ), SubResource( 22 ), SubResource( 24 ), SubResource( 26 ), SubResource( 28 ), SubResource( 30 ) ]
 
 [resource]
-script = ExtResource( 1 )
+script = ExtResource( 4 )
 Name = "fire_static"
 m_oActions = [ SubResource( 31 ) ]

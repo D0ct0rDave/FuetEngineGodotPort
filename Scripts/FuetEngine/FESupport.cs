@@ -18,7 +18,7 @@ namespace FuetEngine
 		public const string HUD_ICON_SCRIPT_FILE = "res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs";
 		public const string HUD_LABEL_SCRIPT_FILE = "res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs";
 		public const string HUD_SHAPE_SCRIPT_FILE = "res://Scripts/FuetEngine/HUD/CFEHUDShape.cs";
-		public const string HUD_PSYS_SCRIPT_FILE = "res://Scripts/FuetEngine/HUD/CFEPHUDSys.cs";
+		public const string HUD_PSYS_SCRIPT_FILE = "res://Scripts/FuetEngine/HUD/CFEHUDPSys.cs";
 		public const string HUD_RECT_SCRIPT_FILE = "res://Scripts/FuetEngine/HUD/CFEHUDRect.cs";
 		
 		//---------------------------------------------------------------------

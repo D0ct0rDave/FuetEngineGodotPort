@@ -1,0 +1,265 @@
+[gd_resource type="Resource" load_steps=29 format=2]
+
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteFrame.cs" type="Script" id=1]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESprite.cs" type="Script" id=2]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteAction.cs" type="Script" id=3]
+[ext_resource path="res://Assets/data/HUD/sprites/msg_ready.png" type="Texture" id=4]
+[ext_resource path="res://Assets/data/HUD/sprites/msg_go.png" type="Texture" id=5]
+[ext_resource path="res://Assets/data/HUD/sprites/msg_welldone.png" type="Texture" id=6]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 1 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 1004, 538 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 6 )
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 3 )
+Name = "WellDone"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 1 ) ]
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 1 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 573, 257 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 5 )
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 3 )
+Name = "Go"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 3 ) ]
+
+[sub_resource type="AtlasTexture" id=5]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 320.063, 256 )
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 1 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 0.1718, 0.9771 )
+m_oSize = Vector2( 320, 256 )
+m_oScale = Vector2( 0.999802, 0.999999 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = SubResource( 5 )
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 3 )
+Name = "R"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 6 ) ]
+
+[sub_resource type="AtlasTexture" id=8]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 320.063, 0, 319.877, 256 )
+
+[sub_resource type="Resource" id=9]
+script = ExtResource( 1 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0.1718, 0 )
+m_oUVEnd = Vector2( 0.3435, 0.9771 )
+m_oSize = Vector2( 320, 256 )
+m_oScale = Vector2( 1.00038, 0.999999 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = SubResource( 8 )
+
+[sub_resource type="Resource" id=10]
+script = ExtResource( 3 )
+Name = "E"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 9 ) ]
+
+[sub_resource type="AtlasTexture" id=11]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 639.94, 0, 320.063, 256 )
+
+[sub_resource type="Resource" id=12]
+script = ExtResource( 1 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0.3435, 0 )
+m_oUVEnd = Vector2( 0.5153, 0.9771 )
+m_oSize = Vector2( 320, 256 )
+m_oScale = Vector2( 0.999802, 0.999999 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = SubResource( 11 )
+
+[sub_resource type="Resource" id=13]
+script = ExtResource( 3 )
+Name = "A"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 12 ) ]
+
+[sub_resource type="AtlasTexture" id=14]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 960.004, 0, 320.063, 256 )
+
+[sub_resource type="Resource" id=15]
+script = ExtResource( 1 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0.5153, 0 )
+m_oUVEnd = Vector2( 0.6871, 0.9771 )
+m_oSize = Vector2( 320, 256 )
+m_oScale = Vector2( 0.999802, 0.999999 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = SubResource( 14 )
+
+[sub_resource type="Resource" id=16]
+script = ExtResource( 3 )
+Name = "D"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 15 ) ]
+
+[sub_resource type="AtlasTexture" id=17]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1311.92, 0, 288.02, 256 )
+
+[sub_resource type="Resource" id=18]
+script = ExtResource( 1 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0.7042, 0 )
+m_oUVEnd = Vector2( 0.8588, 0.9771 )
+m_oSize = Vector2( 288, 256 )
+m_oScale = Vector2( 0.999931, 0.999999 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = SubResource( 17 )
+
+[sub_resource type="Resource" id=19]
+script = ExtResource( 3 )
+Name = "Y"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 18 ) ]
+
+[sub_resource type="AtlasTexture" id=20]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1599.94, 0, 288.02, 256 )
+
+[sub_resource type="Resource" id=21]
+script = ExtResource( 1 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0.8588, 0 )
+m_oUVEnd = Vector2( 1.0134, 0.9771 )
+m_oSize = Vector2( 288, 256 )
+m_oScale = Vector2( 0.999931, 0.999999 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = SubResource( 20 )
+
+[sub_resource type="Resource" id=22]
+script = ExtResource( 3 )
+Name = "?"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 21 ) ]
+
+[resource]
+script = ExtResource( 2 )
+Name = "messages"
+m_oActions = [ SubResource( 2 ), SubResource( 4 ), SubResource( 7 ), SubResource( 10 ), SubResource( 13 ), SubResource( 16 ), SubResource( 19 ), SubResource( 22 ) ]

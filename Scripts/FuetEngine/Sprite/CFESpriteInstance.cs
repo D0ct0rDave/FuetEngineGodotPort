@@ -23,6 +23,29 @@ namespace FuetEngine
 		private Sprite m_secondarySprite = null;
 		[Export]
 		private CFESprite m_sprite = null;
+		[Export]
+		public int Action
+		{
+			set
+			{
+				SetAction(value);
+			}
+			get
+			{
+				if ((m_sprite != null) && (m_curAction!=null)) 
+				{
+					for(int i=0; i<m_sprite.m_oActions.Count; i++)
+					{
+						if (m_sprite.m_oActions[i] == m_curAction)
+						{
+							return i;
+						}
+					}
+				}
+
+				return -1;
+			}
+		}
 		// --------------------------------------------------------------------
 		CFESpriteInstance()
 		{

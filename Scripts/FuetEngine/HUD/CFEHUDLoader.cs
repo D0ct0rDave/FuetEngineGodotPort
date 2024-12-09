@@ -223,8 +223,6 @@ namespace FuetEngine
 					CFESpriteInstance spriteInstance = Support.CreateObject<Node2D,CFESpriteInstance>(FuetEngine.Support.SPRITE_INSTANCE_SCRIPT_FILE);
 
 					spriteInstance.Name = "CFESpriteInstance";
-					// spriteInstance.AddChild(spriteResource);
-					// spriteInstance.Init();
 					spriteInstance.Init(spriteResource);
 
 					spriteInstance.SetAction(oIcon.iGetIniAction());
