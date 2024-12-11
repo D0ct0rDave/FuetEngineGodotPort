@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Columna_mediana.spr-35b1b7a215ffb4bb2fc23f18685b5add.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/ornaments/Columna_mediana.spr"
+dest_files=[ "res://.import/Columna_mediana.spr-35b1b7a215ffb4bb2fc23f18685b5add.tres" ]
+
+[params]
+

@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/fire_static.spr-54f0a5cfd5d00bc73d59196a9e22326c.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/fire_static.spr-54f0a5cfd5d00bc73d59196a9e22326c.tres"
 
 [deps]
 
 source_file="res://Assets/Sprites/fire_static.spr"
-dest_files=[ "res://.import/fire_static.spr-54f0a5cfd5d00bc73d59196a9e22326c.tscn" ]
+dest_files=[ "res://.import/fire_static.spr-54f0a5cfd5d00bc73d59196a9e22326c.tres" ]
 
 [params]
 

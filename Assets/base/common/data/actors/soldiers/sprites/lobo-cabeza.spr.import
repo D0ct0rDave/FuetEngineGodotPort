@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/lobo-cabeza.spr-5200f778dc5648d26390d5b9284ef95f.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/soldiers/sprites/lobo-cabeza.spr"
+dest_files=[ "res://.import/lobo-cabeza.spr-5200f778dc5648d26390d5b9284ef95f.tres" ]
+
+[params]
+

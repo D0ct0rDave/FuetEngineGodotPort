@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/light_exp.spr-4020aeb0eee1ab9080d97f6a704f8c17.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/gfx/light_exp.spr"
+dest_files=[ "res://.import/light_exp.spr-4020aeb0eee1ab9080d97f6a704f8c17.tres" ]
+
+[params]
+

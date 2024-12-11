@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Papel.spr-5ec8f1e7c211377c1efb37f9df61f829.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/intro/Papel.spr"
+dest_files=[ "res://.import/Papel.spr-5ec8f1e7c211377c1efb37f9df61f829.tres" ]
+
+[params]
+

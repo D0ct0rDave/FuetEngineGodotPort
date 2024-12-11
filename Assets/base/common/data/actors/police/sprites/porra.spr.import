@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/porra.spr-85a7f239b25f68d3f876ae972ffe6917.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/police/sprites/porra.spr"
+dest_files=[ "res://.import/porra.spr-85a7f239b25f68d3f876ae972ffe6917.tres" ]
+
+[params]
+

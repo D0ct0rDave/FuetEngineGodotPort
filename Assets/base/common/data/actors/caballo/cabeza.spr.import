@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/cabeza.spr-0897e729351af4236dde693b5fb69ea2.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/caballo/cabeza.spr"
+dest_files=[ "res://.import/cabeza.spr-0897e729351af4236dde693b5fb69ea2.tres" ]
+
+[params]
+

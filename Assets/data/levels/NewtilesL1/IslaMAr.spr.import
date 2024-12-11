@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/IslaMAr.spr-bec055856346358780844dfb851e30c3.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/IslaMAr.spr-bec055856346358780844dfb851e30c3.tres"
 
 [deps]
 
 source_file="res://Assets/data/levels/NewtilesL1/IslaMAr.spr"
-dest_files=[ "res://.import/IslaMAr.spr-bec055856346358780844dfb851e30c3.tscn" ]
+dest_files=[ "res://.import/IslaMAr.spr-bec055856346358780844dfb851e30c3.tres" ]
 
 [params]
 

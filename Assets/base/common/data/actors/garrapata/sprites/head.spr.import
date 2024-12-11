@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/head.spr-5670b478c02fa54774571f79172126bf.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/garrapata/sprites/head.spr"
+dest_files=[ "res://.import/head.spr-5670b478c02fa54774571f79172126bf.tres" ]
+
+[params]
+

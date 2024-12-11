@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/pierna-izq.spr-7517961858e65ff9af6e9407af15891a.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/players/nena/back_sword/sprites/pierna-izq.spr"
+dest_files=[ "res://.import/pierna-izq.spr-7517961858e65ff9af6e9407af15891a.tres" ]
+
+[params]
+

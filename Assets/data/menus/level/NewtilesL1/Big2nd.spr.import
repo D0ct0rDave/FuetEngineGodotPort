@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/Big2nd.spr-ee3786e95bc5a89da4bd0b738149a6e9.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Big2nd.spr-ee3786e95bc5a89da4bd0b738149a6e9.tres"
 
 [deps]
 
 source_file="res://Assets/data/menus/level/NewtilesL1/Big2nd.spr"
-dest_files=[ "res://.import/Big2nd.spr-ee3786e95bc5a89da4bd0b738149a6e9.tscn" ]
+dest_files=[ "res://.import/Big2nd.spr-ee3786e95bc5a89da4bd0b738149a6e9.tres" ]
 
 [params]
 

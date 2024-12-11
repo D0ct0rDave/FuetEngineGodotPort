@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/brazo_izq.spr-fbea7be1d417b8c217b6a542b1dc5b3c.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/simple_enemy/sprites/brazo_izq.spr"
+dest_files=[ "res://.import/brazo_izq.spr-fbea7be1d417b8c217b6a542b1dc5b3c.tres" ]
+
+[params]
+

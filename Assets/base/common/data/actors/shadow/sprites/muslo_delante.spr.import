@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/muslo_delante.spr-0f19a397058635e438a546f87b6cd079.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/shadow/sprites/muslo_delante.spr"
+dest_files=[ "res://.import/muslo_delante.spr-0f19a397058635e438a546f87b6cd079.tres" ]
+
+[params]
+

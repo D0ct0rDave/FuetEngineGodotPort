@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/ladrillo.spr-4bb11bb48df708d213b7f66d9e1aee55.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/ladrillo/ladrillo.spr"
+dest_files=[ "res://.import/ladrillo.spr-4bb11bb48df708d213b7f66d9e1aee55.tres" ]
+
+[params]
+

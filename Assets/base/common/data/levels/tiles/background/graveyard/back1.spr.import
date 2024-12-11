@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/back1.spr-9cf22a2b273eb6058b7ea471799aca18.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/background/graveyard/back1.spr"
+dest_files=[ "res://.import/back1.spr-9cf22a2b273eb6058b7ea471799aca18.tres" ]
+
+[params]
+

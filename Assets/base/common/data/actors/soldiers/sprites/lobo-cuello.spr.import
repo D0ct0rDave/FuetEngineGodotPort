@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/lobo-cuello.spr-a218a750f1e09cbe0441a97605056b83.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/soldiers/sprites/lobo-cuello.spr"
+dest_files=[ "res://.import/lobo-cuello.spr-a218a750f1e09cbe0441a97605056b83.tres" ]
+
+[params]
+

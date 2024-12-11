@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEHUDFileImportPlugin"
+type="PackedScene"
+path="res://.import/path.hud-279f42fcbe6be57510639fc6fd1b388b.tscn"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/jiji/path.hud"
+dest_files=[ "res://.import/path.hud-279f42fcbe6be57510639fc6fd1b388b.tscn" ]
+
+[params]
+

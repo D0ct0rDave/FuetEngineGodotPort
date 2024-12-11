@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/lobo-antebrazo-izq.spr-ec06971d48719197f267bc7dd2126084.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/soldiers/sprites/lobo-antebrazo-izq.spr"
+dest_files=[ "res://.import/lobo-antebrazo-izq.spr-ec06971d48719197f267bc7dd2126084.tres" ]
+
+[params]
+

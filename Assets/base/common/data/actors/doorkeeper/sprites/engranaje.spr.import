@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/engranaje.spr-faff8d77bbea08478933d9bd9b4730e5.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/doorkeeper/sprites/engranaje.spr"
+dest_files=[ "res://.import/engranaje.spr-faff8d77bbea08478933d9bd9b4730e5.tres" ]
+
+[params]
+

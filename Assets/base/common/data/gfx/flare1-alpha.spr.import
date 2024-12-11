@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/flare1-alpha.spr-eef66533f53b518ad3ad03e3be403988.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/gfx/flare1-alpha.spr"
+dest_files=[ "res://.import/flare1-alpha.spr-eef66533f53b518ad3ad03e3be403988.tres" ]
+
+[params]
+

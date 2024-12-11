@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/cuello.spr-b5ceb7ecd762a1016105c8607d0f6296.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/players/nena/side_flyer/sprites/cuello.spr"
+dest_files=[ "res://.import/cuello.spr-b5ceb7ecd762a1016105c8607d0f6296.tres" ]
+
+[params]
+

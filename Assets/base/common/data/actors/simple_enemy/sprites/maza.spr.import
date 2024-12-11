@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/maza.spr-460492eba8dc669f4afb70e6c1a61ce2.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/simple_enemy/sprites/maza.spr"
+dest_files=[ "res://.import/maza.spr-460492eba8dc669f4afb70e6c1a61ce2.tres" ]
+
+[params]
+

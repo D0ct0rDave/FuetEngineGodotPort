@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/zocalo3.spr-c3d06822eb8c3e75d978a54a0cb7c4fb.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/base_wall/zocalo3.spr"
+dest_files=[ "res://.import/zocalo3.spr-c3d06822eb8c3e75d978a54a0cb7c4fb.tres" ]
+
+[params]
+

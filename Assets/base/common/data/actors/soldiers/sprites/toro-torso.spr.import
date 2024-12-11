@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/toro-torso.spr-4f74fbc67053a060f187522809af4c07.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/soldiers/sprites/toro-torso.spr"
+dest_files=[ "res://.import/toro-torso.spr-4f74fbc67053a060f187522809af4c07.tres" ]
+
+[params]
+

@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/Spidereyes1.spr-c41f7875db0e3bc7d3740469ca3a80db.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Spidereyes1.spr-c41f7875db0e3bc7d3740469ca3a80db.tres"
 
 [deps]
 
 source_file="res://Assets/data/menus/level/anims/Spider/Spidereyes1.spr"
-dest_files=[ "res://.import/Spidereyes1.spr-c41f7875db0e3bc7d3740469ca3a80db.tscn" ]
+dest_files=[ "res://.import/Spidereyes1.spr-c41f7875db0e3bc7d3740469ca3a80db.tres" ]
 
 [params]
 

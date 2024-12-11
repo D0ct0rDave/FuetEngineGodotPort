@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/hit-box-expand.spr-697beade775ac6e75193ee04fb397f8b.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/players/nena/side_shooter/sprites/hit-box-expand.spr"
+dest_files=[ "res://.import/hit-box-expand.spr-697beade775ac6e75193ee04fb397f8b.tres" ]
+
+[params]
+

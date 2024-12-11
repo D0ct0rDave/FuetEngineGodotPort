@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/cabeza.spr-fa03991b4792d0d970b758c0874d7cdd.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/nena_pelotas/sprites/cabeza.spr"
+dest_files=[ "res://.import/cabeza.spr-fa03991b4792d0d970b758c0874d7cdd.tres" ]
+
+[params]
+

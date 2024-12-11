@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/logo.spr-186df49df003e6aae2657d55fb1acf1f.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/logo.spr-186df49df003e6aae2657d55fb1acf1f.tres"
 
 [deps]
 
 source_file="res://Assets/data/intro/sprites/logo.spr"
-dest_files=[ "res://.import/logo.spr-186df49df003e6aae2657d55fb1acf1f.tscn" ]
+dest_files=[ "res://.import/logo.spr-186df49df003e6aae2657d55fb1acf1f.tres" ]
 
 [params]
 

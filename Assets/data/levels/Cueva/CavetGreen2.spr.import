@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/CavetGreen2.spr-f956c8715d61a7b911ce02fe9c0ddd1b.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/CavetGreen2.spr-f956c8715d61a7b911ce02fe9c0ddd1b.tres"
 
 [deps]
 
 source_file="res://Assets/data/levels/Cueva/CavetGreen2.spr"
-dest_files=[ "res://.import/CavetGreen2.spr-f956c8715d61a7b911ce02fe9c0ddd1b.tscn" ]
+dest_files=[ "res://.import/CavetGreen2.spr-f956c8715d61a7b911ce02fe9c0ddd1b.tres" ]
 
 [params]
 

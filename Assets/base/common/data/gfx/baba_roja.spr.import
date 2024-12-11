@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/baba_roja.spr-933c7ec46f1a0ed41657982e41aa87fa.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/gfx/baba_roja.spr"
+dest_files=[ "res://.import/baba_roja.spr-933c7ec46f1a0ed41657982e41aa87fa.tres" ]
+
+[params]
+

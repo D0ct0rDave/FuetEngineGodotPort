@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/mangacamiseta-brazo-der.spr-15d5426d971e957a90c8c9ea59f642ff.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/soldiers/sprites/mangacamiseta-brazo-der.spr"
+dest_files=[ "res://.import/mangacamiseta-brazo-der.spr-15d5426d971e957a90c8c9ea59f642ff.tres" ]
+
+[params]
+

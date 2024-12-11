@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Cubo.spr-26df38dff596c9f4ccdd7abf00764dcc.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/intro/Cubo.spr"
+dest_files=[ "res://.import/Cubo.spr-26df38dff596c9f4ccdd7abf00764dcc.tres" ]
+
+[params]
+

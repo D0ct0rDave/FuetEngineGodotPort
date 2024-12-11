@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/smoke-fire.spr-8e30f84c83aa32b1ad220a7f0c2f1372.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/gfx/smoke-fire.spr"
+dest_files=[ "res://.import/smoke-fire.spr-8e30f84c83aa32b1ad220a7f0c2f1372.tres" ]
+
+[params]
+

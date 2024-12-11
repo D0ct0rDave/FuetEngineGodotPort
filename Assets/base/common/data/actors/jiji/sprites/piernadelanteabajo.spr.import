@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/piernadelanteabajo.spr-e5bfcdc2bf394481afe9a014318e0da4.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/jiji/sprites/piernadelanteabajo.spr"
+dest_files=[ "res://.import/piernadelanteabajo.spr-e5bfcdc2bf394481afe9a014318e0da4.tres" ]
+
+[params]
+

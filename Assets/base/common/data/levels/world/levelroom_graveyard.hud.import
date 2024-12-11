@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEHUDFileImportPlugin"
+type="PackedScene"
+path="res://.import/levelroom_graveyard.hud-6fe4c62caf66393c2f8378f2c9082c2b.tscn"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/world/levelroom_graveyard.hud"
+dest_files=[ "res://.import/levelroom_graveyard.hud-6fe4c62caf66393c2f8378f2c9082c2b.tscn" ]
+
+[params]
+

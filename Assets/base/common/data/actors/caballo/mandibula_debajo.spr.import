@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/mandibula_debajo.spr-914ef13df85f142c8fa308e46ba0fb26.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/caballo/mandibula_debajo.spr"
+dest_files=[ "res://.import/mandibula_debajo.spr-914ef13df85f142c8fa308e46ba0fb26.tres" ]
+
+[params]
+

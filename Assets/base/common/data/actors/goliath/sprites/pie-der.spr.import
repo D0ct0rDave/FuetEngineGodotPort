@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/pie-der.spr-8cdf4291accf84609b764bf53d2d1b05.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/goliath/sprites/pie-der.spr"
+dest_files=[ "res://.import/pie-der.spr-8cdf4291accf84609b764bf53d2d1b05.tres" ]
+
+[params]
+

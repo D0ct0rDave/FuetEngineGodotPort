@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/TileD2.spr-769f485f608e35f9c46d17b3968f1016.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/TileD2.spr-769f485f608e35f9c46d17b3968f1016.tres"
 
 [deps]
 
 source_file="res://Assets/data/levels/Ship/TileD2.spr"
-dest_files=[ "res://.import/TileD2.spr-769f485f608e35f9c46d17b3968f1016.tscn" ]
+dest_files=[ "res://.import/TileD2.spr-769f485f608e35f9c46d17b3968f1016.tres" ]
 
 [params]
 

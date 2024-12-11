@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/brazo_detras.spr-eeb38664fdafb6f71fe5c8978e4b5207.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/players/nena/side_flyer/sprites/brazo_detras.spr"
+dest_files=[ "res://.import/brazo_detras.spr-eeb38664fdafb6f71fe5c8978e4b5207.tres" ]
+
+[params]
+

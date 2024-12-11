@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/candil_pared.spr-ef15681be3a5eb7c5f5e65197e9b2c4c.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/props/candil_pared.spr"
+dest_files=[ "res://.import/candil_pared.spr-ef15681be3a5eb7c5f5e65197e9b2c4c.tres" ]
+
+[params]
+

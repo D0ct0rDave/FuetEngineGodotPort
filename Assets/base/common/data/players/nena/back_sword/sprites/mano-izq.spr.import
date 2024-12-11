@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/mano-izq.spr-d2396dd73c68d01cae248a3b9a987d34.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/players/nena/back_sword/sprites/mano-izq.spr"
+dest_files=[ "res://.import/mano-izq.spr-d2396dd73c68d01cae248a3b9a987d34.tres" ]
+
+[params]
+

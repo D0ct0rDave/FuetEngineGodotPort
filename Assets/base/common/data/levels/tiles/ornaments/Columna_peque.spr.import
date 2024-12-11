@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Columna_peque.spr-a31c26f97c62b629cfabea0cf6d52d90.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/ornaments/Columna_peque.spr"
+dest_files=[ "res://.import/Columna_peque.spr-a31c26f97c62b629cfabea0cf6d52d90.tres" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/torso.spr-21bf39bcf20a91f488634342ccd1401d.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/players/nena/side_sword/sprites/torso.spr"
+dest_files=[ "res://.import/torso.spr-21bf39bcf20a91f488634342ccd1401d.tres" ]
+
+[params]
+

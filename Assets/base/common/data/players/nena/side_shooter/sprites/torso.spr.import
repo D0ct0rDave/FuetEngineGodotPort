@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/torso.spr-87d2471ee8b075cc23523846a3565ad3.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/players/nena/side_shooter/sprites/torso.spr"
+dest_files=[ "res://.import/torso.spr-87d2471ee8b075cc23523846a3565ad3.tres" ]
+
+[params]
+

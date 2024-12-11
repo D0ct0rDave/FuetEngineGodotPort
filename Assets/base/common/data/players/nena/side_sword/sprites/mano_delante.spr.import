@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/mano_delante.spr-6f846ce6d11c4728148107d7082ae6ba.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/players/nena/side_sword/sprites/mano_delante.spr"
+dest_files=[ "res://.import/mano_delante.spr-6f846ce6d11c4728148107d7082ae6ba.tres" ]
+
+[params]
+

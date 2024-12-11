@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/mandibuka_debajo.spr-cf2d48bdd06a1cd2ce92013d82e718d7.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/caballo/mandibuka_debajo.spr"
+dest_files=[ "res://.import/mandibuka_debajo.spr-cf2d48bdd06a1cd2ce92013d82e718d7.tres" ]
+
+[params]
+

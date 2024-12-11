@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Tragaperras_tirador_bola.spr-1967da819a7fb149be88c33529553250.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/prefabs/slotmachine/Tragaperras_tirador_bola.spr"
+dest_files=[ "res://.import/Tragaperras_tirador_bola.spr-1967da819a7fb149be88c33529553250.tres" ]
+
+[params]
+

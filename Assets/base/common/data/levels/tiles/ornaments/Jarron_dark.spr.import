@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Jarron_dark.spr-46599ef461bf218942572ba4dc1e1474.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/ornaments/Jarron_dark.spr"
+dest_files=[ "res://.import/Jarron_dark.spr-46599ef461bf218942572ba4dc1e1474.tres" ]
+
+[params]
+

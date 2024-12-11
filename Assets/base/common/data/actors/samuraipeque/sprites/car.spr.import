@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/car.spr-6a239bf10ae8629a972809732e0fbbb6.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/samuraipeque/sprites/car.spr"
+dest_files=[ "res://.import/car.spr-6a239bf10ae8629a972809732e0fbbb6.tres" ]
+
+[params]
+

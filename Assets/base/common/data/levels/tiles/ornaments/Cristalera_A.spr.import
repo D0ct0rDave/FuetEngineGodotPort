@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Cristalera_A.spr-611ebaa20e00da1279afc96c1db329c1.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/ornaments/Cristalera_A.spr"
+dest_files=[ "res://.import/Cristalera_A.spr-611ebaa20e00da1279afc96c1db329c1.tres" ]
+
+[params]
+

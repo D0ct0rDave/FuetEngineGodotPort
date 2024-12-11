@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/pant_rojo-hip.spr-60a88e5418041e6d23ee96ec55c3333d.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/soldiers/sprites/pant_rojo-hip.spr"
+dest_files=[ "res://.import/pant_rojo-hip.spr-60a88e5418041e6d23ee96ec55c3333d.tres" ]
+
+[params]
+

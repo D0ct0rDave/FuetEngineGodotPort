@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/flecha.spr-d87050d58be37ff9a1362224fb4d668d.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/flecha.spr-d87050d58be37ff9a1362224fb4d668d.tres"
 
 [deps]
 
 source_file="res://Assets/data/levels/anims/Bifurcacion/flecha.spr"
-dest_files=[ "res://.import/flecha.spr-d87050d58be37ff9a1362224fb4d668d.tscn" ]
+dest_files=[ "res://.import/flecha.spr-d87050d58be37ff9a1362224fb4d668d.tres" ]
 
 [params]
 

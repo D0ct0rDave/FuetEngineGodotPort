@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/cascada_pieza.spr-973e791390b9a0fad148176934483fcb.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/cascada_pieza.spr-973e791390b9a0fad148176934483fcb.tres"
 
 [deps]
 
 source_file="res://Assets/data/levels/anims/Cascada/cascada_pieza.spr"
-dest_files=[ "res://.import/cascada_pieza.spr-973e791390b9a0fad148176934483fcb.tscn" ]
+dest_files=[ "res://.import/cascada_pieza.spr-973e791390b9a0fad148176934483fcb.tres" ]
 
 [params]
 

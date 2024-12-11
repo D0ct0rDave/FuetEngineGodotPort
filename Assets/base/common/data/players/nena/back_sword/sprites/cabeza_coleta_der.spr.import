@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/cabeza_coleta_der.spr-e645bcb0d71d62df9baa0aaeb756664a.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/players/nena/back_sword/sprites/cabeza_coleta_der.spr"
+dest_files=[ "res://.import/cabeza_coleta_der.spr-e645bcb0d71d62df9baa0aaeb756664a.tres" ]
+
+[params]
+

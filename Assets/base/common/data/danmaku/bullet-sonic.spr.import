@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/bullet-sonic.spr-44f04c87e8ac75fdbe8776da88beb134.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/danmaku/bullet-sonic.spr"
+dest_files=[ "res://.import/bullet-sonic.spr-44f04c87e8ac75fdbe8776da88beb134.tres" ]
+
+[params]
+

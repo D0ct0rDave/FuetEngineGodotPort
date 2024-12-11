@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/cuerpo2.spr-f83a57b3438bd65a4a099c021a08ab42.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/trilobite/sprites/cuerpo2.spr"
+dest_files=[ "res://.import/cuerpo2.spr-f83a57b3438bd65a4a099c021a08ab42.tres" ]
+
+[params]
+

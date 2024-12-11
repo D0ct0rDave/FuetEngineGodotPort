@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Sillon.spr-95f2facab9a4935f459996edec67e8a9.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/intro/Sillon.spr"
+dest_files=[ "res://.import/Sillon.spr-95f2facab9a4935f459996edec67e8a9.tres" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/brick_brown2.spr-436cb7c6a0e10ba4272da5f44cc1efe3.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/base_wall/brick_brown2.spr"
+dest_files=[ "res://.import/brick_brown2.spr-436cb7c6a0e10ba4272da5f44cc1efe3.tres" ]
+
+[params]
+

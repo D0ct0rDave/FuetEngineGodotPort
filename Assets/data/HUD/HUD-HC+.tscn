@@ -1,0 +1,248 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Assets/data/HUD/sprites/msg_ready.png" type="Texture" id=1]
+[ext_resource path="res://Assets/data/HUD/sprites/msg_welldone.png" type="Texture" id=2]
+[ext_resource path="res://Assets/data/HUD/sprites/msg_go.png" type="Texture" id=3]
+[ext_resource path="res://Assets/data/HUD/sprites/messages.spr" type="Resource" id=4]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=5]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=6]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=7]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=8]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=9]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=10]
+
+[sub_resource type="AtlasTexture" id=5]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 320.063, 256 )
+
+[sub_resource type="AtlasTexture" id=8]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 320.063, 0, 319.877, 256 )
+
+[sub_resource type="AtlasTexture" id=11]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 639.94, 0, 320.063, 256 )
+
+[sub_resource type="AtlasTexture" id=14]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 960.004, 0, 320.063, 256 )
+
+[sub_resource type="AtlasTexture" id=17]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1311.92, 0, 288.02, 256 )
+
+[sub_resource type="AtlasTexture" id=20]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1599.94, 0, 288.02, 256 )
+
+[node name="CFEHUD" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="OtherScreen" type="Node2D" parent="."]
+script = ExtResource( 7 )
+
+[node name="Layers" type="Node2D" parent="OtherScreen"]
+
+[node name="Action" type="Node" parent="OtherScreen"]
+
+[node name="Layers2" type="Node2D" parent="OtherScreen"]
+
+[node name="OtherScreen" type="Node2D" parent="OtherScreen/Layers2"]
+script = ExtResource( 6 )
+
+[node name="[OtherScreen-0]OtherScreen" type="Node2D" parent="OtherScreen/Layers2/OtherScreen"]
+script = ExtResource( 6 )
+
+[node name="[OtherScreen-0]backgroud" type="Node2D" parent="OtherScreen/Layers2/OtherScreen/[OtherScreen-0]OtherScreen"]
+position = Vector2( 960, 1620 )
+script = ExtResource( 9 )
+m_iIniAction = 0
+
+[node name="[OtherScreen-0]minus_button" type="Node2D" parent="OtherScreen/Layers2/OtherScreen/[OtherScreen-0]OtherScreen"]
+position = Vector2( 1616, 2064 )
+script = ExtResource( 9 )
+m_iIniAction = 0
+
+[node name="Action2" type="Node" parent="OtherScreen"]
+
+[node name="Timer" type="Node2D" parent="."]
+script = ExtResource( 7 )
+
+[node name="Layers" type="Node2D" parent="Timer"]
+
+[node name="Action" type="Node" parent="Timer"]
+
+[node name="Layers2" type="Node2D" parent="Timer"]
+
+[node name="Timer" type="Node2D" parent="Timer/Layers2"]
+position = Vector2( 896, 256 )
+script = ExtResource( 6 )
+m_bIniVis = false
+
+[node name="lb_Timer" type="Node2D" parent="Timer/Layers2/Timer"]
+position = Vector2( 912, -192 )
+script = ExtResource( 10 )
+
+[node name="Action2" type="Node" parent="Timer"]
+
+[node name="Messages" type="Node2D" parent="."]
+script = ExtResource( 7 )
+
+[node name="Layers" type="Node2D" parent="Messages"]
+
+[node name="Action" type="Node" parent="Messages"]
+
+[node name="Layers2" type="Node2D" parent="Messages"]
+
+[node name="Messages" type="Node2D" parent="Messages/Layers2"]
+position = Vector2( 960, 540 )
+script = ExtResource( 6 )
+m_bIniVis = false
+
+[node name="WELLDONE!" type="Node2D" parent="Messages/Layers2/Messages"]
+script = ExtResource( 9 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="Messages/Layers2/Messages/WELLDONE!"]
+texture = ExtResource( 2 )
+script = ExtResource( 8 )
+Action = 0
+m_sprite = ExtResource( 4 )
+
+[node name="GO!" type="Node2D" parent="Messages/Layers2/Messages"]
+script = ExtResource( 9 )
+m_iIniAction = 1
+
+[node name="CFESpriteInstance" type="Sprite" parent="Messages/Layers2/Messages/GO!"]
+texture = ExtResource( 3 )
+script = ExtResource( 8 )
+Action = 1
+m_sprite = ExtResource( 4 )
+
+[node name="Ready" type="Node2D" parent="Messages/Layers2/Messages"]
+script = ExtResource( 6 )
+
+[node name="R" type="Node2D" parent="Messages/Layers2/Messages/Ready"]
+position = Vector2( -504, 0 )
+script = ExtResource( 9 )
+m_iIniAction = 2
+
+[node name="CFESpriteInstance" type="Sprite" parent="Messages/Layers2/Messages/Ready/R"]
+scale = Vector2( 0.999802, 0.999999 )
+texture = SubResource( 5 )
+script = ExtResource( 8 )
+Action = 2
+m_sprite = ExtResource( 4 )
+
+[node name="E" type="Node2D" parent="Messages/Layers2/Messages/Ready"]
+position = Vector2( -296, 0 )
+script = ExtResource( 9 )
+m_iIniAction = 3
+
+[node name="CFESpriteInstance" type="Sprite" parent="Messages/Layers2/Messages/Ready/E"]
+scale = Vector2( 1.00038, 0.999999 )
+texture = SubResource( 8 )
+script = ExtResource( 8 )
+Action = 3
+m_sprite = ExtResource( 4 )
+
+[node name="A" type="Node2D" parent="Messages/Layers2/Messages/Ready"]
+position = Vector2( -112, 0 )
+script = ExtResource( 9 )
+m_iIniAction = 4
+
+[node name="CFESpriteInstance" type="Sprite" parent="Messages/Layers2/Messages/Ready/A"]
+scale = Vector2( 0.999802, 0.999999 )
+texture = SubResource( 11 )
+script = ExtResource( 8 )
+Action = 4
+m_sprite = ExtResource( 4 )
+
+[node name="D" type="Node2D" parent="Messages/Layers2/Messages/Ready"]
+position = Vector2( 144, 0 )
+script = ExtResource( 9 )
+m_iIniAction = 5
+
+[node name="CFESpriteInstance" type="Sprite" parent="Messages/Layers2/Messages/Ready/D"]
+scale = Vector2( 0.999802, 0.999999 )
+texture = SubResource( 14 )
+script = ExtResource( 8 )
+Action = 5
+m_sprite = ExtResource( 4 )
+
+[node name="Y" type="Node2D" parent="Messages/Layers2/Messages/Ready"]
+position = Vector2( 392, 0 )
+script = ExtResource( 9 )
+m_iIniAction = 6
+
+[node name="CFESpriteInstance" type="Sprite" parent="Messages/Layers2/Messages/Ready/Y"]
+scale = Vector2( 0.999931, 0.999999 )
+texture = SubResource( 17 )
+script = ExtResource( 8 )
+Action = 6
+m_sprite = ExtResource( 4 )
+
+[node name="\?" type="Node2D" parent="Messages/Layers2/Messages/Ready"]
+position = Vector2( 552, 0 )
+script = ExtResource( 9 )
+m_iIniAction = 7
+
+[node name="CFESpriteInstance" type="Sprite" parent="Messages/Layers2/Messages/Ready/\?"]
+scale = Vector2( 0.999931, 0.999999 )
+texture = SubResource( 20 )
+script = ExtResource( 8 )
+Action = 7
+m_sprite = ExtResource( 4 )
+
+[node name="Action2" type="Node" parent="Messages"]
+
+[node name="NewChallenge" type="Node2D" parent="."]
+script = ExtResource( 7 )
+
+[node name="Layers" type="Node2D" parent="NewChallenge"]
+
+[node name="Action" type="Node" parent="NewChallenge"]
+
+[node name="Layers2" type="Node2D" parent="NewChallenge"]
+
+[node name="NewChallenge" type="Node2D" parent="NewChallenge/Layers2"]
+position = Vector2( 960, 1008 )
+script = ExtResource( 6 )
+m_bIniVis = false
+
+[node name="lb_NewChallenge" type="Node2D" parent="NewChallenge/Layers2/NewChallenge"]
+script = ExtResource( 10 )
+
+[node name="Action2" type="Node" parent="NewChallenge"]
+
+[node name="Score" type="Node2D" parent="."]
+script = ExtResource( 7 )
+
+[node name="Layers" type="Node2D" parent="Score"]
+
+[node name="Action" type="Node" parent="Score"]
+
+[node name="Layers2" type="Node2D" parent="Score"]
+
+[node name="Score" type="Node2D" parent="Score/Layers2"]
+position = Vector2( 960, 80 )
+script = ExtResource( 6 )
+m_bIniVis = false
+
+[node name="lb_Score" type="Node2D" parent="Score/Layers2/Score"]
+position = Vector2( -32, 0 )
+script = ExtResource( 10 )
+
+[node name="Action2" type="Node" parent="Score"]

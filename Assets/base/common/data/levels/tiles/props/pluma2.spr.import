@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/pluma2.spr-1818a279ce1d83812ae4352fcf33e51b.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/props/pluma2.spr"
+dest_files=[ "res://.import/pluma2.spr-1818a279ce1d83812ae4352fcf33e51b.tres" ]
+
+[params]
+

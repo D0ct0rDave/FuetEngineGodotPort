@@ -1,0 +1,250 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://Assets/base/common/data/intro/sprites/nuves.spr" type="Resource" id=1]
+[ext_resource path="res://Assets/base/common/data/intro/sprites/logo.spr" type="Resource" id=2]
+[ext_resource path="res://Assets/base/common/data/intro/sprites/background.spr" type="Resource" id=3]
+[ext_resource path="res://Assets/base/common/data/intro/sprites/nuves.png" type="Texture" id=4]
+[ext_resource path="res://Assets/base/common/data/intro/sprites/logo.png" type="Texture" id=5]
+[ext_resource path="res://Assets/base/common/data/intro/sprites/background.png" type="Texture" id=6]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=7]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=8]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=9]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=10]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=11]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDRect.cs" type="Script" id=12]
+
+[sub_resource type="AtlasTexture" id=7]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 800.04, 0, 903.944, 523.97 )
+
+[sub_resource type="AtlasTexture" id=19]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 855.975, 603.961, 808.007, 416.058 )
+
+[sub_resource type="AtlasTexture" id=10]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( -4.068, 292.045, 692.069, 375.909 )
+
+[sub_resource type="AtlasTexture" id=1]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 7.9665, -15.9983, 427.987, 292.045 )
+
+[sub_resource type="AtlasTexture" id=4]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 452.056, 0, 311.88, 184.031 )
+
+[sub_resource type="AtlasTexture" id=13]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 699.951, 527.992, 324.042 )
+
+[sub_resource type="AtlasTexture" id=16]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 567.995, 832.013, 255.945, 163.957 )
+
+[node name="CFEHUD" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="Logo-Grp" type="Node2D" parent="."]
+script = ExtResource( 9 )
+
+[node name="Layers" type="Node2D" parent="Logo-Grp"]
+
+[node name="Action" type="Node" parent="Logo-Grp"]
+
+[node name="Layers2" type="Node2D" parent="Logo-Grp"]
+
+[node name="Logo-Grp" type="Node2D" parent="Logo-Grp/Layers2"]
+position = Vector2( 640, 480 )
+script = ExtResource( 8 )
+m_rDepthFactor = 1.0
+
+[node name="background" type="Node2D" parent="Logo-Grp/Layers2/Logo-Grp"]
+position = Vector2( 320, 70 )
+scale = Vector2( 1.2, 1.15 )
+script = ExtResource( 11 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="Logo-Grp/Layers2/Logo-Grp/background"]
+texture = ExtResource( 6 )
+script = ExtResource( 10 )
+Action = 0
+m_sprite = ExtResource( 3 )
+
+[node name="Nuves" type="Node2D" parent="Logo-Grp/Layers2/Logo-Grp"]
+position = Vector2( 230, 60 )
+script = ExtResource( 8 )
+m_rDepthFactor = 1.0
+
+[node name="Nuves-Cerca" type="Node2D" parent="Logo-Grp/Layers2/Logo-Grp/Nuves"]
+script = ExtResource( 8 )
+
+[node name="ic_Nuves-Cerca" type="Node2D" parent="Logo-Grp/Layers2/Logo-Grp/Nuves/Nuves-Cerca"]
+position = Vector2( 660, -260 )
+script = ExtResource( 11 )
+m_iIniAction = 2
+
+[node name="CFESpriteInstance" type="Sprite" parent="Logo-Grp/Layers2/Logo-Grp/Nuves/Nuves-Cerca/ic_Nuves-Cerca"]
+scale = Vector2( 1.00006, 1.00006 )
+texture = SubResource( 7 )
+offset = Vector2( 0, -1.99119 )
+script = ExtResource( 10 )
+Action = 2
+m_sprite = ExtResource( 1 )
+
+[node name="ic_Nuves-Cerca-1" type="Node2D" parent="Logo-Grp/Layers2/Logo-Grp/Nuves/Nuves-Cerca"]
+position = Vector2( -460, 350 )
+script = ExtResource( 11 )
+m_iIniAction = 6
+
+[node name="CFESpriteInstance" type="Sprite" parent="Logo-Grp/Layers2/Logo-Grp/Nuves/Nuves-Cerca/ic_Nuves-Cerca-1"]
+scale = Vector2( 0.999992, 0.999861 )
+texture = SubResource( 19 )
+script = ExtResource( 10 )
+Action = 6
+m_sprite = ExtResource( 1 )
+
+[node name="ic_Nuves-Cerca-2" type="Node2D" parent="Logo-Grp/Layers2/Logo-Grp/Nuves/Nuves-Cerca"]
+position = Vector2( 560, 350 )
+script = ExtResource( 11 )
+m_iIniAction = 3
+
+[node name="CFESpriteInstance" type="Sprite" parent="Logo-Grp/Layers2/Logo-Grp/Nuves/Nuves-Cerca/ic_Nuves-Cerca-2"]
+scale = Vector2( 0.999901, 1.00024 )
+texture = SubResource( 10 )
+offset = Vector2( -2.0068, 0 )
+script = ExtResource( 10 )
+Action = 3
+m_sprite = ExtResource( 1 )
+
+[node name="Nuves-Medio" type="Node2D" parent="Logo-Grp/Layers2/Logo-Grp/Nuves"]
+script = ExtResource( 8 )
+
+[node name="ic_Nuves-Medio" type="Node2D" parent="Logo-Grp/Layers2/Logo-Grp/Nuves/Nuves-Medio"]
+position = Vector2( -590, -390 )
+script = ExtResource( 11 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="Logo-Grp/Layers2/Logo-Grp/Nuves/Nuves-Medio/ic_Nuves-Medio"]
+scale = Vector2( 1.00003, 0.999844 )
+texture = SubResource( 1 )
+offset = Vector2( -2.0116, -1.9856 )
+script = ExtResource( 10 )
+Action = 0
+m_sprite = ExtResource( 1 )
+
+[node name="ic_Nuves-Medio-1" type="Node2D" parent="Logo-Grp/Layers2/Logo-Grp/Nuves/Nuves-Medio"]
+position = Vector2( 690, 120 )
+script = ExtResource( 11 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="Logo-Grp/Layers2/Logo-Grp/Nuves/Nuves-Medio/ic_Nuves-Medio-1"]
+scale = Vector2( 1.00003, 0.999844 )
+texture = SubResource( 1 )
+offset = Vector2( -2.0116, -1.9856 )
+script = ExtResource( 10 )
+Action = 0
+m_sprite = ExtResource( 1 )
+
+[node name="Nuves-Lejos" type="Node2D" parent="Logo-Grp/Layers2/Logo-Grp/Nuves"]
+script = ExtResource( 8 )
+
+[node name="ic_Nuves-Lejos" type="Node2D" parent="Logo-Grp/Layers2/Logo-Grp/Nuves/Nuves-Lejos"]
+position = Vector2( -240, -290 )
+script = ExtResource( 11 )
+m_iIniAction = 1
+
+[node name="CFESpriteInstance" type="Sprite" parent="Logo-Grp/Layers2/Logo-Grp/Nuves/Nuves-Lejos/ic_Nuves-Lejos"]
+scale = Vector2( 1.00038, 0.999829 )
+texture = SubResource( 4 )
+script = ExtResource( 10 )
+Action = 1
+m_sprite = ExtResource( 1 )
+
+[node name="ic_Nuves-Lejos-1" type="Node2D" parent="Logo-Grp/Layers2/Logo-Grp/Nuves/Nuves-Lejos"]
+position = Vector2( -490, 0 )
+script = ExtResource( 11 )
+m_iIniAction = 4
+
+[node name="CFESpriteInstance" type="Sprite" parent="Logo-Grp/Layers2/Logo-Grp/Nuves/Nuves-Lejos/ic_Nuves-Lejos-1"]
+scale = Vector2( 1.00001, 0.99987 )
+texture = SubResource( 13 )
+offset = Vector2( 0, -2.00881 )
+script = ExtResource( 10 )
+Action = 4
+m_sprite = ExtResource( 1 )
+
+[node name="ic_Nuves-Lejos-2" type="Node2D" parent="Logo-Grp/Layers2/Logo-Grp/Nuves/Nuves-Lejos"]
+position = Vector2( 300, -440 )
+script = ExtResource( 11 )
+m_iIniAction = 5
+
+[node name="CFESpriteInstance" type="Sprite" parent="Logo-Grp/Layers2/Logo-Grp/Nuves/Nuves-Lejos/ic_Nuves-Lejos-2"]
+scale = Vector2( 1.00021, 1.00026 )
+texture = SubResource( 16 )
+offset = Vector2( 0, -2.0008 )
+script = ExtResource( 10 )
+Action = 5
+m_sprite = ExtResource( 1 )
+
+[node name="ic_Nuves-Lejos-3" type="Node2D" parent="Logo-Grp/Layers2/Logo-Grp/Nuves/Nuves-Lejos"]
+position = Vector2( 20, 120 )
+scale = Vector2( 0.65, 0.65 )
+script = ExtResource( 11 )
+m_oIniColor = Color( 1, 1, 1, 0.5922 )
+m_iIniAction = 3
+
+[node name="CFESpriteInstance" type="Sprite" parent="Logo-Grp/Layers2/Logo-Grp/Nuves/Nuves-Lejos/ic_Nuves-Lejos-3"]
+scale = Vector2( 0.999901, 1.00024 )
+texture = SubResource( 10 )
+offset = Vector2( -2.0068, 0 )
+script = ExtResource( 10 )
+Action = 3
+m_sprite = ExtResource( 1 )
+
+[node name="Logo" type="Node2D" parent="Logo-Grp/Layers2/Logo-Grp"]
+position = Vector2( 270, 60 )
+script = ExtResource( 11 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="Logo-Grp/Layers2/Logo-Grp/Logo"]
+texture = ExtResource( 5 )
+script = ExtResource( 10 )
+Action = 0
+m_sprite = ExtResource( 2 )
+
+[node name="Action2" type="Node" parent="Logo-Grp"]
+
+[node name="Foreground" type="Node2D" parent="."]
+script = ExtResource( 9 )
+
+[node name="Layers" type="Node2D" parent="Foreground"]
+
+[node name="Action" type="Node" parent="Foreground"]
+
+[node name="Layers2" type="Node2D" parent="Foreground"]
+
+[node name="Foreground" type="Node2D" parent="Foreground/Layers2"]
+position = Vector2( 1020, 480 )
+script = ExtResource( 8 )
+
+[node name="rt_Foreground" type="Node2D" parent="Foreground/Layers2/Foreground"]
+position = Vector2( -60, 70 )
+scale = Vector2( 1.5, 1.15 )
+script = ExtResource( 12 )
+m_oIniColor = Color( 0, 0, 0, 1 )
+
+[node name="Action2" type="Node" parent="Foreground"]

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/lobo-brazo-izq.spr-c6f804d1eaab92cb5c5d7f2029e1025d.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/soldiers/sprites/lobo-brazo-izq.spr"
+dest_files=[ "res://.import/lobo-brazo-izq.spr-c6f804d1eaab92cb5c5d7f2029e1025d.tres" ]
+
+[params]
+

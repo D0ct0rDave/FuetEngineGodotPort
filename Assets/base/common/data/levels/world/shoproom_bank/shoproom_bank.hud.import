@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEHUDFileImportPlugin"
+type="PackedScene"
+path="res://.import/shoproom_bank.hud-e4abf2663734c7bd9a52234483252ffc.tscn"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/world/shoproom_bank/shoproom_bank.hud"
+dest_files=[ "res://.import/shoproom_bank.hud-e4abf2663734c7bd9a52234483252ffc.tscn" ]
+
+[params]
+

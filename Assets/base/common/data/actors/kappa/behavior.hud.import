@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEHUDFileImportPlugin"
+type="PackedScene"
+path="res://.import/behavior.hud-6079be3be2188799d9a0d4ea044366d5.tscn"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/kappa/behavior.hud"
+dest_files=[ "res://.import/behavior.hud-6079be3be2188799d9a0d4ea044366d5.tscn" ]
+
+[params]
+

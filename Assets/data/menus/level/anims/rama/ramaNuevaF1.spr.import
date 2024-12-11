@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/ramaNuevaF1.spr-e8c9ffa8df415f48cdb97818c6e8c6ed.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/ramaNuevaF1.spr-e8c9ffa8df415f48cdb97818c6e8c6ed.tres"
 
 [deps]
 
 source_file="res://Assets/data/menus/level/anims/rama/ramaNuevaF1.spr"
-dest_files=[ "res://.import/ramaNuevaF1.spr-e8c9ffa8df415f48cdb97818c6e8c6ed.tscn" ]
+dest_files=[ "res://.import/ramaNuevaF1.spr-e8c9ffa8df415f48cdb97818c6e8c6ed.tres" ]
 
 [params]
 

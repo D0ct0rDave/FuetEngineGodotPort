@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/pierna_der.spr-8e15b40807853f2b47e9cfa3c0855886.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/simple_enemy/sprites/pierna_der.spr"
+dest_files=[ "res://.import/pierna_der.spr-8e15b40807853f2b47e9cfa3c0855886.tres" ]
+
+[params]
+

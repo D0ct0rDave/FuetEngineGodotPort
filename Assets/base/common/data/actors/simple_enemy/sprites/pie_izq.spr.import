@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/pie_izq.spr-106fba99dd3e09624c190bc0371da36e.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/simple_enemy/sprites/pie_izq.spr"
+dest_files=[ "res://.import/pie_izq.spr-106fba99dd3e09624c190bc0371da36e.tres" ]
+
+[params]
+

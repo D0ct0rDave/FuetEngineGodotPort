@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/screen.spr-167b9ad5af8f24413fc89213f9e820b5.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/screen.spr-167b9ad5af8f24413fc89213f9e820b5.tres"
 
 [deps]
 
 source_file="res://Assets/data/levels/anims/Gate/screen.spr"
-dest_files=[ "res://.import/screen.spr-167b9ad5af8f24413fc89213f9e820b5.tscn" ]
+dest_files=[ "res://.import/screen.spr-167b9ad5af8f24413fc89213f9e820b5.tres" ]
 
 [params]
 

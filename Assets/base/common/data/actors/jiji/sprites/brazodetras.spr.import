@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/brazodetras.spr-7312074fd6b65caa2d2a62c6f472b496.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/jiji/sprites/brazodetras.spr"
+dest_files=[ "res://.import/brazodetras.spr-7312074fd6b65caa2d2a62c6f472b496.tres" ]
+
+[params]
+

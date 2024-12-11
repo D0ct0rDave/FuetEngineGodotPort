@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/base.spr-313b0cf6ed06f7065943b18c659a681a.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/range_shooter/sprites/base.spr"
+dest_files=[ "res://.import/base.spr-313b0cf6ed06f7065943b18c659a681a.tres" ]
+
+[params]
+

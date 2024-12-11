@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/Murcielagos.spr-e14e21173482355624c7f587c47e4229.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Murcielagos.spr-e14e21173482355624c7f587c47e4229.tres"
 
 [deps]
 
 source_file="res://Assets/data/levels/anims/Bats/Murcielagos.spr"
-dest_files=[ "res://.import/Murcielagos.spr-e14e21173482355624c7f587c47e4229.tscn" ]
+dest_files=[ "res://.import/Murcielagos.spr-e14e21173482355624c7f587c47e4229.tres" ]
 
 [params]
 

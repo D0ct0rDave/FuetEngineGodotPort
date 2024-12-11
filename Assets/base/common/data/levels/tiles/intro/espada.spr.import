@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/espada.spr-1e866c423f9234f92d60589f0e6fe6fb.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/intro/espada.spr"
+dest_files=[ "res://.import/espada.spr-1e866c423f9234f92d60589f0e6fe6fb.tres" ]
+
+[params]
+

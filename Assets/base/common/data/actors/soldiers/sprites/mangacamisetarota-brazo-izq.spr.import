@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/mangacamisetarota-brazo-izq.spr-803d47cf188d4f3bb18876059b86a187.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/soldiers/sprites/mangacamisetarota-brazo-izq.spr"
+dest_files=[ "res://.import/mangacamisetarota-brazo-izq.spr-803d47cf188d4f3bb18876059b86a187.tres" ]
+
+[params]
+

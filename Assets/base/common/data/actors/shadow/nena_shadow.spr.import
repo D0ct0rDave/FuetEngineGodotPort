@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/nena_shadow.spr-d02648c48e01669dceb181319acb57ee.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/shadow/nena_shadow.spr"
+dest_files=[ "res://.import/nena_shadow.spr-d02648c48e01669dceb181319acb57ee.tres" ]
+
+[params]
+

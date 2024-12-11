@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/dialog-rect.spr-e273bc22ccf2e4b9211c2f70f81b9a50.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/menu/sprites/dialog-rect.spr"
+dest_files=[ "res://.import/dialog-rect.spr-e273bc22ccf2e4b9211c2f70f81b9a50.tres" ]
+
+[params]
+

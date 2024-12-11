@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/samuraiattackira.spr-f10893adfcf554d6ff29561032606023.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/samuraipeque/sprites/sequences/samuraiattackira.spr"
+dest_files=[ "res://.import/samuraiattackira.spr-f10893adfcf554d6ff29561032606023.tres" ]
+
+[params]
+

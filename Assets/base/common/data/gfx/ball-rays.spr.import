@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/ball-rays.spr-cc2900776a58dae938b08d4695d1e940.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/gfx/ball-rays.spr"
+dest_files=[ "res://.import/ball-rays.spr-cc2900776a58dae938b08d4695d1e940.tres" ]
+
+[params]
+

@@ -1,0 +1,549 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=1]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=2]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDRect.cs" type="Script" id=5]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/prefabs/rect.png" type="Texture" id=6]
+[ext_resource path="res://Assets/base/common/data/gfx/light_exp_fluctuant.spr" type="Resource" id=7]
+[ext_resource path="res://Assets/base/common/data/gfx/light_exp_low.png" type="Texture" id=8]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=9]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/prefabs/rect_marker.spr" type="Resource" id=10]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/prefabs/rect_reveal.spr" type="Resource" id=11]
+
+[node name="CFEHUD" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="markers1" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="markers1"]
+
+[node name="Action" type="Node" parent="markers1"]
+
+[node name="Layers2" type="Node2D" parent="markers1"]
+
+[node name="markers1" type="Node2D" parent="markers1/Layers2"]
+script = ExtResource( 2 )
+
+[node name="ic_markers-controla-oscuridad" type="Node2D" parent="markers1/Layers2/markers1"]
+position = Vector2( -1648, -1324 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 4 )
+m_oIniColor = Color( 1, 1, 1, 0.04 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="markers1/Layers2/markers1/ic_markers-controla-oscuridad"]
+scale = Vector2( 25, 15 )
+texture = ExtResource( 6 )
+offset = Vector2( 800, 480 )
+script = ExtResource( 9 )
+Action = 0
+m_sprite = ExtResource( 10 )
+
+[node name="Action2" type="Node" parent="markers1"]
+
+[node name="FAR_BACKGROUND" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="FAR_BACKGROUND"]
+
+[node name="Action" type="Node" parent="FAR_BACKGROUND"]
+
+[node name="Layers2" type="Node2D" parent="FAR_BACKGROUND"]
+
+[node name="FAR_BACKGROUND" type="Node2D" parent="FAR_BACKGROUND/Layers2"]
+script = ExtResource( 2 )
+
+[node name="Action2" type="Node" parent="FAR_BACKGROUND"]
+
+[node name="BACKGROUND" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="BACKGROUND"]
+
+[node name="Action" type="Node" parent="BACKGROUND"]
+
+[node name="Layers2" type="Node2D" parent="BACKGROUND"]
+
+[node name="BACKGROUND" type="Node2D" parent="BACKGROUND/Layers2"]
+script = ExtResource( 2 )
+
+[node name="ry_back" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND"]
+position = Vector2( 1028, 204 )
+scale = Vector2( 6, 6 )
+script = ExtResource( 5 )
+m_oIniColor = Color( 0, 0, 0, 1 )
+
+[node name="ic_bg_" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND"]
+position = Vector2( 900, 0 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="Adornos" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND"]
+script = ExtResource( 2 )
+
+[node name="ic_Chimenea" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Adornos"]
+position = Vector2( 960, 848 )
+scale = Vector2( 0.715, 0.715 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="espada" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Adornos"]
+position = Vector2( 776, 192 )
+scale = Vector2( 0.2, 0.2 )
+script = ExtResource( 2 )
+
+[node name="ic_espada" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Adornos/espada"]
+position = Vector2( 910, -20 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_base" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Adornos/espada"]
+position = Vector2( 952, 224 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_Titulo" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Adornos/espada"]
+position = Vector2( 955, 200 )
+scale = Vector2( 2.7, 2.7 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_Cuadro" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Adornos"]
+position = Vector2( 960, 416 )
+scale = Vector2( 0.4, 0.4 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_TrastosGrande" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Adornos"]
+position = Vector2( 448, 832 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_TrastosGrande2" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Adornos"]
+position = Vector2( 1568, 832 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_Gato" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Adornos"]
+position = Vector2( 1248, 832 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_TrastosPeque" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Adornos"]
+position = Vector2( 224, 832 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_Mayordomo" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Adornos"]
+position = Vector2( 252, 832 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_Sillon" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Adornos"]
+position = Vector2( 1440, 832 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="libros" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Adornos"]
+script = ExtResource( 2 )
+
+[node name="Icon layer 3" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Adornos/libros"]
+script = ExtResource( 4 )
+
+[node name="Banyo" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND"]
+script = ExtResource( 2 )
+
+[node name="ic_Banyo" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Banyo"]
+position = Vector2( 1800, 292 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_wc" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Banyo"]
+position = Vector2( 2120, 832 )
+scale = Vector2( 0.75, 0.75 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="cisterna" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Banyo"]
+position = Vector2( -152, 76 )
+script = ExtResource( 2 )
+
+[node name="ic_cisterna" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Banyo/cisterna"]
+position = Vector2( 2272, 408 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_cisterna-1" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Banyo/cisterna"]
+position = Vector2( 2356, 340 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_cisterna-2" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Banyo/cisterna"]
+position = Vector2( 2348, 336 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="cubo" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Banyo"]
+position = Vector2( 2264, 832 )
+scale = Vector2( 0.75, 0.75 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="lavabo" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Banyo"]
+position = Vector2( 1920, 736 )
+scale = Vector2( 0.75, 0.75 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="papel" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Banyo"]
+position = Vector2( 2228, 656 )
+scale = Vector2( 0.75, 0.75 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="nota" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/Banyo"]
+position = Vector2( 2120, 532 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="marco_puerta" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND"]
+position = Vector2( 1810, 572 )
+scale = Vector2( 0.14, 1.1 )
+script = ExtResource( 4 )
+m_oIniColor = Color( 0.5333, 0.5333, 0.5333, 1 )
+m_iIniAction = 0
+
+[node name="Action2" type="Node" parent="BACKGROUND"]
+
+[node name="FakeMA" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="FakeMA"]
+
+[node name="Action" type="Node" parent="FakeMA"]
+
+[node name="Layers2" type="Node2D" parent="FakeMA"]
+
+[node name="FakeMA" type="Node2D" parent="FakeMA/Layers2"]
+script = ExtResource( 2 )
+m_bIniVis = false
+
+[node name="g_FakeMA" type="Node2D" parent="FakeMA/Layers2/FakeMA"]
+script = ExtResource( 2 )
+
+[node name="ic_FakeMA" type="Node2D" parent="FakeMA/Layers2/FakeMA/g_FakeMA"]
+position = Vector2( 2120, 832 )
+scale = Vector2( 0.65, 0.65 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="Action2" type="Node" parent="FakeMA"]
+
+[node name="ACTION_PLANE" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="ACTION_PLANE"]
+
+[node name="Action" type="Node" parent="ACTION_PLANE"]
+
+[node name="Layers2" type="Node2D" parent="ACTION_PLANE"]
+
+[node name="ACTION_PLANE" type="Node2D" parent="ACTION_PLANE/Layers2"]
+script = ExtResource( 2 )
+m_rDepthFactor = 1.0
+
+[node name="ENTITYLAYER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE"]
+script = ExtResource( 2 )
+m_sTAG = "ENTITY_LAYER"
+
+[node name="cratebox_intro" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER"]
+position = Vector2( 1672, 832 )
+script = ExtResource( 2 )
+
+[node name="ic_intro" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER/cratebox_intro"]
+script = ExtResource( 4 )
+m_iIniAction = 0
+m_sTAG = "Spawn brk_CrateBox_Intro"
+
+[node name="LADDERS" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE"]
+position = Vector2( -64, 0 )
+script = ExtResource( 2 )
+
+[node name="ladder_3levels" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS"]
+position = Vector2( 664, 576 )
+script = ExtResource( 2 )
+m_rDepthFactor = 1.0
+
+[node name="ladder_bottom" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/ladder_3levels"]
+position = Vector2( 0, 256 )
+script = ExtResource( 2 )
+
+[node name="g_bottom_AREA_LADDER_BOTTOM" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/ladder_3levels/ladder_bottom"]
+script = ExtResource( 2 )
+m_sTAG = "AREALAYER_LADDER_BOTTOM"
+
+[node name="rt_bottom_AREA_LADDER_BOTTOM" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/ladder_3levels/ladder_bottom/g_bottom_AREA_LADDER_BOTTOM"]
+position = Vector2( 0, -32 )
+script = ExtResource( 5 )
+m_oIniColor = Color( 1, 0, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="g_bottom_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/ladder_3levels/ladder_bottom"]
+script = ExtResource( 2 )
+m_sTAG = "AREALAYER_LADDER"
+
+[node name="rt_bottom_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/ladder_3levels/ladder_bottom/g_bottom_AREA_LADDER"]
+position = Vector2( 0, -64 )
+script = ExtResource( 5 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="g_bottom_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/ladder_3levels/ladder_bottom"]
+script = ExtResource( 2 )
+m_sTAG = "AREALAYER_LADDER_UNSTICK"
+
+[node name="rt_bottom_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/ladder_3levels/ladder_bottom/g_bottom_AREA_LADDER_UNSTICK"]
+position = Vector2( 0, -32 )
+script = ExtResource( 5 )
+m_oIniColor = Color( 1, 0.502, 0, 1 )
+m_sTAG = "AABB"
+
+[node name="ladder_g" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/ladder_3levels"]
+script = ExtResource( 2 )
+m_sTAG = "AREALAYER_LADDER"
+
+[node name="g_g" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/ladder_3levels/ladder_g"]
+position = Vector2( 0, 192 )
+script = ExtResource( 2 )
+
+[node name="rt_g" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/ladder_3levels/ladder_g/g_g"]
+script = ExtResource( 5 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_bIniVis = false
+m_sTAG = "AABB"
+
+[node name="ic_g" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/ladder_3levels/ladder_g/g_g"]
+position = Vector2( -80, -448 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_g-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/ladder_3levels/ladder_g/g_g"]
+position = Vector2( -80, -576 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_g-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/ladder_3levels/ladder_g/g_g"]
+position = Vector2( -80, -320 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_g-3" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/ladder_3levels/ladder_g/g_g"]
+position = Vector2( -80, -192 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_g-4" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/ladder_3levels/ladder_g/g_g"]
+position = Vector2( -80, 64 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_g-5" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/ladder_3levels/ladder_g/g_g"]
+position = Vector2( -80, -64 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="TRIGGERS" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE"]
+script = ExtResource( 2 )
+
+[node name="g_TRIGGERS" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/TRIGGERS"]
+script = ExtResource( 2 )
+m_sTAG = "TRIGGERLAYER_WatchSword"
+
+[node name="rt_TRIGGERS" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/TRIGGERS/g_TRIGGERS"]
+position = Vector2( 604, 128 )
+script = ExtResource( 5 )
+m_oIniColor = Color( 1, 0, 1, 1 )
+m_sTAG = "AABB"
+
+[node name="G_TRIGGERS2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/TRIGGERS"]
+script = ExtResource( 2 )
+m_sTAG = "TRIGGERLAYER_GoToilet"
+
+[node name="rt_TRIGGERS2-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/TRIGGERS/G_TRIGGERS2"]
+position = Vector2( 1800, 824 )
+script = ExtResource( 5 )
+m_oIniColor = Color( 1, 0, 1, 1 )
+m_sTAG = "AABB"
+
+[node name="COL" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE"]
+script = ExtResource( 2 )
+
+[node name="g_COL" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL"]
+script = ExtResource( 2 )
+m_sTAG = "STATICLAYER"
+
+[node name="ic_COL" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 0, 832 )
+scale = Vector2( 2, 1 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="rt_COL" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( -64, -64 )
+scale = Vector2( 1.5, 1 )
+script = ExtResource( 5 )
+m_sTAG = "AABB"
+
+[node name="rt_COL-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( -88, 0 )
+script = ExtResource( 5 )
+m_sTAG = "AABB"
+
+[node name="rt_COL-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 1800, -388 )
+script = ExtResource( 5 )
+m_sTAG = "AABB"
+
+[node name="Action2" type="Node" parent="ACTION_PLANE"]
+
+[node name="FOREGROUND" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="FOREGROUND"]
+
+[node name="Action" type="Node" parent="FOREGROUND"]
+
+[node name="Layers2" type="Node2D" parent="FOREGROUND"]
+
+[node name="FOREGROUND" type="Node2D" parent="FOREGROUND/Layers2"]
+position = Vector2( 776.587, 577.065 )
+script = ExtResource( 2 )
+
+[node name="Action2" type="Node" parent="FOREGROUND"]
+
+[node name="LIGHTING" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="LIGHTING"]
+
+[node name="Action" type="Node" parent="LIGHTING"]
+
+[node name="Layers2" type="Node2D" parent="LIGHTING"]
+
+[node name="LIGHTING" type="Node2D" parent="LIGHTING/Layers2"]
+script = ExtResource( 2 )
+m_rDepthFactor = 1.0
+
+[node name="LightCandle" type="Node2D" parent="LIGHTING/Layers2/LIGHTING"]
+script = ExtResource( 2 )
+m_rDepthFactor = 1.0
+
+[node name="ic_LightCandle" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/LightCandle"]
+position = Vector2( 1104, 528 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_LightCandle-1" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/LightCandle"]
+position = Vector2( 1100, 448 )
+scale = Vector2( 9, 9 )
+script = ExtResource( 4 )
+m_oIniColor = Color( 1, 0.8863, 0.8353, 1 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/LightCandle/ic_LightCandle-1"]
+texture = ExtResource( 8 )
+script = ExtResource( 9 )
+Action = 0
+m_sprite = ExtResource( 7 )
+
+[node name="LightCandle2" type="Node2D" parent="LIGHTING/Layers2/LIGHTING"]
+position = Vector2( 884, 304 )
+script = ExtResource( 2 )
+m_rDepthFactor = 1.0
+
+[node name="ic_LightCandle2" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/LightCandle2"]
+position = Vector2( 1104, 528 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_LightCandle2-1" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/LightCandle2"]
+position = Vector2( 1100, 448 )
+scale = Vector2( 10, 10 )
+script = ExtResource( 4 )
+m_oIniColor = Color( 1, 0.8863, 0.8353, 1 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/LightCandle2/ic_LightCandle2-1"]
+texture = ExtResource( 8 )
+script = ExtResource( 9 )
+Action = 0
+m_sprite = ExtResource( 7 )
+
+[node name="[Reveal-0]Reveal" type="Node2D" parent="LIGHTING/Layers2/LIGHTING"]
+position = Vector2( -1136, -952 )
+scale = Vector2( 3, 3 )
+script = ExtResource( 2 )
+m_oIniColor = Color( 1, 1, 1, 0.749 )
+
+[node name="[Reveal-0]ic_Reveal" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/[Reveal-0]Reveal"]
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/[Reveal-0]Reveal/[Reveal-0]ic_Reveal"]
+scale = Vector2( 28.125, 16.875 )
+texture = ExtResource( 6 )
+offset = Vector2( 900, 540 )
+script = ExtResource( 9 )
+Action = 0
+m_sprite = ExtResource( 11 )
+
+[node name="Action2" type="Node" parent="LIGHTING"]
+
+[node name="CONTROLPOINTLAYER" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="CONTROLPOINTLAYER"]
+
+[node name="Action" type="Node" parent="CONTROLPOINTLAYER"]
+
+[node name="Layers2" type="Node2D" parent="CONTROLPOINTLAYER"]
+
+[node name="CONTROLPOINTLAYER" type="Node2D" parent="CONTROLPOINTLAYER/Layers2"]
+position = Vector2( 36, -4 )
+script = ExtResource( 2 )
+
+[node name="StartPosition" type="Node2D" parent="CONTROLPOINTLAYER/Layers2/CONTROLPOINTLAYER"]
+position = Vector2( 256, 832 )
+script = ExtResource( 2 )
+
+[node name="STARTPOSITION_" type="Node2D" parent="CONTROLPOINTLAYER/Layers2/CONTROLPOINTLAYER/StartPosition"]
+script = ExtResource( 5 )
+m_oIniColor = Color( 1, 0, 0.502, 1 )
+m_sTAG = "StartPosition"
+
+[node name="Action2" type="Node" parent="CONTROLPOINTLAYER"]
+
+[node name="ROOMPROPERTIES" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="ROOMPROPERTIES"]
+
+[node name="Action" type="Node" parent="ROOMPROPERTIES"]
+
+[node name="Layers2" type="Node2D" parent="ROOMPROPERTIES"]
+
+[node name="ROOMPROPERTIES" type="Node2D" parent="ROOMPROPERTIES/Layers2"]
+position = Vector2( 697.894, 620.045 )
+script = ExtResource( 2 )
+m_sTAG = "ReverbFactor 0.25"
+
+[node name="Action2" type="Node" parent="ROOMPROPERTIES"]

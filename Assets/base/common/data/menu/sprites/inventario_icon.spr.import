@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/inventario_icon.spr-5493734d8ed93e757b18494036025a33.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/menu/sprites/inventario_icon.spr"
+dest_files=[ "res://.import/inventario_icon.spr-5493734d8ed93e757b18494036025a33.tres" ]
+
+[params]
+

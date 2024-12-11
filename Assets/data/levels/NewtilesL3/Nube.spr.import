@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/Nube.spr-2d7eaf71ec1e80921fc79e538b5aab0b.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Nube.spr-2d7eaf71ec1e80921fc79e538b5aab0b.tres"
 
 [deps]
 
 source_file="res://Assets/data/levels/NewtilesL3/Nube.spr"
-dest_files=[ "res://.import/Nube.spr-2d7eaf71ec1e80921fc79e538b5aab0b.tscn" ]
+dest_files=[ "res://.import/Nube.spr-2d7eaf71ec1e80921fc79e538b5aab0b.tres" ]
 
 [params]
 

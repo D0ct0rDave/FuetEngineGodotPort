@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Libreria_p1.spr-bfc680e3ea40996709be11a571ed8a83.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/ornaments/Libreria_p1.spr"
+dest_files=[ "res://.import/Libreria_p1.spr-bfc680e3ea40996709be11a571ed8a83.tres" ]
+
+[params]
+

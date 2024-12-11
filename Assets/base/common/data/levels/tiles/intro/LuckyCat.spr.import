@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/LuckyCat.spr-afbc20b68bfbfe8c5c5a47f9ca80c2b5.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/intro/LuckyCat.spr"
+dest_files=[ "res://.import/LuckyCat.spr-afbc20b68bfbfe8c5c5a47f9ca80c2b5.tres" ]
+
+[params]
+

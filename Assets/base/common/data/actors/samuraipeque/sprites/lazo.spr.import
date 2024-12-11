@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/lazo.spr-a29e1a64bc9447f254c113f7b76d3156.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/samuraipeque/sprites/lazo.spr"
+dest_files=[ "res://.import/lazo.spr-a29e1a64bc9447f254c113f7b76d3156.tres" ]
+
+[params]
+

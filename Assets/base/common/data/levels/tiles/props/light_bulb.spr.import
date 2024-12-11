@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/light_bulb.spr-aae0e8f74a1dbada609f532dc023b490.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/props/light_bulb.spr"
+dest_files=[ "res://.import/light_bulb.spr-aae0e8f74a1dbada609f532dc023b490.tres" ]
+
+[params]
+

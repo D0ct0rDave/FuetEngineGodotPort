@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/cartel_f2.spr-a0cf00427d9499897fe7609edec1455d.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/cartel_f2.spr-a0cf00427d9499897fe7609edec1455d.tres"
 
 [deps]
 
 source_file="res://Assets/data/levels/anims/Cartel/cartel_f2.spr"
-dest_files=[ "res://.import/cartel_f2.spr-a0cf00427d9499897fe7609edec1455d.tscn" ]
+dest_files=[ "res://.import/cartel_f2.spr-a0cf00427d9499897fe7609edec1455d.tres" ]
 
 [params]
 

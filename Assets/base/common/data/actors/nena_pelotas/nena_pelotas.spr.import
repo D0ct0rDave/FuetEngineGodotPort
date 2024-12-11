@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/nena_pelotas.spr-a2d15a6c114bc11a80be69b5de661d94.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/nena_pelotas/nena_pelotas.spr"
+dest_files=[ "res://.import/nena_pelotas.spr-a2d15a6c114bc11a80be69b5de661d94.tres" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEHUDFileImportPlugin"
+type="PackedScene"
+path="res://.import/page_mig_quit.hud-29aff579814531a3ece012eba75b0be5.tscn"
+
+[deps]
+
+source_file="res://Assets/base/common/data/menu/page_mig_quit.hud"
+dest_files=[ "res://.import/page_mig_quit.hud-29aff579814531a3ece012eba75b0be5.tscn" ]
+
+[params]
+

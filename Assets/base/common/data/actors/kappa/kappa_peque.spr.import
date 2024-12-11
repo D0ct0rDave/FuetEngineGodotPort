@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/kappa_peque.spr-db1872c53ae9a0219ab423bbb3951eee.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/kappa/kappa_peque.spr"
+dest_files=[ "res://.import/kappa_peque.spr-db1872c53ae9a0219ab423bbb3951eee.tres" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/moai_bullet.spr-72d07af6b2a42b137ac0e9b758dba653.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/moai/moai_bullet.spr"
+dest_files=[ "res://.import/moai_bullet.spr-72d07af6b2a42b137ac0e9b758dba653.tres" ]
+
+[params]
+

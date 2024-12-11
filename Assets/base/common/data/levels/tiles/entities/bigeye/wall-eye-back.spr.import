@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/wall-eye-back.spr-787d5a8de1028e8deeca7cdf92f54e26.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/entities/bigeye/wall-eye-back.spr"
+dest_files=[ "res://.import/wall-eye-back.spr-787d5a8de1028e8deeca7cdf92f54e26.tres" ]
+
+[params]
+

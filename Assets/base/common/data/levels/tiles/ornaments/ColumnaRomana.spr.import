@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/ColumnaRomana.spr-621610869ebbffa0413127c4bcb80deb.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/ornaments/ColumnaRomana.spr"
+dest_files=[ "res://.import/ColumnaRomana.spr-621610869ebbffa0413127c4bcb80deb.tres" ]
+
+[params]
+

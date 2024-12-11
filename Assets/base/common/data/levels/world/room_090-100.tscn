@@ -1,0 +1,495 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDPSys.cs" type="Script" id=1]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=2]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=5]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDRect.cs" type="Script" id=6]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/ornaments/Banderola_big.png" type="Texture" id=7]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/ornaments/Armadura.png" type="Texture" id=8]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/props/candil.png" type="Texture" id=9]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/prefabs/rect.png" type="Texture" id=10]
+[ext_resource path="res://Assets/base/common/data/gfx/light_exp_fluctuant.spr" type="Resource" id=11]
+[ext_resource path="res://Assets/base/common/data/gfx/light_exp_low.png" type="Texture" id=12]
+[ext_resource path="res://Assets/base/common/data/actors/doorkeeper/doorkeeper.spr" type="Resource" id=13]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=14]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/prefabs/rect_marker.spr" type="Resource" id=15]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/prefabs/rect_reveal.spr" type="Resource" id=16]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/props/candil.spr" type="Resource" id=17]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/ornaments/Armadura.spr" type="Resource" id=18]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/ornaments/Banderola_big.spr" type="Resource" id=19]
+
+[sub_resource type="AtlasTexture" id=4]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 9 )
+region = Rect2( 178.995, 2.0054, 97.9936, 82.0046 )
+
+[sub_resource type="AtlasTexture" id=5]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 9 )
+region = Rect2( -2.0054, 2.0054, 185.012, 269.997 )
+
+[node name="CFEHUD" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="markers1" type="Node2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="Layers" type="Node2D" parent="markers1"]
+
+[node name="Action" type="Node" parent="markers1"]
+
+[node name="Layers2" type="Node2D" parent="markers1"]
+
+[node name="markers1" type="Node2D" parent="markers1/Layers2"]
+position = Vector2( -160, 0 )
+script = ExtResource( 3 )
+m_rDepthFactor = 1.0
+
+[node name="ic_markers-controla-oscuridad" type="Node2D" parent="markers1/Layers2/markers1"]
+position = Vector2( -832, -1696 )
+scale = Vector2( 4, 4 )
+script = ExtResource( 5 )
+m_oIniColor = Color( 0.0627, 0.0627, 0.0627, 1 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="markers1/Layers2/markers1/ic_markers-controla-oscuridad"]
+scale = Vector2( 25, 15 )
+texture = ExtResource( 10 )
+offset = Vector2( 800, 480 )
+script = ExtResource( 14 )
+Action = 0
+m_sprite = ExtResource( 15 )
+
+[node name="Action2" type="Node" parent="markers1"]
+
+[node name="FAR_BACKGROUND" type="Node2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="Layers" type="Node2D" parent="FAR_BACKGROUND"]
+
+[node name="Action" type="Node" parent="FAR_BACKGROUND"]
+
+[node name="Layers2" type="Node2D" parent="FAR_BACKGROUND"]
+
+[node name="FAR_BACKGROUND" type="Node2D" parent="FAR_BACKGROUND/Layers2"]
+script = ExtResource( 3 )
+
+[node name="Action2" type="Node" parent="FAR_BACKGROUND"]
+
+[node name="BACKGROUND" type="Node2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="Layers" type="Node2D" parent="BACKGROUND"]
+
+[node name="Action" type="Node" parent="BACKGROUND"]
+
+[node name="Layers2" type="Node2D" parent="BACKGROUND"]
+
+[node name="BACKGROUND" type="Node2D" parent="BACKGROUND/Layers2"]
+script = ExtResource( 3 )
+
+[node name="ic_BACKGROUND" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND"]
+position = Vector2( 1024, 0 )
+script = ExtResource( 5 )
+m_iIniAction = 0
+
+[node name="ic_BACKGROUND-1" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND"]
+script = ExtResource( 5 )
+m_iIniAction = 0
+
+[node name="Action2" type="Node" parent="BACKGROUND"]
+
+[node name="NEAR_BACKGROUND" type="Node2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="Layers" type="Node2D" parent="NEAR_BACKGROUND"]
+
+[node name="Action" type="Node" parent="NEAR_BACKGROUND"]
+
+[node name="Layers2" type="Node2D" parent="NEAR_BACKGROUND"]
+
+[node name="NEAR_BACKGROUND" type="Node2D" parent="NEAR_BACKGROUND/Layers2"]
+script = ExtResource( 3 )
+
+[node name="adornos" type="Node2D" parent="NEAR_BACKGROUND/Layers2/NEAR_BACKGROUND"]
+script = ExtResource( 3 )
+
+[node name="ic_adornos" type="Node2D" parent="NEAR_BACKGROUND/Layers2/NEAR_BACKGROUND/adornos"]
+position = Vector2( 1696, 704 )
+script = ExtResource( 5 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="NEAR_BACKGROUND/Layers2/NEAR_BACKGROUND/adornos/ic_adornos"]
+texture = ExtResource( 8 )
+offset = Vector2( -0.495899, -125 )
+script = ExtResource( 14 )
+Action = 0
+m_sprite = ExtResource( 18 )
+
+[node name="ic_adornos-1" type="Node2D" parent="NEAR_BACKGROUND/Layers2/NEAR_BACKGROUND/adornos"]
+position = Vector2( 704, 704 )
+script = ExtResource( 5 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="NEAR_BACKGROUND/Layers2/NEAR_BACKGROUND/adornos/ic_adornos-1"]
+texture = ExtResource( 8 )
+offset = Vector2( -0.495899, -125 )
+script = ExtResource( 14 )
+Action = 0
+m_sprite = ExtResource( 18 )
+
+[node name="ic_adornos-2" type="Node2D" parent="NEAR_BACKGROUND/Layers2/NEAR_BACKGROUND/adornos"]
+position = Vector2( 1152, 288 )
+script = ExtResource( 5 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="NEAR_BACKGROUND/Layers2/NEAR_BACKGROUND/adornos/ic_adornos-2"]
+texture = ExtResource( 7 )
+offset = Vector2( -0.504895, 185.988 )
+script = ExtResource( 14 )
+Action = 0
+m_sprite = ExtResource( 19 )
+
+[node name="Action2" type="Node" parent="NEAR_BACKGROUND"]
+
+[node name="ACTION_PLANE" type="Node2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="Layers" type="Node2D" parent="ACTION_PLANE"]
+
+[node name="Action" type="Node" parent="ACTION_PLANE"]
+
+[node name="Layers2" type="Node2D" parent="ACTION_PLANE"]
+
+[node name="ACTION_PLANE" type="Node2D" parent="ACTION_PLANE/Layers2"]
+script = ExtResource( 3 )
+m_rDepthFactor = 1.0
+
+[node name="LADDERS" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE"]
+script = ExtResource( 3 )
+m_rDepthFactor = 1.0
+
+[node name="ENTITYLAYER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE"]
+script = ExtResource( 3 )
+m_rDepthFactor = 1.0
+
+[node name="[DoorKeeper-0]DoorKeeper" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER"]
+position = Vector2( 288, 704 )
+script = ExtResource( 3 )
+
+[node name="[DoorKeeper-0]ic_DoorKeeper" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER/[DoorKeeper-0]DoorKeeper"]
+script = ExtResource( 5 )
+m_iIniAction = 0
+m_sTAG = "Spawn cent_DoorKeeper"
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER/[DoorKeeper-0]DoorKeeper/[DoorKeeper-0]ic_DoorKeeper"]
+scale = Vector2( 1e-05, 1e-05 )
+offset = Vector2( 79.001, -85.491 )
+script = ExtResource( 14 )
+Action = 0
+m_sprite = ExtResource( 13 )
+
+[node name="COL" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE"]
+script = ExtResource( 3 )
+
+[node name="g_COL" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL"]
+script = ExtResource( 3 )
+m_sTAG = "STATICLAYER"
+
+[node name="ic_COL" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 128, 320 )
+scale = Vector2( 5, 1 )
+script = ExtResource( 5 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 64, 256 )
+scale = Vector2( 7, 1 )
+script = ExtResource( 5 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 0, -640 )
+scale = Vector2( 29, 14 )
+script = ExtResource( 5 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-3" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 256, 448 )
+script = ExtResource( 5 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-4" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 192, 384 )
+scale = Vector2( 3, 1 )
+script = ExtResource( 5 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-5" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 0, 704 )
+scale = Vector2( 29, 5 )
+script = ExtResource( 5 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="Action2" type="Node" parent="ACTION_PLANE"]
+
+[node name="LIGHTING" type="Node2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="Layers" type="Node2D" parent="LIGHTING"]
+
+[node name="Action" type="Node" parent="LIGHTING"]
+
+[node name="Layers2" type="Node2D" parent="LIGHTING"]
+
+[node name="LIGHTING" type="Node2D" parent="LIGHTING/Layers2"]
+script = ExtResource( 3 )
+m_rDepthFactor = 1.0
+
+[node name="Lights" type="Node2D" parent="LIGHTING/Layers2/LIGHTING"]
+script = ExtResource( 3 )
+m_rDepthFactor = 1.0
+
+[node name="[Candil-0]Candil" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights"]
+position = Vector2( 80, 384 )
+script = ExtResource( 3 )
+m_rDepthFactor = 1.0
+
+[node name="[Candil-0]Candil_g" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-0]Candil"]
+script = ExtResource( 3 )
+
+[node name="[Candil-0]ic_Candil" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-0]Candil/[Candil-0]Candil_g"]
+scale = Vector2( 0.8, 0.8 )
+script = ExtResource( 5 )
+m_iIniAction = 1
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-0]Candil/[Candil-0]Candil_g/[Candil-0]ic_Candil"]
+scale = Vector2( 1.00007, 0.999944 )
+texture = SubResource( 4 )
+offset = Vector2( 0.989801, 3.0094 )
+script = ExtResource( 14 )
+Action = 1
+m_sprite = ExtResource( 17 )
+
+[node name="[Candil-0]ps_smoke" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-0]Candil/[Candil-0]Candil_g"]
+position = Vector2( 0, 100 )
+script = ExtResource( 1 )
+m_iIniAction = 0
+
+[node name="[Candil-0]ps_fire" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-0]Candil/[Candil-0]Candil_g"]
+position = Vector2( 0, 100 )
+script = ExtResource( 1 )
+m_iIniAction = 0
+
+[node name="[Candil-0]ic_lighting" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-0]Candil/[Candil-0]Candil_g"]
+position = Vector2( 0, 92 )
+scale = Vector2( 13, 13 )
+script = ExtResource( 5 )
+m_oIniColor = Color( 1, 0.8863, 0.7765, 0.7 )
+m_iIniAction = 0
+m_sTAG = "LightSource"
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-0]Candil/[Candil-0]Candil_g/[Candil-0]ic_lighting"]
+texture = ExtResource( 12 )
+script = ExtResource( 14 )
+Action = 0
+m_sprite = ExtResource( 11 )
+
+[node name="[Candil-0]ic_Candil-1" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-0]Candil/[Candil-0]Candil_g"]
+scale = Vector2( 0.6, 0.6 )
+script = ExtResource( 5 )
+m_iIniAction = 0
+m_sTAG = "Sound torch_fire_normal"
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-0]Candil/[Candil-0]Candil_g/[Candil-0]ic_Candil-1"]
+scale = Vector2( 0.999937, 1.00001 )
+texture = SubResource( 5 )
+offset = Vector2( -2.4975, 103.005 )
+script = ExtResource( 14 )
+Action = 0
+m_sprite = ExtResource( 17 )
+
+[node name="[Candil-1]Candil" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights"]
+position = Vector2( 848, 384 )
+script = ExtResource( 3 )
+m_rDepthFactor = 1.0
+
+[node name="[Candil-1]Candil_g" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-1]Candil"]
+script = ExtResource( 3 )
+
+[node name="[Candil-1]ic_Candil" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-1]Candil/[Candil-1]Candil_g"]
+scale = Vector2( 0.8, 0.8 )
+script = ExtResource( 5 )
+m_iIniAction = 1
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-1]Candil/[Candil-1]Candil_g/[Candil-1]ic_Candil"]
+scale = Vector2( 1.00007, 0.999944 )
+texture = SubResource( 4 )
+offset = Vector2( 0.989801, 3.0094 )
+script = ExtResource( 14 )
+Action = 1
+m_sprite = ExtResource( 17 )
+
+[node name="[Candil-1]ps_smoke" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-1]Candil/[Candil-1]Candil_g"]
+position = Vector2( 0, 100 )
+script = ExtResource( 1 )
+m_iIniAction = 0
+
+[node name="[Candil-1]ps_fire" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-1]Candil/[Candil-1]Candil_g"]
+position = Vector2( 0, 100 )
+script = ExtResource( 1 )
+m_iIniAction = 0
+
+[node name="[Candil-1]ic_lighting" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-1]Candil/[Candil-1]Candil_g"]
+position = Vector2( 0, 92 )
+scale = Vector2( 13, 13 )
+script = ExtResource( 5 )
+m_oIniColor = Color( 1, 0.8863, 0.7765, 0.7 )
+m_iIniAction = 0
+m_sTAG = "LightSource"
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-1]Candil/[Candil-1]Candil_g/[Candil-1]ic_lighting"]
+texture = ExtResource( 12 )
+script = ExtResource( 14 )
+Action = 0
+m_sprite = ExtResource( 11 )
+
+[node name="[Candil-1]ic_Candil-1" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-1]Candil/[Candil-1]Candil_g"]
+scale = Vector2( 0.6, 0.6 )
+script = ExtResource( 5 )
+m_iIniAction = 0
+m_sTAG = "Sound torch_fire_normal"
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-1]Candil/[Candil-1]Candil_g/[Candil-1]ic_Candil-1"]
+scale = Vector2( 0.999937, 1.00001 )
+texture = SubResource( 5 )
+offset = Vector2( -2.4975, 103.005 )
+script = ExtResource( 14 )
+Action = 0
+m_sprite = ExtResource( 17 )
+
+[node name="[Candil-2]Candil" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights"]
+position = Vector2( 1568, 384 )
+script = ExtResource( 3 )
+m_rDepthFactor = 1.0
+
+[node name="[Candil-2]Candil_g" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-2]Candil"]
+script = ExtResource( 3 )
+
+[node name="[Candil-2]ic_Candil" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-2]Candil/[Candil-2]Candil_g"]
+scale = Vector2( 0.8, 0.8 )
+script = ExtResource( 5 )
+m_iIniAction = 1
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-2]Candil/[Candil-2]Candil_g/[Candil-2]ic_Candil"]
+scale = Vector2( 1.00007, 0.999944 )
+texture = SubResource( 4 )
+offset = Vector2( 0.989801, 3.0094 )
+script = ExtResource( 14 )
+Action = 1
+m_sprite = ExtResource( 17 )
+
+[node name="[Candil-2]ps_smoke" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-2]Candil/[Candil-2]Candil_g"]
+position = Vector2( 0, 100 )
+script = ExtResource( 1 )
+m_iIniAction = 0
+
+[node name="[Candil-2]ps_fire" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-2]Candil/[Candil-2]Candil_g"]
+position = Vector2( 0, 100 )
+script = ExtResource( 1 )
+m_iIniAction = 0
+
+[node name="[Candil-2]ic_lighting" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-2]Candil/[Candil-2]Candil_g"]
+position = Vector2( 0, 92 )
+scale = Vector2( 13, 13 )
+script = ExtResource( 5 )
+m_oIniColor = Color( 1, 0.8863, 0.7765, 0.7 )
+m_iIniAction = 0
+m_sTAG = "LightSource"
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-2]Candil/[Candil-2]Candil_g/[Candil-2]ic_lighting"]
+texture = ExtResource( 12 )
+script = ExtResource( 14 )
+Action = 0
+m_sprite = ExtResource( 11 )
+
+[node name="[Candil-2]ic_Candil-1" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-2]Candil/[Candil-2]Candil_g"]
+scale = Vector2( 0.6, 0.6 )
+script = ExtResource( 5 )
+m_iIniAction = 0
+m_sTAG = "Sound torch_fire_normal"
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/Lights/[Candil-2]Candil/[Candil-2]Candil_g/[Candil-2]ic_Candil-1"]
+scale = Vector2( 0.999937, 1.00001 )
+texture = SubResource( 5 )
+offset = Vector2( -2.4975, 103.005 )
+script = ExtResource( 14 )
+Action = 0
+m_sprite = ExtResource( 17 )
+
+[node name="Reveal" type="Node2D" parent="LIGHTING/Layers2/LIGHTING"]
+position = Vector2( -144, -128 )
+scale = Vector2( 1.2, 1.2 )
+script = ExtResource( 3 )
+
+[node name="ic_Reveal" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/Reveal"]
+script = ExtResource( 5 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/Reveal/ic_Reveal"]
+scale = Vector2( 28.125, 16.875 )
+texture = ExtResource( 10 )
+offset = Vector2( 900, 540 )
+script = ExtResource( 14 )
+Action = 0
+m_sprite = ExtResource( 16 )
+
+[node name="Action2" type="Node" parent="LIGHTING"]
+
+[node name="CONTROLPOINTLAYER" type="Node2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="Layers" type="Node2D" parent="CONTROLPOINTLAYER"]
+
+[node name="Action" type="Node" parent="CONTROLPOINTLAYER"]
+
+[node name="Layers2" type="Node2D" parent="CONTROLPOINTLAYER"]
+
+[node name="CONTROLPOINTLAYER" type="Node2D" parent="CONTROLPOINTLAYER/Layers2"]
+script = ExtResource( 3 )
+
+[node name="[StartPosition-0]StartPosition" type="Node2D" parent="CONTROLPOINTLAYER/Layers2/CONTROLPOINTLAYER"]
+position = Vector2( 1312, 704 )
+script = ExtResource( 3 )
+
+[node name="[StartPosition-0]STARTPOSITION_" type="Node2D" parent="CONTROLPOINTLAYER/Layers2/CONTROLPOINTLAYER/[StartPosition-0]StartPosition"]
+script = ExtResource( 6 )
+m_oIniColor = Color( 1, 0, 0.502, 1 )
+m_sTAG = "StartPosition"
+
+[node name="Action2" type="Node" parent="CONTROLPOINTLAYER"]
+
+[node name="ROOMPROPERTIES" type="Node2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="Layers" type="Node2D" parent="ROOMPROPERTIES"]
+
+[node name="Action" type="Node" parent="ROOMPROPERTIES"]
+
+[node name="Layers2" type="Node2D" parent="ROOMPROPERTIES"]
+
+[node name="ROOMPROPERTIES" type="Node2D" parent="ROOMPROPERTIES/Layers2"]
+script = ExtResource( 3 )
+m_sTAG = "ReverbFactor 0.75"
+
+[node name="Action2" type="Node" parent="ROOMPROPERTIES"]

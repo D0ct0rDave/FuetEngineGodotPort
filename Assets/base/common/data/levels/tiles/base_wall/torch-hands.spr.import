@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/torch-hands.spr-7f4863be18bd075f35b6cf123085185a.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/base_wall/torch-hands.spr"
+dest_files=[ "res://.import/torch-hands.spr-7f4863be18bd075f35b6cf123085185a.tres" ]
+
+[params]
+

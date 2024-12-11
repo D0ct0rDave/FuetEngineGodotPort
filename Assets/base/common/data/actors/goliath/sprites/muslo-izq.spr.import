@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/muslo-izq.spr-b9b8846b135bb95031ffd1651f48c263.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/goliath/sprites/muslo-izq.spr"
+dest_files=[ "res://.import/muslo-izq.spr-b9b8846b135bb95031ffd1651f48c263.tres" ]
+
+[params]
+

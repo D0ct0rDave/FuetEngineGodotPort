@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/pantorrilla_delante.spr-b4d1575fbd88262ce5c926afbfc3af23.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/shadow/sprites/pantorrilla_delante.spr"
+dest_files=[ "res://.import/pantorrilla_delante.spr-b4d1575fbd88262ce5c926afbfc3af23.tres" ]
+
+[params]
+

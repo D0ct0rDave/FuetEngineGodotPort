@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/ojos.spr-67c9365222c67a13886fa1a8296da124.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/kappa/sprites/ojos.spr"
+dest_files=[ "res://.import/ojos.spr-67c9365222c67a13886fa1a8296da124.tres" ]
+
+[params]
+

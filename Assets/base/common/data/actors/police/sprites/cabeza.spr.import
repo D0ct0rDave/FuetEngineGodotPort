@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/cabeza.spr-66a168e6c379097f877281083f250ad4.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/police/sprites/cabeza.spr"
+dest_files=[ "res://.import/cabeza.spr-66a168e6c379097f877281083f250ad4.tres" ]
+
+[params]
+

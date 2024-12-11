@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/rs_bullet.spr-6d72f9ce4b0429c71cc8510ad019dc1d.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/range_shooter/sprites/rs_bullet.spr"
+dest_files=[ "res://.import/rs_bullet.spr-6d72f9ce4b0429c71cc8510ad019dc1d.tres" ]
+
+[params]
+

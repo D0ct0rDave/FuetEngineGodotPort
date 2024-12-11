@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEHUDFileImportPlugin"
+type="PackedScene"
+path="res://.import/path_d - copia.hud-5b4bef200fe4ff5b7df67fccc21e95aa.tscn"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/ffatuo/hard+/path_d - copia.hud"
+dest_files=[ "res://.import/path_d - copia.hud-5b4bef200fe4ff5b7df67fccc21e95aa.tscn" ]
+
+[params]
+

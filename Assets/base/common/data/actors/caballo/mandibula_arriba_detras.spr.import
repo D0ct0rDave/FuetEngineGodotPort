@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/mandibula_arriba_detras.spr-ba2181de750ccbb069b3e2b19a4c892a.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/caballo/mandibula_arriba_detras.spr"
+dest_files=[ "res://.import/mandibula_arriba_detras.spr-ba2181de750ccbb069b3e2b19a4c892a.tres" ]
+
+[params]
+

@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/PiezasBig.spr-371c67987fa38bf47336a0a7e4f18aa1.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/PiezasBig.spr-371c67987fa38bf47336a0a7e4f18aa1.tres"
 
 [deps]
 
 source_file="res://Assets/data/levels/Ship/PiezasBig.spr"
-dest_files=[ "res://.import/PiezasBig.spr-371c67987fa38bf47336a0a7e4f18aa1.tscn" ]
+dest_files=[ "res://.import/PiezasBig.spr-371c67987fa38bf47336a0a7e4f18aa1.tres" ]
 
 [params]
 

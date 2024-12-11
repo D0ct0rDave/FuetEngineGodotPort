@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/cinturon.spr-d4c987588310bc970c37773649f5df63.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/police/sprites/cinturon.spr"
+dest_files=[ "res://.import/cinturon.spr-d4c987588310bc970c37773649f5df63.tres" ]
+
+[params]
+

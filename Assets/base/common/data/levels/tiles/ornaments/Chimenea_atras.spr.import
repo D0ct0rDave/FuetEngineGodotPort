@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Chimenea_atras.spr-354e88b28910f6d500ba9046eecc12cd.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/ornaments/Chimenea_atras.spr"
+dest_files=[ "res://.import/Chimenea_atras.spr-354e88b28910f6d500ba9046eecc12cd.tres" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/cuello.spr-bfe3e3a603a52e8f4450824ecd7d5e93.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/nena_pelotas/sprites/cuello.spr"
+dest_files=[ "res://.import/cuello.spr-bfe3e3a603a52e8f4450824ecd7d5e93.tres" ]
+
+[params]
+

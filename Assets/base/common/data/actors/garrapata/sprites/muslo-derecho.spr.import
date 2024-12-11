@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/muslo-derecho.spr-683e20dea95ce9fee46077136a117576.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/garrapata/sprites/muslo-derecho.spr"
+dest_files=[ "res://.import/muslo-derecho.spr-683e20dea95ce9fee46077136a117576.tres" ]
+
+[params]
+

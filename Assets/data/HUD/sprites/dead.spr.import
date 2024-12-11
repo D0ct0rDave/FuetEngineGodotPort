@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/dead.spr-45e4bb90a8bdd5f66ff8d351b134b6d8.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/dead.spr-45e4bb90a8bdd5f66ff8d351b134b6d8.tres"
 
 [deps]
 
 source_file="res://Assets/data/HUD/sprites/dead.spr"
-dest_files=[ "res://.import/dead.spr-45e4bb90a8bdd5f66ff8d351b134b6d8.tscn" ]
+dest_files=[ "res://.import/dead.spr-45e4bb90a8bdd5f66ff8d351b134b6d8.tres" ]
 
 [params]
 

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/dialog-corner.spr-cf8b9a46705748cc45d307112bc0ab05.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/menu/sprites/dialog-corner.spr"
+dest_files=[ "res://.import/dialog-corner.spr-cf8b9a46705748cc45d307112bc0ab05.tres" ]
+
+[params]
+

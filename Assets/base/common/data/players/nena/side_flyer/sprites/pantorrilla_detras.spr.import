@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/pantorrilla_detras.spr-fcc48e1cfd3357ce4e940ddf2f09b06e.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/players/nena/side_flyer/sprites/pantorrilla_detras.spr"
+dest_files=[ "res://.import/pantorrilla_detras.spr-fcc48e1cfd3357ce4e940ddf2f09b06e.tres" ]
+
+[params]
+

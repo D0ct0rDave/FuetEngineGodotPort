@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/antebrazo-izq.spr-56e666a6a0ad1da3ddc53e8f8ae4f3c4.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/goliath/sprites/antebrazo-izq.spr"
+dest_files=[ "res://.import/antebrazo-izq.spr-56e666a6a0ad1da3ddc53e8f8ae4f3c4.tres" ]
+
+[params]
+

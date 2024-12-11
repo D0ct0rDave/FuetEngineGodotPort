@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/barrel.spr-7a0e8abc38e986a62289dfbf09cba962.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/entities/explobarrel/barrel.spr"
+dest_files=[ "res://.import/barrel.spr-7a0e8abc38e986a62289dfbf09cba962.tres" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEHUDFileImportPlugin"
+type="PackedScene"
+path="res://.import/intro_8.hud-22d57a514890ff94d32ebd59e3793d2a.tscn"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/world/intro/intro_8/intro_8.hud"
+dest_files=[ "res://.import/intro_8.hud-22d57a514890ff94d32ebd59e3793d2a.tscn" ]
+
+[params]
+

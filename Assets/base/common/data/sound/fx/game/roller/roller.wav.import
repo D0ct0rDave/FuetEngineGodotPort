@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/roller.wav-dd0c3b9682b75ea049a35dffd6899852.sample"
+
+[deps]
+
+source_file="res://Assets/base/common/data/sound/fx/game/roller/roller.wav"
+dest_files=[ "res://.import/roller.wav-dd0c3b9682b75ea049a35dffd6899852.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

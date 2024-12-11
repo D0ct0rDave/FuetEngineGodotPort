@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEHUDFileImportPlugin"
+type="PackedScene"
+path="res://.import/uncle_room.hud-ef3f60b1591a5ba1f773bafcec9a9d06.tscn"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/world/uncle_room/uncle_room.hud"
+dest_files=[ "res://.import/uncle_room.hud-ef3f60b1591a5ba1f773bafcec9a9d06.tscn" ]
+
+[params]
+

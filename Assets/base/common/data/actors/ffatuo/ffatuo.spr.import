@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/ffatuo.spr-5af2fbdd9bbd285b0aa4d4dbde44607e.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/ffatuo/ffatuo.spr"
+dest_files=[ "res://.import/ffatuo.spr-5af2fbdd9bbd285b0aa4d4dbde44607e.tres" ]
+
+[params]
+

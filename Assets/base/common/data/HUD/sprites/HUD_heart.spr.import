@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/HUD_heart.spr-f43ad043d806942b7d0ee36bddc99152.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/HUD/sprites/HUD_heart.spr"
+dest_files=[ "res://.import/HUD_heart.spr-f43ad043d806942b7d0ee36bddc99152.tres" ]
+
+[params]
+

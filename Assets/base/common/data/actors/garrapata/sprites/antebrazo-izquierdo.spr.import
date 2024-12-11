@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/antebrazo-izquierdo.spr-f6c7524532f49ce2f20c4de18fbfbcc0.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/garrapata/sprites/antebrazo-izquierdo.spr"
+dest_files=[ "res://.import/antebrazo-izquierdo.spr-f6c7524532f49ce2f20c4de18fbfbcc0.tres" ]
+
+[params]
+

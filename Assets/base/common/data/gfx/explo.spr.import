@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/explo.spr-a5e56e486cb84b079e2c1a4e9b4fcd97.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/gfx/explo.spr"
+dest_files=[ "res://.import/explo.spr-a5e56e486cb84b079e2c1a4e9b4fcd97.tres" ]
+
+[params]
+

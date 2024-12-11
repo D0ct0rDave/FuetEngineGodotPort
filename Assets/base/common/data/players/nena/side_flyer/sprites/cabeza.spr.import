@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/cabeza.spr-2e6ed61ce3d2f1f0b2ccc75512374815.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/players/nena/side_flyer/sprites/cabeza.spr"
+dest_files=[ "res://.import/cabeza.spr-2e6ed61ce3d2f1f0b2ccc75512374815.tres" ]
+
+[params]
+

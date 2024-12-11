@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/rama.spr-16669b51a55117cc777058b05584f180.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/rama.spr-16669b51a55117cc777058b05584f180.tres"
 
 [deps]
 
 source_file="res://Assets/data/menus/level/anims/rama/rama.spr"
-dest_files=[ "res://.import/rama.spr-16669b51a55117cc777058b05584f180.tscn" ]
+dest_files=[ "res://.import/rama.spr-16669b51a55117cc777058b05584f180.tres" ]
 
 [params]
 

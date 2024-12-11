@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/yingyang2.spr-c41489e941442ff7d041ab092bf32abe.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/prefabs/slotmachine/yingyang2.spr"
+dest_files=[ "res://.import/yingyang2.spr-c41489e941442ff7d041ab092bf32abe.tres" ]
+
+[params]
+

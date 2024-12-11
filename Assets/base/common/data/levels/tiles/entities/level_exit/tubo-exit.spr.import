@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/tubo-exit.spr-fa4496b38a81f8d56db61ba9593977d2.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/entities/level_exit/tubo-exit.spr"
+dest_files=[ "res://.import/tubo-exit.spr-fa4496b38a81f8d56db61ba9593977d2.tres" ]
+
+[params]
+

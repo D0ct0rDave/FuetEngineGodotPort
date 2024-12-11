@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEHUDFileImportPlugin"
+type="PackedScene"
+path="res://.import/room_104-098.hud-12523c17093ceee5137d9b39c8532c4f.tscn"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/world/room_104-098.hud"
+dest_files=[ "res://.import/room_104-098.hud-12523c17093ceee5137d9b39c8532c4f.tscn" ]
+
+[params]
+

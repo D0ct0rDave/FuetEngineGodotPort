@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/bt_back.spr-f48a8eababa4dffa0fe8484ef2340006.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/menu/sprites/bt_back.spr"
+dest_files=[ "res://.import/bt_back.spr-f48a8eababa4dffa0fe8484ef2340006.tres" ]
+
+[params]
+

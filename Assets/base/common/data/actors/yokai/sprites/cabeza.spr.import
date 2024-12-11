@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/cabeza.spr-32b812b4491a82e604fa56499c1fc97b.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/yokai/sprites/cabeza.spr"
+dest_files=[ "res://.import/cabeza.spr-32b812b4491a82e604fa56499c1fc97b.tres" ]
+
+[params]
+

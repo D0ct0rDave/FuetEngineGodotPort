@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/estrellita.spr-4210aab58185f9313d87173c4934d433.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/gfx/estrellita.spr"
+dest_files=[ "res://.import/estrellita.spr-4210aab58185f9313d87173c4934d433.tres" ]
+
+[params]
+

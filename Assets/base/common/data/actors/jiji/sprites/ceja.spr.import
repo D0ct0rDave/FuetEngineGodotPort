@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/ceja.spr-9189ff0f896a308e34d11372beb981b9.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/jiji/sprites/ceja.spr"
+dest_files=[ "res://.import/ceja.spr-9189ff0f896a308e34d11372beb981b9.tres" ]
+
+[params]
+

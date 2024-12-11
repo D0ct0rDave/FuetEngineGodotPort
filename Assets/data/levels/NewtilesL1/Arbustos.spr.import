@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/Arbustos.spr-2d2cce7a8922f0923ddb513697b2c247.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Arbustos.spr-2d2cce7a8922f0923ddb513697b2c247.tres"
 
 [deps]
 
 source_file="res://Assets/data/levels/NewtilesL1/Arbustos.spr"
-dest_files=[ "res://.import/Arbustos.spr-2d2cce7a8922f0923ddb513697b2c247.tscn" ]
+dest_files=[ "res://.import/Arbustos.spr-2d2cce7a8922f0923ddb513697b2c247.tres" ]
 
 [params]
 

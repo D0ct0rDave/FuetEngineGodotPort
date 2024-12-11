@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/hitbox-core.spr-60777b06c43e4cada8dce749fa3ece8b.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/players/nena/side_flyer/sprites/hitbox-core.spr"
+dest_files=[ "res://.import/hitbox-core.spr-60777b06c43e4cada8dce749fa3ece8b.tres" ]
+
+[params]
+

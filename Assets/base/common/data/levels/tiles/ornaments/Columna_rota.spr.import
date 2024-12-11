@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Columna_rota.spr-8c4e54a192395e96c509cfeb6447cfba.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/ornaments/Columna_rota.spr"
+dest_files=[ "res://.import/Columna_rota.spr-8c4e54a192395e96c509cfeb6447cfba.tres" ]
+
+[params]
+

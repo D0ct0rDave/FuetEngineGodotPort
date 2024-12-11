@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/pie-der.spr-da328235f55ef3d3a1f7bf92d0552b07.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/soldiers/sprites/pie-der.spr"
+dest_files=[ "res://.import/pie-der.spr-da328235f55ef3d3a1f7bf92d0552b07.tres" ]
+
+[params]
+

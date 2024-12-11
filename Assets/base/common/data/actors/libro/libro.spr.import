@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/libro.spr-8c1064195ee8a739ab948d17e872487d.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/libro/libro.spr"
+dest_files=[ "res://.import/libro.spr-8c1064195ee8a739ab948d17e872487d.tres" ]
+
+[params]
+

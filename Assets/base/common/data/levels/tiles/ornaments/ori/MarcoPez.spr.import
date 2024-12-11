@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/MarcoPez.spr-dc786908cf5662a3303eccf47f50e259.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/ornaments/ori/MarcoPez.spr"
+dest_files=[ "res://.import/MarcoPez.spr-dc786908cf5662a3303eccf47f50e259.tres" ]
+
+[params]
+

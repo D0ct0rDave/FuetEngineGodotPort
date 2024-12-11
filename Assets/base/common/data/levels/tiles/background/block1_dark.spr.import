@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/block1_dark.spr-3c082e08f8bfe27a0766bc9414a4999d.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/background/block1_dark.spr"
+dest_files=[ "res://.import/block1_dark.spr-3c082e08f8bfe27a0766bc9414a4999d.tres" ]
+
+[params]
+

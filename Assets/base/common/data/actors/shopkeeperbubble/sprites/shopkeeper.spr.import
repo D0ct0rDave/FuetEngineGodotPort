@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/shopkeeper.spr-1a59eedac838ab7514c038b0164a074a.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/shopkeeperbubble/sprites/shopkeeper.spr"
+dest_files=[ "res://.import/shopkeeper.spr-1a59eedac838ab7514c038b0164a074a.tres" ]
+
+[params]
+

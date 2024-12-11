@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/Suelo2.spr-fefb774c4b138439c21f5250590e5df9.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Suelo2.spr-fefb774c4b138439c21f5250590e5df9.tres"
 
 [deps]
 
 source_file="res://Assets/data/levels/NewtilesL2/Suelo2.spr"
-dest_files=[ "res://.import/Suelo2.spr-fefb774c4b138439c21f5250590e5df9.tscn" ]
+dest_files=[ "res://.import/Suelo2.spr-fefb774c4b138439c21f5250590e5df9.tres" ]
 
 [params]
 

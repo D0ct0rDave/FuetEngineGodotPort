@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/column.spr-a2f123434d5e9f6a9b274cd241766ca2.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/props/column.spr"
+dest_files=[ "res://.import/column.spr-a2f123434d5e9f6a9b274cd241766ca2.tres" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/VendedoraArtilugiosColor_brazo.spr-dbf01238d9d6a225f52ff4d69a33a29b.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/world/shoproom_shop/sprites/VendedoraArtilugiosColor_brazo.spr"
+dest_files=[ "res://.import/VendedoraArtilugiosColor_brazo.spr-dbf01238d9d6a225f52ff4d69a33a29b.tres" ]
+
+[params]
+

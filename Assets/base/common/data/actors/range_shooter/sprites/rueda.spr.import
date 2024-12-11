@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/rueda.spr-a2af2342cb4d7246a1cbea1a9470d3d2.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/range_shooter/sprites/rueda.spr"
+dest_files=[ "res://.import/rueda.spr-a2af2342cb4d7246a1cbea1a9470d3d2.tres" ]
+
+[params]
+

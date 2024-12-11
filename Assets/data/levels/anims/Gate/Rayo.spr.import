@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/Rayo.spr-21423b3ff772b3e693fa0efdb9408d34.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Rayo.spr-21423b3ff772b3e693fa0efdb9408d34.tres"
 
 [deps]
 
 source_file="res://Assets/data/levels/anims/Gate/Rayo.spr"
-dest_files=[ "res://.import/Rayo.spr-21423b3ff772b3e693fa0efdb9408d34.tscn" ]
+dest_files=[ "res://.import/Rayo.spr-21423b3ff772b3e693fa0efdb9408d34.tres" ]
 
 [params]
 

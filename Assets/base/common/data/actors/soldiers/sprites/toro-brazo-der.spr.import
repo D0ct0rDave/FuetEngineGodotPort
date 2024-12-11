@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/toro-brazo-der.spr-5dd46a63cc46d17cc28a356d4d308bf1.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/soldiers/sprites/toro-brazo-der.spr"
+dest_files=[ "res://.import/toro-brazo-der.spr-5dd46a63cc46d17cc28a356d4d308bf1.tres" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/brazodelantearriba.spr-ea7832a4b4ca8e3012d2e5d8946252ca.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/kappa/sprites/brazodelantearriba.spr"
+dest_files=[ "res://.import/brazodelantearriba.spr-ea7832a4b4ca8e3012d2e5d8946252ca.tres" ]
+
+[params]
+

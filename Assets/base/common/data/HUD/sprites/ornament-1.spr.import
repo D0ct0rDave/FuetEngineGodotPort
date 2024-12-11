@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/ornament-1.spr-668210db184ffce3e1a8f9f1eeb6f5f4.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/HUD/sprites/ornament-1.spr"
+dest_files=[ "res://.import/ornament-1.spr-668210db184ffce3e1a8f9f1eeb6f5f4.tres" ]
+
+[params]
+

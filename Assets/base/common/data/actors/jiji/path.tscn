@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=1]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=2]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDRect.cs" type="Script" id=4]
+
+[node name="CFEHUD" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Background" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="Background"]
+
+[node name="Action" type="Node" parent="Background"]
+
+[node name="Layers2" type="Node2D" parent="Background"]
+
+[node name="Background" type="Node2D" parent="Background/Layers2"]
+position = Vector2( 2400, 64.3777 )
+script = ExtResource( 2 )
+
+[node name="Rect layer 0" type="Node2D" parent="Background/Layers2/Background"]
+script = ExtResource( 4 )
+
+[node name="Action2" type="Node" parent="Background"]

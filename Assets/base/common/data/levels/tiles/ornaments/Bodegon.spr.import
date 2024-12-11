@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Bodegon.spr-1d83e9aa57e254486a94978c506cb991.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/ornaments/Bodegon.spr"
+dest_files=[ "res://.import/Bodegon.spr-1d83e9aa57e254486a94978c506cb991.tres" ]
+
+[params]
+

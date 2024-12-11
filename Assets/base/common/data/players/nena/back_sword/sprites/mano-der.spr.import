@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/mano-der.spr-2944f7b26746719b9a966275f8012eac.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/players/nena/back_sword/sprites/mano-der.spr"
+dest_files=[ "res://.import/mano-der.spr-2944f7b26746719b9a966275f8012eac.tres" ]
+
+[params]
+

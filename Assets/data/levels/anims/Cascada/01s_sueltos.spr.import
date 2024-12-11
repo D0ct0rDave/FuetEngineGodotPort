@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/01s_sueltos.spr-65571359ebc327a93ab2d323b775781d.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/01s_sueltos.spr-65571359ebc327a93ab2d323b775781d.tres"
 
 [deps]
 
 source_file="res://Assets/data/levels/anims/Cascada/01s_sueltos.spr"
-dest_files=[ "res://.import/01s_sueltos.spr-65571359ebc327a93ab2d323b775781d.tscn" ]
+dest_files=[ "res://.import/01s_sueltos.spr-65571359ebc327a93ab2d323b775781d.tres" ]
 
 [params]
 

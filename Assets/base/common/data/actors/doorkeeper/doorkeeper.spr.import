@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/doorkeeper.spr-f7c64fd7192aaaf874d568c914906cea.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/doorkeeper/doorkeeper.spr"
+dest_files=[ "res://.import/doorkeeper.spr-f7c64fd7192aaaf874d568c914906cea.tres" ]
+
+[params]
+

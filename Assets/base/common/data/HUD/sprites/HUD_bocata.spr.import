@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/HUD_bocata.spr-698df6ceb192d4410a0b0e1a51df1cc2.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/HUD/sprites/HUD_bocata.spr"
+dest_files=[ "res://.import/HUD_bocata.spr-698df6ceb192d4410a0b0e1a51df1cc2.tres" ]
+
+[params]
+

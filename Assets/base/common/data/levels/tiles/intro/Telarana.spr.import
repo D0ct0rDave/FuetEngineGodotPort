@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Telarana.spr-364b302db6d989ff4ca4f46b56b9ba0b.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/intro/Telarana.spr"
+dest_files=[ "res://.import/Telarana.spr-364b302db6d989ff4ca4f46b56b9ba0b.tres" ]
+
+[params]
+

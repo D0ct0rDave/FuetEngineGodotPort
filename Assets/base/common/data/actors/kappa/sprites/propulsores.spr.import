@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/propulsores.spr-2b55cc851c0b0a4b5e58d9f5d57e13b7.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/kappa/sprites/propulsores.spr"
+dest_files=[ "res://.import/propulsores.spr-2b55cc851c0b0a4b5e58d9f5d57e13b7.tres" ]
+
+[params]
+

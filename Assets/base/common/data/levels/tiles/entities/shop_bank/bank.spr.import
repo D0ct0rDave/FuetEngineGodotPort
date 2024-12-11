@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/bank.spr-7d2b13a904037f47ea5f559353ad4558.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/entities/shop_bank/bank.spr"
+dest_files=[ "res://.import/bank.spr-7d2b13a904037f47ea5f559353ad4558.tres" ]
+
+[params]
+

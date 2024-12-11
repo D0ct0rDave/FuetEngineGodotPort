@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Cisterna.spr-1d26ec4b8283f5b3cd374c0488d41b01.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/intro/Cisterna.spr"
+dest_files=[ "res://.import/Cisterna.spr-1d26ec4b8283f5b3cd374c0488d41b01.tres" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/shop_dlg_side2.spr-aae87a3d2afd204201b8f817743f6018.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/world/shop_common/sprites/shop_dlg_side2.spr"
+dest_files=[ "res://.import/shop_dlg_side2.spr-aae87a3d2afd204201b8f817743f6018.tres" ]
+
+[params]
+

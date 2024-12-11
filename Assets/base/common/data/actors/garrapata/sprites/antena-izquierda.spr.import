@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/antena-izquierda.spr-d9a85ffb59adb0e8b577863dc46edc1f.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/garrapata/sprites/antena-izquierda.spr"
+dest_files=[ "res://.import/antena-izquierda.spr-d9a85ffb59adb0e8b577863dc46edc1f.tres" ]
+
+[params]
+

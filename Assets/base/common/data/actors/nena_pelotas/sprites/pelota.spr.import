@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/pelota.spr-5385cc698d21279486bf270dd78b3cdc.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/nena_pelotas/sprites/pelota.spr"
+dest_files=[ "res://.import/pelota.spr-5385cc698d21279486bf270dd78b3cdc.tres" ]
+
+[params]
+

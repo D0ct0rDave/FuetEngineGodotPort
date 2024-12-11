@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/spell.spr-865b182fffb8db23675443263d15171e.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/gfx/spell.spr"
+dest_files=[ "res://.import/spell.spr-865b182fffb8db23675443263d15171e.tres" ]
+
+[params]
+

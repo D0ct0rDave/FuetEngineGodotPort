@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/pelo_coleta.spr-e2851592d22901921fc9d474633f9bcc.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/players/nena/side_sword/sprites/pelo_coleta.spr"
+dest_files=[ "res://.import/pelo_coleta.spr-e2851592d22901921fc9d474633f9bcc.tres" ]
+
+[params]
+

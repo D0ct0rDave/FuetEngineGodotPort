@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/pie-izq.spr-e734b33048fc6ff170786d940b14e5d4.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/doorkeeper/sprites/pie-izq.spr"
+dest_files=[ "res://.import/pie-izq.spr-e734b33048fc6ff170786d940b14e5d4.tres" ]
+
+[params]
+

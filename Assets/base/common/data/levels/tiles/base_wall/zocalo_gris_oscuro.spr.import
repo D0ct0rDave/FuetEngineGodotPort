@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/zocalo_gris_oscuro.spr-446dd25dbdb799dd5fa78e1a6285d187.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/base_wall/zocalo_gris_oscuro.spr"
+dest_files=[ "res://.import/zocalo_gris_oscuro.spr-446dd25dbdb799dd5fa78e1a6285d187.tres" ]
+
+[params]
+

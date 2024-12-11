@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/bullet-ffatuo.spr-04c5598cae5250925cc9a99f0d0fbe99.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/danmaku/bullet-ffatuo.spr"
+dest_files=[ "res://.import/bullet-ffatuo.spr-04c5598cae5250925cc9a99f0d0fbe99.tres" ]
+
+[params]
+

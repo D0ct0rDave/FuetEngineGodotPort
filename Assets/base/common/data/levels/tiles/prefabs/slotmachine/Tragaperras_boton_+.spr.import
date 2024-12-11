@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Tragaperras_boton_+.spr-6e14220d6591100b26865717bbb417c7.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/prefabs/slotmachine/Tragaperras_boton_+.spr"
+dest_files=[ "res://.import/Tragaperras_boton_+.spr-6e14220d6591100b26865717bbb417c7.tres" ]
+
+[params]
+

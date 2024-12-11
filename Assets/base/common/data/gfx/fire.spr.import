@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/fire.spr-727605be66be858732335614f08b29bb.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/gfx/fire.spr"
+dest_files=[ "res://.import/fire.spr-727605be66be858732335614f08b29bb.tres" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/bullet-pinky-flare.spr-297f69d4d8d927670be06ce3c536d827.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/danmaku/bullet-pinky-flare.spr"
+dest_files=[ "res://.import/bullet-pinky-flare.spr-297f69d4d8d927670be06ce3c536d827.tres" ]
+
+[params]
+

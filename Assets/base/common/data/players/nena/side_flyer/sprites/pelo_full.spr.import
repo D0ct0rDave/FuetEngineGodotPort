@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/pelo_full.spr-efedd6d3c727b6f28c39df0be143e636.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/players/nena/side_flyer/sprites/pelo_full.spr"
+dest_files=[ "res://.import/pelo_full.spr-efedd6d3c727b6f28c39df0be143e636.tres" ]
+
+[params]
+

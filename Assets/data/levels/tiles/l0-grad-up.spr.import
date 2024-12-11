@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/l0-grad-up.spr-7a2f085aecffd1faeb4aea911740b7e6.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/l0-grad-up.spr-7a2f085aecffd1faeb4aea911740b7e6.tres"
 
 [deps]
 
 source_file="res://Assets/data/levels/tiles/l0-grad-up.spr"
-dest_files=[ "res://.import/l0-grad-up.spr-7a2f085aecffd1faeb4aea911740b7e6.tscn" ]
+dest_files=[ "res://.import/l0-grad-up.spr-7a2f085aecffd1faeb4aea911740b7e6.tres" ]
 
 [params]
 

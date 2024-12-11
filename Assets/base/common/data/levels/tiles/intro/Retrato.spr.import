@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Retrato.spr-267f55bd31f553f684dfcb093591b0bc.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/intro/Retrato.spr"
+dest_files=[ "res://.import/Retrato.spr-267f55bd31f553f684dfcb093591b0bc.tres" ]
+
+[params]
+

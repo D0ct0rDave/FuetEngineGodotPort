@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/chain.spr-d351011a1fc016bdfc8634cbd1a05cbd.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/props/chain.spr"
+dest_files=[ "res://.import/chain.spr-d351011a1fc016bdfc8634cbd1a05cbd.tres" ]
+
+[params]
+

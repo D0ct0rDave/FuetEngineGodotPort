@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/botiboing.spr-c68bb22b60194671c1ad2951ba4ae201.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/botiboing/botiboing.spr"
+dest_files=[ "res://.import/botiboing.spr-c68bb22b60194671c1ad2951ba4ae201.tres" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/samuraistand.spr-6de3e6897e2e6ec1e973d1a0fefa4645.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/samuraipeque/sprites/sequences/samuraistand.spr"
+dest_files=[ "res://.import/samuraistand.spr-6de3e6897e2e6ec1e973d1a0fefa4645.tres" ]
+
+[params]
+

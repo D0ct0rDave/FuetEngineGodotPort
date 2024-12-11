@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/npm_paid.spr-a38caf536a97129beed5910176bbd4b1.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/entities/newspaper_machine/npm_paid.spr"
+dest_files=[ "res://.import/npm_paid.spr-a38caf536a97129beed5910176bbd4b1.tres" ]
+
+[params]
+

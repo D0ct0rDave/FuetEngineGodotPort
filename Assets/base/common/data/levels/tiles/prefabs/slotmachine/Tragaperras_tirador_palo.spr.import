@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Tragaperras_tirador_palo.spr-ac90a7992583099af38af71405901586.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/prefabs/slotmachine/Tragaperras_tirador_palo.spr"
+dest_files=[ "res://.import/Tragaperras_tirador_palo.spr-ac90a7992583099af38af71405901586.tres" ]
+
+[params]
+

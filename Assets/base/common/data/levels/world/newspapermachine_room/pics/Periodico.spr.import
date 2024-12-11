@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Periodico.spr-d8f52301e86c995bb8aabae40bd26d83.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/world/newspapermachine_room/pics/Periodico.spr"
+dest_files=[ "res://.import/Periodico.spr-d8f52301e86c995bb8aabae40bd26d83.tres" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/pant_verde-muslo-der.spr-4a4b15c4206cb979838140f8d6a6ebb4.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/soldiers/sprites/pant_verde-muslo-der.spr"
+dest_files=[ "res://.import/pant_verde-muslo-der.spr-4a4b15c4206cb979838140f8d6a6ebb4.tres" ]
+
+[params]
+

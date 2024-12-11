@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/caballo_part.spr-f404872d224df3dff6b43f474ca406af.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/caballo/caballo_part.spr"
+dest_files=[ "res://.import/caballo_part.spr-f404872d224df3dff6b43f474ca406af.tres" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/manobaston.spr-e783e18e25f45d701d5b893b03b6a162.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/jiji/sprites/manobaston.spr"
+dest_files=[ "res://.import/manobaston.spr-e783e18e25f45d701d5b893b03b6a162.tres" ]
+
+[params]
+

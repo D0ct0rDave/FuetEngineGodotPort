@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/mano_izq.spr-1d7991429e7e0e58b55e623be98fb55a.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/range_shooter/sprites/mano_izq.spr"
+dest_files=[ "res://.import/mano_izq.spr-1d7991429e7e0e58b55e623be98fb55a.tres" ]
+
+[params]
+

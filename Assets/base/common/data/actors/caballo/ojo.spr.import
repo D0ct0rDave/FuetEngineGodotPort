@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/ojo.spr-3c09954742dc5e6b99c3dc5d323983ba.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/caballo/ojo.spr"
+dest_files=[ "res://.import/ojo.spr-3c09954742dc5e6b99c3dc5d323983ba.tres" ]
+
+[params]
+

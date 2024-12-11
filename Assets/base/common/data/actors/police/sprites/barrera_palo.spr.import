@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/barrera_palo.spr-d5e9218b9f0af22a7f6896835ffb048a.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/police/sprites/barrera_palo.spr"
+dest_files=[ "res://.import/barrera_palo.spr-d5e9218b9f0af22a7f6896835ffb048a.tres" ]
+
+[params]
+

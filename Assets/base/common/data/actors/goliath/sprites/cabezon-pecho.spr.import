@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/cabezon-pecho.spr-b5bcf9543364985ab723c71093a4528a.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/goliath/sprites/cabezon-pecho.spr"
+dest_files=[ "res://.import/cabezon-pecho.spr-b5bcf9543364985ab723c71093a4528a.tres" ]
+
+[params]
+

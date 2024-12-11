@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/MA_Fake.spr-e6545df1fe7b302db1503e05c89205ba.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/intro/MA_Fake.spr"
+dest_files=[ "res://.import/MA_Fake.spr-e6545df1fe7b302db1503e05c89205ba.tres" ]
+
+[params]
+

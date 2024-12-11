@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/prueba.spr-309880e5d073f529362dd6cc6c3f4937.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/prueba.spr-309880e5d073f529362dd6cc6c3f4937.tres"
 
 [deps]
 
 source_file="res://Assets/data/prueba.spr"
-dest_files=[ "res://.import/prueba.spr-309880e5d073f529362dd6cc6c3f4937.tscn" ]
+dest_files=[ "res://.import/prueba.spr-309880e5d073f529362dd6cc6c3f4937.tres" ]
 
 [params]
 

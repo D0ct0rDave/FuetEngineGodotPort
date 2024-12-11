@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/Animagua_transicion.spr-5a13050fe0f924cc11efde08ccdbf6e7.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Animagua_transicion.spr-5a13050fe0f924cc11efde08ccdbf6e7.tres"
 
 [deps]
 
 source_file="res://Assets/data/levels/anims/Animagua1/Animagua_transicion.spr"
-dest_files=[ "res://.import/Animagua_transicion.spr-5a13050fe0f924cc11efde08ccdbf6e7.tscn" ]
+dest_files=[ "res://.import/Animagua_transicion.spr-5a13050fe0f924cc11efde08ccdbf6e7.tres" ]
 
 [params]
 

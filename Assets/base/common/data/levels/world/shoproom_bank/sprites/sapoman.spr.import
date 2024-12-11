@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/sapoman.spr-072f9937f6e13ed28ba5ff1c4065e06b.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/world/shoproom_bank/sprites/sapoman.spr"
+dest_files=[ "res://.import/sapoman.spr-072f9937f6e13ed28ba5ff1c4065e06b.tres" ]
+
+[params]
+

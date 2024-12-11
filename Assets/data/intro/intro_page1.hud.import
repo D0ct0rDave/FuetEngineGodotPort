@@ -1,6 +1,6 @@
 [remap]
 
-importer="CFEConfigFileImporter"
+importer="CFEHUDFileImportPlugin"
 type="PackedScene"
 path="res://.import/intro_page1.hud-4797e493e8df07506cfbe7e4e4ca82d7.tscn"
 

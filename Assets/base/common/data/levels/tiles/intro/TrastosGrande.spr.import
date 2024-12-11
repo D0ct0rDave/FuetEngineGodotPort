@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/TrastosGrande.spr-91569efbeaa4b8806878ff522c95a134.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/intro/TrastosGrande.spr"
+dest_files=[ "res://.import/TrastosGrande.spr-91569efbeaa4b8806878ff522c95a134.tres" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/NPCBocata_side.spr-c67432c0fad73be793ae2f29835806f1.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/HUD/sprites/NPCBocata_side.spr"
+dest_files=[ "res://.import/NPCBocata_side.spr-c67432c0fad73be793ae2f29835806f1.tres" ]
+
+[params]
+

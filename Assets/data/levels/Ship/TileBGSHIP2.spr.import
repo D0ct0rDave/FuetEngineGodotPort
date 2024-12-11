@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/TileBGSHIP2.spr-244df0b8ab7967b98231849cfd6b9ddf.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/TileBGSHIP2.spr-244df0b8ab7967b98231849cfd6b9ddf.tres"
 
 [deps]
 
 source_file="res://Assets/data/levels/Ship/TileBGSHIP2.spr"
-dest_files=[ "res://.import/TileBGSHIP2.spr-244df0b8ab7967b98231849cfd6b9ddf.tscn" ]
+dest_files=[ "res://.import/TileBGSHIP2.spr-244df0b8ab7967b98231849cfd6b9ddf.tres" ]
 
 [params]
 

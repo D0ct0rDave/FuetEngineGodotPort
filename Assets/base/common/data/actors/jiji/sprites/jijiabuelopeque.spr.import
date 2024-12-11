@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/jijiabuelopeque.spr-2605634c2b969a39960ca7f87379eafa.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/jiji/sprites/jijiabuelopeque.spr"
+dest_files=[ "res://.import/jijiabuelopeque.spr-2605634c2b969a39960ca7f87379eafa.tres" ]
+
+[params]
+

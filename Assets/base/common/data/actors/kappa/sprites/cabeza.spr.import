@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/cabeza.spr-4b2e5a7ffea19d2aaeefcfbb54f8f0ff.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/kappa/sprites/cabeza.spr"
+dest_files=[ "res://.import/cabeza.spr-4b2e5a7ffea19d2aaeefcfbb54f8f0ff.tres" ]
+
+[params]
+

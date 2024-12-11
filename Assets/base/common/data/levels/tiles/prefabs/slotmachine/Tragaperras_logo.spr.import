@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Tragaperras_logo.spr-3f2a18b46e3bb11107b0daddfc82892c.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/prefabs/slotmachine/Tragaperras_logo.spr"
+dest_files=[ "res://.import/Tragaperras_logo.spr-3f2a18b46e3bb11107b0daddfc82892c.tres" ]
+
+[params]
+

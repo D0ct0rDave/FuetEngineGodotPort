@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/Cavetile1.spr-12920547e029835d2ab444266b994d78.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Cavetile1.spr-12920547e029835d2ab444266b994d78.tres"
 
 [deps]
 
 source_file="res://Assets/data/levels/Cueva/Cavetile1.spr"
-dest_files=[ "res://.import/Cavetile1.spr-12920547e029835d2ab444266b994d78.tscn" ]
+dest_files=[ "res://.import/Cavetile1.spr-12920547e029835d2ab444266b994d78.tres" ]
 
 [params]
 

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/cratebox.spr-406fef0f1f9470b04d01135ba0a8cbbd.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/entities/cratebox/cratebox.spr"
+dest_files=[ "res://.import/cratebox.spr-406fef0f1f9470b04d01135ba0a8cbbd.tres" ]
+
+[params]
+

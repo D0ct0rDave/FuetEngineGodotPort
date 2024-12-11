@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Banderola.spr-bfec97b8caf16bfb33b9304f159456f6.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/ornaments/Banderola.spr"
+dest_files=[ "res://.import/Banderola.spr-bfec97b8caf16bfb33b9304f159456f6.tres" ]
+
+[params]
+

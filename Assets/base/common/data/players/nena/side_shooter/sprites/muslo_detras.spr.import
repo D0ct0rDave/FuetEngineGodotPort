@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/muslo_detras.spr-f1ff6c974c4156810e3dcf13a1fcc24a.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/players/nena/side_shooter/sprites/muslo_detras.spr"
+dest_files=[ "res://.import/muslo_detras.spr-f1ff6c974c4156810e3dcf13a1fcc24a.tres" ]
+
+[params]
+

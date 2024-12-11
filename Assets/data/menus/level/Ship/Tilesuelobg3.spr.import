@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/Tilesuelobg3.spr-9ecaabd8d098fbf2c497ae1540ac7910.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Tilesuelobg3.spr-9ecaabd8d098fbf2c497ae1540ac7910.tres"
 
 [deps]
 
 source_file="res://Assets/data/menus/level/Ship/Tilesuelobg3.spr"
-dest_files=[ "res://.import/Tilesuelobg3.spr-9ecaabd8d098fbf2c497ae1540ac7910.tscn" ]
+dest_files=[ "res://.import/Tilesuelobg3.spr-9ecaabd8d098fbf2c497ae1540ac7910.tres" ]
 
 [params]
 

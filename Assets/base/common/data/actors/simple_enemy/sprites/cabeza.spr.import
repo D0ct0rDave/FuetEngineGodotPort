@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/cabeza.spr-1293e5484d760af8b28c59f9f78c40a8.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/simple_enemy/sprites/cabeza.spr"
+dest_files=[ "res://.import/cabeza.spr-1293e5484d760af8b28c59f9f78c40a8.tres" ]
+
+[params]
+

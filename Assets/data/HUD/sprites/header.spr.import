@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/header.spr-4b52d31e393a91d6fff8956cbae30dfa.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/header.spr-4b52d31e393a91d6fff8956cbae30dfa.tres"
 
 [deps]
 
 source_file="res://Assets/data/HUD/sprites/header.spr"
-dest_files=[ "res://.import/header.spr-4b52d31e393a91d6fff8956cbae30dfa.tscn" ]
+dest_files=[ "res://.import/header.spr-4b52d31e393a91d6fff8956cbae30dfa.tres" ]
 
 [params]
 

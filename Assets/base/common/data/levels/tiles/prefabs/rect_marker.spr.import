@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/rect_marker.spr-135e407f70a4b0387d4782ecf285b723.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/prefabs/rect_marker.spr"
+dest_files=[ "res://.import/rect_marker.spr-135e407f70a4b0387d4782ecf285b723.tres" ]
+
+[params]
+

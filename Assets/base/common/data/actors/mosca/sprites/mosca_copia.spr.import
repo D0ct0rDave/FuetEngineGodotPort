@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/mosca_copia.spr-1383ab0e26e715d5f587d61cd4954f4c.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/mosca/sprites/mosca_copia.spr"
+dest_files=[ "res://.import/mosca_copia.spr-1383ab0e26e715d5f587d61cd4954f4c.tres" ]
+
+[params]
+

@@ -1,0 +1,2790 @@
+[gd_scene load_steps=30 format=2]
+
+[ext_resource path="res://Assets/base/common/data/levels/tiles/ornaments/JarronPlanta.png" type="Texture" id=1]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/prefabs/rect.png" type="Texture" id=2]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/ornaments/Jarron.png" type="Texture" id=3]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/props/candil_pared.png" type="Texture" id=4]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/ornaments/JarronPlanta_dark.spr" type="Resource" id=5]
+[ext_resource path="res://Assets/base/common/data/gfx/light_exp_fluctuant.spr" type="Resource" id=6]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/entities/level_exit/tubo-exit.spr" type="Resource" id=7]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/props/QUAKE_BOX.spr" type="Resource" id=8]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/entities/explobarrel/barrel.spr" type="Resource" id=9]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/entities/explobarrel/barrel.png" type="Texture" id=10]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/ornaments/JarronPlanta_dark.png" type="Texture" id=11]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/props/QUAKE_BOX.png" type="Texture" id=12]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/entities/level_exit/tubo-exit.png" type="Texture" id=13]
+[ext_resource path="res://Assets/base/common/data/gfx/light_exp_low.png" type="Texture" id=14]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDPSys.cs" type="Script" id=15]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=16]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/props/ladder_step.png" type="Texture" id=17]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=18]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=19]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=20]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=21]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDRect.cs" type="Script" id=22]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/props/ladder_step.spr" type="Resource" id=23]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/ornaments/JarronPlanta.spr" type="Resource" id=24]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/prefabs/rect_marker.spr" type="Resource" id=25]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/prefabs/rect_reveal.spr" type="Resource" id=26]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/ornaments/Jarron.spr" type="Resource" id=27]
+[ext_resource path="res://Assets/base/common/data/levels/tiles/props/candil_pared.spr" type="Resource" id=28]
+
+[sub_resource type="AtlasTexture" id=2]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( -1.0027, 158.996, 187.993, 112.004 )
+
+[node name="CFEHUD" type="Node2D"]
+script = ExtResource( 16 )
+
+[node name="Misc" type="Node2D" parent="."]
+script = ExtResource( 19 )
+
+[node name="Layers" type="Node2D" parent="Misc"]
+
+[node name="Action" type="Node" parent="Misc"]
+
+[node name="Layers2" type="Node2D" parent="Misc"]
+
+[node name="Misc" type="Node2D" parent="Misc/Layers2"]
+position = Vector2( 8395.33, 2701.57 )
+script = ExtResource( 18 )
+
+[node name="Action2" type="Node" parent="Misc"]
+
+[node name="markers1" type="Node2D" parent="."]
+script = ExtResource( 19 )
+
+[node name="Layers" type="Node2D" parent="markers1"]
+
+[node name="Action" type="Node" parent="markers1"]
+
+[node name="Layers2" type="Node2D" parent="markers1"]
+
+[node name="markers1" type="Node2D" parent="markers1/Layers2"]
+position = Vector2( -160, 0 )
+script = ExtResource( 18 )
+m_oIniColor = Color( 1, 1, 1, 0.4431 )
+
+[node name="ic_markers-controla-oscuridad" type="Node2D" parent="markers1/Layers2/markers1"]
+position = Vector2( 192, -1088 )
+scale = Vector2( 11, 4 )
+script = ExtResource( 21 )
+m_oIniColor = Color( 0.6039, 0.6039, 0.6039, 0.2392 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="markers1/Layers2/markers1/ic_markers-controla-oscuridad"]
+scale = Vector2( 25, 15 )
+texture = ExtResource( 2 )
+offset = Vector2( 800, 480 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 25 )
+
+[node name="Action2" type="Node" parent="markers1"]
+
+[node name="BACKGROUND" type="Node2D" parent="."]
+script = ExtResource( 19 )
+
+[node name="Layers" type="Node2D" parent="BACKGROUND"]
+
+[node name="Action" type="Node" parent="BACKGROUND"]
+
+[node name="Layers2" type="Node2D" parent="BACKGROUND"]
+
+[node name="BACKGROUND" type="Node2D" parent="BACKGROUND/Layers2"]
+script = ExtResource( 18 )
+
+[node name="g_bg" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND"]
+script = ExtResource( 18 )
+
+[node name="ic_bg-2" type="Node2D" parent="BACKGROUND/Layers2/BACKGROUND/g_bg"]
+position = Vector2( -320, -1344 )
+scale = Vector2( 320, 80 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="Action2" type="Node" parent="BACKGROUND"]
+
+[node name="ACTION_PLANE" type="Node2D" parent="."]
+script = ExtResource( 19 )
+
+[node name="Layers" type="Node2D" parent="ACTION_PLANE"]
+
+[node name="Action" type="Node" parent="ACTION_PLANE"]
+
+[node name="Layers2" type="Node2D" parent="ACTION_PLANE"]
+
+[node name="ACTION_PLANE" type="Node2D" parent="ACTION_PLANE/Layers2"]
+script = ExtResource( 18 )
+m_rDepthFactor = 1.0
+
+[node name="Sector0_" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE"]
+script = ExtResource( 18 )
+
+[node name="ENTITYLAYER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE"]
+script = ExtResource( 18 )
+
+[node name="[soldier_lobo_agressive-0]soldier_lobo_agressive" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER"]
+position = Vector2( 3008, 960 )
+script = ExtResource( 18 )
+
+[node name="[soldier_lobo_agressive-0]ic_lobo_agressive" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER/[soldier_lobo_agressive-0]soldier_lobo_agressive"]
+scale = Vector2( 0.6, 0.6 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_bIniVis = false
+m_sTAG = "Spawn qen_SoldierLoboAgressive"
+
+[node name="[soldier_lobo-0]soldier_lobo" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER"]
+position = Vector2( 3392, 960 )
+script = ExtResource( 18 )
+
+[node name="[soldier_lobo-0]ic_soldier_lobo" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER/[soldier_lobo-0]soldier_lobo"]
+scale = Vector2( 0.6, 0.6 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "Spawn qen_SoldierLobo"
+
+[node name="[jarron_oscuro2-0]jarron_oscuro2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER"]
+position = Vector2( 448, 704 )
+script = ExtResource( 18 )
+
+[node name="[jarron_oscuro2-0]ic_oscuro2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER/[jarron_oscuro2-0]jarron_oscuro2"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "Spawn brk_JarronOscuro2"
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER/[jarron_oscuro2-0]jarron_oscuro2/[jarron_oscuro2-0]ic_oscuro2"]
+texture = ExtResource( 11 )
+offset = Vector2( -0.502201, -59 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 5 )
+
+[node name="[jarron_claro2-0]jarron_claro2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER"]
+position = Vector2( 320, 704 )
+script = ExtResource( 18 )
+
+[node name="[jarron_claro2-0]ic_jarron" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER/[jarron_claro2-0]jarron_claro2"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "Spawn brk_JarronClaro2"
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER/[jarron_claro2-0]jarron_claro2/[jarron_claro2-0]ic_jarron"]
+texture = ExtResource( 1 )
+offset = Vector2( -0.502201, -59 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 24 )
+
+[node name="[jarron_claro1-0]jarron_claro1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER"]
+position = Vector2( 384, 704 )
+script = ExtResource( 18 )
+
+[node name="[jarron_claro1-0]ic_claro1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER/[jarron_claro1-0]jarron_claro1"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "Spawn brk_JarronClaro1"
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER/[jarron_claro1-0]jarron_claro1/[jarron_claro1-0]ic_claro1"]
+texture = ExtResource( 3 )
+offset = Vector2( -0.502201, -49 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 27 )
+
+[node name="[explobarrel-0]explobarrel" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER"]
+position = Vector2( 832, 704 )
+script = ExtResource( 18 )
+
+[node name="[explobarrel-0]ic_explobarrel" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER/[explobarrel-0]explobarrel"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "Spawn explo_Barrel"
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER/[explobarrel-0]explobarrel/[explobarrel-0]ic_explobarrel"]
+texture = ExtResource( 10 )
+offset = Vector2( 0, -56 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 9 )
+
+[node name="[LevelExit-0]LevelExit" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER"]
+position = Vector2( 576, 704 )
+script = ExtResource( 18 )
+
+[node name="[LevelExit-0]ic_LevelExit" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER/[LevelExit-0]LevelExit"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER/[LevelExit-0]LevelExit/[LevelExit-0]ic_LevelExit"]
+texture = ExtResource( 13 )
+offset = Vector2( -0.497891, -142.5 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 7 )
+
+[node name="[LevelExit-0]ic_LevelExit-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/ENTITYLAYER/[LevelExit-0]LevelExit"]
+position = Vector2( 0, -128 )
+scale = Vector2( 7, 7 )
+script = ExtResource( 21 )
+m_oIniColor = Color( 1, 0.6157, 0.8, 1 )
+m_iIniAction = 0
+
+[node name="LADDERS" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE"]
+script = ExtResource( 18 )
+
+[node name="[ladder_1level-0]ladder_1level" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS"]
+position = Vector2( 13632, 448 )
+script = ExtResource( 18 )
+m_rDepthFactor = 1.0
+
+[node name="[ladder_1level-0]ladder_top" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level"]
+position = Vector2( 0, 256 )
+script = ExtResource( 18 )
+
+[node name="[ladder_1level-0]g_top_AREA_LADDER_TOP" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level/[ladder_1level-0]ladder_top"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_TOP"
+
+[node name="[ladder_1level-0]rt_top-0" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level/[ladder_1level-0]ladder_top/[ladder_1level-0]g_top_AREA_LADDER_TOP"]
+position = Vector2( 0, -512 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 0, 0.0196, 0.8745, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_1level-0]g_top_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level/[ladder_1level-0]ladder_top"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER"
+
+[node name="[ladder_1level-0]rt_top-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level/[ladder_1level-0]ladder_top/[ladder_1level-0]g_top_AREA_LADDER"]
+position = Vector2( 0, -512 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_1level-0]g_top_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level/[ladder_1level-0]ladder_top"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_UNSTICK"
+
+[node name="[ladder_1level-0]rt_top-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level/[ladder_1level-0]ladder_top/[ladder_1level-0]g_top_AREA_LADDER_UNSTICK"]
+position = Vector2( 0, -512 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 0.502, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_1level-0]ic_top" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level/[ladder_1level-0]ladder_top"]
+position = Vector2( 0, -448 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level/[ladder_1level-0]ladder_top/[ladder_1level-0]ic_top"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_1level-0]ic_top-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level/[ladder_1level-0]ladder_top"]
+position = Vector2( 0, -384 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level/[ladder_1level-0]ladder_top/[ladder_1level-0]ic_top-1"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_1level-0]ic_top-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level/[ladder_1level-0]ladder_top"]
+position = Vector2( 0, -320 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level/[ladder_1level-0]ladder_top/[ladder_1level-0]ic_top-2"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_1level-0]ladder_bottom" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level"]
+script = ExtResource( 18 )
+
+[node name="[ladder_1level-0]g_bottom_AREA_LADDER_BOTTOM" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level/[ladder_1level-0]ladder_bottom"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_BOTTOM"
+
+[node name="[ladder_1level-0]rt_bottom_AREA_LADDER_BOTTOM" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level/[ladder_1level-0]ladder_bottom/[ladder_1level-0]g_bottom_AREA_LADDER_BOTTOM"]
+position = Vector2( 0, -32 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 0, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_1level-0]g_bottom_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level/[ladder_1level-0]ladder_bottom"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER"
+
+[node name="[ladder_1level-0]rt_bottom_" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level/[ladder_1level-0]ladder_bottom/[ladder_1level-0]g_bottom_AREA_LADDER"]
+position = Vector2( 0, -64 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_1level-0]g_bottom_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level/[ladder_1level-0]ladder_bottom"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_UNSTICK"
+
+[node name="[ladder_1level-0]rt_bottom_unstick_area" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level/[ladder_1level-0]ladder_bottom/[ladder_1level-0]g_bottom_AREA_LADDER_UNSTICK"]
+position = Vector2( 0, -32 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 0.502, 0, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_1level-0]ic_bottom" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level/[ladder_1level-0]ladder_bottom"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-0]ladder_1level/[ladder_1level-0]ladder_bottom/[ladder_1level-0]ic_bottom"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_1level-1]ladder_1level" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS"]
+position = Vector2( 15296, 192 )
+script = ExtResource( 18 )
+m_rDepthFactor = 1.0
+
+[node name="[ladder_1level-1]ladder_top" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level"]
+position = Vector2( 0, 256 )
+script = ExtResource( 18 )
+
+[node name="[ladder_1level-1]g_top_AREA_LADDER_TOP" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level/[ladder_1level-1]ladder_top"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_TOP"
+
+[node name="[ladder_1level-1]rt_top-0" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level/[ladder_1level-1]ladder_top/[ladder_1level-1]g_top_AREA_LADDER_TOP"]
+position = Vector2( 0, -512 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 0, 0.0196, 0.8745, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_1level-1]g_top_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level/[ladder_1level-1]ladder_top"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER"
+
+[node name="[ladder_1level-1]rt_top-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level/[ladder_1level-1]ladder_top/[ladder_1level-1]g_top_AREA_LADDER"]
+position = Vector2( 0, -512 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_1level-1]g_top_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level/[ladder_1level-1]ladder_top"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_UNSTICK"
+
+[node name="[ladder_1level-1]rt_top-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level/[ladder_1level-1]ladder_top/[ladder_1level-1]g_top_AREA_LADDER_UNSTICK"]
+position = Vector2( 0, -512 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 0.502, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_1level-1]ic_top" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level/[ladder_1level-1]ladder_top"]
+position = Vector2( 0, -448 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level/[ladder_1level-1]ladder_top/[ladder_1level-1]ic_top"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_1level-1]ic_top-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level/[ladder_1level-1]ladder_top"]
+position = Vector2( 0, -384 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level/[ladder_1level-1]ladder_top/[ladder_1level-1]ic_top-1"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_1level-1]ic_top-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level/[ladder_1level-1]ladder_top"]
+position = Vector2( 0, -320 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level/[ladder_1level-1]ladder_top/[ladder_1level-1]ic_top-2"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_1level-1]ladder_bottom" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level"]
+script = ExtResource( 18 )
+
+[node name="[ladder_1level-1]g_bottom_AREA_LADDER_BOTTOM" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level/[ladder_1level-1]ladder_bottom"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_BOTTOM"
+
+[node name="[ladder_1level-1]rt_bottom_AREA_LADDER_BOTTOM" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level/[ladder_1level-1]ladder_bottom/[ladder_1level-1]g_bottom_AREA_LADDER_BOTTOM"]
+position = Vector2( 0, -32 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 0, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_1level-1]g_bottom_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level/[ladder_1level-1]ladder_bottom"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER"
+
+[node name="[ladder_1level-1]rt_bottom_" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level/[ladder_1level-1]ladder_bottom/[ladder_1level-1]g_bottom_AREA_LADDER"]
+position = Vector2( 0, -64 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_1level-1]g_bottom_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level/[ladder_1level-1]ladder_bottom"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_UNSTICK"
+
+[node name="[ladder_1level-1]rt_bottom_unstick_area" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level/[ladder_1level-1]ladder_bottom/[ladder_1level-1]g_bottom_AREA_LADDER_UNSTICK"]
+position = Vector2( 0, -32 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 0.502, 0, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_1level-1]ic_bottom" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level/[ladder_1level-1]ladder_bottom"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_1level-1]ladder_1level/[ladder_1level-1]ladder_bottom/[ladder_1level-1]ic_bottom"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_2levels-0]ladder_2levels" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS"]
+position = Vector2( 14912, 960 )
+script = ExtResource( 18 )
+m_rDepthFactor = 1.0
+
+[node name="[ladder_2levels-0]ladder_top" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels"]
+script = ExtResource( 18 )
+
+[node name="[ladder_2levels-0]g_top_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_top"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER"
+
+[node name="[ladder_2levels-0]rt_top_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_top/[ladder_2levels-0]g_top_AREA_LADDER"]
+position = Vector2( 0, -512 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_2levels-0]g_top_AREA_LADDER_TOP" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_top"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_TOP"
+
+[node name="[ladder_2levels-0]rt_top_AREA_LADDER_TOP" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_top/[ladder_2levels-0]g_top_AREA_LADDER_TOP"]
+position = Vector2( 0, -512 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 0, 0.0196, 0.8745, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_2levels-0]g_top_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_top"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_UNSTICK"
+
+[node name="[ladder_2levels-0]rt_top_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_top/[ladder_2levels-0]g_top_AREA_LADDER_UNSTICK"]
+position = Vector2( 0, -512 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 0.502, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_2levels-0]ic_top" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_top"]
+position = Vector2( 0, -448 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_top/[ladder_2levels-0]ic_top"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_2levels-0]ic_top-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_top"]
+position = Vector2( 0, -384 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_top/[ladder_2levels-0]ic_top-1"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_2levels-0]ic_top-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_top"]
+position = Vector2( 0, -320 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_top/[ladder_2levels-0]ic_top-2"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_2levels-0]ladder_bottom" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels"]
+script = ExtResource( 18 )
+
+[node name="[ladder_2levels-0]g_bottom_AREA_LADDER_BOTTOM" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_bottom"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_BOTTOM"
+
+[node name="[ladder_2levels-0]rt_bottom_AREA_LADDER_BOTTOM" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_bottom/[ladder_2levels-0]g_bottom_AREA_LADDER_BOTTOM"]
+position = Vector2( 0, -32 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 0, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_2levels-0]g_bottom_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_bottom"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER"
+
+[node name="[ladder_2levels-0]rt_bottom_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_bottom/[ladder_2levels-0]g_bottom_AREA_LADDER"]
+position = Vector2( 0, -64 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_2levels-0]g_bottom_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_bottom"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_UNSTICK"
+
+[node name="[ladder_2levels-0]rt_bottom_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_bottom/[ladder_2levels-0]g_bottom_AREA_LADDER_UNSTICK"]
+position = Vector2( 0, -32 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 0.502, 0, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_2levels-0]ic_bottom" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_bottom"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_bottom/[ladder_2levels-0]ic_bottom"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_2levels-0]ladder_g" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER"
+
+[node name="[ladder_2levels-0]step_1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_g"]
+position = Vector2( 0, -64 )
+script = ExtResource( 18 )
+
+[node name="[ladder_2levels-0]rt_1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_g/[ladder_2levels-0]step_1"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_2levels-0]ic_1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_g/[ladder_2levels-0]step_1"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_g/[ladder_2levels-0]step_1/[ladder_2levels-0]ic_1"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_2levels-0]step_2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_g"]
+position = Vector2( 0, -128 )
+script = ExtResource( 18 )
+
+[node name="[ladder_2levels-0]rt_2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_g/[ladder_2levels-0]step_2"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_2levels-0]ic_2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_g/[ladder_2levels-0]step_2"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_g/[ladder_2levels-0]step_2/[ladder_2levels-0]ic_2"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_2levels-0]step_3" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_g"]
+position = Vector2( 0, -192 )
+script = ExtResource( 18 )
+
+[node name="[ladder_2levels-0]rt_3" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_g/[ladder_2levels-0]step_3"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_2levels-0]ic_3" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_g/[ladder_2levels-0]step_3"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_g/[ladder_2levels-0]step_3/[ladder_2levels-0]ic_3"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_2levels-0]step_4" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_g"]
+position = Vector2( 0, -256 )
+script = ExtResource( 18 )
+
+[node name="[ladder_2levels-0]rt_4" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_g/[ladder_2levels-0]step_4"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_2levels-0]ic_4" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_g/[ladder_2levels-0]step_4"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_2levels-0]ladder_2levels/[ladder_2levels-0]ladder_g/[ladder_2levels-0]step_4/[ladder_2levels-0]ic_4"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-0]ladder_4levels" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS"]
+position = Vector2( 2624, 3264 )
+script = ExtResource( 18 )
+m_rDepthFactor = 1.0
+
+[node name="[ladder_4levels-0]ladder_top" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels"]
+position = Vector2( 0, -256 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-0]g_top_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_top"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER"
+
+[node name="[ladder_4levels-0]rt_top_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_top/[ladder_4levels-0]g_top_AREA_LADDER"]
+position = Vector2( 0, -512 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-0]g_top_AREA_LADDER_TOP" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_top"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_TOP"
+
+[node name="[ladder_4levels-0]rt_top_AREA_LADDER_TOP" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_top/[ladder_4levels-0]g_top_AREA_LADDER_TOP"]
+position = Vector2( 0, -512 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 0, 0.0196, 0.8745, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-0]g_top_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_top"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_UNSTICK"
+
+[node name="[ladder_4levels-0]rt_top_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_top/[ladder_4levels-0]g_top_AREA_LADDER_UNSTICK"]
+position = Vector2( 0, -512 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 0.502, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-0]ic_top" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_top"]
+position = Vector2( 0, -448 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_top/[ladder_4levels-0]ic_top"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-0]ic_top-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_top"]
+position = Vector2( 0, -384 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_top/[ladder_4levels-0]ic_top-1"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-0]ic_top-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_top"]
+position = Vector2( 0, -320 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_top/[ladder_4levels-0]ic_top-2"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-0]ladder_bottom" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels"]
+position = Vector2( 0, 256 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-0]g_bottom_AREA_LADDER_BOTTOM" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_bottom"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_BOTTOM"
+
+[node name="[ladder_4levels-0]rt_bottom_AREA_LADDER_BOTTOM" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_bottom/[ladder_4levels-0]g_bottom_AREA_LADDER_BOTTOM"]
+position = Vector2( 0, -32 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 0, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-0]g_bottom_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_bottom"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER"
+
+[node name="[ladder_4levels-0]rt_bottom_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_bottom/[ladder_4levels-0]g_bottom_AREA_LADDER"]
+position = Vector2( 0, -64 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-0]g_bottom_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_bottom"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_UNSTICK"
+
+[node name="[ladder_4levels-0]rt_bottom_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_bottom/[ladder_4levels-0]g_bottom_AREA_LADDER_UNSTICK"]
+position = Vector2( 0, -32 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 0.502, 0, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-0]ic_bottom" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_bottom"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_bottom/[ladder_4levels-0]ic_bottom"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-0]ladder_g" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER"
+
+[node name="[ladder_4levels-0]g_g" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g"]
+position = Vector2( 0, 192 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-0]rt_g" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-0]ic_g" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g/[ladder_4levels-0]ic_g"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-0]g_g-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g"]
+position = Vector2( 0, 128 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-0]rt_g-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-1"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-0]ic_g-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-1"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-1/[ladder_4levels-0]ic_g-1"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-0]g_g-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g"]
+position = Vector2( 0, 64 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-0]rt_g-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-2"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-0]ic_g-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-2"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-2/[ladder_4levels-0]ic_g-2"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-0]g_g-3" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g"]
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-0]rt_g-3" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-3"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-0]ic_g-3" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-3"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-3/[ladder_4levels-0]ic_g-3"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-0]g_g-4" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g"]
+position = Vector2( 0, -64 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-0]rt_g-4" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-4"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-0]ic_g-4" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-4"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-4/[ladder_4levels-0]ic_g-4"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-0]g_g-5" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g"]
+position = Vector2( 0, -128 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-0]rt_g-5" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-5"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-0]ic_g-5" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-5"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-5/[ladder_4levels-0]ic_g-5"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-0]g_g-6" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g"]
+position = Vector2( 0, -192 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-0]rt_g-6" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-6"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-0]ic_g-6" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-6"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-6/[ladder_4levels-0]ic_g-6"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-0]g_g-7" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g"]
+position = Vector2( 0, -256 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-0]rt_g-7" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-7"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-0]ic_g-7" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-7"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-7/[ladder_4levels-0]ic_g-7"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-0]g_g-8" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g"]
+position = Vector2( 0, -320 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-0]rt_g-8" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-8"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-0]ic_g-8" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-8"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-8/[ladder_4levels-0]ic_g-8"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-0]g_g-9" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g"]
+position = Vector2( 0, -384 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-0]rt_g-9" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-9"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-0]ic_g-9" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-9"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-9/[ladder_4levels-0]ic_g-9"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-0]g_g-10" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g"]
+position = Vector2( 0, -448 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-0]rt_g-10" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-10"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-0]ic_g-10" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-10"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-10/[ladder_4levels-0]ic_g-10"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-0]g_g-11" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g"]
+position = Vector2( 0, -512 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-0]rt_g-11" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-11"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-0]ic_g-11" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-11"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-0]ladder_4levels/[ladder_4levels-0]ladder_g/[ladder_4levels-0]g_g-11/[ladder_4levels-0]ic_g-11"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-1]ladder_4levels" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS"]
+position = Vector2( 12544, 1984 )
+script = ExtResource( 18 )
+m_rDepthFactor = 1.0
+
+[node name="[ladder_4levels-1]ladder_top" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels"]
+position = Vector2( 0, -256 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-1]g_top_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_top"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER"
+
+[node name="[ladder_4levels-1]rt_top_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_top/[ladder_4levels-1]g_top_AREA_LADDER"]
+position = Vector2( 0, -512 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-1]g_top_AREA_LADDER_TOP" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_top"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_TOP"
+
+[node name="[ladder_4levels-1]rt_top_AREA_LADDER_TOP" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_top/[ladder_4levels-1]g_top_AREA_LADDER_TOP"]
+position = Vector2( 0, -512 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 0, 0.0196, 0.8745, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-1]g_top_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_top"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_UNSTICK"
+
+[node name="[ladder_4levels-1]rt_top_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_top/[ladder_4levels-1]g_top_AREA_LADDER_UNSTICK"]
+position = Vector2( 0, -512 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 0.502, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-1]ic_top" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_top"]
+position = Vector2( 0, -448 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_top/[ladder_4levels-1]ic_top"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-1]ic_top-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_top"]
+position = Vector2( 0, -384 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_top/[ladder_4levels-1]ic_top-1"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-1]ic_top-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_top"]
+position = Vector2( 0, -320 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_top/[ladder_4levels-1]ic_top-2"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-1]ladder_bottom" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels"]
+position = Vector2( 0, 256 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-1]g_bottom_AREA_LADDER_BOTTOM" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_bottom"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_BOTTOM"
+
+[node name="[ladder_4levels-1]rt_bottom_AREA_LADDER_BOTTOM" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_bottom/[ladder_4levels-1]g_bottom_AREA_LADDER_BOTTOM"]
+position = Vector2( 0, -32 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 0, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-1]g_bottom_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_bottom"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER"
+
+[node name="[ladder_4levels-1]rt_bottom_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_bottom/[ladder_4levels-1]g_bottom_AREA_LADDER"]
+position = Vector2( 0, -64 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-1]g_bottom_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_bottom"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_UNSTICK"
+
+[node name="[ladder_4levels-1]rt_bottom_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_bottom/[ladder_4levels-1]g_bottom_AREA_LADDER_UNSTICK"]
+position = Vector2( 0, -32 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 0.502, 0, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-1]ic_bottom" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_bottom"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_bottom/[ladder_4levels-1]ic_bottom"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-1]ladder_g" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER"
+
+[node name="[ladder_4levels-1]g_g" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g"]
+position = Vector2( 0, 192 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-1]rt_g" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-1]ic_g" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g/[ladder_4levels-1]ic_g"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-1]g_g-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g"]
+position = Vector2( 0, 128 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-1]rt_g-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-1"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-1]ic_g-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-1"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-1/[ladder_4levels-1]ic_g-1"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-1]g_g-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g"]
+position = Vector2( 0, 64 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-1]rt_g-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-2"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-1]ic_g-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-2"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-2/[ladder_4levels-1]ic_g-2"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-1]g_g-3" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g"]
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-1]rt_g-3" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-3"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-1]ic_g-3" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-3"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-3/[ladder_4levels-1]ic_g-3"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-1]g_g-4" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g"]
+position = Vector2( 0, -64 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-1]rt_g-4" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-4"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-1]ic_g-4" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-4"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-4/[ladder_4levels-1]ic_g-4"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-1]g_g-5" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g"]
+position = Vector2( 0, -128 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-1]rt_g-5" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-5"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-1]ic_g-5" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-5"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-5/[ladder_4levels-1]ic_g-5"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-1]g_g-6" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g"]
+position = Vector2( 0, -192 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-1]rt_g-6" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-6"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-1]ic_g-6" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-6"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-6/[ladder_4levels-1]ic_g-6"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-1]g_g-7" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g"]
+position = Vector2( 0, -256 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-1]rt_g-7" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-7"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-1]ic_g-7" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-7"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-7/[ladder_4levels-1]ic_g-7"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-1]g_g-8" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g"]
+position = Vector2( 0, -320 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-1]rt_g-8" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-8"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-1]ic_g-8" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-8"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-8/[ladder_4levels-1]ic_g-8"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-1]g_g-9" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g"]
+position = Vector2( 0, -384 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-1]rt_g-9" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-9"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-1]ic_g-9" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-9"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-9/[ladder_4levels-1]ic_g-9"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-1]g_g-10" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g"]
+position = Vector2( 0, -448 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-1]rt_g-10" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-10"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-1]ic_g-10" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-10"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-10/[ladder_4levels-1]ic_g-10"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_4levels-1]g_g-11" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g"]
+position = Vector2( 0, -512 )
+script = ExtResource( 18 )
+
+[node name="[ladder_4levels-1]rt_g-11" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-11"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_4levels-1]ic_g-11" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-11"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_4levels-1]ladder_4levels/[ladder_4levels-1]ladder_g/[ladder_4levels-1]g_g-11/[ladder_4levels-1]ic_g-11"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_3levels-0]ladder_3levels" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS"]
+position = Vector2( 9280, 1728 )
+script = ExtResource( 18 )
+m_rDepthFactor = 1.0
+
+[node name="[ladder_3levels-0]ladder_top" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels"]
+script = ExtResource( 18 )
+
+[node name="[ladder_3levels-0]g_top_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_top"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER"
+
+[node name="[ladder_3levels-0]rt_top_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_top/[ladder_3levels-0]g_top_AREA_LADDER"]
+position = Vector2( 0, -512 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_3levels-0]g_top_AREA_LADDER_TOP" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_top"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_TOP"
+
+[node name="[ladder_3levels-0]rt_top_AREA_LADDER_TOP" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_top/[ladder_3levels-0]g_top_AREA_LADDER_TOP"]
+position = Vector2( 0, -512 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 0, 0.0196, 0.8745, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_3levels-0]g_top_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_top"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_UNSTICK"
+
+[node name="[ladder_3levels-0]rt_top_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_top/[ladder_3levels-0]g_top_AREA_LADDER_UNSTICK"]
+position = Vector2( 0, -512 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 0.502, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_3levels-0]ic_top" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_top"]
+position = Vector2( 0, -448 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_top/[ladder_3levels-0]ic_top"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_3levels-0]ic_top-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_top"]
+position = Vector2( 0, -384 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_top/[ladder_3levels-0]ic_top-1"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_3levels-0]ic_top-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_top"]
+position = Vector2( 0, -320 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_top/[ladder_3levels-0]ic_top-2"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_3levels-0]ladder_bottom" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels"]
+position = Vector2( 0, 256 )
+script = ExtResource( 18 )
+
+[node name="[ladder_3levels-0]g_bottom_AREA_LADDER_BOTTOM" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_bottom"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_BOTTOM"
+
+[node name="[ladder_3levels-0]rt_bottom_AREA_LADDER_BOTTOM" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_bottom/[ladder_3levels-0]g_bottom_AREA_LADDER_BOTTOM"]
+position = Vector2( 0, -32 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 0, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_3levels-0]g_bottom_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_bottom"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER"
+
+[node name="[ladder_3levels-0]rt_bottom_AREA_LADDER" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_bottom/[ladder_3levels-0]g_bottom_AREA_LADDER"]
+position = Vector2( 0, -64 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_3levels-0]g_bottom_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_bottom"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER_UNSTICK"
+
+[node name="[ladder_3levels-0]rt_bottom_AREA_LADDER_UNSTICK" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_bottom/[ladder_3levels-0]g_bottom_AREA_LADDER_UNSTICK"]
+position = Vector2( 0, -32 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 0.502, 0, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_3levels-0]ic_bottom" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_bottom"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_bottom/[ladder_3levels-0]ic_bottom"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_3levels-0]ladder_g" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels"]
+script = ExtResource( 18 )
+m_sTAG = "AREALAYER_LADDER"
+
+[node name="[ladder_3levels-0]g_g" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g"]
+position = Vector2( 0, 192 )
+script = ExtResource( 18 )
+
+[node name="[ladder_3levels-0]rt_g" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_3levels-0]ic_g" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g/[ladder_3levels-0]ic_g"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_3levels-0]g_g-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g"]
+position = Vector2( 0, 128 )
+script = ExtResource( 18 )
+
+[node name="[ladder_3levels-0]rt_g-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-1"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_3levels-0]ic_g-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-1"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-1/[ladder_3levels-0]ic_g-1"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_3levels-0]g_g-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g"]
+position = Vector2( 0, 64 )
+script = ExtResource( 18 )
+
+[node name="[ladder_3levels-0]rt_g-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-2"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_3levels-0]ic_g-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-2"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-2/[ladder_3levels-0]ic_g-2"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_3levels-0]g_g-3" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g"]
+script = ExtResource( 18 )
+
+[node name="[ladder_3levels-0]rt_g-3" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-3"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_3levels-0]ic_g-3" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-3"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-3/[ladder_3levels-0]ic_g-3"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_3levels-0]g_g-4" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g"]
+position = Vector2( 0, -64 )
+script = ExtResource( 18 )
+
+[node name="[ladder_3levels-0]rt_g-4" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-4"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_3levels-0]ic_g-4" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-4"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-4/[ladder_3levels-0]ic_g-4"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_3levels-0]g_g-5" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g"]
+position = Vector2( 0, -128 )
+script = ExtResource( 18 )
+
+[node name="[ladder_3levels-0]rt_g-5" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-5"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_3levels-0]ic_g-5" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-5"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-5/[ladder_3levels-0]ic_g-5"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_3levels-0]g_g-6" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g"]
+position = Vector2( 0, -192 )
+script = ExtResource( 18 )
+
+[node name="[ladder_3levels-0]rt_g-6" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-6"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_3levels-0]ic_g-6" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-6"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-6/[ladder_3levels-0]ic_g-6"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="[ladder_3levels-0]g_g-7" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g"]
+position = Vector2( 0, -256 )
+script = ExtResource( 18 )
+
+[node name="[ladder_3levels-0]rt_g-7" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-7"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+m_sTAG = "AABB"
+
+[node name="[ladder_3levels-0]ic_g-7" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-7"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/LADDERS/[ladder_3levels-0]ladder_3levels/[ladder_3levels-0]ladder_g/[ladder_3levels-0]g_g-7/[ladder_3levels-0]ic_g-7"]
+texture = ExtResource( 17 )
+offset = Vector2( 14.0032, -32 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="COL" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE"]
+script = ExtResource( 18 )
+
+[node name="TRIGGERS" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL"]
+script = ExtResource( 18 )
+
+[node name="TSector1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/TRIGGERS"]
+script = ExtResource( 18 )
+
+[node name="g_TSector1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/TRIGGERS/TSector1"]
+script = ExtResource( 18 )
+m_sTAG = "TRIGGERLAYER_KillPlayer"
+
+[node name="rt_TSector1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/TRIGGERS/TSector1/g_TSector1"]
+position = Vector2( 3968, 3712 )
+scale = Vector2( 22, 2 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 0, 1, 0, 1 )
+m_sTAG = "AABB"
+
+[node name="TSector2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/TRIGGERS"]
+script = ExtResource( 18 )
+
+[node name="g_TSector2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/TRIGGERS/TSector2"]
+script = ExtResource( 18 )
+m_sTAG = "TRIGGERLAYER_KillPlayer"
+
+[node name="rt_TSector2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/TRIGGERS/TSector2/g_TSector2"]
+position = Vector2( 8704, 3456 )
+scale = Vector2( 22, 2 )
+script = ExtResource( 22 )
+m_oIniColor = Color( 0, 1, 0, 1 )
+m_sTAG = "AABB"
+
+[node name="G_COL2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL"]
+script = ExtResource( 18 )
+m_sTAG = "STATICLAYER"
+
+[node name="ic_COL2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/G_COL2"]
+position = Vector2( 12736, 3136 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/G_COL2/ic_COL2"]
+texture = ExtResource( 12 )
+offset = Vector2( 64, -64 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 8 )
+
+[node name="ic_COL2-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/G_COL2"]
+position = Vector2( 17152, -64 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/G_COL2/ic_COL2-1"]
+texture = ExtResource( 12 )
+offset = Vector2( 64, -64 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 8 )
+
+[node name="ic_COL2-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/G_COL2"]
+position = Vector2( 8448, 1216 )
+scale = Vector2( 3, 3 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/G_COL2/ic_COL2-2"]
+texture = ExtResource( 12 )
+offset = Vector2( 64, -64 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 8 )
+
+[node name="ic_COL2-3" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/G_COL2"]
+position = Vector2( 12864, 3136 )
+scale = Vector2( 3, 3 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/G_COL2/ic_COL2-3"]
+texture = ExtResource( 12 )
+offset = Vector2( 64, -64 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 8 )
+
+[node name="ic_COL2-4" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/G_COL2"]
+position = Vector2( 17280, -64 )
+scale = Vector2( 3, 3 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/G_COL2/ic_COL2-4"]
+texture = ExtResource( 12 )
+offset = Vector2( 64, -64 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 8 )
+
+[node name="ic_COL2-5" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/G_COL2"]
+position = Vector2( 8832, 1216 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/G_COL2/ic_COL2-5"]
+texture = ExtResource( 12 )
+offset = Vector2( 64, -64 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 8 )
+
+[node name="ic_COL2-6" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/G_COL2"]
+position = Vector2( 13632, 3136 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/G_COL2/ic_COL2-6"]
+texture = ExtResource( 12 )
+offset = Vector2( 64, -64 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 8 )
+
+[node name="ic_COL2-7" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/G_COL2"]
+position = Vector2( 13376, 2752 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/G_COL2/ic_COL2-7"]
+texture = ExtResource( 12 )
+offset = Vector2( 64, -64 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 8 )
+
+[node name="ic_COL2-8" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/G_COL2"]
+position = Vector2( 13248, 2752 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/G_COL2/ic_COL2-8"]
+texture = ExtResource( 12 )
+offset = Vector2( 64, -64 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 8 )
+
+[node name="ic_COL2-9" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/G_COL2"]
+position = Vector2( 13376, 2624 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="CFESpriteInstance" type="Sprite" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/G_COL2/ic_COL2-9"]
+texture = ExtResource( 12 )
+offset = Vector2( 64, -64 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 8 )
+
+[node name="g_COL" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL"]
+script = ExtResource( 18 )
+m_sTAG = "STATICLAYER"
+
+[node name="CSector0" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+script = ExtResource( 18 )
+
+[node name="ic_CSector0" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL/CSector0"]
+position = Vector2( -704, 1344 )
+scale = Vector2( 51, 39 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_CSector0-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL/CSector0"]
+position = Vector2( 1792, 704 )
+rotation = 0.2967
+scale = Vector2( 16, 10 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_CSector0-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL/CSector0"]
+position = Vector2( -704, 704 )
+scale = Vector2( 39, 10 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_CSector0-3" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL/CSector0"]
+position = Vector2( 256, -128 )
+scale = Vector2( 16, 6 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_CSector0-4" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL/CSector0"]
+position = Vector2( 1408, -128 )
+scale = Vector2( 9, 6 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_CSector0-5" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL/CSector0"]
+position = Vector2( 1280, -128 )
+scale = Vector2( 2, 2 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_CSector0-6" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL/CSector0"]
+position = Vector2( -704, -128 )
+scale = Vector2( 15, 13 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_CSector0-7" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL/CSector0"]
+position = Vector2( 1792, -192 )
+rotation = 0.2786
+scale = Vector2( 15.53, 7 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="CSector1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+script = ExtResource( 18 )
+
+[node name="ps_CSector1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL/CSector1"]
+position = Vector2( 4096, 3680 )
+script = ExtResource( 15 )
+m_iIniAction = 0
+
+[node name="ps_CSector1-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL/CSector1"]
+position = Vector2( 4864, 3680 )
+script = ExtResource( 15 )
+m_iIniAction = 0
+
+[node name="CSector2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+script = ExtResource( 18 )
+
+[node name="ps_CSector2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL/CSector2"]
+position = Vector2( 8256, 3424 )
+script = ExtResource( 15 )
+m_iIniAction = 0
+
+[node name="ps_CSector2-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL/CSector2"]
+position = Vector2( 9280, 3424 )
+script = ExtResource( 15 )
+m_iIniAction = 0
+
+[node name="ic_COL" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 8832, 2560 )
+scale = Vector2( 14, 4 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="Copy Of ic_COL" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 8128, 3520 )
+scale = Vector2( 21, 4 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="Copy Of Copy Of ic_COL" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 2944, 320 )
+scale = Vector2( 2, 7 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-1" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 2560, 1216 )
+scale = Vector2( 43, 9 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-2" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 6080, 960 )
+scale = Vector2( 16, 13 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-3" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 6208, 2240 )
+scale = Vector2( 39, 9 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-4" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 6208, 3264 )
+scale = Vector2( 30, 9 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-5" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 9408, 3264 )
+scale = Vector2( 43, 9 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-6" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 3520, 960 )
+rotation = 0.2967
+scale = Vector2( 16, 5 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-7" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 5120, 1216 )
+rotation = -0.2606
+scale = Vector2( 15.53, 13 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-8" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 5248, 2496 )
+rotation = -0.2606
+scale = Vector2( 15.53, 9 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-9" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 5248, 3520 )
+rotation = -0.2606
+scale = Vector2( 15.53, 9 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-10" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 6848, 960 )
+rotation = -0.2606
+scale = Vector2( 15.53, 13 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-11" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 6848, 2240 )
+rotation = -0.2606
+scale = Vector2( 15.53, 9 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-12" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 9472, 1216 )
+rotation = -0.2606
+scale = Vector2( 15.53, 14 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-13" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 12608, 1216 )
+rotation = -0.2606
+scale = Vector2( 15.53, 12 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-14" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 18688, -64 )
+rotation = -0.2606
+scale = Vector2( 15.53, 12 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-15" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 11520, 960 )
+rotation = 0.2606
+scale = Vector2( 15.53, 14 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-16" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 9472, 1920 )
+rotation = -0.2606
+scale = Vector2( 29.53, 14 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-17" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 15936, -1344 )
+rotation = -0.5236
+scale = Vector2( 29.53, 14 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-18" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 4928, 1792 )
+scale = Vector2( 7, 4 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-19" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 4032, 1792 )
+scale = Vector2( 12, 4 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-20" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 3136, 1792 )
+scale = Vector2( 12, 4 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-21" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 2304, 1792 )
+scale = Vector2( 11, 4 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-23" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 2688, 2496 )
+scale = Vector2( 44, 9 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-24" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 2560, 3520 )
+scale = Vector2( 22, 5 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-25" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 4224, 3520 )
+scale = Vector2( 8, 5 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-26" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 8384, 3264 )
+scale = Vector2( 12, 9 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-27" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 4992, 3520 )
+scale = Vector2( 14, 5 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-28" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 2624, 128 )
+scale = Vector2( 71, 6 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-29" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 7168, 448 )
+scale = Vector2( 4, 1 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-30" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 3328, 3776 )
+scale = Vector2( 100, 1 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-31" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 12480, 2240 )
+scale = Vector2( 12, 1 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-32" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 9216, 1216 )
+scale = Vector2( 2, 0.5 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-33" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 12480, 1216 )
+scale = Vector2( 2, 0.5 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-34" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 2560, 2496 )
+scale = Vector2( 2, 0.5 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-38" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 7808, 704 )
+scale = Vector2( 10, 13 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-39" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 8448, 1216 )
+scale = Vector2( 12, 5 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-40" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 7808, 1984 )
+scale = Vector2( 28, 9 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-41" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 10432, 960 )
+scale = Vector2( 17, 17 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-42" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 11328, 1216 )
+scale = Vector2( 18, 17 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-43" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 12608, 1216 )
+scale = Vector2( 25, 12 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-44" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 13504, 1984 )
+scale = Vector2( 11, 12 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-45" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 13568, 960 )
+scale = Vector2( 22, 10 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-46" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 13312, -896 )
+scale = Vector2( 4, 22 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-47" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 15744, -64 )
+scale = Vector2( 61, 26 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-48" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 20160, -1600 )
+scale = Vector2( 8, 20 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-49" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 19648, -320 )
+scale = Vector2( 16, 30 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-50" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 13568, -896 )
+scale = Vector2( 22, 14 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-51" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 14976, -896 )
+scale = Vector2( 22, 5 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-52" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 17344, -1600 )
+scale = Vector2( 44, 5 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-53" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 14976, 192 )
+scale = Vector2( 12, 22 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-54" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 13568, 448 )
+scale = Vector2( 22, 1 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-55" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 13568, 192 )
+scale = Vector2( 22, 1 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-56" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 14976, -64 )
+scale = Vector2( 12, 1 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-57" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 14976, -576 )
+scale = Vector2( 30, 1 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-58" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 17792, -832 )
+scale = Vector2( 14, 1 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-59" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 19392, -640 )
+scale = Vector2( 6, 1 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-60" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 18688, -832 )
+rotation = 0.2618
+scale = Vector2( 12, 1 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-61" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 12096, 2752 )
+scale = Vector2( 5, 17 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-62" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 13248, 2752 )
+scale = Vector2( 15, 17 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-63" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 12416, 3136 )
+scale = Vector2( 13, 11 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-64" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 9344, 1216 )
+scale = Vector2( 5, 21 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-65" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 2624, 960 )
+scale = Vector2( 14, 5 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="ic_COL-68" type="Node2D" parent="ACTION_PLANE/Layers2/ACTION_PLANE/COL/g_COL"]
+position = Vector2( 9856, 3392 )
+rotation = -0.2786
+scale = Vector2( 36.53, 8 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "AABB"
+
+[node name="Action2" type="Node" parent="ACTION_PLANE"]
+
+[node name="LIGHTING" type="Node2D" parent="."]
+script = ExtResource( 19 )
+
+[node name="Layers" type="Node2D" parent="LIGHTING"]
+
+[node name="Action" type="Node" parent="LIGHTING"]
+
+[node name="Layers2" type="Node2D" parent="LIGHTING"]
+
+[node name="LIGHTING" type="Node2D" parent="LIGHTING/Layers2"]
+script = ExtResource( 18 )
+m_bIniVis = false
+m_rDepthFactor = 1.0
+
+[node name="lights_g" type="Node2D" parent="LIGHTING/Layers2/LIGHTING"]
+script = ExtResource( 18 )
+m_rDepthFactor = 1.0
+
+[node name="[CandilSimple-0]CandilSimple" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g"]
+position = Vector2( 384, 384 )
+script = ExtResource( 18 )
+m_rDepthFactor = 1.0
+
+[node name="[CandilSimple-0]CandilSimple_g" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-0]CandilSimple"]
+script = ExtResource( 18 )
+
+[node name="[CandilSimple-0]psys_smoke" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-0]CandilSimple/[CandilSimple-0]CandilSimple_g"]
+script = ExtResource( 15 )
+m_iIniAction = 0
+
+[node name="[CandilSimple-0]psys_fire" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-0]CandilSimple/[CandilSimple-0]CandilSimple_g"]
+script = ExtResource( 15 )
+m_iIniAction = 0
+
+[node name="[CandilSimple-0]ic_light" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-0]CandilSimple/[CandilSimple-0]CandilSimple_g"]
+position = Vector2( 0, -16 )
+scale = Vector2( 10, 10 )
+script = ExtResource( 21 )
+m_oIniColor = Color( 1, 0.8549, 0.7922, 0.7 )
+m_iIniAction = 0
+m_sTAG = "LightSource"
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-0]CandilSimple/[CandilSimple-0]CandilSimple_g/[CandilSimple-0]ic_light"]
+texture = ExtResource( 14 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 6 )
+
+[node name="[CandilSimple-0]ic_candil-cuenco" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-0]CandilSimple/[CandilSimple-0]CandilSimple_g"]
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "Sound torch_fire_small"
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-0]CandilSimple/[CandilSimple-0]CandilSimple_g/[CandilSimple-0]ic_candil-cuenco"]
+scale = Vector2( 1.00004, 0.999962 )
+texture = SubResource( 2 )
+offset = Vector2( 0, 3.0016 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 28 )
+
+[node name="[CandilSimple-1]CandilSimple" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g"]
+position = Vector2( 1600, 384 )
+script = ExtResource( 18 )
+m_rDepthFactor = 1.0
+
+[node name="[CandilSimple-1]CandilSimple_g" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-1]CandilSimple"]
+script = ExtResource( 18 )
+
+[node name="[CandilSimple-1]psys_smoke" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-1]CandilSimple/[CandilSimple-1]CandilSimple_g"]
+script = ExtResource( 15 )
+m_iIniAction = 0
+
+[node name="[CandilSimple-1]psys_fire" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-1]CandilSimple/[CandilSimple-1]CandilSimple_g"]
+script = ExtResource( 15 )
+m_iIniAction = 0
+
+[node name="[CandilSimple-1]ic_light" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-1]CandilSimple/[CandilSimple-1]CandilSimple_g"]
+position = Vector2( 0, -16 )
+scale = Vector2( 10, 10 )
+script = ExtResource( 21 )
+m_oIniColor = Color( 1, 0.8549, 0.7922, 0.7 )
+m_iIniAction = 0
+m_sTAG = "LightSource"
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-1]CandilSimple/[CandilSimple-1]CandilSimple_g/[CandilSimple-1]ic_light"]
+texture = ExtResource( 14 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 6 )
+
+[node name="[CandilSimple-1]ic_candil-cuenco" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-1]CandilSimple/[CandilSimple-1]CandilSimple_g"]
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "Sound torch_fire_small"
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-1]CandilSimple/[CandilSimple-1]CandilSimple_g/[CandilSimple-1]ic_candil-cuenco"]
+scale = Vector2( 1.00004, 0.999962 )
+texture = SubResource( 2 )
+offset = Vector2( 0, 3.0016 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 28 )
+
+[node name="[CandilSimple-2]CandilSimple" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g"]
+position = Vector2( 2624, 640 )
+script = ExtResource( 18 )
+m_rDepthFactor = 1.0
+
+[node name="[CandilSimple-2]CandilSimple_g" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-2]CandilSimple"]
+script = ExtResource( 18 )
+
+[node name="[CandilSimple-2]psys_smoke" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-2]CandilSimple/[CandilSimple-2]CandilSimple_g"]
+script = ExtResource( 15 )
+m_iIniAction = 0
+
+[node name="[CandilSimple-2]psys_fire" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-2]CandilSimple/[CandilSimple-2]CandilSimple_g"]
+script = ExtResource( 15 )
+m_iIniAction = 0
+
+[node name="[CandilSimple-2]ic_light" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-2]CandilSimple/[CandilSimple-2]CandilSimple_g"]
+position = Vector2( 0, -16 )
+scale = Vector2( 10, 10 )
+script = ExtResource( 21 )
+m_oIniColor = Color( 1, 0.8549, 0.7922, 0.7 )
+m_iIniAction = 0
+m_sTAG = "LightSource"
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-2]CandilSimple/[CandilSimple-2]CandilSimple_g/[CandilSimple-2]ic_light"]
+texture = ExtResource( 14 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 6 )
+
+[node name="[CandilSimple-2]ic_candil-cuenco" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-2]CandilSimple/[CandilSimple-2]CandilSimple_g"]
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "Sound torch_fire_small"
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-2]CandilSimple/[CandilSimple-2]CandilSimple_g/[CandilSimple-2]ic_candil-cuenco"]
+scale = Vector2( 1.00004, 0.999962 )
+texture = SubResource( 2 )
+offset = Vector2( 0, 3.0016 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 28 )
+
+[node name="[CandilSimple-3]CandilSimple" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g"]
+position = Vector2( 4160, 640 )
+script = ExtResource( 18 )
+m_rDepthFactor = 1.0
+
+[node name="[CandilSimple-3]CandilSimple_g" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-3]CandilSimple"]
+script = ExtResource( 18 )
+
+[node name="[CandilSimple-3]psys_smoke" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-3]CandilSimple/[CandilSimple-3]CandilSimple_g"]
+script = ExtResource( 15 )
+m_iIniAction = 0
+
+[node name="[CandilSimple-3]psys_fire" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-3]CandilSimple/[CandilSimple-3]CandilSimple_g"]
+script = ExtResource( 15 )
+m_iIniAction = 0
+
+[node name="[CandilSimple-3]ic_light" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-3]CandilSimple/[CandilSimple-3]CandilSimple_g"]
+position = Vector2( 0, -16 )
+scale = Vector2( 10, 10 )
+script = ExtResource( 21 )
+m_oIniColor = Color( 1, 0.8549, 0.7922, 0.7 )
+m_iIniAction = 0
+m_sTAG = "LightSource"
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-3]CandilSimple/[CandilSimple-3]CandilSimple_g/[CandilSimple-3]ic_light"]
+texture = ExtResource( 14 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 6 )
+
+[node name="[CandilSimple-3]ic_candil-cuenco" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-3]CandilSimple/[CandilSimple-3]CandilSimple_g"]
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "Sound torch_fire_small"
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-3]CandilSimple/[CandilSimple-3]CandilSimple_g/[CandilSimple-3]ic_candil-cuenco"]
+scale = Vector2( 1.00004, 0.999962 )
+texture = SubResource( 2 )
+offset = Vector2( 0, 3.0016 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 28 )
+
+[node name="[CandilSimple-4]CandilSimple" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g"]
+position = Vector2( 5312, 896 )
+script = ExtResource( 18 )
+m_rDepthFactor = 1.0
+
+[node name="[CandilSimple-4]CandilSimple_g" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-4]CandilSimple"]
+script = ExtResource( 18 )
+
+[node name="[CandilSimple-4]psys_smoke" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-4]CandilSimple/[CandilSimple-4]CandilSimple_g"]
+script = ExtResource( 15 )
+m_iIniAction = 0
+
+[node name="[CandilSimple-4]psys_fire" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-4]CandilSimple/[CandilSimple-4]CandilSimple_g"]
+script = ExtResource( 15 )
+m_iIniAction = 0
+
+[node name="[CandilSimple-4]ic_light" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-4]CandilSimple/[CandilSimple-4]CandilSimple_g"]
+position = Vector2( 0, -16 )
+scale = Vector2( 10, 10 )
+script = ExtResource( 21 )
+m_oIniColor = Color( 1, 0.8549, 0.7922, 0.7 )
+m_iIniAction = 0
+m_sTAG = "LightSource"
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-4]CandilSimple/[CandilSimple-4]CandilSimple_g/[CandilSimple-4]ic_light"]
+texture = ExtResource( 14 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 6 )
+
+[node name="[CandilSimple-4]ic_candil-cuenco" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-4]CandilSimple/[CandilSimple-4]CandilSimple_g"]
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "Sound torch_fire_small"
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-4]CandilSimple/[CandilSimple-4]CandilSimple_g/[CandilSimple-4]ic_candil-cuenco"]
+scale = Vector2( 1.00004, 0.999962 )
+texture = SubResource( 2 )
+offset = Vector2( 0, 3.0016 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 28 )
+
+[node name="[CandilSimple-5]CandilSimple" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g"]
+position = Vector2( 6848, 640 )
+script = ExtResource( 18 )
+m_rDepthFactor = 1.0
+
+[node name="[CandilSimple-5]CandilSimple_g" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-5]CandilSimple"]
+script = ExtResource( 18 )
+
+[node name="[CandilSimple-5]psys_smoke" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-5]CandilSimple/[CandilSimple-5]CandilSimple_g"]
+script = ExtResource( 15 )
+m_iIniAction = 0
+
+[node name="[CandilSimple-5]psys_fire" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-5]CandilSimple/[CandilSimple-5]CandilSimple_g"]
+script = ExtResource( 15 )
+m_iIniAction = 0
+
+[node name="[CandilSimple-5]ic_light" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-5]CandilSimple/[CandilSimple-5]CandilSimple_g"]
+position = Vector2( 0, -16 )
+scale = Vector2( 10, 10 )
+script = ExtResource( 21 )
+m_oIniColor = Color( 1, 0.8549, 0.7922, 0.7 )
+m_iIniAction = 0
+m_sTAG = "LightSource"
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-5]CandilSimple/[CandilSimple-5]CandilSimple_g/[CandilSimple-5]ic_light"]
+texture = ExtResource( 14 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 6 )
+
+[node name="[CandilSimple-5]ic_candil-cuenco" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-5]CandilSimple/[CandilSimple-5]CandilSimple_g"]
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "Sound torch_fire_small"
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-5]CandilSimple/[CandilSimple-5]CandilSimple_g/[CandilSimple-5]ic_candil-cuenco"]
+scale = Vector2( 1.00004, 0.999962 )
+texture = SubResource( 2 )
+offset = Vector2( 0, 3.0016 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 28 )
+
+[node name="[CandilSimple-6]CandilSimple" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g"]
+position = Vector2( 8832, 320 )
+script = ExtResource( 18 )
+m_rDepthFactor = 1.0
+
+[node name="[CandilSimple-6]CandilSimple_g" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-6]CandilSimple"]
+script = ExtResource( 18 )
+
+[node name="[CandilSimple-6]psys_smoke" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-6]CandilSimple/[CandilSimple-6]CandilSimple_g"]
+script = ExtResource( 15 )
+m_iIniAction = 0
+
+[node name="[CandilSimple-6]psys_fire" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-6]CandilSimple/[CandilSimple-6]CandilSimple_g"]
+script = ExtResource( 15 )
+m_iIniAction = 0
+
+[node name="[CandilSimple-6]ic_light" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-6]CandilSimple/[CandilSimple-6]CandilSimple_g"]
+position = Vector2( 0, -16 )
+scale = Vector2( 10, 10 )
+script = ExtResource( 21 )
+m_oIniColor = Color( 1, 0.8549, 0.7922, 0.7 )
+m_iIniAction = 0
+m_sTAG = "LightSource"
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-6]CandilSimple/[CandilSimple-6]CandilSimple_g/[CandilSimple-6]ic_light"]
+texture = ExtResource( 14 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 6 )
+
+[node name="[CandilSimple-6]ic_candil-cuenco" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-6]CandilSimple/[CandilSimple-6]CandilSimple_g"]
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 21 )
+m_iIniAction = 0
+m_sTAG = "Sound torch_fire_small"
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/lights_g/[CandilSimple-6]CandilSimple/[CandilSimple-6]CandilSimple_g/[CandilSimple-6]ic_candil-cuenco"]
+scale = Vector2( 1.00004, 0.999962 )
+texture = SubResource( 2 )
+offset = Vector2( 0, 3.0016 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 28 )
+
+[node name="reveal_g" type="Node2D" parent="LIGHTING/Layers2/LIGHTING"]
+script = ExtResource( 18 )
+
+[node name="Reveal" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/reveal_g"]
+position = Vector2( -960, -192 )
+scale = Vector2( 12, 2 )
+script = ExtResource( 18 )
+
+[node name="ic_Reveal" type="Node2D" parent="LIGHTING/Layers2/LIGHTING/reveal_g/Reveal"]
+script = ExtResource( 21 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="LIGHTING/Layers2/LIGHTING/reveal_g/Reveal/ic_Reveal"]
+scale = Vector2( 28.125, 16.875 )
+texture = ExtResource( 2 )
+offset = Vector2( 900, 540 )
+script = ExtResource( 20 )
+Action = 0
+m_sprite = ExtResource( 26 )
+
+[node name="Action2" type="Node" parent="LIGHTING"]
+
+[node name="CONTROLPOINTLAYER" type="Node2D" parent="."]
+script = ExtResource( 19 )
+
+[node name="Layers" type="Node2D" parent="CONTROLPOINTLAYER"]
+
+[node name="Action" type="Node" parent="CONTROLPOINTLAYER"]
+
+[node name="Layers2" type="Node2D" parent="CONTROLPOINTLAYER"]
+
+[node name="CONTROLPOINTLAYER" type="Node2D" parent="CONTROLPOINTLAYER/Layers2"]
+script = ExtResource( 18 )
+m_rDepthFactor = 1.0
+
+[node name="[StartPosition-0]StartPosition" type="Node2D" parent="CONTROLPOINTLAYER/Layers2/CONTROLPOINTLAYER"]
+position = Vector2( 576, 704 )
+script = ExtResource( 18 )
+
+[node name="[StartPosition-0]STARTPOSITION_" type="Node2D" parent="CONTROLPOINTLAYER/Layers2/CONTROLPOINTLAYER/[StartPosition-0]StartPosition"]
+script = ExtResource( 22 )
+m_oIniColor = Color( 1, 0, 0.502, 1 )
+m_sTAG = "StartPosition"
+
+[node name="Action2" type="Node" parent="CONTROLPOINTLAYER"]

@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/cubit.spr-60930506441869bba33d6b9e376534d6.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/cubit.spr-60930506441869bba33d6b9e376534d6.tres"
 
 [deps]
 
 source_file="res://Assets/data/cubit.spr"
-dest_files=[ "res://.import/cubit.spr-60930506441869bba33d6b9e376534d6.tscn" ]
+dest_files=[ "res://.import/cubit.spr-60930506441869bba33d6b9e376534d6.tres" ]
 
 [params]
 

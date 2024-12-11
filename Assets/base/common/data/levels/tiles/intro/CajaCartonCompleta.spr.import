@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/CajaCartonCompleta.spr-4bf01d526fc7e91befbbbfa9d19cd6f5.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/intro/CajaCartonCompleta.spr"
+dest_files=[ "res://.import/CajaCartonCompleta.spr-4bf01d526fc7e91befbbbfa9d19cd6f5.tres" ]
+
+[params]
+

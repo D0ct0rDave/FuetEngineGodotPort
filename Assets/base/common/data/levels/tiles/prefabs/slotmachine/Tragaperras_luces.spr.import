@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Tragaperras_luces.spr-e37468cc161d5bbf145a05c435378531.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/prefabs/slotmachine/Tragaperras_luces.spr"
+dest_files=[ "res://.import/Tragaperras_luces.spr-e37468cc161d5bbf145a05c435378531.tres" ]
+
+[params]
+

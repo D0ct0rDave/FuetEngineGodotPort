@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/background.spr-7651ee89052c793755462abbede60f93.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/background.spr-7651ee89052c793755462abbede60f93.tres"
 
 [deps]
 
 source_file="res://Assets/data/intro/sprites/background.spr"
-dest_files=[ "res://.import/background.spr-7651ee89052c793755462abbede60f93.tscn" ]
+dest_files=[ "res://.import/background.spr-7651ee89052c793755462abbede60f93.tres" ]
 
 [params]
 

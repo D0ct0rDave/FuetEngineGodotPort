@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/base_floor.spr-8b09931504d4953616f37f6d4b523cbb.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/intro/base_floor.spr"
+dest_files=[ "res://.import/base_floor.spr-8b09931504d4953616f37f6d4b523cbb.tres" ]
+
+[params]
+

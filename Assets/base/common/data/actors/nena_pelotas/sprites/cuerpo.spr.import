@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/cuerpo.spr-b418d43254f69f5d4bacf82a58aab95c.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/nena_pelotas/sprites/cuerpo.spr"
+dest_files=[ "res://.import/cuerpo.spr-b418d43254f69f5d4bacf82a58aab95c.tres" ]
+
+[params]
+

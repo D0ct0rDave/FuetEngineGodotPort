@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/weapon.spr-5f43e4a67d897dbbe14cee39791696fb.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/players/weapons/weapon.spr"
+dest_files=[ "res://.import/weapon.spr-5f43e4a67d897dbbe14cee39791696fb.tres" ]
+
+[params]
+

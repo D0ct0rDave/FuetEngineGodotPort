@@ -1,13 +1,13 @@
 [remap]
 
-importer="CFEConfigFileImporter"
-type="PackedScene"
-path="res://.import/Palmera_f1.spr-0d772d854fb32239fc7281b6bbc30b98.tscn"
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Palmera_f1.spr-0d772d854fb32239fc7281b6bbc30b98.tres"
 
 [deps]
 
 source_file="res://Assets/data/menus/level/anims/Palmeras/Palmera_f1.spr"
-dest_files=[ "res://.import/Palmera_f1.spr-0d772d854fb32239fc7281b6bbc30b98.tscn" ]
+dest_files=[ "res://.import/Palmera_f1.spr-0d772d854fb32239fc7281b6bbc30b98.tres" ]
 
 [params]
 

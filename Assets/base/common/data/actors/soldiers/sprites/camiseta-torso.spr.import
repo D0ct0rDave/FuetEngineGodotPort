@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/camiseta-torso.spr-45d0ce331be805d03cfbfead9fe71c3f.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/actors/soldiers/sprites/camiseta-torso.spr"
+dest_files=[ "res://.import/camiseta-torso.spr-45d0ce331be805d03cfbfead9fe71c3f.tres" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Marco.spr-9d9bb9b6aece30a5715a5d2236178419.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/levels/tiles/ornaments/Marco.spr"
+dest_files=[ "res://.import/Marco.spr-9d9bb9b6aece30a5715a5d2236178419.tres" ]
+
+[params]
+

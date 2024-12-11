@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/cara_ojos.spr-8026a0e2ce650c3107faa7f419f3f42a.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/players/nena/side_shooter/sprites/cara_ojos.spr"
+dest_files=[ "res://.import/cara_ojos.spr-8026a0e2ce650c3107faa7f419f3f42a.tres" ]
+
+[params]
+

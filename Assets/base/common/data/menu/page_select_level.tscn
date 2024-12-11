@@ -1,0 +1,282 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=1]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=2]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=5]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/backarrow.png" type="Texture" id=6]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/3.png" type="Texture" id=7]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/2.png" type="Texture" id=8]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/backarrow.spr" type="Resource" id=9]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/2.spr" type="Resource" id=10]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/3.spr" type="Resource" id=11]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=12]
+
+[node name="CFEHUD" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="NEW_OPT_GROUP" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="NEW_OPT_GROUP"]
+
+[node name="Action" type="Node" parent="NEW_OPT_GROUP"]
+
+[node name="Layers2" type="Node2D" parent="NEW_OPT_GROUP"]
+
+[node name="NEW_OPT_GROUP" type="Node2D" parent="NEW_OPT_GROUP/Layers2"]
+position = Vector2( 640, 480 )
+script = ExtResource( 2 )
+
+[node name="Action2" type="Node" parent="NEW_OPT_GROUP"]
+
+[node name="OPT_p0" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="OPT_p0"]
+
+[node name="Action" type="Node" parent="OPT_p0"]
+
+[node name="Layers2" type="Node2D" parent="OPT_p0"]
+
+[node name="OPT_p0" type="Node2D" parent="OPT_p0/Layers2"]
+position = Vector2( 756, 508 )
+script = ExtResource( 2 )
+
+[node name="ic_p0_frame" type="Node2D" parent="OPT_p0/Layers2/OPT_p0"]
+position = Vector2( 0, 1 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_p0" type="Node2D" parent="OPT_p0/Layers2/OPT_p0"]
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="Action2" type="Node" parent="OPT_p0"]
+
+[node name="OPT_p1" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="OPT_p1"]
+
+[node name="Action" type="Node" parent="OPT_p1"]
+
+[node name="Layers2" type="Node2D" parent="OPT_p1"]
+
+[node name="OPT_p1" type="Node2D" parent="OPT_p1/Layers2"]
+position = Vector2( 1092, 652 )
+script = ExtResource( 2 )
+
+[node name="ic_p1_frame" type="Node2D" parent="OPT_p1/Layers2/OPT_p1"]
+position = Vector2( 0, -1 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_p1" type="Node2D" parent="OPT_p1/Layers2/OPT_p1"]
+position = Vector2( 0, -2 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="Action2" type="Node" parent="OPT_p1"]
+
+[node name="OPT_p2" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="OPT_p2"]
+
+[node name="Action" type="Node" parent="OPT_p2"]
+
+[node name="Layers2" type="Node2D" parent="OPT_p2"]
+
+[node name="OPT_p2" type="Node2D" parent="OPT_p2/Layers2"]
+position = Vector2( 1092, 396 )
+script = ExtResource( 2 )
+
+[node name="ic_p2_frame" type="Node2D" parent="OPT_p2/Layers2/OPT_p2"]
+position = Vector2( 0, 1 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_p2" type="Node2D" parent="OPT_p2/Layers2/OPT_p2"]
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="Action2" type="Node" parent="OPT_p2"]
+
+[node name="OPT_p3" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="OPT_p3"]
+
+[node name="Action" type="Node" parent="OPT_p3"]
+
+[node name="Layers2" type="Node2D" parent="OPT_p3"]
+
+[node name="OPT_p3" type="Node2D" parent="OPT_p3/Layers2"]
+position = Vector2( 1428, 748 )
+script = ExtResource( 2 )
+
+[node name="ic_p3_frame" type="Node2D" parent="OPT_p3/Layers2/OPT_p3"]
+position = Vector2( 0, 1 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_p3" type="Node2D" parent="OPT_p3/Layers2/OPT_p3"]
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="Action2" type="Node" parent="OPT_p3"]
+
+[node name="OPT_p4" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="OPT_p4"]
+
+[node name="Action" type="Node" parent="OPT_p4"]
+
+[node name="Layers2" type="Node2D" parent="OPT_p4"]
+
+[node name="OPT_p4" type="Node2D" parent="OPT_p4/Layers2"]
+position = Vector2( 1428, 492 )
+script = ExtResource( 2 )
+
+[node name="ic_p4-frame" type="Node2D" parent="OPT_p4/Layers2/OPT_p4"]
+position = Vector2( 0, 1 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_p4" type="Node2D" parent="OPT_p4/Layers2/OPT_p4"]
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="Action2" type="Node" parent="OPT_p4"]
+
+[node name="OPT_p5" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="OPT_p5"]
+
+[node name="Action" type="Node" parent="OPT_p5"]
+
+[node name="Layers2" type="Node2D" parent="OPT_p5"]
+
+[node name="OPT_p5" type="Node2D" parent="OPT_p5/Layers2"]
+position = Vector2( 1428, 236 )
+script = ExtResource( 2 )
+
+[node name="ic_p5-frame" type="Node2D" parent="OPT_p5/Layers2/OPT_p5"]
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_p5" type="Node2D" parent="OPT_p5/Layers2/OPT_p5"]
+position = Vector2( 0, -1 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="Action2" type="Node" parent="OPT_p5"]
+
+[node name="BT_Back" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="BT_Back"]
+
+[node name="Action" type="Node" parent="BT_Back"]
+
+[node name="Layers2" type="Node2D" parent="BT_Back"]
+
+[node name="BT_Back" type="Node2D" parent="BT_Back/Layers2"]
+position = Vector2( 204, 928 )
+script = ExtResource( 2 )
+
+[node name="ic_bt_back" type="Node2D" parent="BT_Back/Layers2/BT_Back"]
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="BT_Back/Layers2/BT_Back/ic_bt_back"]
+texture = ExtResource( 8 )
+offset = Vector2( 26.7007, -10.4949 )
+script = ExtResource( 12 )
+Action = 0
+m_sprite = ExtResource( 10 )
+
+[node name="ic_back" type="Node2D" parent="BT_Back/Layers2/BT_Back"]
+position = Vector2( -5, 0 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="BT_Back/Layers2/BT_Back/ic_back"]
+scale = Vector2( 1.03356, 1.03546 )
+texture = ExtResource( 6 )
+script = ExtResource( 12 )
+Action = 0
+m_sprite = ExtResource( 9 )
+
+[node name="Action2" type="Node" parent="BT_Back"]
+
+[node name="BT_Accept" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="BT_Accept"]
+
+[node name="Action" type="Node" parent="BT_Accept"]
+
+[node name="Layers2" type="Node2D" parent="BT_Accept"]
+
+[node name="BT_Accept" type="Node2D" parent="BT_Accept/Layers2"]
+position = Vector2( 1292, 960 )
+script = ExtResource( 2 )
+m_iIniAction = 1
+
+[node name="ic_Accept" type="Node2D" parent="BT_Accept/Layers2/BT_Accept"]
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="BT_Accept/Layers2/BT_Accept/ic_Accept"]
+texture = ExtResource( 7 )
+offset = Vector2( 21.4915, -10.005 )
+script = ExtResource( 12 )
+Action = 0
+m_sprite = ExtResource( 11 )
+
+[node name="lb_Accept" type="Node2D" parent="BT_Accept/Layers2/BT_Accept"]
+position = Vector2( 0, -5 )
+script = ExtResource( 5 )
+
+[node name="Action2" type="Node" parent="BT_Accept"]
+
+[node name="Title" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="Title"]
+
+[node name="Action" type="Node" parent="Title"]
+
+[node name="Layers2" type="Node2D" parent="Title"]
+
+[node name="Title" type="Node2D" parent="Title/Layers2"]
+position = Vector2( 36, 36 )
+script = ExtResource( 2 )
+m_rDepthFactor = 0.0
+
+[node name="lb_Title" type="Node2D" parent="Title/Layers2/Title"]
+script = ExtResource( 5 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+
+[node name="Action2" type="Node" parent="Title"]
+
+[node name="Foreground" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="Foreground"]
+
+[node name="Action" type="Node" parent="Foreground"]
+
+[node name="Layers2" type="Node2D" parent="Foreground"]
+
+[node name="Foreground" type="Node2D" parent="Foreground/Layers2"]
+position = Vector2( 640, 480 )
+script = ExtResource( 2 )
+m_oIniColor = Color( 1, 1, 1, 0 )
+
+[node name="Action2" type="Node" parent="Foreground"]
