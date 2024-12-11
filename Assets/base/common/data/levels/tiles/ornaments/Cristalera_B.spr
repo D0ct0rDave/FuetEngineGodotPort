@@ -1,1 +1,0 @@
-Sprite:{ Name="Cristalera_B"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "Cristalera_B"; Size:{ Width = 144.0; Height = 246.0; }; }; }; }; }; 

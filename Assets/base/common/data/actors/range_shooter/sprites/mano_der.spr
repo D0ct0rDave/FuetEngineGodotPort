@@ -1,1 +1,0 @@
-Sprite:{ Name="mano_der"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "mano_der"; Size:{ Width = 46.0; Height = 16.0; }; }; }; }; }; 

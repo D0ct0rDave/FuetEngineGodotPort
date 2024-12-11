@@ -1,6 +1,0 @@
-Dictionary:
-{
-	lb_TEXT = "La progression actuelle/nsera perdue./n/nÊtes-vous sûr de/nvouloir quitter ?";
-	lb_Quit = "Oui";
-	lb_Back = "Non";
-};

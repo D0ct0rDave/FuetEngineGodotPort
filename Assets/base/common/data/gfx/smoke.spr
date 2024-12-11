@@ -1,1 +1,0 @@
-Sprite:{ Name="smoke"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "smoke"; Size:{ Width = 169.0; Height = 147.0; }; }; }; }; }; 

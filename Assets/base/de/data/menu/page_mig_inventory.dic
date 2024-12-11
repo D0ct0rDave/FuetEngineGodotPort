@@ -1,8 +1,0 @@
-Dictionary:
-{
-	lb_Accept = "Fortsetzen";
-	lb_Quit = "Spiel verlassen";
-	lb_Settings = "Einstellungen";
-	lb_Inventory = "Fortsetzen";
-	lb_Frame = "";
-};

@@ -1,8 +1,0 @@
-Dictionary:
-{
-	lb_Title = "Online opties";
-	lb_MSG_BOX1 = "Online gaan stelt/nu in staat om uw/nnaam en beste score te zenden/nen die van andere/nspelers te zien.";
-	lb_MSG_BOX2 = "Wilt u online gaan/ngedurende deze sessie?";
-	lb_MB_YES = "Ja";
-	lb_MB_NO = "Nee";
-};

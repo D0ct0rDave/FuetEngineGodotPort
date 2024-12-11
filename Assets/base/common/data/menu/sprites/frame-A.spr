@@ -1,1 +1,0 @@
-Sprite:{ Name="frame-A"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "frame-A"; Size:{ Width = 142.0; Height = 122.0; }; }; }; }; }; 

@@ -1,1 +1,0 @@
-Sprite:{ Name="Periodico"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "Periodico"; Size:{ Width = 1156.0; Height = 972.0; }; }; }; }; }; 

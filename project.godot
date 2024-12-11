@@ -30,11 +30,6 @@ enabled=PoolStringArray( "res://addons/FuetEngine/plugin.cfg" )
 
 common/drop_mouse_on_gui_input_disabled=true
 
-[importer_defaults]
-
-CFEConfigFileImporter={
-}
-
 [mono]
 
 runtime/unhandled_exception_policy=1

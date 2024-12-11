@@ -1,1 +1,0 @@
-Sprite:{ Name="torso"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "torso"; Size:{ Width = 96.0; Height = 95.0; }; }; }; }; }; 

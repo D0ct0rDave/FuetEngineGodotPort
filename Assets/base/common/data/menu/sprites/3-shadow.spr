@@ -1,1 +1,0 @@
-Sprite:{ Name="3-shadow"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "3-shadow"; Size:{ Width = 805.0; Height = 222.0; }; }; }; }; }; 

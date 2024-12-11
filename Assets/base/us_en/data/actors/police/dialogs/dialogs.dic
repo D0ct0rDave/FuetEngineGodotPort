@@ -1,7 +1,0 @@
-Dictionary:
-{
-	POLICE_PRESENT1 = "Challenge %d achieved!";
-	POLICE_PRESENT2 = "Challenge %d achieved!";
-	POLICE_PRESENT3 = "Challenge %d achieved!";
-	POLICE_EVERYTHING_OK = "";
-};

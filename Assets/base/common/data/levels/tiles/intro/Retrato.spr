@@ -1,1 +1,0 @@
-Sprite:{ Name="Retrato"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "Retrato"; Size:{ Width = 395.0; Height = 481.0; }; }; }; }; }; 

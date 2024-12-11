@@ -1,1 +1,0 @@
-Sprite:{ Name="inv_separator"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "inv_separator"; Size:{ Width = 554.0; Height = 4.0; }; }; }; }; }; 

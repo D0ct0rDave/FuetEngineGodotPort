@@ -49,7 +49,7 @@ public partial class CFESpriteFileImportPlugin : EditorImportPlugin
 		string filenameWithoutExtension = _sFilename.Substr(0,_sFilename.Length - 4);
 		GD.Print("CFESpriteFileImportPlugin::LoadResource " + filenameWithoutExtension);
 		
-		return CFESpriteLoader.oLoad(filenameWithoutExtension, false);
+		return CFESpriteLoader.oLoad(filenameWithoutExtension);
 	}
 	// ------------------------------------------------------------------------	
 	private int SaveResource(Resource _resource, string _savePath)

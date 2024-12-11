@@ -2274,7 +2274,7 @@ HUD:
 			Object4:
 			{
 				Type = "Label";
-				Text = "Bueno, pues si vas a estar con nosotros. R�pido, los dem�s te est�n esperando!";
+				Text = "Bueno, pues si vas a estar con nosotros. RÃ¡pido, los demÃ¡s te estÃ¡n esperando!";
 				Font = "../fonts/default";
 				HAlignment = "Left";
 				VAlignment = "Center";
@@ -2351,7 +2351,7 @@ HUD:
 				Object1:
 				{
 					Type = "Label";
-					Text = "Opci�n 1";
+					Text = "OpciÃ³n 1";
 					Font = "../fonts/default";
 					HAlignment = "Left";
 					VAlignment = "Center";
@@ -2409,7 +2409,7 @@ HUD:
 				Object1:
 				{
 					Type = "Label";
-					Text = "Opci�n 2";
+					Text = "OpciÃ³n 2";
 					Font = "../fonts/default";
 					HAlignment = "Left";
 					VAlignment = "Center";

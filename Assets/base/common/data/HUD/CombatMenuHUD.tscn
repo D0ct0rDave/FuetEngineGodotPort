@@ -1,6 +1,797 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=43 format=2]
 
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=1]
+[ext_resource path="res://Assets/base/common/data/HUD/sprites/NPCBocata_side2.spr" type="Resource" id=1]
+[ext_resource path="res://Assets/base/common/data/HUD/sprites/HUD_heart.spr" type="Resource" id=2]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESprite.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteFrame.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDRect.cs" type="Script" id=5]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=6]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=7]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=8]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=9]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteAction.cs" type="Script" id=10]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=11]
+[ext_resource path="res://Assets/base/common/data/HUD/sprites/HUD_vidrio.png" type="Texture" id=12]
+[ext_resource path="res://Assets/base/common/data/HUD/sprites/HUD_continue_big.png" type="Texture" id=13]
+[ext_resource path="res://Assets/base/common/data/HUD/sprites/HUD_XP_frame.png" type="Texture" id=14]
+[ext_resource path="res://Assets/base/common/data/HUD/sprites/HUD_Energy_Frame.png" type="Texture" id=15]
+[ext_resource path="res://Assets/base/common/data/HUD/sprites/HUD_continue.png" type="Texture" id=16]
+[ext_resource path="res://Assets/base/common/data/HUD/sprites/HUD_tapa.png" type="Texture" id=17]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=18]
+[ext_resource path="res://Assets/base/common/data/HUD/sprites/inc_dec_button.spr" type="Resource" id=19]
+[ext_resource path="res://Assets/base/common/data/HUD/sprites/HUD_cristal_term.spr" type="Resource" id=20]
+[ext_resource path="res://Assets/base/common/data/HUD/sprites/HUD_bocata.spr" type="Resource" id=21]
+[ext_resource path="res://Assets/base/common/data/HUD/sprites/NPCBocata_rect.spr" type="Resource" id=22]
+[ext_resource path="res://Assets/base/common/data/HUD/sprites/HUD_cristal.spr" type="Resource" id=23]
+[ext_resource path="res://Assets/base/common/data/HUD/sprites/NPCBocata_side.spr" type="Resource" id=24]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 4 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 0, 0 )
+m_oScale = Vector2( 0, 0 )
+m_rDelay = 0.0
+m_rBlendTime = 0.0
+m_rFrameTime = 0.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 14 )
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 10 )
+Name = "default"
+m_rActionTime = 0.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 1 ) ]
+
+[sub_resource type="Resource" id=3]
+resource_local_to_scene = true
+script = ExtResource( 3 )
+Name = "res://Assets/base/common/data/HUD/sprites/HUD_XP_frame.spr"
+m_oActions = [ SubResource( 2 ) ]
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 4 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 0, 0 )
+m_oScale = Vector2( 0, 0 )
+m_rDelay = 0.0
+m_rBlendTime = 0.0
+m_rFrameTime = 0.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 12 )
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 10 )
+Name = "default"
+m_rActionTime = 0.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 4 ) ]
+
+[sub_resource type="Resource" id=6]
+resource_local_to_scene = true
+script = ExtResource( 3 )
+Name = "res://Assets/base/common/data/HUD/sprites/HUD_vidrio.spr"
+m_oActions = [ SubResource( 5 ) ]
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 4 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 0, 0 )
+m_oScale = Vector2( 0, 0 )
+m_rDelay = 0.0
+m_rBlendTime = 0.0
+m_rFrameTime = 0.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 15 )
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 10 )
+Name = "default"
+m_rActionTime = 0.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 7 ) ]
+
+[sub_resource type="Resource" id=9]
+resource_local_to_scene = true
+script = ExtResource( 3 )
+Name = "res://Assets/base/common/data/HUD/sprites/HUD_Energy_Frame.spr"
+m_oActions = [ SubResource( 8 ) ]
+
+[sub_resource type="Resource" id=10]
+script = ExtResource( 4 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 0, 0 )
+m_oScale = Vector2( 0, 0 )
+m_rDelay = 0.0
+m_rBlendTime = 0.0
+m_rFrameTime = 0.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 16 )
+
+[sub_resource type="Resource" id=11]
+script = ExtResource( 10 )
+Name = "default"
+m_rActionTime = 0.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 10 ) ]
+
+[sub_resource type="Resource" id=12]
+resource_local_to_scene = true
+script = ExtResource( 3 )
+Name = "res://Assets/base/common/data/HUD/sprites/HUD_continue.spr"
+m_oActions = [ SubResource( 11 ) ]
+
+[sub_resource type="Resource" id=13]
+script = ExtResource( 4 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 0, 0 )
+m_oScale = Vector2( 0, 0 )
+m_rDelay = 0.0
+m_rBlendTime = 0.0
+m_rFrameTime = 0.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 17 )
+
+[sub_resource type="Resource" id=14]
+script = ExtResource( 10 )
+Name = "default"
+m_rActionTime = 0.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 13 ) ]
+
+[sub_resource type="Resource" id=15]
+resource_local_to_scene = true
+script = ExtResource( 3 )
+Name = "res://Assets/base/common/data/HUD/sprites/HUD_tapa.spr"
+m_oActions = [ SubResource( 14 ) ]
+
+[sub_resource type="Resource" id=16]
+script = ExtResource( 4 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 0, 0 )
+m_oScale = Vector2( 0, 0 )
+m_rDelay = 0.0
+m_rBlendTime = 0.0
+m_rFrameTime = 0.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 13 )
+
+[sub_resource type="Resource" id=17]
+script = ExtResource( 10 )
+Name = "default"
+m_rActionTime = 0.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 16 ) ]
+
+[sub_resource type="Resource" id=18]
+resource_local_to_scene = true
+script = ExtResource( 3 )
+Name = "res://Assets/base/common/data/HUD/sprites/HUD_continue_big.spr"
+m_oActions = [ SubResource( 17 ) ]
 
 [node name="CFEHUD" type="Node2D"]
-script = ExtResource( 1 )
+script = ExtResource( 6 )
+
+[node name="Background" type="Node2D" parent="."]
+script = ExtResource( 11 )
+
+[node name="Layers" type="Node2D" parent="Background"]
+
+[node name="Action" type="Node" parent="Background"]
+
+[node name="Layers2" type="Node2D" parent="Background"]
+
+[node name="Background" type="Node2D" parent="Background/Layers2"]
+script = ExtResource( 9 )
+m_oIniColor = Color( 0, 0, 0, 1 )
+
+[node name="rt_Background" type="Node2D" parent="Background/Layers2/Background"]
+scale = Vector2( 1.4, 1 )
+script = ExtResource( 5 )
+m_oIniColor = Color( 0.1255, 0.1255, 0.1255, 1 )
+
+[node name="rt_Background-1" type="Node2D" parent="Background/Layers2/Background"]
+position = Vector2( 1792, 0 )
+scale = Vector2( 1, 1.125 )
+script = ExtResource( 5 )
+m_oIniColor = Color( 0, 0, 0, 1 )
+
+[node name="Action2" type="Node" parent="Background"]
+
+[node name="Timer" type="Node2D" parent="."]
+script = ExtResource( 11 )
+
+[node name="Layers" type="Node2D" parent="Timer"]
+
+[node name="Action" type="Node" parent="Timer"]
+
+[node name="Layers2" type="Node2D" parent="Timer"]
+
+[node name="Timer" type="Node2D" parent="Timer/Layers2"]
+position = Vector2( 1680, 32 )
+script = ExtResource( 9 )
+
+[node name="lb_Timer" type="Node2D" parent="Timer/Layers2/Timer"]
+script = ExtResource( 7 )
+m_bIniVis = false
+
+[node name="Action2" type="Node" parent="Timer"]
+
+[node name="_Deaths" type="Node2D" parent="."]
+script = ExtResource( 11 )
+
+[node name="Layers" type="Node2D" parent="_Deaths"]
+
+[node name="Action" type="Node" parent="_Deaths"]
+
+[node name="Layers2" type="Node2D" parent="_Deaths"]
+
+[node name="_Deaths" type="Node2D" parent="_Deaths/Layers2"]
+position = Vector2( 128, 16 )
+script = ExtResource( 9 )
+m_bIniVis = false
+
+[node name="_lb_Deaths" type="Node2D" parent="_Deaths/Layers2/_Deaths"]
+position = Vector2( 52, 0 )
+script = ExtResource( 7 )
+m_bIniVis = false
+
+[node name="Action2" type="Node" parent="_Deaths"]
+
+[node name="Exp" type="Node2D" parent="."]
+script = ExtResource( 11 )
+
+[node name="Layers" type="Node2D" parent="Exp"]
+
+[node name="Action" type="Node" parent="Exp"]
+
+[node name="Layers2" type="Node2D" parent="Exp"]
+
+[node name="Exp" type="Node2D" parent="Exp/Layers2"]
+position = Vector2( 120, -28 )
+script = ExtResource( 9 )
+
+[node name="Experience" type="Node2D" parent="Exp/Layers2/Exp"]
+script = ExtResource( 9 )
+
+[node name="ic_Experience" type="Node2D" parent="Exp/Layers2/Exp/Experience"]
+position = Vector2( 1024, 55 )
+script = ExtResource( 8 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="Exp/Layers2/Exp/Experience/ic_Experience"]
+scale = Vector2( 1e-05, 1e-05 )
+texture = ExtResource( 14 )
+script = ExtResource( 18 )
+Action = 0
+m_sprite = SubResource( 3 )
+
+[node name="rt_Experience-2" type="Node2D" parent="Exp/Layers2/Exp/Experience"]
+position = Vector2( 948, 51 )
+script = ExtResource( 5 )
+
+[node name="rt_EliminadorDeExp" type="Node2D" parent="Exp/Layers2/Exp/Experience"]
+position = Vector2( 1260, 51 )
+script = ExtResource( 5 )
+m_oIniColor = Color( 0, 0, 0, 1 )
+
+[node name="ic_Experience-1" type="Node2D" parent="Exp/Layers2/Exp/Experience"]
+position = Vector2( 1106, 62 )
+script = ExtResource( 8 )
+
+[node name="CFESpriteInstance" type="Sprite" parent="Exp/Layers2/Exp/Experience/ic_Experience-1"]
+scale = Vector2( 1e-05, 1e-05 )
+texture = ExtResource( 12 )
+script = ExtResource( 18 )
+Action = 0
+m_sprite = SubResource( 6 )
+
+[node name="lb_ExpPoints" type="Node2D" parent="Exp/Layers2/Exp"]
+position = Vector2( 884, 60 )
+script = ExtResource( 7 )
+
+[node name="Action2" type="Node" parent="Exp"]
+
+[node name="NRgy" type="Node2D" parent="."]
+script = ExtResource( 11 )
+
+[node name="Layers" type="Node2D" parent="NRgy"]
+
+[node name="Action" type="Node" parent="NRgy"]
+
+[node name="Layers2" type="Node2D" parent="NRgy"]
+
+[node name="NRgy" type="Node2D" parent="NRgy/Layers2"]
+script = ExtResource( 9 )
+
+[node name="Energy" type="Node2D" parent="NRgy/Layers2/NRgy"]
+position = Vector2( -376, -29 )
+script = ExtResource( 9 )
+
+[node name="ic_Energy" type="Node2D" parent="NRgy/Layers2/NRgy/Energy"]
+position = Vector2( 996, 56 )
+script = ExtResource( 8 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="NRgy/Layers2/NRgy/Energy/ic_Energy"]
+scale = Vector2( 1e-05, 1e-05 )
+texture = ExtResource( 15 )
+script = ExtResource( 18 )
+Action = 0
+m_sprite = SubResource( 9 )
+
+[node name="rt_Energy" type="Node2D" parent="NRgy/Layers2/NRgy/Energy"]
+position = Vector2( 790, 52 )
+script = ExtResource( 5 )
+
+[node name=" rt_Energy_shadow" type="Node2D" parent="NRgy/Layers2/NRgy/Energy"]
+position = Vector2( 790, 52 )
+script = ExtResource( 5 )
+m_oIniColor = Color( 1, 1, 1, 0.35 )
+
+[node name="rt_EliminadorDeEnergia" type="Node2D" parent="NRgy/Layers2/NRgy/Energy"]
+position = Vector2( 1102, 52 )
+script = ExtResource( 5 )
+m_oIniColor = Color( 0, 0, 0, 1 )
+
+[node name="ic_Energy-1" type="Node2D" parent="NRgy/Layers2/NRgy/Energy"]
+position = Vector2( 948, 64 )
+script = ExtResource( 8 )
+
+[node name="CFESpriteInstance" type="Sprite" parent="NRgy/Layers2/NRgy/Energy/ic_Energy-1"]
+scale = Vector2( 1e-05, 1e-05 )
+texture = ExtResource( 12 )
+script = ExtResource( 18 )
+Action = 0
+m_sprite = SubResource( 6 )
+
+[node name="lb_Coins" type="Node2D" parent="NRgy/Layers2/NRgy"]
+position = Vector2( 788, 32 )
+script = ExtResource( 7 )
+
+[node name="Action2" type="Node" parent="NRgy"]
+
+[node name="NRgy2" type="Node2D" parent="."]
+script = ExtResource( 11 )
+
+[node name="Layers" type="Node2D" parent="NRgy2"]
+
+[node name="Action" type="Node" parent="NRgy2"]
+
+[node name="Layers2" type="Node2D" parent="NRgy2"]
+
+[node name="NRgy2" type="Node2D" parent="NRgy2/Layers2"]
+script = ExtResource( 9 )
+
+[node name="ic_Heart" type="Node2D" parent="NRgy2/Layers2/NRgy2"]
+position = Vector2( 376, 32 )
+script = ExtResource( 8 )
+
+[node name="CFESpriteInstance" type="Sprite" parent="NRgy2/Layers2/NRgy2/ic_Heart"]
+scale = Vector2( 1e-05, 1e-05 )
+script = ExtResource( 18 )
+Action = 0
+m_sprite = ExtResource( 2 )
+
+[node name="Action2" type="Node" parent="NRgy2"]
+
+[node name="NPCDialog" type="Node2D" parent="."]
+script = ExtResource( 11 )
+
+[node name="Layers" type="Node2D" parent="NPCDialog"]
+
+[node name="Action" type="Node" parent="NPCDialog"]
+
+[node name="Layers2" type="Node2D" parent="NPCDialog"]
+
+[node name="NPCDialog" type="Node2D" parent="NPCDialog/Layers2"]
+script = ExtResource( 9 )
+m_bIniVis = false
+
+[node name="ic_NPCDialog0" type="Node2D" parent="NPCDialog/Layers2/NPCDialog"]
+position = Vector2( 128, -160 )
+script = ExtResource( 8 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="NPCDialog/Layers2/NPCDialog/ic_NPCDialog0"]
+scale = Vector2( 1e-05, 1e-05 )
+offset = Vector2( -64, 0 )
+script = ExtResource( 18 )
+Action = 0
+m_sprite = ExtResource( 1 )
+
+[node name="ic_NPCDialog1" type="Node2D" parent="NPCDialog/Layers2/NPCDialog"]
+position = Vector2( 128, -160 )
+scale = Vector2( 7, 1 )
+script = ExtResource( 8 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="NPCDialog/Layers2/NPCDialog/ic_NPCDialog1"]
+scale = Vector2( 1e-05, 1e-05 )
+offset = Vector2( 32, 0 )
+script = ExtResource( 18 )
+Action = 0
+m_sprite = ExtResource( 22 )
+
+[node name="ic_NPCDialog2" type="Node2D" parent="NPCDialog/Layers2/NPCDialog"]
+position = Vector2( 576, -160 )
+script = ExtResource( 8 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="NPCDialog/Layers2/NPCDialog/ic_NPCDialog2"]
+scale = Vector2( 1e-05, 1e-05 )
+offset = Vector2( 32, 0 )
+script = ExtResource( 18 )
+Action = 0
+m_sprite = ExtResource( 24 )
+
+[node name="lb_NPCDialog" type="Node2D" parent="NPCDialog/Layers2/NPCDialog"]
+position = Vector2( 32, -176 )
+script = ExtResource( 7 )
+
+[node name="lb_NPCDialogCentered" type="Node2D" parent="NPCDialog/Layers2/NPCDialog"]
+position = Vector2( 32, -176 )
+script = ExtResource( 7 )
+
+[node name="ic_NPCDialog" type="Node2D" parent="NPCDialog/Layers2/NPCDialog"]
+position = Vector2( 592, -72 )
+script = ExtResource( 8 )
+m_iIniAction = 0
+m_bIniVis = false
+
+[node name="CFESpriteInstance" type="Sprite" parent="NPCDialog/Layers2/NPCDialog/ic_NPCDialog"]
+scale = Vector2( 1e-05, 1e-05 )
+texture = ExtResource( 16 )
+script = ExtResource( 18 )
+Action = 0
+m_sprite = SubResource( 12 )
+
+[node name="g_NPCDialogOpt1" type="Node2D" parent="NPCDialog/Layers2/NPCDialog"]
+position = Vector2( 16, 0 )
+script = ExtResource( 9 )
+
+[node name="ic_NPCDialogOpt1" type="Node2D" parent="NPCDialog/Layers2/NPCDialog/g_NPCDialogOpt1"]
+position = Vector2( 192, -128 )
+rotation = 1.5708
+scale = Vector2( 0.3, 0.3 )
+script = ExtResource( 8 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="NPCDialog/Layers2/NPCDialog/g_NPCDialogOpt1/ic_NPCDialogOpt1"]
+scale = Vector2( 1e-05, 1e-05 )
+offset = Vector2( 0, -48 )
+script = ExtResource( 18 )
+Action = 0
+m_sprite = ExtResource( 19 )
+
+[node name="lb_NPCDialogOpt1" type="Node2D" parent="NPCDialog/Layers2/NPCDialog/g_NPCDialogOpt1"]
+position = Vector2( 240, -128 )
+script = ExtResource( 7 )
+
+[node name="g_NPCDialogOpt2" type="Node2D" parent="NPCDialog/Layers2/NPCDialog"]
+position = Vector2( 16, -8 )
+script = ExtResource( 9 )
+
+[node name="ic_NPCDialogOpt2" type="Node2D" parent="NPCDialog/Layers2/NPCDialog/g_NPCDialogOpt2"]
+position = Vector2( 192, -64 )
+rotation = 1.5708
+scale = Vector2( 0.3, 0.3 )
+script = ExtResource( 8 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="NPCDialog/Layers2/NPCDialog/g_NPCDialogOpt2/ic_NPCDialogOpt2"]
+scale = Vector2( 1e-05, 1e-05 )
+offset = Vector2( 0, -48 )
+script = ExtResource( 18 )
+Action = 0
+m_sprite = ExtResource( 19 )
+
+[node name="lb_NPCDialogOpt2" type="Node2D" parent="NPCDialog/Layers2/NPCDialog/g_NPCDialogOpt2"]
+position = Vector2( 240, -64 )
+script = ExtResource( 7 )
+
+[node name="Action2" type="Node" parent="NPCDialog"]
+
+[node name="Messages" type="Node2D" parent="."]
+script = ExtResource( 11 )
+
+[node name="Layers" type="Node2D" parent="Messages"]
+
+[node name="Action" type="Node" parent="Messages"]
+
+[node name="Layers2" type="Node2D" parent="Messages"]
+
+[node name="Messages" type="Node2D" parent="Messages/Layers2"]
+position = Vector2( 900, 540 )
+script = ExtResource( 9 )
+m_bIniVis = false
+
+[node name="rt" type="Node2D" parent="Messages/Layers2/Messages"]
+scale = Vector2( 1.5, 1 )
+script = ExtResource( 5 )
+m_oIniColor = Color( 0, 0, 0, 1 )
+
+[node name="lb_msg" type="Node2D" parent="Messages/Layers2/Messages"]
+script = ExtResource( 7 )
+
+[node name="Action2" type="Node" parent="Messages"]
+
+[node name="BossEnergy" type="Node2D" parent="."]
+script = ExtResource( 11 )
+
+[node name="Layers" type="Node2D" parent="BossEnergy"]
+
+[node name="Action" type="Node" parent="BossEnergy"]
+
+[node name="Layers2" type="Node2D" parent="BossEnergy"]
+
+[node name="BossEnergy" type="Node2D" parent="BossEnergy/Layers2"]
+position = Vector2( -32, -32 )
+script = ExtResource( 9 )
+m_bIniVis = false
+
+[node name="rt_BossEnergy" type="Node2D" parent="BossEnergy/Layers2/BossEnergy"]
+position = Vector2( 412, 121 )
+script = ExtResource( 5 )
+
+[node name="rt_BossEnergy-1" type="Node2D" parent="BossEnergy/Layers2/BossEnergy"]
+position = Vector2( 1397, 121 )
+script = ExtResource( 5 )
+m_oIniColor = Color( 0, 0, 0, 1 )
+
+[node name="ic_cristal_term_boss" type="Node2D" parent="BossEnergy/Layers2/BossEnergy"]
+position = Vector2( 1397, 133 )
+script = ExtResource( 8 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="BossEnergy/Layers2/BossEnergy/ic_cristal_term_boss"]
+scale = Vector2( 1e-05, 1e-05 )
+offset = Vector2( 2.5, -0.4991 )
+script = ExtResource( 18 )
+Action = 0
+m_sprite = ExtResource( 20 )
+
+[node name="ic_cristal_boss" type="Node2D" parent="BossEnergy/Layers2/BossEnergy"]
+position = Vector2( 412, 133 )
+scale = Vector2( 36.5, 1 )
+script = ExtResource( 8 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="BossEnergy/Layers2/BossEnergy/ic_cristal_boss"]
+scale = Vector2( 1e-05, 1e-05 )
+offset = Vector2( 13.5, -0.4991 )
+script = ExtResource( 18 )
+Action = 0
+m_sprite = ExtResource( 23 )
+
+[node name="ic_tapaBoss" type="Node2D" parent="BossEnergy/Layers2/BossEnergy"]
+position = Vector2( 416, 132 )
+script = ExtResource( 8 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="BossEnergy/Layers2/BossEnergy/ic_tapaBoss"]
+scale = Vector2( 1e-05, 1e-05 )
+texture = ExtResource( 17 )
+script = ExtResource( 18 )
+Action = 0
+m_sprite = SubResource( 15 )
+
+[node name="Action2" type="Node" parent="BossEnergy"]
+
+[node name="Cinemascope" type="Node2D" parent="."]
+script = ExtResource( 11 )
+
+[node name="Layers" type="Node2D" parent="Cinemascope"]
+
+[node name="Action" type="Node" parent="Cinemascope"]
+
+[node name="Layers2" type="Node2D" parent="Cinemascope"]
+
+[node name="Cinemascope" type="Node2D" parent="Cinemascope/Layers2"]
+script = ExtResource( 9 )
+m_bIniVis = false
+
+[node name="rt_back_up" type="Node2D" parent="Cinemascope/Layers2/Cinemascope"]
+position = Vector2( 0, 1080 )
+scale = Vector2( 2, 1.5 )
+script = ExtResource( 5 )
+m_oIniColor = Color( 0, 0, 0, 1 )
+
+[node name="rt_back_down" type="Node2D" parent="Cinemascope/Layers2/Cinemascope"]
+scale = Vector2( 2, 1.5 )
+script = ExtResource( 5 )
+m_oIniColor = Color( 0, 0, 0, 1 )
+
+[node name="Action2" type="Node" parent="Cinemascope"]
+
+[node name="MADialog" type="Node2D" parent="."]
+script = ExtResource( 11 )
+
+[node name="Layers" type="Node2D" parent="MADialog"]
+
+[node name="Action" type="Node" parent="MADialog"]
+
+[node name="Layers2" type="Node2D" parent="MADialog"]
+
+[node name="MADialog" type="Node2D" parent="MADialog/Layers2"]
+script = ExtResource( 9 )
+m_bIniVis = false
+
+[node name="ic_bocata" type="Node2D" parent="MADialog/Layers2/MADialog"]
+script = ExtResource( 8 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="MADialog/Layers2/MADialog/ic_bocata"]
+scale = Vector2( 1e-05, 1e-05 )
+offset = Vector2( 231.018, -119.488 )
+script = ExtResource( 18 )
+Action = 0
+m_sprite = ExtResource( 21 )
+
+[node name="lb_MADialog" type="Node2D" parent="MADialog/Layers2/MADialog"]
+position = Vector2( -20, -152 )
+script = ExtResource( 7 )
+
+[node name="ic_MADialogContinue" type="Node2D" parent="MADialog/Layers2/MADialog"]
+position = Vector2( 468, -64 )
+script = ExtResource( 8 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="MADialog/Layers2/MADialog/ic_MADialogContinue"]
+scale = Vector2( 1e-05, 1e-05 )
+texture = ExtResource( 16 )
+script = ExtResource( 18 )
+Action = 0
+m_sprite = SubResource( 12 )
+
+[node name="Action2" type="Node" parent="MADialog"]
+
+[node name="BossDialog" type="Node2D" parent="."]
+script = ExtResource( 11 )
+
+[node name="Layers" type="Node2D" parent="BossDialog"]
+
+[node name="Action" type="Node" parent="BossDialog"]
+
+[node name="Layers2" type="Node2D" parent="BossDialog"]
+
+[node name="BossDialog" type="Node2D" parent="BossDialog/Layers2"]
+script = ExtResource( 9 )
+m_bIniVis = false
+
+[node name="ic_BossDialog" type="Node2D" parent="BossDialog/Layers2/BossDialog"]
+scale = Vector2( -1, 1 )
+script = ExtResource( 8 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="BossDialog/Layers2/BossDialog/ic_BossDialog"]
+scale = Vector2( 1e-05, 1e-05 )
+offset = Vector2( 231.018, -119.488 )
+script = ExtResource( 18 )
+Action = 0
+m_sprite = ExtResource( 21 )
+
+[node name="lb_BossDialog" type="Node2D" parent="BossDialog/Layers2/BossDialog"]
+position = Vector2( -472, -152 )
+script = ExtResource( 7 )
+
+[node name="ic_BossDialogContinue" type="Node2D" parent="BossDialog/Layers2/BossDialog"]
+position = Vector2( 8, -64 )
+script = ExtResource( 8 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="BossDialog/Layers2/BossDialog/ic_BossDialogContinue"]
+scale = Vector2( 1e-05, 1e-05 )
+texture = ExtResource( 16 )
+script = ExtResource( 18 )
+Action = 0
+m_sprite = SubResource( 12 )
+
+[node name="Action2" type="Node" parent="BossDialog"]
+
+[node name="Continue" type="Node2D" parent="."]
+script = ExtResource( 11 )
+
+[node name="Layers" type="Node2D" parent="Continue"]
+
+[node name="Action" type="Node" parent="Continue"]
+
+[node name="Layers2" type="Node2D" parent="Continue"]
+
+[node name="Continue" type="Node2D" parent="Continue/Layers2"]
+position = Vector2( 0, 32 )
+script = ExtResource( 9 )
+m_bIniVis = false
+
+[node name="ic_Continue" type="Node2D" parent="Continue/Layers2/Continue"]
+position = Vector2( 1696, 976 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 8 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Sprite" parent="Continue/Layers2/Continue/ic_Continue"]
+scale = Vector2( 1e-05, 1e-05 )
+texture = ExtResource( 13 )
+script = ExtResource( 18 )
+Action = 0
+m_sprite = SubResource( 18 )
+
+[node name="Action2" type="Node" parent="Continue"]
+
+[node name="subtitles" type="Node2D" parent="."]
+script = ExtResource( 11 )
+
+[node name="Layers" type="Node2D" parent="subtitles"]
+
+[node name="Action" type="Node" parent="subtitles"]
+
+[node name="Layers2" type="Node2D" parent="subtitles"]
+
+[node name="subtitles" type="Node2D" parent="subtitles/Layers2"]
+script = ExtResource( 9 )
+m_bIniVis = false
+
+[node name="lb_subtitles" type="Node2D" parent="subtitles/Layers2/subtitles"]
+position = Vector2( 896, 1032 )
+script = ExtResource( 7 )
+
+[node name="lb_subtitles-1" type="Node2D" parent="subtitles/Layers2/subtitles"]
+position = Vector2( 896, 1032 )
+script = ExtResource( 7 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+
+[node name="Action2" type="Node" parent="subtitles"]

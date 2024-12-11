@@ -1,8 +1,0 @@
-Dictionary:
-{
-	lb_Title = "Online-Optionen";
-	lb_MSG_BOX1 = "Wenn du online gehst,/nkannst du deinen Namen/nund Highscore senden und/ndie Highscores anderer/nSpieler sehen.";
-	lb_MSG_BOX2 = "Willst du während/ndieser Sitzung/nonline gehen?";
-	lb_MB_YES = "Ja";
-	lb_MB_NO = "Nein";
-};

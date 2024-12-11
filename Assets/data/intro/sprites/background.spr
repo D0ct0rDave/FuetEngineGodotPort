@@ -1,1 +1,0 @@
-Sprite:{ Name="background"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "background"; Size:{ Width = 1600.0; Height = 960.0; }; }; }; }; }; 

@@ -1,8 +1,0 @@
-Dictionary:
-{
-	lb_Title = "Opciones en línea";
-	lb_MSG_BOX1 = "Al conectarte en línea,/nenviarás tu nombre/ny mejor puntuación/ny podrás ver los de otros/njugadores.";
-	lb_MSG_BOX2 = "¿Quieres conectarte/ndurante esta/nsesión de juego?";
-	lb_MB_YES = "Sí";
-	lb_MB_NO = "No";
-};

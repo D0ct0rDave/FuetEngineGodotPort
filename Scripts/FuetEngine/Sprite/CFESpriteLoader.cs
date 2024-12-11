@@ -95,6 +95,7 @@ namespace FuetEngine
 
             CFESpriteFrame oFrame = Support.CreateObject<CFESpriteFrame>(spriteFrameScript);
             // oFrame.Name = "SpriteFrame";
+            oFrame.m_sMaterial  = _hMat;
             oFrame.m_oPivot     = new CFEVect2(0.0f, 0.0f);
             oFrame.m_oUVIni = new CFEVect2(0.0f, 0.0f);
             oFrame.m_oUVEnd = new CFEVect2(1.0f, 1.0f);
@@ -117,7 +118,7 @@ namespace FuetEngine
         }
 
         /// Loads an sprite from a given file
-        public static CFESprite oLoad(string _sFilename,bool _bLoadMaterials)
+        public static CFESprite oLoad(string _sFilename)
         {
             if (_sFilename == "") return (null);
 
@@ -128,8 +129,6 @@ namespace FuetEngine
             if (!oConfig.bInitialized())
             {
                 GD.Print("CFESpriteLoad::oLoad. Cannot load " + sFilename + " try to create one from Texture");
-
-                if (_bLoadMaterials == false) return (null);
 
                 // We haven't found the sprite definition file. Let's see i we can find
                 // a material and then build a basic sprite with it.

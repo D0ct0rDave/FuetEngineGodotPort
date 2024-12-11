@@ -1,8 +1,0 @@
-Dictionary:
-{
-	lb_Accept = "Continuar";
-	lb_Quit = "Salir";
-	lb_Settings = "Configuración";
-	lb_Minimap = "Inventario";
-	lb_Frame = "Mapa";
-};

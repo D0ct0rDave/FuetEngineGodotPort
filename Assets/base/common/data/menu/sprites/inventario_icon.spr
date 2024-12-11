@@ -1,1 +1,0 @@
-Sprite:{ Name="inventario_icon"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "inventario_icon"; Size:{ Width = 72.0; Height = 54.0; }; }; }; }; }; 

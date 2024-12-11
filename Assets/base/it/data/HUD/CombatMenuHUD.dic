@@ -1,5 +1,0 @@
-Dictionary:
-{
-	GAMEOVER_MSG_LINE = "YOU/nDIED";
-	NEW_CHALLENTE_ACHIEVED_MSG = "Sfida %d completata!";
-};

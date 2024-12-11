@@ -1,1 +1,0 @@
-Sprite:{ Name="cristal_ball"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "cristal_ball"; Size:{ Width = 128.0; Height = 128.0; }; }; }; }; }; 

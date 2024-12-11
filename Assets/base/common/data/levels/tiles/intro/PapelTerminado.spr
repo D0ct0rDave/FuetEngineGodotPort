@@ -1,1 +1,0 @@
-Sprite:{ Name="PapelTerminado"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "PapelTerminado"; Size:{ Width = 150.0; Height = 180.0; }; }; }; }; }; 

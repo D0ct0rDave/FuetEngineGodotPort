@@ -1,1 +1,0 @@
-Sprite:{ Name="cabeza"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "cabeza"; Size:{ Width = 149.0; Height = 157.0; }; }; }; }; }; 

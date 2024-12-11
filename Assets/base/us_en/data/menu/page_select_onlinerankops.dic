@@ -1,8 +1,0 @@
-Dictionary:
-{
-	lb_Title = "Online options";
-	lb_MSG_BOX1 = "Going online allows/nyou to send your/nname and best score/nand see the ones/nfrom other players.";
-	lb_MSG_BOX2 = "Do you want to go/nonline during this /ngame session?";
-	lb_MB_YES = "Yes";
-	lb_MB_NO = "No";
-};

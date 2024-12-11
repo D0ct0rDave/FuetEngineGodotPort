@@ -1,6 +1,0 @@
-Dictionary:
-{
-	lb_TEXT = "Uw huidige voortgang/nzal verloren gaan/n/nWeet u zeker/ndat u wilt stoppen?";
-	lb_Quit = "Ja";
-	lb_Back = "Nee";
-};

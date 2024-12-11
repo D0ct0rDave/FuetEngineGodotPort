@@ -8,7 +8,7 @@ using CFEColor = Godot.Color;
 namespace FuetEngine
 {
     [Tool]
-		public class CFEHUDPSys : CFEHUDObject 
+	public class CFEHUDPSys : CFEHUDObject 
 	{
 		// Make sure you provide a parameterless constructor.
 		public CFEHUDPSys()

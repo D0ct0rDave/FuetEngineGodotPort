@@ -10,28 +10,37 @@ namespace FuetEngine
 	{
 		protected override CFESprite LoadResource(string filename)
 		{
+			CFESprite spriteResource = null;
+
 			// Godot ResourceLoader expects the filename to have the extension so it
 			// can detect the appropriate ResourceLoader to load the resource.
-			string canonicalFilename = CFEStringUtils.sGetPath(filename) + "/" + CFEStringUtils.sGetFilename(filename) + ".spr";
+			string canonicalFilename = CFEStringUtils.sGetPath(filename) + "/" + CFEStringUtils.sGetFilename(filename);
+			string canonicalFilenameWithExt =  canonicalFilename + ".spr";
 
-			Resource resource = ResourceLoader.Load(canonicalFilename);
-			CFESprite spriteResource = resource as CFESprite;
-			
-			if (resource != null)
+			if (ResourceLoader.Exists(canonicalFilenameWithExt))
 			{
-				GD.Print("Resource loaded successfully: " + canonicalFilename);
+				Resource resource = ResourceLoader.Load(canonicalFilenameWithExt);
+
+				spriteResource = resource as CFESprite;				
+				if (spriteResource == null)
+				{
+					GD.Print("Cannot convert resource to Sprite: " + canonicalFilenameWithExt);	
+				}
 			}
 			else
 			{
-				GD.Print("Cannot load resource: " + canonicalFilename);
-			}
-			
-			if (spriteResource == null)
-			{
-				GD.Print("Cannot convert resource to Sprite: " + canonicalFilename);
+				spriteResource = CFESpriteLoader.oLoad(canonicalFilename);
+				if (spriteResource == null)
+				{
+					GD.Print("Cannot load Sprite: " + canonicalFilename);	
+				}
+				else
+				{
+					spriteResource.ResourceLocalToScene = true;
+				}
 			}
 
-			return spriteResource;
+			return spriteResource;				
 			
 			/*
 			string canonicalFilename = CFEStringUtils.sGetCanonicalPath(filename);

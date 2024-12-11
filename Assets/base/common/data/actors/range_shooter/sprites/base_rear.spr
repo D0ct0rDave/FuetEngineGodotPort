@@ -1,1 +1,0 @@
-Sprite:{ Name="base_rear"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "base_rear"; Size:{ Width = 210.0; Height = 29.0; }; }; }; }; }; 

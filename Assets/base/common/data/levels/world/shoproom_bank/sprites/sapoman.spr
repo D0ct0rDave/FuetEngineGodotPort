@@ -1,1 +1,0 @@
-Sprite:{ Name="sapoman"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "sapoman"; Size:{ Width = 1221.0; Height = 1080.0; }; }; }; }; }; 

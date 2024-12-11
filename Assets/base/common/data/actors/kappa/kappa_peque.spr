@@ -1,1 +1,0 @@
-Sprite:{ Name="kappa_peque"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "kappa_peque"; Size:{ Width = 178.0; Height = 267.0; }; }; }; }; }; 

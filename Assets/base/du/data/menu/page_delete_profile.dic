@@ -1,9 +1,0 @@
-Dictionary:
-{
-	lb_Title = "Speler Verwijderen";
-	DELETE_PROFILE_MESSAGE = "Uw voortgang en/nal uw verworvenheden/n zullen gewist worden./nZeker weten?";
-	ONLINE_ERROR_MESSAGE = "U moet online zijn/nom deze speler/nte verwijderen.";
-	lb_MB_YES = "Ja";
-	lb_MB_NO = "Ja";
-	lb_MB_OK = "Ok";
-};

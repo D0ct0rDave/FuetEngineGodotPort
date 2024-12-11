@@ -1,8 +1,0 @@
-Dictionary:
-{
-	lb_Accept = "Continue";
-	lb_Quit = "Quit";
-	lb_Settings = "Settings";
-	lb_Inventory = "Inventory";
-	lb_Frame = "Inventory";
-};

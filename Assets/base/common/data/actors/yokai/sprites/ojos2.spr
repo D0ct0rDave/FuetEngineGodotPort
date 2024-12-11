@@ -1,1 +1,0 @@
-Sprite:{ Name="ojos2"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "ojos2"; Size:{ Width = 31.0; Height = 45.0; }; }; }; }; }; 

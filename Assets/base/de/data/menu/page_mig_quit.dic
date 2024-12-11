@@ -1,6 +1,0 @@
-Dictionary:
-{
-	lb_TEXT = "Die erzielten/nFortschritte gehen /nverloren./n/nBist Du sicher, dass/nDu abbrechen willst?";
-	lb_Quit = "Ja";
-	lb_Back = "Nein";
-};

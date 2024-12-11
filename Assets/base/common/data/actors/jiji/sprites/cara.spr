@@ -1,1 +1,0 @@
-Sprite:{ Name="cara"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "cara"; Size:{ Width = 121.0; Height = 100.0; }; }; }; }; }; 

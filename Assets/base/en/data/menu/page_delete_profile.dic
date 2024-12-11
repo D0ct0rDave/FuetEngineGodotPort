@@ -1,9 +1,0 @@
-Dictionary:
-{
-	lb_Title = "Delete Player";
-	DELETE_PROFILE_MESSAGE = "Your progress and/nall your achievements/n will be deleted./nAre you sure?";
-	ONLINE_ERROR_MESSAGE = "You need to be/nonline to delete/nthis profile.";
-	lb_MB_YES = "Yes";
-	lb_MB_NO = "No";
-	lb_MB_OK = "Ok";
-};
