@@ -27,7 +27,7 @@
 			"**/*.import": true
 		},
 		"symbolSearchPath": "C:\\utils\\Godot_v3.5.3\\GodotSharp\\Api\\Debug;C:\\utils\\Godot_v3.5.3\\GodotSharp\\Api\\Release;E:\\Projects\\Godot\\MyProject2\\.godot\\mono\\temp\\obj\\Debug",
-		"godotTools.editorPath.godot3": "C:\\utils\\Godot_v3.5.3\\Godot_v3.5.3-stable_mono_win64.exe",
+		"godotTools.editorPath.godot3": "C:\\utils\\Godot_v3.6\\Godot_v3.6-stable_mono_win64.exe",
 		"csharp.debug.symbolOptions.searchPaths": [
 			"C:/utils/Godot_v3.5.3/GodotSharp/Api/Debug",
 			"C:/utils/Godot_v3.5.3/GodotSharp/Api/Release",
@@ -59,6 +59,7 @@
 				"preLaunchTask": "build",
 				"executable": "${config:godot.csharp.executablePath}",
 				"executableArguments": [
+					"--verbose",
 					"--path",
 					"${workspaceRoot}"
 				],
@@ -73,36 +74,7 @@
 				"preLaunchTask": "build",
 				"executable": "${config:godot.csharp.executablePath}",
 				"executableArguments": [
-					"--path",
-					"${workspaceRoot}",
-					"--debug",
-					"--debug-collisions"
-				],
-			},
-			{
-				// Uses "C# tools for Godot" extension and works!
-				// https://marketplace.visualstudio.com/items?itemName=neikeq.godot-csharp-vscode#debugger-launch-configurations
-				"name": "--  Launch  --",
-				"type": "godot-mono",
-				"request": "launch",
-				"mode": "executable",
-				"preLaunchTask": "build",
-				"executable": "C:/utils/Godot_v3.6-stable_mono_win64/Godot_v3.6-stable_mono_win64.exe",
-				"executableArguments": [
-					"--path",
-					"${workspaceRoot}"
-				],
-			},
-			{
-				// Uses "C# tools for Godot" extension and works!
-				// https://marketplace.visualstudio.com/items?itemName=neikeq.godot-csharp-vscode#debugger-launch-configurations
-				"name": "--  Launch Debug Collision --",
-				"type": "godot-mono",
-				"request": "launch",
-				"mode": "executable",
-				"preLaunchTask": "build",
-				"executable": "C:/utils/Godot_v3.6-stable_mono_win64/Godot_v3.6-stable_mono_win64.exe",
-				"executableArguments": [
+					"--verbose",
 					"--path",
 					"${workspaceRoot}",
 					"--debug",
@@ -114,7 +86,7 @@
 				"type": "godot-mono",				
 				"request": "attach",
 				"address": "localhost",
-				"port": 23685
+				"port": 23685 			// Project Settings / Mono / Debugger Agent / Port
 			}
 		]
 	},

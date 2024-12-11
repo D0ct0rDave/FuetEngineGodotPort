@@ -49,28 +49,71 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 	// ------------------------------------------------------------------------	
 	public override string GetSaveExtension()
 	{
-		return "tscn";
+		return "tres";
+	}
+	// ------------------------------------------------------------------------	
+	private int SaveResource(Resource _resource, string _savePath)
+	{
+		Godot.Error saveError = ResourceSaver.Save(_savePath, _resource/* , Godot.ResourceSaver.SaverFlags.BundleResources | Godot.ResourceSaver.SaverFlags.RelativePaths*/);
+		if (saveError != Error.Ok)
+		{
+			return 1;
+		}
+
+		return 0;
+	}
+	// ------------------------------------------------------------------------	
+	private int SaveScene(Node _scene, string _savePath)
+	{
+		var packedScene = new PackedScene();
+		Godot.Error error = packedScene.Pack(_scene);
+
+		if(error == Error.Ok)
+		{
+			return SaveResource(packedScene, _savePath + ".tscn");
+		}
+		
+		return 1;
 	}
 	// ------------------------------------------------------------------------	
 	public override int Import(string _sourceFile, string _savePath, Godot.Collections.Dictionary _options, Godot.Collections.Array _r_platform_variants, Godot.Collections.Array _r_gen_files)
 	{
-		Node node = ConvertConfigToNode(_sourceFile);
-		if (node != null)
-		{
-			var packedScene = new PackedScene();
-			Godot.Error error = packedScene.Pack(node);
+		// Node node = ConvertConfigToNode(_sourceFile);
+		// return SaveScene(node, _savePath);
 
-			if(error == Error.Ok)
+		Resource resource = ConvertConfigToResource(_sourceFile);
+		return SaveResource(resource, _savePath + "." + GetSaveExtension());
+	}
+	// ------------------------------------------------------------------------	
+	private Resource ConvertConfigToResource(string _sFilename)
+	{
+		string extension = _sFilename.Substring(_sFilename.Length-3);
+		string filenameWithoutExtension = _sFilename.Substr(0,_sFilename.Length - 4); 
+
+		if (extension == "spr")
+		{
+			return CFESpriteMgr.Instance.Load(filenameWithoutExtension);
+		}
+		else if (extension == "hud")
+		{
+			CFEHUD oHUD = CFEHUDLoader.oLoad(filenameWithoutExtension);
+			Node childNode = oHUD as Node;
+			SetHierarchyOwner(ref childNode, childNode);
+	
+			var packedScene = new PackedScene();
+			Godot.Error error = packedScene.Pack(childNode);
+
+			if (error != Error.Ok)
 			{
-				Godot.Error saveError = ResourceSaver.Save(_savePath + "." + GetSaveExtension(), packedScene/* , Godot.ResourceSaver.SaverFlags.BundleResources | Godot.ResourceSaver.SaverFlags.RelativePaths*/ );
-				if (saveError != Error.Ok)
-				{
-					return 1;
-				}
-				return 0;
+				return packedScene;
+			}
+			else
+			{
+				return null;
 			}
 		}
-		return 1;
+		
+		return null;
 	}
 	// ------------------------------------------------------------------------	
 	private Node ConvertConfigToNode(string _sFilename)
@@ -81,7 +124,7 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 		if (extension == "spr")
 		{
 			CFESprite spriteResource = CFESpriteMgr.Instance.Load(filenameWithoutExtension);
-			CFESpriteInstance spriteInstance = Support.CreateObject<Node2D>(FuetEngine.Support.SPRITE_INSTANCE_SCRIPT_FILE) as CFESpriteInstance;
+			CFESpriteInstance spriteInstance = Support.CreateObject<CFESpriteInstance>(FuetEngine.Support.SPRITE_INSTANCE_SCRIPT_FILE);
 
 			spriteInstance.Name = "CFESpriteInstance";
 			spriteInstance.Init(spriteResource);

@@ -1,7 +1,17 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scripts/test.cs" type="Script" id=1]
+[ext_resource path="res://Assets/base/common/data/items/shop/jet-pack.png" type="Texture" id=2]
+[ext_resource path="res://Assets/base/common/data/items/shop/items.spr" type="Resource" id=3]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=49]
 
 [node name="Camera2D" type="Camera2D"]
 offset = Vector2( 240, 0 )
 script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+offset = Vector2( 4, -51 )
+script = ExtResource( 49 )
+Action = 1
+m_sprite = ExtResource( 3 )

@@ -3,7 +3,13 @@ using Godot;
 namespace FuetEngine
 {
 	[Tool]
+	
+	#if SPRITE_BLENDING
 	public class CFESpriteInstance : Node2D
+	#else
+	public class CFESpriteInstance : Sprite
+	#endif
+
 	{
 		// --------------------------------------------------------------------
 		/// Speed multiplier for this instance.
@@ -19,8 +25,12 @@ namespace FuetEngine
 		// ------------------------------------
 		/// To speedup things
 		private bool m_actionHasOneFrame = false;
+		
+		#if SPRITE_BLENDING
 		private Sprite m_mainSprite = null;
 		private Sprite m_secondarySprite = null;
+		#endif
+		
 		[Export]
 		private CFESprite m_sprite = null;
 		[Export]
@@ -47,7 +57,8 @@ namespace FuetEngine
 			}
 		}
 		// --------------------------------------------------------------------
-		CFESpriteInstance()
+		// Make sure you provide a parameterless constructor.
+		public CFESpriteInstance()
 		{
 		}
 		// --------------------------------------------------------------------
@@ -64,6 +75,7 @@ namespace FuetEngine
 		// --------------------------------------------------------------------
 		public void Init()
 		{
+			#if SPRITE_BLENDING
 			if (FindNode("MainFrame", false) == null)
 			{
 				Sprite mainSprite = new Sprite();
@@ -79,18 +91,21 @@ namespace FuetEngine
 			}
 
 			m_mainSprite = GetChild(0) as Sprite;
-			m_secondarySprite = GetChild(1) as Sprite;
+			m_secondarySprite = GetChild(1) as Sprite;			
+			#endif
 			
 			if (m_sprite != null)
 			{
 				SetAction(0);
 			}
 			
+			#if SPRITE_BLENDING
 			// No blending between frames for now.
 			if (m_secondarySprite != null)
 			{
 				FuetEngine.Support.SetObjectEnabled(m_secondarySprite, false);
 			}
+			#endif
 		}
 		// --------------------------------------------------------------------
 		public void SetAction(int _iAction)
@@ -107,6 +122,7 @@ namespace FuetEngine
 			CFESpriteInstUpdater.SetCurrentActionTime(this, 0.0f);
 			m_actionHasOneFrame = (m_curAction.GetNumberOfFrames() == 1);
 			
+			#if SPRITE_BLENDING
 			SetFrameToSprite(m_curAction.GetFrame(0), ref m_mainSprite);
 
 			if (m_actionHasOneFrame)
@@ -114,8 +130,12 @@ namespace FuetEngine
 				if (m_secondarySprite != null)
 				{
 					FuetEngine.Support.SetObjectEnabled(m_secondarySprite, false);
-				}
+				}				
 			}
+			#else
+			Sprite sprite = this;
+			SetFrameToSprite(m_curAction.GetFrame(0), ref sprite);
+			#endif
 		}
 		// --------------------------------------------------------------------        
 		public void SetAction(string _sAction)
@@ -152,7 +172,12 @@ namespace FuetEngine
 			if (currentFrame == null)
 				return;
 				
+			#if SPRITE_BLENDING
 			SetFrameToSprite(currentFrame, ref m_mainSprite);
+			#else
+			Sprite sprite = this;
+			SetFrameToSprite(currentFrame, ref sprite);
+			#endif
 		}
 		/*
 		// --------------------------------------------------------------------

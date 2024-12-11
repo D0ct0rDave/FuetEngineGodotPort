@@ -1,19 +1,25 @@
-﻿Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuetEngineGodotPort", "FuetEngineGodotPort.csproj", "{AEE5AA16-1CF0-4636-8F0C-53C84DE99522}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FuetEngineGodotPort", "FuetEngineGodotPort.csproj", "{07BD298D-FA5B-42B4-8F08-9A84585DC45B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-	Debug|Any CPU = Debug|Any CPU
-	ExportDebug|Any CPU = ExportDebug|Any CPU
-	ExportRelease|Any CPU = ExportRelease|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AEE5AA16-1CF0-4636-8F0C-53C84DE99522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AEE5AA16-1CF0-4636-8F0C-53C84DE99522}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AEE5AA16-1CF0-4636-8F0C-53C84DE99522}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
-		{AEE5AA16-1CF0-4636-8F0C-53C84DE99522}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
-		{AEE5AA16-1CF0-4636-8F0C-53C84DE99522}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
-		{AEE5AA16-1CF0-4636-8F0C-53C84DE99522}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+		{07BD298D-FA5B-42B4-8F08-9A84585DC45B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07BD298D-FA5B-42B4-8F08-9A84585DC45B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07BD298D-FA5B-42B4-8F08-9A84585DC45B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07BD298D-FA5B-42B4-8F08-9A84585DC45B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A1A021F-C703-47C3-BB31-1E576C2C4A0F}
 	EndGlobalSection
 EndGlobal

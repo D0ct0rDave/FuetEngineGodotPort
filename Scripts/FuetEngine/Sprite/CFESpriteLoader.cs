@@ -20,7 +20,8 @@ namespace FuetEngine
         // ------------------------------------------------------------------------
         private static void ProcessSpriteFrame(ref CFESpriteFrame _spriteFrame)
         {
-            string textureFilename = _spriteFrame.m_sMaterial + ".png";
+            string textureFilename = CFEStringUtils.sGetCanonicalPath( _spriteFrame.m_sMaterial + ".png" );
+
             Texture texture = ResourceLoader.Load<Texture>(textureFilename);
             if (texture == null)
             {
@@ -52,10 +53,6 @@ namespace FuetEngine
                 
                 _spriteFrame.m_hMaterial = atlasTexture;
             }
-
-            // compute scale
-            _spriteFrame.m_oScale = new Vector2(_spriteFrame.m_oSize.x / region.Size.x, _spriteFrame.m_oSize.y / region.Size.y);
-            
             // 1OverDims
             float r1OverW = 0.0f;
             float r1OverH = 0.0f;
@@ -75,6 +72,9 @@ namespace FuetEngine
             }                                
             
             _spriteFrame.m_o1OverDims = new CFEVect2(r1OverW, r1OverH);
+
+            // compute scale
+            _spriteFrame.m_oScale = new Vector2(_spriteFrame.m_oSize.x / region.Size.x, _spriteFrame.m_oSize.y / region.Size.y);
         }
         // ----------------------------------------------------------------------------
         public static CFESprite oBuildBasicSprite(string _hMat, string _spriteName)
@@ -127,6 +127,8 @@ namespace FuetEngine
             CFEConfigFile oConfig = new CFEConfigFile(sFilename);
             if (!oConfig.bInitialized())
             {
+                GD.Print("CFESpriteLoad::oLoad. Cannot load " + sFilename + " try to create one from Texture");
+
                 if (_bLoadMaterials == false) return (null);
 
                 // We haven't found the sprite definition file. Let's see i we can find

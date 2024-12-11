@@ -14,7 +14,8 @@ namespace FuetEngine
         public List<CFESpriteAction> m_oActions = new List<CFESpriteAction>();
         [Export]
         public string Name {get;set;}
-
+        
+        // Make sure you provide a parameterless constructor.
         public CFESprite() { SetName("CFESprite"); }
 
         /// Retrieves an action by the given index.

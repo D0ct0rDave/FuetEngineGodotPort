@@ -37,7 +37,10 @@ CFEConfigFileImporter={
 
 [mono]
 
+runtime/unhandled_exception_policy=1
 project/assembly_name="FuetEngineGodotPort"
+debugger_agent/wait_for_debugger=true
+debugger_agent/wait_timeout=15000
 
 [physics]
 

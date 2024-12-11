@@ -218,17 +218,24 @@ namespace FuetEngine
 				if (sSprite != "")
 				{
 					string sSpriteFile = m_sWorkingDir + "/" + sSprite;
-                    
-					CFESprite spriteResource = CFESpriteMgr.Instance.Load(sSpriteFile);
-					CFESpriteInstance spriteInstance = Support.CreateObject<Node2D,CFESpriteInstance>(FuetEngine.Support.SPRITE_INSTANCE_SCRIPT_FILE);
-
-					spriteInstance.Name = "CFESpriteInstance";
-					spriteInstance.Init(spriteResource);
-
-					spriteInstance.SetAction(oIcon.iGetIniAction());
-                    // spriteInstance.m_oColor            = oRenderColor(m_oModColor, poIcon);
 					
-					oIcon.SetIcon(spriteInstance);
+					CFESprite spriteResource = CFESpriteMgr.Instance.Load(sSpriteFile);
+					if (spriteResource != null)
+					{
+						CFESpriteInstance spriteInstance = Support.CreateObject<CFESpriteInstance>(FuetEngine.Support.SPRITE_INSTANCE_SCRIPT_FILE);
+
+						spriteInstance.Name = "CFESpriteInstance";
+						spriteInstance.Init(spriteResource);
+
+						spriteInstance.SetAction(oIcon.iGetIniAction());
+						// spriteInstance.m_oColor            = oRenderColor(m_oModColor, poIcon);
+						
+						oIcon.SetIcon(spriteInstance);
+					}
+					else
+					{
+						GD.Print("CFEHUDIcon cannot load sprite resource " + sSpriteFile);
+					}
                 }
 
 				return oIcon;
