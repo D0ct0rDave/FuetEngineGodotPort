@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/backarrow.spr-a4b5564b2c9b8d59ea769af0ac9de944.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/menu/_old/sprites/backarrow.spr"
+dest_files=[ "res://.import/backarrow.spr-a4b5564b2c9b8d59ea769af0ac9de944.tres" ]
+
+[params]
+

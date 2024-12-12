@@ -1,0 +1,577 @@
+HUDElement:
+{
+	Name = "BT_Minimap";
+	NumLayers = 1;
+	Layer0:
+	{
+		Type = "Group";
+		Name = "BT_Minimap";
+		Position:
+		{
+			x = 560.0000;
+			y = 208.0000;
+		};
+		Depth = -0.0100;
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+		NumObjects = 2;
+		Object0:
+		{
+			Type = "Icon";
+			Sprite = "sprites/button_face";
+			Name = "ic_Minimap-0";
+			Action = 0;
+			Position:
+			{
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+		};
+		Object1:
+		{
+			Type = "Icon";
+			Sprite = "sprites/minimap_icon";
+			Name = "ic_Minimap-1";
+			Action = 0;
+			Position:
+			{
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+		};
+	};
+	NumElemActions = 10;
+	Action0:
+	{
+		Name = "Default";
+	};
+	Action1:
+	{
+		Name = "OnEnterPage";
+		ObjAction0:
+		{
+			HUDObject = "BT_Minimap";
+			XFunc:
+			{
+				NumKeyFrames = 3;
+				KeyFrame0:
+				{
+					Value = -688.0000;
+				};
+				KeyFrame1:
+				{
+					Time = 0.4000;
+					Value = -688.0000;
+					LerpFunc = "sin";
+				};
+				KeyFrame2:
+				{
+					Time = 0.8000;
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+	Action2:
+	{
+		Name = "OnExitPage";
+		ObjAction0:
+		{
+			HUDObject = "BT_Minimap";
+			XFunc:
+			{
+				NumKeyFrames = 2;
+				KeyFrame0:
+				{
+					LerpFunc = "sin";
+				};
+				KeyFrame1:
+				{
+					Time = 0.4000;
+					Value = -688.0000;
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+	Action3:
+	{
+		Name = "OnFocus";
+		ObjAction0:
+		{
+			HUDObject = "BT_Minimap";
+			XFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				NumKeyFrames = 2;
+				KeyFrame0:
+				{
+				};
+				KeyFrame1:
+				{
+					Time = 0.1000;
+					x = 1.0360;
+					y = 1.0360;
+				};
+			};
+			ColorFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+	Action4:
+	{
+		Name = "OnDisable";
+		ObjAction0:
+		{
+			HUDObject = "BT_Minimap";
+			XFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				KeyFrame0:
+				{
+					r = 0.6078;
+					g = 0.6078;
+					b = 0.6078;
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+	Action5:
+	{
+		Name = "OnIdle";
+	};
+	Action6:
+	{
+		Name = "OnPress";
+		ObjAction0:
+		{
+			HUDObject = "BT_Minimap";
+			XFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				NumKeyFrames = 5;
+				KeyFrame0:
+				{
+				};
+				KeyFrame1:
+				{
+					Time = 0.1000;
+					a = 0.0000;
+				};
+				KeyFrame2:
+				{
+					Time = 0.2000;
+				};
+				KeyFrame3:
+				{
+					Time = 0.3000;
+					a = 0.0000;
+				};
+				KeyFrame4:
+				{
+					Time = 0.4000;
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+					EventName = "PlaySound";
+					EventValue = "NextPageSound";
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+	Action7:
+	{
+		Name = "OnRelease";
+	};
+	Action8:
+	{
+		Name = "OnLoseFocus";
+		ObjAction0:
+		{
+			HUDObject = "BT_Minimap";
+			XFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				NumKeyFrames = 2;
+				KeyFrame0:
+				{
+					x = 1.0360;
+					y = 1.0360;
+				};
+				KeyFrame1:
+				{
+					Time = 0.1000;
+				};
+			};
+			ColorFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+	Action9:
+	{
+		Name = "OnSelect";
+		ObjAction0:
+		{
+			HUDObject = "BT_Minimap";
+			XFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				WrapMode = "Loop";
+				NumKeyFrames = 3;
+				KeyFrame0:
+				{
+				};
+				KeyFrame1:
+				{
+					Time = 0.4000;
+					a = 0.5020;
+				};
+				KeyFrame2:
+				{
+					Time = 0.8000;
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+};

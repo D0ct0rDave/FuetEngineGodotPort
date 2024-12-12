@@ -1,0 +1,52 @@
+HUDObject:
+{
+	Type = "Group";
+	Name = "BT_FXInc";
+	Action = 0;
+	Position:
+	{
+		x = 1152.0000;
+		y = 512.0000;
+	};
+	Scale:
+	{
+	};
+	Color:
+	{
+	};
+	NumObjects = 2;
+	Object0:
+	{
+		Type = "Icon";
+		Sprite = "sprites/8";
+		Name = "ic_FXInc";
+		Action = 0;
+		Position:
+		{
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+	Object1:
+	{
+		Type = "Label";
+		Text = "+";
+		Font = "../fonts/default";
+		HAlignment = "Center";
+		VAlignment = "Center";
+		Name = "lb_FXInc";
+		Position:
+		{
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+};

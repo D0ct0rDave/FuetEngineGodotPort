@@ -1,0 +1,101 @@
+HUDObject:
+{
+	Type = "Group";
+	Name = "BG-gradient";
+	Position:
+	{
+	};
+	Depth = 0.9990;
+	Scale:
+	{
+	};
+	Color:
+	{
+	};
+	NumObjects = 2;
+	Object0:
+	{
+		Type = "Rect";
+		Width = 1280.0000;
+		Height = 480.0000;
+		PivotY = 0.0000;
+		Corner0:
+		{
+			r = 0.1647;
+			g = 0.2039;
+			b = 0.4196;
+		};
+		Corner1:
+		{
+			r = 0.1647;
+			g = 0.2039;
+			b = 0.4196;
+		};
+		Corner2:
+		{
+			r = 0.1725;
+			g = 0.2196;
+			b = 0.4118;
+		};
+		Corner3:
+		{
+			r = 0.1725;
+			g = 0.2196;
+			b = 0.4118;
+		};
+		Name = "rt_BG-gradient";
+		Position:
+		{
+			x = 640.0000;
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+	Object1:
+	{
+		Type = "Rect";
+		Width = 1280.0000;
+		Height = 525.0000;
+		PivotY = 0.0000;
+		Corner0:
+		{
+			r = 0.1725;
+			g = 0.2196;
+			b = 0.4118;
+		};
+		Corner1:
+		{
+			r = 0.1725;
+			g = 0.2196;
+			b = 0.4118;
+		};
+		Corner2:
+		{
+			r = 0.1255;
+			g = 0.0000;
+			b = 0.0000;
+		};
+		Corner3:
+		{
+			r = 0.1255;
+			g = 0.0000;
+			b = 0.0000;
+		};
+		Name = "rt_BG-gradient-1";
+		Position:
+		{
+			x = 640.0000;
+			y = 480.0000;
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+};

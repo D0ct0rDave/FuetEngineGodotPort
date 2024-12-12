@@ -1,0 +1,425 @@
+EditorHUD:
+{
+	WindowWidth = 1628;
+WindowHeight = 1062;
+	WindowLayout = "layout2|name=Toolbar;caption=HUD toolbar;state=2108156;dir=1;layer=10;row=0;pos=0;prop=100000;bestw=1319;besth=42;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Viewer;caption=Viewer;state=20972288;dir=5;layer=0;row=1;pos=0;prop=100000;bestw=800;besth=609;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Timeline;caption=Actions & Timeline;state=23070716;dir=3;layer=0;row=2;pos=0;prop=100000;bestw=864;besth=199;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Layers;caption=HUD Objects;state=16779260;dir=2;layer=1;row=0;pos=0;prop=90309;bestw=411;besth=387;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Properties;caption=HUD Object properties;state=16779260;dir=2;layer=1;row=0;pos=1;prop=109691;bestw=411;besth=387;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(1,10,0)=44|dock_size(5,0,1)=398|dock_size(3,0,2)=303|dock_size(2,1,0)=398|";
+	ViewGrid = false;
+	GridSelection = 6;
+	Background = "../gfx/background2";
+	ViewBackground = false;
+	GuardBandMode = 6;
+	DebugApp =  "(null)";
+	Zoom =  0.523;
+	TransX = -412.650;
+	TransY = -75.847;
+	Element0:
+	{
+		Object = "Background";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element1:
+		{
+			Object = "bck";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element2:
+		{
+			Object = "Frame";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+			Element3:
+			{
+				Object = "ic_Frame";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element4:
+			{
+				Object = "ic_Frame-1";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element5:
+			{
+				Object = "ic_Frame-2";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element6:
+			{
+				Object = "lb_Frame";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+	Element7:
+	{
+		Object = "MinimapFrame";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = true;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element8:
+		{
+			Object = "g_MinimapFrame";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = true;
+			Prefab= "";
+		};
+
+			Element9:
+			{
+				Object = "ic_MinimapFrame";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element10:
+			{
+				Object = "ic_MinimapFrame-1";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element11:
+			{
+				Object = "ic_MinimapFrame-2";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element12:
+			{
+				Object = "ic_MinimapFrame-3";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element13:
+			{
+				Object = "ic_MinimapFrame-4";
+				Locked = false;
+				LinkScale = false;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element14:
+			{
+				Object = "ic_MinimapFrame-5";
+				Locked = false;
+				LinkScale = false;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element15:
+			{
+				Object = "ic_MinimapFrame-6";
+				Locked = false;
+				LinkScale = false;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element16:
+			{
+				Object = "ic_MinimapFrame-7";
+				Locked = false;
+				LinkScale = false;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element17:
+			{
+				Object = "rt_MinimapFrame";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+		Element18:
+		{
+			Object = "g_mm";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = true;
+			Selected = false;
+			Visible = true;
+			Prefab= "";
+		};
+
+			Element19:
+			{
+				Object = "ic_Minimapa";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = true;
+				Prefab= "";
+			};
+
+			Element20:
+			{
+				Object = "sh_Minimapa";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = true;
+				Prefab= "";
+			};
+
+			Element21:
+			{
+				Object = "ic_mm-1";
+				Locked = false;
+				LinkScale = false;
+				Show = true;
+				Expanded = false;
+				Selected = true;
+				Visible = true;
+				Prefab= "";
+			};
+
+	Element22:
+	{
+		Object = "BT_Accept";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element23:
+		{
+			Object = "ic_Accept";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element24:
+		{
+			Object = "ic_Accept-1";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element25:
+	{
+		Object = "BT_Inventory";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element26:
+		{
+			Object = "ic_Inventory";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element27:
+		{
+			Object = "ic_Inventory-1";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element28:
+	{
+		Object = "BT_Settings";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element29:
+		{
+			Object = "ic_Settings";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element30:
+		{
+			Object = "ic_Settings-1";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element31:
+	{
+		Object = "BT_Quit";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element32:
+		{
+			Object = "ic_Quit";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element33:
+		{
+			Object = "ic_Quit-1";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	NumElements = 34;
+
+};

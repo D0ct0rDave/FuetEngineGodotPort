@@ -1,0 +1,36 @@
+HUDObject:
+{
+	Type = "Group";
+	Name = "Title";
+	Position:
+	{
+		x = 640.0000;
+		y = 480.0000;
+	};
+	Scale:
+	{
+	};
+	Color:
+	{
+	};
+	NumObjects = 1;
+	Object0:
+	{
+		Type = "Label";
+		Text = "Reset Game Data";
+		Font = "../fonts/default";
+		HAlignment = "Center";
+		VAlignment = "Center";
+		Name = "lb_Title";
+		Position:
+		{
+			y = 350.0000;
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+};

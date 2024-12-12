@@ -1,0 +1,582 @@
+HUDElement:
+{
+	Name = "BT_Continue";
+	NumLayers = 1;
+	Layer0:
+	{
+		Type = "Group";
+		Name = "BT_Continue";
+		Position:
+		{
+			x = 912.0000;
+			y = 416.0000;
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+		NumObjects = 2;
+		Object0:
+		{
+			Type = "Icon";
+			Sprite = "sprites/3";
+			Name = "ic_Continue";
+			Action = 0;
+			Position:
+			{
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+		};
+		Object1:
+		{
+			Type = "Label";
+			Text = "Continuar";
+			Font = "../fonts/default";
+			HAlignment = "Center";
+			VAlignment = "Center";
+			Name = "lb_Continue";
+			Position:
+			{
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+		};
+	};
+	NumElemActions = 10;
+	Action0:
+	{
+		Name = "Default";
+	};
+	Action1:
+	{
+		Name = "OnFocus";
+		ObjAction0:
+		{
+			HUDObject = "BT_Continue";
+			XFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				NumKeyFrames = 2;
+				KeyFrame0:
+				{
+				};
+				KeyFrame1:
+				{
+					Time = 0.1000;
+					x = 1.0360;
+					y = 1.0360;
+				};
+			};
+			ColorFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+	Action2:
+	{
+		Name = "OnEnterPage";
+		ObjAction0:
+		{
+			HUDObject = "BT_Continue";
+			XFunc:
+			{
+				NumKeyFrames = 3;
+				KeyFrame0:
+				{
+					Value = 2000.0000;
+				};
+				KeyFrame1:
+				{
+					Time = 0.5000;
+					Value = 2000.0000;
+				};
+				KeyFrame2:
+				{
+					Time = 0.7000;
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+	Action3:
+	{
+		Name = "OnDisable";
+		ObjAction0:
+		{
+			HUDObject = "BT_Continue";
+			XFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				KeyFrame0:
+				{
+					r = 0.0000;
+					g = 0.0000;
+					a = 0.3000;
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+	Action4:
+	{
+		Name = "OnIdle";
+	};
+	Action5:
+	{
+		Name = "OnPress";
+		ObjAction0:
+		{
+			HUDObject = "BT_Continue";
+			XFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				NumKeyFrames = 5;
+				KeyFrame0:
+				{
+				};
+				KeyFrame1:
+				{
+					Time = 0.1000;
+					a = 0.0000;
+				};
+				KeyFrame2:
+				{
+					Time = 0.2000;
+				};
+				KeyFrame3:
+				{
+					Time = 0.3000;
+					a = 0.0000;
+				};
+				KeyFrame4:
+				{
+					Time = 0.4000;
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+					EventName = "PlaySound";
+					EventValue = "NextPageSound";
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+	Action6:
+	{
+		Name = "OnRelease";
+	};
+	Action7:
+	{
+		Name = "OnExitPage";
+		ObjAction0:
+		{
+			HUDObject = "BT_Continue";
+			XFunc:
+			{
+				NumKeyFrames = 3;
+				KeyFrame0:
+				{
+					LerpFunc = "sin";
+				};
+				KeyFrame1:
+				{
+					Time = 0.4000;
+				};
+				KeyFrame2:
+				{
+					Time = 0.6000;
+					Value = 2000.0000;
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+	Action8:
+	{
+		Name = "OnLoseFocus";
+		ObjAction0:
+		{
+			HUDObject = "BT_Continue";
+			XFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				NumKeyFrames = 2;
+				KeyFrame0:
+				{
+					x = 1.0360;
+					y = 1.0360;
+				};
+				KeyFrame1:
+				{
+					Time = 0.1000;
+				};
+			};
+			ColorFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+	Action9:
+	{
+		Name = "OnSelect";
+		ObjAction0:
+		{
+			HUDObject = "BT_Continue";
+			XFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				WrapMode = "Loop";
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				WrapMode = "Loop";
+				NumKeyFrames = 3;
+				KeyFrame0:
+				{
+				};
+				KeyFrame1:
+				{
+					Time = 0.4000;
+					a = 0.5020;
+				};
+				KeyFrame2:
+				{
+					Time = 0.8000;
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+};

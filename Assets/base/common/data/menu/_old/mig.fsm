@@ -1,0 +1,56 @@
+<?xml version='1.0'?>
+<!DOCTYPE qfsmproject SYSTEM 'qfsm.dtd'>
+<qfsmproject version="0.52" author="Qfsm" >
+  <machine nummooreout="8" transfontitalic="0" draw_it="1" statefontsize="8" transfont="Helvetica" statefontitalic="0" author="" description="" version="" name="FSM" arrowtype="1" numbits="4" statefontweight="50" statefont="Helvetica" numin="8" transfontsize="8" transfontweight="50" type="1" numout="8" initialstate="0" >
+    <outputnames_moore>s_out7,s_out6,s_out5,s_out4,s_out3,s_out2,s_out1,s_out0</outputnames_moore>
+    <inputnames>i_7,i_6,i_5,i_4,i_3,i_2,i_1,i_0</inputnames>
+    <outputnames>o_7,o_6,o_5,o_4,o_3,o_2,o_1,o_0</outputnames>
+    <itransition ypos="191" endx="144" xpos="84" endy="191" />
+    <state pencolor="0" radius="40" description="SelectButton=&quot;BT_Accept&quot;;" finalstate="0" moore_outputs="" ypos="191" code="0" xpos="184" linewidth="1" >page_mig_optionsel</state>
+    <state pencolor="0" radius="40" description="PrevPage=&quot;page_mig_optionsel&quot;;&#xa;NextPage=&quot;page_mig_optionsel&quot;;&#xa;SelectButton=&quot;BT_Back&quot;;" finalstate="0" moore_outputs="" ypos="224" code="15" xpos="471" linewidth="1" >page_mig_settings</state>
+    <state pencolor="0" radius="40" description="SelectButton=&quot;BT_Back&quot;;" finalstate="0" moore_outputs="" ypos="347" code="3" xpos="389" linewidth="1" >page_mig_quit</state>
+    <state pencolor="0" radius="40" description="" finalstate="0" moore_outputs="" ypos="421" code="2" xpos="590" linewidth="1" >GotoEnd</state>
+    <transition c1x="385.7596403130197" c2y="131.6551171513343" c1y="24.98483869563262" description="" straight="0" type="1" ypos="165.497291438631" endx="614.2417286105142" xpos="214.8157728449876" endy="389.1827311987" c2x="655.945236391566" >
+      <from>0</from>
+      <to>2</to>
+      <inputs default="0" any="0" invert="0" >BT_Accept</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="251.1084459565843" c2y="169.6584931644442" c1y="160.4824713919215" description="" straight="0" type="1" ypos="179.713347040338" endx="433.0526680779794" xpos="222.3746200628508" endy="211.3508893593265" c2x="357.1523256097785" >
+      <from>0</from>
+      <to>15</to>
+      <inputs default="0" any="0" invert="0" >BT_Settings</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="259.0248298312343" c2y="251.4091993367114" c1y="229.4746052686804" description="" straight="0" type="1" ypos="217.9069117598525" endx="367.0537423405271" xpos="213.5976029358378" endy="313.5580835665175" c2x="304.6239248838585" >
+      <from>0</from>
+      <to>3</to>
+      <inputs default="0" any="0" invert="0" >BT_Quit</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="361.829881609502" c2y="197.7538016313435" c1y="210.8769008156718" description="" straight="1" type="1" ypos="224" endx="223.4896448285059" xpos="431" endy="184.6307024470152" c2x="292.6597632190039" >
+      <from>15</from>
+      <to>0</to>
+      <inputs default="0" any="0" invert="0" >BT_Accept</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="376.1581532844731" c2y="229.2502953269026" c1y="264.125850698753" description="" straight="0" type="1" ypos="238.8556270541642" endx="223.0176400827083" xpos="433.8609323645896" endy="199.8104348573857" c2x="281.3836304456986" >
+      <from>15</from>
+      <to>0</to>
+      <inputs default="0" any="0" invert="0" >BT_Back</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="251.4010734110143" c2y="286.0547413431011" c1y="315.5827140555383" description="" straight="0" type="1" ypos="327.8877744079721" endx="201.8885438199983" xpos="353.8613769063238" endy="226.7770876399966" c2x="221.8293137357031" >
+      <from>3</from>
+      <to>0</to>
+      <inputs default="0" any="0" invert="0" >BT_Back</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="468.0893977442172" c2y="393.4943856403177" c1y="377.4826867032893" description="" straight="1" type="1" ypos="361.4709877662608" endx="551.686948591154" xpos="426.2906223207488" endy="409.5060845773462" c2x="509.8881731676856" >
+      <from>3</from>
+      <to>2</to>
+      <inputs default="0" any="0" invert="0" >BT_Quit</inputs>
+      <outputs></outputs>
+    </transition>
+  </machine>
+</qfsmproject>

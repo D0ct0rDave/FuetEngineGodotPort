@@ -1,0 +1,214 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=1]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=2]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=5]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/2.spr" type="Resource" id=6]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/backarrow.spr" type="Resource" id=7]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=8]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/3.spr" type="Resource" id=9]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/9.spr" type="Resource" id=10]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/bt-ch.spr" type="Resource" id=11]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/icon_gameoptions.spr" type="Resource" id=12]
+
+[node name="CFEHUD" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="BT_Back" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Layers" type="Node2D" parent="BT_Back"]
+
+[node name="BT_Back" type="Node2D" parent="BT_Back/Layers"]
+position = Vector2( 160, 960 )
+script = ExtResource( 2 )
+
+[node name="ic_Back" type="Node2D" parent="BT_Back/Layers/BT_Back"]
+script = ExtResource( 3 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Back/Layers/BT_Back/ic_Back"]
+script = ExtResource( 4 )
+Action = 0
+m_sprite = ExtResource( 6 )
+
+[node name="ic_Back-1" type="Node2D" parent="BT_Back/Layers/BT_Back"]
+script = ExtResource( 3 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Back/Layers/BT_Back/ic_Back-1"]
+script = ExtResource( 4 )
+Action = 0
+m_sprite = ExtResource( 7 )
+
+[node name="BT_Options" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Layers" type="Node2D" parent="BT_Options"]
+
+[node name="BT_Options" type="Node2D" parent="BT_Options/Layers"]
+position = Vector2( 1568, 144 )
+script = ExtResource( 2 )
+
+[node name="ic_Options" type="Node2D" parent="BT_Options/Layers/BT_Options"]
+script = ExtResource( 3 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Options/Layers/BT_Options/ic_Options"]
+script = ExtResource( 4 )
+Action = 0
+m_sprite = ExtResource( 10 )
+
+[node name="ic_Options-1" type="Node2D" parent="BT_Options/Layers/BT_Options"]
+position = Vector2( 16, 0 )
+script = ExtResource( 3 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Options/Layers/BT_Options/ic_Options-1"]
+script = ExtResource( 4 )
+Action = 0
+m_sprite = ExtResource( 12 )
+
+[node name="BT_Normal" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Layers" type="Node2D" parent="BT_Normal"]
+
+[node name="BT_Normal" type="Node2D" parent="BT_Normal/Layers"]
+position = Vector2( 912, 272 )
+script = ExtResource( 2 )
+
+[node name="ic_Normal" type="Node2D" parent="BT_Normal/Layers/BT_Normal"]
+script = ExtResource( 3 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Normal/Layers/BT_Normal/ic_Normal"]
+script = ExtResource( 4 )
+Action = 0
+m_sprite = ExtResource( 9 )
+
+[node name="lb_Normal" type="Node2D" parent="BT_Normal/Layers/BT_Normal"]
+script = ExtResource( 8 )
+
+[node name="BT_Hardcore" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Layers" type="Node2D" parent="BT_Hardcore"]
+
+[node name="BT_Hardcore" type="Node2D" parent="BT_Hardcore/Layers"]
+position = Vector2( 928, 448 )
+script = ExtResource( 2 )
+
+[node name="ic_Hardcore" type="Node2D" parent="BT_Hardcore/Layers/BT_Hardcore"]
+scale = Vector2( 0.8, 1 )
+script = ExtResource( 3 )
+m_oIniColor = Color( 0.502, 0.502, 0.502, 1 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Hardcore/Layers/BT_Hardcore/ic_Hardcore"]
+script = ExtResource( 4 )
+Action = 0
+m_sprite = ExtResource( 9 )
+
+[node name="lb_Hardcore" type="Node2D" parent="BT_Hardcore/Layers/BT_Hardcore"]
+script = ExtResource( 8 )
+
+[node name="BT_HardcorePlus" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Layers" type="Node2D" parent="BT_HardcorePlus"]
+
+[node name="BT_HardcorePlus" type="Node2D" parent="BT_HardcorePlus/Layers"]
+position = Vector2( 1344, 448 )
+script = ExtResource( 2 )
+
+[node name="ic_Hardcore+" type="Node2D" parent="BT_HardcorePlus/Layers/BT_HardcorePlus"]
+scale = Vector2( 1.2, 1.4 )
+script = ExtResource( 3 )
+m_oIniColor = Color( 0.502, 0.502, 0.502, 1 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_HardcorePlus/Layers/BT_HardcorePlus/ic_Hardcore+"]
+script = ExtResource( 4 )
+Action = 0
+m_sprite = ExtResource( 11 )
+
+[node name="lb_Hardcore+" type="Node2D" parent="BT_HardcorePlus/Layers/BT_HardcorePlus"]
+script = ExtResource( 8 )
+
+[node name="BT_Tutorial" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Layers" type="Node2D" parent="BT_Tutorial"]
+
+[node name="BT_Tutorial" type="Node2D" parent="BT_Tutorial/Layers"]
+position = Vector2( 1088, 624 )
+script = ExtResource( 2 )
+
+[node name="ic_Tutorial" type="Node2D" parent="BT_Tutorial/Layers/BT_Tutorial"]
+script = ExtResource( 3 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Tutorial/Layers/BT_Tutorial/ic_Tutorial"]
+script = ExtResource( 4 )
+Action = 0
+m_sprite = ExtResource( 9 )
+
+[node name="lb_Tutorial" type="Node2D" parent="BT_Tutorial/Layers/BT_Tutorial"]
+script = ExtResource( 8 )
+
+[node name="BT_Challenges" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Layers" type="Node2D" parent="BT_Challenges"]
+
+[node name="BT_Challenges" type="Node2D" parent="BT_Challenges/Layers"]
+position = Vector2( 1184, 800 )
+script = ExtResource( 2 )
+
+[node name="ic_Challenges" type="Node2D" parent="BT_Challenges/Layers/BT_Challenges"]
+script = ExtResource( 3 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Challenges/Layers/BT_Challenges/ic_Challenges"]
+script = ExtResource( 4 )
+Action = 0
+m_sprite = ExtResource( 9 )
+
+[node name="lb_Challenges" type="Node2D" parent="BT_Challenges/Layers/BT_Challenges"]
+scale = Vector2( 0.75, 0.75 )
+script = ExtResource( 8 )
+
+[node name="BT_Scores" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Layers" type="Node2D" parent="BT_Scores"]
+
+[node name="BT_Scores" type="Node2D" parent="BT_Scores/Layers"]
+position = Vector2( 1280, 976 )
+script = ExtResource( 2 )
+
+[node name="ic_Scores" type="Node2D" parent="BT_Scores/Layers/BT_Scores"]
+script = ExtResource( 3 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Scores/Layers/BT_Scores/ic_Scores"]
+script = ExtResource( 4 )
+Action = 0
+m_sprite = ExtResource( 9 )
+
+[node name="lb_Scores" type="Node2D" parent="BT_Scores/Layers/BT_Scores"]
+scale = Vector2( 0.75, 0.75 )
+script = ExtResource( 8 )
+
+[node name="Foreground" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Layers" type="Node2D" parent="Foreground"]
+
+[node name="Foreground" type="Node2D" parent="Foreground/Layers"]
+position = Vector2( 640, 480 )
+script = ExtResource( 2 )
+m_oIniColor = Color( 1, 1, 1, 0 )

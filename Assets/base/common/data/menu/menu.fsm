@@ -1,0 +1,257 @@
+<?xml version='1.0'?>
+<!DOCTYPE qfsmproject SYSTEM 'qfsm.dtd'>
+<qfsmproject version="0.52" author="Qfsm" >
+  <machine nummooreout="8" transfontitalic="0" draw_it="1" statefontsize="8" transfont="Helvetica" statefontitalic="0" author="" description="" version="" name="FSM" arrowtype="1" numbits="5" statefontweight="50" statefont="Helvetica" numin="8" transfontsize="8" transfontweight="50" type="1" numout="8" initialstate="0" >
+    <outputnames_moore>s_out7,s_out6,s_out5,s_out4,s_out3,s_out2,s_out1,s_out0</outputnames_moore>
+    <inputnames>i_7,i_6,i_5,i_4,i_3,i_2,i_1,i_0</inputnames>
+    <outputnames>o_7,o_6,o_5,o_4,o_3,o_2,o_1,o_0</outputnames>
+    <itransition ypos="188" endx="140" xpos="80" endy="188" />
+    <state pencolor="0" radius="40" description="NextPage = &quot;page_profile&quot;;" finalstate="0" moore_outputs="" ypos="188" code="0" xpos="180" linewidth="1" >page_start</state>
+    <state pencolor="0" radius="40" description="PrevPage=&quot;page_profile&quot;;" finalstate="0" moore_outputs="" ypos="501" code="2" xpos="370" linewidth="1" >page_delete_profile</state>
+    <state pencolor="0" radius="40" description="" finalstate="0" moore_outputs="" ypos="213" code="3" xpos="891" linewidth="1" >page_enter_name</state>
+    <state pencolor="0" radius="40" description="" finalstate="0" moore_outputs="" ypos="440" code="4" xpos="900" linewidth="1" >page_ini</state>
+    <state pencolor="0" radius="40" description="" finalstate="0" moore_outputs="" ypos="198.28" code="7" xpos="373.3199999999999" linewidth="1" >page_profile</state>
+    <state pencolor="0" radius="40" description="" finalstate="0" moore_outputs="" ypos="660" code="10" xpos="901" linewidth="1" >page_op_optionsel</state>
+    <state pencolor="0" radius="40" description="" finalstate="0" moore_outputs="" ypos="921" code="13" xpos="785" linewidth="1" >page_op_credits</state>
+    <state pencolor="0" radius="40" description="" finalstate="0" moore_outputs="" ypos="573" code="11" xpos="672" linewidth="1" >page_scores</state>
+    <state pencolor="0" radius="40" description="" finalstate="0" moore_outputs="" ypos="672" code="12" xpos="1131" linewidth="1" >page_op_challenges</state>
+    <state pencolor="0" radius="40" description="" finalstate="0" moore_outputs="" ypos="910" code="6" xpos="1031" linewidth="1" >page_op_settings</state>
+    <state pencolor="0" radius="40" description="" finalstate="0" moore_outputs="" ypos="430" code="1" xpos="1477" linewidth="1" >GotoEnd</state>
+    <state pencolor="0" radius="40" description="" finalstate="0" moore_outputs="" ypos="480" code="5" xpos="1289" linewidth="1" >page_select_character</state>
+    <state pencolor="0" radius="40" description="" finalstate="0" moore_outputs="" ypos="865" code="14" xpos="1134" linewidth="1" >page_op_stats</state>
+    <state pencolor="0" radius="40" description="" finalstate="0" moore_outputs="" ypos="715" code="8" xpos="663" linewidth="1" >page_op_bgm</state>
+    <state pencolor="0" radius="40" description="Filename = &quot;page_op_scores&quot;;" finalstate="0" moore_outputs="" ypos="71" code="9" xpos="1180" linewidth="1" >page_hiscores</state>
+    <state pencolor="0" radius="40" description="Filename = &quot;page_op_challenges&quot;;" finalstate="0" moore_outputs="" ypos="210" code="20" xpos="1049" linewidth="1" >page_rewards</state>
+    <state pencolor="0" radius="40" description="Filename = &quot;page_op_scores&quot;;" finalstate="0" moore_outputs="" ypos="67" code="15" xpos="1053" linewidth="1" >page_hiscores_then_rewards</state>
+    <state pencolor="0" radius="40" description="" finalstate="0" moore_outputs="" ypos="274" code="16" xpos="1436" linewidth="1" >page_select_level</state>
+    <state pencolor="0" radius="40" description="" finalstate="0" moore_outputs="" ypos="605" code="17" xpos="1290" linewidth="1" >page_select_onlinerankops</state>
+    <transition c1x="258.3758204892914" c2y="186.188739482264" c1y="186.2256252556059" description="" straight="1" type="1" ypos="186.2625110289478" endx="335.2029687994694" xpos="219.9622463342024" endy="186.1518537089221" c2x="296.7893946443804" >
+      <from>0</from>
+      <to>7</to>
+      <inputs default="0" any="0" invert="0" >BT_Accept</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="417.3617665403056" c2y="293.6191954760161" c1y="407.1245458293069" description="" straight="0" type="1" ypos="472.0943257140921" endx="368.8690495812509" xpos="397.6489058386946" endy="238.0315916708984" c2x="433.2887071130498" >
+      <from>2</from>
+      <to>7</to>
+      <inputs default="0" any="0" invert="0" >BT_Back</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="705.4532682917941" c2y="204.8571956360884" c1y="204.9966431664071" description="" straight="1" type="1" ypos="205.1360906967259" endx="412.7985435309695" xpos="851.7806306722064" endy="204.7177481057696" c2x="559.1259059113818" >
+      <from>3</from>
+      <to>7</to>
+      <inputs default="0" any="0" invert="0" >BT_Back</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="896.6250728952334" c2y="350.9528768319404" c1y="301.7888610008397" description="Select" straight="1" type="1" ypos="252.624845169739" endx="896.9442269147377" xpos="896.4654958854812" endy="400.1168926630411" c2x="896.7846499049855" >
+      <from>3</from>
+      <to>4</to>
+      <inputs default="0" any="0" invert="0" >BT_Accept</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="871.6208103666718" c2y="586.7971528534335" c1y="500.3974781811837" description="" straight="0" type="1" ypos="479.4815361199553" endx="886.1443729458358" xpos="893.5806304352641" endy="622.8609323645896" c2x="870.315662812208" >
+      <from>4</from>
+      <to>10</to>
+      <inputs default="0" any="0" invert="0" >BT_Options</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="789.8585127802244" c2y="211.8263204215432" c1y="308.257630695553" description="" straight="0" type="1" ypos="405.4602825753069" endx="411.1570424155561" xpos="879.8255627036996" endy="211.2552927228405" c2x="667.5949962460405" >
+      <from>4</from>
+      <to>7</to>
+      <inputs default="0" any="0" invert="0" >BT_Back</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="830.5573883819686" c2y="558.7500492200948" c1y="499.6275397144914" description="" straight="0" type="1" ypos="459.4257172471453" endx="707.7770876399966" xpos="865.0337089551385" endy="555.1114561800017" c2x="759.4396461179426" >
+      <from>4</from>
+      <to>11</to>
+      <inputs default="0" any="0" invert="0" >BT_Scores</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="1003.682814142269" c2y="488.2339449435521" c1y="457.6852043012777" description="" straight="0" type="1" ypos="443.1898088913156" endx="1249.069025073" xpos="939.872611141445" endy="477.6511191219412" c2x="1176.422076174303" >
+      <from>4</from>
+      <to>5</to>
+      <inputs default="0" any="0" invert="0" >BT_Hardcore</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="1084.005760990255" c2y="295.6876900370178" c1y="343.3602675329998" description="" straight="0" type="1" ypos="423.4478822279526" endx="1396.219781883144" xpos="936.4146590985042" endy="269.8126086192783" c2x="1253.738513798623" >
+      <from>4</from>
+      <to>16</to>
+      <inputs default="0" any="0" invert="0" >BT_Normal</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="1026.49469267895" c2y="581.8130869498295" c1y="517.4402793669444" description="" straight="0" type="1" ypos="463.372189033803" endx="1109.053742340527" xpos="932.4613736580598" endy="638.5580835665176" c2x="1066.043530680709" >
+      <from>4</from>
+      <to>12</to>
+      <inputs default="0" any="0" invert="0" >BT_Challenges</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="1087.840708931951" c2y="596.0840502681203" c1y="553.6859861489227" description="" straight="0" type="1" ypos="454.8556270541641" endx="1251.046351610328" xpos="937.1390676354104" endy="595.9108153757433" c2x="1192.365509474187" >
+      <from>4</from>
+      <to>17</to>
+      <inputs default="0" any="0" invert="0" >BT_HardcorePlus</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="561.5988644886479" c2y="183.5407550520629" c1y="183.4825639989493" description="" straight="1" type="1" ypos="183.4243729458358" endx="863.8784581951232" xpos="410.4590676354103" endy="183.5989461051764" c2x="712.7386613418855" >
+      <from>7</from>
+      <to>3</to>
+      <inputs default="0" any="0" invert="0" >BT_Create</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="557.8305341359793" c2y="360.2964079390447" c1y="290.7574508567889" description="" straight="1" type="1" ypos="221.2184937745331" endx="861.3130487664148" xpos="406.0892768207616" endy="429.8353650213005" c2x="709.571791451197" >
+      <from>7</from>
+      <to>4</to>
+      <inputs default="0" any="0" invert="0" >BT_Profile2</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="510.2418282958566" c2y="411.0375794763777" c1y="359.7930695309834" description="" straight="0" type="1" ypos="229.0088511838951" endx="860.0093354003104" xpos="398.9273759865791" endy="440.8641440129586" c2x="679.1359085796835" >
+      <from>7</from>
+      <to>4</to>
+      <inputs default="0" any="0" invert="0" >BT_Profile3</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="297.0572643044534" c2y="428.5410701537136" c1y="300.6100375762451" description="" straight="0" type="1" ypos="226.8259034580694" endx="350.8459147727771" xpos="345.2998037879356" endy="465.8841770834246" c2x="308.0412589342882" >
+      <from>7</from>
+      <to>2</to>
+      <inputs default="0" any="0" invert="0" >BT_Delete</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="595.9162393130582" c2y="322.5118276847528" c1y="235.3088181699816" description="" straight="0" type="1" ypos="215.4821934550597" endx="864.781156003113" xpos="409.4321107155853" endy="421.0360070785993" c2x="745.0057119975243" >
+      <from>7</from>
+      <to>4</to>
+      <inputs default="0" any="0" invert="0" >BT_Profile1</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="930.0184344138115" c2y="531.3676915712549" c1y="602.9322705419698" description="" straight="0" type="1" ypos="621.5390420943671" endx="903.8492955772836" xpos="911.9888451158952" endy="479.814355747126" c2x="938.155296857298" >
+      <from>10</from>
+      <to>4</to>
+      <inputs default="0" any="0" invert="0" >BT_Back</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="908.4680126603458" c2y="861.9496165949781" c1y="771.5870773930188" description="" straight="0" type="1" ypos="699.0176400827082" endx="997.9877095500067" xpos="909.8104348573858" endy="887.4126433763204" c2x="943.6848291314533" >
+      <from>10</from>
+      <to>6</to>
+      <inputs default="0" any="0" invert="0" >BT_Settings</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="879.7013361109721" c2y="854.6255429279682" c1y="750.9723677824804" description="" straight="0" type="1" ypos="697.3795093971587" endx="809.6523304663244" xpos="886.7601868963205" endy="889.4997999596966" c2x="859.6068704625959" >
+      <from>10</from>
+      <to>13</to>
+      <inputs default="0" any="0" invert="0" >BT_Credits</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="817.4829672670373" c2y="650.5095898928919" c1y="634.0420615316724" description="" straight="0" type="1" ypos="648.0069361303843" endx="694.8676508360959" xpos="862.8402513239498" endy="690.8245407450307" c2x="722.1245381555434" >
+      <from>10</from>
+      <to>8</to>
+      <inputs default="0" any="0" invert="0" >BT_BGM</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="781.9835685845251" c2y="721.0919702184482" c1y="800.9337739457279" description="" straight="0" type="1" ypos="881.127388858555" endx="870.0909498189907" xpos="781.8101911086844" endy="685.3895769344006" c2x="797.0637878536969" >
+      <from>13</from>
+      <to>10</to>
+      <inputs default="0" any="0" invert="0" >BT_Back</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="714.2582579699541" c2y="463.3797690296805" c1y="512.2060364263117" description="" straight="0" type="1" ypos="546.8824151172215" endx="863.0769230769231" xpos="702.296398464023" endy="455.3846153846154" c2x="776.6677517993262" >
+      <from>11</from>
+      <to>4</to>
+      <inputs default="0" any="0" invert="0" >BT_Back</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="1050.294594729922" c2y="552.7607164299625" c1y="642.6986170911036" description="" straight="0" type="1" ypos="651.9145793045399" endx="927.6190298673" xpos="1096.408442135597" endy="468.9342217657429" c2x="979.6958281775469" >
+      <from>12</from>
+      <to>4</to>
+      <inputs default="0" any="0" invert="0" >BT_Back</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="1142.499233269494" c2y="798.2699001814531" c1y="780.4176242393747" description="" straight="0" type="1" ypos="710.5905528495093" endx="1143.935014010708" xpos="1141.524696231684" endy="826.2534453582382" c2x="1142.101898248537" >
+      <from>12</from>
+      <to>14</to>
+      <inputs default="0" any="0" invert="0" >BT_Stats</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="995.6869760157175" c2y="752.4670763364793" c1y="811.243296646498" description="" straight="1" type="1" ypos="870.0195169565169" endx="922.5621478569346" xpos="1032.249390095109" endy="693.6908560264604" c2x="959.1245619363261" >
+      <from>6</from>
+      <to>10</to>
+      <inputs default="0" any="0" invert="0" >BT_Accept</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="1079.375359732447" c2y="699.0278483890711" c1y="779.5972096372539" description="" straight="0" type="1" ypos="875.8959499035623" endx="934.2820117735138" xpos="1051.902482317172" endy="682.1880078490092" c2x="1015.621407969254" >
+      <from>6</from>
+      <to>10</to>
+      <inputs default="0" any="0" invert="0" >BT_Back</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="1363.768135088372" c2y="448.5442213455232" c1y="457.3870176895932" description="" straight="1" type="1" ypos="466.2298140336631" endx="1438.194299994187" xpos="1326.555052635464" endy="439.7014250014533" c2x="1400.981217541279" >
+      <from>5</from>
+      <to>1</to>
+      <inputs default="0" any="0" invert="0" >BT_Accept</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="1208.914378630592" c2y="430.8659327646928" c1y="455.750306966973" description="" straight="0" type="1" ypos="468.3997041886852" endx="939.8618303297952" xpos="1250.719023822661" endy="436.6781808058504" c2x="984.6224424013077" >
+      <from>5</from>
+      <to>4</to>
+      <inputs default="0" any="0" invert="0" >BT_Back</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="1118.12019267483" c2y="741.5512081908256" c1y="776.2930107147456" description="" straight="0" type="1" ypos="828.5853409014958" endx="1114.967246639212" xpos="1117.447882227953" endy="708.6462933960876" c2x="1116.788388456337" >
+      <from>14</from>
+      <to>12</to>
+      <inputs default="0" any="0" invert="0" >BT_Back</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="755.9191999320889" c2y="683.6121628307539" c1y="696.8253867235927" description="" straight="1" type="1" ypos="710.0386106164317" endx="862.3753696591732" xpos="702.6911150685467" endy="670.3989389379149" c2x="809.147284795631" >
+      <from>8</from>
+      <to>10</to>
+      <inputs default="0" any="0" invert="0" >BT_Back</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="1183.513621328744" c2y="313.9495586671849" c1y="299.2990477327762" description="" straight="0" type="1" ypos="110.8357282587081" endx="927.7456674826349" xpos="1183.621429841701" endy="411.1871914603408" c2x="1049.151480298423" >
+      <from>9</from>
+      <to>4</to>
+      <inputs default="0" any="0" invert="0" >BT_Accept</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="989.1350288663234" c2y="350.0876978404356" c1y="295.9524833208678" description="" straight="1" type="1" ypos="241.8172688013" endx="917.8885438199983" xpos="1024.758271389486" endy="404.2229123600034" c2x="953.5117863431609" >
+      <from>20</from>
+      <to>4</to>
+      <inputs default="0" any="0" invert="0" >BT_Accept</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="1052.950990005543" c2y="149.1239996385253" c1y="128.0619998192627" description="" straight="1" type="1" ypos="107" endx="1052.852967794408" xpos="1053.000001111111" endy="170.185999457788" c2x="1052.901978899976" >
+      <from>15</from>
+      <to>20</to>
+      <inputs default="0" any="0" invert="0" >BT_Accept</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="1451.932438518209" c2y="365.1290991906083" c1y="339.1536904604372" description="" straight="1" type="1" ypos="313.1782817302661" endx="1467.665081900987" xpos="1444.06611682682" endy="391.1045079207793" c2x="1459.798760209598" >
+      <from>16</from>
+      <to>1</to>
+      <inputs default="0" any="0" invert="0" >BT_Accept</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="1273.173518695624" c2y="392.9920329498491" c1y="334.1419027359187" description="" straight="0" type="1" ypos="289.294071709052" endx="937.3027239309636" xpos="1399.039326703124" endy="425.5602358976915" c2x="1091.155460075506" >
+      <from>16</from>
+      <to>4</to>
+      <inputs default="0" any="0" invert="0" >BT_Back</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="1181.334230277001" c2y="476.2384326398442" c1y="542.5250132061541" description="" straight="0" type="1" ypos="581" endx="938.5905528495093" xpos="1258" endy="450.5246962316844" c2x="1032.465185739691" >
+      <from>17</from>
+      <to>4</to>
+      <inputs default="0" any="0" invert="0" >BT_Back</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="1357.449926634802" c2y="496.8176419440863" c1y="533.9035180382859" description="" straight="1" type="1" ypos="570.9893941324856" endx="1450.241410735102" xpos="1311.054184584652" endy="459.7317658498866" c2x="1403.845668684952" >
+      <from>17</from>
+      <to>1</to>
+      <inputs default="0" any="0" invert="0" >BT_Yes</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="1382.762217653221" c2y="513.9164133752339" c1y="559.4582066876169" description="" straight="1" type="1" ypos="605" endx="1488.286652959662" xpos="1330" endy="468.3746200628508" c2x="1435.524435306441" >
+      <from>17</from>
+      <to>1</to>
+      <inputs default="0" any="0" invert="0" >BT_No</inputs>
+      <outputs></outputs>
+    </transition>
+  </machine>
+</qfsmproject>

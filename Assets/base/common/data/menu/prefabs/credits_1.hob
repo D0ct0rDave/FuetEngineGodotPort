@@ -1,0 +1,35 @@
+HUDObject:
+{
+	Type = "Group";
+	Name = "CoderChild";
+	Position:
+	{
+		x = 640.0000;
+		y = 126.0000;
+	};
+	Scale:
+	{
+	};
+	Color:
+	{
+	};
+	NumObjects = 1;
+	Object0:
+	{
+		Type = "Label";
+		Text = "A CoderChild production";
+		Font = "../fonts/default";
+		HAlignment = "Center";
+		VAlignment = "Center";
+		Name = "lb_Production";
+		Position:
+		{
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+};

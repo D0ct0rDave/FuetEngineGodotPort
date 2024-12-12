@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEHUDFileImportPlugin"
+type="PackedScene"
+path="res://.import/page_op_challenges.hud-0e0b9dd4a674e76e67027b6349bfbd3c.tscn"
+
+[deps]
+
+source_file="res://Assets/base/common/data/menu/page_op_challenges.hud"
+dest_files=[ "res://.import/page_op_challenges.hud-0e0b9dd4a674e76e67027b6349bfbd3c.tscn" ]
+
+[params]
+

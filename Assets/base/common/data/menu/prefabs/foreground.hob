@@ -1,0 +1,17 @@
+HUDObject:
+{
+	Type = "Group";
+	Name = "Foreground";
+	Position:
+	{
+		x = 640.0000;
+		y = 480.0000;
+	};
+	Scale:
+	{
+	};
+	Color:
+	{
+		a = 0.0000;
+	};
+};

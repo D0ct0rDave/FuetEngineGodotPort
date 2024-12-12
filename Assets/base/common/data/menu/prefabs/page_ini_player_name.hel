@@ -1,0 +1,208 @@
+HUDElement:
+{
+	Name = "PlayerName";
+	NumLayers = 1;
+	Layer0:
+	{
+		Type = "Group";
+		Name = "PlayerName";
+		Position:
+		{
+			x = 78.0000;
+			y = 848.0000;
+		};
+		Depth = -0.2500;
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+		DepthFact = 0.0000;
+		NumObjects = 1;
+		Object0:
+		{
+			Type = "Label";
+			Text = "PEPITA";
+			Font = "../fonts/default";
+			HAlignment = "Left";
+			VAlignment = "Center";
+			Tracking = 10.0000;
+			Name = "lb_PlayerName";
+			Position:
+			{
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+		};
+	};
+	NumElemActions = 3;
+	Action0:
+	{
+		Name = "Default";
+	};
+	Action1:
+	{
+		Name = "OnEnterPage";
+		ObjAction0:
+		{
+			HUDObject = "PlayerName";
+			XFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				NumKeyFrames = 3;
+				KeyFrame0:
+				{
+					Value = 0.2500;
+				};
+				KeyFrame1:
+				{
+					Time = 0.5000;
+					Value = 0.2500;
+				};
+				KeyFrame2:
+				{
+					Time = 1.0000;
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				NumKeyFrames = 3;
+				KeyFrame0:
+				{
+					a = 0.0000;
+				};
+				KeyFrame1:
+				{
+					Time = 0.5000;
+					a = 0.0000;
+				};
+				KeyFrame2:
+				{
+					Time = 1.0000;
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+	Action2:
+	{
+		Name = "OnExitPage";
+		ObjAction0:
+		{
+			HUDObject = "PlayerName";
+			XFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				NumKeyFrames = 2;
+				KeyFrame0:
+				{
+				};
+				KeyFrame1:
+				{
+					Time = 0.2000;
+					Value = 0.2500;
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				NumKeyFrames = 2;
+				KeyFrame0:
+				{
+				};
+				KeyFrame1:
+				{
+					Time = 0.2000;
+					a = 0.0000;
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+};

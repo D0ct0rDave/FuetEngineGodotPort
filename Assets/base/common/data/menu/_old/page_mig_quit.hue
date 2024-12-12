@@ -1,0 +1,512 @@
+EditorHUD:
+{
+	WindowWidth = 1680;
+WindowHeight = 1050;
+	WindowLayout = "layout2|name=Toolbar;caption=HUD toolbar;state=2108156;dir=1;layer=10;row=0;pos=0;prop=100000;bestw=1662;besth=47;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Viewer;caption=Viewer;state=20972288;dir=5;layer=0;row=1;pos=0;prop=100000;bestw=395;besth=669;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Timeline;caption=Actions & Timeline;state=23070716;dir=3;layer=0;row=2;pos=0;prop=100000;bestw=768;besth=198;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Layers;caption=HUD Objects;state=16779260;dir=2;layer=1;row=0;pos=0;prop=100000;bestw=821;besth=903;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Properties;caption=HUD Object properties;state=16779260;dir=2;layer=1;row=0;pos=1;prop=100000;bestw=388;besth=663;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(1,10,0)=49|dock_size(5,0,1)=397|dock_size(3,0,2)=217|dock_size(2,1,0)=501|";
+	ViewGrid = false;
+	GridSelection = 6;
+	Background = "";
+	ViewBackground = true;
+	GuardBandMode = 1;
+	DebugApp =  "(null)";
+	Zoom =  2.068;
+	TransX = -193.660;
+	TransY = -73.200;
+	Element0:
+	{
+		Object = "lower-screen";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+	};
+
+		Element1:
+		{
+			Object = "BG-gradient";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+		};
+
+			Element2:
+			{
+				Object = "rt_BG-gradient";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element3:
+			{
+				Object = "rt_BG-gradient-1";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+		Element4:
+		{
+			Object = "fx";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+		};
+
+			Element5:
+			{
+				Object = "ic_fx";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element6:
+			{
+				Object = "ic_fx-1";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element7:
+			{
+				Object = "ic_fx-2";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element8:
+			{
+				Object = "ic_fx-3";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element9:
+			{
+				Object = "ic_fx-4";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element10:
+			{
+				Object = "ic_fx-5";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element11:
+			{
+				Object = "ic_fx-6";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element12:
+			{
+				Object = "ic_fx-7";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element13:
+			{
+				Object = "ic_fx-8";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element14:
+			{
+				Object = "ic_fx-9";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element15:
+			{
+				Object = "ic_fx-10";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element16:
+			{
+				Object = "ic_fx-11";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element17:
+			{
+				Object = "ic_fx-12";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element18:
+			{
+				Object = "ic_fx-13";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element19:
+			{
+				Object = "ic_fx-14";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element20:
+			{
+				Object = "ic_fx-15";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element21:
+			{
+				Object = "ic_fx-16";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element22:
+			{
+				Object = "ic_fx-17";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+		Element23:
+		{
+			Object = "lwNuvesFrente";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+		};
+
+			Element24:
+			{
+				Object = "ic_lwNuvesFrente";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element25:
+			{
+				Object = "ic_lwNuvesFrente-1";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element26:
+			{
+				Object = "ic_lwNuvesFrente-2";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+		Element27:
+		{
+			Object = "lwNuvesFondo";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+		};
+
+			Element28:
+			{
+				Object = "ic_lwNuvesFondo";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element29:
+			{
+				Object = "ic_lwNuvesFondo-1";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element30:
+			{
+				Object = "ic_lwNuvesFondo-2";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element31:
+			{
+				Object = "ic_lwNuvesFondo-4";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element32:
+			{
+				Object = "ic_lwNuvesFondo-5";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+		Element33:
+		{
+			Object = "Frame";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+		};
+
+			Element34:
+			{
+				Object = "ic_Frame";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element35:
+			{
+				Object = "ic_Frame-1";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+			Element36:
+			{
+				Object = "ic_Frame-2";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+			};
+
+	Element37:
+	{
+		Object = "TEXT";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = true;
+		Selected = false;
+		Visible = true;
+	};
+
+		Element38:
+		{
+			Object = "lb_TEXT";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = true;
+		};
+
+	Element39:
+	{
+		Object = "BT_Quit";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = true;
+		Selected = true;
+		Visible = true;
+	};
+
+		Element40:
+		{
+			Object = "ic_Quit";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = true;
+		};
+
+		Element41:
+		{
+			Object = "lb_Quit";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = true;
+		};
+
+	Element42:
+	{
+		Object = "BT_Back";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = true;
+		Selected = false;
+		Visible = true;
+	};
+
+		Element43:
+		{
+			Object = "ic_Back";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = true;
+		};
+
+		Element44:
+		{
+			Object = "lb_Back";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = true;
+		};
+
+	NumElements = 45;
+
+};

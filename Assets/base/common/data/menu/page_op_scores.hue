@@ -1,0 +1,725 @@
+EditorHUD:
+{
+	WindowWidth = 1288;
+WindowHeight = 1032;
+	WindowLayout = "layout2|name=Toolbar;caption=HUD toolbar;state=2108156;dir=1;layer=10;row=0;pos=0;prop=100000;bestw=1319;besth=42;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Viewer;caption=Viewer;state=20972288;dir=5;layer=0;row=1;pos=0;prop=100000;bestw=800;besth=609;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Timeline;caption=Actions & Timeline;state=23070716;dir=3;layer=0;row=2;pos=0;prop=100000;bestw=864;besth=199;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Layers;caption=HUD Objects;state=16779260;dir=2;layer=1;row=0;pos=0;prop=100000;bestw=411;besth=387;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Properties;caption=HUD Object properties;state=16779260;dir=2;layer=1;row=0;pos=1;prop=100000;bestw=411;besth=387;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(1,10,0)=44|dock_size(5,0,1)=398|dock_size(3,0,2)=218|dock_size(2,1,0)=398|";
+	ViewGrid = true;
+	GridSelection = 1;
+	Background = "¨Sø";
+	ViewBackground = false;
+	GuardBandMode = 6;
+	DebugApp =  "(null)";
+	Zoom =  0.286;
+	TransX = -877.757;
+	TransY = -511.246;
+	Element0:
+	{
+		Object = "Rank_5";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element1:
+		{
+			Object = "ic_circle5";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element2:
+		{
+			Object = "lb_rank5";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element3:
+		{
+			Object = "lb_name5";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element4:
+		{
+			Object = "lb_points5";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element5:
+	{
+		Object = "Rank_6";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element6:
+		{
+			Object = "ic_circle6";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element7:
+		{
+			Object = "lb_rank6";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element8:
+		{
+			Object = "lb_name6";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element9:
+		{
+			Object = "lb_points6";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element10:
+	{
+		Object = "Rank_7";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element11:
+		{
+			Object = "ic_circle7";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element12:
+		{
+			Object = "lb_rank7";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element13:
+		{
+			Object = "lb_name7";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element14:
+		{
+			Object = "lb_points7";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element15:
+	{
+		Object = "Rank_8";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element16:
+		{
+			Object = "ic_circle8";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element17:
+		{
+			Object = "lb_rank8";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element18:
+		{
+			Object = "lb_name8";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element19:
+		{
+			Object = "lb_points8";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element20:
+	{
+		Object = "Rank_9";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element21:
+		{
+			Object = "ic_circle9";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element22:
+		{
+			Object = "lb_rank9";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element23:
+		{
+			Object = "lb_name9";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element24:
+		{
+			Object = "lb_points9";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element25:
+	{
+		Object = "BT_Back";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = true;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element26:
+		{
+			Object = "ic_bt_back";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element27:
+		{
+			Object = "ic_back";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element28:
+	{
+		Object = "BT_Accept";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element29:
+		{
+			Object = "ic_Accept";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element30:
+		{
+			Object = "lb_Accept";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element31:
+	{
+		Object = "G_Title";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element32:
+		{
+			Object = "lb_Title";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element33:
+	{
+		Object = "Rank_0";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element34:
+		{
+			Object = "ic_circle0";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element35:
+		{
+			Object = "lb_rank0";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element36:
+		{
+			Object = "lb_name0";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element37:
+		{
+			Object = "lb_points0";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element38:
+	{
+		Object = "Rank_1";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element39:
+		{
+			Object = "ic_circle1";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element40:
+		{
+			Object = "lb_rank1";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element41:
+		{
+			Object = "lb_name1";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element42:
+		{
+			Object = "lb_points1";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element43:
+	{
+		Object = "Rank_2";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element44:
+		{
+			Object = "ic_circle2";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element45:
+		{
+			Object = "lb_rank2";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element46:
+		{
+			Object = "lb_name2";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element47:
+		{
+			Object = "lb_points2";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element48:
+	{
+		Object = "Rank_3";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element49:
+		{
+			Object = "ic_circle3";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element50:
+		{
+			Object = "lb_rank3";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element51:
+		{
+			Object = "lb_name3";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element52:
+		{
+			Object = "lb_points3";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element53:
+	{
+		Object = "Rank_4";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element54:
+		{
+			Object = "ic_circle4";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element55:
+		{
+			Object = "lb_rank4";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element56:
+		{
+			Object = "lb_name4";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element57:
+		{
+			Object = "lb_points4";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element58:
+	{
+		Object = "Foreground";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = false;
+		Prefab= "";
+	};
+
+	NumElements = 59;
+
+};

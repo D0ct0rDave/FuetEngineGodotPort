@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/marco.spr-8fce9b90a0d6dad2c2983f8592956d43.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/menu/_old/sprites/marco.spr"
+dest_files=[ "res://.import/marco.spr-8fce9b90a0d6dad2c2983f8592956d43.tres" ]
+
+[params]
+

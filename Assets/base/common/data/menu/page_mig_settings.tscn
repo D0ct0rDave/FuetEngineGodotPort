@@ -1,0 +1,456 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://Assets/base/common/data/menu/sprites/ic_back.png" type="Texture" id=1]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/button_face.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteFrame.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=5]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=6]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=7]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESprite.cs" type="Script" id=8]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteAction.cs" type="Script" id=9]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=10]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/round_button_face.png" type="Texture" id=11]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/large_button_face.png" type="Texture" id=12]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/icon-2.spr" type="Resource" id=13]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/inv_frame_rect.spr" type="Resource" id=14]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/inv_frame_side.spr" type="Resource" id=15]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=16]
+
+[sub_resource type="Resource" id=13]
+script = ExtResource( 4 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 98, 98 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 0.0
+m_rFrameTime = 0.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 11 )
+
+[sub_resource type="Resource" id=14]
+script = ExtResource( 9 )
+Name = "default"
+m_rActionTime = 0.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 13 ) ]
+
+[sub_resource type="Resource" id=15]
+resource_local_to_scene = true
+script = ExtResource( 8 )
+Name = "res://Assets/base/common/data/menu/sprites/round_button_face.spr"
+m_oActions = [ SubResource( 14 ) ]
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 4 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 128, 96 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 0.0
+m_rFrameTime = 0.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 2 )
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 9 )
+Name = "default"
+m_rActionTime = 0.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 7 ) ]
+
+[sub_resource type="Resource" id=9]
+resource_local_to_scene = true
+script = ExtResource( 8 )
+Name = "res://Assets/base/common/data/menu/sprites/button_face.spr"
+m_oActions = [ SubResource( 8 ) ]
+
+[sub_resource type="Resource" id=10]
+script = ExtResource( 4 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 69, 65 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 0.0
+m_rFrameTime = 0.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 1 )
+
+[sub_resource type="Resource" id=11]
+script = ExtResource( 9 )
+Name = "default"
+m_rActionTime = 0.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 10 ) ]
+
+[sub_resource type="Resource" id=12]
+resource_local_to_scene = true
+script = ExtResource( 8 )
+Name = "res://Assets/base/common/data/menu/sprites/ic_back.spr"
+m_oActions = [ SubResource( 11 ) ]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 4 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 385, 96 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 0.0
+m_rFrameTime = 0.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 12 )
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 9 )
+Name = "default"
+m_rActionTime = 0.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 1 ) ]
+
+[sub_resource type="Resource" id=3]
+resource_local_to_scene = true
+script = ExtResource( 8 )
+Name = "res://Assets/base/common/data/menu/sprites/large_button_face.spr"
+m_oActions = [ SubResource( 2 ) ]
+
+[node name="CFEHUD" type="Node2D"]
+script = ExtResource( 10 )
+
+[node name="Background" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="Background"]
+
+[node name="Background" type="Node2D" parent="Background/Layers"]
+position = Vector2( 272, 0 )
+script = ExtResource( 5 )
+
+[node name="ic_Background" type="Node2D" parent="Background/Layers/Background"]
+position = Vector2( 256, 96 )
+script = ExtResource( 6 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="Background/Layers/Background/ic_Background"]
+script = ExtResource( 7 )
+Action = 0
+m_sprite = ExtResource( 15 )
+
+[node name="ic_Background-1" type="Node2D" parent="Background/Layers/Background"]
+position = Vector2( 256, 96 )
+scale = Vector2( 12, 1 )
+script = ExtResource( 6 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="Background/Layers/Background/ic_Background-1"]
+script = ExtResource( 7 )
+Action = 0
+m_sprite = ExtResource( 14 )
+
+[node name="ic_Background-2" type="Node2D" parent="Background/Layers/Background"]
+position = Vector2( 1024, 96 )
+scale = Vector2( -1, 1 )
+script = ExtResource( 6 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="Background/Layers/Background/ic_Background-2"]
+script = ExtResource( 7 )
+Action = 0
+m_sprite = ExtResource( 15 )
+
+[node name="MusicVol" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="MusicVol"]
+
+[node name="MusicVol" type="Node2D" parent="MusicVol/Layers"]
+position = Vector2( 192, 336 )
+script = ExtResource( 5 )
+
+[node name="lb_MusVol" type="Node2D" parent="MusicVol/Layers/MusicVol"]
+position = Vector2( 352, 0 )
+script = ExtResource( 16 )
+
+[node name="ic_m1" type="Node2D" parent="MusicVol/Layers/MusicVol"]
+position = Vector2( 704, 0 )
+script = ExtResource( 6 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="MusicVol/Layers/MusicVol/ic_m1"]
+script = ExtResource( 7 )
+Action = 0
+m_sprite = ExtResource( 13 )
+
+[node name="ic_m5" type="Node2D" parent="MusicVol/Layers/MusicVol"]
+position = Vector2( 960, 0 )
+script = ExtResource( 6 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="MusicVol/Layers/MusicVol/ic_m5"]
+script = ExtResource( 7 )
+Action = 0
+m_sprite = ExtResource( 13 )
+
+[node name="ic_m4" type="Node2D" parent="MusicVol/Layers/MusicVol"]
+position = Vector2( 896, 0 )
+script = ExtResource( 6 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="MusicVol/Layers/MusicVol/ic_m4"]
+script = ExtResource( 7 )
+Action = 0
+m_sprite = ExtResource( 13 )
+
+[node name="ic_m3" type="Node2D" parent="MusicVol/Layers/MusicVol"]
+position = Vector2( 832, 0 )
+script = ExtResource( 6 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="MusicVol/Layers/MusicVol/ic_m3"]
+script = ExtResource( 7 )
+Action = 0
+m_sprite = ExtResource( 13 )
+
+[node name="ic_m2" type="Node2D" parent="MusicVol/Layers/MusicVol"]
+position = Vector2( 768, 0 )
+script = ExtResource( 6 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="MusicVol/Layers/MusicVol/ic_m2"]
+script = ExtResource( 7 )
+Action = 0
+m_sprite = ExtResource( 13 )
+
+[node name="BT_MusicDec" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="BT_MusicDec"]
+
+[node name="BT_MusicDec" type="Node2D" parent="BT_MusicDec/Layers"]
+position = Vector2( 800, 336 )
+script = ExtResource( 5 )
+m_iIniAction = 0
+
+[node name="ic_MusicDec" type="Node2D" parent="BT_MusicDec/Layers/BT_MusicDec"]
+script = ExtResource( 6 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_MusicDec/Layers/BT_MusicDec/ic_MusicDec"]
+script = ExtResource( 7 )
+Action = 0
+m_sprite = SubResource( 15 )
+
+[node name="lb_MusicDec" type="Node2D" parent="BT_MusicDec/Layers/BT_MusicDec"]
+script = ExtResource( 16 )
+
+[node name="BT_MusicInc" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="BT_MusicInc"]
+
+[node name="BT_MusicInc" type="Node2D" parent="BT_MusicInc/Layers"]
+position = Vector2( 1248, 336 )
+script = ExtResource( 5 )
+m_iIniAction = 0
+
+[node name="ic_MusicInc" type="Node2D" parent="BT_MusicInc/Layers/BT_MusicInc"]
+script = ExtResource( 6 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_MusicInc/Layers/BT_MusicInc/ic_MusicInc"]
+script = ExtResource( 7 )
+Action = 0
+m_sprite = SubResource( 15 )
+
+[node name="lb_MusicInc" type="Node2D" parent="BT_MusicInc/Layers/BT_MusicInc"]
+script = ExtResource( 16 )
+
+[node name="FXVol" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="FXVol"]
+
+[node name="FXVol" type="Node2D" parent="FXVol/Layers"]
+position = Vector2( 192, 576 )
+script = ExtResource( 5 )
+
+[node name="lb_FXVol" type="Node2D" parent="FXVol/Layers/FXVol"]
+position = Vector2( 352, 0 )
+script = ExtResource( 16 )
+
+[node name="ic_fx1" type="Node2D" parent="FXVol/Layers/FXVol"]
+position = Vector2( 704, 0 )
+script = ExtResource( 6 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="FXVol/Layers/FXVol/ic_fx1"]
+script = ExtResource( 7 )
+Action = 0
+m_sprite = ExtResource( 13 )
+
+[node name="ic_fx2" type="Node2D" parent="FXVol/Layers/FXVol"]
+position = Vector2( 768, 0 )
+script = ExtResource( 6 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="FXVol/Layers/FXVol/ic_fx2"]
+script = ExtResource( 7 )
+Action = 0
+m_sprite = ExtResource( 13 )
+
+[node name="ic_fx3" type="Node2D" parent="FXVol/Layers/FXVol"]
+position = Vector2( 832, 0 )
+script = ExtResource( 6 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="FXVol/Layers/FXVol/ic_fx3"]
+script = ExtResource( 7 )
+Action = 0
+m_sprite = ExtResource( 13 )
+
+[node name="ic_fx4" type="Node2D" parent="FXVol/Layers/FXVol"]
+position = Vector2( 896, 0 )
+script = ExtResource( 6 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="FXVol/Layers/FXVol/ic_fx4"]
+script = ExtResource( 7 )
+Action = 0
+m_sprite = ExtResource( 13 )
+
+[node name="ic_fx5" type="Node2D" parent="FXVol/Layers/FXVol"]
+position = Vector2( 960, 0 )
+script = ExtResource( 6 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="FXVol/Layers/FXVol/ic_fx5"]
+script = ExtResource( 7 )
+Action = 0
+m_sprite = ExtResource( 13 )
+
+[node name="BT_FXDec" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="BT_FXDec"]
+
+[node name="BT_FXDec" type="Node2D" parent="BT_FXDec/Layers"]
+position = Vector2( 800, 576 )
+script = ExtResource( 5 )
+m_iIniAction = 0
+
+[node name="ic_FXDec" type="Node2D" parent="BT_FXDec/Layers/BT_FXDec"]
+script = ExtResource( 6 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_FXDec/Layers/BT_FXDec/ic_FXDec"]
+script = ExtResource( 7 )
+Action = 0
+m_sprite = SubResource( 15 )
+
+[node name="lb_FXDec" type="Node2D" parent="BT_FXDec/Layers/BT_FXDec"]
+script = ExtResource( 16 )
+
+[node name="BT_FXInc" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="BT_FXInc"]
+
+[node name="BT_FXInc" type="Node2D" parent="BT_FXInc/Layers"]
+position = Vector2( 1248, 576 )
+script = ExtResource( 5 )
+m_iIniAction = 0
+
+[node name="ic_FXInc" type="Node2D" parent="BT_FXInc/Layers/BT_FXInc"]
+script = ExtResource( 6 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_FXInc/Layers/BT_FXInc/ic_FXInc"]
+script = ExtResource( 7 )
+Action = 0
+m_sprite = SubResource( 15 )
+
+[node name="lb_FXInc" type="Node2D" parent="BT_FXInc/Layers/BT_FXInc"]
+script = ExtResource( 16 )
+
+[node name="BT_Back" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="BT_Back"]
+
+[node name="BT_Back" type="Node2D" parent="BT_Back/Layers"]
+position = Vector2( 560, 832 )
+script = ExtResource( 5 )
+
+[node name="ic_bt_back" type="Node2D" parent="BT_Back/Layers/BT_Back"]
+script = ExtResource( 6 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Back/Layers/BT_Back/ic_bt_back"]
+script = ExtResource( 7 )
+Action = 0
+m_sprite = SubResource( 9 )
+
+[node name="ic_back" type="Node2D" parent="BT_Back/Layers/BT_Back"]
+script = ExtResource( 6 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Back/Layers/BT_Back/ic_back"]
+script = ExtResource( 7 )
+Action = 0
+m_sprite = SubResource( 12 )
+
+[node name="BT_Accept" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Layers" type="Node2D" parent="BT_Accept"]
+
+[node name="BT_Accept" type="Node2D" parent="BT_Accept/Layers"]
+position = Vector2( 1136, 832 )
+script = ExtResource( 5 )
+
+[node name="ic_Accept" type="Node2D" parent="BT_Accept/Layers/BT_Accept"]
+script = ExtResource( 6 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Accept/Layers/BT_Accept/ic_Accept"]
+script = ExtResource( 7 )
+Action = 0
+m_sprite = SubResource( 3 )
+
+[node name="lb_Accept" type="Node2D" parent="BT_Accept/Layers/BT_Accept"]
+script = ExtResource( 16 )

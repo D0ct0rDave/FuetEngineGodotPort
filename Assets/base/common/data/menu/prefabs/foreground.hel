@@ -1,0 +1,130 @@
+HUDElement:
+{
+	Name = "Foreground";
+	NumLayers = 1;
+	Layer0:
+	{
+		Type = "Group";
+		Name = "Foreground";
+		Position:
+		{
+			x = 640.0000;
+			y = 480.0000;
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+			a = 0.0000;
+		};
+	};
+	NumElemActions = 3;
+	Action0:
+	{
+		Name = "Default";
+	};
+	Action1:
+	{
+		Name = "OnEnterPage";
+		ObjAction0:
+		{
+			HUDObject = "Foreground";
+			PosFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+					EventName = "FadeInScene";
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+	Action2:
+	{
+		Name = "OnExitPage";
+		ObjAction0:
+		{
+			HUDObject = "Foreground";
+			PosFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				NumKeyFrames = 2;
+				KeyFrame0:
+				{
+				};
+				KeyFrame1:
+				{
+					Time = 1.0000;
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				KeyFrame0:
+				{
+					a = 0.0000;
+				};
+			};
+			EventFunc:
+			{
+				NumKeyFrames = 2;
+				KeyFrame0:
+				{
+				};
+				KeyFrame1:
+				{
+					Time = 0.5000;
+					EventName = "FadeOutScene";
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+};

@@ -1,0 +1,35 @@
+HUDObject:
+{
+	Type = "Group";
+	Name = "GRP_NameCursor";
+	Position:
+	{
+		x = 640.0000;
+		y = 144.0000;
+	};
+	Scale:
+	{
+	};
+	Color:
+	{
+	};
+	NumObjects = 1;
+	Object0:
+	{
+		Type = "Label";
+		Text = "_";
+		Font = "../fonts/default";
+		HAlignment = "Left";
+		VAlignment = "Center";
+		Name = "lb_NameCursor";
+		Position:
+		{
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+};

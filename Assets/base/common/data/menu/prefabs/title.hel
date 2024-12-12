@@ -1,0 +1,189 @@
+HUDElement:
+{
+	Name = "Title";
+	NumLayers = 1;
+	Layer0:
+	{
+		Type = "Group";
+		Name = "Title";
+		Position:
+		{
+			x = 639.0000;
+			y = 478.0000;
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+		NumObjects = 1;
+		Object0:
+		{
+			Type = "Label";
+			Text = "Players";
+			Font = "../fonts/default";
+			HAlignment = "Center";
+			VAlignment = "Center";
+			Name = "lb_Title";
+			Position:
+			{
+				y = 350.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+		};
+	};
+	NumElemActions = 3;
+	Action0:
+	{
+		Name = "Default";
+	};
+	Action1:
+	{
+		Name = "OnEnterPage";
+		ObjAction0:
+		{
+			HUDObject = "Title";
+			XFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				NumKeyFrames = 3;
+				KeyFrame0:
+				{
+					a = 0.0000;
+				};
+				KeyFrame1:
+				{
+					Time = 0.6000;
+					a = 0.0000;
+				};
+				KeyFrame2:
+				{
+					Time = 1.0000;
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+	Action2:
+	{
+		Name = "OnExitPage";
+		ObjAction0:
+		{
+			HUDObject = "Title";
+			XFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				NumKeyFrames = 2;
+				KeyFrame0:
+				{
+				};
+				KeyFrame1:
+				{
+					Time = 0.4000;
+					a = 0.0000;
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+};

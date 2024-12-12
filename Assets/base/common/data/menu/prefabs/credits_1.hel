@@ -1,0 +1,278 @@
+HUDElement:
+{
+	Name = "CoderChild";
+	NumLayers = 1;
+	Layer0:
+	{
+		Type = "Group";
+		Name = "CoderChild";
+		Position:
+		{
+			x = 640.0000;
+			y = 126.0000;
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+		NumObjects = 1;
+		Object0:
+		{
+			Type = "Label";
+			Text = "A CoderChild production";
+			Font = "../fonts/default";
+			HAlignment = "Center";
+			VAlignment = "Center";
+			Name = "lb_Production";
+			Position:
+			{
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+		};
+	};
+	NumElemActions = 4;
+	Action0:
+	{
+		Name = "Default";
+	};
+	Action1:
+	{
+		Name = "OnEnterPage";
+		ObjAction0:
+		{
+			HUDObject = "CoderChild";
+			XFunc:
+			{
+				NumKeyFrames = 3;
+				KeyFrame0:
+				{
+					Value = -1640.0000;
+				};
+				KeyFrame1:
+				{
+					Time = 0.4000;
+					Value = -1640.0000;
+				};
+				KeyFrame2:
+				{
+					Time = 0.8000;
+				};
+			};
+			YFunc:
+			{
+				NumKeyFrames = 3;
+				KeyFrame0:
+				{
+				};
+				KeyFrame1:
+				{
+					Time = 0.4000;
+				};
+				KeyFrame2:
+				{
+					Time = 0.8000;
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+	Action2:
+	{
+		Name = "OnExitPage";
+		ObjAction0:
+		{
+			HUDObject = "CoderChild";
+			XFunc:
+			{
+				NumKeyFrames = 2;
+				KeyFrame0:
+				{
+					LerpFunc = "sin";
+				};
+				KeyFrame1:
+				{
+					Time = 0.4000;
+					Value = 1960.0000;
+				};
+			};
+			YFunc:
+			{
+				NumKeyFrames = 2;
+				KeyFrame0:
+				{
+					LerpFunc = "sin";
+				};
+				KeyFrame1:
+				{
+					Time = 0.4000;
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+	Action3:
+	{
+		Name = "OnIdlePage";
+		ObjAction0:
+		{
+			HUDObject = "lb_Production";
+			XFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				WrapMode = "Loop";
+				NumKeyFrames = 3;
+				KeyFrame0:
+				{
+				};
+				KeyFrame1:
+				{
+					Time = 0.5000;
+					b = 0.0000;
+				};
+				KeyFrame2:
+				{
+					Time = 1.0000;
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+};

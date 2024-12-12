@@ -1,0 +1,67 @@
+Sprite:
+{
+	Name = "bt_border";
+	NumActions = 2;
+	Action0:
+	{
+		Name = "unselected";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "inv_item_frame";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 0.5217;
+					};
+					Size:
+					{
+						Width = 20.0;
+						Height = 23.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4250;
+						IV = 0.2500;
+						FU = 0.5917;
+						FV = 0.4417;
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "selected";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "inv_item_frame";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5083;
+						y = 0.5083;
+					};
+					Size:
+					{
+						Width = 120.0;
+						Height = 120.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

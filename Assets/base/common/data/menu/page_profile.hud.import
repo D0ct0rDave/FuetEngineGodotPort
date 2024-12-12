@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEHUDFileImportPlugin"
+type="PackedScene"
+path="res://.import/page_profile.hud-87de50be2c9a1d3bab3c66909bc735de.tscn"
+
+[deps]
+
+source_file="res://Assets/base/common/data/menu/page_profile.hud"
+dest_files=[ "res://.import/page_profile.hud-87de50be2c9a1d3bab3c66909bc735de.tscn" ]
+
+[params]
+

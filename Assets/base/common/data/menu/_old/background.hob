@@ -1,0 +1,59 @@
+HUDObject:
+{
+	Type = "Group";
+	Name = "Background";
+	Position:
+	{
+		y = 1920.0000;
+	};
+	Depth = 0.0200;
+	Scale:
+	{
+	};
+	Color:
+	{
+	};
+	NumObjects = 1;
+	Object0:
+	{
+		Type = "Rect";
+		Width = 1280.0000;
+		Height = 960.0000;
+		PivotX = 0.0000;
+		PivotY = 1.0000;
+		Corner0:
+		{
+			r = 0.0000;
+			g = 0.1765;
+			b = 0.3490;
+		};
+		Corner1:
+		{
+			r = 0.0000;
+			g = 0.1765;
+			b = 0.3490;
+		};
+		Corner2:
+		{
+			r = 0.4039;
+			g = 0.5843;
+			b = 0.7804;
+		};
+		Corner3:
+		{
+			r = 0.4039;
+			g = 0.5843;
+			b = 0.7804;
+		};
+		Name = "rt_Background-1";
+		Position:
+		{
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+};

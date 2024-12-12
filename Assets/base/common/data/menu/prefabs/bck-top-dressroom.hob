@@ -1,0 +1,35 @@
+HUDObject:
+{
+	Type = "Group";
+	Name = "Background";
+	Position:
+	{
+		x = 640.0000;
+		y = 480.0000;
+	};
+	Depth = 0.6500;
+	Scale:
+	{
+	};
+	Color:
+	{
+	};
+	NumObjects = 1;
+	Object0:
+	{
+		Type = "Icon";
+		Sprite = "sprites/background_red";
+		Name = "ic_Background";
+		Action = 0;
+		Position:
+		{
+		};
+		Depth = 0.7500;
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+};

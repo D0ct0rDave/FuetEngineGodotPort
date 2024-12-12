@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/logo.spr-38d31aa7eb3f30067c94871d5f370515.tres"
+
+[deps]
+
+source_file="res://Assets/logo.spr"
+dest_files=[ "res://.import/logo.spr-38d31aa7eb3f30067c94871d5f370515.tres" ]
+
+[params]
+

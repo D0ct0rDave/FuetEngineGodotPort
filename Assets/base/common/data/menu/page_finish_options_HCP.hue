@@ -1,0 +1,233 @@
+EditorHUD:
+{
+	WindowWidth = 1337;
+WindowHeight = 965;
+	WindowLayout = "layout2|name=Toolbar;caption=HUD toolbar;state=2108156;dir=1;layer=10;row=0;pos=0;prop=100000;bestw=1319;besth=42;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Viewer;caption=Viewer;state=20972288;dir=5;layer=0;row=1;pos=0;prop=100000;bestw=800;besth=609;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Timeline;caption=Actions & Timeline;state=23070716;dir=3;layer=0;row=2;pos=0;prop=100000;bestw=864;besth=199;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Layers;caption=HUD Objects;state=16779260;dir=2;layer=1;row=0;pos=0;prop=55253;bestw=411;besth=387;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Properties;caption=HUD Object properties;state=16779260;dir=2;layer=1;row=0;pos=1;prop=144747;bestw=411;besth=387;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(1,10,0)=44|dock_size(5,0,1)=398|dock_size(3,0,2)=450|dock_size(2,1,0)=398|";
+	ViewGrid = false;
+	GridSelection = 4;
+	Background = "иж~";
+	ViewBackground = true;
+	GuardBandMode = 2;
+	DebugApp =  "(null)";
+	Zoom =  0.268;
+	TransX = -1269.572;
+	TransY = -418.364;
+	Element0:
+	{
+		Object = "Background";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element1:
+		{
+			Object = "rt_Background";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element2:
+		{
+			Object = "rt_Background-1";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element3:
+	{
+		Object = "Results";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element4:
+		{
+			Object = "lb_Results";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element5:
+		{
+			Object = "lb_Total";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element6:
+	{
+		Object = "BT_Restart";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element7:
+		{
+			Object = "ic_Restart";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element8:
+		{
+			Object = "lb_Restart";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element9:
+	{
+		Object = "BT_Quit";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element10:
+		{
+			Object = "ic_Quit";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element11:
+		{
+			Object = "lb_Quit";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element12:
+	{
+		Object = "BT_Lock_Background";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = false;
+		Prefab= "";
+	};
+
+		Element13:
+		{
+			Object = "rt_Lock_Background";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element14:
+	{
+		Object = "processing";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = false;
+		Prefab= "";
+	};
+
+		Element15:
+		{
+			Object = "rt_processing";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element16:
+		{
+			Object = "ic_processing";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element17:
+		{
+			Object = "ic_processing-1";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	NumElements = 18;
+
+};

@@ -1,0 +1,324 @@
+HUDObject:
+{
+	Type = "Group";
+	Name = "Background";
+	Position:
+	{
+	};
+	Depth = 1.0000;
+	Scale:
+	{
+	};
+	Color:
+	{
+	};
+	NumObjects = 4;
+	Object0:
+	{
+		Type = "Icon";
+		Sprite = "../levels/tiles/l0-grad-up";
+		Name = "ic_Background";
+		Action = 0;
+		Position:
+		{
+			x = -160.0000;
+		};
+		Scale:
+		{
+			y = 1.2500;
+		};
+		Color:
+		{
+		};
+	};
+	Object1:
+	{
+		Type = "Icon";
+		Sprite = "../levels/tiles/l0-grad-down";
+		Name = "ic_Background-1";
+		Action = 0;
+		Position:
+		{
+			x = -160.0000;
+			y = 640.0000;
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+	Object2:
+	{
+		Type = "Group";
+		Name = "Clouds";
+		Position:
+		{
+			x = 320.0000;
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+		NumObjects = 8;
+		Object0:
+		{
+			Type = "Icon";
+			Sprite = "../levels/tiles/cloud";
+			Name = "ic_Clouds";
+			Action = 0;
+			Position:
+			{
+				x = 1792.0000;
+				y = 224.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+		};
+		Object1:
+		{
+			Type = "Icon";
+			Sprite = "../levels/tiles/cloud";
+			Name = "ic_Clouds-1";
+			Action = 0;
+			Position:
+			{
+				x = 7744.0000;
+				y = 576.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+		};
+		Object2:
+		{
+			Type = "Icon";
+			Sprite = "../levels/tiles/cloud";
+			Name = "ic_Clouds-2";
+			Action = 0;
+			Position:
+			{
+				x = 3520.0000;
+				y = 544.0000;
+			};
+			Scale:
+			{
+				x = 0.7500;
+				y = 0.7500;
+			};
+			Color:
+			{
+			};
+		};
+		Object3:
+		{
+			Type = "Icon";
+			Sprite = "../levels/tiles/cloud";
+			Name = "ic_Clouds-3";
+			Action = 0;
+			Position:
+			{
+				x = 5024.0000;
+				y = 32.0000;
+			};
+			Scale:
+			{
+				x = 0.7500;
+				y = 0.7500;
+			};
+			Color:
+			{
+			};
+		};
+		Object4:
+		{
+			Type = "Icon";
+			Sprite = "../levels/tiles/cloud";
+			Name = "ic_Clouds-4";
+			Action = 0;
+			Position:
+			{
+				x = 6624.0000;
+				y = 480.0000;
+			};
+			Scale:
+			{
+				x = 0.7500;
+				y = 0.7500;
+			};
+			Color:
+			{
+			};
+		};
+		Object5:
+		{
+			Type = "Icon";
+			Sprite = "../levels/tiles/cloud";
+			Name = "ic_Clouds-5";
+			Action = 0;
+			Position:
+			{
+				x = 4512.0000;
+				y = 384.0000;
+			};
+			Scale:
+			{
+				x = 0.5000;
+				y = 0.5000;
+			};
+			Color:
+			{
+			};
+		};
+		Object6:
+		{
+			Type = "Icon";
+			Sprite = "../levels/tiles/cloud";
+			Name = "ic_Clouds-6";
+			Action = 0;
+			Position:
+			{
+				x = 7072.0000;
+				y = 128.0000;
+			};
+			Scale:
+			{
+				x = 0.5000;
+				y = 0.5000;
+			};
+			Color:
+			{
+			};
+		};
+		Object7:
+		{
+			Type = "Icon";
+			Sprite = "../levels/tiles/cloud";
+			Name = "ic_Clouds-7";
+			Action = 0;
+			Position:
+			{
+				x = 8800.0000;
+				y = 352.0000;
+			};
+			Scale:
+			{
+				x = 0.5000;
+				y = 0.5000;
+			};
+			Color:
+			{
+			};
+		};
+	};
+	Object3:
+	{
+		Type = "Group";
+		Name = " bck";
+		Position:
+		{
+			x = -128.0000;
+			y = 672.0000;
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+			g = 0.8902;
+			b = 0.8039;
+		};
+		NumObjects = 4;
+		Object0:
+		{
+			Type = "Icon";
+			Sprite = "../levels/tiles/bck2";
+			Name = "ic_ bck";
+			Action = 0;
+			Position:
+			{
+				x = 10240.0000;
+				y = -1440.0000;
+			};
+			Scale:
+			{
+			};
+			Angle = 1.5708;
+			Color:
+			{
+				r = 0.9020;
+				g = 0.9059;
+				b = 0.9098;
+			};
+		};
+		Object1:
+		{
+			Type = "Icon";
+			Sprite = "../levels/tiles/bck2";
+			Name = "ic_ bck-1";
+			Action = 0;
+			Position:
+			{
+				x = 7840.0000;
+				y = 640.0000;
+			};
+			Scale:
+			{
+			};
+			Angle = 1.5708;
+			Color:
+			{
+				r = 0.9020;
+				g = 0.9059;
+				b = 0.9098;
+			};
+		};
+		Object2:
+		{
+			Type = "Icon";
+			Sprite = "../levels/tiles/bck2";
+			Name = "ic_ bck-2";
+			Action = 0;
+			Position:
+			{
+				x = 2656.0000;
+				y = 640.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+		};
+		Object3:
+		{
+			Type = "Icon";
+			Sprite = "../levels/tiles/bck2";
+			Name = "ic_ bck-3";
+			Action = 0;
+			Position:
+			{
+				x = 6112.0000;
+				y = -768.0000;
+			};
+			Scale:
+			{
+			};
+			Angle = -3.1416;
+			Color:
+			{
+			};
+		};
+	};
+};

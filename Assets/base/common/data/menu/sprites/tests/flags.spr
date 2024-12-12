@@ -1,0 +1,7786 @@
+Sprite:
+{
+	Name = "flags";
+	NumActions = 252;
+	Action0:
+	{
+		Name = "ad";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+						x = 0.5001;
+						y = 0.4997;
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						FU = 0.0703;
+						FV = 0.0469;
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "ae";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0703;
+						FU = 0.1406;
+						FV = 0.0469;
+					};
+				};
+			};
+		};
+	};
+	Action2:
+	{
+		Name = "af";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1406;
+						FU = 0.2109;
+						FV = 0.0469;
+					};
+				};
+			};
+		};
+	};
+	Action3:
+	{
+		Name = "ag";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2109;
+						FU = 0.2813;
+						FV = 0.0469;
+					};
+				};
+			};
+		};
+	};
+	Action4:
+	{
+		Name = "ai";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2813;
+						FU = 0.3516;
+						FV = 0.0469;
+					};
+				};
+			};
+		};
+	};
+	Action5:
+	{
+		Name = "al";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3516;
+						FU = 0.4219;
+						FV = 0.0469;
+					};
+				};
+			};
+		};
+	};
+	Action6:
+	{
+		Name = "am";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4219;
+						FU = 0.4922;
+						FV = 0.0469;
+					};
+				};
+			};
+		};
+	};
+	Action7:
+	{
+		Name = "an";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4922;
+						FU = 0.5625;
+						FV = 0.0469;
+					};
+				};
+			};
+		};
+	};
+	Action8:
+	{
+		Name = "ao";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.5625;
+						FU = 0.6328;
+						FV = 0.0469;
+					};
+				};
+			};
+		};
+	};
+	Action9:
+	{
+		Name = "aq";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6328;
+						FU = 0.7031;
+						FV = 0.0469;
+					};
+				};
+			};
+		};
+	};
+	Action10:
+	{
+		Name = "ar";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7031;
+						FU = 0.7734;
+						FV = 0.0469;
+					};
+				};
+			};
+		};
+	};
+	Action11:
+	{
+		Name = "arle";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7734;
+						FU = 0.8438;
+						FV = 0.0469;
+					};
+				};
+			};
+		};
+	};
+	Action12:
+	{
+		Name = "as";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8438;
+						FU = 0.9141;
+						FV = 0.0469;
+					};
+				};
+			};
+		};
+	};
+	Action13:
+	{
+		Name = "at";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.9141;
+						FU = 0.9844;
+						FV = 0.0469;
+					};
+				};
+			};
+		};
+	};
+	Action14:
+	{
+		Name = "au";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IV = 0.0469;
+						FU = 0.0703;
+						FV = 0.0938;
+					};
+				};
+			};
+		};
+	};
+	Action15:
+	{
+		Name = "aw";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0703;
+						IV = 0.0469;
+						FU = 0.1406;
+						FV = 0.0938;
+					};
+				};
+			};
+		};
+	};
+	Action16:
+	{
+		Name = "ax";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1406;
+						IV = 0.0469;
+						FU = 0.2109;
+						FV = 0.0938;
+					};
+				};
+			};
+		};
+	};
+	Action17:
+	{
+		Name = "az";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2109;
+						IV = 0.0469;
+						FU = 0.2813;
+						FV = 0.0938;
+					};
+				};
+			};
+		};
+	};
+	Action18:
+	{
+		Name = "ba";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2813;
+						IV = 0.0469;
+						FU = 0.3516;
+						FV = 0.0938;
+					};
+				};
+			};
+		};
+	};
+	Action19:
+	{
+		Name = "bb";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3516;
+						IV = 0.0469;
+						FU = 0.4219;
+						FV = 0.0938;
+					};
+				};
+			};
+		};
+	};
+	Action20:
+	{
+		Name = "bd";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4219;
+						IV = 0.0469;
+						FU = 0.4922;
+						FV = 0.0938;
+					};
+				};
+			};
+		};
+	};
+	Action21:
+	{
+		Name = "be";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4922;
+						IV = 0.0469;
+						FU = 0.5625;
+						FV = 0.0938;
+					};
+				};
+			};
+		};
+	};
+	Action22:
+	{
+		Name = "bf";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.5625;
+						IV = 0.0469;
+						FU = 0.6328;
+						FV = 0.0938;
+					};
+				};
+			};
+		};
+	};
+	Action23:
+	{
+		Name = "bg";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6328;
+						IV = 0.0469;
+						FU = 0.7031;
+						FV = 0.0938;
+					};
+				};
+			};
+		};
+	};
+	Action24:
+	{
+		Name = "bh";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7031;
+						IV = 0.0469;
+						FU = 0.7734;
+						FV = 0.0938;
+					};
+				};
+			};
+		};
+	};
+	Action25:
+	{
+		Name = "bi";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7734;
+						IV = 0.0469;
+						FU = 0.8438;
+						FV = 0.0938;
+					};
+				};
+			};
+		};
+	};
+	Action26:
+	{
+		Name = "bj";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8438;
+						IV = 0.0469;
+						FU = 0.9141;
+						FV = 0.0938;
+					};
+				};
+			};
+		};
+	};
+	Action27:
+	{
+		Name = "bm";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.9141;
+						IV = 0.0469;
+						FU = 0.9844;
+						FV = 0.0938;
+					};
+				};
+			};
+		};
+	};
+	Action28:
+	{
+		Name = "bn";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IV = 0.0938;
+						FU = 0.0703;
+						FV = 0.1406;
+					};
+				};
+			};
+		};
+	};
+	Action29:
+	{
+		Name = "bo";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0703;
+						IV = 0.0938;
+						FU = 0.1406;
+						FV = 0.1406;
+					};
+				};
+			};
+		};
+	};
+	Action30:
+	{
+		Name = "br";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1406;
+						IV = 0.0938;
+						FU = 0.2109;
+						FV = 0.1406;
+					};
+				};
+			};
+		};
+	};
+	Action31:
+	{
+		Name = "bs";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2109;
+						IV = 0.0938;
+						FU = 0.2813;
+						FV = 0.1406;
+					};
+				};
+			};
+		};
+	};
+	Action32:
+	{
+		Name = "bt";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2813;
+						IV = 0.0938;
+						FU = 0.3516;
+						FV = 0.1406;
+					};
+				};
+			};
+		};
+	};
+	Action33:
+	{
+		Name = "bv";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3516;
+						IV = 0.0938;
+						FU = 0.4219;
+						FV = 0.1406;
+					};
+				};
+			};
+		};
+	};
+	Action34:
+	{
+		Name = "bw";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4219;
+						IV = 0.0938;
+						FU = 0.4922;
+						FV = 0.1406;
+					};
+				};
+			};
+		};
+	};
+	Action35:
+	{
+		Name = "by";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4922;
+						IV = 0.0938;
+						FU = 0.5625;
+						FV = 0.1406;
+					};
+				};
+			};
+		};
+	};
+	Action36:
+	{
+		Name = "bz";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.5625;
+						IV = 0.0938;
+						FU = 0.6328;
+						FV = 0.1406;
+					};
+				};
+			};
+		};
+	};
+	Action37:
+	{
+		Name = "ca";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6328;
+						IV = 0.0938;
+						FU = 0.7031;
+						FV = 0.1406;
+					};
+				};
+			};
+		};
+	};
+	Action38:
+	{
+		Name = "cc";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7031;
+						IV = 0.0938;
+						FU = 0.7734;
+						FV = 0.1406;
+					};
+				};
+			};
+		};
+	};
+	Action39:
+	{
+		Name = "cd";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7734;
+						IV = 0.0938;
+						FU = 0.8438;
+						FV = 0.1406;
+					};
+				};
+			};
+		};
+	};
+	Action40:
+	{
+		Name = "cf";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8438;
+						IV = 0.0938;
+						FU = 0.9141;
+						FV = 0.1406;
+					};
+				};
+			};
+		};
+	};
+	Action41:
+	{
+		Name = "cg";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.9141;
+						IV = 0.0938;
+						FU = 0.9844;
+						FV = 0.1406;
+					};
+				};
+			};
+		};
+	};
+	Action42:
+	{
+		Name = "ch";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IV = 0.1406;
+						FU = 0.0703;
+						FV = 0.1875;
+					};
+				};
+			};
+		};
+	};
+	Action43:
+	{
+		Name = "ci";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0703;
+						IV = 0.1406;
+						FU = 0.1406;
+						FV = 0.1875;
+					};
+				};
+			};
+		};
+	};
+	Action44:
+	{
+		Name = "ck";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1406;
+						IV = 0.1406;
+						FU = 0.2109;
+						FV = 0.1875;
+					};
+				};
+			};
+		};
+	};
+	Action45:
+	{
+		Name = "cl";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2109;
+						IV = 0.1406;
+						FU = 0.2813;
+						FV = 0.1875;
+					};
+				};
+			};
+		};
+	};
+	Action46:
+	{
+		Name = "cm";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2813;
+						IV = 0.1406;
+						FU = 0.3516;
+						FV = 0.1875;
+					};
+				};
+			};
+		};
+	};
+	Action47:
+	{
+		Name = "cn";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3516;
+						IV = 0.1406;
+						FU = 0.4219;
+						FV = 0.1875;
+					};
+				};
+			};
+		};
+	};
+	Action48:
+	{
+		Name = "co";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4219;
+						IV = 0.1406;
+						FU = 0.4922;
+						FV = 0.1875;
+					};
+				};
+			};
+		};
+	};
+	Action49:
+	{
+		Name = "cr";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4922;
+						IV = 0.1406;
+						FU = 0.5625;
+						FV = 0.1875;
+					};
+				};
+			};
+		};
+	};
+	Action50:
+	{
+		Name = "cs";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.5625;
+						IV = 0.1406;
+						FU = 0.6328;
+						FV = 0.1875;
+					};
+				};
+			};
+		};
+	};
+	Action51:
+	{
+		Name = "cu";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6328;
+						IV = 0.1406;
+						FU = 0.7031;
+						FV = 0.1875;
+					};
+				};
+			};
+		};
+	};
+	Action52:
+	{
+		Name = "cv";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7031;
+						IV = 0.1406;
+						FU = 0.7734;
+						FV = 0.1875;
+					};
+				};
+			};
+		};
+	};
+	Action53:
+	{
+		Name = "cx";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7734;
+						IV = 0.1406;
+						FU = 0.8438;
+						FV = 0.1875;
+					};
+				};
+			};
+		};
+	};
+	Action54:
+	{
+		Name = "cy";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8438;
+						IV = 0.1406;
+						FU = 0.9141;
+						FV = 0.1875;
+					};
+				};
+			};
+		};
+	};
+	Action55:
+	{
+		Name = "cz";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.9141;
+						IV = 0.1406;
+						FU = 0.9844;
+						FV = 0.1875;
+					};
+				};
+			};
+		};
+	};
+	Action56:
+	{
+		Name = "de";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IV = 0.1875;
+						FU = 0.0703;
+						FV = 0.2344;
+					};
+				};
+			};
+		};
+	};
+	Action57:
+	{
+		Name = "dj";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0703;
+						IV = 0.1875;
+						FU = 0.1406;
+						FV = 0.2344;
+					};
+				};
+			};
+		};
+	};
+	Action58:
+	{
+		Name = "dk";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1406;
+						IV = 0.1875;
+						FU = 0.2109;
+						FV = 0.2344;
+					};
+				};
+			};
+		};
+	};
+	Action59:
+	{
+		Name = "dm";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2109;
+						IV = 0.1875;
+						FU = 0.2813;
+						FV = 0.2344;
+					};
+				};
+			};
+		};
+	};
+	Action60:
+	{
+		Name = "do";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2813;
+						IV = 0.1875;
+						FU = 0.3516;
+						FV = 0.2344;
+					};
+				};
+			};
+		};
+	};
+	Action61:
+	{
+		Name = "dz";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3516;
+						IV = 0.1875;
+						FU = 0.4219;
+						FV = 0.2344;
+					};
+				};
+			};
+		};
+	};
+	Action62:
+	{
+		Name = "ec";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4219;
+						IV = 0.1875;
+						FU = 0.4922;
+						FV = 0.2344;
+					};
+				};
+			};
+		};
+	};
+	Action63:
+	{
+		Name = "ee";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4922;
+						IV = 0.1875;
+						FU = 0.5625;
+						FV = 0.2344;
+					};
+				};
+			};
+		};
+	};
+	Action64:
+	{
+		Name = "eg";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.5625;
+						IV = 0.1875;
+						FU = 0.6328;
+						FV = 0.2344;
+					};
+				};
+			};
+		};
+	};
+	Action65:
+	{
+		Name = "eh";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6328;
+						IV = 0.1875;
+						FU = 0.7031;
+						FV = 0.2344;
+					};
+				};
+			};
+		};
+	};
+	Action66:
+	{
+		Name = "eo";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7031;
+						IV = 0.1875;
+						FU = 0.7734;
+						FV = 0.2344;
+					};
+				};
+			};
+		};
+	};
+	Action67:
+	{
+		Name = "er";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7734;
+						IV = 0.1875;
+						FU = 0.8438;
+						FV = 0.2344;
+					};
+				};
+			};
+		};
+	};
+	Action68:
+	{
+		Name = "es";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8438;
+						IV = 0.1875;
+						FU = 0.9141;
+						FV = 0.2344;
+					};
+				};
+			};
+		};
+	};
+	Action69:
+	{
+		Name = "et";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.9141;
+						IV = 0.1875;
+						FU = 0.9844;
+						FV = 0.2344;
+					};
+				};
+			};
+		};
+	};
+	Action70:
+	{
+		Name = "eu";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IV = 0.2344;
+						FU = 0.0703;
+						FV = 0.2813;
+					};
+				};
+			};
+		};
+	};
+	Action71:
+	{
+		Name = "fi";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0703;
+						IV = 0.2344;
+						FU = 0.1406;
+						FV = 0.2813;
+					};
+				};
+			};
+		};
+	};
+	Action72:
+	{
+		Name = "fj";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1406;
+						IV = 0.2344;
+						FU = 0.2109;
+						FV = 0.2813;
+					};
+				};
+			};
+		};
+	};
+	Action73:
+	{
+		Name = "fk";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2109;
+						IV = 0.2344;
+						FU = 0.2813;
+						FV = 0.2813;
+					};
+				};
+			};
+		};
+	};
+	Action74:
+	{
+		Name = "fm";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2813;
+						IV = 0.2344;
+						FU = 0.3516;
+						FV = 0.2813;
+					};
+				};
+			};
+		};
+	};
+	Action75:
+	{
+		Name = "fo";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3516;
+						IV = 0.2344;
+						FU = 0.4219;
+						FV = 0.2813;
+					};
+				};
+			};
+		};
+	};
+	Action76:
+	{
+		Name = "fr";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4219;
+						IV = 0.2344;
+						FU = 0.4922;
+						FV = 0.2813;
+					};
+				};
+			};
+		};
+	};
+	Action77:
+	{
+		Name = "ga";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4922;
+						IV = 0.2344;
+						FU = 0.5625;
+						FV = 0.2813;
+					};
+				};
+			};
+		};
+	};
+	Action78:
+	{
+		Name = "galego";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.5625;
+						IV = 0.2344;
+						FU = 0.6328;
+						FV = 0.2813;
+					};
+				};
+			};
+		};
+	};
+	Action79:
+	{
+		Name = "gb";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6328;
+						IV = 0.2344;
+						FU = 0.7031;
+						FV = 0.2813;
+					};
+				};
+			};
+		};
+	};
+	Action80:
+	{
+		Name = "gd";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7031;
+						IV = 0.2344;
+						FU = 0.7734;
+						FV = 0.2813;
+					};
+				};
+			};
+		};
+	};
+	Action81:
+	{
+		Name = "ge";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7734;
+						IV = 0.2344;
+						FU = 0.8438;
+						FV = 0.2813;
+					};
+				};
+			};
+		};
+	};
+	Action82:
+	{
+		Name = "gf";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8438;
+						IV = 0.2344;
+						FU = 0.9141;
+						FV = 0.2813;
+					};
+				};
+			};
+		};
+	};
+	Action83:
+	{
+		Name = "gg";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.9141;
+						IV = 0.2344;
+						FU = 0.9844;
+						FV = 0.2813;
+					};
+				};
+			};
+		};
+	};
+	Action84:
+	{
+		Name = "gh";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IV = 0.2813;
+						FU = 0.0703;
+						FV = 0.3281;
+					};
+				};
+			};
+		};
+	};
+	Action85:
+	{
+		Name = "gi";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0703;
+						IV = 0.2813;
+						FU = 0.1406;
+						FV = 0.3281;
+					};
+				};
+			};
+		};
+	};
+	Action86:
+	{
+		Name = "gl";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1406;
+						IV = 0.2813;
+						FU = 0.2109;
+						FV = 0.3281;
+					};
+				};
+			};
+		};
+	};
+	Action87:
+	{
+		Name = "gm";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2109;
+						IV = 0.2813;
+						FU = 0.2813;
+						FV = 0.3281;
+					};
+				};
+			};
+		};
+	};
+	Action88:
+	{
+		Name = "gn";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2813;
+						IV = 0.2813;
+						FU = 0.3516;
+						FV = 0.3281;
+					};
+				};
+			};
+		};
+	};
+	Action89:
+	{
+		Name = "gp";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3516;
+						IV = 0.2813;
+						FU = 0.4219;
+						FV = 0.3281;
+					};
+				};
+			};
+		};
+	};
+	Action90:
+	{
+		Name = "gq";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4219;
+						IV = 0.2813;
+						FU = 0.4922;
+						FV = 0.3281;
+					};
+				};
+			};
+		};
+	};
+	Action91:
+	{
+		Name = "gr";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4922;
+						IV = 0.2813;
+						FU = 0.5625;
+						FV = 0.3281;
+					};
+				};
+			};
+		};
+	};
+	Action92:
+	{
+		Name = "gs";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.5625;
+						IV = 0.2813;
+						FU = 0.6328;
+						FV = 0.3281;
+					};
+				};
+			};
+		};
+	};
+	Action93:
+	{
+		Name = "gt";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6328;
+						IV = 0.2813;
+						FU = 0.7031;
+						FV = 0.3281;
+					};
+				};
+			};
+		};
+	};
+	Action94:
+	{
+		Name = "gu";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7031;
+						IV = 0.2813;
+						FU = 0.7734;
+						FV = 0.3281;
+					};
+				};
+			};
+		};
+	};
+	Action95:
+	{
+		Name = "gw";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7734;
+						IV = 0.2813;
+						FU = 0.8438;
+						FV = 0.3281;
+					};
+				};
+			};
+		};
+	};
+	Action96:
+	{
+		Name = "gy";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8438;
+						IV = 0.2813;
+						FU = 0.9141;
+						FV = 0.3281;
+					};
+				};
+			};
+		};
+	};
+	Action97:
+	{
+		Name = "hk";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.9141;
+						IV = 0.2813;
+						FU = 0.9844;
+						FV = 0.3281;
+					};
+				};
+			};
+		};
+	};
+	Action98:
+	{
+		Name = "hm";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IV = 0.3281;
+						FU = 0.0703;
+						FV = 0.3750;
+					};
+				};
+			};
+		};
+	};
+	Action99:
+	{
+		Name = "hn";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0703;
+						IV = 0.3281;
+						FU = 0.1406;
+						FV = 0.3750;
+					};
+				};
+			};
+		};
+	};
+	Action100:
+	{
+		Name = "hr";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1406;
+						IV = 0.3281;
+						FU = 0.2109;
+						FV = 0.3750;
+					};
+				};
+			};
+		};
+	};
+	Action101:
+	{
+		Name = "ht";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2109;
+						IV = 0.3281;
+						FU = 0.2813;
+						FV = 0.3750;
+					};
+				};
+			};
+		};
+	};
+	Action102:
+	{
+		Name = "hu";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2813;
+						IV = 0.3281;
+						FU = 0.3516;
+						FV = 0.3750;
+					};
+				};
+			};
+		};
+	};
+	Action103:
+	{
+		Name = "id";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3516;
+						IV = 0.3281;
+						FU = 0.4219;
+						FV = 0.3750;
+					};
+				};
+			};
+		};
+	};
+	Action104:
+	{
+		Name = "ie";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4219;
+						IV = 0.3281;
+						FU = 0.4922;
+						FV = 0.3750;
+					};
+				};
+			};
+		};
+	};
+	Action105:
+	{
+		Name = "il";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4922;
+						IV = 0.3281;
+						FU = 0.5625;
+						FV = 0.3750;
+					};
+				};
+			};
+		};
+	};
+	Action106:
+	{
+		Name = "im";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.5625;
+						IV = 0.3281;
+						FU = 0.6328;
+						FV = 0.3750;
+					};
+				};
+			};
+		};
+	};
+	Action107:
+	{
+		Name = "in";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6328;
+						IV = 0.3281;
+						FU = 0.7031;
+						FV = 0.3750;
+					};
+				};
+			};
+		};
+	};
+	Action108:
+	{
+		Name = "io";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7031;
+						IV = 0.3281;
+						FU = 0.7734;
+						FV = 0.3750;
+					};
+				};
+			};
+		};
+	};
+	Action109:
+	{
+		Name = "iq";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7734;
+						IV = 0.3281;
+						FU = 0.8438;
+						FV = 0.3750;
+					};
+				};
+			};
+		};
+	};
+	Action110:
+	{
+		Name = "ir";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8438;
+						IV = 0.3281;
+						FU = 0.9141;
+						FV = 0.3750;
+					};
+				};
+			};
+		};
+	};
+	Action111:
+	{
+		Name = "is";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.9141;
+						IV = 0.3281;
+						FU = 0.9844;
+						FV = 0.3750;
+					};
+				};
+			};
+		};
+	};
+	Action112:
+	{
+		Name = "it";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IV = 0.3750;
+						FU = 0.0703;
+						FV = 0.4219;
+					};
+				};
+			};
+		};
+	};
+	Action113:
+	{
+		Name = "je";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0703;
+						IV = 0.3750;
+						FU = 0.1406;
+						FV = 0.4219;
+					};
+				};
+			};
+		};
+	};
+	Action114:
+	{
+		Name = "jm";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1406;
+						IV = 0.3750;
+						FU = 0.2109;
+						FV = 0.4219;
+					};
+				};
+			};
+		};
+	};
+	Action115:
+	{
+		Name = "jo";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2109;
+						IV = 0.3750;
+						FU = 0.2813;
+						FV = 0.4219;
+					};
+				};
+			};
+		};
+	};
+	Action116:
+	{
+		Name = "jp";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2813;
+						IV = 0.3750;
+						FU = 0.3516;
+						FV = 0.4219;
+					};
+				};
+			};
+		};
+	};
+	Action117:
+	{
+		Name = "ke";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3516;
+						IV = 0.3750;
+						FU = 0.4219;
+						FV = 0.4219;
+					};
+				};
+			};
+		};
+	};
+	Action118:
+	{
+		Name = "kg";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4219;
+						IV = 0.3750;
+						FU = 0.4922;
+						FV = 0.4219;
+					};
+				};
+			};
+		};
+	};
+	Action119:
+	{
+		Name = "kh";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4922;
+						IV = 0.3750;
+						FU = 0.5625;
+						FV = 0.4219;
+					};
+				};
+			};
+		};
+	};
+	Action120:
+	{
+		Name = "ki";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.5625;
+						IV = 0.3750;
+						FU = 0.6328;
+						FV = 0.4219;
+					};
+				};
+			};
+		};
+	};
+	Action121:
+	{
+		Name = "km";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6328;
+						IV = 0.3750;
+						FU = 0.7031;
+						FV = 0.4219;
+					};
+				};
+			};
+		};
+	};
+	Action122:
+	{
+		Name = "kn";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7031;
+						IV = 0.3750;
+						FU = 0.7734;
+						FV = 0.4219;
+					};
+				};
+			};
+		};
+	};
+	Action123:
+	{
+		Name = "kp";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7734;
+						IV = 0.3750;
+						FU = 0.8438;
+						FV = 0.4219;
+					};
+				};
+			};
+		};
+	};
+	Action124:
+	{
+		Name = "kr";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8438;
+						IV = 0.3750;
+						FU = 0.9141;
+						FV = 0.4219;
+					};
+				};
+			};
+		};
+	};
+	Action125:
+	{
+		Name = "kw";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.9141;
+						IV = 0.3750;
+						FU = 0.9844;
+						FV = 0.4219;
+					};
+				};
+			};
+		};
+	};
+	Action126:
+	{
+		Name = "ky";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IV = 0.4219;
+						FU = 0.0703;
+						FV = 0.4688;
+					};
+				};
+			};
+		};
+	};
+	Action127:
+	{
+		Name = "kz";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0703;
+						IV = 0.4219;
+						FU = 0.1406;
+						FV = 0.4688;
+					};
+				};
+			};
+		};
+	};
+	Action128:
+	{
+		Name = "la";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1406;
+						IV = 0.4219;
+						FU = 0.2109;
+						FV = 0.4688;
+					};
+				};
+			};
+		};
+	};
+	Action129:
+	{
+		Name = "lb";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2109;
+						IV = 0.4219;
+						FU = 0.2813;
+						FV = 0.4688;
+					};
+				};
+			};
+		};
+	};
+	Action130:
+	{
+		Name = "lc";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2813;
+						IV = 0.4219;
+						FU = 0.3516;
+						FV = 0.4688;
+					};
+				};
+			};
+		};
+	};
+	Action131:
+	{
+		Name = "li";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3516;
+						IV = 0.4219;
+						FU = 0.4219;
+						FV = 0.4688;
+					};
+				};
+			};
+		};
+	};
+	Action132:
+	{
+		Name = "lk";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4219;
+						IV = 0.4219;
+						FU = 0.4922;
+						FV = 0.4688;
+					};
+				};
+			};
+		};
+	};
+	Action133:
+	{
+		Name = "lr";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4922;
+						IV = 0.4219;
+						FU = 0.5625;
+						FV = 0.4688;
+					};
+				};
+			};
+		};
+	};
+	Action134:
+	{
+		Name = "ls";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.5625;
+						IV = 0.4219;
+						FU = 0.6328;
+						FV = 0.4688;
+					};
+				};
+			};
+		};
+	};
+	Action135:
+	{
+		Name = "lt";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6328;
+						IV = 0.4219;
+						FU = 0.7031;
+						FV = 0.4688;
+					};
+				};
+			};
+		};
+	};
+	Action136:
+	{
+		Name = "lu";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7031;
+						IV = 0.4219;
+						FU = 0.7734;
+						FV = 0.4688;
+					};
+				};
+			};
+		};
+	};
+	Action137:
+	{
+		Name = "lv";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7734;
+						IV = 0.4219;
+						FU = 0.8438;
+						FV = 0.4688;
+					};
+				};
+			};
+		};
+	};
+	Action138:
+	{
+		Name = "ly";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8438;
+						IV = 0.4219;
+						FU = 0.9141;
+						FV = 0.4688;
+					};
+				};
+			};
+		};
+	};
+	Action139:
+	{
+		Name = "ma";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.9141;
+						IV = 0.4219;
+						FU = 0.9844;
+						FV = 0.4688;
+					};
+				};
+			};
+		};
+	};
+	Action140:
+	{
+		Name = "mc";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IV = 0.4688;
+						FU = 0.0703;
+						FV = 0.5156;
+					};
+				};
+			};
+		};
+	};
+	Action141:
+	{
+		Name = "md";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0703;
+						IV = 0.4688;
+						FU = 0.1406;
+						FV = 0.5156;
+					};
+				};
+			};
+		};
+	};
+	Action142:
+	{
+		Name = "me";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 88.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1406;
+						IV = 0.4688;
+						FU = 0.2266;
+						FV = 0.5156;
+					};
+				};
+			};
+		};
+	};
+	Action143:
+	{
+		Name = "mg";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2266;
+						IV = 0.4688;
+						FU = 0.2969;
+						FV = 0.5156;
+					};
+				};
+			};
+		};
+	};
+	Action144:
+	{
+		Name = "mh";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2969;
+						IV = 0.4688;
+						FU = 0.3672;
+						FV = 0.5156;
+					};
+				};
+			};
+		};
+	};
+	Action145:
+	{
+		Name = "mk";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3672;
+						IV = 0.4688;
+						FU = 0.4375;
+						FV = 0.5156;
+					};
+				};
+			};
+		};
+	};
+	Action146:
+	{
+		Name = "ml";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4375;
+						IV = 0.4688;
+						FU = 0.5078;
+						FV = 0.5156;
+					};
+				};
+			};
+		};
+	};
+	Action147:
+	{
+		Name = "mm";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.5078;
+						IV = 0.4688;
+						FU = 0.5781;
+						FV = 0.5156;
+					};
+				};
+			};
+		};
+	};
+	Action148:
+	{
+		Name = "mn";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.5781;
+						IV = 0.4688;
+						FU = 0.6484;
+						FV = 0.5156;
+					};
+				};
+			};
+		};
+	};
+	Action149:
+	{
+		Name = "mo";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6484;
+						IV = 0.4688;
+						FU = 0.7188;
+						FV = 0.5156;
+					};
+				};
+			};
+		};
+	};
+	Action150:
+	{
+		Name = "mp";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7188;
+						IV = 0.4688;
+						FU = 0.7891;
+						FV = 0.5156;
+					};
+				};
+			};
+		};
+	};
+	Action151:
+	{
+		Name = "mq";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7891;
+						IV = 0.4688;
+						FU = 0.8594;
+						FV = 0.5156;
+					};
+				};
+			};
+		};
+	};
+	Action152:
+	{
+		Name = "mr";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8594;
+						IV = 0.4688;
+						FU = 0.9297;
+						FV = 0.5156;
+					};
+				};
+			};
+		};
+	};
+	Action153:
+	{
+		Name = "ms";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IV = 0.5156;
+						FU = 0.0703;
+						FV = 0.5625;
+					};
+				};
+			};
+		};
+	};
+	Action154:
+	{
+		Name = "mt";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0703;
+						IV = 0.5156;
+						FU = 0.1406;
+						FV = 0.5625;
+					};
+				};
+			};
+		};
+	};
+	Action155:
+	{
+		Name = "mu";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1406;
+						IV = 0.5156;
+						FU = 0.2109;
+						FV = 0.5625;
+					};
+				};
+			};
+		};
+	};
+	Action156:
+	{
+		Name = "mv";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2109;
+						IV = 0.5156;
+						FU = 0.2813;
+						FV = 0.5625;
+					};
+				};
+			};
+		};
+	};
+	Action157:
+	{
+		Name = "mw";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2813;
+						IV = 0.5156;
+						FU = 0.3516;
+						FV = 0.5625;
+					};
+				};
+			};
+		};
+	};
+	Action158:
+	{
+		Name = "mx";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3516;
+						IV = 0.5156;
+						FU = 0.4219;
+						FV = 0.5625;
+					};
+				};
+			};
+		};
+	};
+	Action159:
+	{
+		Name = "my";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4219;
+						IV = 0.5156;
+						FU = 0.4922;
+						FV = 0.5625;
+					};
+				};
+			};
+		};
+	};
+	Action160:
+	{
+		Name = "mz";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4922;
+						IV = 0.5156;
+						FU = 0.5625;
+						FV = 0.5625;
+					};
+				};
+			};
+		};
+	};
+	Action161:
+	{
+		Name = "na";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.5625;
+						IV = 0.5156;
+						FU = 0.6328;
+						FV = 0.5625;
+					};
+				};
+			};
+		};
+	};
+	Action162:
+	{
+		Name = "nc";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6328;
+						IV = 0.5156;
+						FU = 0.7031;
+						FV = 0.5625;
+					};
+				};
+			};
+		};
+	};
+	Action163:
+	{
+		Name = "ne";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7031;
+						IV = 0.5156;
+						FU = 0.7734;
+						FV = 0.5625;
+					};
+				};
+			};
+		};
+	};
+	Action164:
+	{
+		Name = "nf";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7734;
+						IV = 0.5156;
+						FU = 0.8438;
+						FV = 0.5625;
+					};
+				};
+			};
+		};
+	};
+	Action165:
+	{
+		Name = "ng";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8438;
+						IV = 0.5156;
+						FU = 0.9141;
+						FV = 0.5625;
+					};
+				};
+			};
+		};
+	};
+	Action166:
+	{
+		Name = "ni";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.9141;
+						IV = 0.5156;
+						FU = 0.9844;
+						FV = 0.5625;
+					};
+				};
+			};
+		};
+	};
+	Action167:
+	{
+		Name = "nl";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IV = 0.5625;
+						FU = 0.0703;
+						FV = 0.6094;
+					};
+				};
+			};
+		};
+	};
+	Action168:
+	{
+		Name = "no";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0703;
+						IV = 0.5625;
+						FU = 0.1406;
+						FV = 0.6094;
+					};
+				};
+			};
+		};
+	};
+	Action169:
+	{
+		Name = "np";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1406;
+						IV = 0.5625;
+						FU = 0.2109;
+						FV = 0.6094;
+					};
+				};
+			};
+		};
+	};
+	Action170:
+	{
+		Name = "nr";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2109;
+						IV = 0.5625;
+						FU = 0.2813;
+						FV = 0.6094;
+					};
+				};
+			};
+		};
+	};
+	Action171:
+	{
+		Name = "nu";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2813;
+						IV = 0.5625;
+						FU = 0.3516;
+						FV = 0.6094;
+					};
+				};
+			};
+		};
+	};
+	Action172:
+	{
+		Name = "nz";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3516;
+						IV = 0.5625;
+						FU = 0.4219;
+						FV = 0.6094;
+					};
+				};
+			};
+		};
+	};
+	Action173:
+	{
+		Name = "om";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4219;
+						IV = 0.5625;
+						FU = 0.4922;
+						FV = 0.6094;
+					};
+				};
+			};
+		};
+	};
+	Action174:
+	{
+		Name = "pa";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4922;
+						IV = 0.5625;
+						FU = 0.5625;
+						FV = 0.6094;
+					};
+				};
+			};
+		};
+	};
+	Action175:
+	{
+		Name = "pe";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.5625;
+						IV = 0.5625;
+						FU = 0.6328;
+						FV = 0.6094;
+					};
+				};
+			};
+		};
+	};
+	Action176:
+	{
+		Name = "pf";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6328;
+						IV = 0.5625;
+						FU = 0.7031;
+						FV = 0.6094;
+					};
+				};
+			};
+		};
+	};
+	Action177:
+	{
+		Name = "pg";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7031;
+						IV = 0.5625;
+						FU = 0.7734;
+						FV = 0.6094;
+					};
+				};
+			};
+		};
+	};
+	Action178:
+	{
+		Name = "ph";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7734;
+						IV = 0.5625;
+						FU = 0.8438;
+						FV = 0.6094;
+					};
+				};
+			};
+		};
+	};
+	Action179:
+	{
+		Name = "pk";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8438;
+						IV = 0.5625;
+						FU = 0.9141;
+						FV = 0.6094;
+					};
+				};
+			};
+		};
+	};
+	Action180:
+	{
+		Name = "pl";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.9141;
+						IV = 0.5625;
+						FU = 0.9844;
+						FV = 0.6094;
+					};
+				};
+			};
+		};
+	};
+	Action181:
+	{
+		Name = "pm";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IV = 0.6094;
+						FU = 0.0703;
+						FV = 0.6563;
+					};
+				};
+			};
+		};
+	};
+	Action182:
+	{
+		Name = "pn";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0703;
+						IV = 0.6094;
+						FU = 0.1406;
+						FV = 0.6563;
+					};
+				};
+			};
+		};
+	};
+	Action183:
+	{
+		Name = "pr";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1406;
+						IV = 0.6094;
+						FU = 0.2109;
+						FV = 0.6563;
+					};
+				};
+			};
+		};
+	};
+	Action184:
+	{
+		Name = "ps";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2109;
+						IV = 0.6094;
+						FU = 0.2813;
+						FV = 0.6563;
+					};
+				};
+			};
+		};
+	};
+	Action185:
+	{
+		Name = "pt";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2813;
+						IV = 0.6094;
+						FU = 0.3516;
+						FV = 0.6563;
+					};
+				};
+			};
+		};
+	};
+	Action186:
+	{
+		Name = "pw";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3516;
+						IV = 0.6094;
+						FU = 0.4219;
+						FV = 0.6563;
+					};
+				};
+			};
+		};
+	};
+	Action187:
+	{
+		Name = "py";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4219;
+						IV = 0.6094;
+						FU = 0.4922;
+						FV = 0.6563;
+					};
+				};
+			};
+		};
+	};
+	Action188:
+	{
+		Name = "qa";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4922;
+						IV = 0.6094;
+						FU = 0.5625;
+						FV = 0.6563;
+					};
+				};
+			};
+		};
+	};
+	Action189:
+	{
+		Name = "re";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.5625;
+						IV = 0.6094;
+						FU = 0.6328;
+						FV = 0.6563;
+					};
+				};
+			};
+		};
+	};
+	Action190:
+	{
+		Name = "ro";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6328;
+						IV = 0.6094;
+						FU = 0.7031;
+						FV = 0.6563;
+					};
+				};
+			};
+		};
+	};
+	Action191:
+	{
+		Name = "rs";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7031;
+						IV = 0.6094;
+						FU = 0.7734;
+						FV = 0.6563;
+					};
+				};
+			};
+		};
+	};
+	Action192:
+	{
+		Name = "ru";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7734;
+						IV = 0.6094;
+						FU = 0.8438;
+						FV = 0.6563;
+					};
+				};
+			};
+		};
+	};
+	Action193:
+	{
+		Name = "rw";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8438;
+						IV = 0.6094;
+						FU = 0.9141;
+						FV = 0.6563;
+					};
+				};
+			};
+		};
+	};
+	Action194:
+	{
+		Name = "sa";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.9141;
+						IV = 0.6094;
+						FU = 0.9844;
+						FV = 0.6563;
+					};
+				};
+			};
+		};
+	};
+	Action195:
+	{
+		Name = "sb";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IV = 0.6563;
+						FU = 0.0703;
+						FV = 0.7031;
+					};
+				};
+			};
+		};
+	};
+	Action196:
+	{
+		Name = "sc";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0703;
+						IV = 0.6563;
+						FU = 0.1406;
+						FV = 0.7031;
+					};
+				};
+			};
+		};
+	};
+	Action197:
+	{
+		Name = "sd";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1406;
+						IV = 0.6563;
+						FU = 0.2109;
+						FV = 0.7031;
+					};
+				};
+			};
+		};
+	};
+	Action198:
+	{
+		Name = "se";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2109;
+						IV = 0.6563;
+						FU = 0.2813;
+						FV = 0.7031;
+					};
+				};
+			};
+		};
+	};
+	Action199:
+	{
+		Name = "sg";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2813;
+						IV = 0.6563;
+						FU = 0.3516;
+						FV = 0.7031;
+					};
+				};
+			};
+		};
+	};
+	Action200:
+	{
+		Name = "sh";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3516;
+						IV = 0.6563;
+						FU = 0.4219;
+						FV = 0.7031;
+					};
+				};
+			};
+		};
+	};
+	Action201:
+	{
+		Name = "si";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4219;
+						IV = 0.6563;
+						FU = 0.4922;
+						FV = 0.7031;
+					};
+				};
+			};
+		};
+	};
+	Action202:
+	{
+		Name = "sj";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4922;
+						IV = 0.6563;
+						FU = 0.5625;
+						FV = 0.7031;
+					};
+				};
+			};
+		};
+	};
+	Action203:
+	{
+		Name = "sk";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.5625;
+						IV = 0.6563;
+						FU = 0.6328;
+						FV = 0.7031;
+					};
+				};
+			};
+		};
+	};
+	Action204:
+	{
+		Name = "sl";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6328;
+						IV = 0.6563;
+						FU = 0.7031;
+						FV = 0.7031;
+					};
+				};
+			};
+		};
+	};
+	Action205:
+	{
+		Name = "sm";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7031;
+						IV = 0.6563;
+						FU = 0.7734;
+						FV = 0.7031;
+					};
+				};
+			};
+		};
+	};
+	Action206:
+	{
+		Name = "sn";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7734;
+						IV = 0.6563;
+						FU = 0.8438;
+						FV = 0.7031;
+					};
+				};
+			};
+		};
+	};
+	Action207:
+	{
+		Name = "so";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8438;
+						IV = 0.6563;
+						FU = 0.9141;
+						FV = 0.7031;
+					};
+				};
+			};
+		};
+	};
+	Action208:
+	{
+		Name = "sr";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.9141;
+						IV = 0.6563;
+						FU = 0.9844;
+						FV = 0.7031;
+					};
+				};
+			};
+		};
+	};
+	Action209:
+	{
+		Name = "st";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IV = 0.7031;
+						FU = 0.0703;
+						FV = 0.7500;
+					};
+				};
+			};
+		};
+	};
+	Action210:
+	{
+		Name = "sv";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0703;
+						IV = 0.7031;
+						FU = 0.1406;
+						FV = 0.7500;
+					};
+				};
+			};
+		};
+	};
+	Action211:
+	{
+		Name = "sy";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1406;
+						IV = 0.7031;
+						FU = 0.2109;
+						FV = 0.7500;
+					};
+				};
+			};
+		};
+	};
+	Action212:
+	{
+		Name = "sz";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2109;
+						IV = 0.7031;
+						FU = 0.2813;
+						FV = 0.7500;
+					};
+				};
+			};
+		};
+	};
+	Action213:
+	{
+		Name = "tc";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2813;
+						IV = 0.7031;
+						FU = 0.3516;
+						FV = 0.7500;
+					};
+				};
+			};
+		};
+	};
+	Action214:
+	{
+		Name = "td";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3516;
+						IV = 0.7031;
+						FU = 0.4219;
+						FV = 0.7500;
+					};
+				};
+			};
+		};
+	};
+	Action215:
+	{
+		Name = "tf";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4219;
+						IV = 0.7031;
+						FU = 0.4922;
+						FV = 0.7500;
+					};
+				};
+			};
+		};
+	};
+	Action216:
+	{
+		Name = "tg";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4922;
+						IV = 0.7031;
+						FU = 0.5625;
+						FV = 0.7500;
+					};
+				};
+			};
+		};
+	};
+	Action217:
+	{
+		Name = "th";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.5625;
+						IV = 0.7031;
+						FU = 0.6328;
+						FV = 0.7500;
+					};
+				};
+			};
+		};
+	};
+	Action218:
+	{
+		Name = "tj";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6328;
+						IV = 0.7031;
+						FU = 0.7031;
+						FV = 0.7500;
+					};
+				};
+			};
+		};
+	};
+	Action219:
+	{
+		Name = "tk";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7031;
+						IV = 0.7031;
+						FU = 0.7734;
+						FV = 0.7500;
+					};
+				};
+			};
+		};
+	};
+	Action220:
+	{
+		Name = "tl";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7734;
+						IV = 0.7031;
+						FU = 0.8438;
+						FV = 0.7500;
+					};
+				};
+			};
+		};
+	};
+	Action221:
+	{
+		Name = "tm";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8438;
+						IV = 0.7031;
+						FU = 0.9141;
+						FV = 0.7500;
+					};
+				};
+			};
+		};
+	};
+	Action222:
+	{
+		Name = "tn";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.9141;
+						IV = 0.7031;
+						FU = 0.9844;
+						FV = 0.7500;
+					};
+				};
+			};
+		};
+	};
+	Action223:
+	{
+		Name = "to";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IV = 0.7500;
+						FU = 0.0703;
+						FV = 0.7969;
+					};
+				};
+			};
+		};
+	};
+	Action224:
+	{
+		Name = "tr";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0703;
+						IV = 0.7500;
+						FU = 0.1406;
+						FV = 0.7969;
+					};
+				};
+			};
+		};
+	};
+	Action225:
+	{
+		Name = "tt";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1406;
+						IV = 0.7500;
+						FU = 0.2109;
+						FV = 0.7969;
+					};
+				};
+			};
+		};
+	};
+	Action226:
+	{
+		Name = "tv";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2109;
+						IV = 0.7500;
+						FU = 0.2813;
+						FV = 0.7969;
+					};
+				};
+			};
+		};
+	};
+	Action227:
+	{
+		Name = "tw";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2813;
+						IV = 0.7500;
+						FU = 0.3516;
+						FV = 0.7969;
+					};
+				};
+			};
+		};
+	};
+	Action228:
+	{
+		Name = "tz";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3516;
+						IV = 0.7500;
+						FU = 0.4219;
+						FV = 0.7969;
+					};
+				};
+			};
+		};
+	};
+	Action229:
+	{
+		Name = "ua";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4219;
+						IV = 0.7500;
+						FU = 0.4922;
+						FV = 0.7969;
+					};
+				};
+			};
+		};
+	};
+	Action230:
+	{
+		Name = "ug";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4922;
+						IV = 0.7500;
+						FU = 0.5625;
+						FV = 0.7969;
+					};
+				};
+			};
+		};
+	};
+	Action231:
+	{
+		Name = "uk";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.5625;
+						IV = 0.7500;
+						FU = 0.6328;
+						FV = 0.7969;
+					};
+				};
+			};
+		};
+	};
+	Action232:
+	{
+		Name = "um";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6328;
+						IV = 0.7500;
+						FU = 0.7031;
+						FV = 0.7969;
+					};
+				};
+			};
+		};
+	};
+	Action233:
+	{
+		Name = "us";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7031;
+						IV = 0.7500;
+						FU = 0.7734;
+						FV = 0.7969;
+					};
+				};
+			};
+		};
+	};
+	Action234:
+	{
+		Name = "uy";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7734;
+						IV = 0.7500;
+						FU = 0.8438;
+						FV = 0.7969;
+					};
+				};
+			};
+		};
+	};
+	Action235:
+	{
+		Name = "uz";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8438;
+						IV = 0.7500;
+						FU = 0.9141;
+						FV = 0.7969;
+					};
+				};
+			};
+		};
+	};
+	Action236:
+	{
+		Name = "va";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.9141;
+						IV = 0.7500;
+						FU = 0.9844;
+						FV = 0.7969;
+					};
+				};
+			};
+		};
+	};
+	Action237:
+	{
+		Name = "vc";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IV = 0.7969;
+						FU = 0.0703;
+						FV = 0.8438;
+					};
+				};
+			};
+		};
+	};
+	Action238:
+	{
+		Name = "ve";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0703;
+						IV = 0.7969;
+						FU = 0.1406;
+						FV = 0.8438;
+					};
+				};
+			};
+		};
+	};
+	Action239:
+	{
+		Name = "vg";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.1406;
+						IV = 0.7969;
+						FU = 0.2109;
+						FV = 0.8438;
+					};
+				};
+			};
+		};
+	};
+	Action240:
+	{
+		Name = "vi";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2109;
+						IV = 0.7969;
+						FU = 0.2813;
+						FV = 0.8438;
+					};
+				};
+			};
+		};
+	};
+	Action241:
+	{
+		Name = "vn";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.2813;
+						IV = 0.7969;
+						FU = 0.3516;
+						FV = 0.8438;
+					};
+				};
+			};
+		};
+	};
+	Action242:
+	{
+		Name = "vu";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.3516;
+						IV = 0.7969;
+						FU = 0.4219;
+						FV = 0.8438;
+					};
+				};
+			};
+		};
+	};
+	Action243:
+	{
+		Name = "wf";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4219;
+						IV = 0.7969;
+						FU = 0.4922;
+						FV = 0.8438;
+					};
+				};
+			};
+		};
+	};
+	Action244:
+	{
+		Name = "ws";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.4922;
+						IV = 0.7969;
+						FU = 0.5625;
+						FV = 0.8438;
+					};
+				};
+			};
+		};
+	};
+	Action245:
+	{
+		Name = "ye";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.5625;
+						IV = 0.7969;
+						FU = 0.6328;
+						FV = 0.8438;
+					};
+				};
+			};
+		};
+	};
+	Action246:
+	{
+		Name = "yt";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.6328;
+						IV = 0.7969;
+						FU = 0.7031;
+						FV = 0.8438;
+					};
+				};
+			};
+		};
+	};
+	Action247:
+	{
+		Name = "yu";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7031;
+						IV = 0.7969;
+						FU = 0.7734;
+						FV = 0.8438;
+					};
+				};
+			};
+		};
+	};
+	Action248:
+	{
+		Name = "za";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7734;
+						IV = 0.7969;
+						FU = 0.8438;
+						FV = 0.8438;
+					};
+				};
+			};
+		};
+	};
+	Action249:
+	{
+		Name = "zm";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.8438;
+						IV = 0.7969;
+						FU = 0.9141;
+						FV = 0.8438;
+					};
+				};
+			};
+		};
+	};
+	Action250:
+	{
+		Name = "zw";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IU = 0.9141;
+						IV = 0.7969;
+						FU = 0.9844;
+						FV = 0.8438;
+					};
+				};
+			};
+		};
+	};
+	Action251:
+	{
+		Name = "zz";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "flags";
+					Filter = "NEAREST";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 72.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IV = 0.8438;
+						FU = 0.0703;
+						FV = 0.8906;
+					};
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,2087 @@
+HUD:
+{
+	FileVersion = 2;
+	NumElements = 7;
+	Element0:
+	{
+		Name = "labels";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "labels";
+			Visible = false;
+			Position:
+			{
+				x = 640.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 9;
+			Object0:
+			{
+				Type = "Rect";
+				Width = 1280.0000;
+				Height = 960.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_labels";
+				Position:
+				{
+					y = 480.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+					r = 0.0000;
+					g = 0.0000;
+					b = 0.0000;
+					a = 0.9500;
+				};
+			};
+			Object1:
+			{
+				Type = "Label";
+				Text = "LINE00/nLINE00";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE00";
+				Position:
+				{
+					y = 64.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object2:
+			{
+				Type = "Label";
+				Text = "LINE01/nLINE01";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE01";
+				Position:
+				{
+					y = 176.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object3:
+			{
+				Type = "Label";
+				Text = "LINE02/nLINE02";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE02";
+				Position:
+				{
+					y = 288.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object4:
+			{
+				Type = "Label";
+				Text = "LINE03/nLINE03";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE03";
+				Position:
+				{
+					y = 400.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object5:
+			{
+				Type = "Label";
+				Text = "LINE04/nLINE04";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE04";
+				Position:
+				{
+					y = 512.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object6:
+			{
+				Type = "Label";
+				Text = "LINE05/nLINE05";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE05";
+				Position:
+				{
+					y = 624.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object7:
+			{
+				Type = "Label";
+				Text = "LINE06/nLINE06";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE06";
+				Position:
+				{
+					y = 736.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object8:
+			{
+				Type = "Label";
+				Text = "LINE07/nLINE07";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE07";
+				Position:
+				{
+					y = 848.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "_OnIdlePage";
+			ObjAction0:
+			{
+				HUDObject = "labels";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 15.0000;
+						Value = false;
+					};
+					KeyFrame2:
+					{
+						Time = 45.0000;
+						Value = false;
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 5;
+					KeyFrame0:
+					{
+						a = 0.0000;
+					};
+					KeyFrame1:
+					{
+						Time = 0.5000;
+					};
+					KeyFrame2:
+					{
+						Time = 14.5000;
+					};
+					KeyFrame3:
+					{
+						Time = 15.0000;
+						a = 0.0000;
+					};
+					KeyFrame4:
+					{
+						Time = 45.0000;
+						a = 0.0235;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+	Element1:
+	{
+		Name = "labels-1";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "labels-1";
+			Visible = false;
+			Position:
+			{
+				x = 640.0000;
+				y = 960.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 9;
+			Object0:
+			{
+				Type = "Rect";
+				Width = 1280.0000;
+				Height = 960.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_labels-1";
+				Position:
+				{
+					y = 480.0000;
+				};
+				Scale:
+				{
+					x = 1.2500;
+				};
+				Color:
+				{
+					r = 0.0000;
+					g = 0.0000;
+					b = 0.0000;
+					a = 0.9500;
+				};
+			};
+			Object1:
+			{
+				Type = "Label";
+				Text = "LINE08/nLINE08";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE08";
+				Position:
+				{
+					y = 64.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object2:
+			{
+				Type = "Label";
+				Text = "LINE09/nLINE09";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE09";
+				Position:
+				{
+					y = 176.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object3:
+			{
+				Type = "Label";
+				Text = "LINE10/nLINE10";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE10";
+				Position:
+				{
+					y = 288.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object4:
+			{
+				Type = "Label";
+				Text = "LINE11/nLINE11";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE11";
+				Position:
+				{
+					y = 400.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object5:
+			{
+				Type = "Label";
+				Text = "LINE12/nLINE12";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE12";
+				Position:
+				{
+					y = 512.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object6:
+			{
+				Type = "Label";
+				Text = "LINE13/nLINE13";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE13";
+				Position:
+				{
+					y = 624.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object7:
+			{
+				Type = "Label";
+				Text = "LINE14/nLINE14";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE14";
+				Position:
+				{
+					y = 736.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object8:
+			{
+				Type = "Label";
+				Text = "LINE15/nLINE15";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE15";
+				Position:
+				{
+					y = 848.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "_OnIdlePage";
+			ObjAction0:
+			{
+				HUDObject = "labels-1";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 15.0000;
+						Value = false;
+					};
+					KeyFrame2:
+					{
+						Time = 45.0000;
+						Value = false;
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 5;
+					KeyFrame0:
+					{
+						a = 0.0000;
+					};
+					KeyFrame1:
+					{
+						Time = 0.5000;
+					};
+					KeyFrame2:
+					{
+						Time = 14.5000;
+					};
+					KeyFrame3:
+					{
+						Time = 15.0000;
+						a = 0.0000;
+					};
+					KeyFrame4:
+					{
+						Time = 45.0000;
+						a = 0.0000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+	Element2:
+	{
+		Name = "labels-2";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "labels-2";
+			Visible = false;
+			Position:
+			{
+				x = 640.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 9;
+			Object0:
+			{
+				Type = "Rect";
+				Width = 1280.0000;
+				Height = 960.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_labels-2";
+				Position:
+				{
+					y = 480.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+					r = 0.0000;
+					g = 0.0000;
+					b = 0.0000;
+					a = 0.9500;
+				};
+			};
+			Object1:
+			{
+				Type = "Label";
+				Text = "LINE16/nLINE16";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE16";
+				Position:
+				{
+					y = 64.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object2:
+			{
+				Type = "Label";
+				Text = "LINE17/nLINE17";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE17";
+				Position:
+				{
+					y = 176.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object3:
+			{
+				Type = "Label";
+				Text = "LINE18/nLINE18";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE18";
+				Position:
+				{
+					y = 288.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object4:
+			{
+				Type = "Label";
+				Text = "LINE19/nLINE19";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE19";
+				Position:
+				{
+					y = 400.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object5:
+			{
+				Type = "Label";
+				Text = "LINE20/nLINE20";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE20";
+				Position:
+				{
+					y = 512.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object6:
+			{
+				Type = "Label";
+				Text = "LINE21/nLINE21";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE21";
+				Position:
+				{
+					y = 624.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object7:
+			{
+				Type = "Label";
+				Text = "LINE22/nLINE22";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE22";
+				Position:
+				{
+					y = 736.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object8:
+			{
+				Type = "Label";
+				Text = "LINE23/nLINE23";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE23";
+				Position:
+				{
+					y = 848.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "_OnIdlePage";
+			ObjAction0:
+			{
+				HUDObject = "labels-2";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 4;
+					KeyFrame0:
+					{
+						Value = false;
+					};
+					KeyFrame1:
+					{
+						Time = 15.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 30.0000;
+						Value = false;
+					};
+					KeyFrame3:
+					{
+						Time = 45.0000;
+						Value = false;
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 6;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 15.0000;
+						a = 0.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 15.5000;
+					};
+					KeyFrame3:
+					{
+						Time = 29.5000;
+					};
+					KeyFrame4:
+					{
+						Time = 30.0000;
+						a = 0.0000;
+					};
+					KeyFrame5:
+					{
+						Time = 45.0000;
+						a = 0.0000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+	Element3:
+	{
+		Name = "labels-3";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "labels-3";
+			Visible = false;
+			Position:
+			{
+				x = 640.0000;
+				y = 960.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 9;
+			Object0:
+			{
+				Type = "Rect";
+				Width = 1280.0000;
+				Height = 960.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_labels-3";
+				Position:
+				{
+					y = 480.0000;
+				};
+				Scale:
+				{
+					x = 1.2500;
+				};
+				Color:
+				{
+					r = 0.0000;
+					g = 0.0000;
+					b = 0.0000;
+					a = 0.9500;
+				};
+			};
+			Object1:
+			{
+				Type = "Label";
+				Text = "LINE24/nLINE24";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE24";
+				Position:
+				{
+					y = 64.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object2:
+			{
+				Type = "Label";
+				Text = "LINE25/nLINE25";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE25";
+				Position:
+				{
+					y = 176.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object3:
+			{
+				Type = "Label";
+				Text = "LINE26/nLINE26";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE26";
+				Position:
+				{
+					y = 288.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object4:
+			{
+				Type = "Label";
+				Text = "LINE27/nLINE27";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE27";
+				Position:
+				{
+					y = 400.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object5:
+			{
+				Type = "Label";
+				Text = "LINE28/nLINE28";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE28";
+				Position:
+				{
+					y = 512.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object6:
+			{
+				Type = "Label";
+				Text = "LINE29/nLINE29";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE29";
+				Position:
+				{
+					y = 624.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object7:
+			{
+				Type = "Label";
+				Text = "LINE30/nLINE30";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE30";
+				Position:
+				{
+					y = 736.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object8:
+			{
+				Type = "Label";
+				Text = "LINE31/nLINE31";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE31";
+				Position:
+				{
+					y = 848.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "_OnIdlePage";
+			ObjAction0:
+			{
+				HUDObject = "labels-3";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 4;
+					KeyFrame0:
+					{
+						Value = false;
+					};
+					KeyFrame1:
+					{
+						Time = 15.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 30.0000;
+						Value = false;
+					};
+					KeyFrame3:
+					{
+						Time = 45.0000;
+						Value = false;
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 6;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 15.0000;
+						a = 0.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 15.5000;
+					};
+					KeyFrame3:
+					{
+						Time = 29.5000;
+					};
+					KeyFrame4:
+					{
+						Time = 30.0000;
+						a = 0.0000;
+					};
+					KeyFrame5:
+					{
+						Time = 45.0000;
+						a = 0.0000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+	Element4:
+	{
+		Name = "labels-4";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "labels-4";
+			Visible = false;
+			Position:
+			{
+				x = 640.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 5;
+			Object0:
+			{
+				Type = "Rect";
+				Width = 1280.0000;
+				Height = 960.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_labels-4";
+				Position:
+				{
+					y = 480.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+					r = 0.0000;
+					g = 0.0000;
+					b = 0.0000;
+					a = 0.9500;
+				};
+			};
+			Object1:
+			{
+				Type = "Label";
+				Text = "LINE32/nLINE32";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE32";
+				Position:
+				{
+					y = 64.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object2:
+			{
+				Type = "Label";
+				Text = "LINE33/nLINE33";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE33";
+				Position:
+				{
+					y = 176.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object3:
+			{
+				Type = "Label";
+				Text = "LINE34/nLINE34";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE34";
+				Position:
+				{
+					y = 288.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object4:
+			{
+				Type = "Label";
+				Text = "LINE35/nLINE35";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "LINE35";
+				Position:
+				{
+					y = 400.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "_OnIdlePage";
+			ObjAction0:
+			{
+				HUDObject = "labels-4";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+						Value = false;
+					};
+					KeyFrame1:
+					{
+						Time = 30.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 45.0000;
+						Value = false;
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 5;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 30.0000;
+						a = 0.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 30.5000;
+					};
+					KeyFrame3:
+					{
+						Time = 44.5000;
+					};
+					KeyFrame4:
+					{
+						Time = 45.0000;
+						a = 0.0000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+	Element5:
+	{
+		Name = "BT_Accept";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "BT_Accept";
+			Position:
+			{
+				x = 640.0000;
+				y = 1440.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 2;
+			Object0:
+			{
+				Type = "Rect";
+				Width = 1280.0000;
+				Height = 960.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_Accept";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+					a = 0.0000;
+				};
+			};
+			Object1:
+			{
+				Type = "Label";
+				Text = "Toca para empezar";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "lb_Accept";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+		};
+		NumElemActions = 4;
+		Action0:
+		{
+			Name = "OnEnterPage";
+			ObjAction0:
+			{
+				HUDObject = "BT_Accept";
+				XFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						LerpFunc = "sin";
+					};
+					KeyFrame1:
+					{
+						Time = 0.4000;
+					};
+				};
+				YFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						Value = 930.0000;
+						LerpFunc = "sin";
+					};
+					KeyFrame1:
+					{
+						Time = 0.4000;
+						Value = -0.0003;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						a = 0.0000;
+					};
+					KeyFrame1:
+					{
+						Time = 0.4000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+		Action1:
+		{
+			Name = "OnIdle";
+			ObjAction0:
+			{
+				HUDObject = "BT_Accept";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 0.5000;
+						a = 0.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 1.0000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+		Action2:
+		{
+			Name = "OnPress";
+			ObjAction0:
+			{
+				HUDObject = "BT_Accept";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						LerpFunc = "sin";
+					};
+					KeyFrame1:
+					{
+						Time = 0.2000;
+						x = 0.9800;
+						y = 0.9800;
+					};
+				};
+				ColorFunc:
+				{
+					NumKeyFrames = 5;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 0.1000;
+						a = 0.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 0.2000;
+					};
+					KeyFrame3:
+					{
+						Time = 0.3000;
+						a = 0.0000;
+					};
+					KeyFrame4:
+					{
+						Time = 0.4000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+						EventName = "PlaySound";
+						EventValue = "StartPage";
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+		Action3:
+		{
+			Name = "OnExitPage";
+			ObjAction0:
+			{
+				HUDObject = "BT_Accept";
+				XFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						LerpFunc = "exp";
+					};
+					KeyFrame1:
+					{
+						Time = 0.4000;
+					};
+				};
+				YFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						LerpFunc = "exp";
+					};
+					KeyFrame1:
+					{
+						Time = 0.4000;
+						Value = 930.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 0.4000;
+						a = 0.0000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+	Element6:
+	{
+		Name = "Foreground";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "Foreground";
+			Position:
+			{
+				x = 640.0000;
+				y = 480.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+				a = 0.0000;
+			};
+			NumObjects = 1;
+			Object0:
+			{
+				Type = "Group";
+				Name = "Title";
+				Position:
+				{
+					x = 638.0000;
+					y = 478.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 2;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "sprites/marco_long";
+					Name = "ic_Title";
+					Action = 0;
+					Position:
+					{
+						y = 348.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+				Object1:
+				{
+					Type = "Label";
+					Text = "Configuración";
+					Font = "../fonts/default";
+					HAlignment = "Center";
+					VAlignment = "Center";
+					Name = "lb_Title";
+					Position:
+					{
+						y = 350.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+		};
+		NumElemActions = 2;
+		Action0:
+		{
+			Name = "OnEnterPage";
+			ObjAction0:
+			{
+				HUDObject = "Foreground";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+						EventName = "FadeInScene";
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+		Action1:
+		{
+			Name = "OnExitPage";
+			ObjAction0:
+			{
+				HUDObject = "Foreground";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 1.0000;
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+						a = 0.0000;
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 0.5000;
+						EventName = "FadeOutScene";
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+};

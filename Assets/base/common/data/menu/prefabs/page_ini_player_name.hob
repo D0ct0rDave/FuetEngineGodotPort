@@ -1,0 +1,38 @@
+HUDObject:
+{
+	Type = "Group";
+	Name = "PlayerName";
+	Position:
+	{
+		x = 78.0000;
+		y = 848.0000;
+	};
+	Depth = -0.2500;
+	Scale:
+	{
+	};
+	Color:
+	{
+	};
+	DepthFact = 0.0000;
+	NumObjects = 1;
+	Object0:
+	{
+		Type = "Label";
+		Text = "PEPITA";
+		Font = "../fonts/default";
+		HAlignment = "Left";
+		VAlignment = "Center";
+		Tracking = 10.0000;
+		Name = "lb_PlayerName";
+		Position:
+		{
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+};

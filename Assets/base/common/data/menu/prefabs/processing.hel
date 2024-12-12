@@ -1,0 +1,302 @@
+HUDElement:
+{
+	Name = "processing";
+	NumLayers = 1;
+	Layer0:
+	{
+		Type = "Group";
+		Name = "processing";
+		Visible = false;
+		Position:
+		{
+			x = 640.0000;
+			y = 480.0000;
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+		NumObjects = 2;
+		Object0:
+		{
+			Type = "Rect";
+			Width = 1280.0000;
+			Height = 960.0000;
+			Corner0:
+			{
+			};
+			Corner1:
+			{
+			};
+			Corner2:
+			{
+			};
+			Corner3:
+			{
+			};
+			Name = "rt_processing";
+			Position:
+			{
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+				r = 0.0000;
+				g = 0.0000;
+				b = 0.0000;
+				a = 0.6235;
+			};
+		};
+		Object1:
+		{
+			Type = "Icon";
+			Sprite = "sprites/processing";
+			Name = "ic_processing-1";
+			Action = 0;
+			Position:
+			{
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+		};
+	};
+	NumElemActions = 3;
+	Action0:
+	{
+		Name = "Default";
+	};
+	Action1:
+	{
+		Name = "ShowProcessing";
+		ObjAction0:
+		{
+			HUDObject = "ic_processing-1";
+			XFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				WrapMode = "Loop";
+				NumKeyFrames = 17;
+				KeyFrame0:
+				{
+					LerpFunc = "const";
+				};
+				KeyFrame1:
+				{
+					Time = 0.2000;
+					Value = 0.3927;
+					LerpFunc = "const";
+				};
+				KeyFrame2:
+				{
+					Time = 0.4000;
+					Value = 0.7854;
+					LerpFunc = "const";
+				};
+				KeyFrame3:
+				{
+					Time = 0.6000;
+					Value = 1.1781;
+					LerpFunc = "const";
+				};
+				KeyFrame4:
+				{
+					Time = 0.8000;
+					Value = 1.5708;
+					LerpFunc = "const";
+				};
+				KeyFrame5:
+				{
+					Time = 1.0000;
+					Value = 1.9635;
+					LerpFunc = "const";
+				};
+				KeyFrame6:
+				{
+					Time = 1.2000;
+					Value = 2.3562;
+					LerpFunc = "const";
+				};
+				KeyFrame7:
+				{
+					Time = 1.4000;
+					Value = 2.7489;
+					LerpFunc = "const";
+				};
+				KeyFrame8:
+				{
+					Time = 1.6000;
+					Value = 3.1416;
+					LerpFunc = "const";
+				};
+				KeyFrame9:
+				{
+					Time = 1.8000;
+					Value = 3.5343;
+					LerpFunc = "const";
+				};
+				KeyFrame10:
+				{
+					Time = 2.0000;
+					Value = 3.9270;
+					LerpFunc = "const";
+				};
+				KeyFrame11:
+				{
+					Time = 2.2000;
+					Value = 4.3197;
+					LerpFunc = "const";
+				};
+				KeyFrame12:
+				{
+					Time = 2.4000;
+					Value = 4.7124;
+					LerpFunc = "const";
+				};
+				KeyFrame13:
+				{
+					Time = 2.6000;
+					Value = 5.1051;
+					LerpFunc = "const";
+				};
+				KeyFrame14:
+				{
+					Time = 2.8000;
+					Value = 5.4978;
+					LerpFunc = "const";
+				};
+				KeyFrame15:
+				{
+					Time = 3.0000;
+					Value = 5.8905;
+					LerpFunc = "const";
+				};
+				KeyFrame16:
+				{
+					Time = 3.2000;
+					Value = 6.2832;
+					LerpFunc = "const";
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+	Action2:
+	{
+		Name = "HideProcessing";
+		ObjAction0:
+		{
+			HUDObject = "processing";
+			XFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+					Value = false;
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+};

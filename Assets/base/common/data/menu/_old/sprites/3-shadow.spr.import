@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/3-shadow.spr-59b1490af9fd88a3182b61420ed3273c.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/menu/_old/sprites/3-shadow.spr"
+dest_files=[ "res://.import/3-shadow.spr-59b1490af9fd88a3182b61420ed3273c.tres" ]
+
+[params]
+

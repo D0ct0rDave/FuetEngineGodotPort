@@ -1,0 +1,183 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=1]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=2]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=5]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/backarrow.spr" type="Resource" id=6]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/2.spr" type="Resource" id=7]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=8]
+
+[node name="CFEHUD" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="BT_Back" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Layers" type="Node2D" parent="BT_Back"]
+
+[node name="BT_Back" type="Node2D" parent="BT_Back/Layers"]
+position = Vector2( 120, 832 )
+script = ExtResource( 3 )
+
+[node name="ic_bt_back" type="Node2D" parent="BT_Back/Layers/BT_Back"]
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Back/Layers/BT_Back/ic_bt_back"]
+script = ExtResource( 2 )
+Action = 0
+m_sprite = ExtResource( 7 )
+
+[node name="ic_back" type="Node2D" parent="BT_Back/Layers/BT_Back"]
+position = Vector2( -5, 0 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Back/Layers/BT_Back/ic_back"]
+script = ExtResource( 2 )
+Action = 0
+m_sprite = ExtResource( 6 )
+
+[node name="G_Labels" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Layers" type="Node2D" parent="G_Labels"]
+
+[node name="G_Labels" type="Node2D" parent="G_Labels/Layers"]
+position = Vector2( 1000, 304 )
+script = ExtResource( 3 )
+
+[node name="lb_Labels" type="Node2D" parent="G_Labels/Layers/G_Labels"]
+position = Vector2( 80, 0 )
+script = ExtResource( 8 )
+
+[node name="lb_Labels-1" type="Node2D" parent="G_Labels/Layers/G_Labels"]
+position = Vector2( 80, 64 )
+script = ExtResource( 8 )
+
+[node name="lb_Labels-2" type="Node2D" parent="G_Labels/Layers/G_Labels"]
+position = Vector2( 80, 128 )
+script = ExtResource( 8 )
+
+[node name="lb_Labels-3" type="Node2D" parent="G_Labels/Layers/G_Labels"]
+position = Vector2( 80, 192 )
+script = ExtResource( 8 )
+
+[node name="lb_Labels-4" type="Node2D" parent="G_Labels/Layers/G_Labels"]
+position = Vector2( 80, 256 )
+script = ExtResource( 8 )
+
+[node name="lb_Labels-5" type="Node2D" parent="G_Labels/Layers/G_Labels"]
+position = Vector2( 80, 320 )
+script = ExtResource( 8 )
+
+[node name="G_dospuntos" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Layers" type="Node2D" parent="G_dospuntos"]
+
+[node name="G_dospuntos" type="Node2D" parent="G_dospuntos/Layers"]
+position = Vector2( 1048, 264 )
+script = ExtResource( 3 )
+
+[node name="lb_dospuntos" type="Node2D" parent="G_dospuntos/Layers/G_dospuntos"]
+position = Vector2( 72, 8 )
+script = ExtResource( 8 )
+
+[node name="G_Stats" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Layers" type="Node2D" parent="G_Stats"]
+
+[node name="G_Stats" type="Node2D" parent="G_Stats/Layers"]
+position = Vector2( 1128, 320 )
+script = ExtResource( 3 )
+
+[node name="lb_Stats-0" type="Node2D" parent="G_Stats/Layers/G_Stats"]
+script = ExtResource( 8 )
+
+[node name="lb_Stats-1" type="Node2D" parent="G_Stats/Layers/G_Stats"]
+position = Vector2( 0, 64 )
+script = ExtResource( 8 )
+
+[node name="lb_Stats-2" type="Node2D" parent="G_Stats/Layers/G_Stats"]
+position = Vector2( 0, 128 )
+script = ExtResource( 8 )
+
+[node name="lb_Stats-3" type="Node2D" parent="G_Stats/Layers/G_Stats"]
+position = Vector2( 0, 192 )
+script = ExtResource( 8 )
+
+[node name="lb_Stats-4" type="Node2D" parent="G_Stats/Layers/G_Stats"]
+position = Vector2( 0, 256 )
+script = ExtResource( 8 )
+
+[node name="lb_Stats-5" type="Node2D" parent="G_Stats/Layers/G_Stats"]
+position = Vector2( 0, 320 )
+script = ExtResource( 8 )
+
+[node name="G_Star" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Layers" type="Node2D" parent="G_Star"]
+
+[node name="G_Star" type="Node2D" parent="G_Star/Layers"]
+position = Vector2( 936, 624 )
+script = ExtResource( 3 )
+
+[node name="ic_Star-0" type="Node2D" parent="G_Star/Layers/G_Star"]
+position = Vector2( -320, 160 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_Star-1" type="Node2D" parent="G_Star/Layers/G_Star"]
+position = Vector2( -192, 160 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_Star-2" type="Node2D" parent="G_Star/Layers/G_Star"]
+position = Vector2( -64, 160 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_Star-3" type="Node2D" parent="G_Star/Layers/G_Star"]
+position = Vector2( 64, 160 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_Star-4" type="Node2D" parent="G_Star/Layers/G_Star"]
+position = Vector2( 192, 160 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="ic_Star-5" type="Node2D" parent="G_Star/Layers/G_Star"]
+position = Vector2( 320, 160 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="Title" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Layers" type="Node2D" parent="Title"]
+
+[node name="Title" type="Node2D" parent="Title/Layers"]
+position = Vector2( 376, 72 )
+script = ExtResource( 3 )
+
+[node name="lb_Title" type="Node2D" parent="Title/Layers/Title"]
+modulate = Color( 1, 1, 0.502, 1 )
+script = ExtResource( 8 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+
+[node name="Foreground" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Layers" type="Node2D" parent="Foreground"]
+
+[node name="Foreground" type="Node2D" parent="Foreground/Layers"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 640, 480 )
+script = ExtResource( 3 )
+m_oIniColor = Color( 1, 1, 1, 0 )

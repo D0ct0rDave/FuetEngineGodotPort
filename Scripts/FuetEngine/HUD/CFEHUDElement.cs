@@ -14,14 +14,6 @@ namespace FuetEngine
 		public CFEHUDElement()
 		{
 			Name = "CFEHUDElement";
-
-			m_oLayers = new Node2D();
-			m_oLayers.Name = "Layers";
-			AddChild(m_oLayers);
-
-			m_oActions = new Node();
-			m_oActions.Name = "Action";
-			AddChild(m_oActions);
 		}		
 
 		/// Inserts an action at the given position
@@ -36,6 +28,7 @@ namespace FuetEngine
 		/// Adds a new action into the HUD Element.
 		public int iAddAction(CFEHUDElementAction _oAction)
 		{
+			CheckActionList();
 			m_oActions.AddChild(_oAction);
 			return m_oActions.GetChildCount()-1;
 		}
@@ -43,12 +36,14 @@ namespace FuetEngine
 		/// Retrieves the action identified by the given index.
 		public CFEHUDElementAction oGetAction(int _iAction)
 		{
+			CheckActionList();
 			return m_oActions.GetChild<CFEHUDElementAction>(_iAction);
 		}
 
 		/// Deletes a action in the HUD element.
 		public void DeleteAction(int _iAction)
 		{
+			CheckActionList();
 			m_oActions.RemoveChild(m_oActions.GetChild(_iAction));
 		}
 
@@ -62,12 +57,14 @@ namespace FuetEngine
 		/// Retrieves the number of actions in the current HUD element.
 		public int iNumActions()
 		{
+			CheckActionList();
 			return m_oActions.GetChildCount();
 		}
 
 		/// Adds a new layer into the HUD Element.
 		public int iAddLayer(CFEHUDObject _oLayer)
 		{
+			CheckLayerList();
 			m_oLayers.AddChild(_oLayer);
 			return m_oLayers.GetChildCount();
 		}
@@ -75,12 +72,14 @@ namespace FuetEngine
 		/// Retrieves the layer identified by the given index.
 		public CFEHUDObject oGetLayer(int _iLayer)
 		{
+			CheckLayerList();
 			return m_oLayers.GetChild<CFEHUDObject>(_iLayer);
 		}
 
 		/// Deletes a layer in the HUD element.
 		public void DeleteLayer(int _iLayer)
 		{
+			CheckLayerList();
 			m_oLayers.RemoveChild(m_oLayers.GetChild(_iLayer));
 		}
 
@@ -94,6 +93,7 @@ namespace FuetEngine
 		/// Retrieves the number of layers in the HUD element.
 		public int iNumLayers()
 		{
+			CheckLayerList();
 			return m_oLayers.GetChildCount();
 		}
 
@@ -103,8 +103,28 @@ namespace FuetEngine
 			_oVisitor.Visit(this);
 		}
 
-		protected Node2D m_oLayers;
-		protected Node m_oActions;
+		private void CheckActionList()
+		{
+			if (FindNode("Action", false) == null)
+			{				
+				m_oActions = new Node();
+				m_oActions.Name = "Action";
+				AddChild(m_oActions);
+			}
+		}
+
+		private void CheckLayerList()
+		{
+			if (FindNode("Layers", false) == null)
+			{
+				m_oLayers = new Node2D();
+				m_oLayers.Name = "Layers";
+				AddChild(m_oLayers);
+			}
+		}
+
+		protected Node2D m_oLayers = null;
+		protected Node m_oActions = null;
 	}
 }
 //-----------------------------------------------------------------------------

@@ -1,0 +1,161 @@
+EditorHUD:
+{
+	WindowWidth = 1928;
+WindowHeight = 1088;
+	WindowLayout = "layout2|name=Toolbar;caption=HUD toolbar;state=2108156;dir=1;layer=10;row=0;pos=0;prop=100000;bestw=1319;besth=42;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Viewer;caption=Viewer;state=20972288;dir=5;layer=0;row=1;pos=0;prop=100000;bestw=800;besth=609;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Timeline;caption=Actions & Timeline;state=23070716;dir=3;layer=0;row=2;pos=0;prop=100000;bestw=864;besth=199;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Layers;caption=HUD Objects;state=16779260;dir=2;layer=1;row=0;pos=0;prop=103298;bestw=411;besth=387;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Properties;caption=HUD Object properties;state=16779260;dir=2;layer=1;row=0;pos=1;prop=96702;bestw=411;besth=387;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(1,10,0)=44|dock_size(5,0,1)=398|dock_size(3,0,2)=247|dock_size(2,1,0)=514|";
+	ViewGrid = false;
+	GridSelection = 4;
+	Background = "(null)";
+	ViewBackground = false;
+	GuardBandMode = 3;
+	DebugApp =  "(null)";
+	Zoom =  0.232;
+	TransX = -2348.018;
+	TransY = -499.533;
+	Element0:
+	{
+		Object = "Foreground";
+		Locked = true;
+		LinkScale = true;
+		Show = true;
+		Expanded = true;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element1:
+		{
+			Object = "Title[0]";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = true;
+			Selected = false;
+			Visible = true;
+			Prefab= "D:/CoderChild/projects/ZombieIncident/data/rawdata/common/data/menu/title";
+		};
+
+			Element2:
+			{
+				Object = "ic_Title[0]";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = true;
+				Prefab= "";
+			};
+
+		Element3:
+		{
+			Object = "Title[1]";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = true;
+			Selected = true;
+			Visible = true;
+			Prefab= "D:/CoderChild/projects/ZombieIncident/data/rawdata/common/data/menu/title";
+		};
+
+			Element4:
+			{
+				Object = "ic_Title[1]";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = true;
+				Prefab= "";
+			};
+
+	Element5:
+	{
+		Object = "BT_Accept";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = true;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element6:
+		{
+			Object = "Title[2]";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = true;
+			Prefab= "D:/CoderChild/projects/ZombieIncident/data/rawdata/common/data/menu/title";
+		};
+
+			Element7:
+			{
+				Object = "ic_Title[2]";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+		Element8:
+		{
+			Object = "Title[3]";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = true;
+			Prefab= "D:/CoderChild/projects/ZombieIncident/data/rawdata/common/data/menu/title";
+		};
+
+			Element9:
+			{
+				Object = "ic_Title[3]";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+		Element10:
+		{
+			Object = "rt_Accept";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = true;
+			Prefab= "";
+		};
+
+		Element11:
+		{
+			Object = "lb_Accept";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = true;
+			Prefab= "";
+		};
+
+	NumElements = 12;
+
+};

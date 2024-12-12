@@ -70,7 +70,7 @@ namespace FuetEngine
 	protected:
 	*/
 
-		CFEHUDObject			m_oHUDObject;
+		CFEHUDObject			m_oHUDObject = null;
 	}
 }
 //-----------------------------------------------------------------------------

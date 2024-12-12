@@ -1,0 +1,53 @@
+HUDObject:
+{
+	Type = "Group";
+	Name = "BT_Accept";
+	Action = 1;
+	Position:
+	{
+		x = 944.0000;
+		y = 848.0000;
+	};
+	Scale:
+	{
+	};
+	Color:
+	{
+	};
+	NumObjects = 2;
+	Object0:
+	{
+		Type = "Icon";
+		Sprite = "sprites/3";
+		Name = "ic_Accept";
+		Action = 0;
+		Position:
+		{
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+	Object1:
+	{
+		Type = "Label";
+		Text = "Aceptar";
+		Font = "../fonts/default";
+		HAlignment = "Center";
+		VAlignment = "Center";
+		Name = "lb_Accept";
+		Position:
+		{
+			y = -5.0000;
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+};

@@ -1,0 +1,1955 @@
+HUD:
+{
+	FileVersion = 2;
+	NumElements = 6;
+	Element0:
+	{
+		Name = "nonamed element 0";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "nonamed element 0";
+			Position:
+			{
+				x = 380.9499;
+				y = 345.1458;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+		};
+	};
+	Element1:
+	{
+		Name = "G_LOGO";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "G_LOGO";
+			Position:
+			{
+				x = 640.0000;
+				y = 480.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			DepthFact = 0.0000;
+			NumObjects = 15;
+			Object0:
+			{
+				Type = "Icon";
+				Sprite = "sprites/il_16_Fondo";
+				Name = "Fondo";
+				Action = 0;
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object1:
+			{
+				Type = "Icon";
+				Sprite = "sprites/il_15_Castillo";
+				Name = "Castillo";
+				Action = 0;
+				Position:
+				{
+					x = -9.0000;
+					y = -209.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object2:
+			{
+				Type = "Icon";
+				Sprite = "sprites/il_14_Montanyas";
+				Name = "Miontanyas";
+				Action = 0;
+				Position:
+				{
+					y = 159.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object3:
+			{
+				Type = "Icon";
+				Sprite = "sprites/il_13_Luna y Estrellas";
+				Name = "LunaEstrellas";
+				Action = 0;
+				Position:
+				{
+					x = -11.0000;
+					y = -330.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object4:
+			{
+				Type = "Group";
+				Name = "NuvesFondo";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 3;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_12_Nubes fondo-001";
+					Name = "ic_NuvesFondo";
+					Action = 0;
+					Position:
+					{
+						x = -493.0000;
+						y = -295.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+				Object1:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_12_Nubes fondo-002";
+					Name = "ic_NuvesFondo-1";
+					Action = 0;
+					Position:
+					{
+						x = -288.0000;
+						y = -425.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+				Object2:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_12_Nubes fondo-003";
+					Name = "ic_NuvesFondo-2";
+					Action = 0;
+					Position:
+					{
+						x = 254.0000;
+						y = -421.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object5:
+			{
+				Type = "Group";
+				Name = "NuvesFrente";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 2;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_11_Nubes frente-001";
+					Name = "ic_NuvesFrente";
+					Action = 0;
+					Position:
+					{
+						x = 613.0000;
+						y = -389.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+				Object1:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_11_Nubes frente-002";
+					Name = "ic_NuvesFrente-1";
+					Action = 0;
+					Position:
+					{
+						x = -651.0000;
+						y = -366.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object6:
+			{
+				Type = "Icon";
+				Sprite = "sprites/il_10_zombis";
+				Name = "Zombies";
+				Action = 0;
+				Position:
+				{
+					y = 112.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object7:
+			{
+				Type = "Icon";
+				Sprite = "sprites/il_09_Cuervo";
+				Name = "Cuervo";
+				Action = 0;
+				Position:
+				{
+					x = 555.0000;
+					y = -208.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object8:
+			{
+				Type = "Group";
+				Name = "Columnas";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 2;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_08_Columnas-002";
+					Name = "ic_Columnas";
+					Action = 0;
+					Position:
+					{
+						x = -512.0000;
+						y = 316.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+				Object1:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_08_Columnas-001";
+					Name = "ic_Columnas-1";
+					Action = 0;
+					Position:
+					{
+						x = 623.0000;
+						y = 343.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object9:
+			{
+				Type = "Icon";
+				Sprite = "sprites/il_07_Pilar";
+				Name = "Pilar";
+				Action = 0;
+				Position:
+				{
+					x = -14.0000;
+					y = 418.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object10:
+			{
+				Type = "Icon";
+				Sprite = "sprites/il_06_Nana";
+				Name = "Nana";
+				Action = 0;
+				Position:
+				{
+					x = -1.0000;
+					y = 41.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object11:
+			{
+				Type = "Icon";
+				Sprite = "sprites/il_05_Estrellas fondo";
+				Name = "EstrellasFondo";
+				Action = 0;
+				Position:
+				{
+					x = -2.0000;
+					y = -332.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object12:
+			{
+				Type = "Icon";
+				Sprite = "sprites/il_04_Estrellas frente";
+				Name = "EstrellasFrente";
+				Action = 0;
+				Position:
+				{
+					x = -20.0000;
+					y = -55.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+			Object13:
+			{
+				Type = "Group";
+				Name = "Arboles";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 2;
+				Object0:
+				{
+					Type = "Group";
+					Name = "lado-izq";
+					Position:
+					{
+						x = 52.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+					NumObjects = 3;
+					Object0:
+					{
+						Type = "Icon";
+						Sprite = "sprites/il_03_arboles-006";
+						Name = "ic_lado-izq";
+						Action = 0;
+						Position:
+						{
+							x = -628.0000;
+							y = 453.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+					Object1:
+					{
+						Type = "Icon";
+						Sprite = "sprites/il_03_arboles-005";
+						Name = "ic_lado-izq-1";
+						Action = 0;
+						Position:
+						{
+							x = -765.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+					Object2:
+					{
+						Type = "Icon";
+						Sprite = "sprites/il_03_arboles-004";
+						Name = "ic_lado-izq-2";
+						Action = 0;
+						Position:
+						{
+							x = -480.0000;
+							y = -407.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+				};
+				Object1:
+				{
+					Type = "Group";
+					Name = "lado-der";
+					Position:
+					{
+						x = -51.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+					NumObjects = 3;
+					Object0:
+					{
+						Type = "Icon";
+						Sprite = "sprites/il_03_arboles-001";
+						Name = "ic_lado-der";
+						Action = 0;
+						Position:
+						{
+							x = 443.0000;
+							y = -434.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+					Object1:
+					{
+						Type = "Icon";
+						Sprite = "sprites/il_03_arboles-003";
+						Name = "ic_lado-der-1";
+						Action = 0;
+						Position:
+						{
+							x = 516.0000;
+							y = 443.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+					Object2:
+					{
+						Type = "Icon";
+						Sprite = "sprites/il_03_arboles-002";
+						Name = "ic_lado-der-2";
+						Action = 0;
+						Position:
+						{
+							x = 763.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+				};
+			};
+			Object14:
+			{
+				Type = "Icon";
+				Sprite = "sprites/il_00_Oscuro";
+				Name = "Oscuro";
+				Action = 0;
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+		};
+		NumElemActions = 2;
+		Action0:
+		{
+			Name = "OnEnterPage";
+			ObjAction0:
+			{
+				HUDObject = "G_LOGO";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						a = 0.0000;
+					};
+					KeyFrame1:
+					{
+						Time = 0.3000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+		Action1:
+		{
+			Name = "OnExitPage";
+			ObjAction0:
+			{
+				HUDObject = "G_LOGO";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 0.2000;
+						a = 0.0000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+	Element2:
+	{
+		Name = "Version";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "Version";
+			Position:
+			{
+				x = 480.0000;
+				y = 1440.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 1;
+			Object0:
+			{
+				Type = "Label";
+				Text = "2.0";
+				Font = "../fonts/default";
+				HAlignment = "Left";
+				VAlignment = "Center";
+				Name = "lb_Version";
+				Position:
+				{
+					x = 608.0000;
+					y = 428.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+					b = 0.5020;
+				};
+			};
+		};
+	};
+	Element3:
+	{
+		Name = "lower-screen";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "lower-screen";
+			Position:
+			{
+				y = 960.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 6;
+			Object0:
+			{
+				Type = "Group";
+				Name = "BG-gradient";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				DepthFact = -0.9000;
+				NumObjects = 2;
+				Object0:
+				{
+					Type = "Rect";
+					Width = 1280.0000;
+					Height = 480.0000;
+					PivotY = 0.0000;
+					Corner0:
+					{
+						r = 0.1647;
+						g = 0.2039;
+						b = 0.4196;
+					};
+					Corner1:
+					{
+						r = 0.1647;
+						g = 0.2039;
+						b = 0.4196;
+					};
+					Corner2:
+					{
+						r = 0.1725;
+						g = 0.2196;
+						b = 0.4118;
+					};
+					Corner3:
+					{
+						r = 0.1725;
+						g = 0.2196;
+						b = 0.4118;
+					};
+					Name = "rt_BG-gradient";
+					Position:
+					{
+						x = 640.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+				Object1:
+				{
+					Type = "Rect";
+					Width = 1280.0000;
+					Height = 525.0000;
+					PivotY = 0.0000;
+					Corner0:
+					{
+						r = 0.1725;
+						g = 0.2196;
+						b = 0.4118;
+					};
+					Corner1:
+					{
+						r = 0.1725;
+						g = 0.2196;
+						b = 0.4118;
+					};
+					Corner2:
+					{
+						r = 0.1255;
+						g = 0.0000;
+						b = 0.0000;
+					};
+					Corner3:
+					{
+						r = 0.1255;
+						g = 0.0000;
+						b = 0.0000;
+					};
+					Name = "rt_BG-gradient-1";
+					Position:
+					{
+						x = 640.0000;
+						y = 480.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object1:
+			{
+				Type = "Group";
+				Name = "fx";
+				Position:
+				{
+					x = 12.0000;
+					y = 16.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "PSys";
+					PSys = "../gfx/estrellas";
+					Name = "PSys layer 2";
+					Action = 0;
+					Position:
+					{
+						x = 608.0000;
+						y = 456.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object2:
+			{
+				Type = "Group";
+				Name = "Frame";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 3;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_03_arboles-003";
+					Name = "ic_Frame";
+					Action = 0;
+					Position:
+					{
+						x = 300.0000;
+						y = 112.0000;
+					};
+					Scale:
+					{
+						x = -1.0828;
+						y = 1.1523;
+					};
+					Angle = 3.4208;
+					Color:
+					{
+					};
+				};
+				Object1:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_03_arboles-002";
+					Name = "ic_Frame-1";
+					Action = 0;
+					Position:
+					{
+						x = 486.0000;
+						y = 90.0000;
+					};
+					Scale:
+					{
+						y = 1.0125;
+					};
+					Angle = -1.5708;
+					Color:
+					{
+					};
+				};
+				Object2:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_03_arboles-005";
+					Name = "ic_Frame-2";
+					Action = 0;
+					Position:
+					{
+						x = 800.0000;
+						y = 88.0000;
+					};
+					Scale:
+					{
+					};
+					Angle = 1.5708;
+					Color:
+					{
+					};
+				};
+			};
+			Object3:
+			{
+				Type = "Group";
+				Name = "lwNuvesFrente";
+				Position:
+				{
+					x = 904.0000;
+					y = 628.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+					a = 0.6118;
+				};
+				NumObjects = 5;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_11_Nubes frente-001";
+					Name = "ic_lwNuvesFrente";
+					Action = 0;
+					Position:
+					{
+						x = -656.0000;
+						y = -312.0000;
+					};
+					Scale:
+					{
+						x = -1.0000;
+					};
+					Angle = 6.2832;
+					Color:
+					{
+					};
+				};
+				Object1:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_11_Nubes frente-001";
+					Name = "ic_lwNuvesFrente-1";
+					Action = 0;
+					Position:
+					{
+						x = 436.0000;
+						y = 212.0000;
+					};
+					Scale:
+					{
+						x = -1.0000;
+					};
+					Angle = 6.2832;
+					Color:
+					{
+					};
+				};
+				Object2:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_11_Nubes frente-002";
+					Name = "ic_lwNuvesFrente-2";
+					Action = 0;
+					Position:
+					{
+						x = -88.0000;
+						y = 32.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+				Object3:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_11_Nubes frente-002";
+					Name = "ic_lwNuvesFrente-3";
+					Action = 0;
+					Position:
+					{
+						x = 1168.0000;
+						y = -132.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+				Object4:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_11_Nubes frente-002";
+					Name = "ic_lwNuvesFrente-4";
+					Action = 0;
+					Position:
+					{
+						x = 688.0000;
+						y = -292.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object4:
+			{
+				Type = "Group";
+				Name = "lwNuvesFondo";
+				Position:
+				{
+					x = 912.0000;
+					y = 724.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+					a = 0.3529;
+				};
+				NumObjects = 6;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_12_Nubes fondo-001";
+					Name = "ic_lwNuvesFondo";
+					Action = 0;
+					Position:
+					{
+						x = -212.0000;
+						y = -364.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+				Object1:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_12_Nubes fondo-001";
+					Name = "Copy Of ic_lwNuvesFondo";
+					Action = 0;
+					Position:
+					{
+						x = 636.0000;
+						y = -116.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+				Object2:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_12_Nubes fondo-002";
+					Name = "ic_lwNuvesFondo-1";
+					Action = 0;
+					Position:
+					{
+						x = 204.0000;
+						y = -492.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+				Object3:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_12_Nubes fondo-002";
+					Name = "Copy Of ic_lwNuvesFondo-1";
+					Action = 0;
+					Position:
+					{
+						x = 724.0000;
+						y = -548.0000;
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+				Object4:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_12_Nubes fondo-003";
+					Name = "ic_lwNuvesFondo-2";
+					Action = 0;
+					Position:
+					{
+						x = -736.0000;
+						y = -188.0000;
+					};
+					Scale:
+					{
+						x = -1.0000;
+					};
+					Color:
+					{
+					};
+				};
+				Object5:
+				{
+					Type = "Icon";
+					Sprite = "sprites/il_12_Nubes fondo-003";
+					Name = "Copy Of ic_lwNuvesFondo-2";
+					Action = 0;
+					Position:
+					{
+						x = 1052.0000;
+						y = -20.0000;
+					};
+					Scale:
+					{
+						x = -1.0000;
+					};
+					Color:
+					{
+					};
+				};
+			};
+			Object5:
+			{
+				Type = "Group";
+				Name = "lwLogo";
+				Position:
+				{
+					x = 640.0000;
+					y = 452.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				NumObjects = 1;
+				Object0:
+				{
+					Type = "Icon";
+					Sprite = "sprites/ZI-logo";
+					Name = "ic_lwLogo";
+					Action = 0;
+					Position:
+					{
+					};
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "OnIdlePage";
+			ObjAction0:
+			{
+				HUDObject = "lwNuvesFondo";
+				XFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						Value = 1196.0000;
+					};
+					KeyFrame1:
+					{
+						Time = 60.0000;
+						Value = -2062.0000;
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+						Value = 4.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction1:
+			{
+				HUDObject = "lwNuvesFrente";
+				XFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						Value = 1344.0000;
+					};
+					KeyFrame1:
+					{
+						Time = 40.0000;
+						Value = -2304.0000;
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 2;
+		};
+	};
+	Element4:
+	{
+		Name = "BT_Accept";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "BT_Accept";
+			Position:
+			{
+				x = 640.0000;
+				y = 1440.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			NumObjects = 2;
+			Object0:
+			{
+				Type = "Rect";
+				Width = 1280.0000;
+				Height = 960.0000;
+				Corner0:
+				{
+				};
+				Corner1:
+				{
+				};
+				Corner2:
+				{
+				};
+				Corner3:
+				{
+				};
+				Name = "rt_Accept";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+					a = 0.0000;
+				};
+			};
+			Object1:
+			{
+				Type = "Label";
+				Text = "Toca para empezar";
+				Font = "../fonts/default";
+				HAlignment = "Center";
+				VAlignment = "Center";
+				Name = "lb_Accept";
+				Position:
+				{
+					y = 396.0000;
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+			};
+		};
+		NumElemActions = 4;
+		Action0:
+		{
+			Name = "OnEnterPage";
+			ObjAction0:
+			{
+				HUDObject = "BT_Accept";
+				XFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						LerpFunc = "sin";
+					};
+					KeyFrame1:
+					{
+						Time = 0.4000;
+					};
+				};
+				YFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						Value = 930.0000;
+						LerpFunc = "sin";
+					};
+					KeyFrame1:
+					{
+						Time = 0.4000;
+						Value = -0.0003;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						a = 0.0000;
+					};
+					KeyFrame1:
+					{
+						Time = 0.4000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+		Action1:
+		{
+			Name = "OnIdle";
+			ObjAction0:
+			{
+				HUDObject = "BT_Accept";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 0.5000;
+						a = 0.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 1.0000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+		Action2:
+		{
+			Name = "OnPress";
+			ObjAction0:
+			{
+				HUDObject = "BT_Accept";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						LerpFunc = "sin";
+					};
+					KeyFrame1:
+					{
+						Time = 0.2000;
+						x = 0.9800;
+						y = 0.9800;
+					};
+				};
+				ColorFunc:
+				{
+					NumKeyFrames = 5;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 0.1000;
+						a = 0.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 0.2000;
+					};
+					KeyFrame3:
+					{
+						Time = 0.3000;
+						a = 0.0000;
+					};
+					KeyFrame4:
+					{
+						Time = 0.4000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+						EventName = "PlaySound";
+						EventValue = "StartPage";
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+		Action3:
+		{
+			Name = "OnExitPage";
+			ObjAction0:
+			{
+				HUDObject = "BT_Accept";
+				XFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						LerpFunc = "exp";
+					};
+					KeyFrame1:
+					{
+						Time = 0.4000;
+					};
+				};
+				YFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						LerpFunc = "exp";
+					};
+					KeyFrame1:
+					{
+						Time = 0.4000;
+						Value = 930.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 0.4000;
+						a = 0.0000;
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+	Element5:
+	{
+		Name = "Foreground";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "Foreground";
+			Position:
+			{
+				x = 640.0000;
+				y = 480.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+				a = 0.0000;
+			};
+		};
+		NumElemActions = 2;
+		Action0:
+		{
+			Name = "OnEnterPage";
+			ObjAction0:
+			{
+				HUDObject = "Foreground";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+						EventName = "FadeInScene";
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+		Action1:
+		{
+			Name = "OnExitPage";
+			ObjAction0:
+			{
+				HUDObject = "Foreground";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 1.0000;
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+						a = 0.0000;
+					};
+				};
+				EventFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 0.5000;
+						EventName = "FadeOutScene";
+					};
+				};
+			};
+			NumObjActions = 1;
+		};
+	};
+};

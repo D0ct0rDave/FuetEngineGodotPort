@@ -18,8 +18,16 @@ public class test : Node2D
         }
         */
 
-        /*
-        Resource resource = ResourceLoader.Load("res://Assets/data/intro/sprites/logo.spr");
+
+
+/*
+        PackedScene packedScene = ResourceLoader.Load("res://Assets/data/Intro/intro_page1.hud") as PackedScene;
+        Node node = packedScene.Instance();
+        AddChild(node);
+*/
+
+        CFEConfigFileImportPlugin plugin = new  CFEConfigFileImportPlugin();
+        Resource resource = plugin.LoadConfigAsResource("res://Assets/logo.spr");
         CFESprite sprite = resource as CFESprite;
 
 		CFESpriteInstance spriteInstance = Support.CreateObject<CFESpriteInstance>(FuetEngine.Support.SPRITE_INSTANCE_SCRIPT_FILE);
@@ -27,15 +35,22 @@ public class test : Node2D
 		spriteInstance.Init(sprite);
         
         AddChild(spriteInstance);
-        */
 
-/*
-        PackedScene packedScene = ResourceLoader.Load("res://Assets/data/Intro/intro_page1.hud") as PackedScene;
-        Node node = packedScene.Instance();
-        AddChild(node);
-*/
+        /*
         CFEConfigFileImportPlugin plugin = new  CFEConfigFileImportPlugin();
-        plugin.Import("res://Assets/data/Intro/intro_page1.hud", "res://Assets/data/Intro/intro_page1", null, null, null);
+        Node node = plugin.LoadConfigAsNode("res://Assets/base/common/data/menu/page_delete_profile.hud");
+        AddChild(node);
+
+        Node thisNode = this;
+        plugin.SetHierarchyOwner(ref thisNode, thisNode);
+
+		var packedScene = new PackedScene();
+		Godot.Error error = packedScene.Pack(this);
+        if (error == Error.Ok)
+        {
+            Godot.Error saveError = ResourceSaver.Save("res://Assets/test.tscn", packedScene);
+        }
+        */
 
         // plugin.Import("res://Assets/data/intro/sprites/logo.spr", "res://Assets/data/intro/sprites/logo", null, null, null);
         // plugin.Import("res://Assets/base/common/data/HUD/sprites/HUD_bocata.spr", "res://Assets/base/common/data/HUD/sprites/HUD_bocata", null, null, null);

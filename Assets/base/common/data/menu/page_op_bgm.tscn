@@ -1,0 +1,251 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=1]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=2]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=5]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/level-4.spr" type="Resource" id=6]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/level-3.spr" type="Resource" id=7]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/backarrow.spr" type="Resource" id=8]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/2.spr" type="Resource" id=9]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/level-button-frame.spr" type="Resource" id=10]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/level-2.spr" type="Resource" id=11]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/level-1.spr" type="Resource" id=12]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/level-6.spr" type="Resource" id=13]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/level-5.spr" type="Resource" id=14]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=15]
+
+[node name="CFEHUD" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="NEW_OPT_GROUP" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Layers" type="Node2D" parent="NEW_OPT_GROUP"]
+
+[node name="NEW_OPT_GROUP" type="Node2D" parent="NEW_OPT_GROUP/Layers"]
+position = Vector2( 640, 480 )
+script = ExtResource( 3 )
+
+[node name="OPT_p0" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Layers" type="Node2D" parent="OPT_p0"]
+
+[node name="OPT_p0" type="Node2D" parent="OPT_p0/Layers"]
+position = Vector2( 880, 528 )
+script = ExtResource( 3 )
+
+[node name="ic_p0_frame" type="Node2D" parent="OPT_p0/Layers/OPT_p0"]
+position = Vector2( 0, 1 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="OPT_p0/Layers/OPT_p0/ic_p0_frame"]
+script = ExtResource( 2 )
+Action = 0
+m_sprite = ExtResource( 10 )
+
+[node name="ic_p0" type="Node2D" parent="OPT_p0/Layers/OPT_p0"]
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="OPT_p0/Layers/OPT_p0/ic_p0"]
+script = ExtResource( 2 )
+Action = 0
+m_sprite = ExtResource( 12 )
+
+[node name="OPT_p1" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Layers" type="Node2D" parent="OPT_p1"]
+
+[node name="OPT_p1" type="Node2D" parent="OPT_p1/Layers"]
+position = Vector2( 1216, 672 )
+script = ExtResource( 3 )
+
+[node name="ic_p1_frame" type="Node2D" parent="OPT_p1/Layers/OPT_p1"]
+position = Vector2( 0, -1 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="OPT_p1/Layers/OPT_p1/ic_p1_frame"]
+script = ExtResource( 2 )
+Action = 0
+m_sprite = ExtResource( 10 )
+
+[node name="ic_p1" type="Node2D" parent="OPT_p1/Layers/OPT_p1"]
+position = Vector2( 0, -2 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="OPT_p1/Layers/OPT_p1/ic_p1"]
+script = ExtResource( 2 )
+Action = 0
+m_sprite = ExtResource( 11 )
+
+[node name="OPT_p2" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Layers" type="Node2D" parent="OPT_p2"]
+
+[node name="OPT_p2" type="Node2D" parent="OPT_p2/Layers"]
+position = Vector2( 1216, 416 )
+script = ExtResource( 3 )
+
+[node name="ic_p2_frame" type="Node2D" parent="OPT_p2/Layers/OPT_p2"]
+position = Vector2( 0, 1 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="OPT_p2/Layers/OPT_p2/ic_p2_frame"]
+script = ExtResource( 2 )
+Action = 0
+m_sprite = ExtResource( 10 )
+
+[node name="ic_p2" type="Node2D" parent="OPT_p2/Layers/OPT_p2"]
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="OPT_p2/Layers/OPT_p2/ic_p2"]
+script = ExtResource( 2 )
+Action = 0
+m_sprite = ExtResource( 7 )
+
+[node name="OPT_p3" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Layers" type="Node2D" parent="OPT_p3"]
+
+[node name="OPT_p3" type="Node2D" parent="OPT_p3/Layers"]
+position = Vector2( 1552, 768 )
+script = ExtResource( 3 )
+
+[node name="ic_p3_frame" type="Node2D" parent="OPT_p3/Layers/OPT_p3"]
+position = Vector2( 0, 1 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="OPT_p3/Layers/OPT_p3/ic_p3_frame"]
+script = ExtResource( 2 )
+Action = 0
+m_sprite = ExtResource( 10 )
+
+[node name="ic_p3" type="Node2D" parent="OPT_p3/Layers/OPT_p3"]
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="OPT_p3/Layers/OPT_p3/ic_p3"]
+script = ExtResource( 2 )
+Action = 0
+m_sprite = ExtResource( 6 )
+
+[node name="OPT_p4" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Layers" type="Node2D" parent="OPT_p4"]
+
+[node name="OPT_p4" type="Node2D" parent="OPT_p4/Layers"]
+position = Vector2( 1552, 512 )
+script = ExtResource( 3 )
+
+[node name="ic_p4-frame" type="Node2D" parent="OPT_p4/Layers/OPT_p4"]
+position = Vector2( 0, 1 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="OPT_p4/Layers/OPT_p4/ic_p4-frame"]
+script = ExtResource( 2 )
+Action = 0
+m_sprite = ExtResource( 10 )
+
+[node name="ic_p4" type="Node2D" parent="OPT_p4/Layers/OPT_p4"]
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="OPT_p4/Layers/OPT_p4/ic_p4"]
+script = ExtResource( 2 )
+Action = 0
+m_sprite = ExtResource( 14 )
+
+[node name="OPT_p5" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Layers" type="Node2D" parent="OPT_p5"]
+
+[node name="OPT_p5" type="Node2D" parent="OPT_p5/Layers"]
+position = Vector2( 1552, 256 )
+script = ExtResource( 3 )
+
+[node name="ic_p5-frame" type="Node2D" parent="OPT_p5/Layers/OPT_p5"]
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="OPT_p5/Layers/OPT_p5/ic_p5-frame"]
+script = ExtResource( 2 )
+Action = 0
+m_sprite = ExtResource( 10 )
+
+[node name="ic_p5" type="Node2D" parent="OPT_p5/Layers/OPT_p5"]
+position = Vector2( 0, -1 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="OPT_p5/Layers/OPT_p5/ic_p5"]
+script = ExtResource( 2 )
+Action = 0
+m_sprite = ExtResource( 13 )
+
+[node name="BT_Back" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Layers" type="Node2D" parent="BT_Back"]
+
+[node name="BT_Back" type="Node2D" parent="BT_Back/Layers"]
+position = Vector2( 144, 944 )
+script = ExtResource( 3 )
+
+[node name="ic_bt_back" type="Node2D" parent="BT_Back/Layers/BT_Back"]
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Back/Layers/BT_Back/ic_bt_back"]
+script = ExtResource( 2 )
+Action = 0
+m_sprite = ExtResource( 9 )
+
+[node name="ic_back" type="Node2D" parent="BT_Back/Layers/BT_Back"]
+position = Vector2( -5, 0 )
+script = ExtResource( 4 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Back/Layers/BT_Back/ic_back"]
+script = ExtResource( 2 )
+Action = 0
+m_sprite = ExtResource( 8 )
+
+[node name="Title" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Layers" type="Node2D" parent="Title"]
+
+[node name="Title" type="Node2D" parent="Title/Layers"]
+position = Vector2( 32, 64 )
+script = ExtResource( 3 )
+
+[node name="lb_Title" type="Node2D" parent="Title/Layers/Title"]
+modulate = Color( 1, 1, 0.502, 1 )
+script = ExtResource( 15 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+
+[node name="Foreground" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Layers" type="Node2D" parent="Foreground"]
+
+[node name="Foreground" type="Node2D" parent="Foreground/Layers"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 640, 480 )
+script = ExtResource( 3 )
+m_oIniColor = Color( 1, 1, 1, 0 )

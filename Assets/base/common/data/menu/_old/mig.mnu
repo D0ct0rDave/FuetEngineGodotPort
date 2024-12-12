@@ -1,0 +1,54 @@
+Menu:
+{
+	StartPage = "page_mig_optionsel";
+	DefaultPage = "page_mig_optionsel";
+	BaseDir = "data/menu";
+	page_mig_optionsel:
+	{
+		// 
+SelectButton="BT_Accept";
+		BT_Accept:
+		{
+			OnPress = "GotoEnd";
+		};
+		BT_Settings:
+		{
+			OnPress = "page_mig_settings";
+		};
+		BT_Quit:
+		{
+			OnPress = "page_mig_quit";
+		};
+	};
+	page_mig_settings:
+	{
+		// 
+PrevPage="page_mig_optionsel";
+NextPage="page_mig_optionsel";
+SelectButton="BT_Back";
+		BT_Accept:
+		{
+			OnPress = "page_mig_optionsel";
+		};
+		BT_Back:
+		{
+			OnPress = "page_mig_optionsel";
+		};
+	};
+	page_mig_quit:
+	{
+		// 
+SelectButton="BT_Back";
+		BT_Back:
+		{
+			OnPress = "page_mig_optionsel";
+		};
+		BT_Quit:
+		{
+			OnPress = "GotoEnd";
+		};
+	};
+	GotoEnd:
+	{
+	};
+};

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/3.spr-6d686742360d85bd6ae4ea0338a77d49.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/menu/_old/sprites/3.spr"
+dest_files=[ "res://.import/3.spr-6d686742360d85bd6ae4ea0338a77d49.tres" ]
+
+[params]
+

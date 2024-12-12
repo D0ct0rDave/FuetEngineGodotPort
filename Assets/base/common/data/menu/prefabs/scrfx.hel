@@ -1,0 +1,203 @@
+HUDElement:
+{
+	Name = "ScrFX";
+	NumLayers = 1;
+	Layer0:
+	{
+		Type = "Group";
+		Name = "ScrFX";
+		Position:
+		{
+			x = 640.0000;
+			y = 480.0000;
+		};
+		Scale:
+		{
+			x = 2.0000;
+			y = 2.0000;
+		};
+		Color:
+		{
+		};
+		NumObjects = 1;
+		Object0:
+		{
+			Type = "Rect";
+			Width = 1280.0000;
+			Height = 960.0000;
+			Corner0:
+			{
+			};
+			Corner1:
+			{
+			};
+			Corner2:
+			{
+			};
+			Corner3:
+			{
+			};
+			Name = "rt_ScrFX";
+			Position:
+			{
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+				r = 0.0000;
+				g = 0.0000;
+				b = 0.0000;
+			};
+		};
+	};
+	NumElemActions = 3;
+	Action0:
+	{
+		Name = "Default";
+	};
+	Action1:
+	{
+		Name = "OnEnterPage";
+		ObjAction0:
+		{
+			HUDObject = "ScrFX";
+			XFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				NumKeyFrames = 2;
+				KeyFrame0:
+				{
+				};
+				KeyFrame1:
+				{
+					Time = 0.1000;
+					a = 0.0000;
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+	Action2:
+	{
+		Name = "OnExitPage";
+		ObjAction0:
+		{
+			HUDObject = "ScrFX";
+			XFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			YFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			VisFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ActionFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				NumKeyFrames = 3;
+				KeyFrame0:
+				{
+					a = 0.0000;
+				};
+				KeyFrame1:
+				{
+					Time = 0.5000;
+					a = 0.0000;
+				};
+				KeyFrame2:
+				{
+					Time = 0.7000;
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+};

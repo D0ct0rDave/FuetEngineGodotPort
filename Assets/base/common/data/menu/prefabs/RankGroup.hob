@@ -1,0 +1,116 @@
+HUDObject:
+{
+	Type = "Group";
+	Name = "Rank_5";
+	Position:
+	{
+		x = 544.0000;
+		y = 112.0000;
+	};
+	Scale:
+	{
+		x = 0.6500;
+		y = 0.6500;
+	};
+	Color:
+	{
+	};
+	NumObjects = 5;
+	Object0:
+	{
+		Type = "Icon";
+		Sprite = "sprites/frame";
+		Name = "ic_5";
+		Action = 0;
+		Position:
+		{
+			x = -608.0000;
+		};
+		Scale:
+		{
+			x = 3.0000;
+		};
+		Color:
+		{
+		};
+	};
+	Object1:
+	{
+		Type = "Icon";
+		Sprite = "sprites/flags";
+		Name = "ic_flag5";
+		Action = 0;
+		Position:
+		{
+			x = -296.0000;
+			y = 8.0000;
+		};
+		Scale:
+		{
+			x = 1.5000;
+			y = 1.5000;
+		};
+		Color:
+		{
+		};
+	};
+	Object2:
+	{
+		Type = "Label";
+		Text = "99999";
+		Font = "../fonts/default";
+		HAlignment = "Center";
+		VAlignment = "Center";
+		Name = "lb_rank5";
+		Position:
+		{
+			x = -608.0000;
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+	Object3:
+	{
+		Type = "Label";
+		Text = "MWMWMWMWMWM";
+		Font = "../fonts/default";
+		HAlignment = "Left";
+		VAlignment = "Center";
+		Name = "lb_name5";
+		Position:
+		{
+			x = -200.0000;
+			y = 8.0000;
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+	Object4:
+	{
+		Type = "Label";
+		Text = "9999999";
+		Font = "../fonts/default-scores";
+		HAlignment = "Right";
+		VAlignment = "Center";
+		Name = "lb_points5";
+		Position:
+		{
+			x = 920.0000;
+			y = 14.0000;
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+};

@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "4";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "4";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.4496;
+						y = 0.5667;
+					};
+					Size:
+					{
+						Width = 427.0;
+						Height = 150.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

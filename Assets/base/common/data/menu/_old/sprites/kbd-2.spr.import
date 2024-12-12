@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/kbd-2.spr-b11613ae3e919c194e7c1c29b032ad2b.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/menu/_old/sprites/kbd-2.spr"
+dest_files=[ "res://.import/kbd-2.spr-b11613ae3e919c194e7c1c29b032ad2b.tres" ]
+
+[params]
+

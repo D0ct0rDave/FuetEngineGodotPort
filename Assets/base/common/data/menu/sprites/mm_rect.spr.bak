@@ -1,0 +1,1 @@
+Sprite:{ Name="mm_rect"; NumActions=1; Action0:{ Frames:{ Type = "Regular"; Regular:{ Material = "mm_rect"; Size:{ Width = 16.0; Height = 64.0; }; }; }; }; }; 

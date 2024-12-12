@@ -1,0 +1,38 @@
+Sprite:
+{
+	Name = "5";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "menu-elements";
+					Filter = "NEAREST";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 0.5135;
+					};
+					Size:
+					{
+						Width = 320.0;
+						Height = 148.0;
+					};
+					TexCoords:
+					{
+						IU = 0.7344;
+						IV = 0.3125;
+						FU = 0.8906;
+						FV = 0.6016;
+					};
+				};
+			};
+		};
+	};
+};

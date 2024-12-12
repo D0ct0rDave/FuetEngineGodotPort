@@ -1,0 +1,218 @@
+HUDElement:
+{
+	Name = "GRP_MSG_BOX";
+	NumLayers = 1;
+	Layer0:
+	{
+		Type = "Group";
+		Name = "GRP_MSG_BOX";
+		Position:
+		{
+			x = 640.0000;
+			y = 480.0000;
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+		NumObjects = 3;
+		Object0:
+		{
+			Type = "Rect";
+			Width = 1280.0000;
+			Height = 960.0000;
+			Corner0:
+			{
+			};
+			Corner1:
+			{
+			};
+			Corner2:
+			{
+			};
+			Corner3:
+			{
+			};
+			Name = "rt_MSG_BOX";
+			Position:
+			{
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+				r = 0.0000;
+				g = 0.0000;
+				b = 0.0000;
+				a = 0.7059;
+			};
+		};
+		Object1:
+		{
+			Type = "Rect";
+			Width = 889.0000;
+			Height = 480.0000;
+			Corner0:
+			{
+			};
+			Corner1:
+			{
+			};
+			Corner2:
+			{
+			};
+			Corner3:
+			{
+			};
+			Name = "rt_MSG_BOX-1";
+			Position:
+			{
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+				r = 0.9569;
+				g = 0.9137;
+			};
+		};
+		Object2:
+		{
+			Type = "Label";
+			Text = "Are you sure?";
+			Font = "../fonts/default";
+			HAlignment = "Center";
+			VAlignment = "Center";
+			Name = "lb_MSG_BOX";
+			Position:
+			{
+				y = -144.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+		};
+	};
+	NumElemActions = 3;
+	Action0:
+	{
+		Name = "Default";
+	};
+	Action1:
+	{
+		Name = "ShowMessageBox";
+		ObjAction0:
+		{
+			HUDObject = "GRP_MSG_BOX";
+			PosFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				NumKeyFrames = 3;
+				KeyFrame0:
+				{
+					a = 0.0000;
+				};
+				KeyFrame1:
+				{
+					Time = 0.2000;
+				};
+				KeyFrame2:
+				{
+					Time = 0.4000;
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+	Action2:
+	{
+		Name = "HideMessageBox";
+		ObjAction0:
+		{
+			HUDObject = "GRP_MSG_BOX";
+			PosFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ScaleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			AngleFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			DepthFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+			ColorFunc:
+			{
+				NumKeyFrames = 3;
+				KeyFrame0:
+				{
+				};
+				KeyFrame1:
+				{
+					Time = 0.2000;
+				};
+				KeyFrame2:
+				{
+					Time = 0.4000;
+					a = 0.0000;
+				};
+			};
+			EventFunc:
+			{
+				KeyFrame0:
+				{
+				};
+			};
+		};
+		NumObjActions = 1;
+	};
+};

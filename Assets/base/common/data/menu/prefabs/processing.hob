@@ -1,0 +1,66 @@
+HUDObject:
+{
+	Type = "Group";
+	Name = "processing";
+	Visible = false;
+	Position:
+	{
+		x = 640.0000;
+		y = 480.0000;
+	};
+	Scale:
+	{
+	};
+	Color:
+	{
+	};
+	NumObjects = 2;
+	Object0:
+	{
+		Type = "Rect";
+		Width = 1280.0000;
+		Height = 960.0000;
+		Corner0:
+		{
+		};
+		Corner1:
+		{
+		};
+		Corner2:
+		{
+		};
+		Corner3:
+		{
+		};
+		Name = "rt_processing";
+		Position:
+		{
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+			r = 0.0000;
+			g = 0.0000;
+			b = 0.0000;
+			a = 0.6235;
+		};
+	};
+	Object1:
+	{
+		Type = "Icon";
+		Sprite = "sprites/processing";
+		Name = "ic_processing-1";
+		Action = 0;
+		Position:
+		{
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+};

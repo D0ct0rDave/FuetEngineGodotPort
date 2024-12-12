@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+<!DOCTYPE qfsmproject SYSTEM 'qfsm.dtd'>
+<qfsmproject version="0.53" author="Qfsm">
+  <machine nummooreout="8" transfontitalic="0" draw_it="1" statefontsize="8" transfont="Helvetica" statefontitalic="0" author="" description="" version="" name="FSM" arrowtype="1" numbits="4" statefontweight="50" statefont="Helvetica" numin="8" transfontsize="8" transfontweight="50" type="1" numout="8" initialstate="0">
+    <outputnames_moore>s_out7,s_out6,s_out5,s_out4,s_out3,s_out2,s_out1,s_out0</outputnames_moore>
+    <inputnames>i_7,i_6,i_5,i_4,i_3,i_2,i_1,i_0</inputnames>
+    <outputnames>o_7,o_6,o_5,o_4,o_3,o_2,o_1,o_0</outputnames>
+    <itransition ypos="406" endx="129.1503764721727" xpos="71" endy="406.5348153454063"/>
+    <state pencolor="0" radius="40" description="SelectButton=&quot;BT_Accept&quot;;" finalstate="0" moore_outputs="" ypos="180" code="1" xpos="178" linewidth="1">page_mig_inventory</state>
+    <state pencolor="0" radius="40" description="PrevPage=&quot;page_mig_optionsel&quot;;&#xa;NextPage=&quot;page_mig_optionsel&quot;;&#xa;SelectButton=&quot;BT_Back&quot;;" finalstate="0" moore_outputs="" ypos="190" code="15" xpos="473" linewidth="1">page_mig_settings</state>
+    <state pencolor="0" radius="40" description="SelectButton=&quot;BT_Back&quot;;" finalstate="0" moore_outputs="" ypos="350" code="3" xpos="421" linewidth="1">page_mig_quit</state>
+    <state pencolor="0" radius="40" description="" finalstate="0" moore_outputs="" ypos="421" code="2" xpos="590" linewidth="1">GotoEnd</state>
+    <state pencolor="0" radius="40" description="" finalstate="0" moore_outputs="" ypos="410" code="0" xpos="169" linewidth="1">page_mig_minimap</state>
+    <transition c1x="245.1084459565843" c2y="135.6584931644442" c1y="149.4824713919215" description="" straight="0" type="1" ypos="168.713347040338" endx="435.0526680779794" xpos="216.3746200628508" endy="177.3508893593265" c2x="359.1523256097785">
+      <from>1</from>
+      <to>15</to>
+      <inputs default="0" any="0" invert="0">BT_Settings</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="253.0248298312343" c2y="254.4091993367114" c1y="218.4746052686804" description="" straight="0" type="1" ypos="206.9069117598525" endx="399.0537423405271" xpos="207.5976029358378" endy="316.5580835665175" c2x="336.6239248838585">
+      <from>1</from>
+      <to>3</to>
+      <inputs default="0" any="0" invert="0">BT_Quit</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="373.1480707470074" c2y="131.6551171513343" c1y="8.27987913144861" description="" straight="0" type="1" ypos="148.295040435816" endx="614.2417286105142" xpos="202.3884304339877" endy="389.1827311987" c2x="655.945236391566">
+      <from>1</from>
+      <to>2</to>
+      <inputs default="0" any="0" invert="0">BT_Accept</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="180.4872615404073" c2y="339.9001980090563" c1y="317.9423874175826" description="" straight="0" type="1" ypos="219.9845768261087" endx="177.2404192419937" xpos="179.1106826896141" endy="370.8580086005301" c2x="178.8638403912005">
+      <from>1</from>
+      <to>0</to>
+      <inputs default="0" any="0" invert="0">BT_Minimap</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="361.2517831289816" c2y="180.3884926380041" c1y="185.194246319002" description="" straight="1" type="1" ypos="190" endx="217.7553493869447" xpos="433" endy="175.5827389570061" c2x="289.5035662579631">
+      <from>15</from>
+      <to>1</to>
+      <inputs default="0" any="0" invert="0">BT_Accept</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="378.1581532844731" c2y="218.2502953269026" c1y="230.125850698753" description="" straight="0" type="1" ypos="204.8556270541642" endx="217.0176400827083" xpos="435.8609323645896" endy="188.8104348573857" c2x="275.3836304456986">
+      <from>15</from>
+      <to>1</to>
+      <inputs default="0" any="0" invert="0">BT_Back</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="283.4010734110143" c2y="275.0547413431011" c1y="318.5827140555383" description="" straight="0" type="1" ypos="330.8877744079721" endx="195.8885438199983" xpos="385.8613769063238" endy="215.7770876399966" c2x="215.8293137357031">
+      <from>3</from>
+      <to>1</to>
+      <inputs default="0" any="0" invert="0">BT_Back</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="489.1779207447132" c2y="396.3721837135894" c1y="380.4215857399252" description="" straight="1" type="1" ypos="364.4709877662608" endx="550.9525175926419" xpos="458.2906223207488" endy="412.3227816872538" c2x="520.0652191686776">
+      <from>3</from>
+      <to>2</to>
+      <inputs default="0" any="0" invert="0">BT_Quit</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="281.5121911063755" c2y="272.1662061461688" c1y="329.3446103901605" description="" straight="1" type="1" ypos="386.5230146341523" endx="441.7652476222788" xpos="201.3856628484238" endy="214.987801902177" c2x="361.6387193643271">
+      <from>0</from>
+      <to>15</to>
+      <inputs default="0" any="0" invert="0">BT_Settings</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="267.3100506225674" c2y="382.3443136435683" c1y="398.4430886449989" description="" straight="1" type="1" ypos="414.5418636464293" endx="384.4475380551897" xpos="208.7413069062562" endy="366.2455386421379" c2x="325.8787943388785">
+      <from>0</from>
+      <to>3</to>
+      <inputs default="0" any="0" invert="0">BT_Quit</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="302.2438380727435" c2y="620.8546745156758" c1y="607.0767348418879" description="" straight="0" type="1" ypos="448.6493975840498" endx="590.00000125" xpos="179.3065060224133" endy="461" c2x="488.8746633506605">
+      <from>0</from>
+      <to>2</to>
+      <inputs default="0" any="0" invert="0">BT_Accept</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="155.045617280371" c2y="243.9000064240794" c1y="301.6753385648237" description="" straight="0" type="1" ypos="372.8609323645896" endx="156.9054855288743" xpos="154.1443729458358" endy="213.9856066479248" c2x="158.4033649317047">
+      <from>0</from>
+      <to>1</to>
+      <inputs default="0" any="0" invert="0">BT_Inventory</inputs>
+      <outputs></outputs>
+    </transition>
+  </machine>
+</qfsmproject>

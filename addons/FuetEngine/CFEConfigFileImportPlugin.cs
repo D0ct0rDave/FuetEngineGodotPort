@@ -147,7 +147,7 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 		return null;
 	}
 	// ------------------------------------------------------------------------	
-	private void SetHierarchyOwner(ref Node _root, Node _owner)
+	public void SetHierarchyOwner(ref Node _root, Node _owner)
 	{
 		if (_root != _owner)
 		{
@@ -159,6 +159,16 @@ public partial class CFEConfigFileImportPlugin : EditorImportPlugin
 			Node child = _root.GetChild(i);
 			SetHierarchyOwner(ref child, _owner);
 		}
+	}
+	// ------------------------------------------------------------------------	
+	public Resource LoadConfigAsResource(string _sFilename)
+	{
+		return ConvertConfigToResource(_sFilename);
+	}
+	// ------------------------------------------------------------------------	
+	public Node LoadConfigAsNode(string _sFilename)
+	{
+		return ConvertConfigToNode(_sFilename);
 	}
 	// ------------------------------------------------------------------------	
 }

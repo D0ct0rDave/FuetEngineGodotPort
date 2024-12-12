@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/mm_legend.spr-3d033ccbed1eb3c10d1e1a6396660bd0.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/menu/sprites/mm_legend.spr"
+dest_files=[ "res://.import/mm_legend.spr-3d033ccbed1eb3c10d1e1a6396660bd0.tres" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/level-button-frame.spr-8a8c4c5aa6d193fe42ed0502bffbd1b9.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/menu/sprites/level-button-frame.spr"
+dest_files=[ "res://.import/level-button-frame.spr-8a8c4c5aa6d193fe42ed0502bffbd1b9.tres" ]
+
+[params]
+

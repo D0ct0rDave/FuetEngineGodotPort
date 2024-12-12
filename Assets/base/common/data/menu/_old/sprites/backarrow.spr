@@ -1,0 +1,39 @@
+Sprite:
+{
+	Name = "backarrow";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "menu-elements";
+					Filter = "NEAREST";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5847;
+						y = 0.4666;
+					};
+					Size:
+					{
+						Width = 48.0;
+						Height = 60.0;
+					};
+					TexCoords:
+					{
+						IU = 0.9746;
+						IV = 0.3125;
+						FU = 0.9980;
+						FV = 0.4297;
+					};
+				};
+			};
+		};
+	};
+};

@@ -10,17 +10,26 @@ namespace FuetEngine
     [Tool]
 	public class CFEHUDObject : Node2D
 	{
-		// CFEVect2	m_oIniPos; 		// GlobalPosition
-		// CFEVect2	m_oIniScale;	// GlobalScale
-		// FEReal	m_rIniAngle;	// GlobalRotation
 		[Export]
-		public FEReal		m_rIniDepth;
+		public CFEVect2 m_oIniPos { set{ m_iniPos = value; GlobalPosition = value; } get{ return m_iniPos; }}
+		private CFEVect2 m_iniPos;
 		[Export]
-		public CFEColor		m_oIniColor;
+		public CFEVect2	m_oIniScale { set{ m_iniScale = value; GlobalScale = value; } get{ return m_iniScale; }}
+		private CFEVect2 m_iniScale;
 		[Export]
-		public int			m_iIniAction;
+		public FEReal m_rIniAngle { set{ m_iniAngle = value; GlobalRotation = value; } get{ return m_iniAngle; }}
+		public FEReal m_iniAngle;
 		[Export]
-		public bool			m_bIniVis;
+		public FEReal m_rIniDepth { set{ m_iniDepth = value; ZIndex = -(int)(m_iniDepth*255.0f); } get{ return m_iniDepth; }}
+		private FEReal m_iniDepth;
+		[Export]
+		public CFEColor	m_oIniColor { set{ m_iniColor = value; Modulate = value; } get{ return m_iniColor; }}
+		private  CFEColor m_iniColor;
+		[Export]
+		public int m_iIniAction;
+		[Export]
+		public bool	m_bIniVis { set{ m_iniVis = value; Visible = value; } get{ return m_iniVis; }}
+		private  bool m_iniVis;
 		[Export]
 		public CFEString	m_sTAG;
 

@@ -1,0 +1,72 @@
+HUDObject:
+{
+	Type = "Group";
+	Name = "GRP_MSG_BOX2";
+	Position:
+	{
+		x = 640.0000;
+		y = 1440.0000;
+	};
+	Depth = 0.1000;
+	Scale:
+	{
+	};
+	Color:
+	{
+	};
+	NumObjects = 2;
+	Object0:
+	{
+		Type = "Rect";
+		Width = 1280.0000;
+		Height = 960.0000;
+		Corner0:
+		{
+		};
+		Corner1:
+		{
+		};
+		Corner2:
+		{
+		};
+		Corner3:
+		{
+			r = 0.8157;
+			g = 0.8157;
+			b = 0.8157;
+		};
+		Name = "rt_MSG_BOX2";
+		Position:
+		{
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+			r = 0.0000;
+			g = 0.0000;
+			b = 0.0000;
+			a = 0.8000;
+		};
+	};
+	Object1:
+	{
+		Type = "Label";
+		Text = "¿Quieres enviarla/ndurante esta/nsesión de juego?";
+		Font = "../fonts/default";
+		HAlignment = "Center";
+		VAlignment = "Center";
+		Name = "lb_MSG_BOX2";
+		Position:
+		{
+			y = -128.0000;
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+};

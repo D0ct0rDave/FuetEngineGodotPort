@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/portrait-M.spr-7087b27c7774e4b6f45983632744ab6d.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/menu/_old/sprites/portrait-M.spr"
+dest_files=[ "res://.import/portrait-M.spr-7087b27c7774e4b6f45983632744ab6d.tres" ]
+
+[params]
+

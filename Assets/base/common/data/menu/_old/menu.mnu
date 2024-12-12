@@ -1,0 +1,174 @@
+Menu:
+{
+	StartPage = "page_ini";
+	DefaultPage = "page_ini";
+	BaseDir = "data/menu";
+	page_start:
+	{
+		// 
+NextPage = "page_profile";
+		BT_Accept:
+		{
+			OnPress = "page_profile";
+		};
+	};
+	page_delete_profile:
+	{
+		// 
+PrevPage="page_profile";
+		BT_Back:
+		{
+			OnPress = "page_profile";
+		};
+	};
+	page_enter_name:
+	{
+		BT_Back:
+		{
+			OnPress = "page_profile";
+		};
+		BT_Accept:
+		{
+			OnPress = "page_select_onlinerankops";
+		};
+	};
+	page_ini:
+	{
+		SelectButton = "BT_Accept";
+		BT_Options:
+		{
+			OnPress = "page_op_optionsel";
+		};
+		BT_Scores:
+		{
+			OnPress = "page_scores";
+		};
+		BT_Start:
+		{
+			OnPress = "GotoEnd";
+		};
+		BT_Continue:
+		{
+			OnPress = "GotoEnd";
+		};
+		BT_Back:
+		{
+			OnPress = "page_profile";
+		};
+	};
+	page_profile:
+	{
+		BT_Delete:
+		{
+			OnPress = "page_delete_profile";
+		};
+		BT_Profile2:
+		{
+			OnPress = "page_select_onlinerankops";
+		};
+		BT_Create:
+		{
+			OnPress = "page_enter_name";
+		};
+		BT_Profile1:
+		{
+			OnPress = "page_select_onlinerankops";
+		};
+		BT_Profile3:
+		{
+			OnPress = "page_select_onlinerankops";
+		};
+	};
+	page_op_optionsel:
+	{
+		BT_Back:
+		{
+			OnPress = "page_ini";
+		};
+		BT_Settings:
+		{
+			OnPress = "page_op_settings";
+		};
+		BT_Credits:
+		{
+			OnPress = "page_op_credits";
+		};
+		BT_BGM:
+		{
+			OnPress = "page_op_bgm";
+		};
+	};
+	page_op_credits:
+	{
+		BT_Back:
+		{
+			OnPress = "page_op_optionsel";
+		};
+	};
+	page_scores:
+	{
+		BT_Back:
+		{
+			OnPress = "page_ini";
+		};
+	};
+	page_op_settings:
+	{
+		BT_Accept:
+		{
+			OnPress = "page_op_optionsel";
+		};
+		BT_Back:
+		{
+			OnPress = "page_op_optionsel";
+		};
+	};
+	GotoEnd:
+	{
+	};
+	page_op_bgm:
+	{
+		BT_Back:
+		{
+			OnPress = "page_op_optionsel";
+		};
+	};
+	page_hiscores:
+	{
+		// 
+Filename = "page_scores";
+		BT_Accept:
+		{
+			OnPress = "page_ini";
+		};
+	};
+	page_rewards:
+	{
+		// 
+Filename = "page_op_challenges";
+		BT_Accept:
+		{
+			OnPress = "page_ini";
+		};
+	};
+	page_hiscores_then_rewards:
+	{
+		// 
+Filename = "page_scores";
+		BT_Accept:
+		{
+			OnPress = "page_rewards";
+		};
+	};
+	page_select_onlinerankops:
+	{
+		BT_Yes:
+		{
+			OnPress = "page_ini";
+		};
+		BT_No:
+		{
+			OnPress = "page_ini";
+		};
+	};
+};

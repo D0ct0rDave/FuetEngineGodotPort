@@ -1,0 +1,18 @@
+Menu:
+{
+	StartPage = "page_finish_options_HCP";
+	DefaultPage = "page_finish_options_HCP";
+	BaseDir = "data/menu";
+	page_finish_options_HCP:
+	{
+		SelectButton = "BT_Restart";
+		BT_Restart:
+		{
+			OnPress = "GotoEnd";
+		};
+		BT_Quit:
+		{
+			OnPress = "GotoEnd";
+		};
+	};
+};

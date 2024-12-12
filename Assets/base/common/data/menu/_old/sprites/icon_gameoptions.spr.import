@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/icon_gameoptions.spr-91825fb1e09a48c6b3ee06206dff2350.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/menu/_old/sprites/icon_gameoptions.spr"
+dest_files=[ "res://.import/icon_gameoptions.spr-91825fb1e09a48c6b3ee06206dff2350.tres" ]
+
+[params]
+

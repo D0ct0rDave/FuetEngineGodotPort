@@ -1,0 +1,125 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=1]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=2]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=5]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDRect.cs" type="Script" id=6]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/2.spr" type="Resource" id=7]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/backarrow.spr" type="Resource" id=8]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=9]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/9.spr" type="Resource" id=10]
+
+[node name="CFEHUD" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="GRP_MSG_BOX" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Layers" type="Node2D" parent="GRP_MSG_BOX"]
+
+[node name="GRP_MSG_BOX" type="Node2D" parent="GRP_MSG_BOX/Layers"]
+position = Vector2( 896, 256 )
+script = ExtResource( 2 )
+
+[node name="rt_MSG_BOX-1" type="Node2D" parent="GRP_MSG_BOX/Layers/GRP_MSG_BOX"]
+script = ExtResource( 6 )
+m_oIniColor = Color( 0.8157, 0.8157, 0.8157, 0.502 )
+
+[node name="lb_MSG_BOX" type="Node2D" parent="GRP_MSG_BOX/Layers/GRP_MSG_BOX"]
+position = Vector2( 0, -128 )
+script = ExtResource( 9 )
+
+[node name="BT_No" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Layers" type="Node2D" parent="BT_No"]
+
+[node name="BT_No" type="Node2D" parent="BT_No/Layers"]
+position = Vector2( 1216, 960 )
+script = ExtResource( 2 )
+
+[node name="ic_No" type="Node2D" parent="BT_No/Layers/BT_No"]
+script = ExtResource( 3 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_No/Layers/BT_No/ic_No"]
+script = ExtResource( 4 )
+Action = 0
+m_sprite = ExtResource( 10 )
+
+[node name="lb_MB_NO" type="Node2D" parent="BT_No/Layers/BT_No"]
+script = ExtResource( 9 )
+
+[node name="BT_Yes" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Layers" type="Node2D" parent="BT_Yes"]
+
+[node name="BT_Yes" type="Node2D" parent="BT_Yes/Layers"]
+position = Vector2( 1536, 960 )
+script = ExtResource( 2 )
+
+[node name="ic_Yes" type="Node2D" parent="BT_Yes/Layers/BT_Yes"]
+script = ExtResource( 3 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Yes/Layers/BT_Yes/ic_Yes"]
+script = ExtResource( 4 )
+Action = 0
+m_sprite = ExtResource( 10 )
+
+[node name="lb_MB_YES" type="Node2D" parent="BT_Yes/Layers/BT_Yes"]
+script = ExtResource( 9 )
+
+[node name="BT_Back" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Layers" type="Node2D" parent="BT_Back"]
+
+[node name="BT_Back" type="Node2D" parent="BT_Back/Layers"]
+position = Vector2( 192, 960 )
+script = ExtResource( 2 )
+
+[node name="ic_bt_back" type="Node2D" parent="BT_Back/Layers/BT_Back"]
+script = ExtResource( 3 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Back/Layers/BT_Back/ic_bt_back"]
+script = ExtResource( 4 )
+Action = 0
+m_sprite = ExtResource( 7 )
+
+[node name="ic_back" type="Node2D" parent="BT_Back/Layers/BT_Back"]
+position = Vector2( -5, 0 )
+script = ExtResource( 3 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Back/Layers/BT_Back/ic_back"]
+script = ExtResource( 4 )
+Action = 0
+m_sprite = ExtResource( 8 )
+
+[node name="Title" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Layers" type="Node2D" parent="Title"]
+
+[node name="Title" type="Node2D" parent="Title/Layers"]
+position = Vector2( 448, 64 )
+script = ExtResource( 2 )
+m_oIniColor = Color( 1, 1, 0.502, 1 )
+
+[node name="lb_Title" type="Node2D" parent="Title/Layers/Title"]
+script = ExtResource( 9 )
+
+[node name="Foreground" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Layers" type="Node2D" parent="Foreground"]
+
+[node name="Foreground" type="Node2D" parent="Foreground/Layers"]
+position = Vector2( 640, 480 )
+script = ExtResource( 2 )
+m_oIniColor = Color( 1, 1, 1, 0 )

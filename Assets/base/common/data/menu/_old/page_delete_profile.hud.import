@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEHUDFileImportPlugin"
+type="PackedScene"
+path="res://.import/page_delete_profile.hud-bb33e40b2d1820a7917f856956a30c78.tscn"
+
+[deps]
+
+source_file="res://Assets/base/common/data/menu/_old/page_delete_profile.hud"
+dest_files=[ "res://.import/page_delete_profile.hud-bb33e40b2d1820a7917f856956a30c78.tscn" ]
+
+[params]
+

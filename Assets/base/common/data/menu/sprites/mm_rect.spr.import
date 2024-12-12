@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/mm_rect.spr-e4bdeb67885f71ab88904b4dc84f1926.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/menu/sprites/mm_rect.spr"
+dest_files=[ "res://.import/mm_rect.spr-e4bdeb67885f71ab88904b4dc84f1926.tres" ]
+
+[params]
+

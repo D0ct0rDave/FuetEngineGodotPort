@@ -1,0 +1,50 @@
+HUDObject:
+{
+	Type = "Group";
+	Name = "ScrFX";
+	Position:
+	{
+		x = 640.0000;
+		y = 480.0000;
+	};
+	Scale:
+	{
+		x = 2.0000;
+		y = 2.0000;
+	};
+	Color:
+	{
+	};
+	NumObjects = 1;
+	Object0:
+	{
+		Type = "Rect";
+		Width = 1280.0000;
+		Height = 960.0000;
+		Corner0:
+		{
+		};
+		Corner1:
+		{
+		};
+		Corner2:
+		{
+		};
+		Corner3:
+		{
+		};
+		Name = "rt_ScrFX";
+		Position:
+		{
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+			r = 0.0000;
+			g = 0.0000;
+			b = 0.0000;
+		};
+	};
+};

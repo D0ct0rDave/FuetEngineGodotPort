@@ -1,0 +1,52 @@
+HUDObject:
+{
+	Type = "Group";
+	Name = "BT_MB_OK";
+	Action = 1;
+	Position:
+	{
+		x = 416.0000;
+		y = 544.0000;
+	};
+	Scale:
+	{
+	};
+	Color:
+	{
+	};
+	NumObjects = 2;
+	Object0:
+	{
+		Type = "Icon";
+		Sprite = "sprites/2";
+		Name = "ic_MB_OK";
+		Action = 0;
+		Position:
+		{
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+	Object1:
+	{
+		Type = "Label";
+		Text = "Yes";
+		Font = "../fonts/default";
+		HAlignment = "Center";
+		VAlignment = "Center";
+		Name = "lb_MB_OK";
+		Position:
+		{
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+};

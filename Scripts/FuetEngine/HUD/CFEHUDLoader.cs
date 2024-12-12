@@ -251,41 +251,25 @@ namespace FuetEngine
 				float rHeight = _oConfigFile.rGetReal(_sPrefix + ".Height",0.0f);
 				float rPivotX = _oConfigFile.rGetReal(_sPrefix + ".PivotX",0.5f);
 				float rPivotY = _oConfigFile.rGetReal(_sPrefix + ".PivotY",0.5f);
-                //poRect->SetWidth(rWidth);
-                //poRect->SetHeight(rHeight);
-                //poRect->SetPivot( CFEVect2(rPivotX,rPivotY) );
 				
-				/*
+                oRect.SetWidth(rWidth);
+                oRect.SetHeight(rHeight);
+                oRect.SetPivot( new CFEVect2(rPivotX, rPivotY) );
+				
                 // Load corner colors
-                Texture2D tex = new Texture2D(2, 2);
-                for (int i=0;i<4;i++)
+                for (int i=0; i<4; i++)
 				{
 					string sCorner = ".Corner" + i;
 					string sVar    = _sPrefix + sCorner;
 
-					Color oColor;
+					CFEColor oColor;
 					oColor.r = _oConfigFile.rGetReal(sVar + ".r",1.0f);
 					oColor.g = _oConfigFile.rGetReal(sVar + ".g",1.0f);
 					oColor.b = _oConfigFile.rGetReal(sVar + ".b",1.0f);
 					oColor.a = _oConfigFile.rGetReal(sVar + ".a",1.0f);
                     
-                    int x = i % 2;
-                    int y = i/2;
-                    tex.SetPixel(x, y, oColor);
-
-                    // poRect->SetCornerColor(i,oColor);
+					oRect.SetCornerColor(i, oColor);
                 }
-                tex.Apply();
-
-                Sprite sprite = Sprite.Create(tex, new Rect(0, 0, 2, 2), new Vector2(rPivotX, rPivotY), 100.0f, 0, SpriteMeshType.FullRect);
-                SpriteRenderer oSR = oGameObject.AddComponent<SpriteRenderer>() as SpriteRenderer;
-                oSR.sprite = sprite;
-                oSR.color  = oRenderColor(m_oModColor, poRect);
-                oSR.sortingOrder = iGetRenderIndex(poRect);
-
-                // *0.5f because the rect is 2x2 not 1x1
-                oGameObject.transform.localScale = new Vector3(oGameObject.transform.localScale.x * rWidth * 0.5f, -1.0f * oGameObject.transform.localScale.y * rHeight * 0.5f, 1.0f);
-				*/
 
                 return oRect;
 			}

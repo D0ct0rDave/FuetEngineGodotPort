@@ -18,7 +18,7 @@ namespace FuetEngine
             return rect;
         } 	
         // ------------------------------------------------------------------------
-        private static void ProcessSpriteFrame(ref CFESpriteFrame _spriteFrame)
+        private static void ProcessSpriteFrame(ref CFESpriteFrame _spriteFrame, bool _spriteFrameBuiltFromTexture)
         {
             string textureFilename = CFEStringUtils.sGetCanonicalPath( _spriteFrame.m_sMaterial + ".png" );
 
@@ -29,10 +29,16 @@ namespace FuetEngine
                 return;
             }
 
-            // texture.ResourceLocalToScene = true;
             int textureWidth = texture.GetWidth();
             int textureHeight = texture.GetHeight();
-            Rect2 region = GetRectFromSpriteFrame(_spriteFrame, textureWidth, textureHeight);
+            
+            if (_spriteFrameBuiltFromTexture)
+            {
+                _spriteFrame.m_oSize.x = textureWidth;
+                _spriteFrame.m_oSize.y = textureHeight;
+            }
+
+            Rect2 region = GetRectFromSpriteFrame(_spriteFrame, textureWidth, textureHeight);            
 
             // set texture
             if (
@@ -109,7 +115,7 @@ namespace FuetEngine
 	        oFrame.m_bScaleYVEqually = false;
 	        oFrame.m_bUWorldCoords = false;
 	        oFrame.m_bVWorldCoords = false;
-            ProcessSpriteFrame(ref oFrame);
+            ProcessSpriteFrame(ref oFrame, true);
 
             oAction.iAddFrame(oFrame);
             oSprite.iAddAction(oAction);
@@ -128,7 +134,7 @@ namespace FuetEngine
             CFEConfigFile oConfig = new CFEConfigFile(sFilename);
             if (!oConfig.bInitialized())
             {
-                GD.Print("CFESpriteLoad::oLoad. Cannot load " + sFilename + " try to create one from Texture");
+                GD.Print("CFESpriteLoad::oLoad. Cannot load " + sFilename + " Creating one from Texture");
 
                 // We haven't found the sprite definition file. Let's see i we can find
                 // a material and then build a basic sprite with it.
@@ -239,7 +245,7 @@ namespace FuetEngine
                             oFrame.m_bScaleYVEqually = false;
                             oFrame.m_bUWorldCoords = false;
                             oFrame.m_bVWorldCoords = false;
-                            ProcessSpriteFrame(ref oFrame);
+                            ProcessSpriteFrame(ref oFrame, false);
 
 							oAction.m_rActionTime += oFrame.m_rFrameTime;
                             oAction.iAddFrame(oFrame);
@@ -284,7 +290,7 @@ namespace FuetEngine
                         oFrame.m_bScaleYVEqually = false;
                         oFrame.m_bUWorldCoords = false;
                         oFrame.m_bVWorldCoords = false;
-                        ProcessSpriteFrame(ref oFrame);
+                        ProcessSpriteFrame(ref oFrame, false);
 
                         oAction.m_rActionTime += oFrame.m_rFrameTime;
                         oAction.iAddFrame(oFrame);
@@ -390,7 +396,7 @@ namespace FuetEngine
                         oFrame.m_bScaleYVEqually = bScaleYVEqually;
                         oFrame.m_bUWorldCoords = bUWorldCoords;
                         oFrame.m_bVWorldCoords = bVWorldCoords;
-						ProcessSpriteFrame(ref oFrame);
+						ProcessSpriteFrame(ref oFrame, false);
 
                         oAction.m_rActionTime += oFrame.m_rFrameTime;
                         oAction.iAddFrame(oFrame);

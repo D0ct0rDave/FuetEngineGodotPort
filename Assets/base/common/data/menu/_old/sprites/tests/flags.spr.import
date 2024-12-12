@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/flags.spr-d9b5a9188da0a2f40a57d621a4dcf08e.tres"
+
+[deps]
+
+source_file="res://Assets/base/common/data/menu/_old/sprites/tests/flags.spr"
+dest_files=[ "res://.import/flags.spr-d9b5a9188da0a2f40a57d621a4dcf08e.tres" ]
+
+[params]
+

@@ -1,0 +1,226 @@
+EditorHUD:
+{
+	WindowWidth = 1688;
+WindowHeight = 1058;
+	WindowLayout = "layout2|name=Toolbar;caption=HUD toolbar;state=2108156;dir=1;layer=10;row=0;pos=0;prop=100000;bestw=1319;besth=42;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Viewer;caption=Viewer;state=20972288;dir=5;layer=0;row=1;pos=0;prop=100000;bestw=800;besth=609;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Timeline;caption=Actions & Timeline;state=23070716;dir=3;layer=0;row=2;pos=0;prop=100000;bestw=864;besth=199;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Layers;caption=HUD Objects;state=16779260;dir=2;layer=1;row=0;pos=0;prop=100000;bestw=411;besth=387;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Properties;caption=HUD Object properties;state=16779260;dir=2;layer=1;row=0;pos=1;prop=100000;bestw=411;besth=387;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(1,10,0)=44|dock_size(5,0,1)=398|dock_size(3,0,2)=259|dock_size(2,1,0)=701|";
+	ViewGrid = false;
+	GridSelection = 6;
+	Background = "Äû";
+	ViewBackground = false;
+	GuardBandMode = 1;
+	DebugApp =  "(null)";
+	Zoom =  0.244;
+	TransX = -2498.591;
+	TransY = -961.281;
+	Element0:
+	{
+		Object = "Background";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+	};
+
+		Element1:
+		{
+			Object = "rt_Background";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+		};
+
+		Element2:
+		{
+			Object = "rt_Background-1";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+		};
+
+	Element3:
+	{
+		Object = "Tuto";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+	};
+
+		Element4:
+		{
+			Object = "lb_Tuto";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+		};
+
+		Element5:
+		{
+			Object = "ic_Tuto";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+		};
+
+		Element6:
+		{
+			Object = "ic_Tuto-1";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+		};
+
+		Element7:
+		{
+			Object = "rt_Tuto";
+			Locked = false;
+			LinkScale = false;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+		};
+
+		Element8:
+		{
+			Object = "rt_Tuto-1";
+			Locked = false;
+			LinkScale = false;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+		};
+
+		Element9:
+		{
+			Object = "rt_Tuto-2";
+			Locked = false;
+			LinkScale = false;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+		};
+
+		Element10:
+		{
+			Object = "rt_Tuto-3";
+			Locked = false;
+			LinkScale = false;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+		};
+
+		Element11:
+		{
+			Object = "rt_Tuto-4";
+			Locked = false;
+			LinkScale = false;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+		};
+
+		Element12:
+		{
+			Object = "rt_Tuto-5";
+			Locked = false;
+			LinkScale = false;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+		};
+
+	Element13:
+	{
+		Object = "BT_Back";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+	};
+
+		Element14:
+		{
+			Object = "ic_bt_back";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+		};
+
+		Element15:
+		{
+			Object = "ic_back";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+		};
+
+	Element16:
+	{
+		Object = "BT_Next";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = true;
+		Selected = true;
+		Visible = true;
+	};
+
+		Element17:
+		{
+			Object = "ic_Next";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = true;
+		};
+
+		Element18:
+		{
+			Object = "ic_Next-1";
+			Locked = false;
+			LinkScale = false;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = true;
+		};
+
+	NumElements = 19;
+
+};

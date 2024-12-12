@@ -1,0 +1,50 @@
+HUDObject:
+{
+	Type = "Group";
+	Name = "BT_Settings";
+	Position:
+	{
+		x = 1232.0000;
+		y = 208.0000;
+	};
+	Depth = -0.0100;
+	Scale:
+	{
+	};
+	Color:
+	{
+	};
+	NumObjects = 2;
+	Object0:
+	{
+		Type = "Icon";
+		Sprite = "sprites/button_face";
+		Name = "ic_Settings";
+		Action = 0;
+		Position:
+		{
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+	Object1:
+	{
+		Type = "Icon";
+		Sprite = "sprites/ic_gears";
+		Name = "ic_Settings-1";
+		Action = 0;
+		Position:
+		{
+		};
+		Scale:
+		{
+		};
+		Color:
+		{
+		};
+	};
+};

@@ -1,0 +1,28 @@
+Menu:
+{
+	StartPage = "page_unlocked_pres";
+	DefaultPage = "page_unlocked_pres";
+	BaseDir = "data/menu";
+
+	page_unlocked_pres:
+	{
+		SelectButton = "BT_Accept";
+		BT_Accept:
+		{
+			OnPress = "page_finish_options_HC";
+		};
+	};
+	
+	page_finish_options_HC:
+	{
+		SelectButton = "BT_Restart";
+		BT_Restart:
+		{
+			OnPress = "GotoEnd";
+		};
+		BT_Quit:
+		{
+			OnPress = "GotoEnd";
+		};
+	};	
+};
