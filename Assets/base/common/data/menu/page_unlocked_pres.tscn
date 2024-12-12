@@ -1,107 +1,138 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=1]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=2]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=3]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=4]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=5]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=6]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/3.spr" type="Resource" id=7]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDRect.cs" type="Script" id=8]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDRect.cs" type="Script" id=1]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=2]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteAction.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESprite.cs" type="Script" id=5]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteFrame.cs" type="Script" id=6]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=7]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=8]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=9]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=10]
+
+[sub_resource type="Resource" id=59]
+script = ExtResource( 6 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 811, 150 )
+m_oScale = Vector2( 0, 0 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.4735, 0.5667 )
+m_o1OverDims = Vector2( 0, 0 )
+
+[sub_resource type="Resource" id=60]
+script = ExtResource( 3 )
+Name = "nonamed"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 59 ) ]
+
+[sub_resource type="Resource" id=61]
+resource_local_to_scene = true
+script = ExtResource( 5 )
+Name = "3"
+m_oActions = [ SubResource( 60 ) ]
 
 [node name="CFEHUD" type="Node2D"]
-script = ExtResource( 1 )
+script = ExtResource( 4 )
 
 [node name="Foreground" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 7 )
 
 [node name="Layers" type="Node2D" parent="Foreground"]
 
-[node name="Foreground" type="Node2D" parent="Foreground/Layers"]
-modulate = Color( 1, 1, 1, 0 )
+[node name="Action" type="Node" parent="Foreground"]
+
+[node name="Layers2" type="Node2D" parent="Foreground"]
+
+[node name="Foreground" type="Node2D" parent="Foreground/Layers2"]
 position = Vector2( 640, 480 )
-script = ExtResource( 3 )
+script = ExtResource( 2 )
 m_oIniColor = Color( 1, 1, 1, 0 )
 
+[node name="Action2" type="Node" parent="Foreground"]
+
 [node name="Pizarra" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 7 )
 
 [node name="Layers" type="Node2D" parent="Pizarra"]
 
-[node name="Pizarra" type="Node2D" parent="Pizarra/Layers"]
+[node name="Action" type="Node" parent="Pizarra"]
+
+[node name="Layers2" type="Node2D" parent="Pizarra"]
+
+[node name="Pizarra" type="Node2D" parent="Pizarra/Layers2"]
 position = Vector2( 909.017, 546.463 )
-script = ExtResource( 3 )
+script = ExtResource( 2 )
 
-[node name="rt_Pizarra" type="Node2D" parent="Pizarra/Layers/Pizarra"]
-modulate = Color( 1, 1, 1, 0.75 )
+[node name="rt_Pizarra" type="Node2D" parent="Pizarra/Layers2/Pizarra"]
 position = Vector2( -576, -416 )
-script = ExtResource( 8 )
+script = ExtResource( 1 )
 m_oIniColor = Color( 1, 1, 1, 0.75 )
-m_rWidth = 1152.0
-m_rHeight = 832.0
-m_oCorners = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 1, 0.7529, 0.7529, 0.7529, 1, 0.7529, 0.7529, 0.7529, 1 )
 
-[node name="rt_Pizarra-1" type="Node2D" parent="Pizarra/Layers/Pizarra"]
-modulate = Color( 1, 1, 1, 0.898 )
+[node name="rt_Pizarra-1" type="Node2D" parent="Pizarra/Layers2/Pizarra"]
 position = Vector2( -576, -416 )
-script = ExtResource( 8 )
+script = ExtResource( 1 )
 m_oIniColor = Color( 1, 1, 1, 0.898 )
-m_rWidth = 32.0
-m_rHeight = 832.0
-m_oCorners = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 )
-m_oPivot = Vector2( 1, 0 )
 
-[node name="rt_Pizarra-2" type="Node2D" parent="Pizarra/Layers/Pizarra"]
-modulate = Color( 1, 1, 1, 0.9 )
+[node name="rt_Pizarra-2" type="Node2D" parent="Pizarra/Layers2/Pizarra"]
 position = Vector2( 576, -416 )
-script = ExtResource( 8 )
+script = ExtResource( 1 )
 m_oIniColor = Color( 1, 1, 1, 0.9 )
-m_rWidth = 32.0
-m_rHeight = 832.0
-m_oCorners = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 )
 
-[node name="rt_Pizarra-3" type="Node2D" parent="Pizarra/Layers/Pizarra"]
-modulate = Color( 1, 1, 1, 0.9 )
+[node name="rt_Pizarra-3" type="Node2D" parent="Pizarra/Layers2/Pizarra"]
 position = Vector2( -576, -416 )
-script = ExtResource( 8 )
+script = ExtResource( 1 )
 m_oIniColor = Color( 1, 1, 1, 0.9 )
-m_rWidth = 1152.0
-m_rHeight = 32.0
-m_oCorners = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 )
-m_oPivot = Vector2( 0, 1 )
 
-[node name="rt_Pizarra-4" type="Node2D" parent="Pizarra/Layers/Pizarra"]
-modulate = Color( 1, 1, 1, 0.9 )
+[node name="rt_Pizarra-4" type="Node2D" parent="Pizarra/Layers2/Pizarra"]
 position = Vector2( -576, 416 )
-script = ExtResource( 8 )
+script = ExtResource( 1 )
 m_oIniColor = Color( 1, 1, 1, 0.9 )
-m_rWidth = 1152.0
-m_rHeight = 32.0
-m_oCorners = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 )
 
-[node name="lb_UnlockedElem" type="Node2D" parent="Pizarra/Layers/Pizarra"]
+[node name="lb_UnlockedElem" type="Node2D" parent="Pizarra/Layers2/Pizarra"]
 position = Vector2( 0, -128 )
-script = ExtResource( 6 )
+script = ExtResource( 10 )
+
+[node name="Action2" type="Node" parent="Pizarra"]
 
 [node name="BT_Accept" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 7 )
 
 [node name="Layers" type="Node2D" parent="BT_Accept"]
 
-[node name="BT_Accept" type="Node2D" parent="BT_Accept/Layers"]
+[node name="Action" type="Node" parent="BT_Accept"]
+
+[node name="Layers2" type="Node2D" parent="BT_Accept"]
+
+[node name="BT_Accept" type="Node2D" parent="BT_Accept/Layers2"]
 position = Vector2( 909.017, 802.463 )
-script = ExtResource( 3 )
+script = ExtResource( 2 )
 m_iIniAction = 1
 
-[node name="ic_Accept" type="Node2D" parent="BT_Accept/Layers/BT_Accept"]
-script = ExtResource( 4 )
+[node name="ic_Accept" type="Node2D" parent="BT_Accept/Layers2/BT_Accept"]
+script = ExtResource( 8 )
 m_iIniAction = 0
 
-[node name="CFESpriteInstance" type="Node2D" parent="BT_Accept/Layers/BT_Accept/ic_Accept"]
-script = ExtResource( 2 )
+[node name="CFESpriteInstance" type="Sprite" parent="BT_Accept/Layers2/BT_Accept/ic_Accept"]
+scale = Vector2( 1e-05, 1e-05 )
+offset = Vector2( 21.4915, -10.005 )
+script = ExtResource( 9 )
 Action = 0
-m_sprite = ExtResource( 7 )
+m_sprite = SubResource( 61 )
 
-[node name="lb_Accept" type="Node2D" parent="BT_Accept/Layers/BT_Accept"]
+[node name="lb_Accept" type="Node2D" parent="BT_Accept/Layers2/BT_Accept"]
 position = Vector2( 0, -5 )
-script = ExtResource( 6 )
+script = ExtResource( 10 )
+
+[node name="Action2" type="Node" parent="BT_Accept"]

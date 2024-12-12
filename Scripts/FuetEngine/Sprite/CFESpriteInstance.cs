@@ -8,6 +8,10 @@ namespace FuetEngine
 	public class CFESpriteInstance : Node2D
 	{
 		// --------------------------------------------------------------------
+		// TODO: 
+		// - Implement Blend Mode -> Probably we need to create a canvas material.
+		// - Blending between frames.
+		// --------------------------------------------------------------------
 		/// Speed multiplier for this instance.
 		public float m_rSpeedMult = 1.0f;
 		// ------------------------------------

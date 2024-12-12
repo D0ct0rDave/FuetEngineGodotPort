@@ -1,37 +1,37 @@
 [gd_scene load_steps=15 format=2]
 
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=1]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteFrame.cs" type="Script" id=2]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=3]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=4]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=5]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESprite.cs" type="Script" id=6]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteAction.cs" type="Script" id=7]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=8]
-[ext_resource path="res://Assets/base/common/data/menu/_old/sprites/ZI-logo.png" type="Texture" id=9]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDRect.cs" type="Script" id=10]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDRect.cs" type="Script" id=1]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=2]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteAction.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESprite.cs" type="Script" id=5]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteFrame.cs" type="Script" id=6]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=7]
+[ext_resource path="res://Assets/base/common/data/menu/_old/sprites/ZI-logo.png" type="Texture" id=8]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=9]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=10]
 [ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=11]
 
 [sub_resource type="Resource" id=1]
-script = ExtResource( 2 )
+script = ExtResource( 6 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
 m_bVWorldCoords = false
 m_oUVIni = Vector2( 0, 0 )
 m_oUVEnd = Vector2( 1, 1 )
-m_oSize = Vector2( 1251, 754 )
-m_oScale = Vector2( 1, 1 )
+m_oSize = Vector2( 0, 0 )
+m_oScale = Vector2( 0, 0 )
 m_rDelay = 0.0
 m_rBlendTime = 0.0
 m_rFrameTime = 0.0
 m_rStartTime = 0.0
 m_oPivot = Vector2( 0.5, 0.5 )
 m_o1OverDims = Vector2( 0, 0 )
-m_hMaterial = ExtResource( 9 )
+m_hMaterial = ExtResource( 8 )
 
 [sub_resource type="Resource" id=2]
-script = ExtResource( 7 )
+script = ExtResource( 3 )
 Name = "default"
 m_rActionTime = 0.0
 m_eBlendMode = 2
@@ -41,76 +41,98 @@ m_oSeq = [ SubResource( 1 ) ]
 
 [sub_resource type="Resource" id=3]
 resource_local_to_scene = true
-script = ExtResource( 6 )
+script = ExtResource( 5 )
 Name = "res://Assets/base/common/data/menu/_old/sprites/ZI-logo.spr"
 m_oActions = [ SubResource( 2 ) ]
 
 [node name="CFEHUD" type="Node2D"]
-script = ExtResource( 8 )
+script = ExtResource( 4 )
 
 [node name="Version" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = ExtResource( 7 )
 
 [node name="Layers" type="Node2D" parent="Version"]
 
-[node name="Version" type="Node2D" parent="Version/Layers"]
-position = Vector2( 720, 480 )
-script = ExtResource( 3 )
+[node name="Action" type="Node" parent="Version"]
 
-[node name="lb_Version" type="Node2D" parent="Version/Layers/Version"]
+[node name="Layers2" type="Node2D" parent="Version"]
+
+[node name="Version" type="Node2D" parent="Version/Layers2"]
+position = Vector2( 720, 480 )
+script = ExtResource( 2 )
+
+[node name="lb_Version" type="Node2D" parent="Version/Layers2/Version"]
 position = Vector2( 768, 448 )
 script = ExtResource( 11 )
 m_oIniColor = Color( 1, 1, 0.502, 1 )
 
+[node name="Action2" type="Node" parent="Version"]
+
 [node name="lower-screen" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = ExtResource( 7 )
 
 [node name="Layers" type="Node2D" parent="lower-screen"]
 
-[node name="lower-screen" type="Node2D" parent="lower-screen/Layers"]
+[node name="Action" type="Node" parent="lower-screen"]
+
+[node name="Layers2" type="Node2D" parent="lower-screen"]
+
+[node name="lower-screen" type="Node2D" parent="lower-screen/Layers2"]
 position = Vector2( 240, 0 )
-script = ExtResource( 3 )
+script = ExtResource( 2 )
 
-[node name="lwLogo" type="Node2D" parent="lower-screen/Layers/lower-screen"]
+[node name="lwLogo" type="Node2D" parent="lower-screen/Layers2/lower-screen"]
 position = Vector2( 640, 452 )
-script = ExtResource( 3 )
+script = ExtResource( 2 )
 
-[node name="ic_lwLogo" type="Node2D" parent="lower-screen/Layers/lower-screen/lwLogo"]
-script = ExtResource( 4 )
+[node name="ic_lwLogo" type="Node2D" parent="lower-screen/Layers2/lower-screen/lwLogo"]
+script = ExtResource( 9 )
 m_iIniAction = 0
 
-[node name="CFESpriteInstance" type="Node2D" parent="lower-screen/Layers/lower-screen/lwLogo/ic_lwLogo"]
-script = ExtResource( 5 )
+[node name="CFESpriteInstance" type="Sprite" parent="lower-screen/Layers2/lower-screen/lwLogo/ic_lwLogo"]
+scale = Vector2( 1e-05, 1e-05 )
+texture = ExtResource( 8 )
+script = ExtResource( 10 )
 Action = 0
 m_sprite = SubResource( 3 )
 
+[node name="Action2" type="Node" parent="lower-screen"]
+
 [node name="BT_Accept" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = ExtResource( 7 )
 
 [node name="Layers" type="Node2D" parent="BT_Accept"]
 
-[node name="BT_Accept" type="Node2D" parent="BT_Accept/Layers"]
+[node name="Action" type="Node" parent="BT_Accept"]
+
+[node name="Layers2" type="Node2D" parent="BT_Accept"]
+
+[node name="BT_Accept" type="Node2D" parent="BT_Accept/Layers2"]
 position = Vector2( 880, 480 )
-script = ExtResource( 3 )
+script = ExtResource( 2 )
 
-[node name="rt_Accept" type="Node2D" parent="BT_Accept/Layers/BT_Accept"]
-script = ExtResource( 10 )
+[node name="rt_Accept" type="Node2D" parent="BT_Accept/Layers2/BT_Accept"]
+script = ExtResource( 1 )
 m_oIniColor = Color( 1, 1, 1, 0 )
-m_rWidth = 1280.0
-m_rHeight = 960.0
-m_oCorners = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 )
-m_oPivot = Vector2( 0.5, 0.5 )
 
-[node name="lb_Accept" type="Node2D" parent="BT_Accept/Layers/BT_Accept"]
+[node name="lb_Accept" type="Node2D" parent="BT_Accept/Layers2/BT_Accept"]
 position = Vector2( 0, 396 )
 script = ExtResource( 11 )
 
+[node name="Action2" type="Node" parent="BT_Accept"]
+
 [node name="Foreground" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = ExtResource( 7 )
 
 [node name="Layers" type="Node2D" parent="Foreground"]
 
-[node name="Foreground" type="Node2D" parent="Foreground/Layers"]
+[node name="Action" type="Node" parent="Foreground"]
+
+[node name="Layers2" type="Node2D" parent="Foreground"]
+
+[node name="Foreground" type="Node2D" parent="Foreground/Layers2"]
 position = Vector2( 640, 480 )
-script = ExtResource( 3 )
+script = ExtResource( 2 )
 m_oIniColor = Color( 1, 1, 1, 0 )
+
+[node name="Action2" type="Node" parent="Foreground"]

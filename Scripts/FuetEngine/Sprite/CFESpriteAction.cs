@@ -193,7 +193,14 @@ namespace FuetEngine
 					return(i);
 			}
 
-			return uiMaxFrames - 1;
+			if (uiStartFrame == uiEndFrame)
+			{
+				return uiStartFrame;
+			}
+			else
+			{
+				return uiMaxFrames - 1;
+			}
 		}
 		// --------------------------------------------------------------------
 		public int iAddFrame(CFESpriteFrame _frame)

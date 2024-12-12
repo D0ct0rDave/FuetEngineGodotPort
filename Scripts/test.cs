@@ -26,6 +26,7 @@ public class test : Node2D
         AddChild(node);
 */
 
+        /*
         CFEConfigFileImportPlugin plugin = new  CFEConfigFileImportPlugin();
         Resource resource = plugin.LoadConfigAsResource("res://Assets/logo.spr");
         CFESprite sprite = resource as CFESprite;
@@ -35,7 +36,7 @@ public class test : Node2D
 		spriteInstance.Init(sprite);
         
         AddChild(spriteInstance);
-
+        */
         /*
         CFEConfigFileImportPlugin plugin = new  CFEConfigFileImportPlugin();
         Node node = plugin.LoadConfigAsNode("res://Assets/base/common/data/menu/page_delete_profile.hud");

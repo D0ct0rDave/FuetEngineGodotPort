@@ -1,28 +1,28 @@
 [gd_scene load_steps=39 format=2]
 
-[ext_resource path="res://Assets/base/common/data/menu/sprites/ic_gears.png" type="Texture" id=1]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/ic_back.png" type="Texture" id=2]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/button_face.png" type="Texture" id=3]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/ic_power.png" type="Texture" id=4]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=5]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteFrame.cs" type="Script" id=6]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=7]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=8]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=9]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESprite.cs" type="Script" id=10]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteAction.cs" type="Script" id=11]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=12]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=1]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=2]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteAction.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteFrame.cs" type="Script" id=5]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESprite.cs" type="Script" id=6]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDRect.cs" type="Script" id=7]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=8]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/ic_gears.png" type="Texture" id=9]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/button_face.png" type="Texture" id=10]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/ic_power.png" type="Texture" id=11]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/ic_back.png" type="Texture" id=12]
 [ext_resource path="res://Assets/base/common/data/menu/sprites/inv_item_frame.png" type="Texture" id=13]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/minimap_icon.spr" type="Resource" id=14]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/bt_back.spr" type="Resource" id=15]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/inv_frame_rect.spr" type="Resource" id=16]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=14]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=15]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/inv_separator.spr" type="Resource" id=16]
 [ext_resource path="res://Assets/base/common/data/menu/sprites/inv_frame_side.spr" type="Resource" id=17]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDRect.cs" type="Script" id=18]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/inv_separator.spr" type="Resource" id=19]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=20]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/inv_frame_rect.spr" type="Resource" id=18]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/bt_back.spr" type="Resource" id=19]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/minimap_icon.spr" type="Resource" id=20]
 
 [sub_resource type="Resource" id=1]
-script = ExtResource( 6 )
+script = ExtResource( 5 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -40,7 +40,7 @@ m_o1OverDims = Vector2( 0, 0 )
 m_hMaterial = ExtResource( 13 )
 
 [sub_resource type="Resource" id=2]
-script = ExtResource( 11 )
+script = ExtResource( 4 )
 Name = "default"
 m_rActionTime = 0.0
 m_eBlendMode = 2
@@ -50,12 +50,12 @@ m_oSeq = [ SubResource( 1 ) ]
 
 [sub_resource type="Resource" id=3]
 resource_local_to_scene = true
-script = ExtResource( 10 )
+script = ExtResource( 6 )
 Name = "res://Assets/base/common/data/menu/sprites/inv_item_frame.spr"
 m_oActions = [ SubResource( 2 ) ]
 
 [sub_resource type="Resource" id=4]
-script = ExtResource( 6 )
+script = ExtResource( 5 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -72,7 +72,7 @@ m_oPivot = Vector2( 0.5, 0.5 )
 m_o1OverDims = Vector2( 0, 0 )
 
 [sub_resource type="Resource" id=5]
-script = ExtResource( 11 )
+script = ExtResource( 4 )
 Name = "default"
 m_rActionTime = 0.0
 m_eBlendMode = 2
@@ -82,12 +82,12 @@ m_oSeq = [ SubResource( 4 ) ]
 
 [sub_resource type="Resource" id=6]
 resource_local_to_scene = true
-script = ExtResource( 10 )
+script = ExtResource( 6 )
 Name = "res://Assets/base/common/data/items/inv/items.spr"
 m_oActions = [ SubResource( 5 ) ]
 
 [sub_resource type="Resource" id=7]
-script = ExtResource( 6 )
+script = ExtResource( 5 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -102,10 +102,10 @@ m_rFrameTime = 0.0
 m_rStartTime = 0.0
 m_oPivot = Vector2( 0.5, 0.5 )
 m_o1OverDims = Vector2( 0, 0 )
-m_hMaterial = ExtResource( 3 )
+m_hMaterial = ExtResource( 10 )
 
 [sub_resource type="Resource" id=8]
-script = ExtResource( 11 )
+script = ExtResource( 4 )
 Name = "default"
 m_rActionTime = 0.0
 m_eBlendMode = 2
@@ -115,12 +115,12 @@ m_oSeq = [ SubResource( 7 ) ]
 
 [sub_resource type="Resource" id=9]
 resource_local_to_scene = true
-script = ExtResource( 10 )
+script = ExtResource( 6 )
 Name = "res://Assets/base/common/data/menu/sprites/button_face.spr"
 m_oActions = [ SubResource( 8 ) ]
 
 [sub_resource type="Resource" id=10]
-script = ExtResource( 6 )
+script = ExtResource( 5 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -135,10 +135,10 @@ m_rFrameTime = 0.0
 m_rStartTime = 0.0
 m_oPivot = Vector2( 0.5, 0.5 )
 m_o1OverDims = Vector2( 0, 0 )
-m_hMaterial = ExtResource( 2 )
+m_hMaterial = ExtResource( 12 )
 
 [sub_resource type="Resource" id=11]
-script = ExtResource( 11 )
+script = ExtResource( 4 )
 Name = "default"
 m_rActionTime = 0.0
 m_eBlendMode = 2
@@ -148,12 +148,12 @@ m_oSeq = [ SubResource( 10 ) ]
 
 [sub_resource type="Resource" id=12]
 resource_local_to_scene = true
-script = ExtResource( 10 )
+script = ExtResource( 6 )
 Name = "res://Assets/base/common/data/menu/sprites/ic_back.spr"
 m_oActions = [ SubResource( 11 ) ]
 
 [sub_resource type="Resource" id=13]
-script = ExtResource( 6 )
+script = ExtResource( 5 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -168,10 +168,10 @@ m_rFrameTime = 0.0
 m_rStartTime = 0.0
 m_oPivot = Vector2( 0.5, 0.5 )
 m_o1OverDims = Vector2( 0, 0 )
-m_hMaterial = ExtResource( 1 )
+m_hMaterial = ExtResource( 9 )
 
 [sub_resource type="Resource" id=14]
-script = ExtResource( 11 )
+script = ExtResource( 4 )
 Name = "default"
 m_rActionTime = 0.0
 m_eBlendMode = 2
@@ -181,12 +181,12 @@ m_oSeq = [ SubResource( 13 ) ]
 
 [sub_resource type="Resource" id=15]
 resource_local_to_scene = true
-script = ExtResource( 10 )
+script = ExtResource( 6 )
 Name = "res://Assets/base/common/data/menu/sprites/ic_gears.spr"
 m_oActions = [ SubResource( 14 ) ]
 
 [sub_resource type="Resource" id=16]
-script = ExtResource( 6 )
+script = ExtResource( 5 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -201,10 +201,10 @@ m_rFrameTime = 0.0
 m_rStartTime = 0.0
 m_oPivot = Vector2( 0.5, 0.5 )
 m_o1OverDims = Vector2( 0, 0 )
-m_hMaterial = ExtResource( 4 )
+m_hMaterial = ExtResource( 11 )
 
 [sub_resource type="Resource" id=17]
-script = ExtResource( 11 )
+script = ExtResource( 4 )
 Name = "default"
 m_rActionTime = 0.0
 m_eBlendMode = 2
@@ -214,25 +214,27 @@ m_oSeq = [ SubResource( 16 ) ]
 
 [sub_resource type="Resource" id=18]
 resource_local_to_scene = true
-script = ExtResource( 10 )
+script = ExtResource( 6 )
 Name = "res://Assets/base/common/data/menu/sprites/ic_power.spr"
 m_oActions = [ SubResource( 17 ) ]
 
 [node name="CFEHUD" type="Node2D"]
-script = ExtResource( 12 )
+script = ExtResource( 1 )
 
 [node name="Background" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="Background"]
 
 [node name="Background" type="Node2D" parent="Background/Layers"]
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="bck" type="Node2D" parent="Background/Layers/Background"]
+visible = false
+modulate = Color( 0, 0, 0, 0.5 )
 position = Vector2( -368, -480 )
 scale = Vector2( 2, 2 )
-script = ExtResource( 18 )
+script = ExtResource( 7 )
 m_oIniColor = Color( 0, 0, 0, 0.5 )
 m_bIniVis = false
 m_rWidth = 1280.0
@@ -240,1232 +242,1236 @@ m_rHeight = 960.0
 m_oCorners = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 )
 
 [node name="Inventory" type="Node2D" parent="Background/Layers/Background"]
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Inventory" type="Node2D" parent="Background/Layers/Background/Inventory"]
+modulate = Color( 1, 1, 1, 0.9 )
 position = Vector2( 256, 96 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_oIniColor = Color( 1, 1, 1, 0.9 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="Background/Layers/Background/Inventory/ic_Inventory"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 0
 m_sprite = ExtResource( 17 )
 
 [node name="ic_Inventory-1" type="Node2D" parent="Background/Layers/Background/Inventory"]
+modulate = Color( 1, 1, 1, 0.9 )
 position = Vector2( 256, 96 )
 scale = Vector2( 20, 1 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_oIniColor = Color( 1, 1, 1, 0.9 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="Background/Layers/Background/Inventory/ic_Inventory-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 0
-m_sprite = ExtResource( 16 )
+m_sprite = ExtResource( 18 )
 
 [node name="ic_Inventory-2" type="Node2D" parent="Background/Layers/Background/Inventory"]
+modulate = Color( 1, 1, 1, 0.9 )
 position = Vector2( 1536, 96 )
 scale = Vector2( -1, 1 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_oIniColor = Color( 1, 1, 1, 0.9 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="Background/Layers/Background/Inventory/ic_Inventory-2"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 0
 m_sprite = ExtResource( 17 )
 
 [node name="ic_Inventory-3" type="Node2D" parent="Background/Layers/Background/Inventory"]
 position = Vector2( 900, 716 )
 scale = Vector2( 2, 1 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="Background/Layers/Background/Inventory/ic_Inventory-3"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 0
-m_sprite = ExtResource( 19 )
+m_sprite = ExtResource( 16 )
 
 [node name="lb_Inventory" type="Node2D" parent="Background/Layers/Background/Inventory"]
 position = Vector2( 896, 176 )
-script = ExtResource( 20 )
+script = ExtResource( 15 )
 
 [node name="lb_ItemName" type="Node2D" parent="Background/Layers/Background/Inventory"]
+modulate = Color( 1, 1, 0.502, 1 )
 position = Vector2( 256, 752 )
-script = ExtResource( 20 )
+script = ExtResource( 15 )
 m_oIniColor = Color( 1, 1, 0.502, 1 )
 
 [node name="lb_ItemDesc" type="Node2D" parent="Background/Layers/Background/Inventory"]
 position = Vector2( 256, 776 )
-script = ExtResource( 20 )
+script = ExtResource( 15 )
 
 [node name="ItemCursor" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="ItemCursor"]
 
 [node name="ItemCursor" type="Node2D" parent="ItemCursor/Layers"]
 position = Vector2( 396, 324 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_ItemCursor" type="Node2D" parent="ItemCursor/Layers/ItemCursor"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="ItemCursor/Layers/ItemCursor/ic_ItemCursor"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 0
 m_sprite = SubResource( 3 )
 
 [node name="BT_Item00" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item00"]
 
 [node name="BT_Item00" type="Node2D" parent="BT_Item00/Layers"]
 position = Vector2( 396, 324 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item00" type="Node2D" parent="BT_Item00/Layers/BT_Item00"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item00/Layers/BT_Item00/ic_Item00"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item00-1" type="Node2D" parent="BT_Item00/Layers/BT_Item00"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item00/Layers/BT_Item00/ic_Item00-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 0
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item01" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item01"]
 
 [node name="BT_Item01" type="Node2D" parent="BT_Item01/Layers"]
 position = Vector2( 496, 324 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item01" type="Node2D" parent="BT_Item01/Layers/BT_Item01"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item01/Layers/BT_Item01/ic_Item01"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item01-1" type="Node2D" parent="BT_Item01/Layers/BT_Item01"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item01/Layers/BT_Item01/ic_Item01-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item02" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item02"]
 
 [node name="BT_Item02" type="Node2D" parent="BT_Item02/Layers"]
 position = Vector2( 596, 324 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item02" type="Node2D" parent="BT_Item02/Layers/BT_Item02"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item02/Layers/BT_Item02/ic_Item02"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item02-1" type="Node2D" parent="BT_Item02/Layers/BT_Item02"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item02/Layers/BT_Item02/ic_Item02-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item03" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item03"]
 
 [node name="BT_Item03" type="Node2D" parent="BT_Item03/Layers"]
 position = Vector2( 696, 324 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item03" type="Node2D" parent="BT_Item03/Layers/BT_Item03"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item03/Layers/BT_Item03/ic_Item03"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item03-1" type="Node2D" parent="BT_Item03/Layers/BT_Item03"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item03/Layers/BT_Item03/ic_Item03-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item04" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item04"]
 
 [node name="BT_Item04" type="Node2D" parent="BT_Item04/Layers"]
 position = Vector2( 796, 324 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item04" type="Node2D" parent="BT_Item04/Layers/BT_Item04"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item04/Layers/BT_Item04/ic_Item04"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item04-1" type="Node2D" parent="BT_Item04/Layers/BT_Item04"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item04/Layers/BT_Item04/ic_Item04-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item05" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item05"]
 
 [node name="BT_Item05" type="Node2D" parent="BT_Item05/Layers"]
 position = Vector2( 896, 324 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item05" type="Node2D" parent="BT_Item05/Layers/BT_Item05"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item05/Layers/BT_Item05/ic_Item05"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item05-1" type="Node2D" parent="BT_Item05/Layers/BT_Item05"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item05/Layers/BT_Item05/ic_Item05-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item06" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item06"]
 
 [node name="BT_Item06" type="Node2D" parent="BT_Item06/Layers"]
 position = Vector2( 996, 324 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item06" type="Node2D" parent="BT_Item06/Layers/BT_Item06"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item06/Layers/BT_Item06/ic_Item06"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item06-1" type="Node2D" parent="BT_Item06/Layers/BT_Item06"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item06/Layers/BT_Item06/ic_Item06-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item07" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item07"]
 
 [node name="BT_Item07" type="Node2D" parent="BT_Item07/Layers"]
 position = Vector2( 1096, 324 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item07" type="Node2D" parent="BT_Item07/Layers/BT_Item07"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item07/Layers/BT_Item07/ic_Item07"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item07-1" type="Node2D" parent="BT_Item07/Layers/BT_Item07"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item07/Layers/BT_Item07/ic_Item07-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item08" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item08"]
 
 [node name="BT_Item08" type="Node2D" parent="BT_Item08/Layers"]
 position = Vector2( 396, 424 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item08" type="Node2D" parent="BT_Item08/Layers/BT_Item08"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item08/Layers/BT_Item08/ic_Item08"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item08-1" type="Node2D" parent="BT_Item08/Layers/BT_Item08"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item08/Layers/BT_Item08/ic_Item08-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item09" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item09"]
 
 [node name="BT_Item09" type="Node2D" parent="BT_Item09/Layers"]
 position = Vector2( 496, 424 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item09" type="Node2D" parent="BT_Item09/Layers/BT_Item09"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item09/Layers/BT_Item09/ic_Item09"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item09-1" type="Node2D" parent="BT_Item09/Layers/BT_Item09"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item09/Layers/BT_Item09/ic_Item09-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item10" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item10"]
 
 [node name="BT_Item10" type="Node2D" parent="BT_Item10/Layers"]
 position = Vector2( 596, 424 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item10" type="Node2D" parent="BT_Item10/Layers/BT_Item10"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item10/Layers/BT_Item10/ic_Item10"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item10-1" type="Node2D" parent="BT_Item10/Layers/BT_Item10"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item10/Layers/BT_Item10/ic_Item10-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item11" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item11"]
 
 [node name="BT_Item11" type="Node2D" parent="BT_Item11/Layers"]
 position = Vector2( 696, 424 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item11" type="Node2D" parent="BT_Item11/Layers/BT_Item11"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item11/Layers/BT_Item11/ic_Item11"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item11-1" type="Node2D" parent="BT_Item11/Layers/BT_Item11"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item11/Layers/BT_Item11/ic_Item11-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item12" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item12"]
 
 [node name="BT_Item12" type="Node2D" parent="BT_Item12/Layers"]
 position = Vector2( 796, 424 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item12" type="Node2D" parent="BT_Item12/Layers/BT_Item12"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item12/Layers/BT_Item12/ic_Item12"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item12-1" type="Node2D" parent="BT_Item12/Layers/BT_Item12"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item12/Layers/BT_Item12/ic_Item12-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item13" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item13"]
 
 [node name="BT_Item13" type="Node2D" parent="BT_Item13/Layers"]
 position = Vector2( 896, 424 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item13" type="Node2D" parent="BT_Item13/Layers/BT_Item13"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item13/Layers/BT_Item13/ic_Item13"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item13-1" type="Node2D" parent="BT_Item13/Layers/BT_Item13"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item13/Layers/BT_Item13/ic_Item13-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item14" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item14"]
 
 [node name="BT_Item14" type="Node2D" parent="BT_Item14/Layers"]
 position = Vector2( 996, 424 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item14" type="Node2D" parent="BT_Item14/Layers/BT_Item14"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item14/Layers/BT_Item14/ic_Item14"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item14-1" type="Node2D" parent="BT_Item14/Layers/BT_Item14"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item14/Layers/BT_Item14/ic_Item14-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item15" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item15"]
 
 [node name="BT_Item15" type="Node2D" parent="BT_Item15/Layers"]
 position = Vector2( 1096, 424 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item15" type="Node2D" parent="BT_Item15/Layers/BT_Item15"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item15/Layers/BT_Item15/ic_Item15"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item15-1" type="Node2D" parent="BT_Item15/Layers/BT_Item15"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item15/Layers/BT_Item15/ic_Item15-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item16" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item16"]
 
 [node name="BT_Item16" type="Node2D" parent="BT_Item16/Layers"]
 position = Vector2( 396, 524 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item16" type="Node2D" parent="BT_Item16/Layers/BT_Item16"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item16/Layers/BT_Item16/ic_Item16"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item16-1" type="Node2D" parent="BT_Item16/Layers/BT_Item16"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item16/Layers/BT_Item16/ic_Item16-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item17" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item17"]
 
 [node name="BT_Item17" type="Node2D" parent="BT_Item17/Layers"]
 position = Vector2( 496, 524 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item17" type="Node2D" parent="BT_Item17/Layers/BT_Item17"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item17/Layers/BT_Item17/ic_Item17"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item17-1" type="Node2D" parent="BT_Item17/Layers/BT_Item17"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item17/Layers/BT_Item17/ic_Item17-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item18" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item18"]
 
 [node name="BT_Item18" type="Node2D" parent="BT_Item18/Layers"]
 position = Vector2( 596, 524 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item18" type="Node2D" parent="BT_Item18/Layers/BT_Item18"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item18/Layers/BT_Item18/ic_Item18"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item18-1" type="Node2D" parent="BT_Item18/Layers/BT_Item18"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item18/Layers/BT_Item18/ic_Item18-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item19" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item19"]
 
 [node name="BT_Item19" type="Node2D" parent="BT_Item19/Layers"]
 position = Vector2( 696, 524 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item19" type="Node2D" parent="BT_Item19/Layers/BT_Item19"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item19/Layers/BT_Item19/ic_Item19"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item19-1" type="Node2D" parent="BT_Item19/Layers/BT_Item19"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item19/Layers/BT_Item19/ic_Item19-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item20" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item20"]
 
 [node name="BT_Item20" type="Node2D" parent="BT_Item20/Layers"]
 position = Vector2( 796, 524 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item20" type="Node2D" parent="BT_Item20/Layers/BT_Item20"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item20/Layers/BT_Item20/ic_Item20"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item20-1" type="Node2D" parent="BT_Item20/Layers/BT_Item20"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item20/Layers/BT_Item20/ic_Item20-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item21" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item21"]
 
 [node name="BT_Item21" type="Node2D" parent="BT_Item21/Layers"]
 position = Vector2( 896, 524 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item21" type="Node2D" parent="BT_Item21/Layers/BT_Item21"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item21/Layers/BT_Item21/ic_Item21"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item21-1" type="Node2D" parent="BT_Item21/Layers/BT_Item21"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item21/Layers/BT_Item21/ic_Item21-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item22" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item22"]
 
 [node name="BT_Item22" type="Node2D" parent="BT_Item22/Layers"]
 position = Vector2( 996, 524 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item22" type="Node2D" parent="BT_Item22/Layers/BT_Item22"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item22/Layers/BT_Item22/ic_Item22"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item22-1" type="Node2D" parent="BT_Item22/Layers/BT_Item22"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item22/Layers/BT_Item22/ic_Item22-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item23" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item23"]
 
 [node name="BT_Item23" type="Node2D" parent="BT_Item23/Layers"]
 position = Vector2( 1096, 524 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item23" type="Node2D" parent="BT_Item23/Layers/BT_Item23"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item23/Layers/BT_Item23/ic_Item23"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item23-1" type="Node2D" parent="BT_Item23/Layers/BT_Item23"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item23/Layers/BT_Item23/ic_Item23-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item24" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item24"]
 
 [node name="BT_Item24" type="Node2D" parent="BT_Item24/Layers"]
 position = Vector2( 396, 624 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item24" type="Node2D" parent="BT_Item24/Layers/BT_Item24"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item24/Layers/BT_Item24/ic_Item24"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item24-1" type="Node2D" parent="BT_Item24/Layers/BT_Item24"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item24/Layers/BT_Item24/ic_Item24-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item25" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item25"]
 
 [node name="BT_Item25" type="Node2D" parent="BT_Item25/Layers"]
 position = Vector2( 496, 624 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item25" type="Node2D" parent="BT_Item25/Layers/BT_Item25"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item25/Layers/BT_Item25/ic_Item25"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item25-1" type="Node2D" parent="BT_Item25/Layers/BT_Item25"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item25/Layers/BT_Item25/ic_Item25-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item26" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item26"]
 
 [node name="BT_Item26" type="Node2D" parent="BT_Item26/Layers"]
 position = Vector2( 596, 624 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item26" type="Node2D" parent="BT_Item26/Layers/BT_Item26"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item26/Layers/BT_Item26/ic_Item26"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item26-1" type="Node2D" parent="BT_Item26/Layers/BT_Item26"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item26/Layers/BT_Item26/ic_Item26-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item27" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item27"]
 
 [node name="BT_Item27" type="Node2D" parent="BT_Item27/Layers"]
 position = Vector2( 696, 624 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item27" type="Node2D" parent="BT_Item27/Layers/BT_Item27"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item27/Layers/BT_Item27/ic_Item27"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item27-1" type="Node2D" parent="BT_Item27/Layers/BT_Item27"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item27/Layers/BT_Item27/ic_Item27-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item28" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item28"]
 
 [node name="BT_Item28" type="Node2D" parent="BT_Item28/Layers"]
 position = Vector2( 796, 624 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item28" type="Node2D" parent="BT_Item28/Layers/BT_Item28"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item28/Layers/BT_Item28/ic_Item28"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item28-1" type="Node2D" parent="BT_Item28/Layers/BT_Item28"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item28/Layers/BT_Item28/ic_Item28-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item29" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item29"]
 
 [node name="BT_Item29" type="Node2D" parent="BT_Item29/Layers"]
 position = Vector2( 896, 624 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item29" type="Node2D" parent="BT_Item29/Layers/BT_Item29"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item29/Layers/BT_Item29/ic_Item29"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item29-1" type="Node2D" parent="BT_Item29/Layers/BT_Item29"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item29/Layers/BT_Item29/ic_Item29-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item30" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item30"]
 
 [node name="BT_Item30" type="Node2D" parent="BT_Item30/Layers"]
 position = Vector2( 996, 624 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item30" type="Node2D" parent="BT_Item30/Layers/BT_Item30"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item30/Layers/BT_Item30/ic_Item30"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item30-1" type="Node2D" parent="BT_Item30/Layers/BT_Item30"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item30/Layers/BT_Item30/ic_Item30-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item31" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item31"]
 
 [node name="BT_Item31" type="Node2D" parent="BT_Item31/Layers"]
 position = Vector2( 1096, 624 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item31" type="Node2D" parent="BT_Item31/Layers/BT_Item31"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item31/Layers/BT_Item31/ic_Item31"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item31-1" type="Node2D" parent="BT_Item31/Layers/BT_Item31"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item31/Layers/BT_Item31/ic_Item31-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item32" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item32"]
 
 [node name="BT_Item32" type="Node2D" parent="BT_Item32/Layers"]
 position = Vector2( 1300, 324 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item32" type="Node2D" parent="BT_Item32/Layers/BT_Item32"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item32/Layers/BT_Item32/ic_Item32"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item32-1" type="Node2D" parent="BT_Item32/Layers/BT_Item32"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item32/Layers/BT_Item32/ic_Item32-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item33" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item33"]
 
 [node name="BT_Item33" type="Node2D" parent="BT_Item33/Layers"]
 position = Vector2( 1400, 324 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item33" type="Node2D" parent="BT_Item33/Layers/BT_Item33"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item33/Layers/BT_Item33/ic_Item33"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item33-1" type="Node2D" parent="BT_Item33/Layers/BT_Item33"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item33/Layers/BT_Item33/ic_Item33-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item34" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item34"]
 
 [node name="BT_Item34" type="Node2D" parent="BT_Item34/Layers"]
 position = Vector2( 1300, 424 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item34" type="Node2D" parent="BT_Item34/Layers/BT_Item34"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item34/Layers/BT_Item34/ic_Item34"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item34-1" type="Node2D" parent="BT_Item34/Layers/BT_Item34"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item34/Layers/BT_Item34/ic_Item34-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item35" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item35"]
 
 [node name="BT_Item35" type="Node2D" parent="BT_Item35/Layers"]
 position = Vector2( 1400, 424 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item35" type="Node2D" parent="BT_Item35/Layers/BT_Item35"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item35/Layers/BT_Item35/ic_Item35"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item35-1" type="Node2D" parent="BT_Item35/Layers/BT_Item35"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item35/Layers/BT_Item35/ic_Item35-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item36" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item36"]
 
 [node name="BT_Item36" type="Node2D" parent="BT_Item36/Layers"]
 position = Vector2( 1300, 524 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item36" type="Node2D" parent="BT_Item36/Layers/BT_Item36"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item36/Layers/BT_Item36/ic_Item36"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item36-1" type="Node2D" parent="BT_Item36/Layers/BT_Item36"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item36/Layers/BT_Item36/ic_Item36-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item37" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item37"]
 
 [node name="BT_Item37" type="Node2D" parent="BT_Item37/Layers"]
 position = Vector2( 1400, 524 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item37" type="Node2D" parent="BT_Item37/Layers/BT_Item37"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item37/Layers/BT_Item37/ic_Item37"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item37-1" type="Node2D" parent="BT_Item37/Layers/BT_Item37"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item37/Layers/BT_Item37/ic_Item37-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item38" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item38"]
 
 [node name="BT_Item38" type="Node2D" parent="BT_Item38/Layers"]
 position = Vector2( 1300, 624 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item38" type="Node2D" parent="BT_Item38/Layers/BT_Item38"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item38/Layers/BT_Item38/ic_Item38"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item38-1" type="Node2D" parent="BT_Item38/Layers/BT_Item38"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item38/Layers/BT_Item38/ic_Item38-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Item39" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Item39"]
 
 [node name="BT_Item39" type="Node2D" parent="BT_Item39/Layers"]
 position = Vector2( 1400, 620 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Item39" type="Node2D" parent="BT_Item39/Layers/BT_Item39"]
 position = Vector2( 0, 4 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item39/Layers/BT_Item39/ic_Item39"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 1
-m_sprite = ExtResource( 15 )
+m_sprite = ExtResource( 19 )
 
 [node name="ic_Item39-1" type="Node2D" parent="BT_Item39/Layers/BT_Item39"]
 scale = Vector2( 0.5, 0.5 )
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Item39/Layers/BT_Item39/ic_Item39-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 m_sprite = SubResource( 6 )
 
 [node name="BT_Accept" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Accept"]
 
 [node name="BT_Accept" type="Node2D" parent="BT_Accept/Layers"]
 position = Vector2( 416, 208 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Accept" type="Node2D" parent="BT_Accept/Layers/BT_Accept"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Accept/Layers/BT_Accept/ic_Accept"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 0
 m_sprite = SubResource( 9 )
 
 [node name="ic_Accept-1" type="Node2D" parent="BT_Accept/Layers/BT_Accept"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Accept/Layers/BT_Accept/ic_Accept-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 0
 m_sprite = SubResource( 12 )
 
 [node name="BT_Minimap" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Minimap"]
 
 [node name="BT_Minimap" type="Node2D" parent="BT_Minimap/Layers"]
 position = Vector2( 560, 208 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Minimap-0" type="Node2D" parent="BT_Minimap/Layers/BT_Minimap"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Minimap/Layers/BT_Minimap/ic_Minimap-0"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 0
 m_sprite = SubResource( 9 )
 
 [node name="ic_Minimap-1" type="Node2D" parent="BT_Minimap/Layers/BT_Minimap"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Minimap/Layers/BT_Minimap/ic_Minimap-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 0
-m_sprite = ExtResource( 14 )
+m_sprite = ExtResource( 20 )
 
 [node name="BT_Settings" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Settings"]
 
 [node name="BT_Settings" type="Node2D" parent="BT_Settings/Layers"]
 position = Vector2( 1232, 208 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Settings" type="Node2D" parent="BT_Settings/Layers/BT_Settings"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Settings/Layers/BT_Settings/ic_Settings"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 0
 m_sprite = SubResource( 9 )
 
 [node name="ic_Settings-1" type="Node2D" parent="BT_Settings/Layers/BT_Settings"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Settings/Layers/BT_Settings/ic_Settings-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 0
 m_sprite = SubResource( 15 )
 
 [node name="BT_Quit" type="Node2D" parent="."]
-script = ExtResource( 5 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="BT_Quit"]
 
 [node name="BT_Quit" type="Node2D" parent="BT_Quit/Layers"]
 position = Vector2( 1376, 208 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="ic_Quit" type="Node2D" parent="BT_Quit/Layers/BT_Quit"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Quit/Layers/BT_Quit/ic_Quit"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 0
 m_sprite = SubResource( 9 )
 
 [node name="ic_Quit-1" type="Node2D" parent="BT_Quit/Layers/BT_Quit"]
-script = ExtResource( 8 )
+script = ExtResource( 3 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Quit/Layers/BT_Quit/ic_Quit-1"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 Action = 0
 m_sprite = SubResource( 18 )
