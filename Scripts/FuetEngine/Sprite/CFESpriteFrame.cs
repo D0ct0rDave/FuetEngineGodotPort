@@ -6,10 +6,6 @@ namespace FuetEngine
     [Tool]
     public class CFESpriteFrame : Resource
     {
-        // Make sure you provide a parameterless constructor.
-        public CFESpriteFrame()
-        {
-        }
         /// Should we use the same scale of X for the U tex coord?
         [Export]
         public bool m_bScaleXUEqually;
@@ -69,5 +65,10 @@ namespace FuetEngine
         [Export]
         public Texture m_hMaterial = null;
         public string m_sMaterial = null;    // comes from material
+
+        // Make sure you provide a parameterless constructor.
+        public CFESpriteFrame()
+        {
+        }
     };
 }

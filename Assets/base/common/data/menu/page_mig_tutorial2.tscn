@@ -25,10 +25,12 @@ modulate = Color( 1, 1, 1, 0.25 )
 position = Vector2( 2048, 1136 )
 rotation = 3.1416
 scale = Vector2( 2, 2 )
+z_as_relative = false
 script = ExtResource( 2 )
 m_oIniColor = Color( 1, 1, 1, 0.25 )
 
 [node name="rt_Background" type="Node2D" parent="Background/Layers/Background"]
+z_as_relative = false
 script = ExtResource( 1 )
 m_rWidth = 1280.0
 m_rHeight = 500.0
@@ -36,6 +38,7 @@ m_oCorners = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1 )
 
 [node name="rt_Background-1" type="Node2D" parent="Background/Layers/Background"]
 position = Vector2( 0, 960 )
+z_as_relative = false
 script = ExtResource( 1 )
 m_rWidth = 1280.0
 m_rHeight = 460.0
@@ -49,24 +52,35 @@ script = ExtResource( 7 )
 
 [node name="Tuto" type="Node2D" parent="Tuto/Layers"]
 position = Vector2( 2, 0 )
+z_as_relative = false
 script = ExtResource( 2 )
 
 [node name="lb_Tuto" type="Node2D" parent="Tuto/Layers/Tuto"]
 modulate = Color( 1, 1, 0.502, 1 )
 position = Vector2( 64, 96 )
+z_as_relative = false
 script = ExtResource( 10 )
 m_oIniColor = Color( 1, 1, 0.502, 1 )
 
+[node name="Label" type="Label" parent="Tuto/Layers/Tuto/lb_Tuto"]
+margin_right = 108.0
+margin_bottom = 14.0
+text = "Continuous Jump"
+valign = 1
+
 [node name="ic_Tuto" type="Node2D" parent="Tuto/Layers/Tuto"]
 position = Vector2( 640, 320 )
+z_as_relative = false
 script = ExtResource( 8 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="Tuto/Layers/Tuto/ic_Tuto"]
 script = ExtResource( 9 )
+Action = 0
 m_sprite = ExtResource( 5 )
 
 [node name="ic_Tuto-1" type="Node2D" parent="Tuto/Layers/Tuto"]
 position = Vector2( 128, 544 )
+z_as_relative = false
 script = ExtResource( 8 )
 m_iIniAction = 0
 
@@ -78,6 +92,7 @@ m_sprite = ExtResource( 3 )
 [node name="rt_Tuto" type="Node2D" parent="Tuto/Layers/Tuto"]
 position = Vector2( 0, 544 )
 scale = Vector2( 0.5, 1 )
+z_as_relative = false
 script = ExtResource( 1 )
 m_rWidth = 384.0
 m_rHeight = 96.0
@@ -86,6 +101,7 @@ m_oCorners = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0 )
 [node name="rt_Tuto-1" type="Node2D" parent="Tuto/Layers/Tuto"]
 position = Vector2( 1280, 544 )
 scale = Vector2( -0.5, 1 )
+z_as_relative = false
 script = ExtResource( 1 )
 m_rWidth = 384.0
 m_rHeight = 96.0
@@ -94,6 +110,7 @@ m_oCorners = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0 )
 [node name="rt_Tuto-2" type="Node2D" parent="Tuto/Layers/Tuto"]
 position = Vector2( 736, 544 )
 scale = Vector2( 0.5, 1 )
+z_as_relative = false
 script = ExtResource( 1 )
 m_rWidth = 384.0
 m_rHeight = 96.0
@@ -102,6 +119,7 @@ m_oCorners = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 )
 [node name="rt_Tuto-3" type="Node2D" parent="Tuto/Layers/Tuto"]
 position = Vector2( 416, 544 )
 scale = Vector2( 0.5, 1 )
+z_as_relative = false
 script = ExtResource( 1 )
 m_rWidth = 384.0
 m_rHeight = 96.0
@@ -110,6 +128,7 @@ m_oCorners = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 )
 [node name="rt_Tuto-4" type="Node2D" parent="Tuto/Layers/Tuto"]
 position = Vector2( 192, 544 )
 scale = Vector2( 0.25, 1 )
+z_as_relative = false
 script = ExtResource( 1 )
 m_rWidth = 384.0
 m_rHeight = 96.0
@@ -118,6 +137,7 @@ m_oCorners = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 )
 [node name="rt_Tuto-5" type="Node2D" parent="Tuto/Layers/Tuto"]
 position = Vector2( 1056, 544 )
 scale = Vector2( 0.125, 1 )
+z_as_relative = false
 script = ExtResource( 1 )
 m_rWidth = 384.0
 m_rHeight = 96.0
@@ -130,9 +150,11 @@ script = ExtResource( 7 )
 
 [node name="BT_Back" type="Node2D" parent="BT_Back/Layers"]
 position = Vector2( 192, 832 )
+z_as_relative = false
 script = ExtResource( 2 )
 
 [node name="ic_bt_back" type="Node2D" parent="BT_Back/Layers/BT_Back"]
+z_as_relative = false
 script = ExtResource( 8 )
 m_iIniAction = 0
 
@@ -143,6 +165,7 @@ m_sprite = ExtResource( 6 )
 
 [node name="ic_back" type="Node2D" parent="BT_Back/Layers/BT_Back"]
 position = Vector2( -5, 0 )
+z_as_relative = false
 script = ExtResource( 8 )
 m_iIniAction = 0
 
@@ -158,9 +181,11 @@ script = ExtResource( 7 )
 
 [node name="BT_Next" type="Node2D" parent="BT_Next/Layers"]
 position = Vector2( 1024, 832 )
+z_as_relative = false
 script = ExtResource( 2 )
 
 [node name="ic_Next" type="Node2D" parent="BT_Next/Layers/BT_Next"]
+z_as_relative = false
 script = ExtResource( 8 )
 m_iIniAction = 0
 
@@ -172,6 +197,7 @@ m_sprite = ExtResource( 6 )
 [node name="ic_Next-1" type="Node2D" parent="BT_Next/Layers/BT_Next"]
 position = Vector2( -5, 0 )
 scale = Vector2( -1, 1 )
+z_as_relative = false
 script = ExtResource( 8 )
 m_iIniAction = 0
 

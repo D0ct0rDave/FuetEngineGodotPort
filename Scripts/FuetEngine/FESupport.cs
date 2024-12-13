@@ -78,6 +78,31 @@ namespace FuetEngine
 			SetObjectEnabled(_node as Node, _enabled);
 		}
 	}
+	
+	/// Horizontal alignment modes to draw text
+	public enum EFETextHAlignmentMode
+	{
+		THAM_NONE,
+		THAM_LEFT,
+		THAM_CENTER,
+		THAM_RIGHT,
+		THAM_NUM_MODES,
+		THAM_MAX,
+		THAM_DEFAULT = THAM_LEFT
+	}
+
+	/// Vertical alignment modes to draw text
+	public enum EFETextVAlignmentMode
+	{
+		TVAM_NONE,
+		TVAM_TOP,
+		TVAM_CENTER,
+		TVAM_BOTTOM,
+		TVAM_NUM_MODES,
+		TVAM_MAX,
+		TVAM_DEFAULT = TVAM_TOP
+		
+	}
 	// ----------------------------------------------------------------------------
 	/// Rendering Blending modes
 	public enum EFEBlendMode

@@ -7,17 +7,25 @@ using CFEColor = Godot.Color;
 //-----------------------------------------------------------------------------
 namespace FuetEngine
 {
-    public class CFEHUDLoader
-    {
-        // ------------------------------------------------------------------------------
-        static void Reset()
-        {
-            m_oModColor = new CFEColor(1.0f, 1.0f, 1.0f, 1.0f);
+	public static class CFEHUDLoader
+	{
+		private static string	m_sWorkingDir;
+		private static int	m_uiFileVersion;
 
-            m_rDepthFact = 1.0f;
+		// Accumulated depth
+		private static float m_rDepth = 0.0f;
 
-            m_iObjectIdx = 0;
-        }
+		// Current depth factor
+		private static float m_rDepthFact = 1.0f;
+
+		// creation counter to make object render properly.
+		private static int m_iObjectIdx = 0;
+		  // ------------------------------------------------------------------------------
+		private static void Reset()
+		{
+			m_rDepthFact = 1.0f;
+			m_iObjectIdx = 0;
+		}
 		// ------------------------------------------------------------------------------
 		/// Loads a HUD from a given file    
 		public static CFEHUD oLoad(CFEString _sFilename)
@@ -28,13 +36,13 @@ namespace FuetEngine
 			CFEConfigFile oConfig = new CFEConfigFile(sFilename);
 			if (! oConfig.bInitialized() ) return null;
 
-            /// Initialize the HUDLoader internal variables
-            Reset();
+			/// Initialize the HUDLoader internal variables
+			Reset();
 
-            CFEHUD oHUD = Support.CreateObject<Node2D, CFEHUD>(FuetEngine.Support.HUD_SCRIPT_FILE);
+			CFEHUD oHUD = Support.CreateObject<Node2D, CFEHUD>(FuetEngine.Support.HUD_SCRIPT_FILE);
 
-            // FileVersion
-            m_uiFileVersion = oConfig.iGetInteger("HUD.FileVersion",1);
+			// FileVersion
+			m_uiFileVersion = oConfig.iGetInteger("HUD.FileVersion",1);
 			
 			// Number of elements.
 			int uiNumElements = oConfig.iGetInteger("HUD.NumElements",0);
@@ -81,7 +89,7 @@ namespace FuetEngine
 			return oLoadObject("HUDObject", oConfig);
 		}
 		// ------------------------------------------------------------------------------	
-		protected static CFEHUDElement oLoadElement(CFEString _sPrefix, CFEConfigFile _oConfigFile)
+		private static CFEHUDElement oLoadElement(CFEString _sPrefix, CFEConfigFile _oConfigFile)
 		{
 			// Element name
 			CFEString sElemName = _oConfigFile.sGetString(_sPrefix + ".Name","nonamed-element");
@@ -107,33 +115,33 @@ namespace FuetEngine
 			return oElem;
 		}
 		// ------------------------------------------------------------------------------
-		protected static void LoadElementActions(CFEString _sPrefix, CFEConfigFile _oConfigFile, CFEHUDElement _poElem)
+		private static void LoadElementActions(CFEString _sPrefix, CFEConfigFile _oConfigFile, CFEHUDElement _poElem)
 		{
 		}
 		// ------------------------------------------------------------------------------
-		protected static CFEHUDElementAction oLoadAction(CFEString _sPrefix, CFEConfigFile _oConfigFile, CFEHUDElement _poElem)
+		private static CFEHUDElementAction oLoadAction(CFEString _sPrefix, CFEConfigFile _oConfigFile, CFEHUDElement _poElem)
 		{
 			return null;
 		}
 		// ------------------------------------------------------------------------------
-		protected static CFEHUDObjectAction oLoadObjAction(CFEString _sPrefix, CFEConfigFile _oConfigFile, CFEHUDElement _poElem)
+		private static CFEHUDObjectAction oLoadObjAction(CFEString _sPrefix, CFEConfigFile _oConfigFile, CFEHUDElement _poElem)
 		{
 			return null;
 		}
-        // ------------------------------------------------------------------------------
-        protected static void LoadCommonObjectProperties(CFEString _sPrefix, CFEConfigFile _oConfigFile, CFEHUDObject _oObj)
+		// ------------------------------------------------------------------------------
+		private static void LoadCommonObjectProperties(CFEString _sPrefix, CFEConfigFile _oConfigFile, CFEHUDObject _oObj)
 		{
 			// Name
 			string sElemName = _oConfigFile.sGetString(_sPrefix + ".Name","nonamed");
 			_oObj.Name = sElemName;
 
-            // position & depth
-            float rX = _oConfigFile.rGetReal(_sPrefix + ".Position.x",0.0f);
+			// position & depth
+			float rX = _oConfigFile.rGetReal(_sPrefix + ".Position.x",0.0f);
 			float rY = _oConfigFile.rGetReal(_sPrefix + ".Position.y",0.0f);
 			float rD = _oConfigFile.rGetReal(_sPrefix + ".Depth",0.0f);
-            
+			
 			_oObj.SetIniPos( new CFEVect2(rX,rY) );
-            _oObj.SetIniDepth(rD);
+			_oObj.SetIniDepth(rD);
 
 			// scale
 			float rSX = _oConfigFile.rGetReal(_sPrefix + ".Scale.x",1.0f);
@@ -149,7 +157,7 @@ namespace FuetEngine
 			float rCG = _oConfigFile.rGetReal(_sPrefix + ".Color.g",1.0f);
 			float rCB = _oConfigFile.rGetReal(_sPrefix + ".Color.b",1.0f);
 			float rCA = _oConfigFile.rGetReal(_sPrefix + ".Color.a",1.0f);
-            _oObj.SetIniColor(new CFEColor(rCR,rCG,rCB,rCA) );
+			_oObj.SetIniColor(new CFEColor(rCR,rCG,rCB,rCA) );
 
 			// visibility
 			bool bVisible = _oConfigFile.bGetBool(_sPrefix + ".Visible",true);
@@ -157,43 +165,47 @@ namespace FuetEngine
 
 			// action
 			int iAction = _oConfigFile.iGetInteger(_sPrefix + ".Action",-1);
-            _oObj.SetIniAction( iAction );
+			_oObj.SetIniAction( iAction );
 
-            // TAG
-            string sTAG = _oConfigFile.sGetString(_sPrefix + ".TAG","");
-            _oObj.SetTAG( sTAG );
-        }
+			// TAG
+			string sTAG = _oConfigFile.sGetString(_sPrefix + ".TAG","");
+			_oObj.SetTAG( sTAG );
+
+			// Setup proper depth and color (acummulated while traversing the hierarchy)
+			_oObj.ZIndex = iGetRenderIndex(_oObj);
+			_oObj.ZAsRelative = false;
+		}
 		// ------------------------------------------------------------------------------
-		protected static CFEHUDObject oLoadObject(string _sPrefix, CFEConfigFile _oConfigFile)
+		private static CFEHUDObject oLoadObject(string _sPrefix, CFEConfigFile _oConfigFile)
 		{
-            // Creation factor allows objects to be rendered properly when same depth (prevent z fighting)
-            // This makes the rendering depend on creation order.
-            m_iObjectIdx--;
+			// Creation factor allows objects to be rendered properly when same depth (prevent z fighting)
+			// This makes the rendering depend on creation order.
+			m_iObjectIdx--;
 
-            string sElemType = _oConfigFile.sGetString(_sPrefix + ".Type","none");
+			string sElemType = _oConfigFile.sGetString(_sPrefix + ".Type","none");
 			string sElemName = _oConfigFile.sGetString(_sPrefix + ".Name","nonamed");
 
-            if (sElemType == "Label")
+			if (sElemType == "Label")
 			{
 				CFEHUDLabel oLabel = Support.CreateObject<CFEHUDLabel>(FuetEngine.Support.HUD_LABEL_SCRIPT_FILE);
 				LoadCommonObjectProperties(_sPrefix,_oConfigFile, oLabel);
 				
 				string sText = _oConfigFile.sGetString(_sPrefix + ".Text","Label");
-				// poLabel->SetText( sText );
+				oLabel.SetText(sText);
 				
 				string sFont = _oConfigFile.sGetString(_sPrefix + ".Font","");
 				if (sFont != "")
 				{
 					string sFontFile = m_sWorkingDir + "/" + sFont;
 					// CFEFont poFont = CFEFontMgr::I()->poLoad( sFontFile );
-					// poLabel->SetFont( poFont );
+					oLabel.SetFont(sFontFile);
 				}
 				
 				string sHAlign = _oConfigFile.sGetString(_sPrefix + ".HAlignment","left");
-				// poLabel->SetHAlignment( eGetHAlignFromString(sHAlign) );
+				oLabel.SetHAlignment( eGetHAlignFromString(sHAlign) );
 				
 				string sVAlign = _oConfigFile.sGetString(_sPrefix + ".VAlignment","center");
-				// poLabel->SetVAlignment( eGetVAlignFromString(sVAlign) );
+				oLabel.SetVAlignment( eGetVAlignFromString(sVAlign) );
 				
 				float rTracking, rInterlining, rPointSize,rAdjustmentWidth;
 				rTracking	 = _oConfigFile.rGetReal(_sPrefix + ".Tracking",0.0f);
@@ -201,11 +213,11 @@ namespace FuetEngine
 				rPointSize   = _oConfigFile.rGetReal(_sPrefix + ".PointSize",1.0f);
 				rAdjustmentWidth = _oConfigFile.rGetReal(_sPrefix + ".AdjustmentWidth",-1.0f);
 				
-				// poLabel->SetTracking( rTracking );
-				// poLabel->SetInterlining( rInterlining );
-				// poLabel->SetPointSize( rPointSize );
-				// poLabel->SetAdjustmentWidth( rAdjustmentWidth );
-				
+				oLabel.SetTracking(rTracking);
+				oLabel.SetInterlining(rInterlining);
+				oLabel.SetPointSize(rPointSize);
+				oLabel.SetAdjustmentWidth(rAdjustmentWidth);
+
 				return oLabel;
 			}
 			
@@ -236,7 +248,7 @@ namespace FuetEngine
 					{
 						GD.Print("CFEHUDIcon cannot load sprite resource " + sSpriteFile);
 					}
-                }
+				}
 
 				return oIcon;
 			}
@@ -252,12 +264,12 @@ namespace FuetEngine
 				float rPivotX = _oConfigFile.rGetReal(_sPrefix + ".PivotX",0.5f);
 				float rPivotY = _oConfigFile.rGetReal(_sPrefix + ".PivotY",0.5f);
 				
-                oRect.SetWidth(rWidth);
-                oRect.SetHeight(rHeight);
-                oRect.SetPivot( new CFEVect2(rPivotX, rPivotY) );
+				oRect.SetWidth(rWidth);
+				oRect.SetHeight(rHeight);
+				oRect.SetPivot( new CFEVect2(rPivotX, rPivotY) );
 				
-                // Load corner colors
-                for (int i=0; i<4; i++)
+				// Load corner colors
+				for (int i=0; i<4; i++)
 				{
 					string sCorner = ".Corner" + i;
 					string sVar    = _sPrefix + sCorner;
@@ -267,11 +279,11 @@ namespace FuetEngine
 					oColor.g = _oConfigFile.rGetReal(sVar + ".g",1.0f);
 					oColor.b = _oConfigFile.rGetReal(sVar + ".b",1.0f);
 					oColor.a = _oConfigFile.rGetReal(sVar + ".a",1.0f);
-                    
+					
 					oRect.SetCornerColor(i, oColor);
-                }
+				}
 
-                return oRect;
+				return oRect;
 			}
 			
 			else if (sElemType == "Shape")
@@ -326,93 +338,86 @@ namespace FuetEngine
 			
 			else if (sElemType == "Group")
 			{
-                int iOldObjIdx = m_iObjectIdx;
-                m_iObjectIdx = 0;
-                    
-                int uiNumObjects = _oConfigFile.iGetInteger(_sPrefix + ".NumObjects",0);
+				int iOldObjIdx = m_iObjectIdx;
+				m_iObjectIdx = 0;
+					
+				int uiNumObjects = _oConfigFile.iGetInteger(_sPrefix + ".NumObjects",0);
 				
 				CFEHUDGroup oGroup = Support.CreateObject<CFEHUDGroup>(FuetEngine.Support.HUD_GROUP_SCRIPT_FILE);
 
-			    LoadCommonObjectProperties(_sPrefix, _oConfigFile, oGroup);
-                float rDepthFact = _oConfigFile.rGetReal(_sPrefix + ".DepthFact",0.1f);
+				LoadCommonObjectProperties(_sPrefix, _oConfigFile, oGroup);
 
-                oGroup.SetDepthFact(rDepthFact);
+				float rDepthFact = _oConfigFile.rGetReal(_sPrefix + ".DepthFact",0.1f);
+				oGroup.SetDepthFact(rDepthFact);
 
-                // Push current color & depth
-                CFEColor oOldModColor = m_oModColor;  // NOTE: We can do that because Color is a struct, not a class
-                float rOldDepthFact = m_rDepthFact;
-                float rOldDepth     = m_rDepth;
+				// Push current depth
+				float rOldDepthFact = m_rDepthFact;
+				float rOldDepth     = m_rDepth;
 
-                    m_oModColor = m_oModColor * oGroup.oGetColor();
-                    // m_rDepth    = m_rDepth + m_rDepthFact * oGroup.m_rDepth;
-                    m_rDepthFact *= rDepthFact;                                 // order important!!!!
+					m_rDepth    = m_rDepth + m_rDepthFact * oGroup.m_rIniDepth;
+					m_rDepthFact *= rDepthFact;                                 // order important!!!!
 
-                    for (int i=0;i<uiNumObjects;i++)
-                    {
-					    string sObject = _sPrefix + ".Object" + i;
-					    CFEHUDObject oObj = oLoadObject(sObject,_oConfigFile);
+					for (int i=0;i<uiNumObjects;i++)
+					{
+						string sObject = _sPrefix + ".Object" + i;
+						CFEHUDObject oObj = oLoadObject(sObject, _oConfigFile);
 
-                        oGroup.iAddObject(oObj);
-				    }
+						oGroup.iAddObject(oObj);
+					}
 
-                // Pop color & depth
-                m_oModColor  = oOldModColor;
-                m_rDepth     = rOldDepth;
-                m_rDepthFact = rOldDepthFact;
-                
-                m_iObjectIdx = iOldObjIdx;
+				// Pop depth
+				m_rDepth     = rOldDepth;
+				m_rDepthFact = rOldDepthFact;
+				
+				m_iObjectIdx = iOldObjIdx;
 
-                return oGroup;
+				return oGroup;
 			}
 			
 			return null;
 		}
 
-		protected static string	m_sWorkingDir;
-		protected static int	m_uiFileVersion;
-
-        // Accumulated modulation color to render hud objects.
-        protected static CFEColor m_oModColor = new CFEColor(1.0f, 1.0f, 1.0f, 1.0f);
-
-        // Accumulated depth
-        protected static float m_rDepth = 0.0f;
-
-        // Current depth factor
-        protected static float m_rDepthFact = 1.0f;
-
-        // creation counter to make object render properly.
-        protected static int m_iObjectIdx = 0;
-
-        //-----------------------------------------------------------------------------
-        /// Utiliy functions
-        //-----------------------------------------------------------------------------
-        static CFEColor oRenderColor(CFEColor _oModColor, CFEHUDObject _poObj)
-        {
-	        return( _oModColor* _poObj.oGetColor() );
-        }
-        //---------------------------------------------------------------------
-		static CFEColor oGetRenderColor(CFEHUDObject _poObj)
-        {
-            return oRenderColor(m_oModColor, _poObj);
-        }
 		//---------------------------------------------------------------------
-        static float rGetObjectDepth(float _rObjDepth)
-        {
-            return m_rDepth + (m_rDepthFact * _rObjDepth);
-        }
-        //---------------------------------------------------------------------
-        static float rGetRenderDepth(float _rObjDepth)
-        {
-            return rGetObjectDepth(_rObjDepth);
+		static float rGetObjectDepth(float _rObjDepth)
+		{
+			return m_rDepth + (m_rDepthFact * _rObjDepth);
 		}
-        //---------------------------------------------------------------------
-		static int iGetRenderIndex(CFEHUDObject _oObj)
-        {
-            float rDepth = 0.0f; // rGetObjectDepth(_oObj.m_rDepth);
-            
-            int iDepthFact = (int)(rDepth * 10000.0f);
-            return iDepthFact + m_iObjectIdx;
-        }
-        //---------------------------------------------------------------------
-    }
+		//---------------------------------------------------------------------
+		private static int iGetRenderIndex(CFEHUDObject _oObj)
+		{
+			float rDepth = rGetObjectDepth(_oObj.m_rIniDepth);
+			
+			int iDepthFact = (int)(rDepth * 10000.0f);
+			return iDepthFact + m_iObjectIdx;
+		}
+		//-----------------------------------------------------------------------------
+		private static EFETextHAlignmentMode eGetHAlignFromString(CFEString _sAlign)
+		{
+			if (_sAlign == "left")
+				return(EFETextHAlignmentMode.THAM_LEFT);
+
+		else if (_sAlign == "center")
+			return(EFETextHAlignmentMode.THAM_CENTER);
+
+		else if (_sAlign == "right")
+			return(EFETextHAlignmentMode.THAM_RIGHT);
+
+			return(EFETextHAlignmentMode.THAM_LEFT);
+		}
+		//-----------------------------------------------------------------------------
+		private static EFETextVAlignmentMode eGetVAlignFromString(CFEString _sAlign)
+		{
+			if (_sAlign == "top")
+				return(EFETextVAlignmentMode.TVAM_TOP);
+
+		else if (_sAlign == "center")
+			return(EFETextVAlignmentMode.TVAM_CENTER);
+
+		else if (_sAlign == "bottom")
+			return(EFETextVAlignmentMode.TVAM_BOTTOM);
+
+			return(EFETextVAlignmentMode.TVAM_CENTER);
+		}
+		//---------------------------------------------------------------------
+	}
 };

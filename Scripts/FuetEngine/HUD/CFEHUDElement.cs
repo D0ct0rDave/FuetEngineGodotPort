@@ -105,10 +105,10 @@ namespace FuetEngine
 
 		private void CheckActionList()
 		{
-			if (FindNode("Action", false) == null)
+			if (FindNode("Actions", false) == null)
 			{				
 				m_oActions = new Node();
-				m_oActions.Name = "Action";
+				m_oActions.Name = "Actions";
 				AddChild(m_oActions);
 			}
 		}

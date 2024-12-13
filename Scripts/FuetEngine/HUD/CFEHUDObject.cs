@@ -10,6 +10,9 @@ namespace FuetEngine
     [Tool]
 	public class CFEHUDObject : Node2D
 	{
+		// Do we want to keep these classes or just want to build a hierarchy of Godot Objects?
+		// I we are not supposed to modify these values, we should keep these properties private 
+		// and non exportable.
 		[Export]
 		public CFEVect2 m_oIniPos { set{ m_iniPos = value; GlobalPosition = value; } get{ return m_iniPos; }}
 		private CFEVect2 m_iniPos;
