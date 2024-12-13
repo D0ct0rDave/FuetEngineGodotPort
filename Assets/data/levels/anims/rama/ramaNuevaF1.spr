@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "ramaNuevaF1";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../../atlas_1";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 970.0;
+						Height = 1700.0;
+					};
+					TexCoords:
+					{
+						IU = 0.47509766;
+						IV = 0.00048828;
+						FU = 0.94873047;
+						FV = 0.83056641;
+					};
+				};
+			};
+		};
+	};
+};

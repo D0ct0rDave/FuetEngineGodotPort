@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/light_exp_fluctuant.spr-0bc72941179da8d645ceb87ac4a75699.tres"
+
+[deps]
+
+source_file="res://Assets/data/levels/anims/Bifurcacion/light_exp_fluctuant.spr"
+dest_files=[ "res://.import/light_exp_fluctuant.spr-0bc72941179da8d645ceb87ac4a75699.tres" ]
+
+[params]
+

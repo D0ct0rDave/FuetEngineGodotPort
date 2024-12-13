@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "Tilesueloend2";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../atlas_2";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 241.0;
+						Height = 116.0;
+					};
+					TexCoords:
+					{
+						IU = 0.08789063;
+						IV = 0.94042969;
+						FU = 0.20556641;
+						FV = 0.99707031;
+					};
+				};
+			};
+		};
+	};
+};

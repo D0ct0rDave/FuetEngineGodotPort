@@ -213,14 +213,16 @@ namespace FuetEngine
 			}
 
 			file.Open(_szFilename,	Godot.File.ModeFlags.Read);
-		
-			string content = file.GetAsText();
 
-			char[] fileData = new char[content.Length+1];
-			Array.Copy(content.ToCharArray(), fileData, content.Length);
-			fileData[content.Length] = '\0';
+			ulong len = file.GetLen();
+			byte[] fileData = new byte[len+1];
+			Array.Copy(file.GetBuffer((long)len), fileData, (int)len);
+			fileData[len] = 0;
+
 			file.Close();
-			return fileData;
+			
+			char[] result = System.Text.Encoding.ASCII.GetString(fileData).ToCharArray();
+			return result;
 
 			/*
 			if (! ResourceLoader.Exists(_szFilename))

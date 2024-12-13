@@ -61,7 +61,6 @@ namespace FuetEngine
         public CFEVect2 m_o1OverDims = new CFEVect2();
 
         /// The material used by this sprite frame.
-        // public Material m_hMaterial = null;
         [Export]
         public Texture m_hMaterial = null;
         public string m_sMaterial = null;    // comes from material

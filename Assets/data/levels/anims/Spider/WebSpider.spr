@@ -1,0 +1,35 @@
+Sprite:
+{
+	Name = "WebSpider";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "WebSpider";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.5469;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 64.0;
+						Height = 64.0;
+					};
+					TexCoords:
+					{
+						VWorldCoords = true;
+					};
+				};
+			};
+		};
+	};
+};

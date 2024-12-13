@@ -1,0 +1,201 @@
+Sprite:
+{
+	Name = "header";
+	NumActions = 3;
+	Action0:
+	{
+		Name = "blink";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 2;
+				Frame0:
+				{
+					Material = "header";
+					DelayTime = 0.5000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 32.0;
+						Height = 32.0;
+					};
+					TexCoords:
+					{
+						FV = 0.5000;
+					};
+				};
+				Frame1:
+				{
+					Material = "header";
+					DelayTime = 0.5000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 32.0;
+						Height = 32.0;
+					};
+					TexCoords:
+					{
+						IV = 0.5000;
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "strobe";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 6;
+				Frame0:
+				{
+					Material = "header";
+					BlendTime = 0.1660;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 32.0;
+						Height = 32.0;
+					};
+					TexCoords:
+					{
+						IV = 0.5000;
+					};
+				};
+				Frame1:
+				{
+					Material = "header";
+					BlendTime = 0.1660;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 40.0;
+						Height = 40.0;
+					};
+					TexCoords:
+					{
+						IV = 0.5000;
+					};
+				};
+				Frame2:
+				{
+					Material = "header";
+					BlendTime = 0.1660;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 48.0;
+						Height = 48.0;
+					};
+					TexCoords:
+					{
+						IV = 0.5000;
+					};
+				};
+				Frame3:
+				{
+					Material = "header";
+					BlendTime = 0.1660;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 56.0;
+						Height = 56.0;
+					};
+					TexCoords:
+					{
+						IV = 0.5000;
+					};
+				};
+				Frame4:
+				{
+					Material = "header";
+					BlendTime = 0.1660;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 64.0;
+						Height = 64.0;
+					};
+					TexCoords:
+					{
+						IV = 0.5000;
+					};
+				};
+				Frame5:
+				{
+					Material = "header";
+					BlendTime = 0.1700;
+					Pivot:
+					{
+						x = -0.8114;
+						y = 0.5742;
+					};
+					Size:
+					{
+						Width = 2.6;
+						Height = 5.3;
+					};
+					TexCoords:
+					{
+						IU = 0.0426;
+						IV = 0.4733;
+						FU = 0.0951;
+						FV = 0.5198;
+					};
+				};
+			};
+		};
+	};
+	Action2:
+	{
+		Name = "orange-fix";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "header";
+					DelayTime = 0.5000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 32.0;
+						Height = 32.0;
+					};
+					TexCoords:
+					{
+						IV = 0.5000;
+					};
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,60 @@
+Sprite:
+{
+	Name = "light_exp_fluctuant";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		BlendMode = "ALPHAADD";
+		PlayMode = "LOOP";
+		RandomStartTime = 0.50;
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 2;
+				Frame0:
+				{
+					Material = "../../atlas_4";
+					DelayTime = 0.0980;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 128.0;
+					};
+					TexCoords:
+					{
+						IU = 0.78857422;
+						IV = 0.89062500;
+						FU = 0.85107422;
+						FV = 0.95312500;
+					};
+				};
+				Frame1:
+				{
+					Material = "../../atlas_3";
+					DelayTime = 0.0980;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 128.0;
+						Height = 128.0;
+					};
+					TexCoords:
+					{
+						IU = 0.32470703;
+						IV = 0.91748047;
+						FU = 0.38720703;
+						FV = 0.97998047;
+					};
+				};
+			};
+		};
+	};
+};

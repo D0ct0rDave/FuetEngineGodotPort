@@ -1,0 +1,42 @@
+EditorHUD:
+{
+	WindowWidth = 1874;
+WindowHeight = 1096;
+	WindowLayout = "layout2|name=Toolbar;caption=HUD toolbar;state=2108156;dir=1;layer=10;row=0;pos=0;prop=100000;bestw=1319;besth=42;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Viewer;caption=Viewer;state=20972288;dir=5;layer=0;row=1;pos=0;prop=100000;bestw=800;besth=544;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Timeline;caption=Actions & Timeline;state=23070716;dir=3;layer=0;row=1;pos=0;prop=197498;bestw=864;besth=199;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=437;floaty=353;floatw=755;floath=225|name=Layers;caption=HUD Objects;state=16779260;dir=2;layer=0;row=1;pos=0;prop=33914;bestw=411;besth=354;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=88;floaty=91;floatw=433;floath=383|name=Properties;caption=HUD Object properties;state=16779260;dir=2;layer=0;row=2;pos=0;prop=68588;bestw=411;besth=355;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=1481;floaty=348;floatw=419;floath=378|dock_size(1,10,0)=44|dock_size(5,0,1)=409|dock_size(3,0,1)=284|dock_size(2,0,1)=378|dock_size(2,0,2)=245|";
+	ViewGrid = false;
+	GridSelection = 2;
+	Background = "(null)";
+	ViewBackground = false;
+	GuardBandMode = 0;
+	DebugApp =  "D:/CoderChild-level1/Projects/Cubit-HD/trunk/data/rawdata/Cubit-LaunchLevel.bat";
+	Zoom =  0.127;
+	TimeScale =  1.0000;
+	TransX = -3303.922;
+	TransY = -666.667;
+	Element0:
+	{
+		Object = "00.Level";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = true;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element1:
+		{
+			Object = "Copy Of ic_pared-1";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = true;
+			Visible = true;
+			Prefab= "";
+		};
+
+	NumElements = 2;
+
+};

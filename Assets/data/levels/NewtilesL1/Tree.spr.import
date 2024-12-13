@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Tree.spr-67e406061029108abd1371b7b320406b.tres"
+
+[deps]
+
+source_file="res://Assets/data/levels/NewtilesL1/Tree.spr"
+dest_files=[ "res://.import/Tree.spr-67e406061029108abd1371b7b320406b.tres" ]
+
+[params]
+

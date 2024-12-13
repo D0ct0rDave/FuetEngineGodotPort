@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "suelo";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../atlas_2";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 1300.0;
+						Height = 412.0;
+					};
+					TexCoords:
+					{
+						IU = 0.00048828;
+						IV = 0.68164063;
+						FU = 0.63525391;
+						FV = 0.88281250;
+					};
+				};
+			};
+		};
+	};
+};

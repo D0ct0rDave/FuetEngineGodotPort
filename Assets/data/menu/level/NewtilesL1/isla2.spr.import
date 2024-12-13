@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/isla2.spr-01d6d0cd923b4353de87286fae32e6fa.tres"
+
+[deps]
+
+source_file="res://Assets/data/menu/level/NewtilesL1/isla2.spr"
+dest_files=[ "res://.import/isla2.spr-01d6d0cd923b4353de87286fae32e6fa.tres" ]
+
+[params]
+

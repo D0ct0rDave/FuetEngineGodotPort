@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Cubo2F2.spr-599aa06f15035a5ca5d963cc8aeed5b0.tres"
+
+[deps]
+
+source_file="res://Assets/data/menu/level/anims/Mar/Cubo2/Cubo2F2.spr"
+dest_files=[ "res://.import/Cubo2F2.spr-599aa06f15035a5ca5d963cc8aeed5b0.tres" ]
+
+[params]
+

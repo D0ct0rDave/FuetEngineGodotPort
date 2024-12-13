@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/TileBG1.spr-f409cde8a6bc2ac016a9575f159e1668.tres"
+
+[deps]
+
+source_file="res://Assets/data/menu/level/NewtilesL1/TileBG1.spr"
+dest_files=[ "res://.import/TileBG1.spr-f409cde8a6bc2ac016a9575f159e1668.tres" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/TileH1.spr-50d7613108f19e023028868b608d251b.tres"
+
+[deps]
+
+source_file="res://Assets/data/levels/Ship/TileH1.spr"
+dest_files=[ "res://.import/TileH1.spr-50d7613108f19e023028868b608d251b.tres" ]
+
+[params]
+

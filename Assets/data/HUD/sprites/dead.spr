@@ -1,0 +1,175 @@
+Sprite:
+{
+	Name = "dead";
+	NumActions = 6;
+	Action0:
+	{
+		Name = "cubit";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "dead_cubit";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 148.0;
+						Height = 94.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "ghost";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "dead_ghost";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 148.0;
+						Height = 93.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action2:
+	{
+		Name = "chronos";
+		PlayMode = "LOOP";
+		RandomStartTime = 3.00;
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "dead_chronos";
+					DelayTime = 5.2210;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 150.0;
+						Height = 110.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action3:
+	{
+		Name = "cubitgirl";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "dead_cubitgirl";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						y = 0.5043;
+					};
+					Size:
+					{
+						Width = 148.0;
+						Height = 115.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action4:
+	{
+		Name = "unepic";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "dead_unepic";
+					DelayTime = 4.9960;
+					Pivot:
+					{
+						y = 0.5049;
+					};
+					Size:
+					{
+						Width = 148.0;
+						Height = 103.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+	Action5:
+	{
+		Name = "goldencubit";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "dead_goldencubit";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 148.0;
+						Height = 94.0;
+					};
+					TexCoords:
+					{
+					};
+				};
+			};
+		};
+	};
+};

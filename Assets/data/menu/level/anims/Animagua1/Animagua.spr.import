@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Animagua.spr-3d6cdc36315900259c864fe798542921.tres"
+
+[deps]
+
+source_file="res://Assets/data/menu/level/anims/Animagua1/Animagua.spr"
+dest_files=[ "res://.import/Animagua.spr-3d6cdc36315900259c864fe798542921.tres" ]
+
+[params]
+

@@ -4,6 +4,7 @@ using CFEString = System.String;
 using FEReal = System.Single;
 using CFEVect2 = Godot.Vector2;
 using CFEColor = Godot.Color;
+using CFEFont = Godot.Theme;
 //-----------------------------------------------------------------------------
 namespace FuetEngine
 {
@@ -11,15 +12,6 @@ namespace FuetEngine
 	public class CFEHUDLabel : CFEHUDObject 
 	{
 		//---------------------------------------------------------------------
-		/*
-		[Export]
-		public 
-		*/
-		private CFEString		        m_sFont;/*
-		[Export]
-		public 
-		*/
-		private CFEString 				m_sText; // { set{ SetText(value); } get{ return sGetText(); }}
 		/*
 		[Export]
 		public 
@@ -64,19 +56,20 @@ namespace FuetEngine
 		}
 		//---------------------------------------------------------------------
 		/// Sets the font for this label.
-		public void SetFont(CFEString _sFont)
+		public void SetFont(CFEFont _oFont)
 		{
 			CheckLabel();
-			m_sFont = _sFont;
+
+			m_label.Theme = _oFont;
 
 			if (m_rAdjustmentWidth != -1.0f)
 				AdjustText();
 		}
 		//---------------------------------------------------------------------
 		/// Retrieves the font's label.
-		public CFEString GetFont()
+		public CFEFont GetFont()
 		{
-			return m_sFont;
+			return m_label.Theme;
 		}
 		//---------------------------------------------------------------------
 		/// Sets the text to be displayed by this label.
@@ -84,7 +77,6 @@ namespace FuetEngine
 		{
 			CheckLabel();
 			
-			m_sText = _sText;
 			m_label.Text = _sText;
 
 			if (m_rAdjustmentWidth != -1.0f)
@@ -94,14 +86,14 @@ namespace FuetEngine
 		/// Retrieves the text of this label.
 		public CFEString sGetText()
 		{
-			return m_sText;
+			return m_label.Text;
 		}
 		//---------------------------------------------------------------------
 		/// Retrieves the printable text string of this label.
 		public CFEString sGetPrintableText()
 		{
 			if (m_rAdjustmentWidth == -1.0f)
-				return m_sText;
+				return m_label.Text;
 			else
 				return m_sAdjustedText;
 		}
@@ -111,7 +103,24 @@ namespace FuetEngine
 		{
 			CheckLabel();
 			m_eHAlignment = _eHAlignment;
-			m_label.Align = GetLabelAlignment(_eHAlignment);
+			m_label.Align = GetGodotLabelAlignment(_eHAlignment);
+			
+			Vector2 recPosition = m_label.RectPosition; 
+			switch (_eHAlignment)
+			{
+				case EFETextHAlignmentMode.THAM_LEFT:
+				recPosition.x = 0.0f;
+				break;
+				
+				case EFETextHAlignmentMode.THAM_CENTER:
+				recPosition.x = -m_label.RectSize.x * 0.5f;
+				break;
+				
+				case EFETextHAlignmentMode.THAM_RIGHT:
+				recPosition.x = -m_label.RectSize.x;
+				break;
+			}			
+			m_label.RectPosition = recPosition;
 		}
 		//---------------------------------------------------------------------
 		/// Retrieves the horizontal alignment of the label.
@@ -127,7 +136,24 @@ namespace FuetEngine
 		{
 			CheckLabel();
 			m_eVAlignment = _eVAlignment;
-			m_label.Valign = GetLabelVAlignment(_eVAlignment);
+			m_label.Valign = GetGodotLabelVAlignment(_eVAlignment);
+
+			Vector2 recPosition = m_label.RectPosition;
+			switch (_eVAlignment)
+			{
+				case EFETextVAlignmentMode.TVAM_TOP:
+				recPosition.y = 0.0f;
+				break;
+				
+				case EFETextVAlignmentMode.TVAM_CENTER:
+				recPosition.y = -m_label.RectSize.y * 0.5f;
+				break;
+				
+				case EFETextVAlignmentMode.TVAM_BOTTOM:
+				recPosition.y = -m_label.RectSize.y;
+				break;
+			}
+			m_label.RectPosition = recPosition;
 		}
 		//---------------------------------------------------------------------
 		/// Retrieves the vertical alignment of the label.
@@ -219,7 +245,7 @@ namespace FuetEngine
 			}
 		}
 		//---------------------------------------------------------------------
-		private Label.AlignEnum GetLabelAlignment(EFETextHAlignmentMode _hAlignmentMode)
+		private Label.AlignEnum GetGodotLabelAlignment(EFETextHAlignmentMode _hAlignmentMode)
 		{
 			switch (_hAlignmentMode)
 			{
@@ -233,7 +259,7 @@ namespace FuetEngine
 			}
 		}
 		//---------------------------------------------------------------------
-		private Label.VAlign GetLabelVAlignment(EFETextVAlignmentMode _vAlignmentMode)
+		private Label.VAlign GetGodotLabelVAlignment(EFETextVAlignmentMode _vAlignmentMode)
 		{
 			switch (_vAlignmentMode)
 			{

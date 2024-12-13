@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Tilesuelobg1.spr-f3bda62bacef856350757cc1e5f065b6.tres"
+
+[deps]
+
+source_file="res://Assets/data/menu/level/Ship/Tilesuelobg1.spr"
+dest_files=[ "res://.import/Tilesuelobg1.spr-f3bda62bacef856350757cc1e5f065b6.tres" ]
+
+[params]
+

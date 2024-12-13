@@ -26,6 +26,9 @@ namespace FuetEngine
 				{
 					GD.Print("Cannot convert resource to Sprite: " + canonicalFilenameWithExt);	
 				}
+
+				spriteResource.ResourceLocalToScene = false;
+				spriteResource.ResourcePath = canonicalFilenameWithExt;
 			}
 			else
 			{

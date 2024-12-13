@@ -1,0 +1,245 @@
+Sprite:
+{
+	Name = "Animagua";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 10;
+				Frame0:
+				{
+					Material = "Animaguaf1";
+					SWrapMode = "REPEAT";
+					DelayTime = 0.2597;
+					BlendTime = 0.0423;
+					Pivot:
+					{
+						x = 0.0000;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 36000.0;
+						Height = 195.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0;
+						FU = 50.0;
+					};
+				};
+				Frame1:
+				{
+					Material = "Animaguaf2";
+					SWrapMode = "REPEAT";
+					DelayTime = 0.2597;
+					BlendTime = 0.0423;
+					Pivot:
+					{
+						x = 0.0000;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 36000.0;
+						Height = 195.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0;
+						FU = 50.0;
+					};
+				};
+				Frame2:
+				{
+					Material = "Animaguaf3";
+					SWrapMode = "REPEAT";
+					DelayTime = 0.2597;
+					BlendTime = 0.0423;
+					Pivot:
+					{
+						x = 0.0000;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 36000.0;
+						Height = 195.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0;
+						FU = 50.0;
+					
+					};
+				};
+				Frame3:
+				{
+					Material = "Animaguaf4";
+					SWrapMode = "REPEAT";
+					DelayTime = 0.2597;
+					BlendTime = 0.0423;
+					Pivot:
+					{
+						x = 0.0000;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 36000.0;
+						Height = 195.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0;
+						FU = 50.0;
+					
+					};
+				};
+				Frame4:
+				{
+					Material = "Animaguaf5";
+					SWrapMode = "REPEAT";
+					DelayTime = 0.2597;
+					BlendTime = 0.0423;
+					Pivot:
+					{
+						x = 0.0000;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 36000.0;
+						Height = 195.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0;
+						FU = 50.0;
+					
+					};
+				};
+				Frame5:
+				{
+					Material = "Animaguaf6";
+					SWrapMode = "REPEAT";
+					DelayTime = 0.2597;
+					BlendTime = 0.0423;
+					Pivot:
+					{
+						x = 0.0000;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 36000.0;
+						Height = 195.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0;
+						FU = 50.0;
+					
+					};
+				};
+				Frame6:
+				{
+					Material = "Animaguaf5";
+					SWrapMode = "REPEAT";
+					DelayTime = 0.2597;
+					BlendTime = 0.0423;
+					Pivot:
+					{
+						x = 0.0000;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 36000.0;
+						Height = 195.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0;
+						FU = 50.0;
+					
+					};
+				};
+				Frame7:
+				{
+					Material = "Animaguaf4";
+					SWrapMode = "REPEAT";
+					DelayTime = 0.2597;
+					BlendTime = 0.0423;
+					Pivot:
+					{
+						x = 0.0000;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 36000.0;
+						Height = 195.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0;
+						FU = 50.0;
+					
+					};
+				};
+				Frame8:
+				{
+					Material = "Animaguaf3";
+					SWrapMode = "REPEAT";
+					DelayTime = 0.2597;
+					BlendTime = 0.0423;
+					Pivot:
+					{
+						x = 0.0000;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 36000.0;
+						Height = 195.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0;
+						FU = 50.0;
+					
+					};
+				};
+				Frame9:
+				{
+					Material = "Animaguaf2";
+					SWrapMode = "REPEAT";
+					DelayTime = 0.2597;
+					BlendTime = 0.0423;
+					Pivot:
+					{
+						x = 0.0000;
+						y = 1.0000;
+					};
+					Size:
+					{
+						Width = 36000.0;
+						Height = 195.0;
+					};
+					TexCoords:
+					{
+						IU = 0.0;
+						FU = 50.0;
+					};
+				};
+			};
+		};
+	};
+};

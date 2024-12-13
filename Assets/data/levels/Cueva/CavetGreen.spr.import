@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/CavetGreen.spr-6425fa6a52c8d7b5eb4141bde7844967.tres"
+
+[deps]
+
+source_file="res://Assets/data/levels/Cueva/CavetGreen.spr"
+dest_files=[ "res://.import/CavetGreen.spr-6425fa6a52c8d7b5eb4141bde7844967.tres" ]
+
+[params]
+

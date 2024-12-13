@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/mar_mask.spr-4c6ea3be5f5fc93d2b97263d54f5864e.tres"
+
+[deps]
+
+source_file="res://Assets/data/menu/level/anims/Mar/mar_mask.spr"
+dest_files=[ "res://.import/mar_mask.spr-4c6ea3be5f5fc93d2b97263d54f5864e.tres" ]
+
+[params]
+

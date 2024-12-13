@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/l0-grad-down.spr-dd237269e4e1672e949edd7e5fea247f.tres"
+
+[deps]
+
+source_file="res://Assets/data/menu/level/tiles/l0-grad-down.spr"
+dest_files=[ "res://.import/l0-grad-down.spr-dd237269e4e1672e949edd7e5fea247f.tres" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Cubo1F1.spr-da50661b3a0d16aeb293a1d6cf07b29c.tres"
+
+[deps]
+
+source_file="res://Assets/data/levels/anims/Mar/Cubo1/Cubo1F1.spr"
+dest_files=[ "res://.import/Cubo1F1.spr-da50661b3a0d16aeb293a1d6cf07b29c.tres" ]
+
+[params]
+

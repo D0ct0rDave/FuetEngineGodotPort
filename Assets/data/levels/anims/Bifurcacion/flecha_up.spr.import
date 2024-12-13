@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/flecha_up.spr-bfdf82388a3ade1a8beb77473419f3d0.tres"
+
+[deps]
+
+source_file="res://Assets/data/levels/anims/Bifurcacion/flecha_up.spr"
+dest_files=[ "res://.import/flecha_up.spr-bfdf82388a3ade1a8beb77473419f3d0.tres" ]
+
+[params]
+

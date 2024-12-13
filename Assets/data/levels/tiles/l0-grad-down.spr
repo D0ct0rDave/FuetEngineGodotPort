@@ -1,0 +1,38 @@
+Sprite:
+{
+	Name = "l0-grad-down";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../atlas_5";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.0000;
+						y = 0.0000;
+					};
+					Size:
+					{
+						Width = 1600.0;
+						Height = 512.0;
+					};
+					TexCoords:
+					{
+						IU = 0.00048828;
+						IV = 0.84326172;
+						FU = 0.12548828;
+						FV = 0.90576172;
+					};
+				};
+			};
+		};
+	};
+};

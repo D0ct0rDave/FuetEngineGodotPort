@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Cielo3.spr-0bbde5c84f77cda5eac38c6a83b53e4f.tres"
+
+[deps]
+
+source_file="res://Assets/data/levels/NewtilesL3/Cielo3.spr"
+dest_files=[ "res://.import/Cielo3.spr-0bbde5c84f77cda5eac38c6a83b53e4f.tres" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/TilesueloShip.spr-34b0eb3cecf74c209109fc23a63dcd16.tres"
+
+[deps]
+
+source_file="res://Assets/data/menu/level/Ship/TilesueloShip.spr"
+dest_files=[ "res://.import/TilesueloShip.spr-34b0eb3cecf74c209109fc23a63dcd16.tres" ]
+
+[params]
+

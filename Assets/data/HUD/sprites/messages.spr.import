@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/messages.spr-d4a4f0c6ce44e827c10e9df8d91738df.tres"
+
+[deps]
+
+source_file="res://Assets/data/HUD/sprites/messages.spr"
+dest_files=[ "res://.import/messages.spr-d4a4f0c6ce44e827c10e9df8d91738df.tres" ]
+
+[params]
+

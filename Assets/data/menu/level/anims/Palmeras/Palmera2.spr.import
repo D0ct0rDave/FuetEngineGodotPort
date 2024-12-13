@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Palmera2.spr-5a8cb571debbf9e1a4fbd3fdc9992781.tres"
+
+[deps]
+
+source_file="res://Assets/data/menu/level/anims/Palmeras/Palmera2.spr"
+dest_files=[ "res://.import/Palmera2.spr-5a8cb571debbf9e1a4fbd3fdc9992781.tres" ]
+
+[params]
+

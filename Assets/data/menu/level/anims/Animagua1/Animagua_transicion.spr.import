@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Animagua_transicion.spr-bc2124c9372a16ea001c0939108c1199.tres"
+
+[deps]
+
+source_file="res://Assets/data/menu/level/anims/Animagua1/Animagua_transicion.spr"
+dest_files=[ "res://.import/Animagua_transicion.spr-bc2124c9372a16ea001c0939108c1199.tres" ]
+
+[params]
+

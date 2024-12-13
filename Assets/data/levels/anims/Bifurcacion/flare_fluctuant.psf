@@ -1,0 +1,66 @@
+ParticleSystem:
+{
+	Name = "flare_fluctuant";
+	Sprite = "light_exp_fluctuant";
+	Freq = 10.0000;
+	TTL = 0.5000;
+	EmisorRad:
+	{
+	};
+	EmisorPhase:
+	{
+		Min = 0.9425;
+		Max = 2.1991;
+	};
+	EmisorSpeed:
+	{
+	};
+	EmisorXOfs:
+	{
+	};
+	EmisorYOfs:
+	{
+	};
+	EmisorXSpeed:
+	{
+	};
+	EmisorYSpeed:
+	{
+	};
+	PartSize:
+	{
+		Min = 5.0000;
+		Max = 5.0000;
+	};
+	PartSizeSpeed:
+	{
+		Min = 2.2000;
+		Max = 2.2220;
+	};
+	PartAngle:
+	{
+	};
+	PartAngleSpeed:
+	{
+	};
+	ColorFunc:
+	{
+		WrapMode = "FinalValue";
+		NumKeyFrames = 2;
+		KeyFrame0:
+		{
+			r = 0.6549;
+			g = 0.8784;
+			b = 0.9882;
+			a = 0.6275;
+		};
+		KeyFrame1:
+		{
+			r = 0.2510;
+			g = 0.0000;
+			b = 0.5020;
+			a = 0.0000;
+			Time = 0.5000;
+		};
+	};
+};

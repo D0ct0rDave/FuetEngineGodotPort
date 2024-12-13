@@ -1,0 +1,36 @@
+Sprite:
+{
+	Name = "Spidereyes2";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../../atlas_0";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 63.0;
+						Height = 38.0;
+					};
+					TexCoords:
+					{
+						IU = 0.43505859;
+						IV = 0.89501953;
+						FU = 0.46582031;
+						FV = 0.91357422;
+					};
+				};
+			};
+		};
+	};
+};

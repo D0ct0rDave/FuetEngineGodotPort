@@ -1,0 +1,38 @@
+Sprite:
+{
+	Name = "Cavetile1";
+	NumActions = 1;
+	Action0:
+	{
+		Name = "nonamed";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "Cavetile1";
+					SWrapMode = "REPEAT";
+					TWrapMode = "REPEAT";
+					BlendTime = 1.0000;
+					Pivot:
+					{
+						x = 0.0000;
+						y = 0.0000;
+					};
+					Size:
+					{
+						Width = 600.0;
+						Height = 400.0;
+					};
+					TexCoords:
+					{
+						ScaleXUEqually = true;
+						ScaleYVEqually = true;
+					};
+				};
+			};
+		};
+	};
+};

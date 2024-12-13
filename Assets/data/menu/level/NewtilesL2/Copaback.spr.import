@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Copaback.spr-2d18d510496352f7b2dde71339fd5f0a.tres"
+
+[deps]
+
+source_file="res://Assets/data/menu/level/NewtilesL2/Copaback.spr"
+dest_files=[ "res://.import/Copaback.spr-2d18d510496352f7b2dde71339fd5f0a.tres" ]
+
+[params]
+

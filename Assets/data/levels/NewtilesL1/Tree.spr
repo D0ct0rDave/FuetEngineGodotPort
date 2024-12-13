@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "Tree";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../atlas_4";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 636.0;
+						Height = 500.0;
+					};
+					TexCoords:
+					{
+						IU = 0.32763672;
+						IV = 0.36767578;
+						FU = 0.63818359;
+						FV = 0.61181641;
+					};
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,767 @@
+[gd_scene load_steps=64 format=2]
+
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=1]
+[ext_resource path="res://Assets/data/fonts/default.theme.tres" type="Theme" id=2]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=3]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESprite.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteAction.cs" type="Script" id=5]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteFrame.cs" type="Script" id=6]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=7]
+[ext_resource path="res://Assets/data/HUD/sprites/dead_chronos.png" type="Texture" id=8]
+[ext_resource path="res://Assets/data/HUD/sprites/dead_ghost.png" type="Texture" id=9]
+[ext_resource path="res://Assets/data/HUD/sprites/msg_ready.png" type="Texture" id=10]
+[ext_resource path="res://Assets/data/menu/sprites/background.png" type="Texture" id=11]
+[ext_resource path="res://Assets/data/HUD/sprites/dead_goldencubit.png" type="Texture" id=12]
+[ext_resource path="res://Assets/data/HUD/sprites/msg_welldone.png" type="Texture" id=13]
+[ext_resource path="res://Assets/data/HUD/sprites/msg_go.png" type="Texture" id=14]
+[ext_resource path="res://Assets/data/HUD/sprites/dead_cubitgirl.png" type="Texture" id=15]
+[ext_resource path="res://Assets/data/HUD/sprites/dead_cubit.png" type="Texture" id=16]
+[ext_resource path="res://Assets/data/menu/sprites/minus_button.png" type="Texture" id=17]
+[ext_resource path="res://Assets/data/HUD/sprites/dead_unepic.png" type="Texture" id=18]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=19]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=20]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=21]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 6 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 1920, 1080 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 0.0
+m_rFrameTime = 0.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 11 )
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 5 )
+Name = "default"
+m_rActionTime = 0.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 1 ) ]
+
+[sub_resource type="Resource" id=3]
+resource_local_to_scene = true
+script = ExtResource( 4 )
+Name = "res://Assets/data/menu/sprites/background.spr"
+m_oActions = [ SubResource( 2 ) ]
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 6 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 421, 76 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 0.0
+m_rFrameTime = 0.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 17 )
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 5 )
+Name = "default"
+m_rActionTime = 0.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 4 ) ]
+
+[sub_resource type="Resource" id=6]
+resource_local_to_scene = true
+script = ExtResource( 4 )
+Name = "res://Assets/data/menu/sprites/minus_button.spr"
+m_oActions = [ SubResource( 5 ) ]
+
+[sub_resource type="Resource" id=20]
+script = ExtResource( 6 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 1004, 538 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 13 )
+
+[sub_resource type="Resource" id=21]
+script = ExtResource( 5 )
+Name = "WellDone"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 20 ) ]
+
+[sub_resource type="Resource" id=22]
+script = ExtResource( 6 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 573, 257 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 14 )
+
+[sub_resource type="Resource" id=23]
+script = ExtResource( 5 )
+Name = "Go"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 22 ) ]
+
+[sub_resource type="AtlasTexture" id=24]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 0, 0, 320.063, 256 )
+
+[sub_resource type="Resource" id=25]
+script = ExtResource( 6 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 0.1718, 0.9771 )
+m_oSize = Vector2( 320, 256 )
+m_oScale = Vector2( 0.999802, 0.999999 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = SubResource( 24 )
+
+[sub_resource type="Resource" id=26]
+script = ExtResource( 5 )
+Name = "R"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 25 ) ]
+
+[sub_resource type="AtlasTexture" id=27]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 320.063, 0, 319.877, 256 )
+
+[sub_resource type="Resource" id=28]
+script = ExtResource( 6 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0.1718, 0 )
+m_oUVEnd = Vector2( 0.3435, 0.9771 )
+m_oSize = Vector2( 320, 256 )
+m_oScale = Vector2( 1.00038, 0.999999 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = SubResource( 27 )
+
+[sub_resource type="Resource" id=29]
+script = ExtResource( 5 )
+Name = "E"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 28 ) ]
+
+[sub_resource type="AtlasTexture" id=30]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 639.94, 0, 320.063, 256 )
+
+[sub_resource type="Resource" id=31]
+script = ExtResource( 6 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0.3435, 0 )
+m_oUVEnd = Vector2( 0.5153, 0.9771 )
+m_oSize = Vector2( 320, 256 )
+m_oScale = Vector2( 0.999802, 0.999999 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = SubResource( 30 )
+
+[sub_resource type="Resource" id=32]
+script = ExtResource( 5 )
+Name = "A"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 31 ) ]
+
+[sub_resource type="AtlasTexture" id=33]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 960.004, 0, 320.063, 256 )
+
+[sub_resource type="Resource" id=34]
+script = ExtResource( 6 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0.5153, 0 )
+m_oUVEnd = Vector2( 0.6871, 0.9771 )
+m_oSize = Vector2( 320, 256 )
+m_oScale = Vector2( 0.999802, 0.999999 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = SubResource( 33 )
+
+[sub_resource type="Resource" id=35]
+script = ExtResource( 5 )
+Name = "D"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 34 ) ]
+
+[sub_resource type="AtlasTexture" id=36]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 1311.92, 0, 288.02, 256 )
+
+[sub_resource type="Resource" id=37]
+script = ExtResource( 6 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0.7042, 0 )
+m_oUVEnd = Vector2( 0.8588, 0.9771 )
+m_oSize = Vector2( 288, 256 )
+m_oScale = Vector2( 0.999931, 0.999999 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = SubResource( 36 )
+
+[sub_resource type="Resource" id=38]
+script = ExtResource( 5 )
+Name = "Y"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 37 ) ]
+
+[sub_resource type="AtlasTexture" id=39]
+resource_local_to_scene = true
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 1599.94, 0, 288.02, 256 )
+
+[sub_resource type="Resource" id=40]
+script = ExtResource( 6 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0.8588, 0 )
+m_oUVEnd = Vector2( 1.0134, 0.9771 )
+m_oSize = Vector2( 288, 256 )
+m_oScale = Vector2( 0.999931, 0.999999 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = SubResource( 39 )
+
+[sub_resource type="Resource" id=41]
+script = ExtResource( 5 )
+Name = "?"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 40 ) ]
+
+[sub_resource type="Resource" id=42]
+resource_local_to_scene = true
+script = ExtResource( 4 )
+Name = "messages"
+m_oActions = [ SubResource( 21 ), SubResource( 23 ), SubResource( 26 ), SubResource( 29 ), SubResource( 32 ), SubResource( 35 ), SubResource( 38 ), SubResource( 41 ) ]
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 6 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 148, 94 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 16 )
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 5 )
+Name = "cubit"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 7 ) ]
+
+[sub_resource type="Resource" id=9]
+script = ExtResource( 6 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 148, 93 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 9 )
+
+[sub_resource type="Resource" id=10]
+script = ExtResource( 5 )
+Name = "ghost"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 9 ) ]
+
+[sub_resource type="Resource" id=11]
+script = ExtResource( 6 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 150, 110 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 5.221
+m_rBlendTime = 0.0
+m_rFrameTime = 5.221
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 8 )
+
+[sub_resource type="Resource" id=12]
+script = ExtResource( 5 )
+Name = "chronos"
+m_rActionTime = 5.221
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 3.0
+m_oSeq = [ SubResource( 11 ) ]
+
+[sub_resource type="Resource" id=13]
+script = ExtResource( 6 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 148, 115 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5043 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 15 )
+
+[sub_resource type="Resource" id=14]
+script = ExtResource( 5 )
+Name = "cubitgirl"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 13 ) ]
+
+[sub_resource type="Resource" id=15]
+script = ExtResource( 6 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 148, 103 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 4.996
+m_rBlendTime = 0.0
+m_rFrameTime = 4.996
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5049 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 18 )
+
+[sub_resource type="Resource" id=16]
+script = ExtResource( 5 )
+Name = "unepic"
+m_rActionTime = 4.996
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 15 ) ]
+
+[sub_resource type="Resource" id=17]
+script = ExtResource( 6 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 148, 94 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 1.0
+m_rFrameTime = 1.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 12 )
+
+[sub_resource type="Resource" id=18]
+script = ExtResource( 5 )
+Name = "goldencubit"
+m_rActionTime = 1.0
+m_eBlendMode = 2
+m_ePlayMode = 3
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 17 ) ]
+
+[sub_resource type="Resource" id=19]
+resource_local_to_scene = true
+script = ExtResource( 4 )
+Name = "dead"
+m_oActions = [ SubResource( 8 ), SubResource( 10 ), SubResource( 12 ), SubResource( 14 ), SubResource( 16 ), SubResource( 18 ) ]
+
+[node name="CFEHUD" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="OtherScreen" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Layers" type="Node2D" parent="OtherScreen"]
+
+[node name="OtherScreen" type="Node2D" parent="OtherScreen/Layers"]
+z_as_relative = false
+script = ExtResource( 21 )
+
+[node name="[OtherScreen-0]OtherScreen" type="Node2D" parent="OtherScreen/Layers/OtherScreen"]
+z_as_relative = false
+script = ExtResource( 21 )
+
+[node name="[OtherScreen-0]backgroud" type="Node2D" parent="OtherScreen/Layers/OtherScreen/[OtherScreen-0]OtherScreen"]
+position = Vector2( 960, 1620 )
+z_index = -1
+z_as_relative = false
+script = ExtResource( 19 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="OtherScreen/Layers/OtherScreen/[OtherScreen-0]OtherScreen/[OtherScreen-0]backgroud"]
+script = ExtResource( 20 )
+Action = 0
+m_sprite = SubResource( 3 )
+
+[node name="[OtherScreen-0]minus_button" type="Node2D" parent="OtherScreen/Layers/OtherScreen/[OtherScreen-0]OtherScreen"]
+position = Vector2( 1616, 2064 )
+z_index = -2
+z_as_relative = false
+script = ExtResource( 19 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="OtherScreen/Layers/OtherScreen/[OtherScreen-0]OtherScreen/[OtherScreen-0]minus_button"]
+script = ExtResource( 20 )
+Action = 0
+m_sprite = SubResource( 6 )
+
+[node name="Timer" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Layers" type="Node2D" parent="Timer"]
+
+[node name="Timer" type="Node2D" parent="Timer/Layers"]
+visible = false
+position = Vector2( 896, 256 )
+z_as_relative = false
+script = ExtResource( 21 )
+m_bIniVis = false
+
+[node name="lb_Timer" type="Node2D" parent="Timer/Layers/Timer"]
+position = Vector2( 912, -192 )
+z_index = -1
+z_as_relative = false
+script = ExtResource( 7 )
+
+[node name="Label" type="Label" parent="Timer/Layers/Timer/lb_Timer"]
+margin_top = -29.5
+margin_right = 180.0
+margin_bottom = 29.5
+theme = ExtResource( 2 )
+text = "00:11"
+valign = 1
+
+[node name="Messages" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Layers" type="Node2D" parent="Messages"]
+
+[node name="Messages" type="Node2D" parent="Messages/Layers"]
+visible = false
+position = Vector2( 960, 540 )
+z_as_relative = false
+script = ExtResource( 21 )
+m_bIniVis = false
+
+[node name="WELLDONE!" type="Node2D" parent="Messages/Layers/Messages"]
+z_index = -1
+z_as_relative = false
+script = ExtResource( 19 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="Messages/Layers/Messages/WELLDONE!"]
+script = ExtResource( 20 )
+Action = 0
+m_sprite = SubResource( 42 )
+
+[node name="GO!" type="Node2D" parent="Messages/Layers/Messages"]
+z_index = -2
+z_as_relative = false
+script = ExtResource( 19 )
+m_iIniAction = 1
+
+[node name="CFESpriteInstance" type="Node2D" parent="Messages/Layers/Messages/GO!"]
+script = ExtResource( 20 )
+Action = 1
+m_sprite = SubResource( 42 )
+
+[node name="Ready" type="Node2D" parent="Messages/Layers/Messages"]
+z_as_relative = false
+script = ExtResource( 21 )
+
+[node name="R" type="Node2D" parent="Messages/Layers/Messages/Ready"]
+position = Vector2( -504, 0 )
+z_index = -1
+z_as_relative = false
+script = ExtResource( 19 )
+m_iIniAction = 2
+
+[node name="CFESpriteInstance" type="Node2D" parent="Messages/Layers/Messages/Ready/R"]
+script = ExtResource( 20 )
+Action = 2
+m_sprite = SubResource( 42 )
+
+[node name="E" type="Node2D" parent="Messages/Layers/Messages/Ready"]
+position = Vector2( -296, 0 )
+z_index = -2
+z_as_relative = false
+script = ExtResource( 19 )
+m_iIniAction = 3
+
+[node name="CFESpriteInstance" type="Node2D" parent="Messages/Layers/Messages/Ready/E"]
+script = ExtResource( 20 )
+Action = 3
+m_sprite = SubResource( 42 )
+
+[node name="A" type="Node2D" parent="Messages/Layers/Messages/Ready"]
+position = Vector2( -112, 0 )
+z_index = -3
+z_as_relative = false
+script = ExtResource( 19 )
+m_iIniAction = 4
+
+[node name="CFESpriteInstance" type="Node2D" parent="Messages/Layers/Messages/Ready/A"]
+script = ExtResource( 20 )
+Action = 4
+m_sprite = SubResource( 42 )
+
+[node name="D" type="Node2D" parent="Messages/Layers/Messages/Ready"]
+position = Vector2( 144, 0 )
+z_index = -4
+z_as_relative = false
+script = ExtResource( 19 )
+m_iIniAction = 5
+
+[node name="CFESpriteInstance" type="Node2D" parent="Messages/Layers/Messages/Ready/D"]
+script = ExtResource( 20 )
+Action = 5
+m_sprite = SubResource( 42 )
+
+[node name="Y" type="Node2D" parent="Messages/Layers/Messages/Ready"]
+position = Vector2( 392, 0 )
+z_index = -5
+z_as_relative = false
+script = ExtResource( 19 )
+m_iIniAction = 6
+
+[node name="CFESpriteInstance" type="Node2D" parent="Messages/Layers/Messages/Ready/Y"]
+script = ExtResource( 20 )
+Action = 6
+m_sprite = SubResource( 42 )
+
+[node name="\?" type="Node2D" parent="Messages/Layers/Messages/Ready"]
+position = Vector2( 552, 0 )
+z_index = -6
+z_as_relative = false
+script = ExtResource( 19 )
+m_iIniAction = 7
+
+[node name="CFESpriteInstance" type="Node2D" parent="Messages/Layers/Messages/Ready/\?"]
+script = ExtResource( 20 )
+Action = 7
+m_sprite = SubResource( 42 )
+
+[node name="NewChallenge" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Layers" type="Node2D" parent="NewChallenge"]
+
+[node name="NewChallenge" type="Node2D" parent="NewChallenge/Layers"]
+visible = false
+position = Vector2( 960, 1008 )
+z_as_relative = false
+script = ExtResource( 21 )
+m_bIniVis = false
+
+[node name="lb_NewChallenge" type="Node2D" parent="NewChallenge/Layers/NewChallenge"]
+z_index = -1
+z_as_relative = false
+script = ExtResource( 7 )
+
+[node name="Label" type="Label" parent="NewChallenge/Layers/NewChallenge/lb_NewChallenge"]
+margin_top = -29.5
+margin_right = 1062.0
+margin_bottom = 29.5
+theme = ExtResource( 2 )
+text = "Challenge X Complete!"
+align = 1
+valign = 1
+
+[node name="Deaths" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Layers" type="Node2D" parent="Deaths"]
+
+[node name="Deaths" type="Node2D" parent="Deaths/Layers"]
+position = Vector2( 208, 80 )
+z_as_relative = false
+script = ExtResource( 21 )
+
+[node name="lb_Deaths" type="Node2D" parent="Deaths/Layers/Deaths"]
+position = Vector2( 48, 0 )
+z_index = -1
+z_as_relative = false
+script = ExtResource( 7 )
+
+[node name="Label" type="Label" parent="Deaths/Layers/Deaths/lb_Deaths"]
+margin_top = -29.5
+margin_right = 54.0
+margin_bottom = 29.5
+theme = ExtResource( 2 )
+text = "0"
+valign = 1
+
+[node name="lb_Deaths-1" type="Node2D" parent="Deaths/Layers/Deaths"]
+position = Vector2( -16, 0 )
+z_index = -2
+z_as_relative = false
+script = ExtResource( 7 )
+
+[node name="Label" type="Label" parent="Deaths/Layers/Deaths/lb_Deaths-1"]
+margin_top = -29.5
+margin_right = 62.0
+margin_bottom = 29.5
+theme = ExtResource( 2 )
+text = "x"
+valign = 1
+
+[node name="ic_DeadPlayerIcon" type="Node2D" parent="Deaths/Layers/Deaths"]
+position = Vector2( -96, 0 )
+z_index = -3
+z_as_relative = false
+script = ExtResource( 19 )
+m_iIniAction = 3
+
+[node name="CFESpriteInstance" type="Node2D" parent="Deaths/Layers/Deaths/ic_DeadPlayerIcon"]
+script = ExtResource( 20 )
+Action = 3
+m_sprite = SubResource( 19 )

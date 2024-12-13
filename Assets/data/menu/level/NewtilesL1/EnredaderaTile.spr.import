@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/EnredaderaTile.spr-c5e755d97cad60125a368d8287630d30.tres"
+
+[deps]
+
+source_file="res://Assets/data/menu/level/NewtilesL1/EnredaderaTile.spr"
+dest_files=[ "res://.import/EnredaderaTile.spr-c5e755d97cad60125a368d8287630d30.tres" ]
+
+[params]
+

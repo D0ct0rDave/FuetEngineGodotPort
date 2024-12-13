@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/flare.spr-6e4aeba82af209b21d0e1fcde06658d9.tres"
+
+[deps]
+
+source_file="res://Assets/data/levels/anims/Gate/flare.spr"
+dest_files=[ "res://.import/flare.spr-6e4aeba82af209b21d0e1fcde06658d9.tres" ]
+
+[params]
+

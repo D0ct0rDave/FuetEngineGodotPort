@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Spider.spr-91429d97a95f191da6dd44b8106897b6.tres"
+
+[deps]
+
+source_file="res://Assets/data/menu/level/anims/Spider/Spider.spr"
+dest_files=[ "res://.import/Spider.spr-91429d97a95f191da6dd44b8106897b6.tres" ]
+
+[params]
+

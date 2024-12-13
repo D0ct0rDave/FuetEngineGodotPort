@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFEHUDFileImportPlugin"
+type="PackedScene"
+path="res://.import/HUD-CP.hud-123ffaedb0ec83f2de7e620fca026f40.tscn"
+
+[deps]
+
+source_file="res://Assets/data/HUD/HUD-CP.hud"
+dest_files=[ "res://.import/HUD-CP.hud-123ffaedb0ec83f2de7e620fca026f40.tscn" ]
+
+[params]
+

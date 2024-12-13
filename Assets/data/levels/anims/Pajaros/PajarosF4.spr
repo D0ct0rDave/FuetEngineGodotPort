@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "PajarosF4";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../../atlas_4";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 541.0;
+						Height = 308.0;
+					};
+					TexCoords:
+					{
+						IU = 0.70263672;
+						IV = 0.00048828;
+						FU = 0.96679688;
+						FV = 0.15087891;
+					};
+				};
+			};
+		};
+	};
+};

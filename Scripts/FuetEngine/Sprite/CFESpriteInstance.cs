@@ -54,11 +54,7 @@ namespace FuetEngine
 		public void Init()
 		{		
 			// Connect("draw", OnDrawSignal);
-
-			if (m_sprite != null)
-			{
-				SetAction(0);
-			}
+			SetAction(m_iCurrentAction);
 		}
 		// --------------------------------------------------------------------
 		public void SetAction(int _iAction)

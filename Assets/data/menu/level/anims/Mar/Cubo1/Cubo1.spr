@@ -1,0 +1,213 @@
+Sprite:
+{
+	Name = "Cubo1";
+	NumActions = 2;
+	Action0:
+	{
+		Name = "nonamed";
+		PlayMode = "LOOP";
+		RandomStartTime = 1.00;
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				NumFrames = 7;
+				Frame0:
+				{
+					Material = "../../../atlas_0";
+					DelayTime = 3.0000;
+					Pivot:
+					{
+						x = 0.4700;
+						y = 0.5068;
+					};
+					Size:
+					{
+						Width = 13.7;
+						Height = 8.4;
+					};
+					TexCoords:
+					{
+						IU = 0.43240809;
+						IV = 0.92809403;
+						FU = 0.43908575;
+						FV = 0.93220204;
+					};
+				};
+				Frame1:
+				{
+					Material = "../../../atlas_0";
+					BlendTime = 0.2000;
+					Pivot:
+					{
+						x = 0.4739;
+						y = 0.4773;
+					};
+					Size:
+					{
+						Width = 6.7;
+						Height = 5.3;
+					};
+					TexCoords:
+					{
+						IU = 0.43839845;
+						IV = 0.92895126;
+						FU = 0.44165301;
+						FV = 0.93151736;
+					};
+				};
+				Frame2:
+				{
+					Material = "../../../atlas_0";
+					DelayTime = 0.1160;
+					BlendTime = 0.0840;
+					Pivot:
+					{
+						x = 0.5942;
+						y = 0.5789;
+					};
+					Size:
+					{
+						Width = 138.0;
+						Height = 38.0;
+					};
+					TexCoords:
+					{
+						IU = 0.39257813;
+						IV = 0.92724609;
+						FU = 0.45996094;
+						FV = 0.94580078;
+					};
+				};
+				Frame3:
+				{
+					Material = "../../../atlas_0";
+					DelayTime = 0.1160;
+					BlendTime = 0.0840;
+					Pivot:
+					{
+						x = 0.5938;
+						y = 0.6000;
+					};
+					Size:
+					{
+						Width = 138.0;
+						Height = 20.0;
+					};
+					TexCoords:
+					{
+						IU = 0.39257813;
+						IV = 0.94677734;
+						FU = 0.45996094;
+						FV = 0.95654297;
+					};
+				};
+				Frame4:
+				{
+					Material = "../../../atlas_0";
+					DelayTime = 0.1160;
+					BlendTime = 0.0840;
+					Pivot:
+					{
+						x = 0.5887;
+						y = 0.5652;
+					};
+					Size:
+					{
+						Width = 141.0;
+						Height = 23.0;
+					};
+					TexCoords:
+					{
+						IU = 0.26562500;
+						IV = 0.98291016;
+						FU = 0.33447266;
+						FV = 0.99414063;
+					};
+				};
+				Frame5:
+				{
+					Material = "../../../atlas_0";
+					DelayTime = 0.1160;
+					BlendTime = 0.0840;
+					Pivot:
+					{
+						x = 0.5942;
+						y = 0.6000;
+					};
+					Size:
+					{
+						Width = 138.0;
+						Height = 20.0;
+					};
+					TexCoords:
+					{
+						IU = 0.39257813;
+						IV = 0.94677734;
+						FU = 0.45996094;
+						FV = 0.95654297;
+					};
+				};
+				Frame6:
+				{
+					Material = "../../../atlas_0";
+					DelayTime = 0.1160;
+					BlendTime = 0.0840;
+					Pivot:
+					{
+						x = 0.5938;
+						y = 0.5789;
+					};
+					Size:
+					{
+						Width = 138.0;
+						Height = 38.0;
+					};
+					TexCoords:
+					{
+						IU = 0.39257813;
+						IV = 0.92724609;
+						FU = 0.45996094;
+						FV = 0.94580078;
+					};
+				};
+			};
+		};
+	};
+	Action1:
+	{
+		Name = "SpriteAction0";
+		PlayMode = "LOOP";
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../../../atlas_0";
+					DelayTime = 0.1160;
+					BlendTime = 0.0840;
+					Pivot:
+					{
+						x = 0.5887;
+						y = 0.5652;
+					};
+					Size:
+					{
+						Width = 141.0;
+						Height = 23.0;
+					};
+					TexCoords:
+					{
+						IU = 0.26562500;
+						IV = 0.98291016;
+						FU = 0.33447266;
+						FV = 0.99414063;
+					};
+				};
+			};
+		};
+	};
+};

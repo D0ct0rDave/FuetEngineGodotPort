@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/ramaNuevaF2.spr-70f8f963d3d0869c4e1f196b68c166af.tres"
+
+[deps]
+
+source_file="res://Assets/data/menu/level/anims/rama/ramaNuevaF2.spr"
+dest_files=[ "res://.import/ramaNuevaF2.spr-70f8f963d3d0869c4e1f196b68c166af.tres" ]
+
+[params]
+

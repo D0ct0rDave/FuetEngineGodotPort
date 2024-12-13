@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/checker.spr-ee692f5427c49051d46e7bd06ee817e5.tres"
+
+[deps]
+
+source_file="res://Assets/data/menu/sprites/checker.spr"
+dest_files=[ "res://.import/checker.spr-ee692f5427c49051d46e7bd06ee817e5.tres" ]
+
+[params]
+

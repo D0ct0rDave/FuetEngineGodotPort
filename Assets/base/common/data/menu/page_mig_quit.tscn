@@ -1,36 +1,41 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=17 format=2]
 
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=1]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteAction.cs" type="Script" id=2]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=1]
+[ext_resource path="res://Assets/base/common/data/fonts/default.theme.tres" type="Theme" id=2]
 [ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=3]
 [ext_resource path="res://Scripts/FuetEngine/Sprite/CFESprite.cs" type="Script" id=4]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteFrame.cs" type="Script" id=5]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=6]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=7]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=8]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=9]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteAction.cs" type="Script" id=5]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteFrame.cs" type="Script" id=6]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=7]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=8]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=9]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=10]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/inv_frame_side.spr" type="Resource" id=11]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/inv_frame_rect.spr" type="Resource" id=12]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/button_face.png" type="Texture" id=13]
 
 [sub_resource type="Resource" id=7]
-script = ExtResource( 5 )
+script = ExtResource( 6 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
 m_bVWorldCoords = false
 m_oUVIni = Vector2( 0, 0 )
 m_oUVEnd = Vector2( 1, 1 )
-m_oSize = Vector2( 128, 884 )
-m_oScale = Vector2( 0, 0 )
+m_oSize = Vector2( 128, 96 )
+m_oScale = Vector2( 1, 1 )
 m_rDelay = 0.0
-m_rBlendTime = 1.0
-m_rFrameTime = 1.0
+m_rBlendTime = 0.0
+m_rFrameTime = 0.0
 m_rStartTime = 0.0
-m_oPivot = Vector2( 1, 0 )
+m_oPivot = Vector2( 0.5, 0.5 )
 m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 13 )
 
 [sub_resource type="Resource" id=8]
-script = ExtResource( 2 )
-Name = "nonamed"
-m_rActionTime = 1.0
+script = ExtResource( 5 )
+Name = "default"
+m_rActionTime = 0.0
 m_eBlendMode = 2
 m_ePlayMode = 1
 m_rRandStartTime = 0.0
@@ -39,202 +44,153 @@ m_oSeq = [ SubResource( 7 ) ]
 [sub_resource type="Resource" id=9]
 resource_local_to_scene = true
 script = ExtResource( 4 )
-Name = "inv_frame_side"
-m_oActions = [ SubResource( 8 ) ]
-
-[sub_resource type="Resource" id=10]
-script = ExtResource( 5 )
-m_bScaleXUEqually = false
-m_bScaleYVEqually = false
-m_bUWorldCoords = false
-m_bVWorldCoords = false
-m_oUVIni = Vector2( 0, 0 )
-m_oUVEnd = Vector2( 1, 1 )
-m_oSize = Vector2( 64, 884 )
-m_oScale = Vector2( 0, 0 )
-m_rDelay = 0.0
-m_rBlendTime = 1.0
-m_rFrameTime = 1.0
-m_rStartTime = 0.0
-m_oPivot = Vector2( 0, 0 )
-m_o1OverDims = Vector2( 0, 0 )
-
-[sub_resource type="Resource" id=11]
-script = ExtResource( 2 )
-Name = "nonamed"
-m_rActionTime = 1.0
-m_eBlendMode = 2
-m_ePlayMode = 1
-m_rRandStartTime = 0.0
-m_oSeq = [ SubResource( 10 ) ]
-
-[sub_resource type="Resource" id=12]
-resource_local_to_scene = true
-script = ExtResource( 4 )
-Name = "inv_frame_rect"
-m_oActions = [ SubResource( 11 ) ]
-
-[sub_resource type="Resource" id=1]
-script = ExtResource( 5 )
-m_bScaleXUEqually = false
-m_bScaleYVEqually = false
-m_bUWorldCoords = false
-m_bVWorldCoords = false
-m_oUVIni = Vector2( 0, 0 )
-m_oUVEnd = Vector2( 1, 1 )
-m_oSize = Vector2( 0, 0 )
-m_oScale = Vector2( 0, 0 )
-m_rDelay = 0.0
-m_rBlendTime = 0.0
-m_rFrameTime = 0.0
-m_rStartTime = 0.0
-m_oPivot = Vector2( 0.5, 0.5 )
-m_o1OverDims = Vector2( 0, 0 )
-
-[sub_resource type="Resource" id=2]
-script = ExtResource( 2 )
-Name = "default"
-m_rActionTime = 0.0
-m_eBlendMode = 2
-m_ePlayMode = 1
-m_rRandStartTime = 0.0
-m_oSeq = [ SubResource( 1 ) ]
-
-[sub_resource type="Resource" id=3]
-resource_local_to_scene = true
-script = ExtResource( 4 )
 Name = "res://Assets/base/common/data/menu/sprites/button_face.spr"
-m_oActions = [ SubResource( 2 ) ]
+m_oActions = [ SubResource( 8 ) ]
 
 [node name="CFEHUD" type="Node2D"]
 script = ExtResource( 3 )
 
 [node name="Background" type="Node2D" parent="."]
-script = ExtResource( 6 )
+script = ExtResource( 1 )
 
 [node name="Layers" type="Node2D" parent="Background"]
 
-[node name="Action" type="Node" parent="Background"]
-
-[node name="Layers2" type="Node2D" parent="Background"]
-
-[node name="Background" type="Node2D" parent="Background/Layers2"]
+[node name="Background" type="Node2D" parent="Background/Layers"]
 position = Vector2( 176, 32 )
-script = ExtResource( 1 )
+z_as_relative = false
+script = ExtResource( 10 )
 
-[node name="ic_Background" type="Node2D" parent="Background/Layers2/Background"]
+[node name="ic_Background" type="Node2D" parent="Background/Layers/Background"]
 position = Vector2( 384, 64 )
-script = ExtResource( 7 )
+z_index = -1
+z_as_relative = false
+script = ExtResource( 8 )
 m_iIniAction = 0
 
-[node name="CFESpriteInstance" type="Sprite" parent="Background/Layers2/Background/ic_Background"]
-scale = Vector2( 1e-05, 1e-05 )
-offset = Vector2( -64, 442 )
-script = ExtResource( 8 )
+[node name="CFESpriteInstance" type="Node2D" parent="Background/Layers/Background/ic_Background"]
+script = ExtResource( 9 )
 Action = 0
-m_sprite = SubResource( 9 )
+m_sprite = ExtResource( 11 )
 
-[node name="ic_Background-1" type="Node2D" parent="Background/Layers2/Background"]
+[node name="ic_Background-1" type="Node2D" parent="Background/Layers/Background"]
 position = Vector2( 1024, 64 )
 scale = Vector2( -1, 1 )
-script = ExtResource( 7 )
+z_index = -2
+z_as_relative = false
+script = ExtResource( 8 )
 m_iIniAction = 0
 
-[node name="CFESpriteInstance" type="Sprite" parent="Background/Layers2/Background/ic_Background-1"]
-scale = Vector2( 1e-05, 1e-05 )
-offset = Vector2( -64, 442 )
-script = ExtResource( 8 )
+[node name="CFESpriteInstance" type="Node2D" parent="Background/Layers/Background/ic_Background-1"]
+script = ExtResource( 9 )
 Action = 0
-m_sprite = SubResource( 9 )
+m_sprite = ExtResource( 11 )
 
-[node name="ic_Background-2" type="Node2D" parent="Background/Layers2/Background"]
+[node name="ic_Background-2" type="Node2D" parent="Background/Layers/Background"]
 position = Vector2( 384, 64 )
 scale = Vector2( 10, 1 )
-script = ExtResource( 7 )
+z_index = -3
+z_as_relative = false
+script = ExtResource( 8 )
 m_iIniAction = 0
 
-[node name="CFESpriteInstance" type="Sprite" parent="Background/Layers2/Background/ic_Background-2"]
-scale = Vector2( 1e-05, 1e-05 )
-offset = Vector2( 32, 442 )
-script = ExtResource( 8 )
+[node name="CFESpriteInstance" type="Node2D" parent="Background/Layers/Background/ic_Background-2"]
+script = ExtResource( 9 )
 Action = 0
-m_sprite = SubResource( 12 )
-
-[node name="Action2" type="Node" parent="Background"]
+m_sprite = ExtResource( 12 )
 
 [node name="TEXT" type="Node2D" parent="."]
-script = ExtResource( 6 )
+script = ExtResource( 1 )
 
 [node name="Layers" type="Node2D" parent="TEXT"]
 
-[node name="Action" type="Node" parent="TEXT"]
-
-[node name="Layers2" type="Node2D" parent="TEXT"]
-
-[node name="TEXT" type="Node2D" parent="TEXT/Layers2"]
+[node name="TEXT" type="Node2D" parent="TEXT/Layers"]
 position = Vector2( 900, 480 )
-script = ExtResource( 1 )
+z_as_relative = false
+script = ExtResource( 10 )
 
-[node name="lb_TEXT" type="Node2D" parent="TEXT/Layers2/TEXT"]
+[node name="lb_TEXT" type="Node2D" parent="TEXT/Layers/TEXT"]
 position = Vector2( 0, 2 )
-script = ExtResource( 9 )
+z_index = -1
+z_as_relative = false
+script = ExtResource( 7 )
 
-[node name="Action2" type="Node" parent="TEXT"]
+[node name="Label" type="Label" parent="TEXT/Layers/TEXT/lb_TEXT"]
+margin_top = -29.5
+margin_right = 3273.0
+margin_bottom = 29.5
+theme = ExtResource( 2 )
+text = "Current progress/n will be lost./n/nAre you sure/n you want to quit?"
+align = 1
+valign = 1
 
 [node name="BT_Quit" type="Node2D" parent="."]
-script = ExtResource( 6 )
+script = ExtResource( 1 )
 
 [node name="Layers" type="Node2D" parent="BT_Quit"]
 
-[node name="Action" type="Node" parent="BT_Quit"]
-
-[node name="Layers2" type="Node2D" parent="BT_Quit"]
-
-[node name="BT_Quit" type="Node2D" parent="BT_Quit/Layers2"]
+[node name="BT_Quit" type="Node2D" parent="BT_Quit/Layers"]
 position = Vector2( 720, 752 )
-script = ExtResource( 1 )
+z_as_relative = false
+script = ExtResource( 10 )
 
-[node name="ic_Quit" type="Node2D" parent="BT_Quit/Layers2/BT_Quit"]
-script = ExtResource( 7 )
+[node name="ic_Quit" type="Node2D" parent="BT_Quit/Layers/BT_Quit"]
+z_index = -1
+z_as_relative = false
+script = ExtResource( 8 )
 m_iIniAction = 0
 
-[node name="CFESpriteInstance" type="Sprite" parent="BT_Quit/Layers2/BT_Quit/ic_Quit"]
-scale = Vector2( 1e-05, 1e-05 )
-script = ExtResource( 8 )
-Action = 0
-m_sprite = SubResource( 3 )
-
-[node name="lb_Quit" type="Node2D" parent="BT_Quit/Layers2/BT_Quit"]
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Quit/Layers/BT_Quit/ic_Quit"]
 script = ExtResource( 9 )
+Action = 0
+m_sprite = SubResource( 9 )
 
-[node name="Action2" type="Node" parent="BT_Quit"]
+[node name="lb_Quit" type="Node2D" parent="BT_Quit/Layers/BT_Quit"]
+z_index = -2
+z_as_relative = false
+script = ExtResource( 7 )
+
+[node name="Label" type="Label" parent="BT_Quit/Layers/BT_Quit/lb_Quit"]
+margin_top = -29.5
+margin_right = 75.0
+margin_bottom = 29.5
+theme = ExtResource( 2 )
+text = "Sí"
+align = 1
+valign = 1
 
 [node name="BT_Back" type="Node2D" parent="."]
-script = ExtResource( 6 )
+script = ExtResource( 1 )
 
 [node name="Layers" type="Node2D" parent="BT_Back"]
 
-[node name="Action" type="Node" parent="BT_Back"]
-
-[node name="Layers2" type="Node2D" parent="BT_Back"]
-
-[node name="BT_Back" type="Node2D" parent="BT_Back/Layers2"]
+[node name="BT_Back" type="Node2D" parent="BT_Back/Layers"]
 position = Vector2( 1056, 800 )
-script = ExtResource( 1 )
+z_as_relative = false
+script = ExtResource( 10 )
 
-[node name="ic_Back" type="Node2D" parent="BT_Back/Layers2/BT_Back"]
+[node name="ic_Back" type="Node2D" parent="BT_Back/Layers/BT_Back"]
 position = Vector2( 0, -48 )
-script = ExtResource( 7 )
+z_index = -1
+z_as_relative = false
+script = ExtResource( 8 )
 m_iIniAction = 0
 
-[node name="CFESpriteInstance" type="Sprite" parent="BT_Back/Layers2/BT_Back/ic_Back"]
-scale = Vector2( 1e-05, 1e-05 )
-script = ExtResource( 8 )
-Action = 0
-m_sprite = SubResource( 3 )
-
-[node name="lb_Back" type="Node2D" parent="BT_Back/Layers2/BT_Back"]
-position = Vector2( 0, -48 )
+[node name="CFESpriteInstance" type="Node2D" parent="BT_Back/Layers/BT_Back/ic_Back"]
 script = ExtResource( 9 )
+Action = 0
+m_sprite = SubResource( 9 )
 
-[node name="Action2" type="Node" parent="BT_Back"]
+[node name="lb_Back" type="Node2D" parent="BT_Back/Layers/BT_Back"]
+position = Vector2( 0, -48 )
+z_index = -2
+z_as_relative = false
+script = ExtResource( 7 )
+
+[node name="Label" type="Label" parent="BT_Back/Layers/BT_Back/lb_Back"]
+margin_top = -29.5
+margin_right = 121.0
+margin_bottom = 29.5
+theme = ExtResource( 2 )
+text = "No"
+align = 1
+valign = 1

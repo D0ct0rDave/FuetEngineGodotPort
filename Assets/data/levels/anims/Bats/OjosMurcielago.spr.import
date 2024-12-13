@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/OjosMurcielago.spr-3467f8316a468ad25893c448e80171a6.tres"
+
+[deps]
+
+source_file="res://Assets/data/levels/anims/Bats/OjosMurcielago.spr"
+dest_files=[ "res://.import/OjosMurcielago.spr-3467f8316a468ad25893c448e80171a6.tres" ]
+
+[params]
+

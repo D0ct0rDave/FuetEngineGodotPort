@@ -4,11 +4,13 @@ using CFEString = System.String;
 using FEReal = System.Single;
 using CFEVect2 = Godot.Vector2;
 using CFEColor = Godot.Color;
+using CFEFont = Godot.Theme; 
 //-----------------------------------------------------------------------------
 namespace FuetEngine
 {
 	public static class CFEHUDLoader
 	{
+		// --------------------------------------------------------------------
 		private static string	m_sWorkingDir;
 		private static int	m_uiFileVersion;
 
@@ -20,13 +22,13 @@ namespace FuetEngine
 
 		// creation counter to make object render properly.
 		private static int m_iObjectIdx = 0;
-		  // ------------------------------------------------------------------------------
+		// --------------------------------------------------------------------
 		private static void Reset()
 		{
 			m_rDepthFact = 1.0f;
 			m_iObjectIdx = 0;
 		}
-		// ------------------------------------------------------------------------------
+		// --------------------------------------------------------------------
 		/// Loads a HUD from a given file    
 		public static CFEHUD oLoad(CFEString _sFilename)
 		{
@@ -59,7 +61,7 @@ namespace FuetEngine
 			
 			return oHUD;
 		}
-		// ------------------------------------------------------------------------------
+		// --------------------------------------------------------------------
 		/// Loads a HUD element from disk
 		public static CFEHUDElement oLoadElement(CFEString _sFilename)
 		{
@@ -71,12 +73,12 @@ namespace FuetEngine
 
 			return oLoadElement("HUDElement",oConfig);
 		}
-		// ------------------------------------------------------------------------------
+		// --------------------------------------------------------------------
 		/// Loads a HUD element actions from disk
 		public static void LoadElementActions(CFEString _sFilename,CFEHUDElement _poElem)
 		{
 		}
-		// ------------------------------------------------------------------------------
+		// --------------------------------------------------------------------
 		/// Loads a HUD object from disk
 		public static CFEHUDObject oLoadObject(string _sFilename)
 		{
@@ -88,7 +90,7 @@ namespace FuetEngine
 
 			return oLoadObject("HUDObject", oConfig);
 		}
-		// ------------------------------------------------------------------------------	
+		// --------------------------------------------------------------------	
 		private static CFEHUDElement oLoadElement(CFEString _sPrefix, CFEConfigFile _oConfigFile)
 		{
 			// Element name
@@ -114,21 +116,21 @@ namespace FuetEngine
 			
 			return oElem;
 		}
-		// ------------------------------------------------------------------------------
+		// --------------------------------------------------------------------
 		private static void LoadElementActions(CFEString _sPrefix, CFEConfigFile _oConfigFile, CFEHUDElement _poElem)
 		{
 		}
-		// ------------------------------------------------------------------------------
+		// --------------------------------------------------------------------
 		private static CFEHUDElementAction oLoadAction(CFEString _sPrefix, CFEConfigFile _oConfigFile, CFEHUDElement _poElem)
 		{
 			return null;
 		}
-		// ------------------------------------------------------------------------------
+		// --------------------------------------------------------------------
 		private static CFEHUDObjectAction oLoadObjAction(CFEString _sPrefix, CFEConfigFile _oConfigFile, CFEHUDElement _poElem)
 		{
 			return null;
 		}
-		// ------------------------------------------------------------------------------
+		// --------------------------------------------------------------------
 		private static void LoadCommonObjectProperties(CFEString _sPrefix, CFEConfigFile _oConfigFile, CFEHUDObject _oObj)
 		{
 			// Name
@@ -175,7 +177,7 @@ namespace FuetEngine
 			_oObj.ZIndex = iGetRenderIndex(_oObj);
 			_oObj.ZAsRelative = false;
 		}
-		// ------------------------------------------------------------------------------
+		// --------------------------------------------------------------------
 		private static CFEHUDObject oLoadObject(string _sPrefix, CFEConfigFile _oConfigFile)
 		{
 			// Creation factor allows objects to be rendered properly when same depth (prevent z fighting)
@@ -197,8 +199,8 @@ namespace FuetEngine
 				if (sFont != "")
 				{
 					string sFontFile = m_sWorkingDir + "/" + sFont;
-					// CFEFont poFont = CFEFontMgr::I()->poLoad( sFontFile );
-					oLabel.SetFont(sFontFile);
+					CFEFont font = CFEFontMgr.Instance.Load(sFontFile);
+					oLabel.SetFont(font);
 				}
 				
 				string sHAlign = _oConfigFile.sGetString(_sPrefix + ".HAlignment","left");
@@ -238,7 +240,6 @@ namespace FuetEngine
 
 						spriteInstance.Name = "CFESpriteInstance";
 						spriteInstance.Init(spriteResource);
-
 						spriteInstance.SetAction(oIcon.iGetIniAction());
 						// spriteInstance.m_oColor            = oRenderColor(m_oModColor, poIcon);
 						
@@ -377,12 +378,12 @@ namespace FuetEngine
 			return null;
 		}
 
-		//---------------------------------------------------------------------
+		// --------------------------------------------------------------------
 		static float rGetObjectDepth(float _rObjDepth)
 		{
 			return m_rDepth + (m_rDepthFact * _rObjDepth);
 		}
-		//---------------------------------------------------------------------
+		// --------------------------------------------------------------------
 		private static int iGetRenderIndex(CFEHUDObject _oObj)
 		{
 			float rDepth = rGetObjectDepth(_oObj.m_rIniDepth);
@@ -390,34 +391,38 @@ namespace FuetEngine
 			int iDepthFact = (int)(rDepth * 10000.0f);
 			return iDepthFact + m_iObjectIdx;
 		}
-		//-----------------------------------------------------------------------------
+		// --------------------------------------------------------------------
 		private static EFETextHAlignmentMode eGetHAlignFromString(CFEString _sAlign)
 		{
-			if (_sAlign == "left")
+			CFEString sAlign = _sAlign.ToLower();
+
+			if (sAlign == "left")
 				return(EFETextHAlignmentMode.THAM_LEFT);
 
-		else if (_sAlign == "center")
+		else if (sAlign == "center")
 			return(EFETextHAlignmentMode.THAM_CENTER);
 
-		else if (_sAlign == "right")
+		else if (sAlign == "right")
 			return(EFETextHAlignmentMode.THAM_RIGHT);
 
 			return(EFETextHAlignmentMode.THAM_LEFT);
 		}
-		//-----------------------------------------------------------------------------
+		// --------------------------------------------------------------------
 		private static EFETextVAlignmentMode eGetVAlignFromString(CFEString _sAlign)
 		{
-			if (_sAlign == "top")
+			CFEString sAlign = _sAlign.ToLower();
+			
+			if (sAlign == "top")
 				return(EFETextVAlignmentMode.TVAM_TOP);
 
-		else if (_sAlign == "center")
+		else if (sAlign == "center")
 			return(EFETextVAlignmentMode.TVAM_CENTER);
 
-		else if (_sAlign == "bottom")
+		else if (sAlign == "bottom")
 			return(EFETextVAlignmentMode.TVAM_BOTTOM);
 
 			return(EFETextVAlignmentMode.TVAM_CENTER);
 		}
-		//---------------------------------------------------------------------
+		// --------------------------------------------------------------------
 	}
 };

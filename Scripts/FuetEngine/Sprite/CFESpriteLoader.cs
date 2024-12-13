@@ -49,6 +49,7 @@ namespace FuetEngine
                 )
             {
                 _spriteFrame.m_hMaterial = texture;
+                _spriteFrame.m_hMaterial.ResourceLocalToScene = true; 
             }
             else
             {
@@ -385,8 +386,8 @@ namespace FuetEngine
                         oFrame.m_sMaterial  = hMat;
                         oFrame.m_o1OverDims = new CFEVect2(0, 0);
                         oFrame.m_oPivot     = new CFEVect2(rPivotX, rPivotY);
-                        oFrame.m_oUVIni = new CFEVect2(rIU, rIV);
-                        oFrame.m_oUVEnd = new CFEVect2(rFU, rFV);
+                        oFrame.m_oUVIni     = new CFEVect2(rIU, rIV);
+                        oFrame.m_oUVEnd     = new CFEVect2(rFU, rFV);
                         oFrame.m_oSize      = new CFEVect2(rFWidth, rFHeight);
                         oFrame.m_rDelay     = rDelayTime;
                         oFrame.m_rBlendTime = rBlendTime;

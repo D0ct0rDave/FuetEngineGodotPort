@@ -1,0 +1,547 @@
+EditorHUD:
+{
+	WindowWidth = 1378;
+WindowHeight = 1084;
+	WindowLayout = "layout2|name=Toolbar;caption=HUD toolbar;state=2108156;dir=1;layer=10;row=0;pos=0;prop=100000;bestw=1319;besth=42;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Viewer;caption=Viewer;state=20972288;dir=5;layer=0;row=1;pos=0;prop=100000;bestw=800;besth=609;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Timeline;caption=Actions & Timeline;state=23070716;dir=3;layer=2;row=0;pos=0;prop=129476;bestw=864;besth=199;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1675;floaty=780;floatw=872;floath=225|name=Layers;caption=HUD Objects;state=16779260;dir=2;layer=1;row=0;pos=0;prop=112302;bestw=411;besth=387;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Properties;caption=HUD Object properties;state=16779260;dir=3;layer=2;row=0;pos=1;prop=58222;bestw=411;besth=387;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=1115;floaty=454;floatw=419;floath=413|dock_size(1,10,0)=44|dock_size(5,0,1)=398|dock_size(2,1,0)=342|dock_size(3,2,0)=487|";
+	ViewGrid = true;
+	GridSelection = 4;
+	Background = "€
+ó";
+	ViewBackground = true;
+	GuardBandMode = 8;
+	DebugApp =  "(null)";
+	Zoom =  0.473;
+	TimeScale =  1.0000;
+	TransX = -236.181;
+	TransY = -265.028;
+	Element0:
+	{
+		Object = "OtherScreen";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = true;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element1:
+		{
+			Object = "[OtherScreen-0]OtherScreen";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "../menu/_OtherScreen";
+		};
+
+			Element2:
+			{
+				Object = "[OtherScreen-0]backgroud";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element3:
+			{
+				Object = "[OtherScreen-0]minus_button";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+	Element4:
+	{
+		Object = "NewChallenge";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element5:
+		{
+			Object = "lb_NewChallenge";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element6:
+	{
+		Object = "Player0";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element7:
+		{
+			Object = "lb_Score0";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element8:
+		{
+			Object = "lb_Deaths0";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element9:
+		{
+			Object = "lb_Deaths0-1";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element10:
+		{
+			Object = "ic_Deaths0";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element11:
+		{
+			Object = "g_Ready0";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+			Element12:
+			{
+				Object = "ic_Ready0";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element13:
+			{
+				Object = "ic_Ready0-1";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element14:
+			{
+				Object = "ic_Ready0-2";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element15:
+			{
+				Object = "ic_Ready0-3";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element16:
+			{
+				Object = "ic_Ready0-4";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element17:
+			{
+				Object = "ic_Ready0-5";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+		Element18:
+		{
+			Object = "lb_Timer0";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element19:
+	{
+		Object = "Player1";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element20:
+		{
+			Object = "lb_Score1";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element21:
+		{
+			Object = "lb_Deaths1";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element22:
+		{
+			Object = "lb_Deaths1-1";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element23:
+		{
+			Object = "ic_Deaths1";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element24:
+		{
+			Object = "g_Ready1";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+			Element25:
+			{
+				Object = "ic_Ready1";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element26:
+			{
+				Object = "ic_Ready1-1";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element27:
+			{
+				Object = "ic_Ready1-2";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element28:
+			{
+				Object = "ic_Ready1-3";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element29:
+			{
+				Object = "ic_Ready1-4";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element30:
+			{
+				Object = "ic_Ready1-5";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+		Element31:
+		{
+			Object = "lb_Timer1";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element32:
+	{
+		Object = "Timer";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element33:
+		{
+			Object = "lb_Timer";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+	Element34:
+	{
+		Object = "Messages";
+		Locked = false;
+		LinkScale = true;
+		Show = true;
+		Expanded = false;
+		Selected = false;
+		Visible = true;
+		Prefab= "";
+	};
+
+		Element35:
+		{
+			Object = "WELLDONE!";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element36:
+		{
+			Object = "GO!";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+		Element37:
+		{
+			Object = "Ready";
+			Locked = false;
+			LinkScale = true;
+			Show = true;
+			Expanded = false;
+			Selected = false;
+			Visible = false;
+			Prefab= "";
+		};
+
+			Element38:
+			{
+				Object = "R";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element39:
+			{
+				Object = "E";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element40:
+			{
+				Object = "A";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element41:
+			{
+				Object = "D";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element42:
+			{
+				Object = "Y";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+			Element43:
+			{
+				Object = "?";
+				Locked = false;
+				LinkScale = true;
+				Show = true;
+				Expanded = false;
+				Selected = false;
+				Visible = false;
+				Prefab= "";
+			};
+
+	NumElements = 44;
+
+};

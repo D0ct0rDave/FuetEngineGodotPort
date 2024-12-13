@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Tilesuelomin1.spr-0dbd29b790d6ca2e67b7d0e39455b59b.tres"
+
+[deps]
+
+source_file="res://Assets/data/menu/level/Ship/Tilesuelomin1.spr"
+dest_files=[ "res://.import/Tilesuelomin1.spr-0dbd29b790d6ca2e67b7d0e39455b59b.tres" ]
+
+[params]
+

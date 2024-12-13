@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Arbustos_fondo.spr-5f8c5503f110a88c68ba8f0afd6582c3.tres"
+
+[deps]
+
+source_file="res://Assets/data/levels/NewtilesL2/Arbustos_fondo.spr"
+dest_files=[ "res://.import/Arbustos_fondo.spr-5f8c5503f110a88c68ba8f0afd6582c3.tres" ]
+
+[params]
+

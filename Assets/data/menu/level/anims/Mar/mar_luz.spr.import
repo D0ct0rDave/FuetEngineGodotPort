@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/mar_luz.spr-e0a18d2ad456c203db0af321e487bcf5.tres"
+
+[deps]
+
+source_file="res://Assets/data/menu/level/anims/Mar/mar_luz.spr"
+dest_files=[ "res://.import/mar_luz.spr-e0a18d2ad456c203db0af321e487bcf5.tres" ]
+
+[params]
+

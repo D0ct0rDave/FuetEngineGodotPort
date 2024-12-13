@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Big1st.spr-345c22824894744d92db68d9ba0a6ae1.tres"
+
+[deps]
+
+source_file="res://Assets/data/menu/level/NewtilesL1/Big1st.spr"
+dest_files=[ "res://.import/Big1st.spr-345c22824894744d92db68d9ba0a6ae1.tres" ]
+
+[params]
+

@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "Palmera2_f1";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../../atlas_2";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 177.0;
+						Height = 230.0;
+					};
+					TexCoords:
+					{
+						IU = 0.00048828;
+						IV = 0.87597656;
+						FU = 0.08691406;
+						FV = 0.98828125;
+					};
+				};
+			};
+		};
+	};
+};

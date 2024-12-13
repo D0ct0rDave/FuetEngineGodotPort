@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "TilesueloShip";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../atlas_2";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 599.0;
+						Height = 116.0;
+					};
+					TexCoords:
+					{
+						IU = 0.22119141;
+						IV = 0.54882813;
+						FU = 0.51367188;
+						FV = 0.60546875;
+					};
+				};
+			};
+		};
+	};
+};

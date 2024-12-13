@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Spidereyes2.spr-77a3517047ce6d7443f7fdd8b2a6fdfc.tres"
+
+[deps]
+
+source_file="res://Assets/data/menu/level/anims/Spider/Spidereyes2.spr"
+dest_files=[ "res://.import/Spidereyes2.spr-77a3517047ce6d7443f7fdd8b2a6fdfc.tres" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/Enredmin.spr-74c6fe29558b1ef107a507eb352a3936.tres"
+
+[deps]
+
+source_file="res://Assets/data/levels/NewtilesL3/Enredmin.spr"
+dest_files=[ "res://.import/Enredmin.spr-74c6fe29558b1ef107a507eb352a3936.tres" ]
+
+[params]
+

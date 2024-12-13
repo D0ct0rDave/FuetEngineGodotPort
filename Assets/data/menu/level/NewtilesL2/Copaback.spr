@@ -1,0 +1,34 @@
+Sprite:
+{
+	Name = "Copaback";
+	NumActions = 1;
+	Action0:
+	{
+		Frames:
+		{
+			Type = "Complete";
+			Complete:
+			{
+				Frame0:
+				{
+					Material = "../atlas_1";
+					Pivot:
+					{
+					};
+					Size:
+					{
+						Width = 1500.0;
+						Height = 453.0;
+					};
+					TexCoords:
+					{
+						IU = 0.00048828;
+						IV = 0.23291016;
+						FU = 0.73291016;
+						FV = 0.45410156;
+					};
+				};
+			};
+		};
+	};
+};

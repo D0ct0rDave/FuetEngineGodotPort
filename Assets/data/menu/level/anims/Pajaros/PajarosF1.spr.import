@@ -1,0 +1,13 @@
+[remap]
+
+importer="CFESpriteFileImportPlugin"
+type="Resource"
+path="res://.import/PajarosF1.spr-0d285227767ff9207de24137d65ca9bb.tres"
+
+[deps]
+
+source_file="res://Assets/data/menu/level/anims/Pajaros/PajarosF1.spr"
+dest_files=[ "res://.import/PajarosF1.spr-0d285227767ff9207de24137d65ca9bb.tres" ]
+
+[params]
+

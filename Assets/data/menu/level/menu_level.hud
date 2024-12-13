@@ -1,0 +1,9757 @@
+HUD:
+{
+	FileVersion = 2;
+	NumElements = 1;
+	Element0:
+	{
+		Name = "00.Level";
+		NumLayers = 1;
+		Layer0:
+		{
+			Type = "Group";
+			Name = "00.Level";
+			Position:
+			{
+				x = 8000.0000;
+				y = 250.0000;
+			};
+			Scale:
+			{
+			};
+			Color:
+			{
+			};
+			DepthFact = 1.0000;
+			NumObjects = 1;
+			Object0:
+			{
+				Type = "Group";
+				Name = "New_Background";
+				Position:
+				{
+				};
+				Scale:
+				{
+				};
+				Color:
+				{
+				};
+				DepthFact = 1.0000;
+				NumObjects = 13;
+				Object0:
+				{
+					Type = "Group";
+					Name = "00.Gradient";
+					Position:
+					{
+						x = -14976.0000;
+						y = -2000.0000;
+					};
+					Depth = 2.2000;
+					Scale:
+					{
+						x = 3.0000;
+						y = 3.0000;
+					};
+					Color:
+					{
+					};
+					DepthFact = 1.0000;
+					NumObjects = 3;
+					Object0:
+					{
+						Type = "Icon";
+						Sprite = "tiles/l0-grad-up";
+						Name = "ic_00.Gradient";
+						Action = 0;
+						Position:
+						{
+						};
+						Depth = 1.0000;
+						Scale:
+						{
+							x = 6.0000;
+							y = 2.0000;
+						};
+						Color:
+						{
+						};
+					};
+					Object1:
+					{
+						Type = "Icon";
+						Sprite = "tiles/l0-grad-up";
+						Name = "ic_00.Gradient-1";
+						Action = 0;
+						Position:
+						{
+						};
+						Depth = 1.0000;
+						Scale:
+						{
+							x = 6.0000;
+							y = -2.0000;
+						};
+						Color:
+						{
+						};
+					};
+					Object2:
+					{
+						Type = "Icon";
+						Sprite = "tiles/l0-grad-down";
+						Name = "ic_00.Gradient-2";
+						Action = 0;
+						Position:
+						{
+							y = 1024.0000;
+						};
+						Depth = 1.0000;
+						Scale:
+						{
+							x = 6.0000;
+							y = 2.0000;
+						};
+						Color:
+						{
+						};
+					};
+				};
+				Object1:
+				{
+					Type = "Group";
+					Name = "Isle";
+					Position:
+					{
+					};
+					Depth = 2.1000;
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+					DepthFact = 1.1000;
+					NumObjects = 6;
+					Object0:
+					{
+						Type = "Icon";
+						Sprite = "NewtilesL1/isla1";
+						Name = "ic_Isle";
+						Action = 0;
+						Position:
+						{
+							x = 1300.0000;
+							y = 163.0000;
+						};
+						Depth = 0.0500;
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+					Object1:
+					{
+						Type = "Icon";
+						Sprite = "NewtilesL1/isla1";
+						Name = "ic_Isle-1";
+						Action = 0;
+						Position:
+						{
+							x = 3307.0000;
+							y = 118.0000;
+						};
+						Depth = 0.0500;
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+					Object2:
+					{
+						Type = "Icon";
+						Sprite = "NewtilesL1/isla1";
+						Name = "ic_Isle-2";
+						Action = 0;
+						Position:
+						{
+							x = 5600.0000;
+							y = 163.0000;
+						};
+						Depth = 0.0500;
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+					Object3:
+					{
+						Type = "Icon";
+						Sprite = "NewtilesL1/isla2";
+						Name = "ic_Isle-4";
+						Action = 0;
+						Position:
+						{
+							x = -900.0000;
+							y = 64.0000;
+						};
+						Depth = 0.0500;
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+					Object4:
+					{
+						Type = "Icon";
+						Sprite = "NewtilesL1/isla2";
+						Name = "ic_Isle-5";
+						Action = 0;
+						Position:
+						{
+							x = -7400.0000;
+							y = 32.0000;
+						};
+						Depth = 0.0500;
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+					Object5:
+					{
+						Type = "Icon";
+						Sprite = "NewtilesL1/isla1";
+						Name = "ic_Isle-6";
+						Action = 0;
+						Position:
+						{
+							x = -6400.0000;
+							y = -37.0000;
+						};
+						Depth = 0.0500;
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+				};
+				Object2:
+				{
+					Type = "Group";
+					Name = "Clouds";
+					Position:
+					{
+					};
+					Depth = 2.0000;
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+					NumObjects = 2;
+					Object0:
+					{
+						Type = "Group";
+						Name = "g_Clouds";
+						Position:
+						{
+							x = 10029.0000;
+							y = 49.0000;
+						};
+						Depth = 0.0500;
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 3;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/nube";
+							Name = "ic_Clouds-6";
+							Action = 0;
+							Position:
+							{
+								x = -3000.0000;
+								y = -131.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/nube";
+							Name = "ic_Clouds-7";
+							Action = 0;
+							Position:
+							{
+								x = -7000.0000;
+								y = -1.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/nube";
+							Name = "ic_Clouds-8";
+							Action = 0;
+							Position:
+							{
+								x = -9000.0000;
+								y = 100.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object1:
+					{
+						Type = "Group";
+						Name = "g_Clouds-1";
+						Position:
+						{
+							x = 29.0000;
+							y = 22.0000;
+						};
+						Depth = 0.0500;
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 6;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/nube";
+							Name = "ic_Clouds-9";
+							Action = 0;
+							Position:
+							{
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/nube";
+							Name = "ic_Clouds-10";
+							Action = 0;
+							Position:
+							{
+								x = -1100.0000;
+								y = 275.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/nube";
+							Name = "ic_Clouds-11";
+							Action = 0;
+							Position:
+							{
+								x = -1900.0000;
+								y = 11.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/nube";
+							Name = "ic_Clouds-12";
+							Action = 0;
+							Position:
+							{
+								x = -3000.0000;
+								y = -131.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/nube";
+							Name = "ic_Clouds-13";
+							Action = 0;
+							Position:
+							{
+								x = -7000.0000;
+								y = -1.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object5:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/nube";
+							Name = "ic_Clouds-14";
+							Action = 0;
+							Position:
+							{
+								x = -8500.0000;
+								y = 30.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+				};
+				Object3:
+				{
+					Type = "Group";
+					Name = "arboles_fondo";
+					Position:
+					{
+					};
+					Depth = 1.9000;
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+					NumObjects = 4;
+					Object0:
+					{
+						Type = "Group";
+						Name = "g_fondo-1";
+						Position:
+						{
+							x = 5256.0000;
+							y = 164.0000;
+						};
+						Depth = 0.1000;
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 3;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Arbustos";
+							Name = "ic_fondo-3";
+							Action = 0;
+							Position:
+							{
+								x = -169.0000;
+								y = 497.0000;
+							};
+							Scale:
+							{
+							};
+							Angle = 4.7124;
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Arbustos";
+							Name = "ic_fondo-4";
+							Action = 0;
+							Position:
+							{
+								x = -37.0000;
+								y = 413.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Arbustos";
+							Name = "ic_fondo-5";
+							Action = 0;
+							Position:
+							{
+								x = 120.0000;
+								y = 456.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object1:
+					{
+						Type = "Group";
+						Name = "g_fondo-5";
+						Position:
+						{
+						};
+						Depth = 0.1500;
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 3;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Arbustos";
+							Name = "ic_fondo-17";
+							Action = 0;
+							Position:
+							{
+								x = -3422.0000;
+								y = 623.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Arbustos";
+							Name = "ic_fondo-16";
+							Action = 0;
+							Position:
+							{
+								x = -3307.0000;
+								y = 603.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Arbustos";
+							Name = "ic_fondo-15";
+							Action = 0;
+							Position:
+							{
+								x = -3559.0000;
+								y = 626.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object2:
+					{
+						Type = "Group";
+						Name = "g_fondo-7";
+						Position:
+						{
+							x = -1100.0000;
+						};
+						Depth = 0.1500;
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 3;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Arbustos";
+							Name = "ic_fondo-20";
+							Action = 0;
+							Position:
+							{
+								x = -3422.0000;
+								y = 623.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Arbustos";
+							Name = "ic_fondo-19";
+							Action = 0;
+							Position:
+							{
+								x = -3307.0000;
+								y = 603.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Arbustos";
+							Name = "ic_fondo-18";
+							Action = 0;
+							Position:
+							{
+								x = -3559.0000;
+								y = 626.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object3:
+					{
+						Type = "Group";
+						Name = "g_fondo-9";
+						Position:
+						{
+							x = -325.0000;
+						};
+						Depth = 0.1500;
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 3;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Arbustos";
+							Name = "ic_fondo-23";
+							Action = 0;
+							Position:
+							{
+								x = -3422.0000;
+								y = 623.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Arbustos";
+							Name = "ic_fondo-22";
+							Action = 0;
+							Position:
+							{
+								x = -3307.0000;
+								y = 603.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Arbustos";
+							Name = "ic_fondo-21";
+							Action = 0;
+							Position:
+							{
+								x = -3559.0000;
+								y = 626.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+				};
+				Object4:
+				{
+					Type = "Group";
+					Name = "Mountain";
+					Position:
+					{
+					};
+					Depth = 1.8000;
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+					NumObjects = 5;
+					Object0:
+					{
+						Type = "Icon";
+						Sprite = "NewtilesL1/Mountain";
+						Name = "ic_Mountain";
+						Action = 0;
+						Position:
+						{
+							x = 704.0000;
+							y = 287.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+					Object1:
+					{
+						Type = "Icon";
+						Sprite = "NewtilesL1/Mountain";
+						Name = "ic_Mountain-1";
+						Action = 0;
+						Position:
+						{
+							x = 3935.0000;
+							y = 469.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+					Object2:
+					{
+						Type = "Icon";
+						Sprite = "NewtilesL1/Mountain";
+						Name = "ic_Mountain-5";
+						Action = 0;
+						Position:
+						{
+							x = -1300.0000;
+							y = 309.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+					Object3:
+					{
+						Type = "Icon";
+						Sprite = "NewtilesL1/Mountain";
+						Name = "ic_Mountain-6";
+						Action = 0;
+						Position:
+						{
+							x = -4000.0000;
+							y = 467.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+					Object4:
+					{
+						Type = "Icon";
+						Sprite = "NewtilesL1/Mountain";
+						Name = "ic_Mountain-7";
+						Action = 0;
+						Position:
+						{
+							x = -8000.0000;
+							y = 300.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+				};
+				Object5:
+				{
+					Type = "Group";
+					Name = "Pajaros";
+					Position:
+					{
+					};
+					Depth = 1.7000;
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+					NumObjects = 2;
+					Object0:
+					{
+						Type = "Group";
+						Name = "PajarosStatic";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 2;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "anims/Pajaros/Pajaros";
+							Name = "ic_PajarosStatic";
+							Action = 0;
+							Position:
+							{
+								x = -3456.0000;
+								y = 384.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "anims/Pajaros/Pajaros";
+							Name = "ic_PajarosStatic-1";
+							Action = 0;
+							Position:
+							{
+								x = -299.0000;
+								y = 220.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object1:
+					{
+						Type = "Group";
+						Name = "PajarosAnim";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 2;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "anims/Pajaros/Pajaros";
+							Name = "ic_PajarosAnim-4";
+							Action = 0;
+							Position:
+							{
+								x = 6800.0000;
+								y = 600.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "anims/Pajaros/Pajaros";
+							Name = "ic_PajarosAnim-5";
+							Action = 0;
+							Position:
+							{
+								x = 3344.0000;
+								y = 736.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+				};
+				Object6:
+				{
+					Type = "Group";
+					Name = "Background";
+					Position:
+					{
+					};
+					Depth = 1.5000;
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+					NumObjects = 7;
+					Object0:
+					{
+						Type = "Group";
+						Name = "g_Background-20";
+						Position:
+						{
+							x = -9131.0000;
+							y = -49.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 15;
+						Object0:
+						{
+							Type = "Group";
+							Name = "g_Background-21";
+							Position:
+							{
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 3;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-89";
+								Action = 0;
+								Position:
+								{
+									x = -122.0000;
+									y = 421.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-90";
+								Action = 0;
+								Position:
+								{
+									x = 130.0000;
+									y = 398.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-91";
+								Action = 0;
+								Position:
+								{
+									y = 370.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera";
+							Name = "ic_Background-92";
+							Action = 0;
+							Position:
+							{
+								x = 1200.0000;
+								y = 359.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Group";
+							Name = "g_Background-22";
+							Position:
+							{
+								x = 1300.0000;
+								y = 93.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 2;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-93";
+								Action = 0;
+								Position:
+								{
+									x = -122.0000;
+									y = 421.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-94";
+								Action = 0;
+								Position:
+								{
+									y = 370.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera";
+							Name = "ic_Background-95";
+							Action = 0;
+							Position:
+							{
+								x = 2000.0000;
+								y = 286.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera";
+							Name = "ic_Background-96";
+							Action = 0;
+							Position:
+							{
+								x = 2841.0000;
+								y = 243.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object5:
+						{
+							Type = "Group";
+							Name = "g_Background-23";
+							Position:
+							{
+								x = 2000.0000;
+								y = 16.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 3;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-97";
+								Action = 0;
+								Position:
+								{
+									x = -122.0000;
+									y = 421.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-98";
+								Action = 0;
+								Position:
+								{
+									x = 130.0000;
+									y = 398.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-99";
+								Action = 0;
+								Position:
+								{
+									y = 370.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object6:
+						{
+							Type = "Group";
+							Name = "g_Background-24";
+							Position:
+							{
+								x = 2889.0000;
+								y = 16.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 3;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-100";
+								Action = 0;
+								Position:
+								{
+									x = -122.0000;
+									y = 421.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-101";
+								Action = 0;
+								Position:
+								{
+									x = 130.0000;
+									y = 398.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-102";
+								Action = 0;
+								Position:
+								{
+									y = 370.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object7:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera";
+							Name = "ic_Background-103";
+							Action = 0;
+							Position:
+							{
+								x = 2728.0000;
+								y = 309.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object8:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera";
+							Name = "ic_Background-104";
+							Action = 0;
+							Position:
+							{
+								x = -42.0000;
+								y = 316.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object9:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera";
+							Name = "ic_Background-105";
+							Action = 0;
+							Position:
+							{
+								x = 138.0000;
+								y = 316.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object10:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera";
+							Name = "ic_Background-106";
+							Action = 0;
+							Position:
+							{
+								x = 879.0000;
+								y = 345.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object11:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Big1st";
+							Name = "ic_Background-107";
+							Action = 0;
+							Position:
+							{
+								x = 3000.0000;
+								y = 274.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object12:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/TileBG1";
+							Name = "ic_Background-108";
+							Action = 0;
+							Position:
+							{
+								x = 720.0000;
+								y = 438.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object13:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/TileBG1";
+							Name = "ic_Background-109";
+							Action = 0;
+							Position:
+							{
+								x = -719.0000;
+								y = 434.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object14:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/TileBG1";
+							Name = "ic_Background-110";
+							Action = 0;
+							Position:
+							{
+								y = 438.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object1:
+					{
+						Type = "Group";
+						Name = "g_Background-25";
+						Position:
+						{
+							x = -6254.0000;
+							y = -49.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 6;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Monolit";
+							Name = "ic_Background-111";
+							Action = 0;
+							Position:
+							{
+								x = 836.0000;
+								y = 317.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Group";
+							Name = "g_Background-26";
+							Position:
+							{
+								x = 721.0000;
+								y = 26.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 3;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-112";
+								Action = 0;
+								Position:
+								{
+									x = -122.0000;
+									y = 421.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-113";
+								Action = 0;
+								Position:
+								{
+									x = 130.0000;
+									y = 398.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-114";
+								Action = 0;
+								Position:
+								{
+									y = 370.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/TileBG1";
+							Name = "ic_Background-115";
+							Action = 0;
+							Position:
+							{
+								x = 720.0000;
+								y = 440.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Big2nd";
+							Name = "ic_Background-116";
+							Action = 0;
+							Position:
+							{
+								x = 1210.0000;
+								y = 536.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/TileBG1";
+							Name = "ic_Background-117";
+							Action = 0;
+							Position:
+							{
+								x = -719.0000;
+								y = 434.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object5:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/TileBG1";
+							Name = "ic_Background-118";
+							Action = 0;
+							Position:
+							{
+								y = 438.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object2:
+					{
+						Type = "Group";
+						Name = "g_Background-27";
+						Position:
+						{
+							x = -3375.0000;
+							y = -45.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 9;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera";
+							Name = "ic_Background-119";
+							Action = 0;
+							Position:
+							{
+								x = 776.0000;
+								y = 318.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera2";
+							Name = "ic_Background-120";
+							Action = 0;
+							Position:
+							{
+								x = 1200.0000;
+								y = 367.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Group";
+							Name = "g_Background-28";
+							Position:
+							{
+								x = 1300.0000;
+								y = 50.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 2;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-121";
+								Action = 0;
+								Position:
+								{
+									x = -151.0000;
+									y = 451.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-122";
+								Action = 0;
+								Position:
+								{
+									x = 130.0000;
+									y = 437.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object3:
+						{
+							Type = "Group";
+							Name = "g_Background-29";
+							Position:
+							{
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 4;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/TileBG2";
+								Name = "ic_Background-123";
+								Action = 0;
+								Position:
+								{
+									x = 1439.0000;
+									y = 438.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Name = "ic_Background-124";
+								Action = 0;
+								Position:
+								{
+									x = 1486.0000;
+									y = 635.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Name = "ic_Background-125";
+								Action = 0;
+								Position:
+								{
+									x = 1486.0000;
+									y = 635.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object3:
+							{
+								Type = "Icon";
+								Name = "ic_Background-126";
+								Action = 0;
+								Position:
+								{
+									x = 1486.0000;
+									y = 635.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object4:
+						{
+							Type = "Group";
+							Name = "g_Background-30";
+							Position:
+							{
+								x = 500.0000;
+								y = 59.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 3;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-127";
+								Action = 0;
+								Position:
+								{
+									x = -122.0000;
+									y = 421.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-128";
+								Action = 0;
+								Position:
+								{
+									x = 130.0000;
+									y = 398.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-129";
+								Action = 0;
+								Position:
+								{
+									y = 320.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object5:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera2";
+							Name = "ic_Background-130";
+							Action = 0;
+							Position:
+							{
+								x = 561.0000;
+								y = 339.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object6:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Monolit";
+							Name = "ic_Background-131";
+							Action = 0;
+							Position:
+							{
+								x = 1000.0000;
+								y = 447.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object7:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/TileBG1";
+							Name = "ic_Background-132";
+							Action = 0;
+							Position:
+							{
+								x = 720.0000;
+								y = 438.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object8:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/TileBG5";
+							Name = "ic_Background-133";
+							Action = 0;
+							Position:
+							{
+								x = 209.0000;
+								y = 438.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object3:
+					{
+						Type = "Group";
+						Name = "g_Background-31";
+						Position:
+						{
+							x = -497.0000;
+							y = -45.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 17;
+						Object0:
+						{
+							Type = "Group";
+							Name = "g_Background-32";
+							Position:
+							{
+								x = 1300.0000;
+								y = -26.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 3;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-134";
+								Action = 0;
+								Position:
+								{
+									x = -151.0000;
+									y = 451.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-135";
+								Action = 0;
+								Position:
+								{
+									x = -37.0000;
+									y = 461.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-136";
+								Action = 0;
+								Position:
+								{
+									x = 130.0000;
+									y = 437.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object1:
+						{
+							Type = "Group";
+							Name = "g_Background-33";
+							Position:
+							{
+								x = 1300.0000;
+								y = -26.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 3;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-137";
+								Action = 0;
+								Position:
+								{
+									x = -151.0000;
+									y = 451.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-138";
+								Action = 0;
+								Position:
+								{
+									x = -37.0000;
+									y = 461.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-139";
+								Action = 0;
+								Position:
+								{
+									x = 130.0000;
+									y = 437.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object2:
+						{
+							Type = "Group";
+							Name = "g_Background-34";
+							Position:
+							{
+								x = 500.0000;
+								y = 48.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 3;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-140";
+								Action = 0;
+								Position:
+								{
+									x = -122.0000;
+									y = 421.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-141";
+								Action = 0;
+								Position:
+								{
+									x = 130.0000;
+									y = 398.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-142";
+								Action = 0;
+								Position:
+								{
+									y = 320.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera2";
+							Name = "ic_Background-143";
+							Action = 0;
+							Position:
+							{
+								x = 400.0000;
+								y = 354.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Monolit";
+							Name = "ic_Background-144";
+							Action = 0;
+							Position:
+							{
+								x = 1045.0000;
+								y = 354.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object5:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera2";
+							Name = "ic_Background-145";
+							Action = 0;
+							Position:
+							{
+								x = -500.0000;
+								y = 327.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object6:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera";
+							Name = "ic_Background-146";
+							Action = 0;
+							Position:
+							{
+								x = -350.0000;
+								y = 301.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object7:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera2";
+							Name = "ic_Background-147";
+							Action = 0;
+							Position:
+							{
+								x = -205.0000;
+								y = 285.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object8:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera";
+							Name = "ic_Background-148";
+							Action = 0;
+							Position:
+							{
+								x = 607.0000;
+								y = 350.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object9:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera2";
+							Name = "ic_Background-149";
+							Action = 0;
+							Position:
+							{
+								x = 900.0000;
+								y = 329.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object10:
+						{
+							Type = "Group";
+							Name = "g_Background-35";
+							Position:
+							{
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 4;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/TileBG2";
+								Name = "ic_Background-150";
+								Action = 0;
+								Position:
+								{
+									x = 1439.0000;
+									y = 438.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Name = "ic_Background-151";
+								Action = 0;
+								Position:
+								{
+									x = 1486.0000;
+									y = 635.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Name = "ic_Background-152";
+								Action = 0;
+								Position:
+								{
+									x = 1486.0000;
+									y = 635.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object3:
+							{
+								Type = "Icon";
+								Name = "ic_Background-153";
+								Action = 0;
+								Position:
+								{
+									x = 1486.0000;
+									y = 635.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object11:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/TileBG1";
+							Name = "ic_Background-154";
+							Action = 0;
+							Position:
+							{
+								x = 720.0000;
+								y = 438.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object12:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Big2nd";
+							Name = "ic_Background-155";
+							Action = 0;
+							Position:
+							{
+								y = 300.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object13:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Head";
+							Name = "ic_Background-156";
+							Action = 0;
+							Position:
+							{
+								x = -1035.0000;
+								y = 382.0000;
+							};
+							Depth = 0.0500;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object14:
+						{
+							Type = "Group";
+							Name = "g_Background-36";
+							Position:
+							{
+								x = -300.0000;
+								y = -31.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 3;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-157";
+								Action = 0;
+								Position:
+								{
+									x = -151.0000;
+									y = 451.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-158";
+								Action = 0;
+								Position:
+								{
+									x = 130.0000;
+									y = 437.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-159";
+								Action = 0;
+								Position:
+								{
+									x = -6.0000;
+									y = 467.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object15:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/TileBG1";
+							Name = "ic_Background-160";
+							Action = 0;
+							Position:
+							{
+								x = -719.0000;
+								y = 434.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object16:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/TileBG1";
+							Name = "ic_Background-161";
+							Action = 0;
+							Position:
+							{
+								y = 438.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object4:
+					{
+						Type = "Group";
+						Name = "g_Background-37";
+						Position:
+						{
+							x = 2379.0000;
+							y = -41.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 12;
+						Object0:
+						{
+							Type = "Group";
+							Name = "g_Background-38";
+							Position:
+							{
+								x = 200.0000;
+								y = -56.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 3;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-162";
+								Action = 0;
+								Position:
+								{
+									x = -151.0000;
+									y = 424.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-163";
+								Action = 0;
+								Position:
+								{
+									x = -37.0000;
+									y = 461.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-164";
+								Action = 0;
+								Position:
+								{
+									x = 120.0000;
+									y = 456.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object1:
+						{
+							Type = "Group";
+							Name = "g_Background-39";
+							Position:
+							{
+								x = 688.0000;
+								y = 194.0000;
+							};
+							Depth = 0.0500;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 3;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-165";
+								Action = 0;
+								Position:
+								{
+									x = -151.0000;
+									y = 424.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-166";
+								Action = 0;
+								Position:
+								{
+									x = -37.0000;
+									y = 461.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-167";
+								Action = 0;
+								Position:
+								{
+									x = 120.0000;
+									y = 456.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object2:
+						{
+							Type = "Group";
+							Name = "g_Background-40";
+							Position:
+							{
+								x = 1151.0000;
+								y = 180.0000;
+							};
+							Depth = 0.1000;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 3;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-168";
+								Action = 0;
+								Position:
+								{
+									x = -151.0000;
+									y = 424.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-169";
+								Action = 0;
+								Position:
+								{
+									x = -37.0000;
+									y = 461.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-170";
+								Action = 0;
+								Position:
+								{
+									x = 120.0000;
+									y = 456.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object3:
+						{
+							Type = "Group";
+							Name = "g_Background-41";
+							Position:
+							{
+								x = -600.0000;
+								y = -56.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 3;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-171";
+								Action = 0;
+								Position:
+								{
+									x = -172.0000;
+									y = 482.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-172";
+								Action = 0;
+								Position:
+								{
+									x = -37.0000;
+									y = 461.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-173";
+								Action = 0;
+								Position:
+								{
+									x = 120.0000;
+									y = 456.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/TileBG4";
+							Name = "ic_Background-174";
+							Action = 0;
+							Position:
+							{
+								x = 500.0000;
+								y = 438.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object5:
+						{
+							Type = "Icon";
+							Name = "ic_Background-175";
+							Action = 0;
+							Position:
+							{
+								x = 1440.0000;
+								y = 438.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object6:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera2";
+							Name = "ic_Background-176";
+							Action = 0;
+							Position:
+							{
+								x = -826.0000;
+								y = 292.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object7:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera";
+							Name = "ic_Background-177";
+							Action = 0;
+							Position:
+							{
+								x = -640.0000;
+								y = 329.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object8:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera2";
+							Name = "ic_Background-178";
+							Action = 0;
+							Position:
+							{
+								x = -505.0000;
+								y = 309.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object9:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Head";
+							Name = "ic_Background-179";
+							Action = 0;
+							Position:
+							{
+								x = -900.0000;
+								y = 385.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object10:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/TileBG1";
+							Name = "ic_Background-180";
+							Action = 0;
+							Position:
+							{
+								x = -718.0000;
+								y = 434.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object11:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/TileBG1";
+							Name = "ic_Background-181";
+							Action = 0;
+							Position:
+							{
+								y = 438.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object5:
+					{
+						Type = "Group";
+						Name = "g_Background-42";
+						Position:
+						{
+							x = 5256.0000;
+							y = -41.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 16;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Monolit";
+							Name = "ic_Background-182";
+							Action = 0;
+							Position:
+							{
+								x = 410.0000;
+								y = 353.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera";
+							Name = "ic_Background-183";
+							Action = 0;
+							Position:
+							{
+								x = 581.0000;
+								y = 353.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera2";
+							Name = "ic_Background-184";
+							Action = 0;
+							Position:
+							{
+								x = 826.0000;
+								y = 345.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera";
+							Name = "ic_Background-185";
+							Action = 0;
+							Position:
+							{
+								x = 1000.0000;
+								y = 320.0000;
+							};
+							Depth = 0.1000;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera2";
+							Name = "ic_Background-186";
+							Action = 0;
+							Position:
+							{
+								x = 1200.0000;
+								y = 360.0000;
+							};
+							Depth = 0.1000;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object5:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/Big2nd";
+							Name = "ic_Background-187";
+							Action = 0;
+							Position:
+							{
+								x = 1900.0000;
+								y = 314.0000;
+							};
+							Depth = 0.1000;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object6:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera2";
+							Name = "ic_Background-188";
+							Action = 0;
+							Position:
+							{
+								x = 1072.0000;
+								y = 359.0000;
+							};
+							Depth = 0.0500;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object7:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera2";
+							Name = "ic_Background-189";
+							Action = 0;
+							Position:
+							{
+								x = 1400.0000;
+								y = 450.0000;
+							};
+							Depth = 0.0500;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object8:
+						{
+							Type = "Icon";
+							Sprite = "anims/Palmeras/Palmera";
+							Name = "ic_Background-190";
+							Action = 0;
+							Position:
+							{
+								x = 1650.0000;
+								y = 376.0000;
+							};
+							Depth = 0.1000;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object9:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/TileBG1";
+							Name = "ic_Background-191";
+							Action = 0;
+							Position:
+							{
+								x = 720.0000;
+								y = 438.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object10:
+						{
+							Type = "Group";
+							Name = "g_Background-43";
+							Position:
+							{
+								x = 918.0000;
+								y = -26.0000;
+							};
+							Depth = 0.1000;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 3;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-192";
+								Action = 0;
+								Position:
+								{
+									x = -151.0000;
+									y = 424.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-193";
+								Action = 0;
+								Position:
+								{
+									x = -37.0000;
+									y = 461.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-194";
+								Action = 0;
+								Position:
+								{
+									x = 120.0000;
+									y = 456.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object11:
+						{
+							Type = "Group";
+							Name = "g_Background-44";
+							Position:
+							{
+								x = 1800.0000;
+								y = -26.0000;
+							};
+							Depth = 0.1000;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 2;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-195";
+								Action = 0;
+								Position:
+								{
+									x = -180.0000;
+									y = 518.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-196";
+								Action = 0;
+								Position:
+								{
+									x = -26.0000;
+									y = 460.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object12:
+						{
+							Type = "Group";
+							Name = "g_Background-45";
+							Position:
+							{
+								x = 1400.0000;
+								y = 92.0000;
+							};
+							Depth = 0.1000;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 3;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-197";
+								Action = 0;
+								Position:
+								{
+									x = -170.0000;
+									y = 455.0000;
+								};
+								Scale:
+								{
+								};
+								Angle = 1.5708;
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-198";
+								Action = 0;
+								Position:
+								{
+									x = -37.0000;
+									y = 413.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/Arbustos";
+								Name = "ic_Background-199";
+								Action = 0;
+								Position:
+								{
+									x = 120.0000;
+									y = 456.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object13:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/TileBG4";
+							Name = "ic_Background-212";
+							Action = 0;
+							Position:
+							{
+								x = 1954.0000;
+								y = 438.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object14:
+						{
+							Type = "Group";
+							Name = "g_Background-50";
+							Position:
+							{
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 4;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "NewtilesL1/TileBG2";
+								Name = "ic_Background-213";
+								Action = 0;
+								Position:
+								{
+									x = 1439.0000;
+									y = 438.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Name = "ic_Background-214";
+								Action = 0;
+								Position:
+								{
+									x = 1486.0000;
+									y = 635.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Name = "ic_Background-215";
+								Action = 0;
+								Position:
+								{
+									x = 1486.0000;
+									y = 635.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object3:
+							{
+								Type = "Icon";
+								Name = "ic_Background-216";
+								Action = 0;
+								Position:
+								{
+									x = 1486.0000;
+									y = 635.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object15:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/TileBG5";
+							Name = "ic_Background-217";
+							Action = 0;
+							Position:
+							{
+								x = 209.0000;
+								y = 438.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object6:
+					{
+						Type = "Group";
+						Name = "g_Background-58";
+						Position:
+						{
+							x = -9131.0000;
+							y = -49.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 4;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/TileBG2";
+							Name = "ic_Background-247";
+							Action = 0;
+							Position:
+							{
+								x = 1439.0000;
+								y = 438.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Name = "ic_Background-248";
+							Action = 0;
+							Position:
+							{
+								x = 1486.0000;
+								y = 635.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Name = "ic_Background-249";
+							Action = 0;
+							Position:
+							{
+								x = 1486.0000;
+								y = 635.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Name = "ic_Background-250";
+							Action = 0;
+							Position:
+							{
+								x = 1486.0000;
+								y = 635.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+				};
+				Object7:
+				{
+					Type = "Group";
+					Name = "sea";
+					Position:
+					{
+					};
+					Depth = 1.5000;
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+					NumObjects = 4;
+					Object0:
+					{
+						Type = "Icon";
+						Sprite = "anims/Animagua1/Animagua_puntas";
+						Name = "ic_puntas";
+						Action = 0;
+						Position:
+						{
+							x = -10208.0000;
+							y = 823.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+					Object1:
+					{
+						Type = "Group";
+						Name = "mar";
+						Position:
+						{
+							x = -10208.0000;
+							y = 635.0000;
+						};
+						Scale:
+						{
+							x = 4.0000;
+							y = 4.0000;
+						};
+						Color:
+						{
+						};
+						NumObjects = 2;
+						Object0:
+						{
+							Type = "Group";
+							Name = "agua";
+							Position:
+							{
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 3;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "anims/Mar/mar_back";
+								Name = "ic_agua";
+								Action = 0;
+								Position:
+								{
+								};
+								Scale:
+								{
+									x = 62.0000;
+									y = 5.0000;
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Group";
+								Name = "luz";
+								Position:
+								{
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+								NumObjects = 1;
+								Object0:
+								{
+									Type = "Icon";
+									Sprite = "anims/Mar/mar_luz";
+									Name = "ic_luz";
+									Action = 0;
+									Position:
+									{
+										x = 208.0000;
+										y = 96.0000;
+									};
+									Scale:
+									{
+										x = 3.0000;
+										y = 1.5000;
+									};
+									Color:
+									{
+										r = 0.0000;
+									};
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Sprite = "anims/Mar/mar_mask";
+								Name = "ic_agua-2";
+								Action = 0;
+								Position:
+								{
+								};
+								Scale:
+								{
+									x = 14.0000;
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object1:
+						{
+							Type = "Group";
+							Name = "reflejo";
+							Position:
+							{
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 1;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "anims/Mar/reflejo";
+								Name = "ic_reflejo";
+								Action = 0;
+								Position:
+								{
+								};
+								Scale:
+								{
+									x = 100.0000;
+									y = 2.0000;
+								};
+								Color:
+								{
+								};
+							};
+						};
+					};
+					Object2:
+					{
+						Type = "Icon";
+						Sprite = "anims/Animagua1/Animagua_transicion";
+						Name = "ic_transicion";
+						Action = 0;
+						Position:
+						{
+							x = -10208.0000;
+							y = 711.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+					Object3:
+					{
+						Type = "Group";
+						Name = "islotes";
+						Position:
+						{
+							x = 4000.0000;
+							y = -53.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 28;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo2/Cubo2";
+							Name = "ic_islotes";
+							Action = 0;
+							Position:
+							{
+								x = 10160.0000;
+								y = 768.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo2/Cubo2";
+							Name = "ic_islotes-1";
+							Action = 0;
+							Position:
+							{
+								x = 6512.0000;
+								y = 1056.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo2/Cubo2";
+							Name = "ic_islotes-2";
+							Action = 0;
+							Position:
+							{
+								x = -13472.0000;
+								y = 1072.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo2/Cubo2";
+							Name = "ic_islotes-3";
+							Action = 0;
+							Position:
+							{
+								x = -10800.0000;
+								y = 1008.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo2/Cubo2";
+							Name = "ic_islotes-4";
+							Action = 0;
+							Position:
+							{
+								x = -8208.0000;
+								y = 928.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object5:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo2/Cubo2";
+							Name = "ic_islotes-5";
+							Action = 0;
+							Position:
+							{
+								x = -5632.0000;
+								y = 1024.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object6:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo1/Cubo1";
+							Name = "ic_islotes-6";
+							Action = 0;
+							Position:
+							{
+								x = 11648.0000;
+								y = 800.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object7:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo1/Cubo1";
+							Name = "ic_islotes-7";
+							Action = 0;
+							Position:
+							{
+								x = 1376.0000;
+								y = 864.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object8:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo1/Cubo1";
+							Name = "ic_islotes-8";
+							Action = 0;
+							Position:
+							{
+								x = 3136.0000;
+								y = 976.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object9:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo1/Cubo1";
+							Name = "ic_islotes-9";
+							Action = 0;
+							Position:
+							{
+								x = 5328.0000;
+								y = 928.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object10:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo1/Cubo1";
+							Name = "ic_islotes-10";
+							Action = 0;
+							Position:
+							{
+								x = 7248.0000;
+								y = 800.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object11:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo1/Cubo1";
+							Name = "ic_islotes-11";
+							Action = 0;
+							Position:
+							{
+								x = 8848.0000;
+								y = 1024.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object12:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo1/Cubo1";
+							Name = "ic_islotes-12";
+							Action = 0;
+							Position:
+							{
+								x = 160.0000;
+								y = 1360.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object13:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo1/Cubo1";
+							Name = "ic_islotes-13";
+							Action = 0;
+							Position:
+							{
+								x = -896.0000;
+								y = 800.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object14:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo1/Cubo1";
+							Name = "ic_islotes-14";
+							Action = 0;
+							Position:
+							{
+								x = -2032.0000;
+								y = 944.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object15:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo1/Cubo1";
+							Name = "ic_islotes-15";
+							Action = 0;
+							Position:
+							{
+								x = -3440.0000;
+								y = 832.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object16:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo1/Cubo1";
+							Name = "ic_islotes-16";
+							Action = 0;
+							Position:
+							{
+								x = -4800.0000;
+								y = 912.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object17:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo1/Cubo1";
+							Name = "ic_islotes-17";
+							Action = 0;
+							Position:
+							{
+								x = -6416.0000;
+								y = 800.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object18:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo1/Cubo1";
+							Name = "ic_islotes-18";
+							Action = 0;
+							Position:
+							{
+								x = -7216.0000;
+								y = 1152.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object19:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo1/Cubo1";
+							Name = "ic_islotes-19";
+							Action = 0;
+							Position:
+							{
+								x = -9840.0000;
+								y = 976.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object20:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo1/Cubo1";
+							Name = "ic_islotes-20";
+							Action = 0;
+							Position:
+							{
+								x = -13632.0000;
+								y = 848.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object21:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo1/Cubo1";
+							Name = "ic_islotes-21";
+							Action = 0;
+							Position:
+							{
+								x = -12304.0000;
+								y = 1008.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object22:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo1/Cubo1";
+							Name = "ic_islotes-22";
+							Action = 0;
+							Position:
+							{
+								x = -11344.0000;
+								y = 800.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object23:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo1/Cubo1";
+							Name = "ic_islotes-23";
+							Action = 0;
+							Position:
+							{
+								x = -9232.0000;
+								y = 800.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object24:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo1/Cubo1";
+							Name = "ic_islotes-24";
+							Action = 0;
+							Position:
+							{
+								x = -7968.0000;
+								y = 736.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object25:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo2/Cubo2";
+							Name = "ic_islotes-25";
+							Action = 0;
+							Position:
+							{
+								x = 208.0000;
+								y = 800.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object26:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo2/Cubo2";
+							Name = "ic_islotes-26";
+							Action = 0;
+							Position:
+							{
+								x = 3648.0000;
+								y = 784.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object27:
+						{
+							Type = "Icon";
+							Sprite = "anims/Mar/Cubo2/Cubo2";
+							Name = "ic_islotes-27";
+							Action = 0;
+							Position:
+							{
+								x = -2864.0000;
+								y = 1104.0000;
+							};
+							Scale:
+							{
+								x = 4.0000;
+								y = 4.0000;
+							};
+							Color:
+							{
+							};
+						};
+					};
+				};
+				Object8:
+				{
+					Type = "Group";
+					Name = "elementos agua";
+					Position:
+					{
+					};
+					Depth = 1.5000;
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+					NumObjects = 3;
+					Object0:
+					{
+						Type = "Icon";
+						Sprite = "NewtilesL1/IslaMAr";
+						Name = "ic_isla";
+						Action = 0;
+						Position:
+						{
+							x = 5600.0000;
+							y = 1202.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+					Object1:
+					{
+						Type = "Icon";
+						Sprite = "NewtilesL1/Big1st";
+						Name = "Copy Of ic_isla";
+						Action = 0;
+						Position:
+						{
+							x = 4800.0000;
+							y = 574.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+					Object2:
+					{
+						Type = "Icon";
+						Sprite = "NewtilesL1/IslaMAr";
+						Name = "ic_isla-2";
+						Action = 0;
+						Position:
+						{
+							x = -3800.0000;
+							y = 936.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+				};
+				Object9:
+				{
+					Type = "Group";
+					Name = "NubesBG3";
+					Position:
+					{
+					};
+					Depth = 1.4500;
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+					NumObjects = 5;
+					Object0:
+					{
+						Type = "Group";
+						Name = "NubesFondo";
+						Position:
+						{
+							x = 22500.0000;
+							y = -2000.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 7;
+						Object0:
+						{
+							Type = "Icon";
+							Name = "ic_NubesFondo";
+							Action = 0;
+							Position:
+							{
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Name = "ic_NubesFondo-1";
+							Action = 0;
+							Position:
+							{
+								x = -129.0000;
+								y = 852.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Name = "ic_NubesFondo-2";
+							Action = 0;
+							Position:
+							{
+								x = -300.0000;
+								y = 438.0000;
+							};
+							Scale:
+							{
+							};
+							Angle = 3.1416;
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Name = "ic_NubesFondo-3";
+							Action = 0;
+							Position:
+							{
+								x = 300.0000;
+								y = 957.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Name = "ic_NubesFondo-4";
+							Action = 0;
+							Position:
+							{
+								x = -1500.0000;
+								y = 1000.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object5:
+						{
+							Type = "Icon";
+							Name = "ic_NubesFondo-5";
+							Action = 0;
+							Position:
+							{
+								x = -1900.0000;
+								y = 170.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object6:
+						{
+							Type = "Icon";
+							Name = "ic_NubesFondo-6";
+							Action = 0;
+							Position:
+							{
+								x = -1000.0000;
+								y = 246.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object1:
+					{
+						Type = "Group";
+						Name = "g_NubesBG3-1";
+						Position:
+						{
+							x = 23700.0000;
+							y = -2200.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 2;
+						Object0:
+						{
+							Type = "Icon";
+							Name = "ic_NubesBG3-1";
+							Action = 0;
+							Position:
+							{
+								x = -200.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Name = "ic_NubesBG3-1-1";
+							Action = 0;
+							Position:
+							{
+								x = -200.0000;
+								y = 360.0000;
+							};
+							Scale:
+							{
+							};
+							Angle = 3.1416;
+							Color:
+							{
+							};
+						};
+					};
+					Object2:
+					{
+						Type = "Group";
+						Name = "g_NubesBG3-2";
+						Position:
+						{
+							x = 23788.0000;
+							y = -2500.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 2;
+						Object0:
+						{
+							Type = "Icon";
+							Name = "ic_NubesBG3-2";
+							Action = 0;
+							Position:
+							{
+								x = -200.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Name = "ic_NubesBG3-2-1";
+							Action = 0;
+							Position:
+							{
+								x = -200.0000;
+								y = 360.0000;
+							};
+							Scale:
+							{
+							};
+							Angle = 3.1416;
+							Color:
+							{
+							};
+						};
+					};
+					Object3:
+					{
+						Type = "Group";
+						Name = "g_NubesBG3-3";
+						Position:
+						{
+							x = 23000.0000;
+							y = -1645.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 2;
+						Object0:
+						{
+							Type = "Icon";
+							Name = "ic_NubesBG3-3";
+							Action = 0;
+							Position:
+							{
+								x = -200.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Name = "ic_NubesBG3-3-1";
+							Action = 0;
+							Position:
+							{
+								x = -200.0000;
+								y = 360.0000;
+							};
+							Scale:
+							{
+							};
+							Angle = 3.1416;
+							Color:
+							{
+							};
+						};
+					};
+					Object4:
+					{
+						Type = "Group";
+						Name = "g_NubesBG3-0";
+						Position:
+						{
+							x = 23500.0000;
+							y = -1977.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 2;
+						Object0:
+						{
+							Type = "Icon";
+							Name = "ic_NubesBG3-0";
+							Action = 0;
+							Position:
+							{
+								x = -200.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Name = "ic_NubesBG3-0-1";
+							Action = 0;
+							Position:
+							{
+								x = -200.0000;
+								y = 360.0000;
+							};
+							Scale:
+							{
+							};
+							Angle = 3.1416;
+							Color:
+							{
+							};
+						};
+					};
+				};
+				Object10:
+				{
+					Type = "Group";
+					Name = "Plataformas";
+					Position:
+					{
+						x = -10184.0000;
+					};
+					Depth = 1.3000;
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+					DepthFact = 0.0000;
+					NumObjects = 22;
+					Object0:
+					{
+						Type = "Group";
+						Name = "Plat2";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 12;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_Plat2";
+							Action = 0;
+							Position:
+							{
+								x = -460.0000;
+								y = 489.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_Plat2-1";
+							Action = 0;
+							Position:
+							{
+								x = -391.0000;
+								y = 489.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_Plat2-2";
+							Action = 0;
+							Position:
+							{
+								x = -265.0000;
+								y = 489.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelomin1";
+							Name = "ic_Plat2-3";
+							Action = 0;
+							Position:
+							{
+								x = -38.0000;
+								y = 489.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelobg2";
+							Name = "ic_Plat2-4";
+							Action = 0;
+							Position:
+							{
+								x = 449.0000;
+								y = 160.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object5:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelobg1";
+							Name = "ic_Plat2-5";
+							Action = 0;
+							Position:
+							{
+								x = 243.0000;
+								y = 380.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object6:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelobg1";
+							Name = "ic_Plat2-6";
+							Action = 0;
+							Position:
+							{
+								x = 412.0000;
+								y = 380.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object7:
+						{
+							Type = "Icon";
+							Sprite = "Ship/TilesueloShip";
+							Name = "ic_Plat2-7";
+							Action = 0;
+							Position:
+							{
+								x = 412.0000;
+								y = 489.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object8:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelomin1";
+							Name = "ic_Plat2-8";
+							Action = 0;
+							Position:
+							{
+								x = 723.0000;
+								y = 489.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object9:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_Plat2-9";
+							Action = 0;
+							Position:
+							{
+								x = 982.0000;
+								y = 489.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object10:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_Plat2-10";
+							Action = 0;
+							Position:
+							{
+								x = 1082.0000;
+								y = 489.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object11:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_Plat2-11";
+							Action = 0;
+							Position:
+							{
+								x = 1211.0000;
+								y = 488.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object1:
+					{
+						Type = "Group";
+						Name = "Plat23";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 8;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_ Plat23";
+							Action = 0;
+							Position:
+							{
+								x = 16067.0000;
+								y = 804.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_ Plat23-1";
+							Action = 0;
+							Position:
+							{
+								x = 16124.0000;
+								y = 804.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelomin2";
+							Name = "ic_ Plat23-2";
+							Action = 0;
+							Position:
+							{
+								x = 16370.0000;
+								y = 804.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_ Plat23-3";
+							Action = 0;
+							Position:
+							{
+								x = 16485.0000;
+								y = 804.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelomin1";
+							Name = "ic_ Plat23-4";
+							Action = 0;
+							Position:
+							{
+								x = 16714.0000;
+								y = 804.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object5:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelomin2";
+							Name = "ic_ Plat23-5";
+							Action = 0;
+							Position:
+							{
+								x = 17103.0000;
+								y = 804.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object6:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_ Plat23-6";
+							Action = 0;
+							Visible = false;
+							Position:
+							{
+								x = 17197.0000;
+								y = 804.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object7:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelomin2";
+							Name = "ic_ Plat23-7";
+							Action = 0;
+							Visible = false;
+							Position:
+							{
+								x = 17069.0000;
+								y = 805.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object2:
+					{
+						Type = "Group";
+						Name = "Plat22";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 5;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_Plat22";
+							Action = 0;
+							Position:
+							{
+								x = 15147.0000;
+								y = 1061.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelobg2";
+							Name = "Copy Of ic_Plat22-2";
+							Action = 0;
+							Position:
+							{
+								x = 15492.0000;
+								y = 841.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_Plat22-1";
+							Action = 0;
+							Position:
+							{
+								x = 15176.0000;
+								y = 1061.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "Ship/TilesueloShip";
+							Name = "ic_Plat22-2";
+							Action = 0;
+							Position:
+							{
+								x = 15492.0000;
+								y = 1061.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_Plat22-3";
+							Action = 0;
+							Position:
+							{
+								x = 15801.0000;
+								y = 1061.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object3:
+					{
+						Type = "Group";
+						Name = "Plat21";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 2;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelobg1";
+							Name = "Copy Of ic_Plat21";
+							Action = 0;
+							Position:
+							{
+								x = 14930.0000;
+								y = 695.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/TilesueloShip";
+							Name = "ic_Plat21";
+							Action = 0;
+							Position:
+							{
+								x = 14862.0000;
+								y = 799.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object4:
+					{
+						Type = "Group";
+						Name = "Plat20";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 6;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelobg1";
+							Name = "Copy Of ic_ Plat20-2";
+							Action = 0;
+							Position:
+							{
+								x = 14083.0000;
+								y = 969.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_ Plat20";
+							Action = 0;
+							Position:
+							{
+								x = 13628.0000;
+								y = 1063.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_ Plat20-1";
+							Action = 0;
+							Position:
+							{
+								x = 13675.0000;
+								y = 1063.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_ Plat20-2";
+							Action = 0;
+							Position:
+							{
+								x = 13772.0000;
+								y = 1063.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "Ship/TilesueloShip";
+							Name = "ic_ Plat20-3";
+							Action = 0;
+							Position:
+							{
+								x = 14088.0000;
+								y = 1063.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object5:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_ Plat20-4";
+							Action = 0;
+							Position:
+							{
+								x = 14397.0000;
+								y = 1063.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object5:
+					{
+						Type = "Group";
+						Name = "Plat19";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 6;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_ Plat19";
+							Action = 0;
+							Position:
+							{
+								x = 12847.0000;
+								y = 803.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_ Plat19-1";
+							Action = 0;
+							Position:
+							{
+								x = 12876.0000;
+								y = 803.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelobg2";
+							Name = "Copy Of ic_ Plat19-2";
+							Action = 0;
+							Position:
+							{
+								x = 13130.0000;
+								y = 582.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelobg1";
+							Name = "Copy Of ic_ Plat19-3";
+							Action = 0;
+							Position:
+							{
+								x = 13403.0000;
+								y = 711.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "Ship/TilesueloShip";
+							Name = "ic_ Plat19-2";
+							Action = 0;
+							Position:
+							{
+								x = 13192.0000;
+								y = 803.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object5:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_ Plat19-3";
+							Action = 0;
+							Position:
+							{
+								x = 13501.0000;
+								y = 803.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object6:
+					{
+						Type = "Group";
+						Name = "Plat18";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 2;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_ Plat18";
+							Action = 0;
+							Position:
+							{
+								x = 12607.0000;
+								y = 551.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_ Plat18-1";
+							Action = 0;
+							Position:
+							{
+								x = 12729.0000;
+								y = 551.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object7:
+					{
+						Type = "Group";
+						Name = "Plat17";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 3;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_ Plat17";
+							Action = 0;
+							Position:
+							{
+								x = 12070.0000;
+								y = 551.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_ Plat17-1";
+							Action = 0;
+							Position:
+							{
+								x = 12145.0000;
+								y = 551.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_ Plat17-2";
+							Action = 0;
+							Position:
+							{
+								x = 12217.0000;
+								y = 551.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object8:
+					{
+						Type = "Group";
+						Name = "Plat16";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 2;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_ Plat16";
+							Action = 0;
+							Position:
+							{
+								x = 11581.0000;
+								y = 551.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_ Plat16-1";
+							Action = 0;
+							Position:
+							{
+								x = 11703.0000;
+								y = 551.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object9:
+					{
+						Type = "Group";
+						Name = "Plat15";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 3;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_ Plat15";
+							Action = 0;
+							Position:
+							{
+								x = 11047.0000;
+								y = 551.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_ Plat15-1";
+							Action = 0;
+							Position:
+							{
+								x = 11122.0000;
+								y = 551.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_ Plat15-2";
+							Action = 0;
+							Position:
+							{
+								x = 11194.0000;
+								y = 551.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object10:
+					{
+						Type = "Group";
+						Name = "Plat14";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 2;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_Plat14";
+							Action = 0;
+							Position:
+							{
+								x = 10556.0000;
+								y = 551.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_Plat14-1";
+							Action = 0;
+							Position:
+							{
+								x = 10678.0000;
+								y = 551.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object11:
+					{
+						Type = "Group";
+						Name = "Plat13";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 4;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_ Plat13";
+							Action = 0;
+							Position:
+							{
+								x = 9513.0000;
+								y = 550.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_ Plat13-1";
+							Action = 0;
+							Position:
+							{
+								x = 9542.0000;
+								y = 550.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "Ship/TilesueloShip";
+							Name = "ic_ Plat13-2";
+							Action = 0;
+							Position:
+							{
+								x = 9858.0000;
+								y = 550.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_ Plat13-3";
+							Action = 0;
+							Position:
+							{
+								x = 10167.0000;
+								y = 550.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object12:
+					{
+						Type = "Group";
+						Name = "Plat12";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 2;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_ Plat12";
+							Action = 0;
+							Position:
+							{
+								x = 9027.0000;
+								y = 675.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_ Plat12-1";
+							Action = 0;
+							Position:
+							{
+								x = 9149.0000;
+								y = 675.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object13:
+					{
+						Type = "Group";
+						Name = "Plat11";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 11;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_ Plat11";
+							Action = 0;
+							Position:
+							{
+								x = 7754.0000;
+								y = 801.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_ Plat11-1";
+							Action = 0;
+							Position:
+							{
+								x = 7841.0000;
+								y = 801.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "Ship/PiezasBig2";
+							Name = "ic_ Plat11-5";
+							Action = 0;
+							Position:
+							{
+								x = 7868.0000;
+								y = 914.0000;
+							};
+							Scale:
+							{
+							};
+							Angle = 10.9956;
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "Ship/PiezasBig2";
+							Name = "Copy Of ic_ Plat11-5";
+							Action = 0;
+							Position:
+							{
+								x = 8368.0000;
+								y = 914.0000;
+							};
+							Scale:
+							{
+							};
+							Angle = 12.5664;
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelobg3";
+							Name = "ic_ Plat11-2";
+							Action = 0;
+							Position:
+							{
+								x = 8185.0000;
+								y = 588.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object5:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_ Plat11-3";
+							Action = 0;
+							Position:
+							{
+								x = 7956.0000;
+								y = 801.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object6:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_ Plat11-4";
+							Action = 0;
+							Position:
+							{
+								x = 8056.0000;
+								y = 801.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object7:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_ Plat11-6";
+							Action = 0;
+							Position:
+							{
+								x = 8185.0000;
+								y = 801.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object8:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelobg1";
+							Name = "ic_ Plat11-7";
+							Action = 0;
+							Position:
+							{
+								x = 8527.0000;
+								y = 703.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object9:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_ Plat11-8";
+							Action = 0;
+							Position:
+							{
+								x = 8287.0000;
+								y = 801.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object10:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelomin2";
+							Name = "ic_ Plat11-9";
+							Action = 0;
+							Position:
+							{
+								x = 8540.0000;
+								y = 802.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object14:
+					{
+						Type = "Group";
+						Name = "Plat10";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 2;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_ Plat10";
+							Action = 0;
+							Position:
+							{
+								x = 7487.0000;
+								y = 486.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_ Plat10-1";
+							Action = 0;
+							Position:
+							{
+								x = 7609.0000;
+								y = 486.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object15:
+					{
+						Type = "Group";
+						Name = "Plat9";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 3;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/PiezasBig2";
+							Name = "Copy Of ic_Plat9-1";
+							Action = 0;
+							Position:
+							{
+								x = 7054.0000;
+								y = 698.0000;
+							};
+							Scale:
+							{
+							};
+							Angle = 3.1416;
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_Plat9";
+							Action = 0;
+							Position:
+							{
+								x = 6992.0000;
+								y = 607.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_Plat9-1";
+							Action = 0;
+							Position:
+							{
+								x = 7114.0000;
+								y = 607.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object16:
+					{
+						Type = "Group";
+						Name = "Plat8";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 8;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_Plat8";
+							Action = 0;
+							Position:
+							{
+								x = 5449.0000;
+								y = 736.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_Plat8-1";
+							Action = 0;
+							Position:
+							{
+								x = 5535.0000;
+								y = 736.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelomin2";
+							Name = "ic_Plat8-2";
+							Action = 0;
+							Position:
+							{
+								x = 5792.0000;
+								y = 736.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_Plat8-3";
+							Action = 0;
+							Position:
+							{
+								x = 5907.0000;
+								y = 736.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_Plat8-4";
+							Action = 0;
+							Position:
+							{
+								x = 6007.0000;
+								y = 736.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object5:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend1";
+							Name = "ic_Plat8-5";
+							Action = 0;
+							Position:
+							{
+								x = 6136.0000;
+								y = 736.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object6:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesueloend2";
+							Name = "ic_Plat8-6";
+							Action = 0;
+							Position:
+							{
+								x = 6238.0000;
+								y = 736.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object7:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelomin2";
+							Name = "ic_Plat8-7";
+							Action = 0;
+							Position:
+							{
+								x = 6491.0000;
+								y = 737.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object17:
+					{
+						Type = "Group";
+						Name = "Plat7";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 1;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelomin2";
+							Name = "ic_ Plat7";
+							Action = 0;
+							Position:
+							{
+								x = 4943.0000;
+								y = 944.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object18:
+					{
+						Type = "Group";
+						Name = "Plat6";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 2;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/TilesueloShip";
+							Name = "ic_ Plat6";
+							Action = 0;
+							Position:
+							{
+								x = 4856.0000;
+								y = 488.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelomin1";
+							Name = "ic_ Plat6-1";
+							Action = 0;
+							Position:
+							{
+								x = 5162.0000;
+								y = 488.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object19:
+					{
+						Type = "Group";
+						Name = "Plat5";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 2;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/TilesueloShip";
+							Name = "ic_ Plat5";
+							Action = 0;
+							Position:
+							{
+								x = 3832.0000;
+								y = 488.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelomin1";
+							Name = "ic_ Plat5-1";
+							Action = 0;
+							Position:
+							{
+								x = 4148.0000;
+								y = 488.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object20:
+					{
+						Type = "Group";
+						Name = "Plat4";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 2;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/TilesueloShip";
+							Name = "ic_Plat4";
+							Action = 0;
+							Position:
+							{
+								x = 2808.0000;
+								y = 488.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelomin1";
+							Name = "ic_Plat4-1";
+							Action = 0;
+							Position:
+							{
+								x = 3120.0000;
+								y = 488.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object21:
+					{
+						Type = "Group";
+						Name = "Plat3";
+						Position:
+						{
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 3;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "Ship/TilesueloShip";
+							Name = "ic_Plat3";
+							Action = 0;
+							Position:
+							{
+								x = 1782.0000;
+								y = 488.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelobg1";
+							Name = "Copy Of ic_Plat3-1";
+							Action = 0;
+							Position:
+							{
+								x = 2054.0000;
+								y = 379.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "Ship/Tilesuelomin1";
+							Name = "ic_Plat3-1";
+							Action = 0;
+							Position:
+							{
+								x = 2096.0000;
+								y = 488.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+					};
+				};
+				Object11:
+				{
+					Type = "Group";
+					Name = "front";
+					Position:
+					{
+					};
+					Depth = 1.1000;
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+					DepthFact = 0.0000;
+					NumObjects = 4;
+					Object0:
+					{
+						Type = "Icon";
+						Sprite = "anims/rama/rama";
+						Name = "ic_front-8";
+						Action = 0;
+						Position:
+						{
+							x = 600.0000;
+							y = 509.0000;
+						};
+						Depth = -0.0500;
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+					Object1:
+					{
+						Type = "Icon";
+						Sprite = "NewtilesL1/Tree";
+						Name = "ic_front-10";
+						Action = 0;
+						Position:
+						{
+							x = 4000.0000;
+							y = 900.0000;
+						};
+						Depth = -0.0500;
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+					};
+					Object2:
+					{
+						Type = "Group";
+						Name = "Enredadera2";
+						Position:
+						{
+						};
+						Depth = 0.0500;
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 1;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/EnredaderaTile";
+							Name = "ic_Enredadera2";
+							Action = 0;
+							Position:
+							{
+								x = -1180.0000;
+								y = 2000.0000;
+							};
+							Scale:
+							{
+								y = 5.0000;
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object3:
+					{
+						Type = "Group";
+						Name = "Enredadera1";
+						Position:
+						{
+						};
+						Depth = 0.0500;
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 1;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL1/EnredaderaTile";
+							Name = "ic_Enredadera1";
+							Action = 0;
+							Position:
+							{
+								x = -7168.0000;
+								y = 2000.0000;
+							};
+							Scale:
+							{
+								y = 5.0000;
+							};
+							Color:
+							{
+							};
+						};
+					};
+				};
+				Object12:
+				{
+					Type = "Group";
+					Name = "Foreground";
+					Position:
+					{
+					};
+					Depth = 1.0000;
+					Scale:
+					{
+					};
+					Color:
+					{
+					};
+					NumObjects = 8;
+					Object0:
+					{
+						Type = "Group";
+						Name = "Spider";
+						Position:
+						{
+							x = -9131.0000;
+							y = -49.0000;
+						};
+						Depth = -0.0500;
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 2;
+						Object0:
+						{
+							Type = "Group";
+							Name = "Spider2";
+							Position:
+							{
+								x = 6995.0000;
+								y = 20.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 3;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "anims/Spider/WebSpider";
+								Name = "ic_Spider2";
+								Action = 0;
+								Position:
+								{
+									y = -80.0000;
+								};
+								Scale:
+								{
+									y = 20.0000;
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Sprite = "anims/Spider/Spider";
+								Name = "ic_Spider2-1";
+								Action = 0;
+								Position:
+								{
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Sprite = "anims/Spider/Spidereyes";
+								Name = "ic_Spider2-2";
+								Action = 0;
+								Position:
+								{
+									y = 80.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+						Object1:
+						{
+							Type = "Group";
+							Name = "Spider3";
+							Position:
+							{
+								x = 6000.0000;
+								y = 45.0000;
+							};
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+							NumObjects = 3;
+							Object0:
+							{
+								Type = "Icon";
+								Sprite = "anims/Spider/WebSpider";
+								Name = "ic_Spider3";
+								Action = 0;
+								Position:
+								{
+									y = -80.0000;
+								};
+								Scale:
+								{
+									y = 20.0000;
+								};
+								Color:
+								{
+								};
+							};
+							Object1:
+							{
+								Type = "Icon";
+								Sprite = "anims/Spider/Spider";
+								Name = "ic_Spider3-1";
+								Action = 0;
+								Position:
+								{
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+							Object2:
+							{
+								Type = "Icon";
+								Sprite = "anims/Spider/Spidereyes";
+								Name = "ic_Spider3-2";
+								Action = 0;
+								Position:
+								{
+									y = 80.0000;
+								};
+								Scale:
+								{
+								};
+								Color:
+								{
+								};
+							};
+						};
+					};
+					Object1:
+					{
+						Type = "Group";
+						Name = "g_Foreground-0";
+						Position:
+						{
+							x = -3131.0000;
+							y = 936.0000;
+						};
+						Scale:
+						{
+							x = -1.0000;
+							y = -1.0000;
+						};
+						Color:
+						{
+						};
+						NumObjects = 5;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copaback";
+							Name = "ic_Foreground-0";
+							Action = 0;
+							Position:
+							{
+								x = -4202.0000;
+								y = -23.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copaback";
+							Name = "ic_Foreground-0-1";
+							Action = 0;
+							Position:
+							{
+								x = -4202.0000;
+								y = -23.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-0-2";
+							Action = 0;
+							Position:
+							{
+								x = -5900.0000;
+								y = -152.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-0-3";
+							Action = 0;
+							Position:
+							{
+								x = -5000.0000;
+								y = -197.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-0-4";
+							Action = 0;
+							Position:
+							{
+								x = -4000.0000;
+								y = -152.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object2:
+					{
+						Type = "Group";
+						Name = "g_Foreground-2";
+						Position:
+						{
+							x = -12231.0000;
+							y = 800.0000;
+						};
+						Scale:
+						{
+							x = -1.0000;
+							y = -1.0000;
+						};
+						Color:
+						{
+						};
+						NumObjects = 5;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copaback";
+							Name = "ic_Foreground-2";
+							Action = 0;
+							Position:
+							{
+								x = -4202.0000;
+								y = -23.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copaback";
+							Name = "ic_Foreground-2-1";
+							Action = 0;
+							Position:
+							{
+								x = -4202.0000;
+								y = -23.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-2-2";
+							Action = 0;
+							Position:
+							{
+								x = -5900.0000;
+								y = -152.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-2-3";
+							Action = 0;
+							Position:
+							{
+								x = -5000.0000;
+								y = -197.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-2-4";
+							Action = 0;
+							Position:
+							{
+								x = -4000.0000;
+								y = -152.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object3:
+					{
+						Type = "Group";
+						Name = "g_Foreground-3";
+						Position:
+						{
+							x = -3131.0000;
+							y = -150.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 10;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copaback";
+							Name = "ic_Foreground-3";
+							Action = 0;
+							Position:
+							{
+								x = -4202.0000;
+								y = -23.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copaback";
+							Name = "ic_Foreground-3-1";
+							Action = 0;
+							Position:
+							{
+								x = -5000.0000;
+								y = 21.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copaback";
+							Name = "ic_Foreground-3-2";
+							Action = 0;
+							Position:
+							{
+								x = -4202.0000;
+								y = -23.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-3-3";
+							Action = 0;
+							Position:
+							{
+								x = -6100.0000;
+								y = -133.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copaback";
+							Name = "ic_Foreground-3-4";
+							Action = 0;
+							Position:
+							{
+								x = -6009.0000;
+								y = -80.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object5:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-3-5";
+							Action = 0;
+							Position:
+							{
+								x = -5000.0000;
+								y = -197.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object6:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-3-6";
+							Action = 0;
+							Position:
+							{
+								x = -4000.0000;
+								y = -152.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object7:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-3-7";
+							Action = 0;
+							Position:
+							{
+								x = -3500.0000;
+								y = -343.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object8:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-3-8";
+							Action = 0;
+							Position:
+							{
+								x = -5001.0000;
+								y = -343.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object9:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-3-9";
+							Action = 0;
+							Position:
+							{
+								x = -6500.0000;
+								y = -351.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object4:
+					{
+						Type = "Group";
+						Name = "g_Foreground-4";
+						Position:
+						{
+							x = 1869.0000;
+							y = -88.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 7;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copaback";
+							Name = "ic_Foreground-4";
+							Action = 0;
+							Position:
+							{
+								x = -4202.0000;
+								y = -23.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-4-1";
+							Action = 0;
+							Position:
+							{
+								x = -6100.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-4-2";
+							Action = 0;
+							Position:
+							{
+								x = -5000.0000;
+								y = -197.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-4-3";
+							Action = 0;
+							Position:
+							{
+								x = -4000.0000;
+								y = -152.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-4-4";
+							Action = 0;
+							Position:
+							{
+								x = -3500.0000;
+								y = -343.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object5:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-4-5";
+							Action = 0;
+							Position:
+							{
+								x = -5001.0000;
+								y = -343.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object6:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-4-6";
+							Action = 0;
+							Position:
+							{
+								x = -6500.0000;
+								y = -200.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object5:
+					{
+						Type = "Group";
+						Name = "g_Foreground-5";
+						Position:
+						{
+							x = 7969.0000;
+							y = -33.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 7;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copaback";
+							Name = "ic_Foreground-5";
+							Action = 0;
+							Position:
+							{
+								x = -4202.0000;
+								y = -23.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-5-1";
+							Action = 0;
+							Position:
+							{
+								x = -6100.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-5-2";
+							Action = 0;
+							Position:
+							{
+								x = -5000.0000;
+								y = -197.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-5-3";
+							Action = 0;
+							Position:
+							{
+								x = -4000.0000;
+								y = -152.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-5-4";
+							Action = 0;
+							Position:
+							{
+								x = -3500.0000;
+								y = -343.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object5:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-5-5";
+							Action = 0;
+							Position:
+							{
+								x = -5001.0000;
+								y = -343.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object6:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-5-6";
+							Action = 0;
+							Position:
+							{
+								x = -6500.0000;
+								y = -200.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object6:
+					{
+						Type = "Group";
+						Name = "g_Foreground-6";
+						Position:
+						{
+							x = 7969.0000;
+							y = -349.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 7;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copaback";
+							Name = "ic_Foreground-6";
+							Action = 0;
+							Position:
+							{
+								x = -4202.0000;
+								y = -23.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-6-1";
+							Action = 0;
+							Position:
+							{
+								x = -6100.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-6-2";
+							Action = 0;
+							Position:
+							{
+								x = -5000.0000;
+								y = -197.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-6-3";
+							Action = 0;
+							Position:
+							{
+								x = -4000.0000;
+								y = -152.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-6-4";
+							Action = 0;
+							Position:
+							{
+								x = -3500.0000;
+								y = -343.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object5:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-6-5";
+							Action = 0;
+							Position:
+							{
+								x = -5001.0000;
+								y = -343.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object6:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-6-6";
+							Action = 0;
+							Position:
+							{
+								x = -6500.0000;
+								y = -200.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+					};
+					Object7:
+					{
+						Type = "Group";
+						Name = "g_Foreground-8";
+						Position:
+						{
+							x = 11900.0000;
+							y = -63.0000;
+						};
+						Scale:
+						{
+						};
+						Color:
+						{
+						};
+						NumObjects = 7;
+						Object0:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copaback";
+							Name = "ic_Foreground-8";
+							Action = 0;
+							Position:
+							{
+								x = -4202.0000;
+								y = -23.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+							};
+							Color:
+							{
+							};
+						};
+						Object1:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-8-1";
+							Action = 0;
+							Position:
+							{
+								x = -6100.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object2:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-8-2";
+							Action = 0;
+							Position:
+							{
+								x = -5000.0000;
+								y = -197.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object3:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-8-3";
+							Action = 0;
+							Position:
+							{
+								x = -4000.0000;
+								y = -152.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object4:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-8-4";
+							Action = 0;
+							Position:
+							{
+								x = -3500.0000;
+								y = -343.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object5:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-8-5";
+							Action = 0;
+							Position:
+							{
+								x = -5001.0000;
+								y = -343.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+						Object6:
+						{
+							Type = "Icon";
+							Sprite = "NewtilesL2/Copa_arbol";
+							Name = "ic_Foreground-8-6";
+							Action = 0;
+							Position:
+							{
+								x = -6500.0000;
+								y = -200.0000;
+							};
+							Depth = -0.0500;
+							Scale:
+							{
+								x = -1.0000;
+								y = -1.0000;
+							};
+							Color:
+							{
+							};
+						};
+					};
+				};
+			};
+		};
+		NumElemActions = 1;
+		Action0:
+		{
+			Name = "OnIdle";
+			ObjAction0:
+			{
+				HUDObject = "g_Background-37";
+				XFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 48.1000;
+						Value = -2.0000;
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction1:
+			{
+				HUDObject = "Enredadera2";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 15.0000;
+						Value = -820.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction2:
+			{
+				HUDObject = "Enredadera1";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 20.0000;
+						Value = 820.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction3:
+			{
+				HUDObject = "ic_Isle";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+						LerpFunc = "explog";
+					};
+					KeyFrame1:
+					{
+						Time = 5.0000;
+						Value = 50.0000;
+						LerpFunc = "explog";
+					};
+					KeyFrame2:
+					{
+						Time = 10.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction4:
+			{
+				HUDObject = "ic_Isle-1";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+						LerpFunc = "explog";
+					};
+					KeyFrame1:
+					{
+						Time = 5.0000;
+						Value = -49.0000;
+						LerpFunc = "explog";
+					};
+					KeyFrame2:
+					{
+						Time = 10.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction5:
+			{
+				HUDObject = "ic_Isle-2";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+						LerpFunc = "explog";
+					};
+					KeyFrame1:
+					{
+						Time = 5.0000;
+						Value = 50.0000;
+						LerpFunc = "explog";
+					};
+					KeyFrame2:
+					{
+						Time = 10.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction6:
+			{
+				HUDObject = "ic_Isle-4";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+						LerpFunc = "explog";
+					};
+					KeyFrame1:
+					{
+						Time = 5.0000;
+						Value = 50.0000;
+						LerpFunc = "explog";
+					};
+					KeyFrame2:
+					{
+						Time = 10.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction7:
+			{
+				HUDObject = "ic_Isle-5";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+						LerpFunc = "explog";
+					};
+					KeyFrame1:
+					{
+						Time = 5.0000;
+						Value = -49.0000;
+						LerpFunc = "explog";
+					};
+					KeyFrame2:
+					{
+						Time = 10.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction8:
+			{
+				HUDObject = "ic_Isle-6";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+						LerpFunc = "explog";
+					};
+					KeyFrame1:
+					{
+						Time = 5.0000;
+						Value = 50.0000;
+						LerpFunc = "explog";
+					};
+					KeyFrame2:
+					{
+						Time = 10.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction9:
+			{
+				HUDObject = "Spider2";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 5;
+					KeyFrame0:
+					{
+						LerpFunc = "explog";
+					};
+					KeyFrame1:
+					{
+						Time = 1.0000;
+						LerpFunc = "explog";
+					};
+					KeyFrame2:
+					{
+						Time = 6.0000;
+						Value = 880.0000;
+					};
+					KeyFrame3:
+					{
+						Time = 7.0000;
+						Value = 880.0000;
+					};
+					KeyFrame4:
+					{
+						Time = 17.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction10:
+			{
+				HUDObject = "Spider3";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 4;
+					KeyFrame0:
+					{
+						LerpFunc = "explog";
+					};
+					KeyFrame1:
+					{
+						Time = 6.0000;
+						Value = 755.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 7.0000;
+						Value = 755.0000;
+					};
+					KeyFrame3:
+					{
+						Time = 19.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction11:
+			{
+				HUDObject = "PajarosAnim";
+				XFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 15.0000;
+						Value = 3000.0000;
+					};
+				};
+				YFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 15.0000;
+						Value = -1500.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction12:
+			{
+				HUDObject = "reflejo";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 4;
+					KeyFrame0:
+					{
+						LerpFunc = "explog";
+					};
+					KeyFrame1:
+					{
+						Time = 6.0000;
+						y = 0.2500;
+						LerpFunc = "explog";
+					};
+					KeyFrame2:
+					{
+						Time = 12.0000;
+					};
+					KeyFrame3:
+					{
+						Time = 16.0000;
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction13:
+			{
+				HUDObject = "agua";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 4;
+					KeyFrame0:
+					{
+						LerpFunc = "explog";
+					};
+					KeyFrame1:
+					{
+						Time = 6.0000;
+						y = 0.9000;
+						LerpFunc = "explog";
+					};
+					KeyFrame2:
+					{
+						Time = 12.0000;
+					};
+					KeyFrame3:
+					{
+						Time = 16.0000;
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction14:
+			{
+				HUDObject = "luz";
+				XFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+						Value = -400.0000;
+					};
+					KeyFrame1:
+					{
+						Time = 7.0000;
+						Value = 7000.0000;
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction15:
+			{
+				HUDObject = "ic_puntas";
+				XFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 7;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 2.5000;
+						LerpFunc = "explog";
+					};
+					KeyFrame2:
+					{
+						Time = 3.5000;
+						Value = 8.0000;
+						LerpFunc = "explog";
+					};
+					KeyFrame3:
+					{
+						Time = 4.0000;
+						LerpFunc = "explog";
+					};
+					KeyFrame4:
+					{
+						Time = 4.5000;
+						Value = 8.0000;
+						LerpFunc = "explog";
+					};
+					KeyFrame5:
+					{
+						Time = 5.5000;
+					};
+					KeyFrame6:
+					{
+						Time = 8.0000;
+					};
+				};
+				YFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 5;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 2.5000;
+						LerpFunc = "sin";
+					};
+					KeyFrame2:
+					{
+						Time = 4.0000;
+						Value = -110.0000;
+						LerpFunc = "exp";
+					};
+					KeyFrame3:
+					{
+						Time = 5.5000;
+					};
+					KeyFrame4:
+					{
+						Time = 8.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction16:
+			{
+				HUDObject = "ic_transicion";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 4;
+					KeyFrame0:
+					{
+						Value = -42.0000;
+						LerpFunc = "exp";
+					};
+					KeyFrame1:
+					{
+						Time = 3.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 5.0000;
+						LerpFunc = "sin";
+					};
+					KeyFrame3:
+					{
+						Time = 8.0000;
+						Value = -42.0000;
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 4;
+					KeyFrame0:
+					{
+						y = 0.5000;
+						LerpFunc = "exp";
+					};
+					KeyFrame1:
+					{
+						Time = 3.0000;
+					};
+					KeyFrame2:
+					{
+						Time = 5.0000;
+						LerpFunc = "sin";
+					};
+					KeyFrame3:
+					{
+						Time = 8.0000;
+						y = 0.5000;
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction17:
+			{
+				HUDObject = "00.Level";
+				XFunc:
+				{
+					WrapMode = "Loop";
+					NumKeyFrames = 3;
+					KeyFrame0:
+					{
+						LerpFunc = "explog";
+					};
+					KeyFrame1:
+					{
+						Time = 80.0000;
+						Value = -12000.0000;
+						LerpFunc = "explog";
+					};
+					KeyFrame2:
+					{
+						Time = 160.0000;
+						LerpFunc = "explog";
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction18:
+			{
+				HUDObject = "ic_00.Gradient";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 99.9000;
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction19:
+			{
+				HUDObject = "ic_00.Gradient-1";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 99.9000;
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			ObjAction20:
+			{
+				HUDObject = "ic_00.Gradient-2";
+				XFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				YFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				AngleFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				DepthFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				VisFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ActionFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				ScaleFunc:
+				{
+					NumKeyFrames = 2;
+					KeyFrame0:
+					{
+					};
+					KeyFrame1:
+					{
+						Time = 99.9000;
+					};
+				};
+				ColorFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+				EventFunc:
+				{
+					KeyFrame0:
+					{
+					};
+				};
+			};
+			NumObjActions = 21;
+		};
+	};
+};
