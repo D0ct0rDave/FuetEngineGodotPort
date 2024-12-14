@@ -215,15 +215,42 @@ namespace FuetEngine
 			file.Open(_szFilename,	Godot.File.ModeFlags.Read);
 
 			ulong len = file.GetLen();
+			char[] fileData = new char[len+1];
+			Array.Copy(file.GetBuffer((long)len), fileData, (int)len);
+			fileData[len] = '\0';
+
+			file.Close();
+			return fileData;
+
+			/*
+			byte[] buffer = ...; // assume buffer contains text file contents
+			int bytesRead = buffer.Length;
+			char[] chars = new char[bytesRead / 2]; // assuming 1 byte per character
+			Encoding.ASCII.GetChars(buffer, 0, bytesRead, chars, 0);
+			string text = new string(chars);
+			*/
+			
+			// char[] result = System.Text.Encoding.ASCII.GetString(fileData).ToCharArray();
+			// return result;
+			
+			
+			/*
+			ulong len = file.GetLen();
 			byte[] fileData = new byte[len+1];
+
 			Array.Copy(file.GetBuffer((long)len), fileData, (int)len);
 			fileData[len] = 0;
 
 			file.Close();
 			
-			char[] result = System.Text.Encoding.ASCII.GetString(fileData).ToCharArray();
-			return result;
+			char[] charArray = new char[fileData.Length];
+			for (int i = 0; i < fileData.Length; i++)
+			{
+				charArray[i] = (char)fileData[i];
+			}
 
+			return charArray;
+			*/
 			/*
 			if (! ResourceLoader.Exists(_szFilename))
 			{

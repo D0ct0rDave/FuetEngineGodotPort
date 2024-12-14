@@ -1,10 +1,12 @@
-﻿using Godot;
+﻿using System;
+using Godot;
 //-----------------------------------------------------------------------------
 using CFEString = System.String;
 using FEReal = System.Single;
 using CFEVect2 = Godot.Vector2;
 using CFEColor = Godot.Color;
-using CFEFont = Godot.Theme; 
+using CFEFont = Godot.Theme;
+using CFEHUDElementAction = Godot.Animation; 
 //-----------------------------------------------------------------------------
 namespace FuetEngine
 {
@@ -52,6 +54,8 @@ namespace FuetEngine
 			// Read elements.
 			for (int j=0; j<uiNumElements; j++)
 			{
+				GD.Print("Parsing HUD Element " + j.ToString());
+
 				string sVar = "HUD.Element" + j;
 				CFEHUDElement oElem = oLoadElement(sVar, oConfig);
 				
@@ -71,12 +75,19 @@ namespace FuetEngine
 			CFEConfigFile oConfig = new CFEConfigFile(sFilename);
 			if (! oConfig.bInitialized() ) return(null);
 
-			return oLoadElement("HUDElement",oConfig);
+			return oLoadElement("HUDElement", oConfig);
 		}
 		// --------------------------------------------------------------------
 		/// Loads a HUD element actions from disk
-		public static void LoadElementActions(CFEString _sFilename,CFEHUDElement _poElem)
+		public static void LoadElementActions(CFEString _sFilename, ref CFEHUDElement _oElem)
 		{
+			CFEString sFilename = _sFilename + ".hea";
+			m_sWorkingDir = CFEStringUtils.sGetPath(_sFilename);
+
+			CFEConfigFile oConfig = new CFEConfigFile(sFilename);
+			if (! oConfig.bInitialized() ) return;
+
+			LoadElementActions("HUDElementActions",oConfig, ref _oElem);
 		}
 		// --------------------------------------------------------------------
 		/// Loads a HUD object from disk
@@ -110,25 +121,11 @@ namespace FuetEngine
 				
 				oElem.iAddLayer(oObj);
 			}
-			
+
 			// Number of actions
-			LoadElementActions(_sPrefix, _oConfigFile, oElem);
+			LoadElementActions(_sPrefix, _oConfigFile, ref oElem);
 			
 			return oElem;
-		}
-		// --------------------------------------------------------------------
-		private static void LoadElementActions(CFEString _sPrefix, CFEConfigFile _oConfigFile, CFEHUDElement _poElem)
-		{
-		}
-		// --------------------------------------------------------------------
-		private static CFEHUDElementAction oLoadAction(CFEString _sPrefix, CFEConfigFile _oConfigFile, CFEHUDElement _poElem)
-		{
-			return null;
-		}
-		// --------------------------------------------------------------------
-		private static CFEHUDObjectAction oLoadObjAction(CFEString _sPrefix, CFEConfigFile _oConfigFile, CFEHUDElement _poElem)
-		{
-			return null;
 		}
 		// --------------------------------------------------------------------
 		private static void LoadCommonObjectProperties(CFEString _sPrefix, CFEConfigFile _oConfigFile, CFEHUDObject _oObj)
@@ -204,10 +201,10 @@ namespace FuetEngine
 				}
 				
 				string sHAlign = _oConfigFile.sGetString(_sPrefix + ".HAlignment","left");
-				oLabel.SetHAlignment( eGetHAlignFromString(sHAlign) );
+				oLabel.SetHAlignment( FuetEngine.Support.eGetHAlignFromString(sHAlign) );
 				
 				string sVAlign = _oConfigFile.sGetString(_sPrefix + ".VAlignment","center");
-				oLabel.SetVAlignment( eGetVAlignFromString(sVAlign) );
+				oLabel.SetVAlignment( FuetEngine.Support.eGetVAlignFromString(sVAlign) );
 				
 				float rTracking, rInterlining, rPointSize,rAdjustmentWidth;
 				rTracking	 = _oConfigFile.rGetReal(_sPrefix + ".Tracking",0.0f);
@@ -377,7 +374,104 @@ namespace FuetEngine
 			
 			return null;
 		}
+		//-----------------------------------------------------------------------------
+		private static void LoadElementActions(CFEString _sPrefix, CFEConfigFile _oConfigFile, ref CFEHUDElement _oElem)
+		{
+			int iNumActions = _oConfigFile.iGetInteger(_sPrefix + ".NumElemActions", 0);
 
+			for (int i=0; i<iNumActions; i++)
+			{
+				GD.Print("element action: "+i.ToString());
+				CFEString sPrefix = _sPrefix + ".Action" + i.ToString();
+				CFEHUDElementAction oObj = oLoadAction(sPrefix, _oConfigFile, ref _oElem);
+
+				_oElem.iAddAction(oObj);
+			}
+			GD.Print("After LoadElementActions");
+		}
+		//-----------------------------------------------------------------------------
+		private static CFEHUDElementAction oLoadAction(CFEString _sPrefix, CFEConfigFile _oConfigFile, ref CFEHUDElement _oElem)
+		{
+			CFEString sName = _oConfigFile.sGetString(_sPrefix + ".Name","noname action elem");
+			
+			CFEHUDElementAction elementAction = new CFEHUDElementAction();
+			elementAction.ResourceName = sName;
+			elementAction.ResourceLocalToScene = true;
+
+			int iNumObjActions = _oConfigFile.iGetInteger(_sPrefix + ".NumObjActions", 0);
+			for (int i=0; i<iNumObjActions; i++)
+			{
+				CFEString sPrefix = _sPrefix +".ObjAction" + i.ToString();
+				LoadObjAction(sPrefix, _oConfigFile, ref _oElem, ref elementAction);
+			}
+			
+			return elementAction;
+		}
+		
+		//-----------------------------------------------------------------------------
+		public static void LoadObjAction(CFEString _sPrefix, CFEConfigFile _oConfigFile, ref CFEHUDElement _oElem, ref Animation objAction)
+		{
+			CFEString sHUDObject = _oConfigFile.sGetString(_sPrefix + ".HUDObject", "");    
+			if (sHUDObject == "")
+			{
+				return;
+			}
+
+			/// To keep compatibility loading previous HUD files.
+			if (m_uiFileVersion > 1)
+			{
+				Support.ReadKFBFunc<float>(_sPrefix + ".XFunc", "Value", "Layers/" + sHUDObject + ":position:x", 0.0f, _oConfigFile, ref objAction);
+				Support.ReadKFBFunc<float>(_sPrefix + ".YFunc", "Value", "Layers/" + sHUDObject + ":position:y", 0.0f, _oConfigFile, ref objAction);
+			}
+			else
+			{
+				Support.ReadKFBFunc(_sPrefix + ".PosFunc", "", "Layers/" + sHUDObject + ":position", new CFEVect2(0.0f, 0.0f), _oConfigFile, ref objAction);				
+			}
+
+			// Scale
+			Support.ReadKFBFunc(_sPrefix + ".ScaleFunc", "", "Layers/" + sHUDObject + ":scale", new CFEVect2(1.0f, 1.0f), _oConfigFile, ref objAction);				
+
+			// Angle
+			Support.ReadKFBFunc<float>(_sPrefix + ".AngleFunc", "Value", "Layers/" + sHUDObject + ":rotation_degrees", 0.0f, _oConfigFile, ref objAction);
+
+			// Depth
+
+			// Color
+			Support.ReadKFBFunc(_sPrefix + ".ColorFunc", "", "Layers/" + sHUDObject + ":modulate", new CFEColor(1.0f,1.0f,1.0f,1.0f), _oConfigFile, ref objAction);				
+			// TODO: ReadKFBFunc<float>(_sPrefix + ".ColorFunc", "Value", sHUDObject + ":rotation:y", 0.0f, _oConfigFile, ref objAction);
+
+			// Visibility
+			Support.ReadKFBFunc<bool>(_sPrefix + ".VisFunc", "Value", "Layers/" + sHUDObject + ":visible", true, _oConfigFile, ref objAction);
+
+			// Actions
+			Support.ReadKFBFunc<int>(_sPrefix + ".ActionFunc", "Value", "Layers/" + sHUDObject + ":Action", -1, _oConfigFile, ref objAction);
+
+			/*
+			// Events
+			sVar = _sPrefix + ".EventFunc";
+			if (_oConfigFile.bExists(sVar + ".WrapMode"))
+				poObjAction->m_oEventFunc.SetWrapMode( CFEKFBFuncUtils::eGetWrapMode(_oConfigFile.sGetString(sVar + ".WrapMode",DEFAULT_WRAP_MODE)) );
+			else
+				poObjAction->m_oEventFunc.SetWrapMode( KFBFWM_FINALVALUE );
+
+			uiKeyFrames = _oConfigFile.iGetInteger(sVar + ".NumKeyFrames",1);
+			if (uiKeyFrames == 0) uiKeyFrames = 1;	// will use default values
+			
+			sVar += ".KeyFrame";
+			for (i=0;i<uiKeyFrames;i++)
+			{
+				CFEString sIVar = sVar + CFEString((int)i);
+				FEReal rTime = _oConfigFile.rGetReal(sIVar + ".Time",_0r);
+
+				CFEEvent oEvent;
+				oEvent.m_sEventName  = _oConfigFile.sGetString(sIVar + ".EventName", CFEString::sNULL());
+				oEvent.m_sEventValue = _oConfigFile.sGetString(sIVar + ".EventValue",CFEString::sNULL());
+				// oEvent.SetEventTime(rTime);
+
+				poObjAction->m_oEventFunc.InsertKeyFrame(oEvent,rTime,KFLF_NONE);
+			}
+			*/
+		}
 		// --------------------------------------------------------------------
 		static float rGetObjectDepth(float _rObjDepth)
 		{
@@ -390,38 +484,6 @@ namespace FuetEngine
 			
 			int iDepthFact = (int)(rDepth * 10000.0f);
 			return iDepthFact + m_iObjectIdx;
-		}
-		// --------------------------------------------------------------------
-		private static EFETextHAlignmentMode eGetHAlignFromString(CFEString _sAlign)
-		{
-			CFEString sAlign = _sAlign.ToLower();
-
-			if (sAlign == "left")
-				return(EFETextHAlignmentMode.THAM_LEFT);
-
-		else if (sAlign == "center")
-			return(EFETextHAlignmentMode.THAM_CENTER);
-
-		else if (sAlign == "right")
-			return(EFETextHAlignmentMode.THAM_RIGHT);
-
-			return(EFETextHAlignmentMode.THAM_LEFT);
-		}
-		// --------------------------------------------------------------------
-		private static EFETextVAlignmentMode eGetVAlignFromString(CFEString _sAlign)
-		{
-			CFEString sAlign = _sAlign.ToLower();
-			
-			if (sAlign == "top")
-				return(EFETextVAlignmentMode.TVAM_TOP);
-
-		else if (sAlign == "center")
-			return(EFETextVAlignmentMode.TVAM_CENTER);
-
-		else if (sAlign == "bottom")
-			return(EFETextVAlignmentMode.TVAM_BOTTOM);
-
-			return(EFETextVAlignmentMode.TVAM_CENTER);
 		}
 		// --------------------------------------------------------------------
 	}

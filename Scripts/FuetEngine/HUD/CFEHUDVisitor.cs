@@ -27,18 +27,22 @@ namespace FuetEngine
                 if (_oObj.oGetLayer(i) != null)
                     _oObj.oGetLayer(i).Accept(this);
 
+            /*
             for (int i=0; i<_oObj.iNumActions(); i++)
                 if (_oObj.oGetAction(i) != null)
                     _oObj.oGetAction(i).Accept(this);
+            */
         }
 
         /// 
+        /*
         public virtual void Visit(CFEHUDElementAction _oObj)
         {
             for (int i=0; i<_oObj.iNumActions(); i++)
                 if (_oObj.oGetAction(i) != null)
                     _oObj.oGetAction(i).Accept(this);
         }
+        */
 
         /// 
         public virtual void Visit(CFEHUDGroup _oObj)

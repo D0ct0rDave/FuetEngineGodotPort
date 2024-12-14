@@ -68,10 +68,10 @@ script = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="BT_Settings/Layers/BT_Settings/lb_Settings"]
 margin_top = -29.5
-margin_right = 716.0
+margin_right = 728.0
 margin_bottom = 29.5
 theme = ExtResource( 2 )
-text = "Configuraci??n"
+text = "ConfiguraciÃ³n"
 align = 1
 valign = 1
 
@@ -103,10 +103,10 @@ script = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="BT_BGM/Layers/BT_BGM/lb_BGM"]
 margin_top = -29.5
-margin_right = 346.0
+margin_right = 367.0
 margin_bottom = 29.5
 theme = ExtResource( 2 )
-text = "M??sica"
+text = "MÃºsica"
 align = 1
 valign = 1
 
@@ -138,10 +138,10 @@ script = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="BT_Credits/Layers/BT_Credits/lb_Credits"]
 margin_top = -29.5
-margin_right = 440.0
+margin_right = 466.0
 margin_bottom = 29.5
 theme = ExtResource( 2 )
-text = "Cr??ditos"
+text = "CrÃ©ditos"
 align = 1
 valign = 1
 

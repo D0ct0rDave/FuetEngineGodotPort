@@ -1,26 +1,26 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=1]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=2]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=1]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=2]
 [ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=3]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=4]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=5]
-[ext_resource path="res://Assets/data/intro/sprites/nuves.spr" type="Resource" id=6]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=5]
+[ext_resource path="res://Assets/data/intro/sprites/background.spr" type="Resource" id=6]
 [ext_resource path="res://Assets/data/intro/sprites/logo.spr" type="Resource" id=7]
-[ext_resource path="res://Assets/data/intro/sprites/background.spr" type="Resource" id=8]
+[ext_resource path="res://Assets/data/intro/sprites/nuves.spr" type="Resource" id=8]
 
 [node name="CFEHUD" type="Node2D"]
-script = ExtResource( 2 )
+script = ExtResource( 1 )
 
 [node name="Logo-Grp" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = ExtResource( 2 )
 
 [node name="Layers" type="Node2D" parent="Logo-Grp"]
 
 [node name="Logo-Grp" type="Node2D" parent="Logo-Grp/Layers"]
 position = Vector2( 960, 480 )
 z_as_relative = false
-script = ExtResource( 5 )
+script = ExtResource( 4 )
 m_rDepthFactor = 1.0
 
 [node name="background" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp"]
@@ -32,19 +32,19 @@ script = ExtResource( 3 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/background"]
-script = ExtResource( 4 )
+script = ExtResource( 5 )
 Action = 0
-m_sprite = ExtResource( 8 )
+m_sprite = ExtResource( 6 )
 
 [node name="Nuves" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp"]
 position = Vector2( 0, 60 )
 z_as_relative = false
-script = ExtResource( 5 )
+script = ExtResource( 4 )
 m_rDepthFactor = 1.0
 
 [node name="Nuves-Cerca" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves"]
 z_as_relative = false
-script = ExtResource( 5 )
+script = ExtResource( 4 )
 
 [node name="ic_Nuves-Cerca" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves/Nuves-Cerca"]
 position = Vector2( 660, -260 )
@@ -54,9 +54,9 @@ script = ExtResource( 3 )
 m_iIniAction = 2
 
 [node name="CFESpriteInstance" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves/Nuves-Cerca/ic_Nuves-Cerca"]
-script = ExtResource( 4 )
+script = ExtResource( 5 )
 Action = 2
-m_sprite = ExtResource( 6 )
+m_sprite = ExtResource( 8 )
 
 [node name="ic_Nuves-Cerca-1" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves/Nuves-Cerca"]
 position = Vector2( -460, 330 )
@@ -66,9 +66,9 @@ script = ExtResource( 3 )
 m_iIniAction = 6
 
 [node name="CFESpriteInstance" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves/Nuves-Cerca/ic_Nuves-Cerca-1"]
-script = ExtResource( 4 )
+script = ExtResource( 5 )
 Action = 6
-m_sprite = ExtResource( 6 )
+m_sprite = ExtResource( 8 )
 
 [node name="ic_Nuves-Cerca-2" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves/Nuves-Cerca"]
 position = Vector2( 560, 350 )
@@ -78,13 +78,13 @@ script = ExtResource( 3 )
 m_iIniAction = 3
 
 [node name="CFESpriteInstance" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves/Nuves-Cerca/ic_Nuves-Cerca-2"]
-script = ExtResource( 4 )
+script = ExtResource( 5 )
 Action = 3
-m_sprite = ExtResource( 6 )
+m_sprite = ExtResource( 8 )
 
 [node name="Nuves-Medio" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves"]
 z_as_relative = false
-script = ExtResource( 5 )
+script = ExtResource( 4 )
 
 [node name="ic_Nuves-Medio" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves/Nuves-Medio"]
 position = Vector2( -590, -390 )
@@ -94,9 +94,9 @@ script = ExtResource( 3 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves/Nuves-Medio/ic_Nuves-Medio"]
-script = ExtResource( 4 )
+script = ExtResource( 5 )
 Action = 0
-m_sprite = ExtResource( 6 )
+m_sprite = ExtResource( 8 )
 
 [node name="ic_Nuves-Medio-1" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves/Nuves-Medio"]
 position = Vector2( 690, 120 )
@@ -106,13 +106,13 @@ script = ExtResource( 3 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves/Nuves-Medio/ic_Nuves-Medio-1"]
-script = ExtResource( 4 )
+script = ExtResource( 5 )
 Action = 0
-m_sprite = ExtResource( 6 )
+m_sprite = ExtResource( 8 )
 
 [node name="Nuves-Lejos" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves"]
 z_as_relative = false
-script = ExtResource( 5 )
+script = ExtResource( 4 )
 
 [node name="ic_Nuves-Lejos" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves/Nuves-Lejos"]
 position = Vector2( -240, -290 )
@@ -122,9 +122,9 @@ script = ExtResource( 3 )
 m_iIniAction = 1
 
 [node name="CFESpriteInstance" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves/Nuves-Lejos/ic_Nuves-Lejos"]
-script = ExtResource( 4 )
+script = ExtResource( 5 )
 Action = 1
-m_sprite = ExtResource( 6 )
+m_sprite = ExtResource( 8 )
 
 [node name="ic_Nuves-Lejos-1" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves/Nuves-Lejos"]
 position = Vector2( -490, 0 )
@@ -134,9 +134,9 @@ script = ExtResource( 3 )
 m_iIniAction = 4
 
 [node name="CFESpriteInstance" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves/Nuves-Lejos/ic_Nuves-Lejos-1"]
-script = ExtResource( 4 )
+script = ExtResource( 5 )
 Action = 4
-m_sprite = ExtResource( 6 )
+m_sprite = ExtResource( 8 )
 
 [node name="ic_Nuves-Lejos-2" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves/Nuves-Lejos"]
 position = Vector2( 300, -440 )
@@ -146,9 +146,9 @@ script = ExtResource( 3 )
 m_iIniAction = 5
 
 [node name="CFESpriteInstance" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves/Nuves-Lejos/ic_Nuves-Lejos-2"]
-script = ExtResource( 4 )
+script = ExtResource( 5 )
 Action = 5
-m_sprite = ExtResource( 6 )
+m_sprite = ExtResource( 8 )
 
 [node name="ic_Nuves-Lejos-3" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves/Nuves-Lejos"]
 modulate = Color( 1, 1, 1, 0.5922 )
@@ -161,9 +161,9 @@ m_oIniColor = Color( 1, 1, 1, 0.5922 )
 m_iIniAction = 3
 
 [node name="CFESpriteInstance" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Nuves/Nuves-Lejos/ic_Nuves-Lejos-3"]
-script = ExtResource( 4 )
+script = ExtResource( 5 )
 Action = 3
-m_sprite = ExtResource( 6 )
+m_sprite = ExtResource( 8 )
 
 [node name="Logo" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp"]
 position = Vector2( 0, 60 )
@@ -173,6 +173,6 @@ script = ExtResource( 3 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="Logo-Grp/Layers/Logo-Grp/Logo"]
-script = ExtResource( 4 )
+script = ExtResource( 5 )
 Action = 0
 m_sprite = ExtResource( 7 )

@@ -1,23 +1,23 @@
 [gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=1]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=2]
-[ext_resource path="res://Assets/base/common/data/fonts/default.theme.tres" type="Theme" id=3]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=4]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/3.spr" type="Resource" id=5]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/2.spr" type="Resource" id=6]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/backarrow.spr" type="Resource" id=7]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=8]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=9]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=10]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/icon-2.spr" type="Resource" id=11]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/8.spr" type="Resource" id=12]
+[ext_resource path="res://Assets/base/common/data/fonts/default.theme.tres" type="Theme" id=1]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/2.spr" type="Resource" id=2]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/backarrow.spr" type="Resource" id=3]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/8.spr" type="Resource" id=4]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/icon-2.spr" type="Resource" id=5]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=6]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=7]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=8]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=9]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=10]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=11]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/3.spr" type="Resource" id=12]
 
 [node name="CFEHUD" type="Node2D"]
-script = ExtResource( 1 )
+script = ExtResource( 11 )
 
 [node name="Title" type="Node2D" parent="."]
-script = ExtResource( 2 )
+script = ExtResource( 9 )
 
 [node name="Layers" type="Node2D" parent="Title"]
 
@@ -25,200 +25,200 @@ script = ExtResource( 2 )
 modulate = Color( 1, 1, 0.502, 1 )
 position = Vector2( 448, 80 )
 z_as_relative = false
-script = ExtResource( 10 )
+script = ExtResource( 8 )
 m_oIniColor = Color( 1, 1, 0.502, 1 )
 
 [node name="lb_Title" type="Node2D" parent="Title/Layers/Title"]
 z_index = -1
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 7 )
 
 [node name="Label" type="Label" parent="Title/Layers/Title/lb_Title"]
 margin_top = -29.5
-margin_right = 675.0
+margin_right = 693.0
 margin_bottom = 29.5
-theme = ExtResource( 3 )
-text = "Configuraci?n"
+theme = ExtResource( 1 )
+text = "Configuración"
 align = 1
 valign = 1
 
 [node name="MusicVol" type="Node2D" parent="."]
-script = ExtResource( 2 )
+script = ExtResource( 9 )
 
 [node name="Layers" type="Node2D" parent="MusicVol"]
 
 [node name="MusicVol" type="Node2D" parent="MusicVol/Layers"]
 position = Vector2( 560, 432 )
 z_as_relative = false
-script = ExtResource( 10 )
+script = ExtResource( 8 )
 
 [node name="lb_MusVol" type="Node2D" parent="MusicVol/Layers/MusicVol"]
 position = Vector2( -20, -10 )
 z_index = -1
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 7 )
 
 [node name="Label" type="Label" parent="MusicVol/Layers/MusicVol/lb_MusVol"]
 margin_top = -29.5
-margin_right = 305.0
+margin_right = 321.0
 margin_bottom = 29.5
-theme = ExtResource( 3 )
-text = "M?sica"
+theme = ExtResource( 1 )
+text = "Música"
 valign = 1
 
 [node name="ic_m1" type="Node2D" parent="MusicVol/Layers/MusicVol"]
 position = Vector2( 704, 0 )
 z_index = -2
 z_as_relative = false
-script = ExtResource( 8 )
+script = ExtResource( 10 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="MusicVol/Layers/MusicVol/ic_m1"]
-script = ExtResource( 9 )
+script = ExtResource( 6 )
 Action = 0
-m_sprite = ExtResource( 11 )
+m_sprite = ExtResource( 5 )
 
 [node name="ic_m5" type="Node2D" parent="MusicVol/Layers/MusicVol"]
 position = Vector2( 960, 0 )
 z_index = -3
 z_as_relative = false
-script = ExtResource( 8 )
+script = ExtResource( 10 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="MusicVol/Layers/MusicVol/ic_m5"]
-script = ExtResource( 9 )
+script = ExtResource( 6 )
 Action = 0
-m_sprite = ExtResource( 11 )
+m_sprite = ExtResource( 5 )
 
 [node name="ic_m4" type="Node2D" parent="MusicVol/Layers/MusicVol"]
 position = Vector2( 896, 0 )
 z_index = -4
 z_as_relative = false
-script = ExtResource( 8 )
+script = ExtResource( 10 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="MusicVol/Layers/MusicVol/ic_m4"]
-script = ExtResource( 9 )
+script = ExtResource( 6 )
 Action = 0
-m_sprite = ExtResource( 11 )
+m_sprite = ExtResource( 5 )
 
 [node name="ic_m3" type="Node2D" parent="MusicVol/Layers/MusicVol"]
 position = Vector2( 832, 0 )
 z_index = -5
 z_as_relative = false
-script = ExtResource( 8 )
+script = ExtResource( 10 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="MusicVol/Layers/MusicVol/ic_m3"]
-script = ExtResource( 9 )
+script = ExtResource( 6 )
 Action = 0
-m_sprite = ExtResource( 11 )
+m_sprite = ExtResource( 5 )
 
 [node name="ic_m2" type="Node2D" parent="MusicVol/Layers/MusicVol"]
 position = Vector2( 768, 0 )
 z_index = -6
 z_as_relative = false
-script = ExtResource( 8 )
+script = ExtResource( 10 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="MusicVol/Layers/MusicVol/ic_m2"]
-script = ExtResource( 9 )
+script = ExtResource( 6 )
 Action = 0
-m_sprite = ExtResource( 11 )
+m_sprite = ExtResource( 5 )
 
 [node name="BT_MusicDec" type="Node2D" parent="."]
-script = ExtResource( 2 )
+script = ExtResource( 9 )
 
 [node name="Layers" type="Node2D" parent="BT_MusicDec"]
 
 [node name="BT_MusicDec" type="Node2D" parent="BT_MusicDec/Layers"]
 position = Vector2( 1120, 432 )
 z_as_relative = false
-script = ExtResource( 10 )
+script = ExtResource( 8 )
 m_iIniAction = 0
 
 [node name="ic_MusicDec" type="Node2D" parent="BT_MusicDec/Layers/BT_MusicDec"]
 z_index = -1
 z_as_relative = false
-script = ExtResource( 8 )
+script = ExtResource( 10 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_MusicDec/Layers/BT_MusicDec/ic_MusicDec"]
-script = ExtResource( 9 )
+script = ExtResource( 6 )
 Action = 0
-m_sprite = ExtResource( 12 )
+m_sprite = ExtResource( 4 )
 
 [node name="lb_MusicDec" type="Node2D" parent="BT_MusicDec/Layers/BT_MusicDec"]
 z_index = -2
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 7 )
 
 [node name="Label" type="Label" parent="BT_MusicDec/Layers/BT_MusicDec/lb_MusicDec"]
 margin_top = -29.5
 margin_right = 16.0
 margin_bottom = 29.5
-theme = ExtResource( 3 )
+theme = ExtResource( 1 )
 text = "-"
 align = 1
 valign = 1
 
 [node name="BT_MusicInc" type="Node2D" parent="."]
-script = ExtResource( 2 )
+script = ExtResource( 9 )
 
 [node name="Layers" type="Node2D" parent="BT_MusicInc"]
 
 [node name="BT_MusicInc" type="Node2D" parent="BT_MusicInc/Layers"]
 position = Vector2( 1632, 432 )
 z_as_relative = false
-script = ExtResource( 10 )
+script = ExtResource( 8 )
 m_iIniAction = 0
 
 [node name="ic_MusicInc" type="Node2D" parent="BT_MusicInc/Layers/BT_MusicInc"]
 z_index = -1
 z_as_relative = false
-script = ExtResource( 8 )
+script = ExtResource( 10 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_MusicInc/Layers/BT_MusicInc/ic_MusicInc"]
-script = ExtResource( 9 )
+script = ExtResource( 6 )
 Action = 0
-m_sprite = ExtResource( 12 )
+m_sprite = ExtResource( 4 )
 
 [node name="lb_MusicInc" type="Node2D" parent="BT_MusicInc/Layers/BT_MusicInc"]
 z_index = -2
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 7 )
 
 [node name="Label" type="Label" parent="BT_MusicInc/Layers/BT_MusicInc/lb_MusicInc"]
 margin_top = -29.5
 margin_right = 36.0
 margin_bottom = 29.5
-theme = ExtResource( 3 )
+theme = ExtResource( 1 )
 text = "+"
 align = 1
 valign = 1
 
 [node name="FXVol" type="Node2D" parent="."]
-script = ExtResource( 2 )
+script = ExtResource( 9 )
 
 [node name="Layers" type="Node2D" parent="FXVol"]
 
 [node name="FXVol" type="Node2D" parent="FXVol/Layers"]
 position = Vector2( 560, 672 )
 z_as_relative = false
-script = ExtResource( 10 )
+script = ExtResource( 8 )
 
 [node name="lb_FXVol" type="Node2D" parent="FXVol/Layers/FXVol"]
 position = Vector2( -20, -10 )
 z_index = -1
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 7 )
 
 [node name="Label" type="Label" parent="FXVol/Layers/FXVol/lb_FXVol"]
 margin_top = -29.5
 margin_right = 115.0
 margin_bottom = 29.5
-theme = ExtResource( 3 )
+theme = ExtResource( 1 )
 text = "FX"
 valign = 1
 
@@ -226,204 +226,204 @@ valign = 1
 position = Vector2( 704, 0 )
 z_index = -2
 z_as_relative = false
-script = ExtResource( 8 )
+script = ExtResource( 10 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="FXVol/Layers/FXVol/ic_fx1"]
-script = ExtResource( 9 )
+script = ExtResource( 6 )
 Action = 0
-m_sprite = ExtResource( 11 )
+m_sprite = ExtResource( 5 )
 
 [node name="ic_fx2" type="Node2D" parent="FXVol/Layers/FXVol"]
 position = Vector2( 768, 0 )
 z_index = -3
 z_as_relative = false
-script = ExtResource( 8 )
+script = ExtResource( 10 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="FXVol/Layers/FXVol/ic_fx2"]
-script = ExtResource( 9 )
+script = ExtResource( 6 )
 Action = 0
-m_sprite = ExtResource( 11 )
+m_sprite = ExtResource( 5 )
 
 [node name="ic_fx3" type="Node2D" parent="FXVol/Layers/FXVol"]
 position = Vector2( 832, 0 )
 z_index = -4
 z_as_relative = false
-script = ExtResource( 8 )
+script = ExtResource( 10 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="FXVol/Layers/FXVol/ic_fx3"]
-script = ExtResource( 9 )
+script = ExtResource( 6 )
 Action = 0
-m_sprite = ExtResource( 11 )
+m_sprite = ExtResource( 5 )
 
 [node name="ic_fx4" type="Node2D" parent="FXVol/Layers/FXVol"]
 position = Vector2( 896, 0 )
 z_index = -5
 z_as_relative = false
-script = ExtResource( 8 )
+script = ExtResource( 10 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="FXVol/Layers/FXVol/ic_fx4"]
-script = ExtResource( 9 )
+script = ExtResource( 6 )
 Action = 0
-m_sprite = ExtResource( 11 )
+m_sprite = ExtResource( 5 )
 
 [node name="ic_fx5" type="Node2D" parent="FXVol/Layers/FXVol"]
 position = Vector2( 960, 0 )
 z_index = -6
 z_as_relative = false
-script = ExtResource( 8 )
+script = ExtResource( 10 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="FXVol/Layers/FXVol/ic_fx5"]
-script = ExtResource( 9 )
+script = ExtResource( 6 )
 Action = 0
-m_sprite = ExtResource( 11 )
+m_sprite = ExtResource( 5 )
 
 [node name="BT_FXDec" type="Node2D" parent="."]
-script = ExtResource( 2 )
+script = ExtResource( 9 )
 
 [node name="Layers" type="Node2D" parent="BT_FXDec"]
 
 [node name="BT_FXDec" type="Node2D" parent="BT_FXDec/Layers"]
 position = Vector2( 1120, 672 )
 z_as_relative = false
-script = ExtResource( 10 )
+script = ExtResource( 8 )
 m_iIniAction = 0
 
 [node name="ic_FXDec" type="Node2D" parent="BT_FXDec/Layers/BT_FXDec"]
 z_index = -1
 z_as_relative = false
-script = ExtResource( 8 )
+script = ExtResource( 10 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_FXDec/Layers/BT_FXDec/ic_FXDec"]
-script = ExtResource( 9 )
+script = ExtResource( 6 )
 Action = 0
-m_sprite = ExtResource( 12 )
+m_sprite = ExtResource( 4 )
 
 [node name="lb_FXDec" type="Node2D" parent="BT_FXDec/Layers/BT_FXDec"]
 z_index = -2
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 7 )
 
 [node name="Label" type="Label" parent="BT_FXDec/Layers/BT_FXDec/lb_FXDec"]
 margin_top = -29.5
 margin_right = 16.0
 margin_bottom = 29.5
-theme = ExtResource( 3 )
+theme = ExtResource( 1 )
 text = "-"
 align = 1
 valign = 1
 
 [node name="BT_FXInc" type="Node2D" parent="."]
-script = ExtResource( 2 )
+script = ExtResource( 9 )
 
 [node name="Layers" type="Node2D" parent="BT_FXInc"]
 
 [node name="BT_FXInc" type="Node2D" parent="BT_FXInc/Layers"]
 position = Vector2( 1632, 672 )
 z_as_relative = false
-script = ExtResource( 10 )
+script = ExtResource( 8 )
 m_iIniAction = 0
 
 [node name="ic_FXInc" type="Node2D" parent="BT_FXInc/Layers/BT_FXInc"]
 z_index = -1
 z_as_relative = false
-script = ExtResource( 8 )
+script = ExtResource( 10 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_FXInc/Layers/BT_FXInc/ic_FXInc"]
-script = ExtResource( 9 )
+script = ExtResource( 6 )
 Action = 0
-m_sprite = ExtResource( 12 )
+m_sprite = ExtResource( 4 )
 
 [node name="lb_FXInc" type="Node2D" parent="BT_FXInc/Layers/BT_FXInc"]
 z_index = -2
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 7 )
 
 [node name="Label" type="Label" parent="BT_FXInc/Layers/BT_FXInc/lb_FXInc"]
 margin_top = -29.5
 margin_right = 36.0
 margin_bottom = 29.5
-theme = ExtResource( 3 )
+theme = ExtResource( 1 )
 text = "+"
 align = 1
 valign = 1
 
 [node name="BT_Back" type="Node2D" parent="."]
-script = ExtResource( 2 )
+script = ExtResource( 9 )
 
 [node name="Layers" type="Node2D" parent="BT_Back"]
 
 [node name="BT_Back" type="Node2D" parent="BT_Back/Layers"]
 position = Vector2( 128, 944 )
 z_as_relative = false
-script = ExtResource( 10 )
+script = ExtResource( 8 )
 
 [node name="ic_bt_back" type="Node2D" parent="BT_Back/Layers/BT_Back"]
 z_index = -1
 z_as_relative = false
-script = ExtResource( 8 )
+script = ExtResource( 10 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Back/Layers/BT_Back/ic_bt_back"]
-script = ExtResource( 9 )
+script = ExtResource( 6 )
 Action = 0
-m_sprite = ExtResource( 6 )
+m_sprite = ExtResource( 2 )
 
 [node name="ic_back" type="Node2D" parent="BT_Back/Layers/BT_Back"]
 position = Vector2( -5, 0 )
 z_index = -2
 z_as_relative = false
-script = ExtResource( 8 )
+script = ExtResource( 10 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Back/Layers/BT_Back/ic_back"]
-script = ExtResource( 9 )
+script = ExtResource( 6 )
 Action = 0
-m_sprite = ExtResource( 7 )
+m_sprite = ExtResource( 3 )
 
 [node name="BT_Accept" type="Node2D" parent="."]
-script = ExtResource( 2 )
+script = ExtResource( 9 )
 
 [node name="Layers" type="Node2D" parent="BT_Accept"]
 
 [node name="BT_Accept" type="Node2D" parent="BT_Accept/Layers"]
 position = Vector2( 1328, 960 )
 z_as_relative = false
-script = ExtResource( 10 )
+script = ExtResource( 8 )
 
 [node name="ic_Accept" type="Node2D" parent="BT_Accept/Layers/BT_Accept"]
 z_index = -1
 z_as_relative = false
-script = ExtResource( 8 )
+script = ExtResource( 10 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Accept/Layers/BT_Accept/ic_Accept"]
-script = ExtResource( 9 )
+script = ExtResource( 6 )
 Action = 0
-m_sprite = ExtResource( 5 )
+m_sprite = ExtResource( 12 )
 
 [node name="lb_Accept" type="Node2D" parent="BT_Accept/Layers/BT_Accept"]
 z_index = -2
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 7 )
 
 [node name="Label" type="Label" parent="BT_Accept/Layers/BT_Accept/lb_Accept"]
 margin_top = -29.5
 margin_right = 401.0
 margin_bottom = 29.5
-theme = ExtResource( 3 )
+theme = ExtResource( 1 )
 text = "Aceptar"
 align = 1
 valign = 1
 
 [node name="Foreground" type="Node2D" parent="."]
-script = ExtResource( 2 )
+script = ExtResource( 9 )
 
 [node name="Layers" type="Node2D" parent="Foreground"]
 
@@ -431,5 +431,5 @@ script = ExtResource( 2 )
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 640, 480 )
 z_as_relative = false
-script = ExtResource( 10 )
+script = ExtResource( 8 )
 m_oIniColor = Color( 1, 1, 1, 0 )

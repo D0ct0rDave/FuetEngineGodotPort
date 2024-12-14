@@ -1,71 +1,73 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=1]
-[ext_resource path="res://Assets/base/common/data/fonts/default.theme.tres" type="Theme" id=2]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=3]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=4]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/2.spr" type="Resource" id=5]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/backarrow.spr" type="Resource" id=6]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=7]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=8]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=9]
+[ext_resource path="res://Assets/base/common/data/fonts/default.theme.tres" type="Theme" id=1]
+[ext_resource path="res://Assets/base/common/data/fonts/default-m.theme.tres" type="Theme" id=2]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/2.spr" type="Resource" id=3]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/backarrow.spr" type="Resource" id=4]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=5]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=6]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=7]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=8]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=9]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=10]
 
 [node name="CFEHUD" type="Node2D"]
-script = ExtResource( 3 )
+script = ExtResource( 10 )
 
 [node name="BT_Back" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = ExtResource( 8 )
 
 [node name="Layers" type="Node2D" parent="BT_Back"]
 
 [node name="BT_Back" type="Node2D" parent="BT_Back/Layers"]
 position = Vector2( 120, 832 )
 z_as_relative = false
-script = ExtResource( 9 )
+script = ExtResource( 7 )
 
 [node name="ic_bt_back" type="Node2D" parent="BT_Back/Layers/BT_Back"]
 z_index = -1
 z_as_relative = false
-script = ExtResource( 7 )
+script = ExtResource( 9 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Back/Layers/BT_Back/ic_bt_back"]
-script = ExtResource( 8 )
+script = ExtResource( 5 )
 Action = 0
-m_sprite = ExtResource( 5 )
+m_sprite = ExtResource( 3 )
 
 [node name="ic_back" type="Node2D" parent="BT_Back/Layers/BT_Back"]
 position = Vector2( -5, 0 )
 z_index = -2
 z_as_relative = false
-script = ExtResource( 7 )
+script = ExtResource( 9 )
 m_iIniAction = 0
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Back/Layers/BT_Back/ic_back"]
-script = ExtResource( 8 )
+script = ExtResource( 5 )
 Action = 0
-m_sprite = ExtResource( 6 )
+m_sprite = ExtResource( 4 )
 
 [node name="G_Labels" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = ExtResource( 8 )
 
 [node name="Layers" type="Node2D" parent="G_Labels"]
 
 [node name="G_Labels" type="Node2D" parent="G_Labels/Layers"]
 position = Vector2( 1000, 304 )
 z_as_relative = false
-script = ExtResource( 9 )
+script = ExtResource( 7 )
 
 [node name="lb_Labels" type="Node2D" parent="G_Labels/Layers/G_Labels"]
 position = Vector2( 80, 0 )
 z_index = -1
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 6 )
 
 [node name="Label" type="Label" parent="G_Labels/Layers/G_Labels/lb_Labels"]
 margin_top = -7.0
 margin_right = 73.0
 margin_bottom = 7.0
+theme = ExtResource( 2 )
 text = "Total saltos"
 align = 2
 valign = 1
@@ -74,13 +76,14 @@ valign = 1
 position = Vector2( 80, 64 )
 z_index = -2
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 6 )
 
 [node name="Label" type="Label" parent="G_Labels/Layers/G_Labels/lb_Labels-1"]
 margin_top = -7.0
-margin_right = 93.0
+margin_right = 103.0
 margin_bottom = 7.0
-text = "Caidas al vacío"
+theme = ExtResource( 2 )
+text = "Caidas al vacÃ­o"
 align = 2
 valign = 1
 
@@ -88,12 +91,13 @@ valign = 1
 position = Vector2( 80, 128 )
 z_index = -3
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 6 )
 
 [node name="Label" type="Label" parent="G_Labels/Layers/G_Labels/lb_Labels-2"]
 margin_top = -7.0
 margin_right = 76.0
 margin_bottom = 7.0
+theme = ExtResource( 2 )
 text = "Explosiones"
 align = 2
 valign = 1
@@ -102,12 +106,13 @@ valign = 1
 position = Vector2( 80, 192 )
 z_index = -4
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 6 )
 
 [node name="Label" type="Label" parent="G_Labels/Layers/G_Labels/lb_Labels-3"]
 margin_top = -7.0
 margin_right = 86.0
 margin_bottom = 7.0
+theme = ExtResource( 2 )
 text = "Total partidas"
 align = 2
 valign = 1
@@ -116,12 +121,13 @@ valign = 1
 position = Vector2( 80, 256 )
 z_index = -5
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 6 )
 
 [node name="Label" type="Label" parent="G_Labels/Layers/G_Labels/lb_Labels-4"]
 margin_top = -7.0
 margin_right = 94.0
 margin_bottom = 7.0
+theme = ExtResource( 2 )
 text = "Tiempo jugado"
 align = 2
 valign = 1
@@ -130,52 +136,54 @@ valign = 1
 position = Vector2( 80, 320 )
 z_index = -6
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 6 )
 
 [node name="Label" type="Label" parent="G_Labels/Layers/G_Labels/lb_Labels-5"]
 margin_top = -7.0
-margin_right = 105.0
+margin_right = 111.0
 margin_bottom = 7.0
-text = "Max. puntuación"
+theme = ExtResource( 2 )
+text = "Max. puntuaciÃ³n"
 align = 2
 valign = 1
 
 [node name="G_dospuntos" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = ExtResource( 8 )
 
 [node name="Layers" type="Node2D" parent="G_dospuntos"]
 
 [node name="G_dospuntos" type="Node2D" parent="G_dospuntos/Layers"]
 position = Vector2( 1048, 264 )
 z_as_relative = false
-script = ExtResource( 9 )
+script = ExtResource( 7 )
 
 [node name="lb_dospuntos" type="Node2D" parent="G_dospuntos/Layers/G_dospuntos"]
 position = Vector2( 72, 8 )
 z_index = -1
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 6 )
 
 [node name="Label" type="Label" parent="G_dospuntos/Layers/G_dospuntos/lb_dospuntos"]
 margin_right = 89.0
 margin_bottom = 14.0
+theme = ExtResource( 2 )
 text = ":/n:/n:/n:/n:/n:"
 align = 2
 
 [node name="G_Stats" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = ExtResource( 8 )
 
 [node name="Layers" type="Node2D" parent="G_Stats"]
 
 [node name="G_Stats" type="Node2D" parent="G_Stats/Layers"]
 position = Vector2( 1128, 320 )
 z_as_relative = false
-script = ExtResource( 9 )
+script = ExtResource( 7 )
 
 [node name="lb_Stats-0" type="Node2D" parent="G_Stats/Layers/G_Stats"]
 z_index = -1
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 6 )
 
 [node name="Label" type="Label" parent="G_Stats/Layers/G_Stats/lb_Stats-0"]
 margin_top = -7.0
@@ -188,7 +196,7 @@ valign = 1
 position = Vector2( 0, 64 )
 z_index = -2
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 6 )
 
 [node name="Label" type="Label" parent="G_Stats/Layers/G_Stats/lb_Stats-1"]
 margin_top = -7.0
@@ -201,7 +209,7 @@ valign = 1
 position = Vector2( 0, 128 )
 z_index = -3
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 6 )
 
 [node name="Label" type="Label" parent="G_Stats/Layers/G_Stats/lb_Stats-2"]
 margin_top = -7.0
@@ -214,7 +222,7 @@ valign = 1
 position = Vector2( 0, 192 )
 z_index = -4
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 6 )
 
 [node name="Label" type="Label" parent="G_Stats/Layers/G_Stats/lb_Stats-3"]
 margin_top = -7.0
@@ -227,7 +235,7 @@ valign = 1
 position = Vector2( 0, 256 )
 z_index = -5
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 6 )
 
 [node name="Label" type="Label" parent="G_Stats/Layers/G_Stats/lb_Stats-4"]
 margin_top = -7.0
@@ -240,7 +248,7 @@ valign = 1
 position = Vector2( 0, 320 )
 z_index = -6
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 6 )
 
 [node name="Label" type="Label" parent="G_Stats/Layers/G_Stats/lb_Stats-5"]
 margin_top = -7.0
@@ -250,85 +258,85 @@ text = "0000000"
 valign = 1
 
 [node name="G_Star" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = ExtResource( 8 )
 
 [node name="Layers" type="Node2D" parent="G_Star"]
 
 [node name="G_Star" type="Node2D" parent="G_Star/Layers"]
 position = Vector2( 936, 624 )
 z_as_relative = false
-script = ExtResource( 9 )
+script = ExtResource( 7 )
 
 [node name="ic_Star-0" type="Node2D" parent="G_Star/Layers/G_Star"]
 position = Vector2( -320, 160 )
 z_index = -1
 z_as_relative = false
-script = ExtResource( 7 )
+script = ExtResource( 9 )
 m_iIniAction = 0
 
 [node name="ic_Star-1" type="Node2D" parent="G_Star/Layers/G_Star"]
 position = Vector2( -192, 160 )
 z_index = -2
 z_as_relative = false
-script = ExtResource( 7 )
+script = ExtResource( 9 )
 m_iIniAction = 0
 
 [node name="ic_Star-2" type="Node2D" parent="G_Star/Layers/G_Star"]
 position = Vector2( -64, 160 )
 z_index = -3
 z_as_relative = false
-script = ExtResource( 7 )
+script = ExtResource( 9 )
 m_iIniAction = 0
 
 [node name="ic_Star-3" type="Node2D" parent="G_Star/Layers/G_Star"]
 position = Vector2( 64, 160 )
 z_index = -4
 z_as_relative = false
-script = ExtResource( 7 )
+script = ExtResource( 9 )
 m_iIniAction = 0
 
 [node name="ic_Star-4" type="Node2D" parent="G_Star/Layers/G_Star"]
 position = Vector2( 192, 160 )
 z_index = -5
 z_as_relative = false
-script = ExtResource( 7 )
+script = ExtResource( 9 )
 m_iIniAction = 0
 
 [node name="ic_Star-5" type="Node2D" parent="G_Star/Layers/G_Star"]
 position = Vector2( 320, 160 )
 z_index = -6
 z_as_relative = false
-script = ExtResource( 7 )
+script = ExtResource( 9 )
 m_iIniAction = 0
 
 [node name="Title" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = ExtResource( 8 )
 
 [node name="Layers" type="Node2D" parent="Title"]
 
 [node name="Title" type="Node2D" parent="Title/Layers"]
 position = Vector2( 376, 72 )
 z_as_relative = false
-script = ExtResource( 9 )
+script = ExtResource( 7 )
 
 [node name="lb_Title" type="Node2D" parent="Title/Layers/Title"]
 modulate = Color( 1, 1, 0.502, 1 )
 z_index = -1
 z_as_relative = false
-script = ExtResource( 4 )
+script = ExtResource( 6 )
 m_oIniColor = Color( 1, 1, 0.502, 1 )
 
 [node name="Label" type="Label" parent="Title/Layers/Title/lb_Title"]
 margin_top = -29.5
-margin_right = 594.0
+margin_right = 633.0
 margin_bottom = 29.5
-theme = ExtResource( 2 )
-text = "Estadísticas"
+theme = ExtResource( 1 )
+text = "EstadÃ­sticas"
 align = 1
 valign = 1
 
 [node name="Foreground" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = ExtResource( 8 )
 
 [node name="Layers" type="Node2D" parent="Foreground"]
 
@@ -336,5 +344,5 @@ script = ExtResource( 1 )
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 640, 480 )
 z_as_relative = false
-script = ExtResource( 9 )
+script = ExtResource( 7 )
 m_oIniColor = Color( 1, 1, 1, 0 )

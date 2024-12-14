@@ -1,6 +1,1247 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=91 format=2]
 
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=1]
+[ext_resource path="res://Assets/data/fonts/default.theme.tres" type="Theme" id=1]
+[ext_resource path="res://Assets/data/menu/sprites/background.png" type="Texture" id=2]
+[ext_resource path="res://Assets/data/menu/sprites/minus_button.png" type="Texture" id=3]
+[ext_resource path="res://Assets/data/menu/sprites/bt_back.png" type="Texture" id=4]
+[ext_resource path="res://Assets/data/menu/sprites/bt_options.png" type="Texture" id=5]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=6]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteAction.cs" type="Script" id=7]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=8]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=9]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDRect.cs" type="Script" id=10]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESprite.cs" type="Script" id=11]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=12]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteFrame.cs" type="Script" id=13]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=14]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=15]
+[ext_resource path="res://Assets/data/menu/sprites/checker.spr" type="Resource" id=16]
+[ext_resource path="res://Assets/base/common/data/fonts/default.theme.tres" type="Theme" id=17]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 13 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 1920, 1080 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 0.0
+m_rFrameTime = 0.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 2 )
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 7 )
+Name = "default"
+m_rActionTime = 0.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 1 ) ]
+
+[sub_resource type="Resource" id=3]
+resource_local_to_scene = true
+script = ExtResource( 11 )
+Name = "res://Assets/data/menu/sprites/background.spr"
+m_oActions = [ SubResource( 2 ) ]
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 13 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 421, 76 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 0.0
+m_rFrameTime = 0.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 3 )
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 7 )
+Name = "default"
+m_rActionTime = 0.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 4 ) ]
+
+[sub_resource type="Resource" id=6]
+resource_local_to_scene = true
+script = ExtResource( 11 )
+Name = "res://Assets/data/menu/sprites/minus_button.spr"
+m_oActions = [ SubResource( 5 ) ]
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 13 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 229, 223 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 0.0
+m_rFrameTime = 0.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 4 )
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 7 )
+Name = "default"
+m_rActionTime = 0.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 7 ) ]
+
+[sub_resource type="Resource" id=9]
+resource_local_to_scene = true
+script = ExtResource( 11 )
+Name = "res://Assets/data/menu/sprites/bt_back.spr"
+m_oActions = [ SubResource( 8 ) ]
+
+[sub_resource type="Animation" id=10]
+resource_local_to_scene = true
+resource_name = "OnDisable"
+
+[sub_resource type="Animation" id=11]
+resource_local_to_scene = true
+resource_name = "OnEnterPage"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Back:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.3, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 456.0, 456.0, 0.0 ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_local_to_scene = true
+resource_name = "OnExitPage"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Back:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 0.5, 1 ),
+"update": 0,
+"values": [ 0.0, 456.0 ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_local_to_scene = true
+resource_name = "OnFocus"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Back:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.036, 1.036 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_local_to_scene = true
+resource_name = "OnIdle"
+
+[sub_resource type="Animation" id=15]
+resource_local_to_scene = true
+resource_name = "OnLoseFocus"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Back:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.036, 1.036 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=16]
+resource_local_to_scene = true
+resource_name = "OnPress"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Back:modulate")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=17]
+resource_local_to_scene = true
+resource_name = "OnRelease"
+
+[sub_resource type="Animation" id=18]
+resource_local_to_scene = true
+resource_name = "OnSelect"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Back:modulate")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.502 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Resource" id=19]
+script = ExtResource( 13 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 225, 213 )
+m_oScale = Vector2( 1, 1 )
+m_rDelay = 0.0
+m_rBlendTime = 0.0
+m_rFrameTime = 0.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+m_hMaterial = ExtResource( 5 )
+
+[sub_resource type="Resource" id=20]
+script = ExtResource( 7 )
+Name = "default"
+m_rActionTime = 0.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 19 ) ]
+
+[sub_resource type="Resource" id=21]
+resource_local_to_scene = true
+script = ExtResource( 11 )
+Name = "res://Assets/data/menu/sprites/bt_options.spr"
+m_oActions = [ SubResource( 20 ) ]
+
+[sub_resource type="Animation" id=22]
+resource_local_to_scene = true
+resource_name = "OnDisable"
+
+[sub_resource type="Animation" id=23]
+resource_local_to_scene = true
+resource_name = "OnEnterPage"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Options:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.3, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -292.0, -292.0, 0.0 ]
+}
+
+[sub_resource type="Animation" id=24]
+resource_local_to_scene = true
+resource_name = "OnExitPage"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Options:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 0.5, 1 ),
+"update": 0,
+"values": [ 0.0, -292.0 ]
+}
+
+[sub_resource type="Animation" id=25]
+resource_local_to_scene = true
+resource_name = "OnFocus"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Options:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.036, 1.036 ) ]
+}
+
+[sub_resource type="Animation" id=26]
+resource_local_to_scene = true
+resource_name = "OnIdle"
+
+[sub_resource type="Animation" id=27]
+resource_local_to_scene = true
+resource_name = "OnLoseFocus"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Options:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.036, 1.036 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=28]
+resource_local_to_scene = true
+resource_name = "OnPress"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Options:modulate")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=29]
+resource_local_to_scene = true
+resource_name = "OnRelease"
+
+[sub_resource type="Animation" id=30]
+resource_local_to_scene = true
+resource_name = "OnSelect"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Options:modulate")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.502 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Resource" id=31]
+script = ExtResource( 13 )
+m_bScaleXUEqually = false
+m_bScaleYVEqually = false
+m_bUWorldCoords = false
+m_bVWorldCoords = false
+m_oUVIni = Vector2( 0, 0 )
+m_oUVEnd = Vector2( 1, 1 )
+m_oSize = Vector2( 0, 0 )
+m_oScale = Vector2( 0, 0 )
+m_rDelay = 0.0
+m_rBlendTime = 0.0
+m_rFrameTime = 0.0
+m_rStartTime = 0.0
+m_oPivot = Vector2( 0.5, 0.5 )
+m_o1OverDims = Vector2( 0, 0 )
+
+[sub_resource type="Resource" id=32]
+script = ExtResource( 7 )
+Name = "default"
+m_rActionTime = 0.0
+m_eBlendMode = 2
+m_ePlayMode = 1
+m_rRandStartTime = 0.0
+m_oSeq = [ SubResource( 31 ) ]
+
+[sub_resource type="Resource" id=33]
+resource_local_to_scene = true
+script = ExtResource( 11 )
+Name = "res://Assets/data/menu/sprites/3.spr"
+m_oActions = [ SubResource( 32 ) ]
+
+[sub_resource type="Animation" id=34]
+resource_local_to_scene = true
+resource_name = "OnDisable"
+
+[sub_resource type="Animation" id=35]
+resource_local_to_scene = true
+resource_name = "OnEnterPage"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Play:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 2000.0, 2000.0, 0.0 ]
+}
+
+[sub_resource type="Animation" id=36]
+resource_local_to_scene = true
+resource_name = "OnExitPage"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Play:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.6 ),
+"transitions": PoolRealArray( 0.5, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 2000.0 ]
+}
+
+[sub_resource type="Animation" id=37]
+resource_local_to_scene = true
+resource_name = "OnFocus"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Play:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.036, 1.036 ) ]
+}
+
+[sub_resource type="Animation" id=38]
+resource_local_to_scene = true
+resource_name = "OnIdle"
+
+[sub_resource type="Animation" id=39]
+resource_local_to_scene = true
+resource_name = "OnLoseFocus"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Play:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.036, 1.036 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=40]
+resource_local_to_scene = true
+resource_name = "OnPress"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Play:modulate")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=41]
+resource_local_to_scene = true
+resource_name = "OnRelease"
+
+[sub_resource type="Animation" id=42]
+resource_local_to_scene = true
+resource_name = "OnSelect"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Play:modulate")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.502 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=43]
+resource_local_to_scene = true
+resource_name = "OnDisable"
+
+[sub_resource type="Animation" id=44]
+resource_local_to_scene = true
+resource_name = "OnEnterPage"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Tutorial:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.7, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 2000.0, 2000.0, 0.0 ]
+}
+
+[sub_resource type="Animation" id=45]
+resource_local_to_scene = true
+resource_name = "OnExitPage"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Tutorial:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.6 ),
+"transitions": PoolRealArray( 0.5, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 2000.0 ]
+}
+
+[sub_resource type="Animation" id=46]
+resource_local_to_scene = true
+resource_name = "OnFocus"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Tutorial:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.036, 1.036 ) ]
+}
+
+[sub_resource type="Animation" id=47]
+resource_local_to_scene = true
+resource_name = "OnIdle"
+
+[sub_resource type="Animation" id=48]
+resource_local_to_scene = true
+resource_name = "OnLoseFocus"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Tutorial:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.036, 1.036 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=49]
+resource_local_to_scene = true
+resource_name = "OnPress"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Tutorial:modulate")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=50]
+resource_local_to_scene = true
+resource_name = "OnRelease"
+
+[sub_resource type="Animation" id=51]
+resource_local_to_scene = true
+resource_name = "OnSelect"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Tutorial:modulate")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.502 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=52]
+resource_local_to_scene = true
+resource_name = "OnDisable"
+
+[sub_resource type="Animation" id=53]
+resource_local_to_scene = true
+resource_name = "OnEnterPage"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Challenges:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.9, 1.1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 2000.0, 2000.0, 0.0 ]
+}
+
+[sub_resource type="Animation" id=54]
+resource_local_to_scene = true
+resource_name = "OnExitPage"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Challenges:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.6 ),
+"transitions": PoolRealArray( 0.5, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 2000.0 ]
+}
+
+[sub_resource type="Animation" id=55]
+resource_local_to_scene = true
+resource_name = "OnFocus"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Challenges:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.036, 1.036 ) ]
+}
+
+[sub_resource type="Animation" id=56]
+resource_local_to_scene = true
+resource_name = "OnIdle"
+
+[sub_resource type="Animation" id=57]
+resource_local_to_scene = true
+resource_name = "OnLoseFocus"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Challenges:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.036, 1.036 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=58]
+resource_local_to_scene = true
+resource_name = "OnPress"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Challenges:modulate")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=59]
+resource_local_to_scene = true
+resource_name = "OnRelease"
+
+[sub_resource type="Animation" id=60]
+resource_local_to_scene = true
+resource_name = "OnSelect"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Challenges:modulate")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.502 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=61]
+resource_local_to_scene = true
+resource_name = "OnDisable"
+
+[sub_resource type="Animation" id=62]
+resource_local_to_scene = true
+resource_name = "OnEnterPage"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Scores:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.1, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 2000.0, 2000.0, 0.0 ]
+}
+
+[sub_resource type="Animation" id=63]
+resource_local_to_scene = true
+resource_name = "OnExitPage"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Scores:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.6 ),
+"transitions": PoolRealArray( 0.5, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 2000.0 ]
+}
+
+[sub_resource type="Animation" id=64]
+resource_local_to_scene = true
+resource_name = "OnFocus"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Scores:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.036, 1.036 ) ]
+}
+
+[sub_resource type="Animation" id=65]
+resource_local_to_scene = true
+resource_name = "OnIdle"
+
+[sub_resource type="Animation" id=66]
+resource_local_to_scene = true
+resource_name = "OnLoseFocus"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Scores:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.036, 1.036 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=67]
+resource_local_to_scene = true
+resource_name = "OnPress"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Scores:modulate")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=68]
+resource_local_to_scene = true
+resource_name = "OnRelease"
+
+[sub_resource type="Animation" id=69]
+resource_local_to_scene = true
+resource_name = "OnSelect"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Scores:modulate")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.502 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=70]
+resource_local_to_scene = true
+resource_name = "OnEnterPage"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/PlayerName:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=71]
+resource_local_to_scene = true
+resource_name = "OnExitPage"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/PlayerName:modulate")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=72]
+resource_local_to_scene = true
+resource_name = "OnEnterPage"
+
+[sub_resource type="Animation" id=73]
+resource_local_to_scene = true
+resource_name = "OnExitPage"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/Foreground:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
 
 [node name="CFEHUD" type="Node2D"]
-script = ExtResource( 1 )
+script = ExtResource( 9 )
+
+[node name="CFEHUDElement" type="Node2D" parent="."]
+script = ExtResource( 12 )
+
+[node name="Layers" type="Node2D" parent="CFEHUDElement"]
+
+[node name="CFEHUDGroup" type="Node2D" parent="CFEHUDElement/Layers"]
+z_as_relative = false
+script = ExtResource( 8 )
+
+[node name="CFEHUDGroup" type="Node2D" parent="CFEHUDElement/Layers/CFEHUDGroup"]
+z_as_relative = false
+script = ExtResource( 8 )
+
+[node name="CFEHUDIcon" type="Node2D" parent="CFEHUDElement/Layers/CFEHUDGroup/CFEHUDGroup"]
+position = Vector2( 960, 1620 )
+z_as_relative = false
+script = ExtResource( 14 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="CFEHUDElement/Layers/CFEHUDGroup/CFEHUDGroup/CFEHUDIcon"]
+script = ExtResource( 15 )
+Action = 0
+m_sprite = SubResource( 3 )
+
+[node name="CFEHUDIcon2" type="Node2D" parent="CFEHUDElement/Layers/CFEHUDGroup/CFEHUDGroup"]
+position = Vector2( 1616, 2064 )
+z_as_relative = false
+script = ExtResource( 14 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="CFEHUDElement/Layers/CFEHUDGroup/CFEHUDGroup/CFEHUDIcon2"]
+script = ExtResource( 15 )
+Action = 0
+m_sprite = SubResource( 6 )
+
+[node name="CFEHUDElement2" type="Node2D" parent="."]
+script = ExtResource( 12 )
+
+[node name="Layers" type="Node2D" parent="CFEHUDElement2"]
+
+[node name="CFEHUDGroup" type="Node2D" parent="CFEHUDElement2/Layers"]
+z_as_relative = false
+script = ExtResource( 8 )
+
+[node name="CFEHUDGroup" type="Node2D" parent="CFEHUDElement2/Layers/CFEHUDGroup"]
+z_as_relative = false
+script = ExtResource( 8 )
+
+[node name="CFEHUDRect" type="Node2D" parent="CFEHUDElement2/Layers/CFEHUDGroup/CFEHUDGroup"]
+z_as_relative = false
+script = ExtResource( 10 )
+m_oIniColor = Color( 1, 1, 1, 0.5 )
+m_rWidth = 1920.0
+m_rHeight = 1080.0
+m_oCorners = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 )
+
+[node name="CFEHUDIcon" type="Node2D" parent="CFEHUDElement2/Layers/CFEHUDGroup/CFEHUDGroup"]
+position = Vector2( 1920, 0 )
+z_as_relative = false
+script = ExtResource( 14 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="CFEHUDElement2/Layers/CFEHUDGroup/CFEHUDGroup/CFEHUDIcon"]
+script = ExtResource( 15 )
+Action = 0
+m_sprite = ExtResource( 16 )
+
+[node name="CFEHUDIcon2" type="Node2D" parent="CFEHUDElement2/Layers/CFEHUDGroup/CFEHUDGroup"]
+scale = Vector2( -1, 1 )
+z_as_relative = false
+script = ExtResource( 14 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="CFEHUDElement2/Layers/CFEHUDGroup/CFEHUDGroup/CFEHUDIcon2"]
+script = ExtResource( 15 )
+Action = 0
+m_sprite = ExtResource( 16 )
+
+[node name="CFEHUDElement3" type="Node2D" parent="."]
+script = ExtResource( 12 )
+
+[node name="Layers" type="Node2D" parent="CFEHUDElement3"]
+
+[node name="CFEHUDGroup" type="Node2D" parent="CFEHUDElement3/Layers"]
+position = Vector2( 192, 456 )
+z_as_relative = false
+script = ExtResource( 8 )
+
+[node name="CFEHUDIcon" type="Node2D" parent="CFEHUDElement3/Layers/CFEHUDGroup"]
+z_as_relative = false
+script = ExtResource( 14 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="CFEHUDElement3/Layers/CFEHUDGroup/CFEHUDIcon"]
+script = ExtResource( 15 )
+Action = 0
+m_sprite = SubResource( 9 )
+
+[node name="Actions" type="AnimationPlayer" parent="CFEHUDElement3"]
+anims/OnDisable = SubResource( 10 )
+anims/OnEnterPage = SubResource( 11 )
+anims/OnExitPage = SubResource( 12 )
+anims/OnFocus = SubResource( 13 )
+anims/OnIdle = SubResource( 14 )
+anims/OnLoseFocus = SubResource( 15 )
+anims/OnPress = SubResource( 16 )
+anims/OnRelease = SubResource( 17 )
+anims/OnSelect = SubResource( 18 )
+
+[node name="CFEHUDElement4" type="Node2D" parent="."]
+script = ExtResource( 12 )
+
+[node name="Layers" type="Node2D" parent="CFEHUDElement4"]
+
+[node name="CFEHUDGroup" type="Node2D" parent="CFEHUDElement4/Layers"]
+position = Vector2( 1664, 0 )
+scale = Vector2( 1.036, 1.036 )
+z_as_relative = false
+script = ExtResource( 8 )
+
+[node name="CFEHUDIcon" type="Node2D" parent="CFEHUDElement4/Layers/CFEHUDGroup"]
+scale = Vector2( 0.85, 0.85 )
+z_as_relative = false
+script = ExtResource( 14 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="CFEHUDElement4/Layers/CFEHUDGroup/CFEHUDIcon"]
+script = ExtResource( 15 )
+Action = 0
+m_sprite = SubResource( 21 )
+
+[node name="Actions" type="AnimationPlayer" parent="CFEHUDElement4"]
+anims/OnDisable = SubResource( 22 )
+anims/OnEnterPage = SubResource( 23 )
+anims/OnExitPage = SubResource( 24 )
+anims/OnFocus = SubResource( 25 )
+anims/OnIdle = SubResource( 26 )
+anims/OnLoseFocus = SubResource( 27 )
+anims/OnPress = SubResource( 28 )
+anims/OnRelease = SubResource( 29 )
+anims/OnSelect = SubResource( 30 )
+
+[node name="CFEHUDElement5" type="Node2D" parent="."]
+script = ExtResource( 12 )
+
+[node name="Layers" type="Node2D" parent="CFEHUDElement5"]
+
+[node name="CFEHUDGroup" type="Node2D" parent="CFEHUDElement5/Layers"]
+position = Vector2( 672, 264 )
+z_as_relative = false
+script = ExtResource( 8 )
+
+[node name="CFEHUDIcon" type="Node2D" parent="CFEHUDElement5/Layers/CFEHUDGroup"]
+z_as_relative = false
+script = ExtResource( 14 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="CFEHUDElement5/Layers/CFEHUDGroup/CFEHUDIcon"]
+script = ExtResource( 15 )
+Action = 0
+m_sprite = SubResource( 33 )
+
+[node name="CFEHUDLabel" type="Node2D" parent="CFEHUDElement5/Layers/CFEHUDGroup"]
+z_as_relative = false
+script = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="CFEHUDElement5/Layers/CFEHUDGroup/CFEHUDLabel"]
+margin_top = -29.5
+margin_right = 217.0
+margin_bottom = 29.5
+theme = ExtResource( 1 )
+text = "Play"
+align = 1
+valign = 1
+
+[node name="Actions" type="AnimationPlayer" parent="CFEHUDElement5"]
+anims/OnDisable = SubResource( 34 )
+anims/OnEnterPage = SubResource( 35 )
+anims/OnExitPage = SubResource( 36 )
+anims/OnFocus = SubResource( 37 )
+anims/OnIdle = SubResource( 38 )
+anims/OnLoseFocus = SubResource( 39 )
+anims/OnPress = SubResource( 40 )
+anims/OnRelease = SubResource( 41 )
+anims/OnSelect = SubResource( 42 )
+
+[node name="CFEHUDElement6" type="Node2D" parent="."]
+script = ExtResource( 12 )
+
+[node name="Layers" type="Node2D" parent="CFEHUDElement6"]
+
+[node name="CFEHUDGroup" type="Node2D" parent="CFEHUDElement6/Layers"]
+position = Vector2( 0, 456 )
+z_as_relative = false
+script = ExtResource( 8 )
+
+[node name="CFEHUDIcon" type="Node2D" parent="CFEHUDElement6/Layers/CFEHUDGroup"]
+z_as_relative = false
+script = ExtResource( 14 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="CFEHUDElement6/Layers/CFEHUDGroup/CFEHUDIcon"]
+script = ExtResource( 15 )
+Action = 0
+m_sprite = SubResource( 33 )
+
+[node name="CFEHUDLabel" type="Node2D" parent="CFEHUDElement6/Layers/CFEHUDGroup"]
+z_as_relative = false
+script = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="CFEHUDElement6/Layers/CFEHUDGroup/CFEHUDLabel"]
+margin_top = -29.5
+margin_right = 419.0
+margin_bottom = 29.5
+theme = ExtResource( 1 )
+text = "Tutorial"
+align = 1
+valign = 1
+
+[node name="Actions" type="AnimationPlayer" parent="CFEHUDElement6"]
+anims/OnDisable = SubResource( 43 )
+anims/OnEnterPage = SubResource( 44 )
+anims/OnExitPage = SubResource( 45 )
+anims/OnFocus = SubResource( 46 )
+anims/OnIdle = SubResource( 47 )
+anims/OnLoseFocus = SubResource( 48 )
+anims/OnPress = SubResource( 49 )
+anims/OnRelease = SubResource( 50 )
+anims/OnSelect = SubResource( 51 )
+
+[node name="CFEHUDElement7" type="Node2D" parent="."]
+script = ExtResource( 12 )
+
+[node name="Layers" type="Node2D" parent="CFEHUDElement7"]
+
+[node name="CFEHUDGroup" type="Node2D" parent="CFEHUDElement7/Layers"]
+position = Vector2( 2000, 648 )
+z_as_relative = false
+script = ExtResource( 8 )
+
+[node name="CFEHUDIcon" type="Node2D" parent="CFEHUDElement7/Layers/CFEHUDGroup"]
+z_as_relative = false
+script = ExtResource( 14 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="CFEHUDElement7/Layers/CFEHUDGroup/CFEHUDIcon"]
+script = ExtResource( 15 )
+Action = 0
+m_sprite = SubResource( 33 )
+
+[node name="CFEHUDLabel" type="Node2D" parent="CFEHUDElement7/Layers/CFEHUDGroup"]
+z_as_relative = false
+script = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="CFEHUDElement7/Layers/CFEHUDGroup/CFEHUDLabel"]
+margin_top = -29.5
+margin_right = 419.0
+margin_bottom = 29.5
+theme = ExtResource( 1 )
+text = "Desafíos"
+align = 1
+valign = 1
+
+[node name="Actions" type="AnimationPlayer" parent="CFEHUDElement7"]
+anims/OnDisable = SubResource( 52 )
+anims/OnEnterPage = SubResource( 53 )
+anims/OnExitPage = SubResource( 54 )
+anims/OnFocus = SubResource( 55 )
+anims/OnIdle = SubResource( 56 )
+anims/OnLoseFocus = SubResource( 57 )
+anims/OnPress = SubResource( 58 )
+anims/OnRelease = SubResource( 59 )
+anims/OnSelect = SubResource( 60 )
+
+[node name="CFEHUDElement8" type="Node2D" parent="."]
+script = ExtResource( 12 )
+
+[node name="Layers" type="Node2D" parent="CFEHUDElement8"]
+
+[node name="CFEHUDGroup" type="Node2D" parent="CFEHUDElement8/Layers"]
+position = Vector2( 1152, 840 )
+z_as_relative = false
+script = ExtResource( 8 )
+
+[node name="CFEHUDIcon" type="Node2D" parent="CFEHUDElement8/Layers/CFEHUDGroup"]
+z_as_relative = false
+script = ExtResource( 14 )
+m_iIniAction = 0
+
+[node name="CFESpriteInstance" type="Node2D" parent="CFEHUDElement8/Layers/CFEHUDGroup/CFEHUDIcon"]
+script = ExtResource( 15 )
+Action = 0
+m_sprite = SubResource( 33 )
+
+[node name="CFEHUDLabel" type="Node2D" parent="CFEHUDElement8/Layers/CFEHUDGroup"]
+z_as_relative = false
+script = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="CFEHUDElement8/Layers/CFEHUDGroup/CFEHUDLabel"]
+margin_top = -29.5
+margin_right = 549.0
+margin_bottom = 29.5
+theme = ExtResource( 1 )
+text = "Puntuación"
+align = 1
+valign = 1
+
+[node name="Actions" type="AnimationPlayer" parent="CFEHUDElement8"]
+anims/OnDisable = SubResource( 61 )
+anims/OnEnterPage = SubResource( 62 )
+anims/OnExitPage = SubResource( 63 )
+anims/OnFocus = SubResource( 64 )
+anims/OnIdle = SubResource( 65 )
+anims/OnLoseFocus = SubResource( 66 )
+anims/OnPress = SubResource( 67 )
+anims/OnRelease = SubResource( 68 )
+anims/OnSelect = SubResource( 69 )
+
+[node name="CFEHUDElement9" type="Node2D" parent="."]
+script = ExtResource( 12 )
+
+[node name="Layers" type="Node2D" parent="CFEHUDElement9"]
+
+[node name="CFEHUDGroup" type="Node2D" parent="CFEHUDElement9/Layers"]
+position = Vector2( 96, 104 )
+z_as_relative = false
+script = ExtResource( 8 )
+m_rDepthFactor = 0.0
+
+[node name="CFEHUDLabel" type="Node2D" parent="CFEHUDElement9/Layers/CFEHUDGroup"]
+z_as_relative = false
+script = ExtResource( 6 )
+m_oIniColor = Color( 1, 1, 0, 1 )
+
+[node name="Label" type="Label" parent="CFEHUDElement9/Layers/CFEHUDGroup/CFEHUDLabel"]
+margin_right = 300.0
+margin_bottom = 59.0
+theme = ExtResource( 17 )
+text = "PEPITA"
+valign = 1
+
+[node name="Actions" type="AnimationPlayer" parent="CFEHUDElement9"]
+anims/OnEnterPage = SubResource( 70 )
+anims/OnExitPage = SubResource( 71 )
+
+[node name="CFEHUDElement10" type="Node2D" parent="."]
+script = ExtResource( 12 )
+
+[node name="Layers" type="Node2D" parent="CFEHUDElement10"]
+
+[node name="CFEHUDGroup" type="Node2D" parent="CFEHUDElement10/Layers"]
+position = Vector2( 640, 480 )
+z_as_relative = false
+script = ExtResource( 8 )
+m_oIniColor = Color( 1, 1, 1, 0 )
+
+[node name="Actions" type="AnimationPlayer" parent="CFEHUDElement10"]
+anims/OnEnterPage = SubResource( 72 )
+anims/OnExitPage = SubResource( 73 )

@@ -4,6 +4,7 @@ using CFEString = System.String;
 using FEReal = System.Single;
 using CFEVect2 = Godot.Vector2;
 using CFEColor = Godot.Color;
+using CFEHUDElementAction = Godot.Animation; 
 //-----------------------------------------------------------------------------
 namespace FuetEngine
 {
@@ -29,22 +30,23 @@ namespace FuetEngine
 		public int iAddAction(CFEHUDElementAction _oAction)
 		{
 			CheckActionList();
-			m_oActions.AddChild(_oAction);
-			return m_oActions.GetChildCount()-1;
+			
+			m_oActions.AddAnimation(_oAction.ResourceName, _oAction);
+			return m_oActions.GetAnimationList().Length - 1;
 		}
 
 		/// Retrieves the action identified by the given index.
 		public CFEHUDElementAction oGetAction(int _iAction)
 		{
 			CheckActionList();
-			return m_oActions.GetChild<CFEHUDElementAction>(_iAction);
+			return m_oActions.GetAnimation(m_oActions.GetAnimationList()[_iAction]);
 		}
 
 		/// Deletes a action in the HUD element.
 		public void DeleteAction(int _iAction)
 		{
 			CheckActionList();
-			m_oActions.RemoveChild(m_oActions.GetChild(_iAction));
+			m_oActions.RemoveAnimation(m_oActions.GetAnimationList()[_iAction]);
 		}
 
 		/// Swap the contents of layer A and B.
@@ -58,7 +60,7 @@ namespace FuetEngine
 		public int iNumActions()
 		{
 			CheckActionList();
-			return m_oActions.GetChildCount();
+			return m_oActions.GetAnimationList().Length;
 		}
 
 		/// Adds a new layer into the HUD Element.
@@ -105,17 +107,18 @@ namespace FuetEngine
 
 		private void CheckActionList()
 		{
-			if (FindNode("Actions", false) == null)
-			{				
-				m_oActions = new Node();
+			if (GetNode("Actions") == null)
+			{
+				m_oActions = new AnimationPlayer();
 				m_oActions.Name = "Actions";
+
 				AddChild(m_oActions);
 			}
 		}
 
 		private void CheckLayerList()
 		{
-			if (FindNode("Layers", false) == null)
+			if (GetNode("Layers") == null)
 			{
 				m_oLayers = new Node2D();
 				m_oLayers.Name = "Layers";
@@ -124,7 +127,7 @@ namespace FuetEngine
 		}
 
 		protected Node2D m_oLayers = null;
-		protected Node m_oActions = null;
+		protected AnimationPlayer m_oActions = null;
 	}
 }
 //-----------------------------------------------------------------------------

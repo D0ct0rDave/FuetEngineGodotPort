@@ -1,4 +1,5 @@
 using Godot;
+using FuetEngine;
 //-----------------------------------------------------------------------------
 using CFEString = System.String;
 using FEReal = System.Single;
@@ -103,7 +104,7 @@ namespace FuetEngine
 		{
 			CheckLabel();
 			m_eHAlignment = _eHAlignment;
-			m_label.Align = GetGodotLabelAlignment(_eHAlignment);
+			m_label.Align = Support.GetGodotLabelAlignment(_eHAlignment);
 			
 			Vector2 recPosition = m_label.RectPosition; 
 			switch (_eHAlignment)
@@ -136,7 +137,7 @@ namespace FuetEngine
 		{
 			CheckLabel();
 			m_eVAlignment = _eVAlignment;
-			m_label.Valign = GetGodotLabelVAlignment(_eVAlignment);
+			m_label.Valign = Support.GetGodotLabelVAlignment(_eVAlignment);
 
 			Vector2 recPosition = m_label.RectPosition;
 			switch (_eVAlignment)
@@ -244,35 +245,6 @@ namespace FuetEngine
 				AddChild(m_label);
 			}
 		}
-		//---------------------------------------------------------------------
-		private Label.AlignEnum GetGodotLabelAlignment(EFETextHAlignmentMode _hAlignmentMode)
-		{
-			switch (_hAlignmentMode)
-			{
-				case EFETextHAlignmentMode.THAM_LEFT:	return Label.AlignEnum.Left;
-				case EFETextHAlignmentMode.THAM_CENTER:	return Label.AlignEnum.Center;
-				case EFETextHAlignmentMode.THAM_RIGHT:	return Label.AlignEnum.Right;
-				
-				default:
-				return Label.AlignEnum.Left;
-				// break;
-			}
-		}
-		//---------------------------------------------------------------------
-		private Label.VAlign GetGodotLabelVAlignment(EFETextVAlignmentMode _vAlignmentMode)
-		{
-			switch (_vAlignmentMode)
-			{
-				case EFETextVAlignmentMode.TVAM_TOP:	return Label.VAlign.Top;
-				case EFETextVAlignmentMode.TVAM_CENTER:	return Label.VAlign.Center;
-				case EFETextVAlignmentMode.TVAM_BOTTOM:	return Label.VAlign.Bottom;
-				
-				default:
-				return Label.VAlign.Top;
-				// break;
-			}
-		}
-		
 	};	
 }
 //-----------------------------------------------------------------------------
