@@ -107,7 +107,7 @@ namespace FuetEngine
 
 		private void CheckActionList()
 		{
-			if (GetNode("Actions") == null)
+			if (!HasNode("Actions"))
 			{
 				m_oActions = new AnimationPlayer();
 				m_oActions.Name = "Actions";
@@ -118,7 +118,7 @@ namespace FuetEngine
 
 		private void CheckLayerList()
 		{
-			if (GetNode("Layers") == null)
+			if (!HasNode("Layers"))
 			{
 				m_oLayers = new Node2D();
 				m_oLayers.Name = "Layers";

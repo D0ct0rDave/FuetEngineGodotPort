@@ -19,18 +19,11 @@ public class test : Node2D
         */
 
 
-
-/*
-        PackedScene packedScene = ResourceLoader.Load("res://Assets/data/Intro/intro_page1.hud") as PackedScene;
-        Node node = packedScene.Instance();
-        AddChild(node);
-*/
-
-        /*
         CFEConfigFileImportPlugin plugin = new  CFEConfigFileImportPlugin();
-        Resource resource = plugin.LoadConfigAsResource("res://Assets/logo.spr");
-        CFESprite sprite = resource as CFESprite;
-
+        Node node = plugin.LoadConfigAsNode("res://Assets/data/menu/page_ini.hud");
+        AddChild(node);
+        
+        /*
 		CFESpriteInstance spriteInstance = Support.CreateObject<CFESpriteInstance>(FuetEngine.Support.SPRITE_INSTANCE_SCRIPT_FILE);
 		spriteInstance.Name = "CFESpriteInstance";
 		spriteInstance.Init(sprite);

@@ -4,6 +4,7 @@ using CFEString = System.String;
 using FEReal = System.Single;
 using CFEVect2 = Godot.Vector2;
 using CFEColor = Godot.Color;
+using System;
 //-----------------------------------------------------------------------------
 namespace FuetEngine
 {
@@ -14,28 +15,24 @@ namespace FuetEngine
 		// I we are not supposed to modify these values, we should keep these properties private 
 		// and non exportable.
 		[Export]
-		public CFEVect2 m_oIniPos { set{ m_iniPos = value; GlobalPosition = value; } get{ return m_iniPos; }}
-		private CFEVect2 m_iniPos;
+		public CFEVect2 m_oIniPos { set{ GlobalPosition = value; } get{ return GlobalPosition; }}
 		[Export]
-		public CFEVect2	m_oIniScale { set{ m_iniScale = value; GlobalScale = value; } get{ return m_iniScale; }}
-		private CFEVect2 m_iniScale;
+		public CFEVect2	m_oIniScale { set{ GlobalScale = value; } get{ return GlobalScale; }}
 		[Export]
-		public FEReal m_rIniAngle { set{ m_iniAngle = value; GlobalRotation = value; } get{ return m_iniAngle; }}
-		public FEReal m_iniAngle;
+		public FEReal m_rIniAngle { set{ GlobalRotation = value; } get{ return GlobalRotation; }}
 		[Export]
-		public FEReal m_rIniDepth { set{ m_iniDepth = value; ZIndex = -(int)(m_iniDepth*255.0f); } get{ return m_iniDepth; }}
-		private FEReal m_iniDepth;
+		public FEReal m_rIniDepth { set{ ZIndex = -(int)(value*255.0f); } get{ return -ZIndex / 255.0f; }}
 		[Export]
-		public CFEColor	m_oIniColor { set{ m_iniColor = value; Modulate = value; } get{ return m_iniColor; }}
-		private  CFEColor m_iniColor;
+		public CFEColor	m_oIniColor { set{ Modulate = value; } get{ return Modulate; }}
 		[Export]
-		public int m_iIniAction;
+		public int m_iIniAction { set{ Action=value; } get { return Action; }}
 		[Export]
-		public bool	m_bIniVis { set{ m_iniVis = value; Visible = value; } get{ return m_iniVis; }}
-		private  bool m_iniVis;
+		public bool	m_bIniVis { set{ Visible = value; } get{ return Visible; }}
 		[Export]
 		public CFEString	m_sTAG;
-
+		
+		[Export]
+		public int 			Action;
 		/// Values set up by actions
 		public CFEVect2		m_oCurPos;
 		public CFEVect2		m_oCurScale;
@@ -43,7 +40,7 @@ namespace FuetEngine
 		public FEReal		m_rCurDepth;
 		public CFEColor		m_oCurColor;
 		public int			m_iCurAction;
-		public bool			m_bCurVis;		
+		public bool			m_bCurVis;
 		// --------------------------------------------------------------------
 		// Make sure you provide a parameterless constructor.
 		public CFEHUDObject()
@@ -158,13 +155,13 @@ namespace FuetEngine
 		/// Sets the initial action for this object. (only sprites, meshes, (and skel anims)).
 		public void SetIniAction(int _iAction)
 		{
-			m_iIniAction = _iAction;
+			Action = _iAction;
 		}
 		// --------------------------------------------------------------------
 		/// Retrieves the initial action of this object. (only sprites, meshes, (and skel anims)).
 		public int iGetIniAction()
 		{
-			return m_iIniAction;
+			return Action;
 		}
 		// --------------------------------------------------------------------
 		/// Sets the current position for the HUD Object.

@@ -93,12 +93,13 @@ namespace FuetEngine
         }
         ///
         // virtual void Visit(CFEHUDObjectAction* _poObj)
+        /*
         public virtual void Visit(CFEHUDObjectAction _oAction)
         {
             // default behavior
             // DO NOTHING        
         }
-
+        */
 
         /// Retrieves the type of visitor (useful when needed to extend the basic class hierarchy).
         public virtual CFEString sGetType() { return "BaseVisitor"; }

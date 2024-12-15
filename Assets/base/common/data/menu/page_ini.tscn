@@ -1,307 +1,1757 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=127 format=2]
 
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=1]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=1]
 [ext_resource path="res://Assets/base/common/data/fonts/default.theme.tres" type="Theme" id=2]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=3]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=4]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/3.spr" type="Resource" id=5]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/2.spr" type="Resource" id=6]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/backarrow.spr" type="Resource" id=7]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/9.spr" type="Resource" id=8]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=9]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=10]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=11]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/bt-ch.spr" type="Resource" id=12]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/icon_gameoptions.spr" type="Resource" id=13]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=3]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/2.spr" type="Resource" id=4]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/backarrow.spr" type="Resource" id=5]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/3.spr" type="Resource" id=6]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/9.spr" type="Resource" id=7]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/icon_gameoptions.spr" type="Resource" id=8]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/bt-ch.spr" type="Resource" id=9]
+
+[sub_resource type="CSharpScript" id=1]
+
+[sub_resource type="CSharpScript" id=2]
+
+[sub_resource type="CSharpScript" id=3]
+
+[sub_resource type="CSharpScript" id=4]
+
+[sub_resource type="Animation" id=5]
+resource_local_to_scene = true
+resource_name = "OnDisable"
+length = 0.001
+
+[sub_resource type="Animation" id=6]
+resource_local_to_scene = true
+resource_name = "OnEnterPage"
+length = 1.7
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Back:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.5, 1.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 1216.0, 1216.0, 960.0 ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_local_to_scene = true
+resource_name = "OnExitPage"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Back:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 0.5, 1 ),
+"update": 0,
+"values": [ 960.0, 1216.0 ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_local_to_scene = true
+resource_name = "OnFocus"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Back:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.036, 1.036 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_local_to_scene = true
+resource_name = "OnIdle"
+length = 0.001
+
+[sub_resource type="Animation" id=10]
+resource_local_to_scene = true
+resource_name = "OnLoseFocus"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Back:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.036, 1.036 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_local_to_scene = true
+resource_name = "OnPress"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Back:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_local_to_scene = true
+resource_name = "OnRelease"
+length = 0.001
+
+[sub_resource type="Animation" id=13]
+resource_local_to_scene = true
+resource_name = "OnSelect"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Back:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.502 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_local_to_scene = true
+resource_name = "Reset"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Back:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Layers/BT_Back:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 960.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Layers/BT_Back:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="CSharpScript" id=15]
+
+[sub_resource type="CSharpScript" id=16]
+
+[sub_resource type="CSharpScript" id=17]
+
+[sub_resource type="CSharpScript" id=18]
+
+[sub_resource type="Animation" id=19]
+resource_local_to_scene = true
+resource_name = "OnDisable"
+length = 0.001
+
+[sub_resource type="Animation" id=20]
+resource_local_to_scene = true
+resource_name = "OnEnterPage"
+length = 1.7
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Options:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.5, 1.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -148.0, -148.0, 144.0 ]
+}
+
+[sub_resource type="Animation" id=21]
+resource_local_to_scene = true
+resource_name = "OnExitPage"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Options:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 0.5, 1 ),
+"update": 0,
+"values": [ 144.0, -148.0 ]
+}
+
+[sub_resource type="Animation" id=22]
+resource_local_to_scene = true
+resource_name = "OnFocus"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Options:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.036, 1.036 ) ]
+}
+
+[sub_resource type="Animation" id=23]
+resource_local_to_scene = true
+resource_name = "OnIdle"
+length = 0.001
+
+[sub_resource type="Animation" id=24]
+resource_local_to_scene = true
+resource_name = "OnLoseFocus"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Options:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.036, 1.036 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=25]
+resource_local_to_scene = true
+resource_name = "OnPress"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Options:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=26]
+resource_local_to_scene = true
+resource_name = "OnRelease"
+length = 0.001
+
+[sub_resource type="Animation" id=27]
+resource_local_to_scene = true
+resource_name = "OnSelect"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Options:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.502 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=28]
+resource_local_to_scene = true
+resource_name = "Reset"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Options:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Layers/BT_Options:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 144.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Layers/BT_Options:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="CSharpScript" id=29]
+
+[sub_resource type="CSharpScript" id=30]
+
+[sub_resource type="CSharpScript" id=31]
+
+[sub_resource type="CSharpScript" id=32]
+
+[sub_resource type="Animation" id=33]
+resource_local_to_scene = true
+resource_name = "OnDisable"
+length = 0.001
+
+[sub_resource type="Animation" id=34]
+resource_local_to_scene = true
+resource_name = "OnEnterPage"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Normal:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 2912.0, 2912.0, 912.0 ]
+}
+
+[sub_resource type="Animation" id=35]
+resource_local_to_scene = true
+resource_name = "OnExitPage"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Normal:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.6 ),
+"transitions": PoolRealArray( 0.5, 1, 1 ),
+"update": 0,
+"values": [ 912.0, 912.0, 2912.0 ]
+}
+
+[sub_resource type="Animation" id=36]
+resource_local_to_scene = true
+resource_name = "OnFocus"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Normal:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.036, 1.036 ) ]
+}
+
+[sub_resource type="Animation" id=37]
+resource_local_to_scene = true
+resource_name = "OnIdle"
+length = 0.001
+
+[sub_resource type="Animation" id=38]
+resource_local_to_scene = true
+resource_name = "OnLoseFocus"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Normal:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.036, 1.036 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=39]
+resource_local_to_scene = true
+resource_name = "OnPress"
+length = 0.9
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Normal:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=40]
+resource_local_to_scene = true
+resource_name = "OnRelease"
+length = 0.001
+
+[sub_resource type="Animation" id=41]
+resource_local_to_scene = true
+resource_name = "OnSelect"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Normal:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.502 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=42]
+resource_local_to_scene = true
+resource_name = "Reset"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Normal:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Layers/BT_Normal:position:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 912.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Layers/BT_Normal:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="CSharpScript" id=43]
+
+[sub_resource type="CSharpScript" id=44]
+
+[sub_resource type="CSharpScript" id=45]
+
+[sub_resource type="CSharpScript" id=46]
+
+[sub_resource type="Animation" id=47]
+resource_local_to_scene = true
+resource_name = "OnDisable"
+length = 0.001
+
+[sub_resource type="Animation" id=48]
+resource_local_to_scene = true
+resource_name = "OnEnterPage"
+length = 0.9
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Hardcore:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.7, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 2928.0, 2928.0, 928.0 ]
+}
+
+[sub_resource type="Animation" id=49]
+resource_local_to_scene = true
+resource_name = "OnExitPage"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Hardcore:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.6 ),
+"transitions": PoolRealArray( 0.5, 1, 1 ),
+"update": 0,
+"values": [ 928.0, 928.0, 2928.0 ]
+}
+
+[sub_resource type="Animation" id=50]
+resource_local_to_scene = true
+resource_name = "OnFocus"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Hardcore:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.036, 1.036 ) ]
+}
+
+[sub_resource type="Animation" id=51]
+resource_local_to_scene = true
+resource_name = "OnIdle"
+length = 0.001
+
+[sub_resource type="Animation" id=52]
+resource_local_to_scene = true
+resource_name = "OnLoseFocus"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Hardcore:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.036, 1.036 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=53]
+resource_local_to_scene = true
+resource_name = "OnPress"
+length = 0.9
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Hardcore:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=54]
+resource_local_to_scene = true
+resource_name = "OnRelease"
+length = 0.001
+
+[sub_resource type="Animation" id=55]
+resource_local_to_scene = true
+resource_name = "OnSelect"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Hardcore:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.502 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=56]
+resource_local_to_scene = true
+resource_name = "Reset"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Hardcore:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Layers/BT_Hardcore:position:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 928.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Layers/BT_Hardcore:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="CSharpScript" id=57]
+
+[sub_resource type="CSharpScript" id=58]
+
+[sub_resource type="CSharpScript" id=59]
+
+[sub_resource type="CSharpScript" id=60]
+
+[sub_resource type="Animation" id=61]
+resource_local_to_scene = true
+resource_name = "OnDisable"
+length = 0.001
+
+[sub_resource type="Animation" id=62]
+resource_local_to_scene = true
+resource_name = "OnEnterPage"
+length = 0.9
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_HardcorePlus:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.7, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 3344.0, 3344.0, 1344.0 ]
+}
+
+[sub_resource type="Animation" id=63]
+resource_local_to_scene = true
+resource_name = "OnExitPage"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_HardcorePlus:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.6 ),
+"transitions": PoolRealArray( 0.5, 1, 1 ),
+"update": 0,
+"values": [ 1344.0, 1344.0, 3344.0 ]
+}
+
+[sub_resource type="Animation" id=64]
+resource_local_to_scene = true
+resource_name = "OnFocus"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_HardcorePlus:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.036, 1.036 ) ]
+}
+
+[sub_resource type="Animation" id=65]
+resource_local_to_scene = true
+resource_name = "OnIdle"
+length = 0.001
+
+[sub_resource type="Animation" id=66]
+resource_local_to_scene = true
+resource_name = "OnLoseFocus"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_HardcorePlus:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.036, 1.036 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=67]
+resource_local_to_scene = true
+resource_name = "OnPress"
+length = 0.9
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_HardcorePlus:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=68]
+resource_local_to_scene = true
+resource_name = "OnRelease"
+length = 0.001
+
+[sub_resource type="Animation" id=69]
+resource_local_to_scene = true
+resource_name = "OnSelect"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_HardcorePlus:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.502 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=70]
+resource_local_to_scene = true
+resource_name = "Reset"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_HardcorePlus:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Layers/BT_HardcorePlus:position:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1344.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Layers/BT_HardcorePlus:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="CSharpScript" id=71]
+
+[sub_resource type="CSharpScript" id=72]
+
+[sub_resource type="CSharpScript" id=73]
+
+[sub_resource type="CSharpScript" id=74]
+
+[sub_resource type="Animation" id=75]
+resource_local_to_scene = true
+resource_name = "OnDisable"
+length = 0.001
+
+[sub_resource type="Animation" id=76]
+resource_local_to_scene = true
+resource_name = "OnEnterPage"
+length = 1.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Tutorial:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.9, 1.1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 3088.0, 3088.0, 1088.0 ]
+}
+
+[sub_resource type="Animation" id=77]
+resource_local_to_scene = true
+resource_name = "OnExitPage"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Tutorial:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.6 ),
+"transitions": PoolRealArray( 0.5, 1, 1 ),
+"update": 0,
+"values": [ 1088.0, 1088.0, 3088.0 ]
+}
+
+[sub_resource type="Animation" id=78]
+resource_local_to_scene = true
+resource_name = "OnFocus"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Tutorial:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.036, 1.036 ) ]
+}
+
+[sub_resource type="Animation" id=79]
+resource_local_to_scene = true
+resource_name = "OnIdle"
+length = 0.001
+
+[sub_resource type="Animation" id=80]
+resource_local_to_scene = true
+resource_name = "OnLoseFocus"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Tutorial:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.036, 1.036 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=81]
+resource_local_to_scene = true
+resource_name = "OnPress"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Tutorial:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=82]
+resource_local_to_scene = true
+resource_name = "OnRelease"
+length = 0.001
+
+[sub_resource type="Animation" id=83]
+resource_local_to_scene = true
+resource_name = "OnSelect"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Tutorial:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.502 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=84]
+resource_local_to_scene = true
+resource_name = "Reset"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Tutorial:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Layers/BT_Tutorial:position:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1088.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Layers/BT_Tutorial:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="CSharpScript" id=85]
+
+[sub_resource type="CSharpScript" id=86]
+
+[sub_resource type="CSharpScript" id=87]
+
+[sub_resource type="CSharpScript" id=88]
+
+[sub_resource type="Animation" id=89]
+resource_local_to_scene = true
+resource_name = "OnDisable"
+length = 0.001
+
+[sub_resource type="Animation" id=90]
+resource_local_to_scene = true
+resource_name = "OnEnterPage"
+length = 1.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Challenges:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.1, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 3184.0, 3184.0, 1184.0 ]
+}
+
+[sub_resource type="Animation" id=91]
+resource_local_to_scene = true
+resource_name = "OnExitPage"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Challenges:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.6 ),
+"transitions": PoolRealArray( 0.5, 1, 1 ),
+"update": 0,
+"values": [ 1184.0, 1184.0, 3184.0 ]
+}
+
+[sub_resource type="Animation" id=92]
+resource_local_to_scene = true
+resource_name = "OnFocus"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Challenges:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.036, 1.036 ) ]
+}
+
+[sub_resource type="Animation" id=93]
+resource_local_to_scene = true
+resource_name = "OnIdle"
+length = 0.001
+
+[sub_resource type="Animation" id=94]
+resource_local_to_scene = true
+resource_name = "OnLoseFocus"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Challenges:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.036, 1.036 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=95]
+resource_local_to_scene = true
+resource_name = "OnPress"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Challenges:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=96]
+resource_local_to_scene = true
+resource_name = "OnRelease"
+length = 0.001
+
+[sub_resource type="Animation" id=97]
+resource_local_to_scene = true
+resource_name = "OnSelect"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Challenges:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.502 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=98]
+resource_local_to_scene = true
+resource_name = "Reset"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Challenges:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Layers/BT_Challenges:position:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1184.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Layers/BT_Challenges:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="CSharpScript" id=99]
+
+[sub_resource type="CSharpScript" id=100]
+
+[sub_resource type="CSharpScript" id=101]
+
+[sub_resource type="CSharpScript" id=102]
+
+[sub_resource type="Animation" id=103]
+resource_local_to_scene = true
+resource_name = "OnDisable"
+length = 0.001
+
+[sub_resource type="Animation" id=104]
+resource_local_to_scene = true
+resource_name = "OnEnterPage"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Scores:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.3, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 3280.0, 3280.0, 1280.0 ]
+}
+
+[sub_resource type="Animation" id=105]
+resource_local_to_scene = true
+resource_name = "OnExitPage"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Scores:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.6 ),
+"transitions": PoolRealArray( 0.5, 1, 1 ),
+"update": 0,
+"values": [ 1280.0, 1280.0, 3280.0 ]
+}
+
+[sub_resource type="Animation" id=106]
+resource_local_to_scene = true
+resource_name = "OnFocus"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Scores:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.036, 1.036 ) ]
+}
+
+[sub_resource type="Animation" id=107]
+resource_local_to_scene = true
+resource_name = "OnIdle"
+length = 0.001
+
+[sub_resource type="Animation" id=108]
+resource_local_to_scene = true
+resource_name = "OnLoseFocus"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Scores:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.036, 1.036 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=109]
+resource_local_to_scene = true
+resource_name = "OnPress"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Scores:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=110]
+resource_local_to_scene = true
+resource_name = "OnRelease"
+length = 0.001
+
+[sub_resource type="Animation" id=111]
+resource_local_to_scene = true
+resource_name = "OnSelect"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Scores:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.502 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=112]
+resource_local_to_scene = true
+resource_name = "Reset"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Scores:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Layers/BT_Scores:position:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1280.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Layers/BT_Scores:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="CSharpScript" id=113]
+
+[sub_resource type="CSharpScript" id=114]
+
+[sub_resource type="Animation" id=115]
+resource_local_to_scene = true
+resource_name = "OnEnterPage"
+length = 0.001
+
+[sub_resource type="Animation" id=116]
+resource_local_to_scene = true
+resource_name = "OnExitPage"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/Foreground:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+
+[sub_resource type="Animation" id=117]
+resource_local_to_scene = true
+resource_name = "Reset"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/Foreground:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
 
 [node name="CFEHUD" type="Node2D"]
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 
 [node name="BT_Back" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = SubResource( 1 )
 
 [node name="Layers" type="Node2D" parent="BT_Back"]
 
 [node name="BT_Back" type="Node2D" parent="BT_Back/Layers"]
 position = Vector2( 160, 960 )
 z_as_relative = false
-script = ExtResource( 11 )
+script = SubResource( 2 )
 
 [node name="ic_Back" type="Node2D" parent="BT_Back/Layers/BT_Back"]
 z_index = -1
 z_as_relative = false
-script = ExtResource( 9 )
-m_iIniAction = 0
+script = SubResource( 3 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Back/Layers/BT_Back/ic_Back"]
-script = ExtResource( 10 )
+script = ExtResource( 3 )
 Action = 0
-m_sprite = ExtResource( 6 )
+m_sprite = ExtResource( 4 )
 
 [node name="ic_Back-1" type="Node2D" parent="BT_Back/Layers/BT_Back"]
 z_index = -2
 z_as_relative = false
-script = ExtResource( 9 )
-m_iIniAction = 0
+script = SubResource( 4 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Back/Layers/BT_Back/ic_Back-1"]
-script = ExtResource( 10 )
+script = ExtResource( 3 )
 Action = 0
-m_sprite = ExtResource( 7 )
+m_sprite = ExtResource( 5 )
+
+[node name="Actions" type="AnimationPlayer" parent="BT_Back"]
+anims/OnDisable = SubResource( 5 )
+anims/OnEnterPage = SubResource( 6 )
+anims/OnExitPage = SubResource( 7 )
+anims/OnFocus = SubResource( 8 )
+anims/OnIdle = SubResource( 9 )
+anims/OnLoseFocus = SubResource( 10 )
+anims/OnPress = SubResource( 11 )
+anims/OnRelease = SubResource( 12 )
+anims/OnSelect = SubResource( 13 )
+anims/Reset = SubResource( 14 )
 
 [node name="BT_Options" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = SubResource( 15 )
 
 [node name="Layers" type="Node2D" parent="BT_Options"]
 
 [node name="BT_Options" type="Node2D" parent="BT_Options/Layers"]
 position = Vector2( 1568, 144 )
 z_as_relative = false
-script = ExtResource( 11 )
+script = SubResource( 16 )
 
 [node name="ic_Options" type="Node2D" parent="BT_Options/Layers/BT_Options"]
 z_index = -1
 z_as_relative = false
-script = ExtResource( 9 )
-m_iIniAction = 0
+script = SubResource( 17 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Options/Layers/BT_Options/ic_Options"]
-script = ExtResource( 10 )
+script = ExtResource( 3 )
 Action = 0
-m_sprite = ExtResource( 8 )
+m_sprite = ExtResource( 7 )
 
 [node name="ic_Options-1" type="Node2D" parent="BT_Options/Layers/BT_Options"]
 position = Vector2( 16, 0 )
 z_index = -2
 z_as_relative = false
-script = ExtResource( 9 )
-m_iIniAction = 0
+script = SubResource( 18 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Options/Layers/BT_Options/ic_Options-1"]
-script = ExtResource( 10 )
+script = ExtResource( 3 )
 Action = 0
-m_sprite = ExtResource( 13 )
+m_sprite = ExtResource( 8 )
+
+[node name="Actions" type="AnimationPlayer" parent="BT_Options"]
+anims/OnDisable = SubResource( 19 )
+anims/OnEnterPage = SubResource( 20 )
+anims/OnExitPage = SubResource( 21 )
+anims/OnFocus = SubResource( 22 )
+anims/OnIdle = SubResource( 23 )
+anims/OnLoseFocus = SubResource( 24 )
+anims/OnPress = SubResource( 25 )
+anims/OnRelease = SubResource( 26 )
+anims/OnSelect = SubResource( 27 )
+anims/Reset = SubResource( 28 )
 
 [node name="BT_Normal" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = SubResource( 29 )
 
 [node name="Layers" type="Node2D" parent="BT_Normal"]
 
 [node name="BT_Normal" type="Node2D" parent="BT_Normal/Layers"]
 position = Vector2( 912, 272 )
 z_as_relative = false
-script = ExtResource( 11 )
+script = SubResource( 30 )
 
 [node name="ic_Normal" type="Node2D" parent="BT_Normal/Layers/BT_Normal"]
 z_index = -1
 z_as_relative = false
-script = ExtResource( 9 )
-m_iIniAction = 0
+script = SubResource( 31 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Normal/Layers/BT_Normal/ic_Normal"]
-script = ExtResource( 10 )
+script = ExtResource( 3 )
 Action = 0
-m_sprite = ExtResource( 5 )
+m_sprite = ExtResource( 6 )
 
 [node name="lb_Normal" type="Node2D" parent="BT_Normal/Layers/BT_Normal"]
 z_index = -2
 z_as_relative = false
-script = ExtResource( 4 )
+script = SubResource( 32 )
 
 [node name="Label" type="Label" parent="BT_Normal/Layers/BT_Normal/lb_Normal"]
-margin_top = -29.5
-margin_right = 217.0
-margin_bottom = 29.5
+margin_top = -36.5
+margin_right = 271.0
+margin_bottom = 36.5
 theme = ExtResource( 2 )
 text = "Play"
 align = 1
 valign = 1
 
+[node name="Actions" type="AnimationPlayer" parent="BT_Normal"]
+anims/OnDisable = SubResource( 33 )
+anims/OnEnterPage = SubResource( 34 )
+anims/OnExitPage = SubResource( 35 )
+anims/OnFocus = SubResource( 36 )
+anims/OnIdle = SubResource( 37 )
+anims/OnLoseFocus = SubResource( 38 )
+anims/OnPress = SubResource( 39 )
+anims/OnRelease = SubResource( 40 )
+anims/OnSelect = SubResource( 41 )
+anims/Reset = SubResource( 42 )
+
 [node name="BT_Hardcore" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = SubResource( 43 )
 
 [node name="Layers" type="Node2D" parent="BT_Hardcore"]
 
 [node name="BT_Hardcore" type="Node2D" parent="BT_Hardcore/Layers"]
 position = Vector2( 928, 448 )
 z_as_relative = false
-script = ExtResource( 11 )
+script = SubResource( 44 )
 
 [node name="ic_Hardcore" type="Node2D" parent="BT_Hardcore/Layers/BT_Hardcore"]
 modulate = Color( 0.502, 0.502, 0.502, 1 )
 scale = Vector2( 0.8, 1 )
 z_index = -1
 z_as_relative = false
-script = ExtResource( 9 )
-m_oIniColor = Color( 0.502, 0.502, 0.502, 1 )
-m_iIniAction = 0
+script = SubResource( 45 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Hardcore/Layers/BT_Hardcore/ic_Hardcore"]
-script = ExtResource( 10 )
+script = ExtResource( 3 )
 Action = 0
-m_sprite = ExtResource( 5 )
+m_sprite = ExtResource( 6 )
 
 [node name="lb_Hardcore" type="Node2D" parent="BT_Hardcore/Layers/BT_Hardcore"]
 z_index = -2
 z_as_relative = false
-script = ExtResource( 4 )
+script = SubResource( 46 )
 
 [node name="Label" type="Label" parent="BT_Hardcore/Layers/BT_Hardcore/lb_Hardcore"]
-margin_top = -29.5
-margin_right = 474.0
-margin_bottom = 29.5
+margin_top = -36.5
+margin_right = 591.0
+margin_bottom = 36.5
 theme = ExtResource( 2 )
 text = "Hardcore"
 align = 1
 valign = 1
 
+[node name="Actions" type="AnimationPlayer" parent="BT_Hardcore"]
+anims/OnDisable = SubResource( 47 )
+anims/OnEnterPage = SubResource( 48 )
+anims/OnExitPage = SubResource( 49 )
+anims/OnFocus = SubResource( 50 )
+anims/OnIdle = SubResource( 51 )
+anims/OnLoseFocus = SubResource( 52 )
+anims/OnPress = SubResource( 53 )
+anims/OnRelease = SubResource( 54 )
+anims/OnSelect = SubResource( 55 )
+anims/Reset = SubResource( 56 )
+
 [node name="BT_HardcorePlus" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = SubResource( 57 )
 
 [node name="Layers" type="Node2D" parent="BT_HardcorePlus"]
 
 [node name="BT_HardcorePlus" type="Node2D" parent="BT_HardcorePlus/Layers"]
 position = Vector2( 1344, 448 )
 z_as_relative = false
-script = ExtResource( 11 )
+script = SubResource( 58 )
 
 [node name="ic_Hardcore+" type="Node2D" parent="BT_HardcorePlus/Layers/BT_HardcorePlus"]
 modulate = Color( 0.502, 0.502, 0.502, 1 )
 scale = Vector2( 1.2, 1.4 )
 z_index = -1
 z_as_relative = false
-script = ExtResource( 9 )
-m_oIniColor = Color( 0.502, 0.502, 0.502, 1 )
-m_iIniAction = 0
+script = SubResource( 59 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_HardcorePlus/Layers/BT_HardcorePlus/ic_Hardcore+"]
-script = ExtResource( 10 )
+script = ExtResource( 3 )
 Action = 0
-m_sprite = ExtResource( 12 )
+m_sprite = ExtResource( 9 )
 
 [node name="lb_Hardcore+" type="Node2D" parent="BT_HardcorePlus/Layers/BT_HardcorePlus"]
 z_index = -2
 z_as_relative = false
-script = ExtResource( 4 )
+script = SubResource( 60 )
 
 [node name="Label" type="Label" parent="BT_HardcorePlus/Layers/BT_HardcorePlus/lb_Hardcore+"]
-margin_top = -29.5
-margin_right = 36.0
-margin_bottom = 29.5
+margin_top = -36.5
+margin_right = 45.0
+margin_bottom = 36.5
 theme = ExtResource( 2 )
 text = "+"
 align = 1
 valign = 1
 
+[node name="Actions" type="AnimationPlayer" parent="BT_HardcorePlus"]
+anims/OnDisable = SubResource( 61 )
+anims/OnEnterPage = SubResource( 62 )
+anims/OnExitPage = SubResource( 63 )
+anims/OnFocus = SubResource( 64 )
+anims/OnIdle = SubResource( 65 )
+anims/OnLoseFocus = SubResource( 66 )
+anims/OnPress = SubResource( 67 )
+anims/OnRelease = SubResource( 68 )
+anims/OnSelect = SubResource( 69 )
+anims/Reset = SubResource( 70 )
+
 [node name="BT_Tutorial" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = SubResource( 71 )
 
 [node name="Layers" type="Node2D" parent="BT_Tutorial"]
 
 [node name="BT_Tutorial" type="Node2D" parent="BT_Tutorial/Layers"]
 position = Vector2( 1088, 624 )
 z_as_relative = false
-script = ExtResource( 11 )
+script = SubResource( 72 )
 
 [node name="ic_Tutorial" type="Node2D" parent="BT_Tutorial/Layers/BT_Tutorial"]
 z_index = -1
 z_as_relative = false
-script = ExtResource( 9 )
-m_iIniAction = 0
+script = SubResource( 73 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Tutorial/Layers/BT_Tutorial/ic_Tutorial"]
-script = ExtResource( 10 )
+script = ExtResource( 3 )
 Action = 0
-m_sprite = ExtResource( 5 )
+m_sprite = ExtResource( 6 )
 
 [node name="lb_Tutorial" type="Node2D" parent="BT_Tutorial/Layers/BT_Tutorial"]
 z_index = -2
 z_as_relative = false
-script = ExtResource( 4 )
+script = SubResource( 74 )
 
 [node name="Label" type="Label" parent="BT_Tutorial/Layers/BT_Tutorial/lb_Tutorial"]
-margin_top = -29.5
-margin_right = 419.0
-margin_bottom = 29.5
+margin_top = -36.5
+margin_right = 522.0
+margin_bottom = 36.5
 theme = ExtResource( 2 )
 text = "Tutorial"
 align = 1
 valign = 1
 
+[node name="Actions" type="AnimationPlayer" parent="BT_Tutorial"]
+anims/OnDisable = SubResource( 75 )
+anims/OnEnterPage = SubResource( 76 )
+anims/OnExitPage = SubResource( 77 )
+anims/OnFocus = SubResource( 78 )
+anims/OnIdle = SubResource( 79 )
+anims/OnLoseFocus = SubResource( 80 )
+anims/OnPress = SubResource( 81 )
+anims/OnRelease = SubResource( 82 )
+anims/OnSelect = SubResource( 83 )
+anims/Reset = SubResource( 84 )
+
 [node name="BT_Challenges" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = SubResource( 85 )
 
 [node name="Layers" type="Node2D" parent="BT_Challenges"]
 
 [node name="BT_Challenges" type="Node2D" parent="BT_Challenges/Layers"]
 position = Vector2( 1184, 800 )
 z_as_relative = false
-script = ExtResource( 11 )
+script = SubResource( 86 )
 
 [node name="ic_Challenges" type="Node2D" parent="BT_Challenges/Layers/BT_Challenges"]
 z_index = -1
 z_as_relative = false
-script = ExtResource( 9 )
-m_iIniAction = 0
+script = SubResource( 87 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Challenges/Layers/BT_Challenges/ic_Challenges"]
-script = ExtResource( 10 )
+script = ExtResource( 3 )
 Action = 0
-m_sprite = ExtResource( 5 )
+m_sprite = ExtResource( 6 )
 
 [node name="lb_Challenges" type="Node2D" parent="BT_Challenges/Layers/BT_Challenges"]
 scale = Vector2( 0.75, 0.75 )
 z_index = -2
 z_as_relative = false
-script = ExtResource( 4 )
+script = SubResource( 88 )
 
 [node name="Label" type="Label" parent="BT_Challenges/Layers/BT_Challenges/lb_Challenges"]
-margin_top = -29.5
-margin_right = 419.0
-margin_bottom = 29.5
+margin_top = -36.5
+margin_right = 567.0
+margin_bottom = 36.5
 theme = ExtResource( 2 )
-text = "Desafíos"
+text = "DesafÃ­os"
 align = 1
 valign = 1
 
+[node name="Actions" type="AnimationPlayer" parent="BT_Challenges"]
+anims/OnDisable = SubResource( 89 )
+anims/OnEnterPage = SubResource( 90 )
+anims/OnExitPage = SubResource( 91 )
+anims/OnFocus = SubResource( 92 )
+anims/OnIdle = SubResource( 93 )
+anims/OnLoseFocus = SubResource( 94 )
+anims/OnPress = SubResource( 95 )
+anims/OnRelease = SubResource( 96 )
+anims/OnSelect = SubResource( 97 )
+anims/Reset = SubResource( 98 )
+
 [node name="BT_Scores" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = SubResource( 99 )
 
 [node name="Layers" type="Node2D" parent="BT_Scores"]
 
 [node name="BT_Scores" type="Node2D" parent="BT_Scores/Layers"]
 position = Vector2( 1280, 976 )
 z_as_relative = false
-script = ExtResource( 11 )
+script = SubResource( 100 )
 
 [node name="ic_Scores" type="Node2D" parent="BT_Scores/Layers/BT_Scores"]
 z_index = -1
 z_as_relative = false
-script = ExtResource( 9 )
-m_iIniAction = 0
+script = SubResource( 101 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="BT_Scores/Layers/BT_Scores/ic_Scores"]
-script = ExtResource( 10 )
+script = ExtResource( 3 )
 Action = 0
-m_sprite = ExtResource( 5 )
+m_sprite = ExtResource( 6 )
 
 [node name="lb_Scores" type="Node2D" parent="BT_Scores/Layers/BT_Scores"]
 scale = Vector2( 0.75, 0.75 )
 z_index = -2
 z_as_relative = false
-script = ExtResource( 4 )
+script = SubResource( 102 )
 
 [node name="Label" type="Label" parent="BT_Scores/Layers/BT_Scores/lb_Scores"]
-margin_top = -29.5
-margin_right = 549.0
-margin_bottom = 29.5
+margin_top = -36.5
+margin_right = 728.0
+margin_bottom = 36.5
 theme = ExtResource( 2 )
-text = "Puntuación"
+text = "PuntuaciÃ³n"
 align = 1
 valign = 1
 
+[node name="Actions" type="AnimationPlayer" parent="BT_Scores"]
+anims/OnDisable = SubResource( 103 )
+anims/OnEnterPage = SubResource( 104 )
+anims/OnExitPage = SubResource( 105 )
+anims/OnFocus = SubResource( 106 )
+anims/OnIdle = SubResource( 107 )
+anims/OnLoseFocus = SubResource( 108 )
+anims/OnPress = SubResource( 109 )
+anims/OnRelease = SubResource( 110 )
+anims/OnSelect = SubResource( 111 )
+anims/Reset = SubResource( 112 )
+
 [node name="Foreground" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = SubResource( 113 )
 
 [node name="Layers" type="Node2D" parent="Foreground"]
 
@@ -309,5 +1759,9 @@ script = ExtResource( 1 )
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 640, 480 )
 z_as_relative = false
-script = ExtResource( 11 )
-m_oIniColor = Color( 1, 1, 1, 0 )
+script = SubResource( 114 )
+
+[node name="Actions" type="AnimationPlayer" parent="Foreground"]
+anims/OnEnterPage = SubResource( 115 )
+anims/OnExitPage = SubResource( 116 )
+anims/Reset = SubResource( 117 )

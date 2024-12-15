@@ -1,21 +1,33 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=43 format=2]
 
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDElement.cs" type="Script" id=1]
-[ext_resource path="res://Assets/base/common/data/fonts/default.theme.tres" type="Theme" id=2]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=3]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESprite.cs" type="Script" id=4]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteAction.cs" type="Script" id=5]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteFrame.cs" type="Script" id=6]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDLabel.cs" type="Script" id=7]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/MA.png" type="Texture" id=8]
-[ext_resource path="res://Assets/base/common/data/menu/sprites/MA_2.png" type="Texture" id=9]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDIcon.cs" type="Script" id=10]
-[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=11]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDGroup.cs" type="Script" id=12]
-[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUDRect.cs" type="Script" id=13]
+[ext_resource path="res://Assets/base/common/data/fonts/default.theme.tres" type="Theme" id=1]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/MA_2.png" type="Texture" id=2]
+[ext_resource path="res://Assets/base/common/data/menu/sprites/MA.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteInstance.cs" type="Script" id=4]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteFrame.cs" type="Script" id=5]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESprite.cs" type="Script" id=6]
+[ext_resource path="res://Scripts/FuetEngine/Sprite/CFESpriteAction.cs" type="Script" id=7]
+[ext_resource path="res://Scripts/FuetEngine/HUD/CFEHUD.cs" type="Script" id=8]
 
-[sub_resource type="Resource" id=1]
-script = ExtResource( 6 )
+[sub_resource type="CSharpScript" id=17]
+
+[sub_resource type="CSharpScript" id=18]
+
+[sub_resource type="CSharpScript" id=19]
+
+[sub_resource type="Animation" id=20]
+resource_local_to_scene = true
+resource_name = "Reset"
+length = 0.01
+
+[sub_resource type="CSharpScript" id=21]
+
+[sub_resource type="CSharpScript" id=22]
+
+[sub_resource type="CSharpScript" id=23]
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 5 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -30,25 +42,31 @@ m_rFrameTime = 0.0
 m_rStartTime = 0.0
 m_oPivot = Vector2( 0.5, 0.5 )
 m_o1OverDims = Vector2( 0, 0 )
-m_hMaterial = ExtResource( 9 )
+m_hMaterial = ExtResource( 2 )
 
-[sub_resource type="Resource" id=2]
-script = ExtResource( 5 )
+[sub_resource type="Resource" id=9]
+script = ExtResource( 7 )
 Name = "default"
 m_rActionTime = 0.0
 m_eBlendMode = 2
 m_ePlayMode = 1
 m_rRandStartTime = 0.0
-m_oSeq = [ SubResource( 1 ) ]
+m_oSeq = [ SubResource( 8 ) ]
 
-[sub_resource type="Resource" id=3]
+[sub_resource type="Resource" id=10]
 resource_local_to_scene = true
-script = ExtResource( 4 )
-Name = "res://Assets/base/common/data/menu/sprites/MA_2.spr"
-m_oActions = [ SubResource( 2 ) ]
-
-[sub_resource type="Resource" id=4]
 script = ExtResource( 6 )
+Name = "res://Assets/base/common/data/menu/sprites/MA_2.spr"
+m_oActions = [ SubResource( 9 ) ]
+
+[sub_resource type="CSharpScript" id=24]
+
+[sub_resource type="CSharpScript" id=25]
+
+[sub_resource type="CSharpScript" id=26]
+
+[sub_resource type="Resource" id=14]
+script = ExtResource( 5 )
 m_bScaleXUEqually = false
 m_bScaleYVEqually = false
 m_bUWorldCoords = false
@@ -63,35 +81,375 @@ m_rFrameTime = 0.0
 m_rStartTime = 0.0
 m_oPivot = Vector2( 0.5, 0.5 )
 m_o1OverDims = Vector2( 0, 0 )
-m_hMaterial = ExtResource( 8 )
+m_hMaterial = ExtResource( 3 )
 
-[sub_resource type="Resource" id=5]
-script = ExtResource( 5 )
+[sub_resource type="Resource" id=15]
+script = ExtResource( 7 )
 Name = "default"
 m_rActionTime = 0.0
 m_eBlendMode = 2
 m_ePlayMode = 1
 m_rRandStartTime = 0.0
-m_oSeq = [ SubResource( 4 ) ]
+m_oSeq = [ SubResource( 14 ) ]
 
-[sub_resource type="Resource" id=6]
+[sub_resource type="Resource" id=16]
 resource_local_to_scene = true
-script = ExtResource( 4 )
+script = ExtResource( 6 )
 Name = "res://Assets/base/common/data/menu/sprites/MA.spr"
-m_oActions = [ SubResource( 5 ) ]
+m_oActions = [ SubResource( 15 ) ]
+
+[sub_resource type="CSharpScript" id=27]
+
+[sub_resource type="CSharpScript" id=28]
+
+[sub_resource type="Animation" id=29]
+resource_local_to_scene = true
+resource_name = "OnIdlePage"
+length = 23.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/Logo/ic_Logo-3:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 13 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -576.0, 2496.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Layers/Logo/ic_Logo:position:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 19 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 2624.0, -384.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Layers/Logo/ic_Logo-1:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 23 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -1792.0, 3296.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Layers/Logo/ic_Logo-1:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 23 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 1152.0, -384.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Layers/Logo/ic_Logo-4:position:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 18 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 3904.0, -1888.0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Layers/Logo/ic_Logo-2:position:x")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 14.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 2656.0, -832.0 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Layers/Logo/ic_Logo-5:position:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 15 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -512.0, 2496.0 ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Layers/Logo/ic_Logo-5:position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 15 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -192.0, 1248.0 ]
+}
+
+[sub_resource type="Animation" id=30]
+resource_local_to_scene = true
+resource_name = "Reset"
+length = 0.01
+
+[sub_resource type="CSharpScript" id=31]
+
+[sub_resource type="CSharpScript" id=32]
+
+[sub_resource type="CSharpScript" id=33]
+
+[sub_resource type="CSharpScript" id=34]
+
+[sub_resource type="Animation" id=35]
+resource_local_to_scene = true
+resource_name = "OnEnterPage"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Accept:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 0.5, 1 ),
+"update": 0,
+"values": [ 928.0, 928.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Layers/BT_Accept:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 0.5, 1 ),
+"update": 0,
+"values": [ 1538.0, 608.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Layers/BT_Accept:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=36]
+resource_local_to_scene = true
+resource_name = "OnExitPage"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Accept:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 4, 1 ),
+"update": 0,
+"values": [ 928.0, 928.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Layers/BT_Accept:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 4, 1 ),
+"update": 0,
+"values": [ 608.0, 1538.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Layers/BT_Accept:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=37]
+resource_local_to_scene = true
+resource_name = "OnIdle"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Accept:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=38]
+resource_local_to_scene = true
+resource_name = "OnPress"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Accept:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 0.5, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.98, 0.98 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Layers/BT_Accept:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=39]
+resource_local_to_scene = true
+resource_name = "Reset"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/BT_Accept:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 928.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Layers/BT_Accept:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 608.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Layers/BT_Accept:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Layers/BT_Accept:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="CSharpScript" id=40]
+
+[sub_resource type="CSharpScript" id=41]
+
+[sub_resource type="Animation" id=42]
+resource_local_to_scene = true
+resource_name = "OnEnterPage"
+length = 0.001
+
+[sub_resource type="Animation" id=43]
+resource_local_to_scene = true
+resource_name = "OnExitPage"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/Foreground:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+
+[sub_resource type="Animation" id=44]
+resource_local_to_scene = true
+resource_name = "Reset"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Layers/Foreground:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
 
 [node name="CFEHUD" type="Node2D"]
-script = ExtResource( 3 )
+script = ExtResource( 8 )
 
 [node name="Version" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = SubResource( 17 )
 
 [node name="Layers" type="Node2D" parent="Version"]
 
 [node name="Version" type="Node2D" parent="Version/Layers"]
 position = Vector2( 928, 608 )
 z_as_relative = false
-script = ExtResource( 12 )
+script = SubResource( 18 )
 
 [node name="lb_Version" type="Node2D" parent="Version/Layers/Version"]
 modulate = Color( 1, 1, 0.502, 1 )
@@ -99,26 +457,28 @@ position = Vector2( 832, 448 )
 scale = Vector2( 0.5, 0.5 )
 z_index = -1
 z_as_relative = false
-script = ExtResource( 7 )
-m_oIniColor = Color( 1, 1, 0.502, 1 )
+script = SubResource( 19 )
 
 [node name="Label" type="Label" parent="Version/Layers/Version/lb_Version"]
-margin_top = -29.5
-margin_right = 140.0
-margin_bottom = 29.5
-theme = ExtResource( 2 )
+margin_top = -36.5
+margin_right = 173.0
+margin_bottom = 36.5
+theme = ExtResource( 1 )
 text = "2.1.1"
 align = 2
 valign = 1
 
+[node name="Actions" type="AnimationPlayer" parent="Version"]
+anims/Reset = SubResource( 20 )
+
 [node name="Logo" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = SubResource( 21 )
 
 [node name="Layers" type="Node2D" parent="Logo"]
 
 [node name="Logo" type="Node2D" parent="Logo/Layers"]
 z_as_relative = false
-script = ExtResource( 12 )
+script = SubResource( 22 )
 
 [node name="ic_Logo" type="Node2D" parent="Logo/Layers/Logo"]
 modulate = Color( 1, 1, 1, 0.3 )
@@ -126,14 +486,12 @@ position = Vector2( 2624, 640 )
 scale = Vector2( 0.5, 0.5 )
 z_index = -1
 z_as_relative = false
-script = ExtResource( 10 )
-m_oIniColor = Color( 1, 1, 1, 0.3 )
-m_iIniAction = 0
+script = SubResource( 23 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="Logo/Layers/Logo/ic_Logo"]
-script = ExtResource( 11 )
+script = ExtResource( 4 )
 Action = 0
-m_sprite = SubResource( 3 )
+m_sprite = SubResource( 10 )
 
 [node name="ic_Logo-1" type="Node2D" parent="Logo/Layers/Logo"]
 modulate = Color( 1, 1, 1, 0.6078 )
@@ -141,41 +499,36 @@ position = Vector2( -1792, 1152 )
 scale = Vector2( 2, 2 )
 z_index = -2
 z_as_relative = false
-script = ExtResource( 10 )
-m_oIniColor = Color( 1, 1, 1, 0.6078 )
-m_iIniAction = 0
+script = SubResource( 24 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="Logo/Layers/Logo/ic_Logo-1"]
-script = ExtResource( 11 )
+script = ExtResource( 4 )
 Action = 0
-m_sprite = SubResource( 3 )
+m_sprite = SubResource( 10 )
 
 [node name="ic_Logo-2" type="Node2D" parent="Logo/Layers/Logo"]
 modulate = Color( 1, 1, 1, 0.8039 )
 position = Vector2( 2656, 1056 )
 z_index = -3
 z_as_relative = false
-script = ExtResource( 10 )
-m_oIniColor = Color( 1, 1, 1, 0.8039 )
-m_iIniAction = 0
+script = SubResource( 25 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="Logo/Layers/Logo/ic_Logo-2"]
-script = ExtResource( 11 )
+script = ExtResource( 4 )
 Action = 0
-m_sprite = SubResource( 3 )
+m_sprite = SubResource( 10 )
 
 [node name="ic_Logo-3" type="Node2D" parent="Logo/Layers/Logo"]
 position = Vector2( -576, 512 )
 scale = Vector2( 0.75, 0.75 )
 z_index = -4
 z_as_relative = false
-script = ExtResource( 10 )
-m_iIniAction = 0
+script = SubResource( 26 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="Logo/Layers/Logo/ic_Logo-3"]
-script = ExtResource( 11 )
+script = ExtResource( 4 )
 Action = 0
-m_sprite = SubResource( 6 )
+m_sprite = SubResource( 16 )
 
 [node name="ic_Logo-4" type="Node2D" parent="Logo/Layers/Logo"]
 modulate = Color( 1, 1, 1, 0.7059 )
@@ -183,38 +536,38 @@ position = Vector2( 3904, -128 )
 scale = Vector2( 2.5, 2.5 )
 z_index = -5
 z_as_relative = false
-script = ExtResource( 10 )
-m_oIniColor = Color( 1, 1, 1, 0.7059 )
-m_iIniAction = 0
+script = SubResource( 27 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="Logo/Layers/Logo/ic_Logo-4"]
-script = ExtResource( 11 )
+script = ExtResource( 4 )
 Action = 0
-m_sprite = SubResource( 6 )
+m_sprite = SubResource( 16 )
 
 [node name="ic_Logo-5" type="Node2D" parent="Logo/Layers/Logo"]
 modulate = Color( 1, 1, 1, 0.4118 )
 position = Vector2( -512, -192 )
 z_index = -6
 z_as_relative = false
-script = ExtResource( 10 )
-m_oIniColor = Color( 1, 1, 1, 0.4118 )
-m_iIniAction = 0
+script = SubResource( 28 )
 
 [node name="CFESpriteInstance" type="Node2D" parent="Logo/Layers/Logo/ic_Logo-5"]
-script = ExtResource( 11 )
+script = ExtResource( 4 )
 Action = 0
-m_sprite = SubResource( 6 )
+m_sprite = SubResource( 16 )
+
+[node name="Actions" type="AnimationPlayer" parent="Logo"]
+anims/OnIdlePage = SubResource( 29 )
+anims/Reset = SubResource( 30 )
 
 [node name="BT_Accept" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = SubResource( 31 )
 
 [node name="Layers" type="Node2D" parent="BT_Accept"]
 
 [node name="BT_Accept" type="Node2D" parent="BT_Accept/Layers"]
 position = Vector2( 928, 608 )
 z_as_relative = false
-script = ExtResource( 12 )
+script = SubResource( 32 )
 
 [node name="rt_Accept" type="Node2D" parent="BT_Accept/Layers/BT_Accept"]
 modulate = Color( 1, 1, 1, 0 )
@@ -222,29 +575,32 @@ position = Vector2( -928, -608 )
 scale = Vector2( 1.45, 1.15 )
 z_index = -1
 z_as_relative = false
-script = ExtResource( 13 )
-m_oIniColor = Color( 1, 1, 1, 0 )
-m_rWidth = 1280.0
-m_rHeight = 960.0
-m_oCorners = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 )
+script = SubResource( 33 )
 
 [node name="lb_Accept" type="Node2D" parent="BT_Accept/Layers/BT_Accept"]
 position = Vector2( 0, 384 )
 z_index = -2
 z_as_relative = false
-script = ExtResource( 7 )
+script = SubResource( 34 )
 
 [node name="Label" type="Label" parent="BT_Accept/Layers/BT_Accept/lb_Accept"]
-margin_top = -29.5
-margin_right = 920.0
-margin_bottom = 29.5
-theme = ExtResource( 2 )
+margin_top = -36.5
+margin_right = 1149.0
+margin_bottom = 36.5
+theme = ExtResource( 1 )
 text = "Toca para empezar"
 align = 1
 valign = 1
 
+[node name="Actions" type="AnimationPlayer" parent="BT_Accept"]
+anims/OnEnterPage = SubResource( 35 )
+anims/OnExitPage = SubResource( 36 )
+anims/OnIdle = SubResource( 37 )
+anims/OnPress = SubResource( 38 )
+anims/Reset = SubResource( 39 )
+
 [node name="Foreground" type="Node2D" parent="."]
-script = ExtResource( 1 )
+script = SubResource( 40 )
 
 [node name="Layers" type="Node2D" parent="Foreground"]
 
@@ -252,5 +608,9 @@ script = ExtResource( 1 )
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 640, 480 )
 z_as_relative = false
-script = ExtResource( 12 )
-m_oIniColor = Color( 1, 1, 1, 0 )
+script = SubResource( 41 )
+
+[node name="Actions" type="AnimationPlayer" parent="Foreground"]
+anims/OnEnterPage = SubResource( 42 )
+anims/OnExitPage = SubResource( 43 )
+anims/Reset = SubResource( 44 )

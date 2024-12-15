@@ -54,8 +54,6 @@ namespace FuetEngine
 			// Read elements.
 			for (int j=0; j<uiNumElements; j++)
 			{
-				GD.Print("Parsing HUD Element " + j.ToString());
-
 				string sVar = "HUD.Element" + j;
 				CFEHUDElement oElem = oLoadElement(sVar, oConfig);
 				
@@ -107,7 +105,7 @@ namespace FuetEngine
 			// Element name
 			CFEString sElemName = _oConfigFile.sGetString(_sPrefix + ".Name","nonamed-element");
 
-			CFEHUDElement oElem = Support.CreateObject<CFEHUDElement>(FuetEngine.Support.HUD_ELEMENT_SCRIPT_FILE);
+			CFEHUDElement oElem = new CFEHUDElement(); // Support.CreateObject<CFEHUDElement>(FuetEngine.Support.HUD_ELEMENT_SCRIPT_FILE);
 			oElem.Name = sElemName;
 
 			// Number of layers
@@ -186,7 +184,7 @@ namespace FuetEngine
 
 			if (sElemType == "Label")
 			{
-				CFEHUDLabel oLabel = Support.CreateObject<CFEHUDLabel>(FuetEngine.Support.HUD_LABEL_SCRIPT_FILE);
+				CFEHUDLabel oLabel = new CFEHUDLabel(); // Support.CreateObject<CFEHUDLabel>(FuetEngine.Support.HUD_LABEL_SCRIPT_FILE);
 				LoadCommonObjectProperties(_sPrefix,_oConfigFile, oLabel);
 				
 				string sText = _oConfigFile.sGetString(_sPrefix + ".Text","Label");
@@ -222,7 +220,7 @@ namespace FuetEngine
 			
 			else if (sElemType == "Icon")
 			{
-				CFEHUDIcon oIcon = Support.CreateObject<CFEHUDIcon>(FuetEngine.Support.HUD_ICON_SCRIPT_FILE);
+				CFEHUDIcon oIcon = new CFEHUDIcon(); // (FuetEngine.Support.HUD_ICON_SCRIPT_FILE);
 				LoadCommonObjectProperties(_sPrefix, _oConfigFile, oIcon);
 
 				string sSprite = _oConfigFile.sGetString(_sPrefix + ".Sprite","");
@@ -253,7 +251,7 @@ namespace FuetEngine
 			
 			else if (sElemType == "Rect")
 			{
-				CFEHUDRect oRect = Support.CreateObject<CFEHUDRect>(FuetEngine.Support.HUD_RECT_SCRIPT_FILE);
+				CFEHUDRect oRect = new CFEHUDRect(); // (FuetEngine.Support.HUD_RECT_SCRIPT_FILE);
 				LoadCommonObjectProperties(_sPrefix, _oConfigFile, oRect);
 				
 				// Load width / height / pivot
@@ -286,7 +284,7 @@ namespace FuetEngine
 			
 			else if (sElemType == "Shape")
 			{
-				CFEHUDShape oShape = Support.CreateObject<CFEHUDShape>(FuetEngine.Support.HUD_SHAPE_SCRIPT_FILE);
+				CFEHUDShape oShape = new CFEHUDShape(); // (FuetEngine.Support.HUD_SHAPE_SCRIPT_FILE);
 				LoadCommonObjectProperties(_sPrefix, _oConfigFile, oShape);
 				
 				string sMesh = _oConfigFile.sGetString(_sPrefix + ".Mesh","");
@@ -312,7 +310,7 @@ namespace FuetEngine
 			
 			else if (sElemType == "PSys")
 			{
-				CFEHUDPSys oPSys = Support.CreateObject<CFEHUDPSys>(FuetEngine.Support.HUD_PSYS_SCRIPT_FILE);
+				CFEHUDPSys oPSys = new CFEHUDPSys(); // (FuetEngine.Support.HUD_PSYS_SCRIPT_FILE);
 				LoadCommonObjectProperties(_sPrefix, _oConfigFile, oPSys);
 			
 				string sPSys = _oConfigFile.sGetString(_sPrefix + ".PSys","");
@@ -340,8 +338,8 @@ namespace FuetEngine
 				m_iObjectIdx = 0;
 					
 				int uiNumObjects = _oConfigFile.iGetInteger(_sPrefix + ".NumObjects",0);
-				
-				CFEHUDGroup oGroup = Support.CreateObject<CFEHUDGroup>(FuetEngine.Support.HUD_GROUP_SCRIPT_FILE);
+				 
+				CFEHUDGroup oGroup = new CFEHUDGroup(); // (FuetEngine.Support.HUD_GROUP_SCRIPT_FILE);
 
 				LoadCommonObjectProperties(_sPrefix, _oConfigFile, oGroup);
 
@@ -378,22 +376,23 @@ namespace FuetEngine
 		private static void LoadElementActions(CFEString _sPrefix, CFEConfigFile _oConfigFile, ref CFEHUDElement _oElem)
 		{
 			int iNumActions = _oConfigFile.iGetInteger(_sPrefix + ".NumElemActions", 0);
+			
+			CFEHUDElementAction	resetAction = CreateResetAnimation(_sPrefix, _oConfigFile,ref _oElem);
+			_oElem.iAddAction(resetAction);
 
 			for (int i=0; i<iNumActions; i++)
 			{
-				GD.Print("element action: "+i.ToString());
 				CFEString sPrefix = _sPrefix + ".Action" + i.ToString();
 				CFEHUDElementAction oObj = oLoadAction(sPrefix, _oConfigFile, ref _oElem);
 
 				_oElem.iAddAction(oObj);
 			}
-			GD.Print("After LoadElementActions");
 		}
 		//-----------------------------------------------------------------------------
 		private static CFEHUDElementAction oLoadAction(CFEString _sPrefix, CFEConfigFile _oConfigFile, ref CFEHUDElement _oElem)
 		{
 			CFEString sName = _oConfigFile.sGetString(_sPrefix + ".Name","noname action elem");
-			
+
 			CFEHUDElementAction elementAction = new CFEHUDElementAction();
 			elementAction.ResourceName = sName;
 			elementAction.ResourceLocalToScene = true;
@@ -404,7 +403,8 @@ namespace FuetEngine
 				CFEString sPrefix = _sPrefix +".ObjAction" + i.ToString();
 				LoadObjAction(sPrefix, _oConfigFile, ref _oElem, ref elementAction);
 			}
-			
+
+			elementAction.Length = CFEHUDActionTime.rGetMaxActionTime(elementAction); 			
 			return elementAction;
 		}
 		
@@ -417,34 +417,45 @@ namespace FuetEngine
 				return;
 			}
 
+			// find hud object
+			CFEHUDElemLocator elemLocator = new CFEHUDElemLocator();
+			CFEHUDObject oHUDObject = elemLocator.oLocateHUDObject(_oElem, sHUDObject);
+			NodePath nodePath = _oElem.GetPathTo(oHUDObject);
+			string sHUDObjectPath = nodePath;
+
+			if (oHUDObject == null)
+			{
+				GD.Print("Unable to find HUDObject: " + sHUDObject);
+				return;
+			}
+
 			/// To keep compatibility loading previous HUD files.
 			if (m_uiFileVersion > 1)
 			{
-				Support.ReadKFBFunc<float>(_sPrefix + ".XFunc", "Value", "Layers/" + sHUDObject + ":position:x", 0.0f, _oConfigFile, ref objAction);
-				Support.ReadKFBFunc<float>(_sPrefix + ".YFunc", "Value", "Layers/" + sHUDObject + ":position:y", 0.0f, _oConfigFile, ref objAction);
+				Support.ReadKFBFunc<float>(_sPrefix + ".XFunc", "Value", sHUDObjectPath + ":position:x", 0.0f, oHUDObject.m_oIniPos.x, Support.InitialValueOperation.Sum, _oConfigFile, ref objAction);
+				Support.ReadKFBFunc<float>(_sPrefix + ".YFunc", "Value", sHUDObjectPath + ":position:y", 0.0f, oHUDObject.m_oIniPos.y, Support.InitialValueOperation.Sum, _oConfigFile, ref objAction);
 			}
 			else
 			{
-				Support.ReadKFBFunc(_sPrefix + ".PosFunc", "", "Layers/" + sHUDObject + ":position", new CFEVect2(0.0f, 0.0f), _oConfigFile, ref objAction);				
+				Support.ReadKFBFunc(_sPrefix + ".PosFunc", "", sHUDObjectPath + ":position", CFEVect2.Zero, oHUDObject.m_oIniPos, Support.InitialValueOperation.Sum, _oConfigFile, ref objAction);				
 			}
 
 			// Scale
-			Support.ReadKFBFunc(_sPrefix + ".ScaleFunc", "", "Layers/" + sHUDObject + ":scale", new CFEVect2(1.0f, 1.0f), _oConfigFile, ref objAction);				
+			Support.ReadKFBFunc(_sPrefix + ".ScaleFunc", "", sHUDObjectPath + ":scale", CFEVect2.One, oHUDObject.m_oIniScale, Support.InitialValueOperation.Mult, _oConfigFile, ref objAction);	
 
 			// Angle
-			Support.ReadKFBFunc<float>(_sPrefix + ".AngleFunc", "Value", "Layers/" + sHUDObject + ":rotation_degrees", 0.0f, _oConfigFile, ref objAction);
+			Support.ReadKFBFunc<float>(_sPrefix + ".AngleFunc", "Value", sHUDObjectPath + ":rotation_degrees", 0.0f, oHUDObject.m_rIniAngle, Support.InitialValueOperation.Sum, _oConfigFile, ref objAction);
 
 			// Depth
 
 			// Color
-			Support.ReadKFBFunc(_sPrefix + ".ColorFunc", "", "Layers/" + sHUDObject + ":modulate", new CFEColor(1.0f,1.0f,1.0f,1.0f), _oConfigFile, ref objAction);				
-			// TODO: ReadKFBFunc<float>(_sPrefix + ".ColorFunc", "Value", sHUDObject + ":rotation:y", 0.0f, _oConfigFile, ref objAction);
+			Support.ReadKFBFunc(_sPrefix + ".ColorFunc", "", sHUDObjectPath + ":modulate", new Color(1,1,1,1), oHUDObject.m_oIniColor, Support.InitialValueOperation.Mult, _oConfigFile, ref objAction);
 
 			// Visibility
-			Support.ReadKFBFunc<bool>(_sPrefix + ".VisFunc", "Value", "Layers/" + sHUDObject + ":visible", true, _oConfigFile, ref objAction);
+			Support.ReadKFBFunc<bool>(_sPrefix + ".VisFunc", "Value", sHUDObjectPath + ":visible", true, oHUDObject.m_bIniVis, Support.InitialValueOperation.None, _oConfigFile, ref objAction);
 
 			// Actions
-			Support.ReadKFBFunc<int>(_sPrefix + ".ActionFunc", "Value", "Layers/" + sHUDObject + ":Action", -1, _oConfigFile, ref objAction);
+			Support.ReadKFBFunc<int>(_sPrefix + ".ActionFunc", "Value", sHUDObjectPath + ":CFESpriteInstance:Action", -1, oHUDObject.m_iIniAction, Support.InitialValueOperation.None, _oConfigFile, ref objAction);
 
 			/*
 			// Events
@@ -473,7 +484,80 @@ namespace FuetEngine
 			*/
 		}
 		// --------------------------------------------------------------------
-		static float rGetObjectDepth(float _rObjDepth)
+		private static CFEHUDElementAction CreateResetAnimation(CFEString _sPrefix, CFEConfigFile _oConfigFile, ref CFEHUDElement _oElem)
+		{
+			GD.Print("Create Reset action for element "+_oElem.Name);
+
+			CFEHUDElementAction elementAction = new CFEHUDElementAction();
+			elementAction.ResourceName = "Reset";
+			elementAction.ResourceLocalToScene = true;
+		
+			int iNumElemActions = _oConfigFile.iGetInteger(_sPrefix + ".NumElemActions", 0);
+			for (int j=0; j<iNumElemActions; j++)
+			{
+				CFEString sElemActionPrefix = _sPrefix + ".Action" + j.ToString();
+
+				int iNumObjActions = _oConfigFile.iGetInteger(sElemActionPrefix + ".NumObjActions", 0);
+				for (int i=0; i<iNumObjActions; i++)
+				{
+					CFEString sObjActionPrefix = sElemActionPrefix +".ObjAction" + i.ToString();
+					CreateObjResetAnimation(sObjActionPrefix, _oConfigFile, ref _oElem, ref elementAction);
+				}
+			}
+
+			elementAction.Length = 0.01f;
+			return elementAction;
+		}
+		// --------------------------------------------------------------------
+		private static void CreateObjResetAnimation(CFEString _sPrefix, CFEConfigFile _oConfigFile, ref CFEHUDElement _oElem, ref CFEHUDElementAction _elementAction)
+		{
+			CFEString sHUDObject = _oConfigFile.sGetString(_sPrefix + ".HUDObject", "");    
+			if (sHUDObject == "")
+			{
+				return;
+			}
+
+			// find hud object
+			CFEHUDElemLocator elemLocator = new CFEHUDElemLocator();
+			CFEHUDObject oHUDObject = elemLocator.oLocateHUDObject(_oElem, sHUDObject);
+			NodePath nodePath = _oElem.GetPathTo(oHUDObject);
+			string sHUDObjectPath = nodePath;
+
+			if (oHUDObject == null)
+			{
+				GD.Print("Unable to find HUDObject: " + sHUDObject);
+				return;
+			}
+			
+			if (m_uiFileVersion > 1)
+			{
+				Support.CreateResetAnimation<float>(_sPrefix + ".XFunc", sHUDObjectPath + ":position:x", oHUDObject.m_oIniPos.x, _oConfigFile, ref _elementAction);
+				Support.CreateResetAnimation<float>(_sPrefix + ".YFunc", sHUDObjectPath + ":position:y", oHUDObject.m_oIniPos.y, _oConfigFile, ref _elementAction);
+			}
+			else
+			{
+				Support.CreateResetAnimation<CFEVect2>(_sPrefix + ".PosFunc", sHUDObjectPath + ":position", oHUDObject.m_oIniPos, _oConfigFile, ref _elementAction);				
+			}
+
+			// Scale
+			Support.CreateResetAnimation<CFEVect2>(_sPrefix + ".ScaleFunc", sHUDObjectPath + ":scale", oHUDObject.m_oIniScale, _oConfigFile, ref _elementAction);				
+
+			// Angle
+			Support.CreateResetAnimation<float>(_sPrefix + ".AngleFunc", sHUDObjectPath + ":rotation_degrees", oHUDObject.m_rIniAngle, _oConfigFile, ref _elementAction);
+
+			// Depth
+
+			// Color
+			Support.CreateResetAnimation<CFEColor>(_sPrefix + ".ColorFunc", sHUDObjectPath + ":modulate", oHUDObject.m_oIniColor, _oConfigFile, ref _elementAction);				
+
+			// Visibility
+			Support.CreateResetAnimation<bool>(_sPrefix + ".VisFunc", sHUDObjectPath + ":visible", oHUDObject.m_bIniVis, _oConfigFile, ref _elementAction);
+
+			// Actions
+			Support.CreateResetAnimation<int>(_sPrefix + ".ActionFunc", sHUDObjectPath + ":Action", oHUDObject.m_iIniAction, _oConfigFile, ref _elementAction);
+		}
+		// --------------------------------------------------------------------
+		private static float rGetObjectDepth(float _rObjDepth)
 		{
 			return m_rDepth + (m_rDepthFact * _rObjDepth);
 		}

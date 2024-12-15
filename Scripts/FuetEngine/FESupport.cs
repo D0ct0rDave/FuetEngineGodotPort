@@ -330,20 +330,14 @@ namespace FuetEngine
 
 		*/
 		// --------------------------------------------------------------------
-		/*
-		public static void MethodToSpecialize<T>(T _value)
+		public enum InitialValueOperation
 		{
-			// GD.Print(nameof(T) );
+			Sum,
+			Mult,
+			None,
 		}
-		
-		public static void MethodToSpecialize<bool>(T _value)
-		{
-			GD.Print("Bool");
-		}
-
-*/
 		// --------------------------------------------------------------------
-		public static void ReadKFBFunc(string _sSrcFuncName, string _variableName, string _sDstActionTrackName, Color _defaultValue, CFEConfigFile _oConfigFile, ref Animation _objAction)
+		public static void ReadKFBFunc(string _sSrcFuncName, string _variableName, string _sDstActionTrackName, Color _defaultValue, Color _initialValue, InitialValueOperation _initialValueOperation, CFEConfigFile _oConfigFile, ref Animation _objAction)
 		{
 			const CFEString DEFAULT_WRAP_MODE = "finalvalue";
 			const CFEString DEFAULT_LERP_FUNC = "linear";
@@ -367,12 +361,31 @@ namespace FuetEngine
 					float g = _oConfigFile.rGetReal(sIVar + ".g",  _defaultValue.g);
 					float b = _oConfigFile.rGetReal(sIVar + ".b",  _defaultValue.b);
 					float a = _oConfigFile.rGetReal(sIVar + ".a",  _defaultValue.a);
-					Godot.Color color = new Godot.Color(r, g, b, a);
+
+					switch (_initialValueOperation)
+					{
+						case InitialValueOperation.Sum:
+						{
+							r += _initialValue.r;
+							g += _initialValue.g;
+							b += _initialValue.b;
+							a += _initialValue.a;
+						}
+						break;
+						case InitialValueOperation.Mult:
+						{
+							r *= _initialValue.r;
+							g *= _initialValue.g;
+							b *= _initialValue.b;
+							a *= _initialValue.a;
+						}
+						break;
+					}
 
 					FEReal rTime = _oConfigFile.rGetReal(sIVar + ".Time", 0.0f);
 					EFEKFLerpFunc lerpMode = Support.eGetLerpFuncFromString(_oConfigFile.sGetString(sIVar + ".LerpFunc", DEFAULT_LERP_FUNC));
 
-					_objAction.TrackInsertKey(trackIndex, rTime, color);
+					_objAction.TrackInsertKey(trackIndex, rTime, new Godot.Color(r, g, b, a), GetGodotTransition(lerpMode));
 				}
 
 				_objAction.TrackSetInterpolationType(trackIndex, Animation.InterpolationType.Linear);
@@ -437,8 +450,9 @@ namespace FuetEngine
 			}
 		}
 		*/
+
 		// --------------------------------------------------------------------
-		public static void ReadKFBFunc(string _sSrcFuncName, string _variableName, string _sDstActionTrackName, CFEVect2 _defaultValue, CFEConfigFile _oConfigFile, ref Animation _objAction)
+		public static void ReadKFBFunc(string _sSrcFuncName, string _variableName, string _sDstActionTrackName, CFEVect2 _defaultValue, CFEVect2 _initialValue, InitialValueOperation _initialValueOperation, CFEConfigFile _oConfigFile, ref Animation _objAction)
 		{
 			const CFEString DEFAULT_WRAP_MODE = "finalvalue";
 			const CFEString DEFAULT_LERP_FUNC = "linear";
@@ -460,12 +474,27 @@ namespace FuetEngine
 
 					float x = _oConfigFile.rGetReal(sIVar + ".x",  _defaultValue.x);
 					float y = _oConfigFile.rGetReal(sIVar + ".y",  _defaultValue.y);
-					Vector2 vector = new Vector2(x, y);
-
+					
+					switch (_initialValueOperation)
+					{
+						case InitialValueOperation.Sum:
+						{
+							x += _initialValue.x;
+							y += _initialValue.y;
+						}
+						break;
+						case InitialValueOperation.Mult:
+						{
+							x *= _initialValue.x;
+							y *= _initialValue.y;
+						}
+						break;
+					}
+					
 					FEReal rTime = _oConfigFile.rGetReal(sIVar + ".Time", 0.0f);
 					EFEKFLerpFunc lerpMode = Support.eGetLerpFuncFromString(_oConfigFile.sGetString(sIVar + ".LerpFunc", DEFAULT_LERP_FUNC));
 
-					_objAction.TrackInsertKey(trackIndex, rTime, vector, GetGodotTransition(lerpMode));
+					_objAction.TrackInsertKey(trackIndex, rTime, new Vector2(x, y), GetGodotTransition(lerpMode));
 				}
 				
 				_objAction.TrackSetInterpolationType(trackIndex, Animation.InterpolationType.Linear);
@@ -473,7 +502,7 @@ namespace FuetEngine
 			}
 		}
 		// --------------------------------------------------------------------
-		public static void ReadKFBFunc<T>(string _sSrcFuncName, string _variableName, string _sDstActionTrackName, T _defaultValue, CFEConfigFile _oConfigFile, ref Animation _objAction)
+		public static void ReadKFBFunc<T>(string _sSrcFuncName, string _variableName, string _sDstActionTrackName, T _defaultValue, T _initialValue, InitialValueOperation _initialValueOperation, CFEConfigFile _oConfigFile, ref Animation _objAction)
 		{
 			const CFEString DEFAULT_WRAP_MODE = "finalvalue";
 			const CFEString DEFAULT_LERP_FUNC = "linear";
@@ -483,7 +512,7 @@ namespace FuetEngine
 			int iKeyFrames = _oConfigFile.iGetInteger(_sSrcFuncName + ".NumKeyFrames", -1);
 			// TODO: if (iKeyFrames == 0) iKeyFrames = 1;	// will use default values
 
-			if (iKeyFrames != -1)
+			if (iKeyFrames > 0)
 			{
 				int trackIndex = _objAction.AddTrack(Animation.TrackType.Value);
 				_objAction.TrackSetPath(trackIndex, _sDstActionTrackName);
@@ -492,16 +521,33 @@ namespace FuetEngine
 				for (int i=0; i<iKeyFrames; i++)
 				{
 					CFEString sIVar = sVar + i.ToString();
-
 					object value = _defaultValue;
+
 					if (typeof(T) == typeof(FEReal))
 					{
-						value = _oConfigFile.rGetReal(sIVar + "." + _variableName, Convert.ToSingle(_defaultValue));
+						float val =_oConfigFile.rGetReal(sIVar + "." + _variableName, Convert.ToSingle(_defaultValue));
+						
+						switch (_initialValueOperation)
+						{
+							case InitialValueOperation.Sum:
+							{
+								val += Convert.ToSingle(_initialValue);
+							}
+							break;
+
+							case InitialValueOperation.Mult:
+							{
+								val *= Convert.ToSingle(_initialValue);
+							}
+							break;
+						}
+
+						value = val;					
 					}
 					else if (typeof(T) == typeof(int))
 					{
 						value = _oConfigFile.iGetInteger(sIVar + "." + _variableName, Convert.ToInt32(_defaultValue));
-					} 
+					}
 					else if (typeof(T) == typeof(bool))
 					{
 						value = _oConfigFile.bGetBool(sIVar + "." + _variableName, Convert.ToBoolean(_defaultValue));
@@ -515,14 +561,28 @@ namespace FuetEngine
 					EFEKFLerpFunc lerpMode = Support.eGetLerpFuncFromString(_oConfigFile.sGetString(sIVar + ".LerpFunc", DEFAULT_LERP_FUNC));
 
 					_objAction.TrackInsertKey(trackIndex, rTime, value, GetGodotTransition(lerpMode));
-
 				}
 				
 				_objAction.TrackSetInterpolationType(trackIndex, Animation.InterpolationType.Linear);
 				_objAction.TrackSetInterpolationLoopWrap(trackIndex, (eFuncWrapMode  == EFEKFBFuncWrapMode.KFBFWM_NONE)? false : true);
 			}
 		}
+
 		// --------------------------------------------------------------------
+		public static void CreateResetAnimation<T>(string _sSrcFuncName, string _sDstActionTrackName, T _defaultValue, CFEConfigFile _oConfigFile, ref Animation _objAction)
+		{
+			/// To keep compatibility loading previous HUD files.
+			int iKeyFrames = _oConfigFile.iGetInteger(_sSrcFuncName + ".NumKeyFrames", -1);
+			if (iKeyFrames > 0)
+			{
+				if (_objAction.FindTrack(_sDstActionTrackName) == -1)
+				{
+					int trackIndex = _objAction.AddTrack(Animation.TrackType.Value);
+					_objAction.TrackSetPath(trackIndex, _sDstActionTrackName);
+					_objAction.TrackInsertKey(trackIndex, 0.0f, _defaultValue);
+				}
+			}
+		}
 	}
 	// --------------------------------------------------------------------
 	public class CFERect
