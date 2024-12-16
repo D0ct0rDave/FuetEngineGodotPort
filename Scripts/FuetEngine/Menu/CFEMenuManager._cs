@@ -1,0 +1,195 @@
+using System;
+using Godot;
+
+namespace FuetEngine
+{
+	public enum MenuManagerState
+	{
+		None,
+		ShowPage,
+		Finish,
+		NumStates
+	}
+	
+	public partial class Template<T,B> : B
+	{
+		T m_state;
+	};
+
+	public partial class Pepe : Template<MenuManagerState, Node>
+	{		
+		private int a = 0;
+	};
+
+	public class CFEMenuPageFactory
+	{
+	}
+	
+	public class CFEMenuInputMgr
+	{
+	}
+	
+	public class CFEHUDManager
+	{
+	}
+
+	public class CFEMenuPage
+	{
+	}
+	
+    public class CFEMenuManager : CFEStatedObject<MenuManagerState, Node>
+    {		
+        private CFEConfigFile _menuConfig;
+        private CFEMenuPageFactory _pageFactory;
+        private CFEMenuInputMgr _inputManager;
+        private CFEMenuPage _currentPage;
+
+        private string _baseDir;
+        private string _defaultPage;
+        private string _startPage;
+        private string _nextPage;
+        private string _currentPageName;
+        private string _previousPage;
+        
+        // private CFEStatedObject<MenuManagerState> m_state = new CFEStatedObject<MenuManagerState>();
+
+        public CFEMenuManager()
+        {
+            _menuConfig = null;
+            _pageFactory = null;
+            _inputManager = null;
+            _currentPage = null;
+            _baseDir = string.Empty;
+            _defaultPage = string.Empty;
+            _startPage = string.Empty;
+            _nextPage = string.Empty;
+            _currentPageName = string.Empty;
+            _previousPage = string.Empty;
+        }
+
+        ~CFEMenuManager()
+        {
+            Finish();
+        }
+
+        public override void _Ready()
+        {
+        }
+
+        public void Init(string filename, CFEMenuPageFactory pageFactory, CFEMenuInputMgr inputManager)
+        {
+            Init(filename, string.Empty, pageFactory, inputManager);
+        }
+
+        public void Init(string filename, string initialPage, CFEMenuPageFactory pageFactory, CFEMenuInputMgr inputManager)
+        {
+            _pageFactory = pageFactory;
+            _inputManager = inputManager;
+
+            _menuConfig = new CFEConfigFile($"{filename}.mnu");
+            if (_menuConfig.Initialized)
+            {
+                _defaultPage = _menuConfig.GetString("Menu.DefaultPage", string.Empty);
+                _startPage = _menuConfig.GetString("Menu.StartPage", string.Empty);
+                _baseDir = _menuConfig.GetString("Menu.BaseDir", string.Empty);
+
+                AllowReentrance(true);
+
+                _nextPage = string.IsNullOrEmpty(initialPage) ? _startPage : initialPage;
+                _previousPage = _nextPage;
+
+                ChangeState(MenuManagerState.ShowPage);
+            }
+        }
+
+        public void Finish()
+        {
+            _currentPage?.Finish();
+            _currentPage = null;
+
+            _menuConfig = null;
+        }
+
+        public bool IsFinished()
+        {
+            return GetState() == MenuManagerState.Finish;
+        }
+
+        public virtual void Update(float deltaTime)
+        {
+            if (GetState() == MenuManagerState.ShowPage)
+            {
+                if (_currentPage != null)
+                {
+                    _currentPage.Update(deltaTime);
+                    if (_currentPage.IsFinished())
+                    {
+                        var nextPage = _currentPage.GetPageToGo();
+                        switch (nextPage)
+                        {
+                            case "GotoNext":
+                                _nextPage = _currentPage.GetNextPage();
+                                break;
+                            case "GotoBack":
+                                _nextPage = _currentPage.GetPrevPage();
+                                break;
+                            case "GotoStart":
+                                _nextPage = _startPage;
+                                break;
+                            case "GotoDefault":
+                                _nextPage = _defaultPage;
+                                break;
+                            default:
+                                _nextPage = nextPage;
+                                break;
+                        }
+
+                        if (_nextPage == "GotoEnd")
+                            ChangeState(MenuManagerState.Finish);
+                        else if (_nextPage != _currentPageName)
+                            ChangeState(MenuManagerState.ShowPage);
+                    }
+                }
+            }
+        }
+
+        public override void OnEnterState(MenuManagerState _state)
+        {
+            if (_state == MenuManagerState.ShowPage)
+            {
+                _currentPage = _pageFactory.Create(_nextPage);
+                if (_currentPage != null)
+                {
+                    _currentPage.SetNextPage(_menuConfig.GetString($"Menu.{_nextPage}.NextPage", string.Empty));
+                    _currentPage.SetPrevPage(_menuConfig.GetString($"Menu.{_nextPage}.PrevPage", _currentPageName));
+                    _currentPage.Init($"{_baseDir}/{_nextPage}", _inputManager, _menuConfig);
+
+                    _currentPageName = _nextPage;
+                    _nextPage = string.Empty;
+                }
+                else
+                {
+                    _currentPageName = string.Empty;
+                    _nextPage = string.Empty;
+                }
+            }
+        }
+
+        public override void OnExitState(MenuManagerState _state, MenuManagerState _newState)
+        {
+            if (_state == MenuManagerState.ShowPage)
+            {
+                _previousPage = _currentPageName;
+                _currentPage?.Finish();
+                _currentPage = null;
+            }
+        }
+
+        public void ChangeToPage(string nextPage)
+        {
+            _nextPage = nextPage;
+            ChangeState(MenuManagerState.ShowPage);
+        }
+
+    }
+}

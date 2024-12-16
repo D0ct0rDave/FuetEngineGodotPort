@@ -1,0 +1,234 @@
+using System;
+using System.Collections.Generic;
+using Godot;
+using CFEMenuInputMgr = Godot.Node;
+using CFEMenuOptionGroup = Godot.Node;
+
+namespace FuetEngine
+{
+    public partial class CFEMenuPage
+    {
+        private CFEHUDManager _hudManager;
+        private CFEMenuInputMgr _inputManager;
+        private CFEConfigFile _menuConfig;
+
+        private float _idleTime = -1;
+        private float _timeToIdle = -1;
+
+        private string _nextPage = "";
+        private string _prevPage = "";
+        private string _pageToGo = "";
+        private string _onEnterSelectButton = "";
+
+        private List<CFEMenuButton> _buttons = new List<CFEMenuButton>();
+        private List<CFEMenuOptionGroup> _groups = new List<CFEMenuOptionGroup>();
+
+        private int _selectedButton = -1;
+        private int _focusedButton = -1;
+
+        public CFEMenuPage(string _name) { Name = _name; }
+
+		// -----------------------------------------------------------------------
+		private enum State
+		{
+			None,
+			EnteringPage,
+			Idle,
+			ExitingPage,
+			Finished
+		}
+		private StatedObject<State> m_state = new StatedObject<State>();
+        // -----------------------------------------------------------------------
+		public override _Ready()
+		{
+			m_state.OnEnterState = OnEnterState;
+			m_state.OnExitState = OnExitState;
+        	m_state.ForceState(State.None);
+		}
+		public override _Process(float _deltaT)
+		{
+			Update(_deltaT);
+		}
+		// -----------------------------------------------------------------------
+        public void Init(string filename, CFEMenuInputMgr inputManager, CFEConfigFile menuConfig)
+        {
+            _inputManager = inputManager;
+            _menuConfig = menuConfig;
+
+            _hudManager = new CFEHUDManager();
+            _hudManager.Init(filename);
+
+            foreach (var obj in _hudManager.GetPageObjects())
+            {
+                if (obj.Name.StartsWith("BT_"))
+                {
+                    var button = new CFEMenuButton(this);
+                    button.Init(obj, _hudManager);
+                    _buttons.Add(button);
+                }
+                else if (obj.Name.StartsWith("CB_"))
+                {
+                    var checkbox = new CFEMenuCheckBox(this);
+                    checkbox.Init(obj, _hudManager);
+                    _buttons.Add(checkbox);
+                }
+                else if (obj.Name.StartsWith("OPT_"))
+                {
+                    if (_groups.Count > 0)
+                    {
+                        var group = _groups[_groups.Count - 1];
+                        var optionButton = new CFEMenuOptionButton(this, group.Siblings);
+                        optionButton.Init(obj, _hudManager);
+                        group.Siblings.Add(optionButton);
+                        _buttons.Add(optionButton);
+                    }
+                }
+                else if (obj.Name.StartsWith("NEW_OPT_GROUP"))
+                {
+                    _groups.Add(new CFEMenuOptionGroup());
+                }
+            }
+
+            foreach (var button in _buttons)
+            {
+                string configKey = $"Menu.{Name}.{button.Name}.Hide";
+                if (_menuConfig.GetBool(configKey, false))
+                {
+                    button.Hide();
+                }
+            }
+
+            BuildNeighbours();
+        }
+
+        public void Finish()
+        {
+            _hudManager?.Finish();
+            _hudManager = null;
+
+            foreach (var button in _buttons)
+            {
+                button.Finish();
+            }
+            _buttons.Clear();
+
+            foreach (var group in _groups)
+            {
+                // Group-specific cleanup, if necessary
+            }
+            _groups.Clear();
+        }
+
+        private void BuildNeighbours()
+        {
+            foreach (var button in _buttons)
+            {
+                if (button == null || button.HUDObject == null) continue;
+
+                CFEMenuButton[] neighbours = new CFEMenuButton[4];
+                var buttonPosition = button.HUDObject.InitialPosition;
+
+                foreach (var otherButton in _buttons)
+                {
+                    if (otherButton == null || otherButton.HUDObject == null || otherButton == button) continue;
+
+                    var otherPosition = otherButton.HUDObject.InitialPosition;
+                    var distance = buttonPosition.DistanceTo(otherPosition);
+
+                    // Assign neighbours based on distance (LEFT, RIGHT, TOP, BOTTOM)
+                    if (otherPosition.IsLeftOf(buttonPosition)) neighbours[(int)Direction.Left] = otherButton;
+                    if (otherPosition.IsRightOf(buttonPosition)) neighbours[(int)Direction.Right] = otherButton;
+                    if (otherPosition.IsAbove(buttonPosition)) neighbours[(int)Direction.Top] = otherButton;
+                    if (otherPosition.IsBelow(buttonPosition)) neighbours[(int)Direction.Bottom] = otherButton;
+                }
+
+                button.SetNeighbours(neighbours);
+            }
+        }
+
+        public void Update(float deltaTime)
+        {
+            if (_hudManager != null) _hudManager.Update(deltaTime);
+
+            foreach (var button in _buttons)
+            {
+                button.Update(deltaTime);
+            }
+        }
+
+        public override void OnEnterState(State _state)
+        {
+            switch (_state)
+            {
+                case State.EnteringPage:
+                    _hudManager.Play("ENTER_PAGE_EVENT_NAME", false);
+                    foreach (var button in _buttons)
+                    {
+                        button.ProcessEvent(ButtonEvent.EnterPage);
+                    }
+                    break;
+
+                case State.Idle:
+                    _hudManager.Play("IDLE_PAGE_EVENT_NAME", false);
+                    if (!string.IsNullOrEmpty(_onEnterSelectButton))
+                    {
+                        foreach (var button in _buttons)
+                        {
+                            if (button.Name == _onEnterSelectButton)
+                            {
+                                SelectButton(button);
+                                break;
+                            }
+                        }
+                    }
+                    break;
+
+                case State.ExitingPage:
+                    foreach (var button in _buttons)
+                    {
+                        button.ProcessEvent(ButtonEvent.ExitPage);
+                    }
+                    break;
+            }
+        }
+
+        public override void OnExitState(State _oldState, State _newState)
+        {
+            if (_newState == State.ExitingPage)
+            {
+                foreach (var button in _buttons)
+                {
+                    button.ProcessEvent(ButtonEvent.Unselect);
+                }
+            }
+        }
+
+        public void SelectButton(CFEMenuButton button)
+        {
+            if (_selectedButton != -1)
+            {
+                _buttons[_selectedButton].ProcessEvent(ButtonEvent.Unselect);
+            }
+
+            _selectedButton = _buttons.IndexOf(button);
+            button.ProcessEvent(ButtonEvent.Select);
+        }
+    }
+
+    // Additional supporting classes and enums
+    public enum Direction
+    {
+        Top,
+        Bottom,
+        Left,
+        Right
+    }
+
+    public enum ButtonEvent
+    {
+        EnterPage,
+        ExitPage,
+        Select,
+        Unselect
+    }
+}

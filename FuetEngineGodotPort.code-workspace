@@ -6,7 +6,7 @@
 	],
 	"settings": {
 		"files.exclude": {
-            "**/*.log": true,
+			"**/*.log": true,
 			"**/*.old*": true,
 			"**/*.bat*": true,
 			"**/.*": true,
@@ -26,6 +26,10 @@
 			"**/LICENSE": true,
 			"**/*.import": true
 		},
+		"editor.formatOnSave": true,
+		"[csharp]": {
+			"editor.defaultFormatter": "ms-dotnettools.csharp"
+		},
 		"symbolSearchPath": "C:\\utils\\Godot_v3.5.3\\GodotSharp\\Api\\Debug;C:\\utils\\Godot_v3.5.3\\GodotSharp\\Api\\Release;E:\\Projects\\Godot\\MyProject2\\.godot\\mono\\temp\\obj\\Debug",
 		"godotTools.editorPath.godot3": "C:\\utils\\Godot_v3.6\\Godot_v3.6-stable_mono_win64.exe",
 		"csharp.debug.symbolOptions.searchPaths": [
@@ -39,7 +43,7 @@
 		"razor.server.trace": "None",
 		"dotnet.server.trace": "None",
 		"debug.logLevel": "Verbose",
-		"godot.csharp.executablePath": "C:\\Utils\\Godot_v3.6-stable_mono_win64\\Godot_v3.6-stable_mono_win64.exe"
+		"godot.csharp.executablePath": "C:\\Utils\\Godot_v3.6-stable_mono_win64\\Godot_v3.6-stable_mono_win64.exe",
 	},
 	"launch": {
 		"version": "0.2.0",
@@ -84,10 +88,10 @@
 			},
 			{
 				"name": "Attach to Process",
-				"type": "godot-mono",				
+				"type": "godot-mono",
 				"request": "attach",
 				"address": "localhost",
-				"port": 23685 			// Project Settings / Mono / Debugger Agent / Port
+				"port": 23685 // Project Settings / Mono / Debugger Agent / Port
 			}
 		]
 	},
@@ -121,8 +125,12 @@
 				"label": "Compile Current File",
 				"type": "shell",
 				"command": "$msCompile",
-				"args": ["${file}"],
-				"problemMatcher": ["$compiler-problem"]
+				"args": [
+					"${file}"
+				],
+				"problemMatcher": [
+					"$compiler-problem"
+				]
 			}
 		]
 	}
