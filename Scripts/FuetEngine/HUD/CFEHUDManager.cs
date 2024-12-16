@@ -1,155 +1,130 @@
 using System;
+using System.Collections.Generic;
 using Godot;
+
 //-----------------------------------------------------------------------------
 using CFEString = System.String;
 using FEReal = System.Single;
 using CFEVect2 = Godot.Vector2;
 using CFEColor = Godot.Color;
 using CFEFont = Godot.Theme;
-using CFEHUDElementAction = Godot.Animation; 
+using CFEHUDElementAction = Godot.Animation;
 //-----------------------------------------------------------------------------
 namespace FuetEngine
 {
-	class CFEHUDManager
+	public class CFEHUDManager
 	{
 		//---------------------------------------------------------------------
-		class TElemAction
+		private class TElemAction
 		{
-
-	        CFEString				m_sActionName;
-
-			FEBool					m_bAutoHideAfterPlay;
-	        FEReal					m_rTime;
-
-	        CFEHUDElementAction*	m_poAction;
-			CFEHUDObject*			m_poObject;
-
+			public CFEString m_sActionName;
+			public bool m_bAutoHideAfterPlay;
+			public FEReal m_rTime;
+			public CFEHUDElementAction m_oAction;
+			public CFEHUDObject m_oObject;
 		};
-	
-		private List<TElemAction>	m_poHUDActions;
-        private List<TElemAction>	m_poEnabledActions;
-		CFEDictionary				m_poDic;
 
-		#ifdef DUAL_SCREEN
-		CFEArray<FEHandler>			m_hHUD;
-		#else
-		FEHandler					m_hHUD;
-		#endif
+		private List<TElemAction> m_oHUDActions = new List<TElemAction>();
+		private List<TElemAction> m_oEnabledActions = new List<TElemAction>();
+		CFEDictionary m_oDic = null;
+		CFEHUD m_hud = null;
 
-		CFEArray<CFEHUDObject*> m_poObjs;
-		FEReal						m_rLastDeltaT;
+		private List<CFEHUDObject> m_oObjs = new List<CFEHUDObject>();
+		FEReal m_rLastDeltaT = 0.0f;
 
 		//---------------------------------------------------------------------
-		CFEHUDManager() :
-			m_poDic(NULL)
-
-			#ifndef DUAL_SCREEN
-			,m_hHUD(NULL)
-			#endif
-
-			,m_rLastDeltaT(_0r)
+		public CFEHUDManager()
 		{
-			
 		}
 		//---------------------------------------------------------------------
-		~CFEHUDManager()
-		{
-			m_poObjs.clear();
-			Reset();
-		
-		//---------------------------------------------------------------------
-		void CFEHUDManager::ProcessHUD(CFEHUD* _poHUD)
+		private void ProcessHUD(CFEHUD _oHUD)
 		{
 			// process objects.
-			for (uint e=0;e<_poHUD->uiNumElements();e++)
+			for (int e = 0; e < _oHUD.iNumElements(); e++)
 			{
-				CFEHUDElement* poElem = _poHUD->poGetElement(e);
-
-				if (poElem != NULL)
-					AddElementActions(poElem);
+				CFEHUDElement oElem = _oHUD.oGetElement(e);
+				if (oElem != null)
+				{
+					AddElementActions(oElem);
+				}
 
 				// Add the element to the list.
-				m_poObjs.push_back(poElem->poGetLayer(0));
+				m_oObjs.Add(oElem.oGetLayer(0));
 			}
 		}
 		// -----------------------------------------------------------------------------
-		void CFEHUDManager::AddElementActions(CFEHUDElement* _poElem)
+		private void AddElementActions(CFEHUDElement _oElem)
 		{
 			/// Add all the element actions to the table.
-			for (uint a=0;a<_poElem->uiNumActions();a++)
+			for (int a = 0; a < _oElem.iNumActions(); a++)
 			{
-				CFEHUDElementAction* poAction = _poElem->poGetAction(a);
+				CFEHUDElementAction oAction = _oElem.oGetAction(a);
 
-				TElemAction* poEA	= new TElemAction;
-				poEA->m_poAction	= poAction;
-				poEA->m_poObject	= _poElem->poGetLayer(0);
-				poEA->m_bAutoHideAfterPlay = false;
-				poEA->m_rTime		= _0r;
-				poEA->m_sActionName = poAction->sGetName();
+				TElemAction elemAction = new TElemAction();
+				elemAction.m_oAction = oAction;
+				elemAction.m_oObject = _oElem.oGetLayer(0);
+				elemAction.m_bAutoHideAfterPlay = false;
+				elemAction.m_rTime = 0.0f;
+				elemAction.m_sActionName = oAction.GetName();
 
 				// add the action to the list.
-				m_poHUDActions.push_back(poEA);
+				m_oHUDActions.Add(elemAction);
 			}
 		}
 		// -----------------------------------------------------------------------------
-		void CFEHUDManager::SubstNode(const CFEString& _sParentNode,const CFEString& _sNodeToSubst,CFEHUDObject* _poNewNode)
+		/*
+		void SubstNode(CFEString _sParentNode, CFEString _sNodeToSubst, CFEHUDObject _oNewNode)
 		{
-			#ifdef DUAL_SCREEN
-			for (uint i=0;i<m_hHUD.size();i++)
 			{
-				FEHandler hHUD = m_hHUD[i];		
-				
-			#else
-			{
-				FEHandler hHUD = m_hHUD;
-			#endif
-				
-				if (hHUD != NULL)
+				CFEHUD hud = m_hud;
+				if (hud != null)
 				{
 					/// Retrieves the element that matches with the specified name.
-					CFEHUDElement* poElem = NULL;
-					CFEHUDGroup* poGroup  = NULL;
+					CFEHUDElement oElem = null;
+					CFEHUDGroup oGroup = null;
 
 					CFEHUDElemLocator oElemLocator;
-					poElem = oElemLocator.poLocateHUDElement((CFEHUD*)hHUD,_sParentNode);
+					oElem = oElemLocator.oLocateHUDElement(hud, _sParentNode);
 
-					if (poElem != NULL)
+					if (oElem != null)
 					{
-						poGroup = (CFEHUDGroup*)oElemLocator.poLocateHUDObject(poElem,_sParentNode);
+						oGroup = (CFEHUDGroup)oElemLocator.oLocateHUDObject(oElem, _sParentNode);
 
-						if ((poElem!=NULL) && (poGroup!=NULL))
+						if ((oElem != null) && (oGroup != null))
 						{
-							CFEHUDObject* poOldObj = NULL;
-					
+							CFEHUDObject oOldObj = null;
+
 							// Locate object.
-							for (uint j=0;j<poGroup->uiNumObjs();j++)
+							for (uint j = 0; j < oGroup.iNumObjs(); j++)
 							{
-								if (poGroup->poGetObject(j)->sGetName() |= _sNodeToSubst)
+								if (oGroup.oGetObject(j).Name.ToLower == _sNodeToSubst.ToLower)
 								{
-									poOldObj = poGroup->poGetObject(j);
+									oOldObj = oGroup.oGetObject(j);
 
-									_poNewNode->SetIniPos(poOldObj->oGetIniPos());
-									_poNewNode->SetIniScale(poOldObj->oGetIniScale());
-									_poNewNode->SetIniAngle(poOldObj->rGetIniAngle());
-									_poNewNode->SetIniColor(poOldObj->oGetIniColor());
+									_oNewNode.SetIniPos(oOldObj.oGetIniPos());
+									_oNewNode.SetIniScale(oOldObj.oGetIniScale());
+									_oNewNode.SetIniAngle(oOldObj.rGetIniAngle());
+									_oNewNode.SetIniColor(oOldObj.oGetIniColor());
 
-									// Substitue node
-									poGroup->SetObject(j,_poNewNode);
+									// Substitute node
+									oGroup.SetObject(j, _oNewNode);
 
-									delete poOldObj;
+									oOldObj.Dispose();
 									break;
 								}
 							}
 
 							// Setup actions using the old object.
-							for (uint j=0;j<poElem->uiNumActions();j++)
+							for (int j = 0; j < oElem.iNumActions(); j++)
 							{
-								CFEHUDElementAction* poAction = poElem->poGetAction(j);
+								CFEHUDElementAction oAction = oElem.oGetAction(j);
 
-								for (uint k=0;k<poAction->uiNumActions();k++)
+								for (int k = 0; k < oAction.iNumActions(); k++)
 								{
-									if (poAction->poGetAction(k)->poGetHUDObject() == poOldObj)
-										poAction->poGetAction(k)->SetHUDObject( _poNewNode );
+									if (oAction.oGetAction(k).oGetHUDObject() == oOldObj)
+									{
+										oAction.oGetAction(k).SetHUDObject(_oNewNode);
+									}
 								}
 							}
 						}
@@ -159,359 +134,237 @@ namespace FuetEngine
 			}
 		}
 		// -----------------------------------------------------------------------------
-		void CFEHUDManager::SubstSprite(FEHandler _hSpriteInstance,const CFEString& _sParentNode,const CFEString& _sNode)
+		void SubstSprite(FEHandler _hSpriteInstance, CFEString _sParentNode, CFEString _sNode)
 		{
-			CFEHUDIcon* poNewIconNode = new CFEHUDIcon(_sNode);
-			poNewIconNode->SetIcon(_hSpriteInstance);
-			SubstNode(_sParentNode,_sNode,poNewIconNode);
+			CFEHUDIcon oNewIconNode = new CFEHUDIcon(_sNode);
+			oNewIconNode.SetIcon(_hSpriteInstance);
+			SubstNode(_sParentNode, _sNode, oNewIconNode);
 		}
+		*/
 		// -----------------------------------------------------------------------------
 		/// Initializes the HUD manager.
-		void CFEHUDManager::Init(FEHandler _hHUD,CFEDictionary* _poDic,FEBool _bMultiScreen)
+		private void Init(CFEHUD _hHUD, CFEDictionary _oDic)
 		{
 			Reset();
 
-			m_poDic = _poDic;
-			CFEHUD* poHUD = CFEHUDInstMgr::poGetHUD(_hHUD);
+			m_oDic = _oDic;
+			m_hud = _hHUD;
 
-			if (m_poDic != NULL)
-				CFEHUDTranslator::Translate(poHUD, m_poDic);
-
-			ProcessHUD(poHUD);
-
-		#ifdef DUAL_SCREEN
-
-			if (! _bMultiScreen)
+			if (m_oDic != null)
 			{
-				m_hHUD.push_back(_hHUD);
-				return;
+				// TODO: CFEHUDTranslator.Translate(m_hud, m_oDic);
 			}
 
-			// Split HUD Elements between screens.
-			m_hHUD.push_back(new CFEHUD);
-			m_hHUD.push_back(new CFEHUD);
-
-			while (poHUD->uiNumElements()>0)
-			{
-				CFEHUDElement* poElem = poHUD->poGetElement(0);
-
-				CFEHUDRectGen oGen((FEPointer)poElem);
-				oGen.Visit(poElem);
-				CFERect oRect = oGen.oGetRect();
-
-				// % del objeto que est� en hud y en el otro
-				FEReal rHUD0Fact = _0r;
-				FEReal rHUD1Fact = _0r;
-
-				// compute rHUD0Fact
-				if (oRect.m_oEnd.y <= DESIGN_SCREEN_HEIGHT)
-					rHUD0Fact = _1r;
-				else
-				{
-					if (oRect.m_oIni.y >= DESIGN_SCREEN_HEIGHT)
-						rHUD0Fact = _0r;
-					else
-						// trozo de objeto que est� en la pantalla 1
-						rHUD0Fact = (DESIGN_SCREEN_HEIGHT - oRect.m_oIni.y) / oRect.rHeight();
-				}
-
-				// compute rHUD1Fact
-				if (oRect.m_oIni.y >= DESIGN_SCREEN_HEIGHT)
-					rHUD1Fact = _1r;
-				else
-				{
-					if (oRect.m_oEnd.y <= DESIGN_SCREEN_HEIGHT)
-						rHUD1Fact = _0r;
-					else
-						// trozo de objeto que est� en la pantalla 2
-						rHUD1Fact = (oRect.m_oEnd.y - DESIGN_SCREEN_HEIGHT) / oRect.rHeight();
-				}
-
-				// En teor�a no puede ir un mismo elemento a los 2 huds si no peta a la hora de destruir el HUD.
-				// DMC 25-01-2016: Tratamos esta posibilidad en el Finish...
-				if (rHUD0Fact > 0.1f)
-					((CFEHUD*)m_hHUD.at(0))->uiAddElement(poElem);
-
-				if (rHUD1Fact > 0.1f)
-					((CFEHUD*)m_hHUD.at(1))->uiAddElement(poElem);
-
-				/*
-				if (rHUD0Fact>rHUD1Fact)
-				((CFEHUD*)m_hHUD.at(0))->uiAddElement(poElem);
-				else
-				((CFEHUD*)m_hHUD.at(1))->uiAddElement(poElem);
-				*/
-
-				poHUD->DeleteElement(0);
-			}
-
-			delete poHUD;
-
-		#else
-			m_hHUD = _hHUD;
-		#endif
+			ProcessHUD(m_hud);
 		}
 		// -----------------------------------------------------------------------------
-		void CFEHUDManager::Init(const CFEString& _sFilename,FEBool _bMultiScreen)
+		public void Init(CFEString _sFilename)
 		{
 			/// load HUD
-			FEHandler hHUD = CFEHUDInstMgr::hGetInstance(_sFilename);
-			if (hHUD == NULL) return;
+			CFEHUD hHUD = CFEHUDLoader.oLoad(_sFilename);
+			if (hHUD == null) return;
 
 			// translate / localize
-			CFEDictionary* poDic = new CFEDictionary(_sFilename);
-			if (! poDic->bInitialized())
+			CFEDictionary oDic = new CFEDictionary(_sFilename);
+			if (!oDic.bInitialized())
 			{
-				delete poDic;
-				poDic = NULL;
+				oDic = null;
 			}
 
-			Init(hHUD, poDic,_bMultiScreen);
+			Init(hHUD, oDic);
 		}
 		// -----------------------------------------------------------------------------
-		void CFEHUDManager::Finish()
+		public void Finish()
 		{
 			Reset();
 		}
 		// -----------------------------------------------------------------------------
-		void CFEHUDManager::Reset()
+		public void Reset()
 		{
 			// Delete HUDs
-			#ifdef DUAL_SCREEN
-			
-				// DMC 25-01-2016: Process HUDs to find duplicated elements and delete them to avoid 
-				// the destruction of the same element 2 times...
-				if (m_hHUD.size()==2)
-				{
-					CFEHUD* poHUD0 = CFEHUDInstMgr::poGetHUD(m_hHUD[0]);
-					CFEHUD* poHUD1 = CFEHUDInstMgr::poGetHUD(m_hHUD[1]);
+			if (m_hud != null)
+			{
+				m_hud.Dispose();
+				m_hud = null;
+			}
 
-					if ((poHUD0 != NULL) && (poHUD1!=NULL))
+			// Delete dictionary
+			if (m_oDic != null)
+			{
+				m_oDic = null;
+			}
+
+			// Delete HUD element actions
+			for (int i = 0; i < m_oHUDActions.Count; i++)
+			{
+				m_oHUDActions[i] = null;
+			}
+
+			m_oHUDActions.Clear();
+			m_oEnabledActions.Clear();
+		}
+		// -----------------------------------------------------------------------------
+		private CFEHUDElement oGetElement(CFEString _sName)
+		{
+			if (m_hud != null)
+			{
+				CFEHUDElemLocator oElemLocator = new CFEHUDElemLocator();
+				return oElemLocator.oLocateHUDElement(m_hud, _sName);
+			}
+
+			return null;
+		}
+		// -----------------------------------------------------------------------------
+		private CFEHUDObject oGetObject(CFEString _sName)
+		{
+			if (m_hud != null)
+			{
+				return null; // CFEHUDInstMgr::poGetObject(hHUD, _sName);
+			}
+
+			return null;
+		}
+		// -----------------------------------------------------------------------------
+		private CFEHUDElementAction oGetAction(CFEString _sName)
+		{
+			if (m_hud != null)
+			{
+				return null; // CFEHUDInstMgr::poGetElementAction(hHUD, _sName);
+			}
+
+			return null;
+		}
+		// -----------------------------------------------------------------------------
+		private int iGetActionIdx(CFEString _sAction, CFEHUDObject _oObj)
+		{
+			if (_oObj == null)
+			{
+				for (int i = 0; i < m_oHUDActions.Count; i++)
+				{
+
+					if (m_oHUDActions[i].m_sActionName.ToLower() == _sAction.ToLower())
 					{
-						for (uint e0=0;e0<poHUD0->uiNumElements();e0++)
+						return i;
+					}
+				}
+			}
+			else
+			{
+				for (int i = 0; i < m_oHUDActions.Count; i++)
+				{
+
+					if ((m_oHUDActions[i].m_sActionName.ToLower() == _sAction) && (m_oHUDActions[i].m_oObject == _oObj))
+					{
+						return i;
+					}
+				}
+			}
+
+			return -1;
+		}
+		// -----------------------------------------------------------------------------
+		public int iPlay(CFEString _sAction, CFEHUDObject _oObj, bool _bAutoShowBeforePlay, bool _bAutoHideAfterPlay)
+		{
+			if (_oObj == null)
+			{
+				// play on all the objects which have this action
+				int iFoundIdx = -1;
+				for (int i = 0; i < m_oHUDActions.Count; i++)
+				{
+					if (m_oHUDActions[i].m_sActionName.ToLower() == _sAction.ToLower())
+					{
+						// Stop all the animations being played by this object.
+						StopObjectActions(m_oHUDActions[i].m_oObject);
+
+#if ENABLE_MENU_EVENT_LOGGING
+						CFESystem::Print("Playing %s action on %s object\n", _sAction.szString(), m_poHUDActions[i].m_poEA[0]->m_poObject->sGetName().szString());
+#endif
+
+						Play(i, _bAutoShowBeforePlay, _bAutoHideAfterPlay);
+
+						if (iFoundIdx == -1)
 						{
-							for (uint e1=0;e1<poHUD1->uiNumElements();)
-							{
-								// if the element in HUD1 is the same as the current in HUD0
-								if (poHUD0->poGetElement(e0) == poHUD1->poGetElement(e1))
-								{
-									// Delete this elemento from HUD1
-									poHUD1->DeleteElement(e1);
-									break;
-								}
-								else
-									e1++;
-							}
+							iFoundIdx = i;
 						}
 					}
 				}
 
-				/// Free HUD resources
-				for (uint i=0;i<m_hHUD.size();i++)
-				{
-					CFEHUD* poHUD = CFEHUDInstMgr::poGetHUD(m_hHUD[i]);
-					if (poHUD != NULL)
-						delete poHUD;
-				}
-				m_hHUD.clear();
-			#else
-				CFEHUD* poHUD = CFEHUDInstMgr::poGetHUD(m_hHUD);
-				if (poHUD != NULL)
-					delete poHUD;
-				m_hHUD = NULL;
-			#endif
-
-			// Delete dictionary
-			if (m_poDic != NULL)
-			{
-				delete m_poDic;
-				m_poDic = NULL;
-			}
-
-			// Delete HUD element actions
-			for (uint i=0;i<m_poHUDActions.size();i++)
-				delete m_poHUDActions[i];
-
-			m_poHUDActions.clear();
-			m_poEnabledActions.clear();
-		}
-		// -----------------------------------------------------------------------------
-		CFEHUDElement* CFEHUDManager::poGetElement(const CFEString& _sName)
-		{
-			CFEHUDElemLocator oElemLocator;
-
-			#ifdef DUAL_SCREEN
-			for (uint i=0;i<m_hHUD.size();i++)
-			{
-				FEHandler hHUD = m_hHUD[i];
-			#else
-			{
-				FEHandler hHUD = m_hHUD;
-			#endif
-				if (hHUD != NULL)
-				{
-					CFEHUDElement* poElem = oElemLocator.poLocateHUDElement((CFEHUD*)hHUD,_sName);
-					if (poElem != NULL) return(poElem);
-				}
-			}
-
-			return(NULL);
-		}
-		// -----------------------------------------------------------------------------
-		CFEHUDObject* CFEHUDManager::poGetObject(const CFEString& _sName)
-		{
-			#ifdef DUAL_SCREEN
-			for (uint i=0;i<m_hHUD.size();i++)
-			{
-				FEHandler hHUD = m_hHUD[i];
-			#else
-			{
-				FEHandler hHUD = m_hHUD;
-			#endif
-				if (hHUD != NULL)
-				{
-					CFEHUDObject* poObj = CFEHUDInstMgr::poGetObject(hHUD,_sName);
-					if (poObj!=NULL) return(poObj);
-				}
-			}
-
-			return(NULL);
-		}
-		// -----------------------------------------------------------------------------
-		CFEHUDElementAction* CFEHUDManager::poGetAction(const CFEString& _sName)
-		{
-			#ifdef DUAL_SCREEN
-			for (uint i=0;i<m_hHUD.size();i++)
-			{
-				FEHandler hHUD = m_hHUD[i];
-			#else
-			{
-				FEHandler hHUD = m_hHUD;
-			#endif
-				if (hHUD != NULL)
-				{
-					CFEHUDElementAction* poAction = CFEHUDInstMgr::poGetElementAction(hHUD,_sName);
-					if (poAction != NULL) return(poAction);
-				}
-			}
-
-			return(NULL);
-		}
-		// -----------------------------------------------------------------------------
-		int CFEHUDManager::iGetActionIdx(const CFEString& _sAction,CFEHUDObject* _poObj)
-		{
-			if (_poObj == NULL)
-			{
-				for (uint i=0;i<m_poHUDActions.size();i++)
-					if (m_poHUDActions[i]->m_sActionName |= _sAction)
-						return(i);
-			}
-			else
-			{
-				for (uint i=0;i<m_poHUDActions.size();i++)
-					if ((m_poHUDActions[i]->m_sActionName |= _sAction) && (m_poHUDActions[i]->m_poObject == _poObj))
-						return(i);
-			}
-
-			return(-1);
-		}
-		// -----------------------------------------------------------------------------
-		int CFEHUDManager::iPlay(const CFEString& _sAction,CFEHUDObject* _poObj,FEBool _bAutoShowBeforePlay,FEBool _bAutoHideAfterPlay)
-		{
-			if (_poObj == NULL)
-			{
-				// play on all the objects which have this action
-				int iFoundIdx = -1;
-
-				for (uint i=0;i<m_poHUDActions.size();i++)
-				{
-					if (m_poHUDActions[i]->m_sActionName |= _sAction)
-					{
-						// Stop all the animations being played by this object.
-						StopObjectActions(m_poHUDActions[i]->m_poObject);
-
-						#ifdef ENABLE_MENU_EVENT_LOGGING
-						CFESystem::Print("Playing %s action on %s object\n",_sAction.szString(),m_poHUDActions[i].m_poEA[0]->m_poObject->sGetName().szString());
-						#endif
-
-						Play(i,_bAutoShowBeforePlay,_bAutoHideAfterPlay);
-
-						if (iFoundIdx == -1)
-							iFoundIdx = i;
-					}
-				}
-
-				return(iFoundIdx);
+				return iFoundIdx;
 			}
 			else
 			{
 				// Stop all the animations being played by this object.
-				StopObjectActions(_poObj);
+				StopObjectActions(_oObj);
 
 				// Now start the new anim.
-				int iAction = iGetActionIdx(_sAction,_poObj);
-
+				int iAction = iGetActionIdx(_sAction, _oObj);
 				if (iAction != -1)
-					Play(iAction,_bAutoShowBeforePlay,_bAutoHideAfterPlay);
+				{
+					Play(iAction, _bAutoShowBeforePlay, _bAutoHideAfterPlay);
+				}
 
-				return(iAction);
+				return iAction;
 			}
 		}
 		// -----------------------------------------------------------------------------
-		void CFEHUDManager::Play(uint _uiActionIdx,FEBool _bAutoShowBeforePlay,FEBool _bAutoHideAfterPlay)
+		private void Play(int _iActionIdx, bool _bAutoShowBeforePlay, bool _bAutoHideAfterPlay)
 		{
-			if (_uiActionIdx >= m_poHUDActions.size()) return;
+			if (_iActionIdx >= m_oHUDActions.Count) return;
 
-			TElemAction* poEA = m_poHUDActions[_uiActionIdx];
-			if ((poEA->m_poObject == NULL) || (poEA->m_poAction == NULL)) return;
+			TElemAction oEA = m_oHUDActions[_iActionIdx];
+			if ((oEA.m_oObject == null) || (oEA.m_oAction == null)) return;
 
 			// One object cannot be playing several actions.
-			Stop(_uiActionIdx);
+			Stop(_iActionIdx);
 
 			// lo activamos o no lo activamos ?!?!?!
 			if (_bAutoShowBeforePlay)
-				poEA->m_poObject->ShowObj();
+				oEA.m_oObject.ShowObj();
 
-			poEA->m_bAutoHideAfterPlay = _bAutoHideAfterPlay;
-			poEA->m_rTime			   = _0r;
+			oEA.m_bAutoHideAfterPlay = _bAutoHideAfterPlay;
+			oEA.m_rTime = 0.0f;
 
 			// Objects that doesn't have an associated object action should set their action default values.
-			CFEHUDUpdater::SetActionDefaultValues(poEA->m_poObject);
-			CFEHUDUpdater::RestartActions(poEA->m_poAction);
-			CFEHUDUpdater::Process(poEA->m_poAction,_0r);
+			// TODO: CFEHUDUpdater::SetActionDefaultValues(poEA->m_poObject);
+			// TODO: CFEHUDUpdater::RestartActions(poEA->m_poAction);
+			// TODO: CFEHUDUpdater::Process(poEA->m_poAction, _0r);
 
 			// Add to the list of enabled actions
-			m_poEnabledActions.push_back(poEA);
+			m_oEnabledActions.Add(oEA);
 		}
 		// -----------------------------------------------------------------------------
 		// Helper to perform the same process on both stop functions.
-		void CFEHUDManager::StopEnabledAction(uint _uiEnabledAction)
+		private void StopEnabledAction(int _iEnabledAction)
 		{
 			// Update action to show last second state.
-			TElemAction* poEA = m_poEnabledActions[_uiEnabledAction];
-			FEReal rLastTick = poEA->m_poAction->rGetActionTime();
+			TElemAction oEA = m_oEnabledActions[_iEnabledAction];
+			FEReal rLastTick = oEA.m_oAction.Length;
 
-			if (rLastTick > _0r) // only for non - loopeable anims ...
-				CFEHUDInstMgr::SetActionTime(poEA->m_poAction,poEA->m_poAction->rGetActionTime());
+			if (rLastTick > 0.0f) // only for non - loopeable anims ...
+			{
+				// TODO: CFEHUDInstMgr::SetActionTime(poEA->m_poAction, poEA->m_poAction->rGetActionTime());
+			}
 
-			if (poEA->m_bAutoHideAfterPlay)
-				poEA->m_poObject->HideObj();
+			if (oEA.m_bAutoHideAfterPlay)
+			{
+				oEA.m_oObject.HideObj();
+			}
 
-			m_poEnabledActions.Delete(_uiEnabledAction);
+			m_oEnabledActions.RemoveAt(_iEnabledAction);
 		}
 		// -----------------------------------------------------------------------------
-		void CFEHUDManager::Stop(uint _uiActionIdx)
+		private void Stop(int _iActionIdx)
 		{
-			if (_uiActionIdx>=m_poHUDActions.size()) return;
-			
-			TElemAction* poEA = m_poHUDActions[_uiActionIdx];
-			if ((poEA->m_poObject == NULL) || (poEA->m_poAction == NULL)) return;
+			if (_iActionIdx >= m_oHUDActions.Count) return;
+
+			TElemAction oEA = m_oHUDActions[_iActionIdx];
+			if ((oEA.m_oObject == null) || (oEA.m_oAction == null)) return;
 
 			/// Look inside the enabled actions list.
-			for (uint a=0;a<m_poEnabledActions.size();a++)
+			for (int a = 0; a < m_oEnabledActions.Count; a++)
 			{
 				/// If the current enabled action is the element action we're looking for
-				if (poEA == m_poEnabledActions[a])
+				if (oEA == m_oEnabledActions[a])
 				{
 					StopEnabledAction(a);
 					return;
@@ -519,153 +372,118 @@ namespace FuetEngine
 			}
 		}
 		// -----------------------------------------------------------------------------
-		void CFEHUDManager::Stop(const CFEString& _sAction,CFEHUDObject* _poObj)
+		private void Stop(CFEString _sAction, CFEHUDObject _oObj)
 		{
-			if (_poObj == NULL)
+			if (_oObj == null)
 			{
 				/// Look inside the enabled actions list.
-				for (uint a=0;a<m_poEnabledActions.size();)
+				for (int a = 0; a < m_oEnabledActions.Count;)
 				{
 					/// If the current enabled action is the element action we're looking for
-					if (m_poEnabledActions[a]->m_sActionName |= _sAction)
+					if (m_oEnabledActions[a].m_sActionName.ToLower() == _sAction.ToLower())
 						StopEnabledAction(a);
 					else
 						a++;
 				}
-			}	
+			}
 			else
 			{
-				int iActionIdx = iGetActionIdx(_sAction,_poObj);
+				int iActionIdx = iGetActionIdx(_sAction, _oObj);
 				if (iActionIdx != -1) Stop(iActionIdx);
 			}
 		}
 		// -----------------------------------------------------------------------------
-		FEBool CFEHUDManager::bPlaying(uint _uiActionIdx)
+		public bool bPlaying(int _iActionIdx)
 		{
-			if (_uiActionIdx>=m_poHUDActions.size()) return(false);
+			if (_iActionIdx >= m_oHUDActions.Count) return false;
 
 			/// Look inside the enabled actions list.
-			for (uint a=0;a<m_poEnabledActions.size();a++)
+			for (int a = 0; a < m_oEnabledActions.Count; a++)
 			{
 				/// If the current enabled action is the element action we're looking for
-				if (m_poHUDActions[_uiActionIdx] == m_poEnabledActions[a])
-					return(true);
+				if (m_oHUDActions[_iActionIdx] == m_oEnabledActions[a])
+					return (true);
 			}
 
 			return (false);
 		}
 		// -----------------------------------------------------------------------------
-		FEBool CFEHUDManager::bPlaying(const CFEString& _sAction,CFEHUDObject* _poObj)
+		public bool bPlaying(CFEString _sAction, CFEHUDObject _oObj)
 		{
-			if (_poObj == NULL)
+			if (_oObj == null)
 			{
 				// look for all the objects which have this action
-				for (uint i=0;i<m_poEnabledActions.size();i++)
+				for (int i = 0; i < m_oEnabledActions.Count; i++)
 				{
-					TElemAction* poEA = m_poEnabledActions[i];
-					if (poEA->m_poAction->sGetName() |= _sAction)
-						return(true);
+					TElemAction oEA = m_oEnabledActions[i];
+					if (oEA.m_oAction.GetName().ToLower() == _sAction.ToLower())
+						return true;
 				}
 
-				return(false);
-			}	
+				return false;
+			}
 			else
 			{
-				int iActionIdx = iGetActionIdx(_sAction,_poObj);
-				if (iActionIdx != -1) return(bPlaying(iActionIdx));
+				int iActionIdx = iGetActionIdx(_sAction, _oObj);
+				if (iActionIdx != -1) return (bPlaying(iActionIdx));
 
-				return(false);
+				return false;
 			}
 		}
 		// -----------------------------------------------------------------------------
-		void CFEHUDManager::Update(FEReal _rDeltaT)
+		public void Update(FEReal _rDeltaT)
 		{
-			for (uint i=0;i<m_poEnabledActions.size();)
+			for (int i = 0; i < m_oEnabledActions.Count;)
 			{
-				TElemAction* poEA  = m_poEnabledActions[i];
-				FEReal rActionTime = poEA->m_poAction->rGetActionTime();
+				TElemAction oEA = m_oEnabledActions[i];
+				FEReal rActionTime = oEA.m_oAction.Length;
 
-				if ((poEA->m_rTime < rActionTime) || (rActionTime<_0r))
+				if ((oEA.m_rTime < rActionTime) || (rActionTime < 0.0f))
 				{
 					// To prevent overflows
-					if (rActionTime<_0r)
+					if (rActionTime < 0.0f)
 					{
 						// poEA->m_rTime = CFEMath::rMod(poEA->m_rTime + _rDeltaT,poEA->m_poAction->rGetMaxActionTime());
-						poEA->m_rTime += _rDeltaT;
+						oEA.m_rTime += _rDeltaT;
 					}
 					else
-						poEA->m_rTime = CFEMath::rMin(poEA->m_rTime + _rDeltaT,poEA->m_poAction->rGetMaxActionTime());
+					{
+						oEA.m_rTime = Mathf.Min(oEA.m_rTime + _rDeltaT, oEA.m_oAction.Length);
+					}
 
-					CFEHUDInstMgr::SetActionTime(poEA->m_poAction,poEA->m_rTime);
+					// TODO: CFEHUDInstMgr::SetActionTime(poEA->m_poAction, poEA->m_rTime);
 					i++;
 				}
 				else
 				{
 					// Update action to show last second state.
-					CFEHUDInstMgr::SetActionTime(poEA->m_poAction,rActionTime);
+					// TODO: CFEHUDInstMgr::SetActionTime(poEA->m_poAction, rActionTime);
 
-					if (poEA->m_bAutoHideAfterPlay && (poEA->m_poObject!=NULL))
-						poEA->m_poObject->HideObj();
-			
-					m_poEnabledActions.Delete(i);
+					if (oEA.m_bAutoHideAfterPlay && (oEA.m_oObject != null))
+						oEA.m_oObject.HideObj();
+
+					m_oEnabledActions.RemoveAt(i);
 				}
 			}
 
-			#ifdef DUAL_SCREEN
-			for (uint i=0;i<m_hHUD.size();i++)
-			{
-				FEHandler hHUD = m_hHUD[i];		
-			#else
-			{
-				FEHandler hHUD = m_hHUD;
-			#endif
-				if (hHUD != NULL)
-				{			
-					CFEHUDInstMgr::Update(hHUD,_rDeltaT);
-				}
-			}
-
+			// TODO: CFEHUDInstMgr::Update(hHUD, _rDeltaT);
 			m_rLastDeltaT = _rDeltaT;
 		}
-		// ---------------------------------------------------------------------------
-		void CFEHUDManager::Render(CFERenderer* _poRenderer)
-		{
-			FEHandler hHUD;
-
-			#ifdef DUAL_SCREEN
-				if (m_hHUD.size() == 0) return;
-				if (m_hHUD.size() == 1)
-					hHUD = m_hHUD[0];
-				else
-				{
-					CFEVect2 oVT = _poRenderer->oGetViewTranslation();
-					hHUD = (oVT.y < DESIGN_SCREEN_HEIGHT)?m_hHUD[0]:m_hHUD[1];
-				}
-			#else
-				hHUD = m_hHUD;
-			#endif
-
-			if (hHUD == NULL) return;
-
-			CFEHUDInstMgr::Update(m_rLastDeltaT);
-			CFEHUDInstMgr::Render(hHUD,_poRenderer);
-			m_rLastDeltaT = _0r;
-		}
 		// -----------------------------------------------------------------------------
-		CFEString CFEHUDManager::sGetString(const CFEString& _sVariable,const CFEString& _sDefaultValue)
+		public CFEString sGetString(CFEString _sVariable, CFEString _sDefaultValue)
 		{
-			if ( (m_poDic != NULL) && (m_poDic->bExists(_sVariable)) )
-				return(m_poDic->sGetString(_sVariable,_sDefaultValue));
+			if ((m_oDic != null) && (m_oDic.bExists(_sVariable)))
+				return m_oDic.sGetString(_sVariable, _sDefaultValue);
 			else
-				return(_sDefaultValue);
+				return _sDefaultValue;
 		}
 		// -----------------------------------------------------------------------------
-		void CFEHUDManager::StopObjectActions(CFEHUDObject* _poObj)
+		public void StopObjectActions(CFEHUDObject _oObj)
 		{
 			// Stop all the actions of being played by this object.
-			for (uint i=0;i<m_poHUDActions.size();i++)
+			for (int i = 0; i < m_oHUDActions.Count; i++)
 			{
-				if ((_poObj==NULL) || (m_poHUDActions[i]->m_poObject == _poObj))
+				if ((_oObj == null) || (m_oHUDActions[i].m_oObject == _oObj))
 					Stop(i);
 			}
 		}

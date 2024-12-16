@@ -9,6 +9,9 @@ indent_size = 4
 insert_final_newline=true
 
 # Naming styles
+csharp_indent_case_contents = true
+csharp_indent_case_contents_when_block = false
+
 dotnet_naming_rule.private_members_rule.severity = error
 dotnet_naming_rule.private_members_rule.symbols = private_members
 dotnet_naming_rule.private_members_rule.style = private_member_style

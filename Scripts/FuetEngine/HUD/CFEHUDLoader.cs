@@ -19,6 +19,7 @@ namespace FuetEngine
 		// Accumulated depth
 		private static float m_rDepth = 0.0f;
 
+
 		// Current depth factor
 		private static float m_rDepthFact = 1.0f;
 
