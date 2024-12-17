@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using Godot;
-
 //-----------------------------------------------------------------------------
 using CFEString = System.String;
 using FEReal = System.Single;
@@ -488,7 +487,7 @@ namespace FuetEngine
 			}
 		}
 		// -----------------------------------------------------------------------------
-		public List<CFEHUDObject> GetPageObjs()
+		public List<CFEHUDObject> oGetPageObjs()
 		{
 
 			return m_oObjs;

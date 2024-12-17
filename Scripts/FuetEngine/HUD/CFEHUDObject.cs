@@ -8,57 +8,57 @@ using System;
 //-----------------------------------------------------------------------------
 namespace FuetEngine
 {
-    [Tool]
+	[Tool]
 	public class CFEHUDObject : Node2D
 	{
 		// Do we want to keep these classes or just want to build a hierarchy of Godot Objects?
 		// I we are not supposed to modify these values, we should keep these properties private 
 		// and non exportable.
 		[Export]
-		public CFEVect2 m_oIniPos { set{ GlobalPosition = value; } get{ return GlobalPosition; }}
+		public CFEVect2 m_oIniPos { set { GlobalPosition = value; } get { return GlobalPosition; } }
 		[Export]
-		public CFEVect2	m_oIniScale { set{ GlobalScale = value; } get{ return GlobalScale; }}
+		public CFEVect2 m_oIniScale { set { GlobalScale = value; } get { return GlobalScale; } }
 		[Export]
-		public FEReal m_rIniAngle { set{ GlobalRotation = value; } get{ return GlobalRotation; }}
+		public FEReal m_rIniAngle { set { GlobalRotation = value; } get { return GlobalRotation; } }
 		[Export]
-		public FEReal m_rIniDepth { set{ ZIndex = -(int)(value*255.0f); } get{ return -ZIndex / 255.0f; }}
+		public FEReal m_rIniDepth { set { ZIndex = -(int)(value * 255.0f); } get { return -ZIndex / 255.0f; } }
 		[Export]
-		public CFEColor	m_oIniColor { set{ Modulate = value; } get{ return Modulate; }}
+		public CFEColor m_oIniColor { set { Modulate = value; } get { return Modulate; } }
 		[Export]
-		public int m_iIniAction { set{ Action=value; } get { return Action; }}
+		public int m_iIniAction { set { Action = value; } get { return Action; } }
 		[Export]
-		public bool	m_bIniVis { set{ Visible = value; } get{ return Visible; }}
+		public bool m_bIniVis { set { Visible = value; } get { return Visible; } }
 		[Export]
-		public CFEString	m_sTAG;
-		
+		public CFEString m_sTAG;
+
 		[Export]
-		public int 			Action;
+		public int Action;
 		/// Values set up by actions
-		public CFEVect2		m_oCurPos;
-		public CFEVect2		m_oCurScale;
-		public FEReal		m_rCurAngle;
-		public FEReal		m_rCurDepth;
-		public CFEColor		m_oCurColor;
-		public int			m_iCurAction;
-		public bool			m_bCurVis;
+		public CFEVect2 m_oCurPos;
+		public CFEVect2 m_oCurScale;
+		public FEReal m_rCurAngle;
+		public FEReal m_rCurDepth;
+		public CFEColor m_oCurColor;
+		public int m_iCurAction;
+		public bool m_bCurVis;
 		// --------------------------------------------------------------------
 		// Make sure you provide a parameterless constructor.
 		public CFEHUDObject()
 		{
 			Name = "CFEHUDObject";
 			m_rIniDepth = 0.0f;
-			m_oIniColor	= new CFEColor(1.0f,1.0f,1.0f,1.0f);
-			m_iIniAction= -1;
-			m_bIniVis   = true;
+			m_oIniColor = new CFEColor(1.0f, 1.0f, 1.0f, 1.0f);
+			m_iIniAction = -1;
+			m_bIniVis = true;
 
-			m_sTAG		= "";
+			m_sTAG = "";
 
-			m_oCurPos	= CFEVect2.Zero;
-			m_oCurScale	= CFEVect2.One;
+			m_oCurPos = CFEVect2.Zero;
+			m_oCurScale = CFEVect2.One;
 			m_rCurAngle = 0.0f;
 			m_rCurDepth = 0.0f;
-			m_oCurColor = new CFEColor(1.0f,1.0f,1.0f,1.0f);
-			m_iCurAction= -1;
+			m_oCurColor = new CFEColor(1.0f, 1.0f, 1.0f, 1.0f);
+			m_iCurAction = -1;
 			m_bCurVis = true;
 		}
 		// --------------------------------------------------------------------
@@ -77,7 +77,7 @@ namespace FuetEngine
 		/// Sets the initial scale for the HUD Object.
 		public void SetIniScale(CFEVect2 _oScale)
 		{
-			GlobalScale  = _oScale;
+			GlobalScale = _oScale;
 		}
 		// --------------------------------------------------------------------
 		/// Retrieves the initial scale of the HUD Object.
@@ -197,7 +197,7 @@ namespace FuetEngine
 		/// Retrieves the current angle of the HUD Object.
 		public FEReal rGetCurAngle()
 		{
-			return(m_rCurAngle);
+			return (m_rCurAngle);
 		}
 		// --------------------------------------------------------------------
 		/// Sets the current depth for the HUD Object.
@@ -209,7 +209,7 @@ namespace FuetEngine
 		/// Retrieves the current depth of the HUD Object.
 		public FEReal rGetCurDepth()
 		{
-			return(m_rCurDepth);
+			return (m_rCurDepth);
 		}
 		// --------------------------------------------------------------------
 		/// Sets the color for the HUD Object.
@@ -283,9 +283,9 @@ namespace FuetEngine
 		public int iGetAction()
 		{
 			if (m_iCurAction == -1)
-				return(m_iIniAction);
+				return (m_iIniAction);
 			else
-				return(m_iCurAction);
+				return (m_iCurAction);
 		}
 		// --------------------------------------------------------------------
 		/// Retrieves whether this object is visible or not.
@@ -302,13 +302,20 @@ namespace FuetEngine
 		// --------------------------------------------------------------------
 		/// Retrieves the TAG string of this object
 		public CFEString sGetTAG()
-		{return m_sTAG;
+		{
+			return m_sTAG;
 		}
 		// --------------------------------------------------------------------
 		/// Perform processing over the object
 		public virtual void Accept(CFEHUDVisitor _oVisitor)
 		{
 			_oVisitor.Visit(this);
+		}
+		// --------------------------------------------------------------------
+		/// Retrieves the name of the object		
+		public string sGetName()
+		{
+			return Name;
 		}
 	}
 }
