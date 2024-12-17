@@ -204,7 +204,7 @@ namespace FuetEngine
 			m_oEnabledActions.Clear();
 		}
 		// -----------------------------------------------------------------------------
-		private CFEHUDElement oGetElement(CFEString _sName)
+		public CFEHUDElement oGetElement(CFEString _sName)
 		{
 			if (m_hud != null)
 			{
@@ -215,7 +215,7 @@ namespace FuetEngine
 			return null;
 		}
 		// -----------------------------------------------------------------------------
-		private CFEHUDObject oGetObject(CFEString _sName)
+		public CFEHUDObject oGetObject(CFEString _sName)
 		{
 			if (m_hud != null)
 			{
@@ -225,7 +225,7 @@ namespace FuetEngine
 			return null;
 		}
 		// -----------------------------------------------------------------------------
-		private CFEHUDElementAction oGetAction(CFEString _sName)
+		public CFEHUDElementAction oGetAction(CFEString _sName)
 		{
 			if (m_hud != null)
 			{
@@ -235,7 +235,7 @@ namespace FuetEngine
 			return null;
 		}
 		// -----------------------------------------------------------------------------
-		private int iGetActionIdx(CFEString _sAction, CFEHUDObject _oObj)
+		public int iGetActionIdx(CFEString _sAction, CFEHUDObject _oObj)
 		{
 			if (_oObj == null)
 			{
@@ -263,7 +263,7 @@ namespace FuetEngine
 			return -1;
 		}
 		// -----------------------------------------------------------------------------
-		public int iPlay(CFEString _sAction, CFEHUDObject _oObj, bool _bAutoShowBeforePlay, bool _bAutoHideAfterPlay)
+		public int iPlay(CFEString _sAction, CFEHUDObject _oObj, bool _bAutoShowBeforePlay = true, bool _bAutoHideAfterPlay = false)
 		{
 			if (_oObj == null)
 			{
@@ -307,7 +307,7 @@ namespace FuetEngine
 			}
 		}
 		// -----------------------------------------------------------------------------
-		private void Play(int _iActionIdx, bool _bAutoShowBeforePlay, bool _bAutoHideAfterPlay)
+		public void Play(int _iActionIdx, bool _bAutoShowBeforePlay = true, bool _bAutoHideAfterPlay = true)
 		{
 			if (_iActionIdx >= m_oHUDActions.Count) return;
 
@@ -334,7 +334,7 @@ namespace FuetEngine
 		}
 		// -----------------------------------------------------------------------------
 		// Helper to perform the same process on both stop functions.
-		private void StopEnabledAction(int _iEnabledAction)
+		public void StopEnabledAction(int _iEnabledAction)
 		{
 			// Update action to show last second state.
 			TElemAction oEA = m_oEnabledActions[_iEnabledAction];
@@ -353,7 +353,7 @@ namespace FuetEngine
 			m_oEnabledActions.RemoveAt(_iEnabledAction);
 		}
 		// -----------------------------------------------------------------------------
-		private void Stop(int _iActionIdx)
+		public void Stop(int _iActionIdx)
 		{
 			if (_iActionIdx >= m_oHUDActions.Count) return;
 
@@ -372,7 +372,7 @@ namespace FuetEngine
 			}
 		}
 		// -----------------------------------------------------------------------------
-		private void Stop(CFEString _sAction, CFEHUDObject _oObj)
+		public void Stop(CFEString _sAction, CFEHUDObject _oObj = null)
 		{
 			if (_oObj == null)
 			{
@@ -478,7 +478,7 @@ namespace FuetEngine
 				return _sDefaultValue;
 		}
 		// -----------------------------------------------------------------------------
-		public void StopObjectActions(CFEHUDObject _oObj)
+		public void StopObjectActions(CFEHUDObject _oObj = null)
 		{
 			// Stop all the actions of being played by this object.
 			for (int i = 0; i < m_oHUDActions.Count; i++)
@@ -486,6 +486,12 @@ namespace FuetEngine
 				if ((_oObj == null) || (m_oHUDActions[i].m_oObject == _oObj))
 					Stop(i);
 			}
+		}
+		// -----------------------------------------------------------------------------
+		public List<CFEHUDObject> GetPageObjs()
+		{
+
+			return m_oObjs;
 		}
 	}
 }

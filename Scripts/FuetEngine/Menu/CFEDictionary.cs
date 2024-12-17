@@ -2,11 +2,6 @@ using System;
 using Godot;
 //-----------------------------------------------------------------------------
 using CFEString = System.String;
-using FEReal = System.Single;
-using CFEVect2 = Godot.Vector2;
-using CFEColor = Godot.Color;
-using CFEFont = Godot.Theme;
-using CFEHUDElementAction = Godot.Animation;
 //-----------------------------------------------------------------------------
 namespace FuetEngine
 {
