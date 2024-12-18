@@ -27,9 +27,9 @@
 			"**/*.import": true
 		},
 		"editor.formatOnSave": true,
-		"[csharp]": {
-			"editor.defaultFormatter": "ms-dotnettools.csharp"
-		},
+		// "[csharp]": {
+		// 	"editor.defaultFormatter": "ms-dotnettools.csharp"
+		// },
 		"symbolSearchPath": "C:\\utils\\Godot_v3.5.3\\GodotSharp\\Api\\Debug;C:\\utils\\Godot_v3.5.3\\GodotSharp\\Api\\Release;E:\\Projects\\Godot\\MyProject2\\.godot\\mono\\temp\\obj\\Debug",
 		"godotTools.editorPath.godot3": "C:\\utils\\Godot_v3.6\\Godot_v3.6-stable_mono_win64.exe",
 		"csharp.debug.symbolOptions.searchPaths": [

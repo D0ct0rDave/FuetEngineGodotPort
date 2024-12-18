@@ -12,7 +12,7 @@ namespace FuetEngine
 		{
 		}
 		// --------------------------------------------------------------------
-		protected override void ProcessEvent(EFEMenuButtonEvent _eEventType)
+		public override void ProcessEvent(EFEMenuButtonEvent _eEventType)
 		{
 			base.ProcessEvent(_eEventType);
 

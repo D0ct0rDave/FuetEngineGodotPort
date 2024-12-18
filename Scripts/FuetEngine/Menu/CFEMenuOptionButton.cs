@@ -34,7 +34,7 @@ namespace FuetEngine
 			UncheckRest();
 		}
 		//-----------------------------------------------------------------------------
-		protected override void ProcessEvent(EFEMenuButtonEvent _eEventType)
+		public override void ProcessEvent(EFEMenuButtonEvent _eEventType)
 		{
 			if (_eEventType == CFEMenuButton.EFEMenuButtonEvent.MBE_INPUT_PRESS)
 			{

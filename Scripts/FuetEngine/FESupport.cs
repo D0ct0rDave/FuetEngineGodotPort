@@ -18,13 +18,13 @@ namespace FuetEngine
 	{
 		KFLF_NONE,
 
-		KFLF_CONSTANT,	/// To retrieve constant values until the next frame.
-		KFLF_LERP,		/// To perform linear interpolation between this frame and the next.
-		KFLF_SIN,		/// To perform sinusoidal interpolation between this frame and the next.
-		KFLF_EXP,		/// To perform logarithmic interpolation between this frame and the next.
-		KFLF_RAND,		/// To retrieve random values between the interval limits.
-		KFLF_SINSIN,	/// To perform sinusoidal interpolation between this frame and the next.
-		KFLF_EXPLOG,	/// To perform logarithmic interpolation between this frame and the next.
+		KFLF_CONSTANT,  /// To retrieve constant values until the next frame.
+		KFLF_LERP,      /// To perform linear interpolation between this frame and the next.
+		KFLF_SIN,       /// To perform sinusoidal interpolation between this frame and the next.
+		KFLF_EXP,       /// To perform logarithmic interpolation between this frame and the next.
+		KFLF_RAND,      /// To retrieve random values between the interval limits.
+		KFLF_SINSIN,    /// To perform sinusoidal interpolation between this frame and the next.
+		KFLF_EXPLOG,    /// To perform logarithmic interpolation between this frame and the next.
 		KFLF_ISIN,      /// To perform inverse sinusoidal interpolation between this frame and the next.
 
 		KFLF_NUM,
@@ -37,10 +37,10 @@ namespace FuetEngine
 	{
 		KFBFWM_NONE,
 
-		KFBFWM_LOOP,			/// To starts from the begining.
-		KFBFWM_PINGPONG,		/// To performs a pingpong over the function.
-		KFBFWM_FINALVALUE,		/// To repeat the last value.
-		KFBFWM_INITIALVALUE,	/// To repeat the initial value.
+		KFBFWM_LOOP,            /// To starts from the begining.
+		KFBFWM_PINGPONG,        /// To performs a pingpong over the function.
+		KFBFWM_FINALVALUE,      /// To repeat the last value.
+		KFBFWM_INITIALVALUE,    /// To repeat the initial value.
 
 		KFBFWM_NUM,
 		KFBFWM_MAX
@@ -75,27 +75,27 @@ namespace FuetEngine
 	public enum EFEBlendMode
 	{
 		BM_NONE,
-		
+
 		BM_COPY,
 		BM_ALPHA,
 		BM_ADD,
 		BM_ALPHAADD,
 		BM_MULT,
-		
+
 		BM_FOG,
 		BM_FOGADD,
-		
+
 		BM_MAGICMARKER,
 		BM_LIGHTMARKER,
 		BM_LIGHTSABER,
 		BM_REVEAL,
 		BM_LUMISHADE_REVEAL,
-		
+
 		BM_NUM_MODES,
 		BM_DEFAULT = BM_ALPHA
 	}
 	// ------------------------------------------------------------------------
-    [Tool]
+	[Tool]
 	public static class Support
 	{
 		public const string SPRITE_SCRIPT_FILE = "res://Scripts/FuetEngine/Sprite/CFESprite.cs";
@@ -111,9 +111,9 @@ namespace FuetEngine
 		public const string HUD_SHAPE_SCRIPT_FILE = "res://Scripts/FuetEngine/HUD/CFEHUDShape.cs";
 		public const string HUD_PSYS_SCRIPT_FILE = "res://Scripts/FuetEngine/HUD/CFEHUDPSys.cs";
 		public const string HUD_RECT_SCRIPT_FILE = "res://Scripts/FuetEngine/HUD/CFEHUDRect.cs";
-		
+
 		// --------------------------------------------------------------------
-		private static B _CreateObject<T,B>(Script _script) where T : Godot.Object, new() where B : Godot.Object
+		private static B _CreateObject<T, B>(Script _script) where T : Godot.Object, new() where B : Godot.Object
 		{
 			_script.SetupLocalToScene();
 
@@ -124,7 +124,7 @@ namespace FuetEngine
 
 			if (finalNode == null)
 			{
-				GD.Print("Cannot convert back node to class of type " + typeof(B) + ".\n" + 
+				GD.Print("Cannot convert back node to class of type " + typeof(B) + ".\n" +
 				"If this class is instanced inside the editor don't forget to mark it as [Tool] !!!");
 
 				Debugger.Break(); // Set breakpoint here
@@ -135,24 +135,24 @@ namespace FuetEngine
 		// --------------------------------------------------------------------
 		public static T CreateObject<T>(Script _script) where T : Godot.Object, new()
 		{
-			return _CreateObject<T,T>(_script);
+			return _CreateObject<T, T>(_script);
 		}
 		// --------------------------------------------------------------------
 		public static T CreateObject<T>(string _scriptFilename) where T : Node, new()
 		{
 			// GD.Print("CreateObject("+_scriptFilename+")");			
-			return _CreateObject<T,T>(ResourceLoader.Load(_scriptFilename) as Script);
+			return _CreateObject<T, T>(ResourceLoader.Load(_scriptFilename) as Script);
 		}
 		// --------------------------------------------------------------------
-		public static B CreateObject<B,T>(Script _script) where T : Godot.Object, new() where B : Godot.Object
+		public static B CreateObject<B, T>(Script _script) where T : Godot.Object, new() where B : Godot.Object
 		{
-			return _CreateObject<T,B>(_script);
+			return _CreateObject<T, B>(_script);
 		}
 		// --------------------------------------------------------------------
-		public static B CreateObject<T,B>(string _scriptFilename) where T : Godot.Object, new() where B : Godot.Object
+		public static B CreateObject<T, B>(string _scriptFilename) where T : Godot.Object, new() where B : Godot.Object
 		{
 			// GD.Print("CreateObject("+_scriptFilename+")");
-			return _CreateObject<T,B>(ResourceLoader.Load(_scriptFilename) as Script);
+			return _CreateObject<T, B>(ResourceLoader.Load(_scriptFilename) as Script);
 		}
 		// --------------------------------------------------------------------
 		public static void SetObjectEnabled(Node _node, bool _enabled)
@@ -175,93 +175,93 @@ namespace FuetEngine
 			CFEString sAlign = _sAlign.ToLower();
 
 			if (sAlign == "left")
-				return(EFETextHAlignmentMode.THAM_LEFT);
+				return (EFETextHAlignmentMode.THAM_LEFT);
 
-		else if (sAlign == "center")
-			return(EFETextHAlignmentMode.THAM_CENTER);
+			else if (sAlign == "center")
+				return (EFETextHAlignmentMode.THAM_CENTER);
 
-		else if (sAlign == "right")
-			return(EFETextHAlignmentMode.THAM_RIGHT);
+			else if (sAlign == "right")
+				return (EFETextHAlignmentMode.THAM_RIGHT);
 
-			return(EFETextHAlignmentMode.THAM_LEFT);
+			return (EFETextHAlignmentMode.THAM_LEFT);
 		}
 		// --------------------------------------------------------------------
 		public static EFETextVAlignmentMode eGetVAlignFromString(CFEString _sAlign)
 		{
 			CFEString sAlign = _sAlign.ToLower();
-			
+
 			if (sAlign == "top")
-				return(EFETextVAlignmentMode.TVAM_TOP);
+				return (EFETextVAlignmentMode.TVAM_TOP);
 
-		else if (sAlign == "center")
-			return(EFETextVAlignmentMode.TVAM_CENTER);
+			else if (sAlign == "center")
+				return (EFETextVAlignmentMode.TVAM_CENTER);
 
-		else if (sAlign == "bottom")
-			return(EFETextVAlignmentMode.TVAM_BOTTOM);
+			else if (sAlign == "bottom")
+				return (EFETextVAlignmentMode.TVAM_BOTTOM);
 
-			return(EFETextVAlignmentMode.TVAM_CENTER);
+			return (EFETextVAlignmentMode.TVAM_CENTER);
 		}
 		// --------------------------------------------------------------------
 		public static EFEKFBFuncWrapMode eGetWrapModeFromString(CFEString _sWrapMode)
 		{
 			CFEString sWrapMode = _sWrapMode.ToLower();
-				if (sWrapMode == "Loop")
-					return EFEKFBFuncWrapMode.KFBFWM_LOOP;
+			if (sWrapMode == "Loop")
+				return EFEKFBFuncWrapMode.KFBFWM_LOOP;
 
 			else if (sWrapMode == "PingPong")
-					return EFEKFBFuncWrapMode.KFBFWM_PINGPONG;
+				return EFEKFBFuncWrapMode.KFBFWM_PINGPONG;
 
 			else if (sWrapMode == "InitialValue")
-					return EFEKFBFuncWrapMode.KFBFWM_INITIALVALUE;
+				return EFEKFBFuncWrapMode.KFBFWM_INITIALVALUE;
 
 			else if (sWrapMode == "FinalValue")
-					return EFEKFBFuncWrapMode.KFBFWM_FINALVALUE;
-
 				return EFEKFBFuncWrapMode.KFBFWM_FINALVALUE;
+
+			return EFEKFBFuncWrapMode.KFBFWM_FINALVALUE;
 		}
 		// --------------------------------------------------------------------
 		public static EFEKFLerpFunc eGetLerpFuncFromString(CFEString _sLerpFunc)
 		{
 			CFEString sLerpFunc = _sLerpFunc.ToLower();
 
-				if (sLerpFunc == "const")
-					return EFEKFLerpFunc.KFLF_CONSTANT;
+			if (sLerpFunc == "const")
+				return EFEKFLerpFunc.KFLF_CONSTANT;
 
 			else if (sLerpFunc == "linear")
-					return EFEKFLerpFunc.KFLF_LERP;
+				return EFEKFLerpFunc.KFLF_LERP;
 
 			else if (sLerpFunc == "sin")
-					return EFEKFLerpFunc.KFLF_SIN;
+				return EFEKFLerpFunc.KFLF_SIN;
 
 			else if (sLerpFunc == "invsin")
-					return EFEKFLerpFunc.KFLF_ISIN;
+				return EFEKFLerpFunc.KFLF_ISIN;
 
 			else if (sLerpFunc == "exp")
-					return EFEKFLerpFunc.KFLF_EXP;
+				return EFEKFLerpFunc.KFLF_EXP;
 
 			else if (sLerpFunc == "random")
-					return EFEKFLerpFunc.KFLF_RAND;
+				return EFEKFLerpFunc.KFLF_RAND;
 
 			else if (sLerpFunc == "sinsin")
-					return EFEKFLerpFunc.KFLF_SINSIN;
+				return EFEKFLerpFunc.KFLF_SINSIN;
 
 			else if (sLerpFunc == "explog")
-					return EFEKFLerpFunc.KFLF_EXPLOG;
+				return EFEKFLerpFunc.KFLF_EXPLOG;
 
-				return EFEKFLerpFunc.KFLF_LERP;
+			return EFEKFLerpFunc.KFLF_LERP;
 		}
 		// --------------------------------------------------------------------
 		public static Godot.Label.AlignEnum GetGodotLabelAlignment(EFETextHAlignmentMode _hAlignmentMode)
 		{
 			switch (_hAlignmentMode)
 			{
-				case EFETextHAlignmentMode.THAM_LEFT:	return Label.AlignEnum.Left;
-				case EFETextHAlignmentMode.THAM_CENTER:	return Label.AlignEnum.Center;
-				case EFETextHAlignmentMode.THAM_RIGHT:	return Label.AlignEnum.Right;
-				
+				case EFETextHAlignmentMode.THAM_LEFT: return Label.AlignEnum.Left;
+				case EFETextHAlignmentMode.THAM_CENTER: return Label.AlignEnum.Center;
+				case EFETextHAlignmentMode.THAM_RIGHT: return Label.AlignEnum.Right;
+
 				default:
-				return Label.AlignEnum.Left;
-				// break;
+					return Label.AlignEnum.Left;
+					// break;
 			}
 		}
 		//---------------------------------------------------------------------
@@ -269,13 +269,13 @@ namespace FuetEngine
 		{
 			switch (_vAlignmentMode)
 			{
-				case EFETextVAlignmentMode.TVAM_TOP:	return Label.VAlign.Top;
-				case EFETextVAlignmentMode.TVAM_CENTER:	return Label.VAlign.Center;
-				case EFETextVAlignmentMode.TVAM_BOTTOM:	return Label.VAlign.Bottom;
-				
+				case EFETextVAlignmentMode.TVAM_TOP: return Label.VAlign.Top;
+				case EFETextVAlignmentMode.TVAM_CENTER: return Label.VAlign.Center;
+				case EFETextVAlignmentMode.TVAM_BOTTOM: return Label.VAlign.Bottom;
+
 				default:
-				return Label.VAlign.Top;
-				// break;
+					return Label.VAlign.Top;
+					// break;
 			}
 		}
 		// --------------------------------------------------------------------
@@ -283,13 +283,13 @@ namespace FuetEngine
 		{
 			switch (_lerpFunc)
 			{
-				case EFEKFLerpFunc.KFLF_CONSTANT:	return Animation.InterpolationType.Nearest;
-				case EFEKFLerpFunc.KFLF_LERP:		return Animation.InterpolationType.Linear;
-				case EFEKFLerpFunc.KFLF_EXP:		return Animation.InterpolationType.Cubic;
-				
+				case EFEKFLerpFunc.KFLF_CONSTANT: return Animation.InterpolationType.Nearest;
+				case EFEKFLerpFunc.KFLF_LERP: return Animation.InterpolationType.Linear;
+				case EFEKFLerpFunc.KFLF_EXP: return Animation.InterpolationType.Cubic;
+
 				default:
-				return Animation.InterpolationType.Cubic;
-				// break;
+					return Animation.InterpolationType.Cubic;
+					// break;
 			}
 		}
 
@@ -298,21 +298,21 @@ namespace FuetEngine
 		{
 			switch (_lerpFunc)
 			{
-				case EFEKFLerpFunc.KFLF_CONSTANT:	return -64.0f;
-				case EFEKFLerpFunc.KFLF_LERP:		return 1.0f;
-				case EFEKFLerpFunc.KFLF_EXP:		return 4.0f;
-				case EFEKFLerpFunc.KFLF_EXPLOG:		return -4.0f;
-				case EFEKFLerpFunc.KFLF_SIN:		return 0.5f;
-			
+				case EFEKFLerpFunc.KFLF_CONSTANT: return -64.0f;
+				case EFEKFLerpFunc.KFLF_LERP: return 1.0f;
+				case EFEKFLerpFunc.KFLF_EXP: return 4.0f;
+				case EFEKFLerpFunc.KFLF_EXPLOG: return -4.0f;
+				case EFEKFLerpFunc.KFLF_SIN: return 0.5f;
+
 				default:
-				return 1.0f;
-				// break;
+					return 1.0f;
+					// break;
 			}
 		}
 
 		// --------------------------------------------------------------------
-		
-		
+
+
 		/*
 		public static Godot.Animation.LoopWrap GetGodotInterpolationType(EFEKFBFuncWrapMode _lerpFunc)
 		{
@@ -341,7 +341,7 @@ namespace FuetEngine
 		{
 			const CFEString DEFAULT_WRAP_MODE = "finalvalue";
 			const CFEString DEFAULT_LERP_FUNC = "linear";
-	
+
 			EFEKFBFuncWrapMode eFuncWrapMode = Support.eGetWrapModeFromString(_oConfigFile.sGetString(_sSrcFuncName + ".WrapMode", DEFAULT_WRAP_MODE));
 
 			int iKeyFrames = _oConfigFile.iGetInteger(_sSrcFuncName + ".NumKeyFrames", -1);
@@ -353,33 +353,33 @@ namespace FuetEngine
 				_objAction.TrackSetPath(trackIndex, _sDstActionTrackName);
 
 				string sVar = _sSrcFuncName + ".KeyFrame";
-				for (int i=0; i<iKeyFrames; i++)
+				for (int i = 0; i < iKeyFrames; i++)
 				{
 					CFEString sIVar = sVar + i.ToString();
 
-					float r = _oConfigFile.rGetReal(sIVar + ".r",  _defaultValue.r);
-					float g = _oConfigFile.rGetReal(sIVar + ".g",  _defaultValue.g);
-					float b = _oConfigFile.rGetReal(sIVar + ".b",  _defaultValue.b);
-					float a = _oConfigFile.rGetReal(sIVar + ".a",  _defaultValue.a);
+					float r = _oConfigFile.rGetReal(sIVar + ".r", _defaultValue.r);
+					float g = _oConfigFile.rGetReal(sIVar + ".g", _defaultValue.g);
+					float b = _oConfigFile.rGetReal(sIVar + ".b", _defaultValue.b);
+					float a = _oConfigFile.rGetReal(sIVar + ".a", _defaultValue.a);
 
 					switch (_initialValueOperation)
 					{
 						case InitialValueOperation.Sum:
-						{
-							r += _initialValue.r;
-							g += _initialValue.g;
-							b += _initialValue.b;
-							a += _initialValue.a;
-						}
-						break;
+							{
+								r += _initialValue.r;
+								g += _initialValue.g;
+								b += _initialValue.b;
+								a += _initialValue.a;
+							}
+							break;
 						case InitialValueOperation.Mult:
-						{
-							r *= _initialValue.r;
-							g *= _initialValue.g;
-							b *= _initialValue.b;
-							a *= _initialValue.a;
-						}
-						break;
+							{
+								r *= _initialValue.r;
+								g *= _initialValue.g;
+								b *= _initialValue.b;
+								a *= _initialValue.a;
+							}
+							break;
 					}
 
 					FEReal rTime = _oConfigFile.rGetReal(sIVar + ".Time", 0.0f);
@@ -389,7 +389,7 @@ namespace FuetEngine
 				}
 
 				_objAction.TrackSetInterpolationType(trackIndex, Animation.InterpolationType.Linear);
-				_objAction.TrackSetInterpolationLoopWrap(trackIndex, (eFuncWrapMode  == EFEKFBFuncWrapMode.KFBFWM_NONE)? false : true);
+				_objAction.TrackSetInterpolationLoopWrap(trackIndex, (eFuncWrapMode == EFEKFBFuncWrapMode.KFBFWM_NONE) ? false : true);
 			}
 		}
 		// --------------------------------------------------------------------
@@ -456,7 +456,7 @@ namespace FuetEngine
 		{
 			const CFEString DEFAULT_WRAP_MODE = "finalvalue";
 			const CFEString DEFAULT_LERP_FUNC = "linear";
-	
+
 			EFEKFBFuncWrapMode eFuncWrapMode = Support.eGetWrapModeFromString(_oConfigFile.sGetString(_sSrcFuncName + ".WrapMode", DEFAULT_WRAP_MODE));
 
 			int iKeyFrames = _oConfigFile.iGetInteger(_sSrcFuncName + ".NumKeyFrames", -1);
@@ -468,37 +468,37 @@ namespace FuetEngine
 				_objAction.TrackSetPath(trackIndex, _sDstActionTrackName);
 
 				string sVar = _sSrcFuncName + ".KeyFrame";
-				for (int i=0; i<iKeyFrames; i++)
+				for (int i = 0; i < iKeyFrames; i++)
 				{
 					CFEString sIVar = sVar + i.ToString();
 
-					float x = _oConfigFile.rGetReal(sIVar + ".x",  _defaultValue.x);
-					float y = _oConfigFile.rGetReal(sIVar + ".y",  _defaultValue.y);
-					
+					float x = _oConfigFile.rGetReal(sIVar + ".x", _defaultValue.x);
+					float y = _oConfigFile.rGetReal(sIVar + ".y", _defaultValue.y);
+
 					switch (_initialValueOperation)
 					{
 						case InitialValueOperation.Sum:
-						{
-							x += _initialValue.x;
-							y += _initialValue.y;
-						}
-						break;
+							{
+								x += _initialValue.x;
+								y += _initialValue.y;
+							}
+							break;
 						case InitialValueOperation.Mult:
-						{
-							x *= _initialValue.x;
-							y *= _initialValue.y;
-						}
-						break;
+							{
+								x *= _initialValue.x;
+								y *= _initialValue.y;
+							}
+							break;
 					}
-					
+
 					FEReal rTime = _oConfigFile.rGetReal(sIVar + ".Time", 0.0f);
 					EFEKFLerpFunc lerpMode = Support.eGetLerpFuncFromString(_oConfigFile.sGetString(sIVar + ".LerpFunc", DEFAULT_LERP_FUNC));
 
 					_objAction.TrackInsertKey(trackIndex, rTime, new Vector2(x, y), GetGodotTransition(lerpMode));
 				}
-				
+
 				_objAction.TrackSetInterpolationType(trackIndex, Animation.InterpolationType.Linear);
-				_objAction.TrackSetInterpolationLoopWrap(trackIndex, (eFuncWrapMode  == EFEKFBFuncWrapMode.KFBFWM_NONE)? false : true);
+				_objAction.TrackSetInterpolationLoopWrap(trackIndex, (eFuncWrapMode == EFEKFBFuncWrapMode.KFBFWM_NONE) ? false : true);
 			}
 		}
 		// --------------------------------------------------------------------
@@ -506,7 +506,7 @@ namespace FuetEngine
 		{
 			const CFEString DEFAULT_WRAP_MODE = "finalvalue";
 			const CFEString DEFAULT_LERP_FUNC = "linear";
-	
+
 			EFEKFBFuncWrapMode eFuncWrapMode = Support.eGetWrapModeFromString(_oConfigFile.sGetString(_sSrcFuncName + ".WrapMode", DEFAULT_WRAP_MODE));
 
 			int iKeyFrames = _oConfigFile.iGetInteger(_sSrcFuncName + ".NumKeyFrames", -1);
@@ -518,31 +518,31 @@ namespace FuetEngine
 				_objAction.TrackSetPath(trackIndex, _sDstActionTrackName);
 
 				string sVar = _sSrcFuncName + ".KeyFrame";
-				for (int i=0; i<iKeyFrames; i++)
+				for (int i = 0; i < iKeyFrames; i++)
 				{
 					CFEString sIVar = sVar + i.ToString();
 					object value = _defaultValue;
 
 					if (typeof(T) == typeof(FEReal))
 					{
-						float val =_oConfigFile.rGetReal(sIVar + "." + _variableName, Convert.ToSingle(_defaultValue));
-						
+						float val = _oConfigFile.rGetReal(sIVar + "." + _variableName, Convert.ToSingle(_defaultValue));
+
 						switch (_initialValueOperation)
 						{
 							case InitialValueOperation.Sum:
-							{
-								val += Convert.ToSingle(_initialValue);
-							}
-							break;
+								{
+									val += Convert.ToSingle(_initialValue);
+								}
+								break;
 
 							case InitialValueOperation.Mult:
-							{
-								val *= Convert.ToSingle(_initialValue);
-							}
-							break;
+								{
+									val *= Convert.ToSingle(_initialValue);
+								}
+								break;
 						}
 
-						value = val;					
+						value = val;
 					}
 					else if (typeof(T) == typeof(int))
 					{
@@ -562,9 +562,9 @@ namespace FuetEngine
 
 					_objAction.TrackInsertKey(trackIndex, rTime, value, GetGodotTransition(lerpMode));
 				}
-				
+
 				_objAction.TrackSetInterpolationType(trackIndex, Animation.InterpolationType.Linear);
-				_objAction.TrackSetInterpolationLoopWrap(trackIndex, (eFuncWrapMode  == EFEKFBFuncWrapMode.KFBFWM_NONE)? false : true);
+				_objAction.TrackSetInterpolationLoopWrap(trackIndex, (eFuncWrapMode == EFEKFBFuncWrapMode.KFBFWM_NONE) ? false : true);
 			}
 		}
 
@@ -592,7 +592,7 @@ namespace FuetEngine
 		/// </summary>
 		public CFERect() { }
 
-		public CFERect(float _fIX,float _fIY, float _fFX, float _fFY)
+		public CFERect(float _fIX, float _fIY, float _fFX, float _fFY)
 		{
 			m_oIni.x = _fIX;
 			m_oIni.y = _fFX;
@@ -603,6 +603,20 @@ namespace FuetEngine
 		public CFEVect2 m_oIni = new CFEVect2();
 		public CFEVect2 m_oEnd = new CFEVect2();
 	};
+	// ------------------------------------------------------------------------
+	public static class CFEMath
+	{
+		public static bool bBetween(FEReal _rMin, FEReal _rMax, FEReal _rVal)
+		{
+			return (_rVal >= _rMin) && (_rVal <= _rMax);
+		}
+		// ----------------------------------------------------------------------------
+		public static bool bInside(CFERect _oRect, CFEVect2 _oPoint)
+		{
+			return CFEMath.bBetween(_oRect.m_oIni.x, _oRect.m_oEnd.x, _oPoint.x)
+				&& CFEMath.bBetween(_oRect.m_oIni.y, _oRect.m_oEnd.y, _oPoint.y);
+		}
+	}
 	// --------------------------------------------------------------------
 	public class CFENamedObject
 	{
@@ -611,13 +625,13 @@ namespace FuetEngine
 		{
 			SetName(_sName);
 		}
-		
+
 		/// Sets the name for this object.
 		public void SetName(string _sName)
 		{
 			m_sName = _sName;
 		}
-		
+
 		/// Retrieves the name of this object.
 		public string sGetName()
 		{
