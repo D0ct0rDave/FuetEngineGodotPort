@@ -84,6 +84,8 @@ namespace FuetEngine
 		public CFEMenuPage(CFEString _sName)
 			: base(_sName)
 		{
+			m_state.OnEnterState = OnEnterState;
+			m_state.OnExitState = OnExitState;
 		}
 		// --------------------------------------------------------------------
 		public void Init(CFEString _sFilename, CFEMenuInputMgr _oIM, CFEConfigFile _oMenuCfg)
@@ -328,250 +330,252 @@ namespace FuetEngine
 			{
 				//
 				case MenuPageState.MPS_NONE:
-					{
-						ChangeState(MenuPageState.MPS_ENTERING_PAGE);
-					}
-					break;
+				{
+					ChangeState(MenuPageState.MPS_ENTERING_PAGE);
+				}
+				break;
 
 				case MenuPageState.MPS_ENTERING_PAGE:
+				{
+					if (!m_oHUDManager.bPlaying(CFEMenuDefinitions.ENTER_PAGE_EVENT_NAME, null))
 					{
-						if (!m_oHUDManager.bPlaying(CFEMenuDefinitions.ENTER_PAGE_EVENT_NAME, null))
-						{
-							ChangeState(MenuPageState.MPS_IDLE);
-						}
+						ChangeState(MenuPageState.MPS_IDLE);
 					}
-					break;
+				}
+				break;
 
 				case MenuPageState.MPS_IDLE:
+				{
+					if (m_oIM != null)
 					{
-						if (m_oIM != null)
+						// ---------------------------------------------------------
+						// First check input buttons
+						// ---------------------------------------------------------
+						// Select focusable button?
+						if (m_oIM.bDown(CFEMenuInputMgr.EFEInputButton.IB_UP) && (m_iSelectedButton >= 0))
 						{
-							// ---------------------------------------------------------
-							// First check input buttons
-							// ---------------------------------------------------------
-							// Select focusable button?
-							if (m_oIM.bDown(CFEMenuInputMgr.EFEInputButton.IB_UP) && (m_iSelectedButton >= 0))
+							// look for the prev focusable button focus
+							int iNextSelectableButton = iGetNextNeighbour(m_oButtons[m_iSelectedButton], CFEMenuButton.EFEButtonNeigh_Top);
+							if (iNextSelectableButton != -1)
+								SelectButton(iNextSelectableButton);
+
+							m_rTimeToIdle = m_rIdleTime;
+						}
+
+						else if (m_oIM.bDown(CFEMenuInputMgr.EFEInputButton.IB_LEFT) && (m_iSelectedButton >= 0))
+						{
+							int iNextSelectableButton = iGetNextNeighbour(m_oButtons[m_iSelectedButton], CFEMenuButton.EFEButtonNeigh_Left);
+							if (iNextSelectableButton != -1)
+								SelectButton(iNextSelectableButton);
+
+							m_rTimeToIdle = m_rIdleTime;
+						}
+
+						else if (m_oIM.bDown(CFEMenuInputMgr.EFEInputButton.IB_RIGHT) && (m_iSelectedButton >= 0))
+						{
+							int iNextSelectableButton = iGetNextNeighbour(m_oButtons[m_iSelectedButton], CFEMenuButton.EFEButtonNeigh_Right);
+							if (iNextSelectableButton != -1)
+								SelectButton(iNextSelectableButton);
+
+							m_rTimeToIdle = m_rIdleTime;
+						}
+
+						else if (m_oIM.bDown(CFEMenuInputMgr.EFEInputButton.IB_DOWN) && (m_iSelectedButton >= 0))
+						{
+							int iNextSelectableButton = iGetNextNeighbour(m_oButtons[m_iSelectedButton], CFEMenuButton.EFEButtonNeigh_Bottom);
+							if (iNextSelectableButton != -1)
+								SelectButton(iNextSelectableButton);
+
+							m_rTimeToIdle = m_rIdleTime;
+						}
+
+						// Button pressed ?
+						else if (m_oIM.bDown(CFEMenuInputMgr.EFEInputButton.IB_B))
+						{
+							CFEMenuButton oButton = oGetButton("BT_BACK");
+							if ((oButton != null) && oButton.bIsEnabled() && oButton.bIsVisible())
 							{
-								// look for the prev focusable button focus
-								int iNextSelectableButton = iGetNextNeighbour(m_oButtons[m_iSelectedButton], CFEMenuButton.EFEButtonNeigh_Top);
-								if (iNextSelectableButton != -1)
-									SelectButton(iNextSelectableButton);
-
-								m_rTimeToIdle = m_rIdleTime;
-							}
-
-							else if (m_oIM.bDown(CFEMenuInputMgr.EFEInputButton.IB_LEFT) && (m_iSelectedButton >= 0))
-							{
-								int iNextSelectableButton = iGetNextNeighbour(m_oButtons[m_iSelectedButton], CFEMenuButton.EFEButtonNeigh_Left);
-								if (iNextSelectableButton != -1)
-									SelectButton(iNextSelectableButton);
-
-								m_rTimeToIdle = m_rIdleTime;
-							}
-
-							else if (m_oIM.bDown(CFEMenuInputMgr.EFEInputButton.IB_RIGHT) && (m_iSelectedButton >= 0))
-							{
-								int iNextSelectableButton = iGetNextNeighbour(m_oButtons[m_iSelectedButton], CFEMenuButton.EFEButtonNeigh_Right);
-								if (iNextSelectableButton != -1)
-									SelectButton(iNextSelectableButton);
-								m_rTimeToIdle = m_rIdleTime;
-							}
-
-							else if (m_oIM.bDown(CFEMenuInputMgr.EFEInputButton.IB_DOWN) && (m_iSelectedButton >= 0))
-							{
-								int iNextSelectableButton = iGetNextNeighbour(m_oButtons[m_iSelectedButton], CFEMenuButton.EFEButtonNeigh_Bottom);
-								if (iNextSelectableButton != -1)
-									SelectButton(iNextSelectableButton);
-
-								m_rTimeToIdle = m_rIdleTime;
-							}
-
-							// Button pressed ?
-							else if (m_oIM.bDown(CFEMenuInputMgr.EFEInputButton.IB_B))
-							{
-								CFEMenuButton oButton = oGetButton("BT_BACK");
-								if ((oButton != null) && oButton.bIsEnabled() && oButton.bIsVisible())
+								if (m_iSelectedButton >= 0)
 								{
-									if (m_iSelectedButton >= 0)
-									{
-										m_oButtons[m_iSelectedButton].ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_UNSELECT);
-										OnButtonExit(m_oButtons[m_iSelectedButton]);
-									}
-
-
-									if (oButton.GetState() != CFEMenuButton.EFEMenuButtonState.MBS_PRESSED)
-									{
-										oButton.ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_INPUT_PRESS);
-										OnButtonPress(oButton);
-									}
-
-									// new selected button
-									for (int i = 0; i < m_oButtons.Count; i++)
-										if (m_oButtons[i] == oButton)
-										{
-											m_iSelectedButton = i;
-											break;
-										}
+									m_oButtons[m_iSelectedButton].ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_UNSELECT);
+									OnButtonExit(m_oButtons[m_iSelectedButton]);
 								}
 
-								m_rTimeToIdle = m_rIdleTime;
-							}
-
-							// Button pressed ?
-							else if (m_oIM.bDown(CFEMenuInputMgr.EFEInputButton.IB_A) && (m_iSelectedButton >= 0))
-							{
-								if (m_oButtons[m_iSelectedButton].GetState() != CFEMenuButton.EFEMenuButtonState.MBS_PRESSED)
+								if (oButton.GetState() != CFEMenuButton.EFEMenuButtonState.MBS_PRESSED)
 								{
-									m_oButtons[m_iSelectedButton].ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_INPUT_PRESS);
-									OnButtonPress(m_oButtons[m_iSelectedButton]);
+									oButton.ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_INPUT_PRESS);
+									OnButtonPress(oButton);
 								}
 
-								m_rTimeToIdle = m_rIdleTime;
-							}
-
-							// Button released ?
-							else if (m_oIM.bUp(CFEMenuInputMgr.EFEInputButton.IB_A) && (m_iSelectedButton >= 0))
-							{
-								m_oButtons[m_iSelectedButton].ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_INPUT_RELEASE);
-								OnButtonRelease(m_oButtons[m_iSelectedButton]);
-							}
-							else
-							{
-								// ---------------------------------------------------------
-								// Then check cursor
-								// ---------------------------------------------------------
-								bool bNoFocusedButton = true;
+								// new selected button
 								for (int i = 0; i < m_oButtons.Count; i++)
 								{
-									if ((!m_oButtons[i].bIsEnabled()) || (!m_oButtons[i].bIsVisible())) continue;
-
-									CFEMenuInputMgr.EFECursorResult eCR = m_oIM.eTestCursor(m_oButtons[i].oGetRect());
-
-									if (eCR == CFEMenuInputMgr.EFECursorResult.CR_CURSOR_OVER_PRESS)
+									if (m_oButtons[i] == oButton)
 									{
-										bNoFocusedButton = false;
-										m_iFocusedButton = i;
-
-										// Process focus events
-										if (i != m_iSelectedButton)
-										{
-											if (m_iSelectedButton >= 0)
-											{
-												m_oButtons[m_iSelectedButton].ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_UNSELECT);
-												OnButtonExit(m_oButtons[m_iSelectedButton]);
-											}
-
-											m_iSelectedButton = i;
-
-											// IS THIS SAFE TO DO ???? (Performs also the onfocus enter state / event
-											// SelectButton(i);
-										}
-
-										if (m_iSelectedButton >= 0) // is this (m_iSelectedButton<0) possible ?
-										{
-											if (m_oButtons[m_iSelectedButton].GetState() != CFEMenuButton.EFEMenuButtonState.MBS_PRESSED)
-											{
-												m_oButtons[m_iSelectedButton].ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_INPUT_PRESS);
-												OnButtonPress(m_oButtons[m_iSelectedButton]);
-											}
-										}
-
-										m_rTimeToIdle = m_rIdleTime;
-
-										// No more checks :)
+										m_iSelectedButton = i;
 										break;
 									}
-									else if (eCR == CFEMenuInputMgr.EFECursorResult.CR_CURSOR_OVER)
-									{
-										bNoFocusedButton = false;
-
-										// Process focus events
-										if (i != m_iFocusedButton)
-										{
-											if (m_iFocusedButton >= 0)
-											{
-												m_oButtons[m_iFocusedButton].ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_UNFOCUS);
-											}
-
-											m_iFocusedButton = i;
-
-											m_oButtons[m_iFocusedButton].ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_FOCUS);
-										}
-
-										m_rTimeToIdle = m_rIdleTime;
-
-										// No more checks :)
-										break;
-									}
-									/*
-									else
-									{
-										if ((m_iSelectedButton>=0) && (m_oButtons[i].GetState() == MBS_PRESSED))
-											m_oButtons[i].ProcessEvent(MBE_RELEASE);
-									}
-									*/
-								} // end for
-
-								if ((bNoFocusedButton) && (m_iFocusedButton != -1))
-								{
-									m_oButtons[m_iFocusedButton].ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_UNFOCUS);
-									m_iFocusedButton = -1;
 								}
-							} // end if
-						} // end if m_oIM != null
+							}
+
+							m_rTimeToIdle = m_rIdleTime;
+						}
+
+						// Button pressed ?
+						else if (m_oIM.bDown(CFEMenuInputMgr.EFEInputButton.IB_A) && (m_iSelectedButton >= 0))
+						{
+							if (m_oButtons[m_iSelectedButton].GetState() != CFEMenuButton.EFEMenuButtonState.MBS_PRESSED)
+							{
+								m_oButtons[m_iSelectedButton].ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_INPUT_PRESS);
+								OnButtonPress(m_oButtons[m_iSelectedButton]);
+							}
+
+							m_rTimeToIdle = m_rIdleTime;
+						}
+
+						// Button released ?
+						else if (m_oIM.bUp(CFEMenuInputMgr.EFEInputButton.IB_A) && (m_iSelectedButton >= 0))
+						{
+							m_oButtons[m_iSelectedButton].ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_INPUT_RELEASE);
+							OnButtonRelease(m_oButtons[m_iSelectedButton]);
+						}
 						else
 						{
-							/*
-							if (m_iFocusedButton!=-1)
+							// ---------------------------------------------------------
+							// Then check cursor
+							// ---------------------------------------------------------
+							bool bNoFocusedButton = true;
+							for (int i = 0; i < m_oButtons.Count; i++)
 							{
-								m_oButtons[m_iFocusedButton].ProcessEvent(MBE_UNFOCUS);
+								if ((!m_oButtons[i].bIsEnabled()) || (!m_oButtons[i].bIsVisible())) continue;
+
+								CFEMenuInputMgr.EFECursorResult eCR = m_oIM.eTestCursor(m_oButtons[i].oGetRect());
+
+								if (eCR == CFEMenuInputMgr.EFECursorResult.CR_CURSOR_OVER_PRESS)
+								{
+									bNoFocusedButton = false;
+									m_iFocusedButton = i;
+
+									// Process focus events
+									if (i != m_iSelectedButton)
+									{
+										if (m_iSelectedButton >= 0)
+										{
+											m_oButtons[m_iSelectedButton].ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_UNSELECT);
+											OnButtonExit(m_oButtons[m_iSelectedButton]);
+										}
+
+										m_iSelectedButton = i;
+
+										// IS THIS SAFE TO DO ???? (Performs also the onfocus enter state / event
+										// SelectButton(i);
+									}
+
+									if (m_iSelectedButton >= 0) // is this (m_iSelectedButton<0) possible ?
+									{
+										if (m_oButtons[m_iSelectedButton].GetState() != CFEMenuButton.EFEMenuButtonState.MBS_PRESSED)
+										{
+											m_oButtons[m_iSelectedButton].ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_INPUT_PRESS);
+											OnButtonPress(m_oButtons[m_iSelectedButton]);
+										}
+									}
+
+									m_rTimeToIdle = m_rIdleTime;
+
+									// No more checks :)
+									break;
+								}
+								else if (eCR == CFEMenuInputMgr.EFECursorResult.CR_CURSOR_OVER)
+								{
+									bNoFocusedButton = false;
+
+									// Process focus events
+									if (i != m_iFocusedButton)
+									{
+										if (m_iFocusedButton >= 0)
+										{
+											m_oButtons[m_iFocusedButton].ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_UNFOCUS);
+										}
+
+										m_iFocusedButton = i;
+
+										m_oButtons[m_iFocusedButton].ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_FOCUS);
+									}
+
+									m_rTimeToIdle = m_rIdleTime;
+
+									// No more checks :)
+									break;
+								}
+								/*
+								else
+								{
+									if ((m_iSelectedButton>=0) && (m_oButtons[i].GetState() == MBS_PRESSED))
+										m_oButtons[i].ProcessEvent(MBE_RELEASE);
+								}
+								*/
+							} // end for
+
+							if ((bNoFocusedButton) && (m_iFocusedButton != -1))
+							{
+								m_oButtons[m_iFocusedButton].ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_UNFOCUS);
 								m_iFocusedButton = -1;
 							}
-							*/
-						}
-
-						if ((m_rIdleTime != -1) && (m_rTimeToIdle > 0.0f))
+						} // end if
+					} // end if m_oIM != null
+					else
+					{
+						/*
+						if (m_iFocusedButton!=-1)
 						{
-							m_rTimeToIdle -= _rDeltaT;
+							m_oButtons[m_iFocusedButton].ProcessEvent(MBE_UNFOCUS);
+							m_iFocusedButton = -1;
+						}
+						*/
+					}
 
-							if (m_rTimeToIdle <= 0.0f)
-							{
-								m_rTimeToIdle = 0.0f;
-								OnIdlePage();
-							}
+					if ((m_rIdleTime != -1) && (m_rTimeToIdle > 0.0f))
+					{
+						m_rTimeToIdle -= _rDeltaT;
+
+						if (m_rTimeToIdle <= 0.0f)
+						{
+							m_rTimeToIdle = 0.0f;
+							OnIdlePage();
 						}
 					}
-					break;
+				}
+				break;
 
 				case MenuPageState.MPS_EXIT_PAGE:
+				{
+					// wait until all buttons have finished their animations...
+					bool bExit = true;
+					for (int i = 0; i < m_oButtons.Count; i++)
 					{
-						// wait until all buttons have finished their animations...
-						bool bExit = true;
-						for (int i = 0; i < m_oButtons.Count; i++)
+						if (m_oButtons[i].GetState() != CFEMenuButton.EFEMenuButtonState.MBS_EXIT_DONE)
 						{
-							if (m_oButtons[i].GetState() != CFEMenuButton.EFEMenuButtonState.MBS_EXIT_DONE)
-							{
-								bExit = false;
-								break;
-							}
-						}
-
-						if (bExit)
-						{
-							ChangeState(MenuPageState.MPS_EXITING_PAGE);
+							bExit = false;
+							break;
 						}
 					}
-					break;
+
+					if (bExit)
+					{
+						ChangeState(MenuPageState.MPS_EXITING_PAGE);
+					}
+				}
+				break;
 
 				case MenuPageState.MPS_EXITING_PAGE:
+				{
+					if (!m_oHUDManager.bPlaying(CFEMenuDefinitions.EXIT_PAGE_EVENT_NAME, null))
 					{
-						if (!m_oHUDManager.bPlaying(CFEMenuDefinitions.EXIT_PAGE_EVENT_NAME, null))
-						{
-							OnExitPageDone();
-							ChangeState(MenuPageState.MPS_FINISH);
-						}
+						OnExitPageDone();
+						ChangeState(MenuPageState.MPS_FINISH);
 					}
-					break;
+				}
+				break;
 			}
 
 			if (m_oHUDManager != null)
@@ -635,71 +639,73 @@ namespace FuetEngine
 			}
 		}
 		// --------------------------------------------------------------------
-		public virtual void OnEnterState(MenuPageState _eState)
+		/// Specific code to perform when the object enters to a given MenuPageState.
+		private void OnEnterState(MenuPageState _eState)
 		{
 			switch (_eState)
 			{
 				case MenuPageState.MPS_ENTERING_PAGE:
-					{
-						m_oHUDManager.iPlay(CFEMenuDefinitions.ENTER_PAGE_EVENT_NAME, null, false);
+				{
+					m_oHUDManager.iPlay(CFEMenuDefinitions.ENTER_PAGE_EVENT_NAME, null, false);
 
-						// do enter page for the page itself.
-						OnEnterPage();
+					// do enter page for the page itself.
+					OnEnterPage();
 
-						// Do enter page for every registered button.
-						for (int i = 0; i < m_oButtons.Count; i++)
-							m_oButtons[i].ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_ENTER_PAGE);
-					}
-					break;
+					// Do enter page for every registered button.
+					for (int i = 0; i < m_oButtons.Count; i++)
+						m_oButtons[i].ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_ENTER_PAGE);
+				}
+				break;
 
 				case MenuPageState.MPS_IDLE:
-					{
-						m_oHUDManager.iPlay(CFEMenuDefinitions.IDLE_PAGE_EVENT_NAME, null, false);
+				{
+					m_oHUDManager.iPlay(CFEMenuDefinitions.IDLE_PAGE_EVENT_NAME, null, false);
 
-						// Select the first selectable button.
-						if (sGetOnEnterSelectButton() != "")
+					// Select the first selectable button.
+					if (sGetOnEnterSelectButton() != "")
+					{
+						for (int i = 0; i < m_oButtons.Count; i++)
 						{
-							for (int i = 0; i < m_oButtons.Count; i++)
+							if ((m_oButtons[i].bIsEnabled() && m_oButtons[i].bIsVisible())
+							 && (sGetOnEnterSelectButton() == m_oButtons[i].sGetName()))
 							{
-								if ((m_oButtons[i].bIsEnabled() && m_oButtons[i].bIsVisible())
-								 && (sGetOnEnterSelectButton() == m_oButtons[i].sGetName()))
-								{
-									SelectButton(i);
-									break;
-								}
+								SelectButton(i);
+								break;
 							}
 						}
-
-						OnEnterPageDone();
 					}
-					break;
+
+					OnEnterPageDone();
+				}
+				break;
 
 				case MenuPageState.MPS_EXIT_PAGE:
-					{
-						// Do exit page for every registered button.
-						for (int i = 0; i < m_oButtons.Count; i++)
-							m_oButtons[i].ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_EXIT_PAGE);
-					}
-					break;
+				{
+					// Do exit page for every registered button.
+					for (int i = 0; i < m_oButtons.Count; i++)
+						m_oButtons[i].ProcessEvent(CFEMenuButton.EFEMenuButtonEvent.MBE_EXIT_PAGE);
+				}
+				break;
 
 				case MenuPageState.MPS_EXITING_PAGE:
-					{
-						m_oHUDManager.iPlay(CFEMenuDefinitions.EXIT_PAGE_EVENT_NAME, null, false);
+				{
+					m_oHUDManager.iPlay(CFEMenuDefinitions.EXIT_PAGE_EVENT_NAME, null, false);
 
-						// do exit page for the page itself.
-						OnExitPage();
-					}
-					break;
+					// do exit page for the page itself.
+					OnExitPage();
+				}
+				break;
 
 				case MenuPageState.MPS_FINISH:
-					{
+				{
 
-					}
-					break;
+				}
+				break;
 			}
 		}
 		// --------------------------------------------------------------------
-		public void OnExitState(MenuPageState _eState, MenuPageState _eNewState)
+		/// Specific code to perform when the object exits from a given MenuPageState.
+		private void OnExitState(MenuPageState _eState, MenuPageState _eNewState)
 		{
 		}
 		// --------------------------------------------------------------------
@@ -871,12 +877,6 @@ namespace FuetEngine
 			m_state.ChangeState(_stateToChange);
 		}
 		// --------------------------------------------------------------------
-		/// Specific code to perform when the object enters to a given MenuPageState.
-		// public virtual void OnEnterState(int _uiState);
-
-		/// Specific code to perform when the object exits from a given MenuPageState.
-		// public virtual void OnExitState(int _uiState, int _uiNewState);
-
 		/// Called when the page starts entering.
 		public virtual void OnEnterPage() { }
 

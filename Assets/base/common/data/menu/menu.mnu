@@ -1,12 +1,13 @@
 Menu:
 {
-	StartPage = "page_start";
+	StartPage = "page_profile";
+	// StartPage = "page_start";
 	DefaultPage = "page_start";
 	BaseDir = "data/menu";
 	page_start:
 	{
 		// 
-NextPage = "page_profile";
+		NextPage = "page_profile";
 		BT_Accept:
 		{
 			OnPress = "GotoEnd";
@@ -15,7 +16,7 @@ NextPage = "page_profile";
 	page_delete_profile:
 	{
 		// 
-PrevPage="page_profile";
+		PrevPage="page_profile";
 		BT_Back:
 		{
 			OnPress = "page_profile";

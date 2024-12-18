@@ -21,6 +21,7 @@ window/size/height=1080
 window/size/resizable=false
 window/size/test_width=960
 window/size/test_height=540
+window/stretch/shrink=0.5
 
 [editor_plugins]
 

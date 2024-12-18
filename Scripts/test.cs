@@ -12,12 +12,17 @@ public class test : Node2D
 	public override void _Ready()
 	{
 		/*
+		CFEConfigFileImportPlugin plugin = new CFEConfigFileImportPlugin();
+		Node node = plugin.LoadConfigAsNode("res://Assets/base/common/data/menu/page_profile.hud");
+		AddChild(node);
+		*/
+
+		/*
         if (!Engine.EditorHint)
         {
             AddChild(new FuetEnginePluginRegistererPlugin());
         }
         */
-
 
 		/*
 		CFEConfigFileImportPlugin plugin = new  CFEConfigFileImportPlugin();
@@ -32,6 +37,7 @@ public class test : Node2D
         
         AddChild(spriteInstance);
         */
+
 		/*
         CFEConfigFileImportPlugin plugin = new  CFEConfigFileImportPlugin();
         Node node = plugin.LoadConfigAsNode("res://Assets/base/common/data/menu/page_delete_profile.hud");

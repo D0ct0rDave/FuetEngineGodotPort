@@ -65,7 +65,7 @@ namespace FuetEngine
 				elemAction.m_oObject = _oElem.oGetLayer(0);
 				elemAction.m_bAutoHideAfterPlay = false;
 				elemAction.m_rTime = 0.0f;
-				elemAction.m_sActionName = oAction.GetName().ToLower();
+				elemAction.m_sActionName = oAction.GetName();
 				elemAction.m_player = _oElem.GetAnimationPlayer();
 
 				// add the action to the list.
@@ -246,12 +246,11 @@ namespace FuetEngine
 		// -----------------------------------------------------------------------------
 		public int iGetActionIdx(CFEString _sAction, CFEHUDObject _oObj)
 		{
-			CFEString sAction = _sAction.ToLower();
 			if (_oObj == null)
 			{
 				for (int i = 0; i < m_oHUDActions.Count; i++)
 				{
-					if (m_oHUDActions[i].m_sActionName == sAction)
+					if (m_oHUDActions[i].m_sActionName == _sAction)
 					{
 						return i;
 					}
@@ -261,7 +260,7 @@ namespace FuetEngine
 			{
 				for (int i = 0; i < m_oHUDActions.Count; i++)
 				{
-					if ((m_oHUDActions[i].m_sActionName == sAction) && (m_oHUDActions[i].m_oObject == _oObj))
+					if ((m_oHUDActions[i].m_sActionName == _sAction) && (m_oHUDActions[i].m_oObject == _oObj))
 					{
 						return i;
 					}
@@ -275,19 +274,17 @@ namespace FuetEngine
 		{
 			if (_oObj == null)
 			{
-				CFEString sAction = _sAction.ToLower();
-
 				// play on all the objects which have this action
 				int iFoundIdx = -1;
 				for (int i = 0; i < m_oHUDActions.Count; i++)
 				{
-					if (m_oHUDActions[i].m_sActionName == sAction)
+					if (m_oHUDActions[i].m_sActionName == _sAction)
 					{
 						// Stop all the animations being played by this object.
 						StopObjectActions(m_oHUDActions[i].m_oObject);
 
-#if ENABLE_MENU_EVENT_LOGGING
-						GD.Print($"Playing {_sAction} action on {m_poHUDActions[i].m_poEA[0]->m_poObject->sGetName()} object.");
+#if true // ENABLE_MENU_EVENT_LOGGING
+						GD.Print($"Playing {_sAction} action on {m_oHUDActions[i].m_oObject.sGetName()} object.");
 #endif
 						Play(i, _bAutoShowBeforePlay, _bAutoHideAfterPlay);
 
@@ -430,7 +427,7 @@ namespace FuetEngine
 				for (int i = 0; i < m_oEnabledActions.Count; i++)
 				{
 					TElemAction oEA = m_oEnabledActions[i];
-					if (oEA.m_oAction.GetName().ToLower() == _sAction.ToLower())
+					if (oEA.m_sActionName == _sAction)
 						return true;
 				}
 
@@ -439,7 +436,7 @@ namespace FuetEngine
 			else
 			{
 				int iActionIdx = iGetActionIdx(_sAction, _oObj);
-				if (iActionIdx != -1) return (bPlaying(iActionIdx));
+				if (iActionIdx != -1) return bPlaying(iActionIdx);
 
 				return false;
 			}
