@@ -79,7 +79,7 @@ namespace FuetEngine
 
 			MPS_NUMSTATES
 		};
-		private StatedObject<MenuPageState> m_state;
+		private StatedObject<MenuPageState> m_state = new StatedObject<MenuPageState>();
 		// --------------------------------------------------------------------
 		public CFEMenuPage(CFEString _sName)
 			: base(_sName)
@@ -316,7 +316,7 @@ namespace FuetEngine
 			return (-1);
 		}
 		// --------------------------------------------------------------------
-		private void Update(FEReal _rDeltaT)
+		public void Update(FEReal _rDeltaT)
 		{
 			if (GetState() != MenuPageState.MPS_NONE)
 			{
@@ -856,6 +856,11 @@ namespace FuetEngine
 		{
 			return m_oMenuCfg;
 		}
+		//-----------------------------------------------------------------------------
+		public CFEHUD oGetHUD()
+		{
+			return m_oHUDManager.oGetHUD();
+		}
 		// --------------------------------------------------------------------
 		public MenuPageState GetState()
 		{
@@ -901,3 +906,4 @@ namespace FuetEngine
 	}
 }
 //-----------------------------------------------------------------------------
+

@@ -4,7 +4,7 @@ using CFEString = System.String;
 using FEReal = System.Single;
 using CFEVect2 = Godot.Vector2;
 using CFEColor = Godot.Color;
-using CFEHUDElementAction = Godot.Animation; 
+using CFEHUDElementAction = Godot.Animation;
 //-----------------------------------------------------------------------------
 namespace FuetEngine
 {
@@ -15,7 +15,7 @@ namespace FuetEngine
 		public CFEHUDElement()
 		{
 			Name = "CFEHUDElement";
-		}		
+		}
 
 		/// Inserts an action at the given position
 		public void InsertAction(uint _uiIdx, CFEHUDElementAction _oAction)
@@ -30,7 +30,7 @@ namespace FuetEngine
 		public int iAddAction(CFEHUDElementAction _oAction)
 		{
 			CheckActionList();
-			
+
 			m_oActions.AddAnimation(_oAction.ResourceName, _oAction);
 			return m_oActions.GetAnimationList().Length - 1;
 		}
@@ -86,7 +86,7 @@ namespace FuetEngine
 		}
 
 		/// Swap the contents of layer A and B.
-		public void SwapLayers(uint _uiLayerA,uint _uiLayerB)
+		public void SwapLayers(uint _uiLayerA, uint _uiLayerB)
 		{
 			GD.Print("TODO: Implement CFEHUDElement.SwapLayers properly");
 			// std::swap(m_oLayers[_uiLayerA],m_oLayers[_uiLayerB]);
@@ -124,6 +124,10 @@ namespace FuetEngine
 				m_oLayers.Name = "Layers";
 				AddChild(m_oLayers);
 			}
+		}
+		public AnimationPlayer GetAnimationPlayer()
+		{
+			return m_oActions;
 		}
 
 		protected Node2D m_oLayers = null;

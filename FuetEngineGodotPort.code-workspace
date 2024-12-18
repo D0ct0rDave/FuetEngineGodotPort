@@ -43,7 +43,8 @@
 		"razor.server.trace": "None",
 		"dotnet.server.trace": "None",
 		"debug.logLevel": "Verbose",
-		"godot.csharp.executablePath": "C:\\Utils\\Godot_v3.6-stable_mono_win64\\Godot_v3.6-stable_mono_win64.exe",
+		// "godot.csharp.executablePath": "C:\\Utils\\Godot_v3.6-stable_mono_win64\\Godot_v3.6-stable_mono_win64.exe",
+		"godot.csharp.executablePath": "C:\\Utils\\Godot_v3.6\\Godot_v3.6-stable_mono_win64.exe",
 	},
 	"launch": {
 		"version": "0.2.0",

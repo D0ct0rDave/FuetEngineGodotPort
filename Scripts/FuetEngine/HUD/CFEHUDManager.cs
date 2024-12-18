@@ -21,12 +21,13 @@ namespace FuetEngine
 			public FEReal m_rTime;
 			public CFEHUDElementAction m_oAction;
 			public CFEHUDObject m_oObject;
+			public AnimationPlayer m_player;
 		};
 
 		private List<TElemAction> m_oHUDActions = new List<TElemAction>();
 		private List<TElemAction> m_oEnabledActions = new List<TElemAction>();
 		CFEDictionary m_oDic = null;
-		CFEHUD m_hud = null;
+		CFEHUD m_oHud = null;
 
 		private List<CFEHUDObject> m_oObjs = new List<CFEHUDObject>();
 		FEReal m_rLastDeltaT = 0.0f;
@@ -64,7 +65,8 @@ namespace FuetEngine
 				elemAction.m_oObject = _oElem.oGetLayer(0);
 				elemAction.m_bAutoHideAfterPlay = false;
 				elemAction.m_rTime = 0.0f;
-				elemAction.m_sActionName = oAction.GetName();
+				elemAction.m_sActionName = oAction.GetName().ToLower();
+				elemAction.m_player = _oElem.GetAnimationPlayer();
 
 				// add the action to the list.
 				m_oHUDActions.Add(elemAction);
@@ -147,14 +149,14 @@ namespace FuetEngine
 			Reset();
 
 			m_oDic = _oDic;
-			m_hud = _hHUD;
+			m_oHud = _hHUD;
 
 			if (m_oDic != null)
 			{
 				// TODO: CFEHUDTranslator.Translate(m_hud, m_oDic);
 			}
 
-			ProcessHUD(m_hud);
+			ProcessHUD(m_oHud);
 		}
 		// -----------------------------------------------------------------------------
 		public void Init(CFEString _sFilename)
@@ -181,10 +183,10 @@ namespace FuetEngine
 		public void Reset()
 		{
 			// Delete HUDs
-			if (m_hud != null)
+			if (m_oHud != null)
 			{
-				m_hud.Dispose();
-				m_hud = null;
+				m_oHud.Dispose();
+				m_oHud = null;
 			}
 
 			// Delete dictionary
@@ -203,20 +205,27 @@ namespace FuetEngine
 			m_oEnabledActions.Clear();
 		}
 		// -----------------------------------------------------------------------------
-		public CFEHUDElement oGetElement(CFEString _sName)
+		public CFEHUD oGetHUD()
 		{
-			if (m_hud != null)
+			return m_oHud;
+		}
+		// -----------------------------------------------------------------------------
+		// public 
+		private CFEHUDElement oGetElement(CFEString _sName)
+		{
+			if (m_oHud != null)
 			{
 				CFEHUDElemLocator oElemLocator = new CFEHUDElemLocator();
-				return oElemLocator.oLocateHUDElement(m_hud, _sName);
+				return oElemLocator.oLocateHUDElement(m_oHud, _sName);
 			}
 
 			return null;
 		}
 		// -----------------------------------------------------------------------------
-		public CFEHUDObject oGetObject(CFEString _sName)
+		// public 
+		private CFEHUDObject oGetObject(CFEString _sName)
 		{
-			if (m_hud != null)
+			if (m_oHud != null)
 			{
 				return null; // CFEHUDInstMgr::poGetObject(hHUD, _sName);
 			}
@@ -224,9 +233,10 @@ namespace FuetEngine
 			return null;
 		}
 		// -----------------------------------------------------------------------------
-		public CFEHUDElementAction oGetAction(CFEString _sName)
+		// public
+		private CFEHUDElementAction oGetAction(CFEString _sName)
 		{
-			if (m_hud != null)
+			if (m_oHud != null)
 			{
 				return null; // CFEHUDInstMgr::poGetElementAction(hHUD, _sName);
 			}
@@ -236,12 +246,12 @@ namespace FuetEngine
 		// -----------------------------------------------------------------------------
 		public int iGetActionIdx(CFEString _sAction, CFEHUDObject _oObj)
 		{
+			CFEString sAction = _sAction.ToLower();
 			if (_oObj == null)
 			{
 				for (int i = 0; i < m_oHUDActions.Count; i++)
 				{
-
-					if (m_oHUDActions[i].m_sActionName.ToLower() == _sAction.ToLower())
+					if (m_oHUDActions[i].m_sActionName == sAction)
 					{
 						return i;
 					}
@@ -251,8 +261,7 @@ namespace FuetEngine
 			{
 				for (int i = 0; i < m_oHUDActions.Count; i++)
 				{
-
-					if ((m_oHUDActions[i].m_sActionName.ToLower() == _sAction) && (m_oHUDActions[i].m_oObject == _oObj))
+					if ((m_oHUDActions[i].m_sActionName == sAction) && (m_oHUDActions[i].m_oObject == _oObj))
 					{
 						return i;
 					}
@@ -266,19 +275,20 @@ namespace FuetEngine
 		{
 			if (_oObj == null)
 			{
+				CFEString sAction = _sAction.ToLower();
+
 				// play on all the objects which have this action
 				int iFoundIdx = -1;
 				for (int i = 0; i < m_oHUDActions.Count; i++)
 				{
-					if (m_oHUDActions[i].m_sActionName.ToLower() == _sAction.ToLower())
+					if (m_oHUDActions[i].m_sActionName == sAction)
 					{
 						// Stop all the animations being played by this object.
 						StopObjectActions(m_oHUDActions[i].m_oObject);
 
 #if ENABLE_MENU_EVENT_LOGGING
-						CFESystem::Print("Playing %s action on %s object\n", _sAction.szString(), m_poHUDActions[i].m_poEA[0]->m_poObject->sGetName().szString());
+						GD.Print($"Playing {_sAction} action on {m_poHUDActions[i].m_poEA[0]->m_poObject->sGetName()} object.");
 #endif
-
 						Play(i, _bAutoShowBeforePlay, _bAutoHideAfterPlay);
 
 						if (iFoundIdx == -1)
@@ -318,10 +328,15 @@ namespace FuetEngine
 
 			// lo activamos o no lo activamos ?!?!?!
 			if (_bAutoShowBeforePlay)
+			{
 				oEA.m_oObject.ShowObj();
+				oEA.m_player.Stop();
+			}
 
 			oEA.m_bAutoHideAfterPlay = _bAutoHideAfterPlay;
 			oEA.m_rTime = 0.0f;
+
+			oEA.m_player.Play(oEA.m_sActionName);
 
 			// Objects that doesn't have an associated object action should set their action default values.
 			// TODO: CFEHUDUpdater::SetActionDefaultValues(poEA->m_poObject);
@@ -379,7 +394,7 @@ namespace FuetEngine
 				for (int a = 0; a < m_oEnabledActions.Count;)
 				{
 					/// If the current enabled action is the element action we're looking for
-					if (m_oEnabledActions[a].m_sActionName.ToLower() == _sAction.ToLower())
+					if (m_oEnabledActions[a].m_sActionName == _sAction)
 						StopEnabledAction(a);
 					else
 						a++;
@@ -489,7 +504,6 @@ namespace FuetEngine
 		// -----------------------------------------------------------------------------
 		public List<CFEHUDObject> oGetPageObjs()
 		{
-
 			return m_oObjs;
 		}
 	}
