@@ -47,6 +47,9 @@ namespace FuetEngine
 
 			AddChild(m_inputManager);
 
+			m_inputManager.EnableCursorInput(true);
+			m_inputManager.EnableButtonInput(true);
+
 			if (MenuFilename != "")
 			{
 				Init(MenuFilename, m_pageFactory, m_inputManager);
@@ -117,10 +120,10 @@ namespace FuetEngine
 						switch (nextPage)
 						{
 							case "GotoNext":
-								{
-									m_nextPage = m_currentPage.sGetNextPage();
-								}
-								break;
+							{
+								m_nextPage = m_currentPage.sGetNextPage();
+							}
+							break;
 							case "GotoBack":
 								m_nextPage = m_currentPage.sGetPrevPage();
 								break;

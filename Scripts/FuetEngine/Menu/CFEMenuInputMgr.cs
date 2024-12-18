@@ -50,8 +50,8 @@ namespace FuetEngine
 			IPB_NUMIPBS,
 		}
 		// --------------------------------------------------------------------
-		private bool m_bEnableCI;
-		private bool m_bEnableBI;
+		private bool m_bEnableCI = false;
+		private bool m_bEnableBI = false;
 		private Vector2 m_oCursorPos = new Vector2(0.0f, 0.0f);
 		// --------------------------------------------------------------------
 		public CFEMenuInputMgr()
@@ -74,9 +74,12 @@ namespace FuetEngine
 		{
 			if (m_bEnableCI == false) return EFECursorResult.CR_NONE;
 
+			string button = EFEInputPressureButton.IPB_A.ToString();
+
 			EFECursorResult eRes = EFECursorResult.CR_NONE;
 			if (CFEMath.bInside(_oRect, m_oCursorPos))
 			{
+
 				if (!Input.IsActionPressed(EFEInputPressureButton.IPB_A.ToString())
 				  && !Input.IsActionPressed(EFEInputPressureButton.IPB_B.ToString()))
 				{

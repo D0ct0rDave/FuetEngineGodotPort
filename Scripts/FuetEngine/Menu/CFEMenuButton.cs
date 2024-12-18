@@ -158,7 +158,7 @@ namespace FuetEngine
 			// m_oOriObj		= CFEHUDInstancer::poCreateInstance(_poObj);
 			m_oObj = _oObj;
 			m_oHUDManager = _oHUDManager;
-			m_oRect = null; // TODO: CFEHUDRectGen::oGetRect(NULL, _poObj);
+			m_oRect = new CFERect(); // TODO: CFEHUDRectGen::oGetRect(NULL, _poObj);
 
 			m_state.ChangeState(EFEMenuButtonState.MBS_NONE);
 		}
@@ -172,48 +172,48 @@ namespace FuetEngine
 			switch (m_state.GetState())
 			{
 				case EFEMenuButtonState.MBS_NONE:
-					{
-						m_state.ChangeState(EFEMenuButtonState.MBS_IDLE);
-					}
-					break;
+				{
+					m_state.ChangeState(EFEMenuButtonState.MBS_IDLE);
+				}
+				break;
 
 				case EFEMenuButtonState.MBS_TRANSITION:
+				{
+					if ((m_iCurrentAction == -1) || (!m_oHUDManager.bPlaying(m_iCurrentAction)))
 					{
-						if ((m_iCurrentAction == -1) || (!m_oHUDManager.bPlaying(m_iCurrentAction)))
-						{
-							m_state.ChangeState(m_nextState);
-						}
+						m_state.ChangeState(m_nextState);
 					}
-					break;
+				}
+				break;
 
 				case EFEMenuButtonState.MBS_ENTERING_PAGE:
+				{
+					if (!m_oHUDManager.bPlaying(CFEMenuDefinitions.ENTER_PAGE_EVENT_NAME, m_oObj))
 					{
-						if (!m_oHUDManager.bPlaying(CFEMenuDefinitions.ENTER_PAGE_EVENT_NAME, m_oObj))
-						{
-							m_state.ChangeState(m_nextState);
-						}
+						m_state.ChangeState(m_nextState);
 					}
-					break;
+				}
+				break;
 
 				// ----------------------------
 				case EFEMenuButtonState.MBS_EXITING_PAGE:
+				{
+					if ((m_iCurrentAction == -1) || (!m_oHUDManager.bPlaying(m_iCurrentAction)))
 					{
-						if ((m_iCurrentAction == -1) || (!m_oHUDManager.bPlaying(m_iCurrentAction)))
-						{
-							m_state.ChangeState(EFEMenuButtonState.MBS_EXIT_DONE);
-						}
+						m_state.ChangeState(EFEMenuButtonState.MBS_EXIT_DONE);
 					}
-					break;
+				}
+				break;
 
 				// ----------------------------
 				case EFEMenuButtonState.MBS_PRESSED:
+				{
+					if (!m_oHUDManager.bPlaying(CFEMenuDefinitions.PRESS_BUTTON_EVENT_NAME, m_oObj))
 					{
-						if (!m_oHUDManager.bPlaying(CFEMenuDefinitions.PRESS_BUTTON_EVENT_NAME, m_oObj))
-						{
-							m_state.ChangeState(m_nextState);
-						}
+						m_state.ChangeState(m_nextState);
 					}
-					break;
+				}
+				break;
 			}
 		}
 		//-----------------------------------------------------------------------------
@@ -231,127 +231,127 @@ namespace FuetEngine
 			{
 				/// When page enters
 				case EFEMenuButtonEvent.MBE_ENTER_PAGE:
-					{
-						m_nextState = m_state.GetState();
-						m_state.ChangeState(EFEMenuButtonState.MBS_ENTERING_PAGE);
-					}
-					break;
+				{
+					m_nextState = m_state.GetState();
+					m_state.ChangeState(EFEMenuButtonState.MBS_ENTERING_PAGE);
+				}
+				break;
 
 				/// When button should be (re)enabled
 				case EFEMenuButtonEvent.MBE_ENABLE:
-					{
-						bool bCurVis = m_oObj.bGetCurVis();
-						bool bIniVis = m_oObj.bGetIniVis();
+				{
+					bool bCurVis = m_oObj.bGetCurVis();
+					bool bIniVis = m_oObj.bGetIniVis();
 
-						if (m_state.GetState() != EFEMenuButtonState.MBS_DISABLED) return;
-						SetInitialState(true);
+					if (m_state.GetState() != EFEMenuButtonState.MBS_DISABLED) return;
+					SetInitialState(true);
 
-						m_oObj.SetCurVis(bCurVis);
-						m_oObj.SetIniVis(bIniVis);
+					m_oObj.SetCurVis(bCurVis);
+					m_oObj.SetIniVis(bIniVis);
 
-						// Perform action inmediatly.
-						m_state.ChangeState(EFEMenuButtonState.MBS_IDLE);
-					}
-					break;
+					// Perform action inmediatly.
+					m_state.ChangeState(EFEMenuButtonState.MBS_IDLE);
+				}
+				break;
 
 				/// When button should be disabled.
 				case EFEMenuButtonEvent.MBE_DISABLE:
-					{
-						if (m_state.GetState() == EFEMenuButtonState.MBS_DISABLED) return;
+				{
+					if (m_state.GetState() == EFEMenuButtonState.MBS_DISABLED) return;
 
-						// Perform action inmediatly.
-						m_state.ChangeState(EFEMenuButtonState.MBS_DISABLED);
+					// Perform action inmediatly.
+					m_state.ChangeState(EFEMenuButtonState.MBS_DISABLED);
 
-						// ChangeState(MBS_TRANSITION);
-						// SetNextState(MBS_DISABLED);
-					}
-					break;
+					// ChangeState(MBS_TRANSITION);
+					// SetNextState(MBS_DISABLED);
+				}
+				break;
 
 				/// Button is selected
 				case EFEMenuButtonEvent.MBE_SELECT:
-					{
-						if (m_state.GetState() == EFEMenuButtonState.MBS_DISABLED) return;
-						m_state.ChangeState(EFEMenuButtonState.MBS_TRANSITION);
-						SetNextState(EFEMenuButtonState.MBS_SELECTED);
-					}
-					break;
+				{
+					if (m_state.GetState() == EFEMenuButtonState.MBS_DISABLED) return;
+					m_state.ChangeState(EFEMenuButtonState.MBS_TRANSITION);
+					SetNextState(EFEMenuButtonState.MBS_SELECTED);
+				}
+				break;
 
 				/// When button is unselected
 				case EFEMenuButtonEvent.MBE_UNSELECT:
+				{
+					if (
+						((m_state.GetState() == EFEMenuButtonState.MBS_TRANSITION) && (GetNextState() == EFEMenuButtonState.MBS_SELECTED))
+						||
+						(m_state.GetState() == EFEMenuButtonState.MBS_SELECTED)
+						||
+						(m_state.GetState() == EFEMenuButtonState.MBS_PRESSED)
+						)
 					{
-						if (
-							((m_state.GetState() == EFEMenuButtonState.MBS_TRANSITION) && (GetNextState() == EFEMenuButtonState.MBS_SELECTED))
-							||
-							(m_state.GetState() == EFEMenuButtonState.MBS_SELECTED)
-							||
-							(m_state.GetState() == EFEMenuButtonState.MBS_PRESSED)
-							)
-						{
-							// Not possible!! ....
-							// ChangeState(MBS_TRANSITION);
-							// SetNextState(MBS_IDLE);
+						// Not possible!! ....
+						// ChangeState(MBS_TRANSITION);
+						// SetNextState(MBS_IDLE);
 
-							// ...perform action inmediatly. Because idle and select states can have infinite (looped) animations.
-							m_state.ChangeState(EFEMenuButtonState.MBS_IDLE);
-						}
+						// ...perform action inmediatly. Because idle and select states can have infinite (looped) animations.
+						m_state.ChangeState(EFEMenuButtonState.MBS_IDLE);
 					}
-					break;
+				}
+				break;
 
 				/// When cursor enters
 				case EFEMenuButtonEvent.MBE_FOCUS:
-					{
-						if (m_state.GetState() != EFEMenuButtonState.MBS_IDLE) return;
+				{
+					if (m_state.GetState() != EFEMenuButtonState.MBS_IDLE) return;
 
-						// Perform action inmediatly. Because idle and select states can have infinite (looped) animations.
-						m_state.ChangeState(EFEMenuButtonState.MBS_FOCUSED);
-					}
-					break;
+					// Perform action inmediatly. Because idle and select states can have infinite (looped) animations.
+					m_state.ChangeState(EFEMenuButtonState.MBS_FOCUSED);
+				}
+				break;
 
 				/// When cursor exits
 				case EFEMenuButtonEvent.MBE_UNFOCUS:
-					{
-						if (m_state.GetState() != EFEMenuButtonState.MBS_FOCUSED) return;
+				{
+					if (m_state.GetState() != EFEMenuButtonState.MBS_FOCUSED) return;
 
-						if (m_iCurrentAction != -1) m_oHUDManager.Stop(m_iCurrentAction);
-						m_iCurrentAction = m_oHUDManager.iPlay(CFEMenuDefinitions.LOSEFOCUS_BUTTON_EVENT_NAME, m_oObj, bIsVisible());
+					if (m_iCurrentAction != -1) m_oHUDManager.Stop(m_iCurrentAction);
+					m_iCurrentAction = m_oHUDManager.iPlay(CFEMenuDefinitions.LOSEFOCUS_BUTTON_EVENT_NAME, m_oObj, bIsVisible());
 
-						m_state.ChangeState(EFEMenuButtonState.MBS_TRANSITION);
-						SetNextState(EFEMenuButtonState.MBS_IDLE);
-					}
-					break;
+					m_state.ChangeState(EFEMenuButtonState.MBS_TRANSITION);
+					SetNextState(EFEMenuButtonState.MBS_IDLE);
+				}
+				break;
 
 				/// When Button is pressed
 				case EFEMenuButtonEvent.MBE_INPUT_PRESS:
-					{
-						if (m_state.GetState() == EFEMenuButtonState.MBS_DISABLED) return;
-						if (m_state.GetState() == EFEMenuButtonState.MBS_PRESSED) return;
-						// Perform action inmediatly
-						m_state.ChangeState(EFEMenuButtonState.MBS_PRESSED);
-					}
-					break;
+				{
+					if (m_state.GetState() == EFEMenuButtonState.MBS_DISABLED) return;
+					if (m_state.GetState() == EFEMenuButtonState.MBS_PRESSED) return;
+					// Perform action inmediatly
+					m_state.ChangeState(EFEMenuButtonState.MBS_PRESSED);
+				}
+				break;
 
 				/// When Button is released
 				case EFEMenuButtonEvent.MBE_INPUT_RELEASE:
-					{
-						if (m_state.GetState() == EFEMenuButtonState.MBS_DISABLED) return;
+				{
+					if (m_state.GetState() == EFEMenuButtonState.MBS_DISABLED) return;
 
-						// Perform action inmediatly
-						if (m_iCurrentAction != -1) m_oHUDManager.Stop(m_iCurrentAction);
-						m_iCurrentAction = m_oHUDManager.iPlay(CFEMenuDefinitions.RELEASE_BUTTON_EVENT_NAME, m_oObj, bIsVisible());
+					// Perform action inmediatly
+					if (m_iCurrentAction != -1) m_oHUDManager.Stop(m_iCurrentAction);
+					m_iCurrentAction = m_oHUDManager.iPlay(CFEMenuDefinitions.RELEASE_BUTTON_EVENT_NAME, m_oObj, bIsVisible());
 
-						m_state.ChangeState(EFEMenuButtonState.MBS_TRANSITION);
-						SetNextState(EFEMenuButtonState.MBS_SELECTED);
-					}
-					break;
+					m_state.ChangeState(EFEMenuButtonState.MBS_TRANSITION);
+					SetNextState(EFEMenuButtonState.MBS_SELECTED);
+				}
+				break;
 
 				/// When page exits
 				case EFEMenuButtonEvent.MBE_EXIT_PAGE:
-					{
-						// Perform action inmediatly
-						// if ((m_iCurrentAction==-1) || (! m_oHUDManager.bPlaying((uint)m_iCurrentAction)))						
-						m_state.ChangeState(EFEMenuButtonState.MBS_EXITING_PAGE);
-					}
-					break;
+				{
+					// Perform action inmediatly
+					// if ((m_iCurrentAction==-1) || (! m_oHUDManager.bPlaying((uint)m_iCurrentAction)))						
+					m_state.ChangeState(EFEMenuButtonState.MBS_EXITING_PAGE);
+				}
+				break;
 			}
 		}
 
@@ -360,76 +360,76 @@ namespace FuetEngine
 			switch (_state)
 			{
 				case EFEMenuButtonState.MBS_ENTERING_PAGE:
-					{
-						// Animation is played by the page
-						// m_iCurrentAction = m_oHUDManager.iPlay(CFEMenuDefinitions.ENTER_PAGE_EVENT_NAME,m_oObj);
-					}
-					break;
+				{
+					// Animation is played by the page
+					// m_iCurrentAction = m_oHUDManager.iPlay(CFEMenuDefinitions.ENTER_PAGE_EVENT_NAME,m_oObj);
+				}
+				break;
 
 				case EFEMenuButtonState.MBS_IDLE:
-					{
-						if (m_iCurrentAction != -1) m_oHUDManager.Stop(m_iCurrentAction);
-						m_iCurrentAction = m_oHUDManager.iPlay(CFEMenuDefinitions.IDLE_BUTTON_EVENT_NAME, m_oObj, bIsVisible());
-					}
-					break;
+				{
+					if (m_iCurrentAction != -1) m_oHUDManager.Stop(m_iCurrentAction);
+					m_iCurrentAction = m_oHUDManager.iPlay(CFEMenuDefinitions.IDLE_BUTTON_EVENT_NAME, m_oObj, bIsVisible());
+				}
+				break;
 
 				case EFEMenuButtonState.MBS_DISABLED:
-					{
-						bool bCurVis = m_oObj.bGetCurVis();
-						bool bIniVis = m_oObj.bGetIniVis();
+				{
+					bool bCurVis = m_oObj.bGetCurVis();
+					bool bIniVis = m_oObj.bGetIniVis();
 
-						if (m_iCurrentAction != -1) m_oHUDManager.Stop(m_iCurrentAction);
-						SetInitialState(true);
-						m_iCurrentAction = m_oHUDManager.iPlay(CFEMenuDefinitions.DISABLE_BUTTON_EVENT_NAME, m_oObj, bIsVisible());
-						SetInitialState(false);
-						m_oHUDManager.Stop(m_iCurrentAction);
-						// TODO: CFEHUDUpdater.SetActionDefaultValues(m_oObj);
-						m_iCurrentAction = -1;
+					if (m_iCurrentAction != -1) m_oHUDManager.Stop(m_iCurrentAction);
+					SetInitialState(true);
+					m_iCurrentAction = m_oHUDManager.iPlay(CFEMenuDefinitions.DISABLE_BUTTON_EVENT_NAME, m_oObj, bIsVisible());
+					SetInitialState(false);
+					m_oHUDManager.Stop(m_iCurrentAction);
+					// TODO: CFEHUDUpdater.SetActionDefaultValues(m_oObj);
+					m_iCurrentAction = -1;
 
-						m_oObj.SetCurVis(bCurVis);
-						m_oObj.SetIniVis(bIniVis);
-					}
-					break;
+					m_oObj.SetCurVis(bCurVis);
+					m_oObj.SetIniVis(bIniVis);
+				}
+				break;
 
 				case EFEMenuButtonState.MBS_PRESSED:
-					{
-						if (m_iCurrentAction != -1) m_oHUDManager.Stop(m_iCurrentAction);
-						m_iCurrentAction = m_oHUDManager.iPlay(CFEMenuDefinitions.PRESS_BUTTON_EVENT_NAME, m_oObj, bIsVisible());
-						SetNextState(EFEMenuButtonState.MBS_SELECTED);
-					}
-					break;
+				{
+					if (m_iCurrentAction != -1) m_oHUDManager.Stop(m_iCurrentAction);
+					m_iCurrentAction = m_oHUDManager.iPlay(CFEMenuDefinitions.PRESS_BUTTON_EVENT_NAME, m_oObj, bIsVisible());
+					SetNextState(EFEMenuButtonState.MBS_SELECTED);
+				}
+				break;
 
 				case EFEMenuButtonState.MBS_SELECTED:
-					{
-						if (m_iCurrentAction != -1) m_oHUDManager.Stop(m_iCurrentAction);
-						m_iCurrentAction = m_oHUDManager.iPlay(CFEMenuDefinitions.SELECT_BUTTON_EVENT_NAME, m_oObj, bIsVisible());
-					}
-					break;
+				{
+					if (m_iCurrentAction != -1) m_oHUDManager.Stop(m_iCurrentAction);
+					m_iCurrentAction = m_oHUDManager.iPlay(CFEMenuDefinitions.SELECT_BUTTON_EVENT_NAME, m_oObj, bIsVisible());
+				}
+				break;
 
 				case EFEMenuButtonState.MBS_FOCUSED:
-					{
-						if (m_iCurrentAction != -1) m_oHUDManager.Stop(m_iCurrentAction);
-						m_iCurrentAction = m_oHUDManager.iPlay(CFEMenuDefinitions.FOCUS_BUTTON_EVENT_NAME, m_oObj, bIsVisible());
-					}
-					break;
+				{
+					if (m_iCurrentAction != -1) m_oHUDManager.Stop(m_iCurrentAction);
+					m_iCurrentAction = m_oHUDManager.iPlay(CFEMenuDefinitions.FOCUS_BUTTON_EVENT_NAME, m_oObj, bIsVisible());
+				}
+				break;
 
 				/// Transitional states
 				case EFEMenuButtonState.MBS_EXITING_PAGE:
-					{
-						if ((m_state.GetState() != EFEMenuButtonState.MBS_PRESSED) && (m_iCurrentAction != -1))
-							m_oHUDManager.Stop(m_iCurrentAction);
+				{
+					if ((m_state.GetState() != EFEMenuButtonState.MBS_PRESSED) && (m_iCurrentAction != -1))
+						m_oHUDManager.Stop(m_iCurrentAction);
 
-						SetNextState(EFEMenuButtonState.MBS_EXIT_DONE);
+					SetNextState(EFEMenuButtonState.MBS_EXIT_DONE);
 
-						// Done by the page
-						// m_iCurrentAction = m_oHUDManager.iPlay(EXIT_PAGE_EVENT_NAME,m_oObj);
-					}
-					break;
+					// Done by the page
+					// m_iCurrentAction = m_oHUDManager.iPlay(EXIT_PAGE_EVENT_NAME,m_oObj);
+				}
+				break;
 
 				case EFEMenuButtonState.MBS_EXIT_DONE:
-					{
-					}
-					break;
+				{
+				}
+				break;
 			}
 		}
 		//-----------------------------------------------------------------------------
